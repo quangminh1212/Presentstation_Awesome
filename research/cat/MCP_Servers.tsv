@@ -1,0 +1,139 @@
+1856	GongRzhe/Office-PowerPoint-MCP-Server	https://github.com/GongRzhe/Office-PowerPoint-MCP-Server	A MCP (Model Context Protocol) server for PowerPoint manipulation using python-pptx. This server provides tools for creating, editing, and manipulating PowerPoint presentations through the MCP protocol.
+189	matteoantoci/google-slides-mcp	https://github.com/matteoantoci/google-slides-mcp	MCP Server for Google Slides
+98	ykuwai/ppt-mcp	https://github.com/ykuwai/ppt-mcp	The world's best PowerPoint MCP server. Real-time control of a live PowerPoint on Windows and macOS, 156 tools for AI agents
+91	LSTM-Kirigaya/slidev-mcp	https://github.com/LSTM-Kirigaya/slidev-mcp	mcp server for slidev to make web ppt quickly and elegantly
+35	samos123/pptx-mcp	https://github.com/samos123/pptx-mcp	Create Slides with a simple MCP server using Python PPTX library
+27	epicweb-dev/slides-mcp	https://github.com/epicweb-dev/slides-mcp	An MCP server for generating Slides.com presentations.
+14	SlideSpeak/slidespeak-mcp	https://github.com/SlideSpeak/slidespeak-mcp	MCP Server for the Slidespeak API. Create PowerPoint Presentations using MCP.
+12	luan007/figma-slides-mcp	https://github.com/luan007/figma-slides-mcp	Figma Slides MCP - let your agent cook slides for you (hopefully), (some) battery included (d3 for graphics)
+7	Whatsonyourmind/deckforge	https://github.com/Whatsonyourmind/deckforge	Executive-ready slides, one API call away. API-first AI presentation engine with 32 slide types, 24 chart types, 15 themes, finance vertical. PPTX + Google Slides. MCP server for AI agents. TypeScript SDK.
+6	guangxiangdebizi/PPT-MCP	https://github.com/guangxiangdebizi/PPT-MCP	Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
+6	tmustier/powerpoint-cli	https://github.com/tmustier/powerpoint-cli	CLI for creating and editing PowerPoint files, wrapping office-powerpoint-mcp-server via mcporter
+6	amcchord/slideMCP	https://github.com/amcchord/slideMCP	MCP Server for the Slide API
+5	payals/pg_rag_slide_generator	https://github.com/payals/pg_rag_slide_generator	Automatic slide deck generator using the power of Postgres as an AI control plane for RAG and MCP
+5	sankettank66/MCP-Presentation	https://github.com/sankettank66/MCP-Presentation	This Repo, walks you through setting up a Model Context Protocol (MCP) server using the Javascript SDK.
+5	ihatesea69/office-powerpoint-mcp-server	https://github.com/ihatesea69/office-powerpoint-mcp-server	Enterprise-Grade PowerPoint Automation Protocol   for AI Assistants
+5	joelbarmettlerUZH/slidev-mcp	https://github.com/joelbarmettlerUZH/slidev-mcp	MCP server for generating, rendering, and hosting Slidev presentations
+5	islem-zaraa/mcp-powerpoint	https://github.com/islem-zaraa/mcp-powerpoint	Model Context Protocol (MCP) plugin for PowerPoint operations, allowing AI assistants to create and manipulate PowerPoint presentations programmatically.
+4	moritalous/slidev-mcp-apps	https://github.com/moritalous/slidev-mcp-apps	
+4	bohachu/botrun-google-slides-mcp	https://github.com/bohachu/botrun-google-slides-mcp	MCP server for Google Slides integration with service account authentication
+4	dovstern/google-slides-llm-tools	https://github.com/dovstern/google-slides-llm-tools	MCP Server & Langchain Tools for Google Slides API
+4	DuongNAD/aurora-slides-mcp	https://github.com/DuongNAD/aurora-slides-mcp	MCP server: Apple-keynote-style animated HTML lessons for self-study, with memory anchors, notebook pages and agent-made pictures
+3	eiceblue/spire-presentation-mcp-server	https://github.com/eiceblue/spire-presentation-mcp-server	
+3	vuhai2002/ai-slides-mcp	https://github.com/vuhai2002/ai-slides-mcp	
+3	hai-group/core3-mcp-presentation	https://github.com/hai-group/core3-mcp-presentation	
+2	nitaiaharoni1/google-slides-mcp	https://github.com/nitaiaharoni1/google-slides-mcp	
+2	moneyfactory-co/slidev-builder-mcp	https://github.com/moneyfactory-co/slidev-builder-mcp	Professional Slidev MCP Server for creating presentations with auto-generated starter slides, modular architecture, and Hatch corporate branding. Built for VS Code and Claude Desktop.
+2	knorq-ai/pptx-mcp-server	https://github.com/knorq-ai/pptx-mcp-server	MCP server for generating professional PowerPoint presentations with McKinsey/Deloitte/Neutral themes
+2	senthiljack2808/google-slides-mcp	https://github.com/senthiljack2808/google-slides-mcp	oogle-slides-mcp
+2	jemmanuele/gslide-mcp	https://github.com/jemmanuele/gslide-mcp	Google Slide MCP solution tailored for usage with Claude Code
+1	zerob13/slidev-mcp	https://github.com/zerob13/slidev-mcp	mcp server to create slidev like a pro
+1	raykuonz/slidev-mcp-server	https://github.com/raykuonz/slidev-mcp-server	
+1	oconsl/slidev-mcp	https://github.com/oconsl/slidev-mcp	
+1	jonathanscholtes/Fabric-Foundry-Insight-Presentation-Agents	https://github.com/jonathanscholtes/Fabric-Foundry-Insight-Presentation-Agents	End-to-end implementation that combines Microsoft Fabric, Foundry agents, and Model Context Protocol (MCP) to transform enterprise data into natural-language insights and dynamically generated PowerPoint presentations for monthly business review.
+1	Themetralla3000/pptx-mcp-server	https://github.com/Themetralla3000/pptx-mcp-server	
+1	shjanjua/pptx-mcp-server	https://github.com/shjanjua/pptx-mcp-server	
+1	mario03690/ai-netcafe	https://github.com/mario03690/ai-netcafe	Compare LLM cost & latency on one prompt, translate PDF keeping layout, cited research, make PPTX  MCP server + CLI
+1	photonn/dial-pptx-mcp	https://github.com/photonn/dial-pptx-mcp	DIAL-aware remote MCP server for PowerPoint generation  extends GongRzhe/Office-PowerPoint-MCP-Server with streamable-http transport, per-session state, and DIAL Core file storage integration
+1	superbereza/mac-native-pptx-mcp	https://github.com/superbereza/mac-native-pptx-mcp	Full-featured PowerPoint MCP server for macOS  drives PowerPoint for Mac via AppleScript (21 tools, full deck/slide/shape lifecycle); standalone, no upstream connector needed
+1	alirazapoonja/mcp_presentation-	https://github.com/alirazapoonja/mcp_presentation-	mcp_presentation
+1	kacase/mcp-powerpoint	https://github.com/kacase/mcp-powerpoint	
+1	EiriniOr/mcp-powerpoint-server	https://github.com/EiriniOr/mcp-powerpoint-server	?? PowerPoint MCP Server - Model Context Protocol server with 36 tools for AI-assisted PowerPoint generation. Create beautiful presentations programmatically with Claude AI.
+1	softchris/go-mcp-presentation	https://github.com/softchris/go-mcp-presentation	
+1	rcarvalo/powerpoint-mcp-server	https://github.com/rcarvalo/powerpoint-mcp-server	
+1	vancealexander/Powerpoint_MCP_CrossPlatform	https://github.com/vancealexander/Powerpoint_MCP_CrossPlatform	Cross-platform PowerPoint MCP Server for Claude Desktop - Works on Windows, macOS, and Linux
+1	sruan2/neurips-mcp-presentation	https://github.com/sruan2/neurips-mcp-presentation	
+1	Strand-AI/figma-slides-mcp	https://github.com/Strand-AI/figma-slides-mcp	
+1	lysong9907/bento-ppt-skill	https://github.com/lysong9907/bento-ppt-skill	Bento Slides MCP Server + bento-slides skill:??? LLM ?????? .bento.html ????(Cherry Studio / Claude Desktop ??)
+1	jaderfeijo/google-slides-mcp	https://github.com/jaderfeijo/google-slides-mcp	A Google Slides MCP extension for Claude Desktop
+1	Pylogmon/powerpoint-generator-mcp	https://github.com/Pylogmon/powerpoint-generator-mcp	A PowerPoint generator for Model Context Protocol (MCP) using Bun (Note: Unable to read/edit existing presentation)
+1	ryanvo162/google-slides-mcp	https://github.com/ryanvo162/google-slides-mcp	MCP server for Google Slides - 39 tools for creating, editing, and managing presentations
+1	forayconsulting/google-slides-mcp	https://github.com/forayconsulting/google-slides-mcp	An MCP server allowing LLMs to create and manipulate Google Slides at a deeply customized level.
+1	gavanduffy/slides-mcp	https://github.com/gavanduffy/slides-mcp	
+0	Troy-Lai/mcp-presentation	https://github.com/Troy-Lai/mcp-presentation	MCP classroom presentation
+0	Manu-Krish/MCP-Presentation-New	https://github.com/Manu-Krish/MCP-Presentation-New	MCP Presentation New
+0	rijul-procdna/MCP-Presentation-Generator	https://github.com/rijul-procdna/MCP-Presentation-Generator	
+0	emrum01/mcp-presentation-demo	https://github.com/emrum01/mcp-presentation-demo	
+0	danielplawgo/dotnet-mcp-presentation	https://github.com/danielplawgo/dotnet-mcp-presentation	MCP w .NET: prezentacja (Slidev) i demo ASP.NET Core pokazujace, jak udostepnic aplikacje agentom AI
+0	momodeveluk2024/mcp-presentation-web	https://github.com/momodeveluk2024/mcp-presentation-web	Recap presentation for MCP
+0	maratkand21/presentation-mcp-server	https://github.com/maratkand21/presentation-mcp-server	
+0	EiceblueCloud/spire.presentation-mcp-server	https://github.com/EiceblueCloud/spire.presentation-mcp-server	Spire.Presentaition for MCP server
+0	konojunya/html2pptx-mcp	https://github.com/konojunya/html2pptx-mcp	html to pptx mcp server
+0	arbazpathan91/pptx-mcp-server	https://github.com/arbazpathan91/pptx-mcp-server	
+0	loveRyujin/slidev-mcp	https://github.com/loveRyujin/slidev-mcp	
+0	gavanduffy/slidev-mcp	https://github.com/gavanduffy/slidev-mcp	
+0	feirate/slidev-mcp-server	https://github.com/feirate/slidev-mcp-server	
+0	biancasivero/BIANCA-SANITY	https://github.com/biancasivero/BIANCA-SANITY	Sistema Integrado de Gesto de Contedo e Apresentaes - Sanity CMS + Slidev + MCP Tools
+0	kennyg/slidev-mcp-app	https://github.com/kennyg/slidev-mcp-app	
+0	RAFAEL-SILVASOUZA/pptx-mcp-server	https://github.com/RAFAEL-SILVASOUZA/pptx-mcp-server	
+0	smorand/google-slides-mcp	https://github.com/smorand/google-slides-mcp	HTTP streamable MCP server for Google Slides API integration
+0	FarukDelic/Google-Slides-MCP	https://github.com/FarukDelic/Google-Slides-MCP	
+0	SolonaBot/google-slides-mcp	https://github.com/SolonaBot/google-slides-mcp	MCP server for Google Slides integration
+0	artemu78/google-slides-mcp	https://github.com/artemu78/google-slides-mcp	
+0	schuang/google-slides-mcp	https://github.com/schuang/google-slides-mcp	
+0	Stephenjhayes/google-slides-mcp	https://github.com/Stephenjhayes/google-slides-mcp	MCP Server for my Slide Maker project
+0	dvanderelst/GoogleSlidesMCP	https://github.com/dvanderelst/GoogleSlidesMCP	
+0	JustParent/google-slides-mcp	https://github.com/JustParent/google-slides-mcp	Low-level MCP for Google Slides
+0	eliamazzon/google-slides-mcp	https://github.com/eliamazzon/google-slides-mcp	
+0	vamsikiran353-gif/google-slides-mcp	https://github.com/vamsikiran353-gif/google-slides-mcp	
+0	tedpecoulas/pptx-mcp-server	https://github.com/tedpecoulas/pptx-mcp-server	Serveur MCP pour skills python pour ppt
+0	leoou331/pptx-mcp-server	https://github.com/leoou331/pptx-mcp-server	MCP server for creating and editing PowerPoint presentations
+0	kunalhemnani1/google-slides-mcp-server	https://github.com/kunalhemnani1/google-slides-mcp-server	
+0	illumination-k/google-slides-mcp	https://github.com/illumination-k/google-slides-mcp	
+0	Dinpo/google-slides-mcp	https://github.com/Dinpo/google-slides-mcp	MCP for Google Slides with advanced functionality
+0	kriskumar/google-slides-mcp	https://github.com/kriskumar/google-slides-mcp	
+0	micahyee415/google-slides-mcp-server	https://github.com/micahyee415/google-slides-mcp-server	Model Context Protocol (MCP) server for Google Slides: read, template-fill, and edit presentations on Cloud Run with Google OAuth.
+0	mcembalest/google-slides-mcp	https://github.com/mcembalest/google-slides-mcp	
+0	dcc-mcp/dcc-mcp-powerpoint	https://github.com/dcc-mcp/dcc-mcp-powerpoint	Microsoft PowerPoint MCP adapter for AI agents to generate and modify editable decks, compose slides, build render review decks and validate PDF/PNG previews in the DCC-MCP ecosystem.
+0	jose-rodriguez-mck/mcp-presentation	https://github.com/jose-rodriguez-mck/mcp-presentation	MCP Presentation
+0	taranovoleg/Data_Out_Calculator_MCP_PowerPoint-VCc02	https://github.com/taranovoleg/Data_Out_Calculator_MCP_PowerPoint-VCc02	Task-zerocoderVcc02
+0	conda-forge/mcp-powerpoint-feedstock	https://github.com/conda-forge/mcp-powerpoint-feedstock	A conda-smithy repository for mcp-powerpoint.
+0	jordanbaucke/mcp-powerpoint-server	https://github.com/jordanbaucke/mcp-powerpoint-server	Model Context Protocol server for creating PowerPoint presentations using Azure Container Apps
+0	Yans14/powerpoint_mcp	https://github.com/Yans14/powerpoint_mcp	PowerPoint MCP server with dual COM/OOXML engines for template-aware slide automation and visual validation.
+0	omaro7/Office-PowerPoint-MCP-Server	https://github.com/omaro7/Office-PowerPoint-MCP-Server	Office-PowerPoint-MCP-Server
+0	amitk-codes/ai-presentation-generator	https://github.com/amitk-codes/ai-presentation-generator	AI presentation generator  turn a topic into a downloadable PDF & editable PowerPoint. One n8n workflow, reachable from a React web app and an MCP server (ChatGPT/Claude), with tone-based themes, photos, and varied layouts.
+0	MisunK/powerpoint-mcp-server	https://github.com/MisunK/powerpoint-mcp-server	MCP server allows interaction with PPT slide
+0	rmhman/pp_mcp	https://github.com/rmhman/pp_mcp	PowerPoint MCP server
+0	cool-man-vk/Powerpoint-MCP-Server	https://github.com/cool-man-vk/Powerpoint-MCP-Server	
+0	brijeshshetty/pptx-mcp	https://github.com/brijeshshetty/pptx-mcp	Local PowerPoint MCP Server for Claude -- 24 tools, SAP corporate template support
+0	adilmaqsood1/office-powerpoint-mcp-server	https://github.com/adilmaqsood1/office-powerpoint-mcp-server	Data science and AI
+0	kangkang0218/powerpoint-mcp	https://github.com/kangkang0218/powerpoint-mcp	Native Windows PowerPoint MCP Server for OpenCode, Claude Desktop, Cursor, and AI Agents
+0	sriram-1997/PPTMCP	https://github.com/sriram-1997/PPTMCP	Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
+0	hwwang06/powerpoint-mcp-server	https://github.com/hwwang06/powerpoint-mcp-server	
+0	hurtener/pengui-slides	https://github.com/hurtener/pengui-slides	Pengui Slides MCP Server - HTML-first presentation generation with Design Soul constraint system
+0	prixieroxanbooc/google-slides-mcp-server	https://github.com/prixieroxanbooc/google-slides-mcp-server	Multi-tenant Google Slides MCP server for AI clients. Create and manage presentations via MCP. Node.js + Cloud Run.
+0	waiteddegree608-ship-it/paperfect	https://github.com/waiteddegree608-ship-it/paperfect	Local paper workspace: bilingual reading, evidence-grounded notes, editable academic slides, MCP and skills.
+0	7tg/mcp_presentation	https://github.com/7tg/mcp_presentation	
+0	dboconsultingllc/mcp-presentations	https://github.com/dboconsultingllc/mcp-presentations	
+0	xxradar/mcp-presentation	https://github.com/xxradar/mcp-presentation	
+0	nlarif/mcp-presentation	https://github.com/nlarif/mcp-presentation	Opinionated presentation about MCP, agentic AI, and interoperability
+0	dverc/omni-mcp-presentation	https://github.com/dverc/omni-mcp-presentation	
+0	omasan0430/mcp-presentation2	https://github.com/omasan0430/mcp-presentation2	
+0	matnoon/MCP-Presentation	https://github.com/matnoon/MCP-Presentation	Project to help new people to insert into MCP areas
+0	CompSciGuyIT/PresentationMcpServer	https://github.com/CompSciGuyIT/PresentationMcpServer	LLM teaching-deck generator (TypeScript): Zod IR trust boundary, zero-dollar free-tier routing, misconception-grounded quizzes, converging TTS rehearsal. 97 tests.
+0	arturowczarek/mcp-presentation	https://github.com/arturowczarek/mcp-presentation	Repository hosting the files for MCP presentation
+0	dianamohirta/mcp-presentation	https://github.com/dianamohirta/mcp-presentation	
+0	hewimetall/mcp-presentation	https://github.com/hewimetall/mcp-presentation	mcp tools presentation pdf web
+0	muguliebe/mcp-presentation	https://github.com/muguliebe/mcp-presentation	Real-time Error Monitoring & AI Analysis System with Model Context Protocol
+0	alenaist/mcp-presentation	https://github.com/alenaist/mcp-presentation	
+0	romainf28/mcp-presentation	https://github.com/romainf28/mcp-presentation	A presentation about MCP
+0	biaggiorizzo/mcp-presentation	https://github.com/biaggiorizzo/mcp-presentation	
+0	mcp-security-project/mcp_presentations	https://github.com/mcp-security-project/mcp_presentations	Presentations
+0	kevinten-ai/mcp-presentation	https://github.com/kevinten-ai/mcp-presentation	MCP server for AI-assisted presentation generation. Create PowerPoint slides from structured content with templates.
+0	ernesthenry/mcp_presentation	https://github.com/ernesthenry/mcp_presentation	
+0	omasan0430/mcp-presentation	https://github.com/omasan0430/mcp-presentation	
+0	Yazhodha/mcp-presentation	https://github.com/Yazhodha/mcp-presentation	A react + vite presentation for MCP
+0	satyampsoni/mcp-presentation	https://github.com/satyampsoni/mcp-presentation	
+0	suarez9093/model-context-protocol-presentation	https://github.com/suarez9093/model-context-protocol-presentation	MCP presentation
+0	anddtran/MCP-Presentation	https://github.com/anddtran/MCP-Presentation	
+0	dmykolen/mcp-presentation	https://github.com/dmykolen/mcp-presentation	MCP presentation (slidev)
+0	DavidSchaferEC/MCP-Presentation	https://github.com/DavidSchaferEC/MCP-Presentation	HTML pages for MCP illustration purposes
+0	Blue-0/mcp-powerpoint-mistral	https://github.com/Blue-0/mcp-powerpoint-mistral	
+0	corey-coders/mcp-powerpoint	https://github.com/corey-coders/mcp-powerpoint	PowerPoint MCP Server  generate board decks, pitch decks, presentations via natural language. Free.
+0	CannonJunior/mcp-powerpoint	https://github.com/CannonJunior/mcp-powerpoint	mcp-powerpoint
+0	aryeht/MCP	https://github.com/aryeht/MCP	MCP presentation
+0	narasimhatejav/mcp-powerpoint	https://github.com/narasimhatejav/mcp-powerpoint	
+0	Alain-script/mcp-powerpoint	https://github.com/Alain-script/mcp-powerpoint	
+0	zingbretsen/mcp-presentation	https://github.com/zingbretsen/mcp-presentation	
+0	mnmuniz/MCP-Presentation	https://github.com/mnmuniz/MCP-Presentation	Proyecto pblico de presentacin con Playwright MCP para pruebas automatizadas.
+0	KeeTraxx/mcp-presentation	https://github.com/KeeTraxx/mcp-presentation	

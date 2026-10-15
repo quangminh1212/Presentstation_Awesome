@@ -1,0 +1,13 @@
+# Research raw dumps (kept locally, not published)
+research/*.json
+research/*.tsv
+research/*.txt
+!research/gen_readme.py
+!research/classify.py
+!research/export.py
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.bak
+*.swp

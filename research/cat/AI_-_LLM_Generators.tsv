@@ -1,0 +1,107 @@
+11116	presenton/presenton	https://github.com/presenton/presenton	Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)
+3039	allweonedev/presentation-ai	https://github.com/allweonedev/presentation-ai	ALLWEONE Open source AI presentation generator Gamma Alternative. Create professional slides with customizable themes and AI-generated content in minutes.
+2133	arcsin1/oh-my-ppt	https://github.com/arcsin1/oh-my-ppt	Describe what you need  a presentation, lesson, or story  and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.
+308	CyberTimon/Powerpointer-For-Local-LLMs	https://github.com/CyberTimon/Powerpointer-For-Local-LLMs	Local Powerpointer - A beautiful powerpoint generator which uses the power of local running large language models to generate the powerpoint slides.
+178	CyberTimon/Powerpointer	https://github.com/CyberTimon/Powerpointer	Powerpointer - A beautiful powerpoint generator which uses GPT 3.5 to generate the slides.
+165	yuyuanweb/ai-ppt-generator	https://github.com/yuyuanweb/ai-ppt-generator	2026 ????? AI ???????,?? Python FastAPI + LangChain + LangGraph + React ? AI PPT ???,???? / ??? / ???????????????????????????????????????? PPTX ????? LangChain ?????LangGraph ???????ARQ + Redis ???????SSE ???????PPTX ?????FontTools ???????????? AI ?????,??????????,??????,??????????
+162	Akxan/ppt-agent-skill	https://github.com/Akxan/ppt-agent-skill	?? World-class AI presentation generator  26 styles  18 charts  benchmarked against Linear/Anthropic/Stripe/Apple/NYT  a Claude Code Skill that turns one sentence into design-agency-quality decks (HTML + editable PPTX)
+58	google/pagespeed-inslides	https://github.com/google/pagespeed-inslides	HTML5 Slide Deck Generator Tool Based on the PageSpeed Insights API
+39	oxidecomputer/fable	https://github.com/oxidecomputer/fable	TOML deck generator with custom templates and schema validation
+37	AIAnytime/Text-to-PPT-Generation-Streamlit-App	https://github.com/AIAnytime/Text-to-PPT-Generation-Streamlit-App	This is an official repo for "Text to PPT Streamlit App". It generates PPT from your text using GPT-X Model and Python PPTX Library.
+34	HugoBlox/hugo-theme-markdown-slides	https://github.com/HugoBlox/hugo-theme-markdown-slides	?? Presentation slides from Markdown  LaTeX math, code highlighting, speaker notes, Git version control. AI generates pages, you own them forever. ????,Markdown ?? ??
+29	SlideSpeak/slide-design-skill	https://github.com/SlideSpeak/slide-design-skill	AI presentation engine. Describe your deck and the look, it derives a bespoke style and renders polished 1920x1080 HTML slides with real charts, tables and imagery. Agent skill: npx skills add SlideSpeak/slide-design-skill
+25	nooqta/ai-presentation	https://github.com/nooqta/ai-presentation	An OpenAI Slide Deck Generator with Reveal.js
+22	alex-yelisieiev/ai-presentation-generator	https://github.com/alex-yelisieiev/ai-presentation-generator	A tool for free AI-powered cloud-based presentation generation (no API key required)
+16	Deepnar/presentation-forge	https://github.com/Deepnar/presentation-forge	Self-hosted AI presentation generator: topic or sources in, researched themed editable PPTX and report out. Docker, BYOK or Ollama; 74 slide types, 34 themes.
+11	yoheinakajima/autodeck	https://github.com/yoheinakajima/autodeck	Automatic pitch deck generator for Google Sheets (v0.1)
+9	CY202227/PPT_Generate	https://github.com/CY202227/PPT_Generate	?? AI-powered PowerPoint generator that creates presentations using templates. Features smart content mapping, chart & SmartArt support. Built with Python and OpenAI API. Perfect for automated presentation generation.
+9	Liyilin66/ppt-agent	https://github.com/Liyilin66/ppt-agent	AI Presentation Agent with validated Slide IR, editable PPTX rendering, QA, and structured patch editing.
+7	microsoft/IF-PowerPoint-Generator	https://github.com/microsoft/IF-PowerPoint-Generator	A dynamic PowerPoint generator that will create a branded PowerPoint deck from dynamic data
+7	glangzel/llm-pptx-generator	https://github.com/glangzel/llm-pptx-generator	Generate pptx file from your prompt or pdf using Langchain.
+7	simaraconceicao/ai-presentation-agent	https://github.com/simaraconceicao/ai-presentation-agent	Agente de IA para gerao de apresentaes com ADK, Cloud Run, Gemini, Imagen 4
+7	xlisp/aippt-agent	https://github.com/xlisp/aippt-agent	AI generates ppt, realized by autogen
+6	eldstal/cardcinogen	https://github.com/eldstal/cardcinogen	A deck generator for Tabletop Simulator, allowing users to create expansions for word-card-type games.
+6	jypengpeng/AI-Presentation-Agent	https://github.com/jypengpeng/AI-Presentation-Agent	???? AI ????????????,?? Streamlit ??????,????????????????? HTML ?????
+5	HyphenK/mltdkei_v3	https://github.com/HyphenK/mltdkei_v3	MLTD Deck Analyzer - Score Simulator / Deck Generator of Million Live Theater Days (MLTD)
+5	Aaditya-Nanda/ai-ppt-generator	https://github.com/Aaditya-Nanda/ai-ppt-generator	AI-powered PowerPoint Generator using Google Gemini API and Pexels API. Built with Streamlit.
+5	JAICHANGPARK/workshop-harness	https://github.com/JAICHANGPARK/workshop-harness	AI agent harness, 15 specialized skills, Google Colab & Open Codelabs integrations, presentation slide deck generator, and CLI toolkit for technical workshops.
+5	zhangshi0512/SlideSpeak	https://github.com/zhangshi0512/SlideSpeak	Text to PPT & Speech Generator
+5	busto-dev/PepeteX	https://github.com/busto-dev/PepeteX	Self-hosted AI presentation generator  chat to a full PPTX deck, using your own AI keys.
+5	jc7k/llm_pptx_deck_builder	https://github.com/jc7k/llm_pptx_deck_builder	AI-powered PowerPoint presentation generator using LangChain, LlamaIndex, and Brave Search API. Creates research-backed presentations with proper citations and data-driven insights.
+4	Revanth-432/Pitchforge-ai	https://github.com/Revanth-432/Pitchforge-ai	AI-powered pitch deck generator that transforms project documentation into audience-specific presentations, with intelligent follow-up questions and Algorand x402 payment-gated PPT exports.
+4	Crosery/ppt-anything	https://github.com/Crosery/ppt-anything	AI story-deck generator  give it a topic, get back a coherent illustrated PPT with recurring characters and visual taste
+4	supremejohnny/powergen	https://github.com/supremejohnny/powergen	The powerpoint generator powered by GPT4 and python-pptx
+4	Faizanabid36/ai-presentation-generator-web	https://github.com/Faizanabid36/ai-presentation-generator-web	AI Powerpoint presentations creator using OpenAI(ChatGPT) API.
+3	atharvaphadnis-ai/AI-pptx	https://github.com/atharvaphadnis-ai/AI-pptx	AI PowerPoint Generator creates presentations from a topic using AI. It generates slide content, adds images, shows a live preview, and lets users download a ready PPT. Supports OpenRouter & Groq APIs with user-stored keys. Made by Atharva Phadnis.
+3	MohamedBIqbal/demo-prep-skill	https://github.com/MohamedBIqbal/demo-prep-skill	Claude Code skill for product demos: McKinsey-style HTML presentations, PowerPoint generator, built-in timer
+3	romanchaa997/IPD-Generator	https://github.com/romanchaa997/IPD-Generator	Interactive Pitch Deck Generator
+3	fasrc/stdg	https://github.com/fasrc/stdg	Slurm Test Deck Generator
+3	Mor223/Silvaco-simulation-by-agent	https://github.com/Mor223/Silvaco-simulation-by-agent	Natural language to Silvaco TCAD DevEdit/ATHENA + ATLAS deck generator and Codex skill.??????TCAD????silvaco?deckbuild?
+3	SidU/leancanvasai	https://github.com/SidU/leancanvasai	AI Powered Lean Canvas Deck Generator
+2	vivekbopaliya/text-to-ppt	https://github.com/vivekbopaliya/text-to-ppt	Text-to-PPT is a full-stack application that lets users generate professional PowerPoint presentations from descriptive topics using AI.
+2	dappatamuno/Investor-Pitch-Generator	https://github.com/dappatamuno/Investor-Pitch-Generator	AI Pitch Deck Generator: Input your startup idea and get a polished investor pitch deck instantly! Powered by GPT-4/3.5, D3.js, and Streamlit, this free tool generates slide content, formats it in markdown, adds charts, and exports everything as a styled PDF. 100% deployable on Streamlit Cloud.
+1	c4pt0r/pys9	https://github.com/c4pt0r/pys9	yet another HTML slides generator, generate your slides with markdown
+1	chandansendh/ai-presentation-agent	https://github.com/chandansendh/ai-presentation-agent	
+1	masteroyal/text-to-ppt-card-video	https://github.com/masteroyal/text-to-ppt-card-video	TTS-narrated PPT card presentations with timeline animation; outputs single-file HTML or MP4.
+1	simrahashmi5-debug/Powerpoint-generator-APIs-	https://github.com/simrahashmi5-debug/Powerpoint-generator-APIs-	Flask APIs that generate PPT from JSON using python-pptx- by Simra
+1	jinhchoii/ChatGPT-Powerpoint	https://github.com/jinhchoii/ChatGPT-Powerpoint	Powerpoint Generator using Chat GPT
+1	lhqqq2/Text-to-PPT	https://github.com/lhqqq2/Text-to-PPT	
+1	ubeydturhan/AI-Quant-Analyst-Bot	https://github.com/ubeydturhan/AI-Quant-Analyst-Bot	AI-powered financial analyst bot & automated PowerPoint generator.
+1	qitar/slidepack-examples	https://github.com/qitar/slidepack-examples	Sample code for SlidePack, the PowerPoint generator API
+1	Hellboy28D/AI-PowerPoint-Generator-	https://github.com/Hellboy28D/AI-PowerPoint-Generator-	Build a PowerPoint Generator AI Agent with LLMs
+1	JenilPoria/ai-presentation-generator	https://github.com/JenilPoria/ai-presentation-generator	An AI-powered presentation generator built with LangChain, Groq, and Streamlit. Currently migrating to a FastAPI backend.
+1	Devirus124/ai-presentation-generator-	https://github.com/Devirus124/ai-presentation-generator-	
+1	girdharkasak13-stack/Deckora-ai	https://github.com/girdharkasak13-stack/Deckora-ai	AI presentation generator built with React, Firebase and Gemini
+1	momorzq-oss/Kimibrain-Open-Source-AI-Presentation-Generator-Desktop	https://github.com/momorzq-oss/Kimibrain-Open-Source-AI-Presentation-Generator-Desktop	Kimibrain Open-Source AI Presentation Generator Desktop
+1	IndupuriMohan/ai-presentation-generator	https://github.com/IndupuriMohan/ai-presentation-generator	
+1	Khizer-ali/AI-Presentation-generator	https://github.com/Khizer-ali/AI-Presentation-generator	
+1	pagindlaharikaharika-boop/ai-presentation-generator	https://github.com/pagindlaharikaharika-boop/ai-presentation-generator	presentation
+1	hrishabh6/AI-Presentation-generator	https://github.com/hrishabh6/AI-Presentation-generator	
+1	CatwalkTK/AI_Presentation_Generator	https://github.com/CatwalkTK/AI_Presentation_Generator	Presentation Generator with AI
+1	dszondy/AI_presentation_generator	https://github.com/dszondy/AI_presentation_generator	Wacky AI presentation generatior with llama7b, stabile diffusion and google tts
+1	AlishbahGhazanfar/AI-Presentation-Generator	https://github.com/AlishbahGhazanfar/AI-Presentation-Generator	
+1	AhmadRazaCodeBits/presentationgenerator	https://github.com/AhmadRazaCodeBits/presentationgenerator	AI Presentation Generator is an innovative web application designed to help users create professional and engaging presentations in just a few seconds. Instead of spending hours designing slides, organizing content, and formatting layouts, users can simply enter a topic, prompt, or document.
+1	suningli792-spec/html-ai-ppt	https://github.com/suningli792-spec/html-ai-ppt	A Python-based AI presentation generator powered by DeepSeek API. Generate, edit, preview, and export presentations as standalone HTML files.
+1	diegoparras/presentia	https://github.com/diegoparras/presentia	Decks from documents, data and markdown  the AI presentation generator of the Escriba Suite. A fork of Presenton.
+1	SalmanSattar01/docweaver	https://github.com/SalmanSattar01/docweaver	Best Free Local AI Presentation Generator 2026 - No Uploads, No Accounts
+1	yuanbw2025/ai-presentation	https://github.com/yuanbw2025/ai-presentation	AI ?????? AI Presentation Generator  ???????????? HTML ??? / Generate interactive HTML presentations from a prompt
+1	cobacha/ppt-agent	https://github.com/cobacha/ppt-agent	Text in, slides out. Open-source AI presentation generator  paste text or URL, get professional animated slides in 30s. 18 themes, single HTML export, self-hostable. Gamma/Beautiful.ai alternative.
+1	MertBal-Dev/Present-AI	https://github.com/MertBal-Dev/Present-AI	An open-source AI presentation generator. Instantly create PPTX & PDF slides from a single topic using React, Node.js, and the Google Gemini AI API.
+1	Koneru10/text-to-ppt	https://github.com/Koneru10/text-to-ppt	
+1	pricecomstock/pptxgen	https://github.com/pricecomstock/pptxgen	A random powerpoint generator!
+1	zwayth/pitchlab	https://github.com/zwayth/pitchlab	Open-source AI pitch deck generator. Describe your startup ? get a .pptx in 30 seconds. Works with Groq, Together.ai, Ollama (all free), Anthropic, or OpenAI.
+1	buildingopen/openslides	https://github.com/buildingopen/openslides	AI pitch deck generator. Point it at any website, get a branded pitch deck in seconds. Open source, runs on floom.
+1	kanakamedaladeepika6-afk/deckbetter	https://github.com/kanakamedaladeepika6-afk/deckbetter	Multi-agent AI pitch deck generator
+1	jsonforge/json-to-ppt	https://github.com/jsonforge/json-to-ppt	Declarative, LLM-friendly PowerPoint generator. Provide a strictly structured JSON ? receive a fully editable `.pptx`.
+1	ThomasKerbrat/hyper-slides	https://github.com/ThomasKerbrat/hyper-slides	HTML slides generator
+1	baverstockUX/deckhead	https://github.com/baverstockUX/deckhead	Deckhead - AI-powered PowerPoint generator using Google Gemini
+1	silentknight-sudo/ppt_generation_chatgpt	https://github.com/silentknight-sudo/ppt_generation_chatgpt	Dive into the ease of presentation creation with PowerPoint Generator, a smart web application crafted to automate PowerPoint presentations! ?? This project is ripe for growth and eager for your contributions. Let's enhance its capability together! ??
+1	Grimbarian/PPT_Awards_Generator	https://github.com/Grimbarian/PPT_Awards_Generator	An automated CSV to PowerPoint generator which creates PPTX awards and individual certificates for schools, local organisations, or any other purpose.
+1	SoumyasreeMitra/Generative-AI-LLM-Projects-repo	https://github.com/SoumyasreeMitra/Generative-AI-LLM-Projects-repo	Built an AI-powered PowerPoint generator using Python and Google Gemini that automatically generates structured presentation slides from a user-defined topic.
+1	RajShivade/Agentic-Ai-Power-Point-Generator.	https://github.com/RajShivade/Agentic-Ai-Power-Point-Generator.	An Agentic AIpowered PowerPoint generator that creates professional, presentation-ready slides from natural-language prompts. Built using Streamlit, autonomous AI workflows, and python-pptx to automate end-to-end PPT creation without manual effort.
+1	samcsf/img2pptx-cli	https://github.com/samcsf/img2pptx-cli	A tool to generate pptx from a image folder.
+0	KATTEGUMMULAPOOJA/LINUX_LAB	https://github.com/KATTEGUMMULAPOOJA/LINUX_LAB	AI GENERATED PPT
+0	Sid-1524/Text-To-PPT	https://github.com/Sid-1524/Text-To-PPT	
+0	brishtighosh90-commits/Payroll-system	https://github.com/brishtighosh90-commits/Payroll-system	Postar , source code,ai generated ppt
+0	SRPonnaganti/text-to-ppt	https://github.com/SRPonnaganti/text-to-ppt	
+0	Aryaman-niboriya/Ai-PPT-GENERATOR-CONVERTOR	https://github.com/Aryaman-niboriya/Ai-PPT-GENERATOR-CONVERTOR	AI-powered PPT platform  generate branded presentations from topics & convert any AI-generated PPT into your school, college, or company template automatically.
+0	Krasper707/Text-to-PPT	https://github.com/Krasper707/Text-to-PPT	
+0	SnehaRanjan162/text-to-ppt	https://github.com/SnehaRanjan162/text-to-ppt	
+0	swapchavan86/TextToPPT	https://github.com/swapchavan86/TextToPPT	The Text to PPT Generator is an AI-based tool that converts user input text into structured PowerPoint slides. It uses ChatGPT to create slide titles, bullet points, and summaries, and Python-pptx to format them. It helps professionals and students quickly prepare clean, well-organized presentations.
+0	vatsalrai-evocs/Text-to-PPt-	https://github.com/vatsalrai-evocs/Text-to-PPt-	
+0	MVenkatsai02/Text-to-PPT-	https://github.com/MVenkatsai02/Text-to-PPT-	
+0	akilalohan-lang/presentation-agent	https://github.com/akilalohan-lang/presentation-agent	PurchasePlus AI Presentation Agent  converts documents to branded HTML presentations
+0	dailydaniel/llm-pptx-telegram	https://github.com/dailydaniel/llm-pptx-telegram	llm pptx generator in telegram
+0	SV592/pitch_deck	https://github.com/SV592/pitch_deck	AI Pitch deck generator
+0	abhishekghs197/AI-Presentation-Generator	https://github.com/abhishekghs197/AI-Presentation-Generator	All Presentation Generator with AI
+0	anika57/ai-presentation-generator	https://github.com/anika57/ai-presentation-generator	
+0	MamindlapellyAshmitha/Slide-spark-AI-	https://github.com/MamindlapellyAshmitha/Slide-spark-AI-	AI presentation Generator
+0	elicho1/ai-presentation-generator	https://github.com/elicho1/ai-presentation-generator	
+0	AvnishButar/vivid	https://github.com/AvnishButar/vivid	AI Presentation generator
+0	jocall3/ai-presentation-generator	https://github.com/jocall3/ai-presentation-generator	ai presentation generator
+0	rgurbanli16234/Presentation-generator-	https://github.com/rgurbanli16234/Presentation-generator-	AI Presentation Generator
+0	Nitin-777/VisionDeckAI	https://github.com/Nitin-777/VisionDeckAI	Ai presentation generator.
+0	azmart123/AI-Presentation-Generator1	https://github.com/azmart123/AI-Presentation-Generator1	AI Presentation Generator
+0	okiesfirmansyah/AI-Presentation-Generator	https://github.com/okiesfirmansyah/AI-Presentation-Generator	AI-Presentation-Generator
+0	patilketan03/agentic-ppt-generator	https://github.com/patilketan03/agentic-ppt-generator	Agentic PPT Generator turns simple text prompts into clean, professional PowerPoint presentations in seconds.
+0	gagan0116/AgentPPT	https://github.com/gagan0116/AgentPPT	Agentic PPT Generator

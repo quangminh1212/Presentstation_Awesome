@@ -1,0 +1,52 @@
+6272	gitbrent/PptxGenJS	https://github.com/gitbrent/PptxGenJS	Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.
+3556	scanny/python-pptx	https://github.com/scanny/python-pptx	Create Open XML PowerPoint documents in Python
+153	yfedoseev/office_oxide	https://github.com/yfedoseev/office_oxide	The fastest Office document library for Python, Rust, Go, JS/TS, C# and WASM. DOCX, XLSX, PPTX, DOC, XLS, PPT. Up to 100 faster than python-docx/openpyxl/python-pptx. 100% pass rate on valid Office files. MIT/Apache-2.0.
+151	Mira-13/figure-gen	https://github.com/Mira-13/figure-gen	A Python package to effortlessly assemble images in comparison figures. Supports LaTeX, PPTX, and HTML.
+109	matthewrenze/powerpoint-to-pdf	https://github.com/matthewrenze/powerpoint-to-pdf	A set of Python scripts to convert PowerPoint (PPT/PPTX) files to Adobe PDF
+108	hl123-123/yiyan-ppt	https://github.com/hl123-123/yiyan-ppt	??????+Python-pptx ,????????PPT
+97	jackbrookes/batch-ppt-to-pdf	https://github.com/jackbrookes/batch-ppt-to-pdf	Python script to convert a bunch of Microsoft Powerpoint files (.ppt or .pptx) to PDF
+64	ianustec/openwebui-generate-slides	https://github.com/ianustec/openwebui-generate-slides	Native PowerPoint (.pptx) generator tool for Open WebUI  JSON spec in, native charts/icons/layouts out. MIT.
+56	DraviaVemal/openxml-office	https://github.com/DraviaVemal/openxml-office	Create or Modify Power Point/Presentation (pptx), Excel/Spreadsheet (xlsx) & Word/Document (docx) file with ease in Rust, C#, Python????, Java????,Go???? or Typescript????
+49	python-openxml/python-opc	https://github.com/python-openxml/python-opc	Python library for manipulating Open Packaging Convention (OPC) files like .docx, .pptx, and .xslx
+47	ThibaudLamothe/translate-pptx	https://github.com/ThibaudLamothe/translate-pptx	Using Selenium and DeepL to translate powerpoint files with python-pptx
+47	samirsaci/automate-powerpoint	https://github.com/samirsaci/automate-powerpoint	Automate PowerPoint Slides Creation with Python
+45	natter1/python_pptx_interface	https://github.com/natter1/python_pptx_interface	Interface for python-pptx to easily create simple pptx files
+45	kwlo/python-pptx-templater	https://github.com/kwlo/python-pptx-templater	Create customizable PowerPoint Presentation (.pptx) using a predefined layout template
+38	mashu3/drawio2pptx	https://github.com/mashu3/drawio2pptx	drawio2pptx is a Python package that converts draw.io (diagrams.net) files to PowerPoint (.pptx) presentations.
+36	iyulab/undoc	https://github.com/iyulab/undoc	High-performance Rust library for extracting content from DOCX, XLSX, and PPTX into Markdown, plain text, or JSON with CJK support and .NET/Python bindings.
+36	LeoFC97/pptx-maker	https://github.com/LeoFC97/pptx-maker	Automao do processo de criao de apresentaes em powerPoint
+34	artifact-kit/pptxgenjs-jsx	https://github.com/artifact-kit/pptxgenjs-jsx	LLM-friendly JSX declaration layer for PptxGenJS
+34	it-beyondit/html2pptxgenjs	https://github.com/it-beyondit/html2pptxgenjs	Converts HTML into Pptx2genjs text.
+34	aws-samples/pptx-translator	https://github.com/aws-samples/pptx-translator	Python script that translates pptx files using Amazon Translate service.
+24	scholer/pptx-downsizer	https://github.com/scholer/pptx-downsizer	Python tool for downsizing Microsoft PowerPoint presentations (pptx) files.
+22	SlideSpeak/image-extractor-cli	https://github.com/SlideSpeak/image-extractor-cli	A Python ?? CLI tool to extract images from PowerPoint, Word or PDF files. Supports PPTX, DOCX, PDF.
+20	timetric/python-openxml	https://github.com/timetric/python-openxml	OpenXML library for Python: create .docx & .pptx files
+19	lofcz/pptxgenjs-plus	https://github.com/lofcz/pptxgenjs-plus	Build PowerPoint presentations with JavaScript. Works with Node, Browser, and more.
+18	zythum/pptxgen-ts-starter	https://github.com/zythum/pptxgen-ts-starter	A starter template for creating PowerPoint presentations using JSX + TypeScript with pptxgenjs. Build slides declaratively, preview instantly in the browser, and generate professional .pptx files.
+17	huangzhenhao90/pptx-deck-builder	https://github.com/huangzhenhao90/pptx-deck-builder	Build professional presentation decks with PptxGenJS, structured content workflows, and swappable visual themes
+14	ncukondo/presentation-generator	https://github.com/ncukondo/presentation-generator	PptxGenJS + Gemini TTS + ffmpeg ????????????????????
+11	zythum/pptxgenjsx	https://github.com/zythum/pptxgenjsx	A JSX runtime for building PowerPoint presentations with [pptxgenjs](https://github.com/gitbrent/pptxgenjs). Write your slides as JSX components and render them to `.pptx` files.
+9	CacinieP/slide-recipes	https://github.com/CacinieP/slide-recipes	Editable PPTX + Markdown, AI outlines. China: https://slides.linguistwantstech.online/ | Global: https://slide-recipes-web.vercel.app/
+9	cm-uehara/classmethod-pptxgenjs-template	https://github.com/cm-uehara/classmethod-pptxgenjs-template	???????????PptxGenJS????????????
+8	ProgrammerSteve/powerpointWithChatGpt	https://github.com/ProgrammerSteve/powerpointWithChatGpt	A simple script that uses openai's "text-davinci-003" model and pptxgenjs to make a quick powerpoint on a specified topic
+6	anotb/pptx-masters	https://github.com/anotb/pptx-masters	Extract PptxGenJS slide masters from corporate PowerPoint templates
+6	beautifulai/PptxGenJS	https://github.com/beautifulai/PptxGenJS	Create PowerPoint presentations with a powerful, concise JavaScript API.
+5	marp-team/pptx	https://github.com/marp-team/pptx	A wrapper module for creating PPTX using PptxGenJS, with the least module size
+5	anmism/pptxgenjs-animation	https://github.com/anmism/pptxgenjs-animation	Pptxgenjs + Animation - Create Animated Slides
+2	hashi-demo-lab/html2pptx-cli	https://github.com/hashi-demo-lab/html2pptx-cli	
+1	DNA-Dave/RAS_Image_Powerpoint_Generator	https://github.com/DNA-Dave/RAS_Image_Powerpoint_Generator	I had around 100 images in six treatment groups that I wanted to be able to create a powerpoint presentation with one image from each treatment group in order to be able to visually inspect and compare. I found a cool python library called pptx that allowed me to manipulate powerpoint files directly from the code, and therefore, this small script created the presentation I wanted, greatly speeding up the process compared to if I had to manually create all of the slides myself.
+1	IanDarwin/TextToPpt	https://github.com/IanDarwin/TextToPpt	Convert tab-indented slide outline into modern PPTX
+1	TrinhVinh2003/TextToPPTX	https://github.com/TrinhVinh2003/TextToPPTX	
+1	niyo-oyin/llm-pptx-gen-test	https://github.com/niyo-oyin/llm-pptx-gen-test	
+1	ThomasRohde/pptx-cli	https://github.com/ThomasRohde/pptx-cli	
+0	shandianchengzi/ai-generate-ppt-html-and-split-framework	https://github.com/shandianchengzi/ai-generate-ppt-html-and-split-framework	AI??ppt????????????,????????????,?????pptx??????????????
+0	huatam391/ai-generate-pptx	https://github.com/huatam391/ai-generate-pptx	
+0	Furqon-ahmad/ai-generate-pptx	https://github.com/Furqon-ahmad/ai-generate-pptx	
+0	ars52/text_to_pptx	https://github.com/ars52/text_to_pptx	
+0	themoonwalker1/llm_pptx	https://github.com/themoonwalker1/llm_pptx	Create powerpoints using LLMS
+0	qy-777/llm-posttraining-ppt-resources-20260906	https://github.com/qy-777/llm-posttraining-ppt-resources-20260906	Public datasets, scripts, and Qwen evaluation evidence referenced by LLM.pptx
+0	deckflow/html2deck	https://github.com/deckflow/html2deck	html to deck(pptx) cli tool, support macos, win, linux
+0	XiRouz/pptxpresenter_client	https://github.com/XiRouz/pptxpresenter_client	
+0	TheOneGuo/Notebooklm-pptx-cli	https://github.com/TheOneGuo/Notebooklm-pptx-cli	
+0	shazam19/MdToPptx.Client	https://github.com/shazam19/MdToPptx.Client	
+0	caraya/md2pptx-cli	https://github.com/caraya/md2pptx-cli	

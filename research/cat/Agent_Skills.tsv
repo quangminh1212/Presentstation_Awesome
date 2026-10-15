@@ -1,0 +1,59 @@
+27973	op7418/guizang-ppt-skill	https://github.com/op7418/guizang-ppt-skill	AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.
+4781	zarazhangrui/beautiful-html-templates	https://github.com/zarazhangrui/beautiful-html-templates	A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.
+3630	GordenSun/GordenPPTSkill	https://github.com/GordenSun/GordenPPTSkill	AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-destructive text-only editing tools (python-pptx based). Pick a template, write edits.json, build a real .pptx with the layout intact. Personal/research use only.
+415	ryanbbrown/revealjs-skill	https://github.com/ryanbbrown/revealjs-skill	Coding agent skill for making reveal.js presentations
+406	minorun365/minorun-marp-skill	https://github.com/minorun365/minorun-marp-skill	Marp?????????????????????????????????????????????
+324	robonuggets/marp-slides	https://github.com/robonuggets/marp-slides	MARP presentation skill for Claude Code  22 curated example decks, SVG charts, dark/light themes, dashboard components
+303	likaku/Mck-ppt-design-skill	https://github.com/likaku/Mck-ppt-design-skill	Consulting firm-style PowerPoint design system for AI agents. 70 layout patterns, flat design, python-pptx. ????PPT?????
+276	ferdinandobons/brand-docs	https://github.com/ferdinandobons/brand-docs	BrandDocs is a set of agent skills that learn your existing Word, PowerPoint and Excel templates and generate new on-brand documents from them. Unlike generic AI document generators, it preserves brand, structure, styles and formulas by construction. Built for Claude Code, Codex and compatible AI agents.
+269	zouchenzhen/thesis-defense-pptx-skill	https://github.com/zouchenzhen/thesis-defense-pptx-skill	Codex / Claude Skill for editable thesis-defense PPTX from PDF or LaTeX while preserving a PowerPoint template. ??? PDF / LaTeX ??????? PPTX,????? PPT ?????
+169	ToseaAI/awesome-html-slide-skills	https://github.com/ToseaAI/awesome-html-slide-skills	A curated list of HTML slide generation skills and template libraries for Claude Code, Codex, Cursor, OpenClaw, and Hermes. ?? HTML ???? Skill ?????
+152	code-on-sunday/slide-deck-generator	https://github.com/code-on-sunday/slide-deck-generator	AI skill for coding agents that creates production-ready, browser-based presentation slide decks using React + Vite + Framer Motion
+132	Kuneosu/make-slide	https://github.com/Kuneosu/make-slide	Universal AI skill for generating standalone HTML slide decks
+87	Hasasasa/html-to-editable-pptx	https://github.com/Hasasasa/html-to-editable-pptx	Convert HTML slide decks to truly editable PPT / .pptx - text stays native PowerPoint textboxes, not screenshots. Agent Skill (Claude Code / Cursor / Codex / opencode) + plain Python CLI.
+86	edu-ai-builders/visual-cognition-slides	https://github.com/edu-ai-builders/visual-cognition-slides	An HTML slide design skill grounded in cognitive science and instructional design. Outputs presentation decks optimized for knowledge retention. ???????????? HTML slides ???????????????????,????????????????
+76	siril9/presentation-skill	https://github.com/siril9/presentation-skill	MIT-licensed agent skill and Codex plugin for content-led, editable PowerPoint decks. Rebuild from JSON; native charts, tables, and rendered visual QA.
+76	UniUni2000/slideblocks-skill	https://github.com/UniUni2000/slideblocks-skill	SlideBlocks agent skill for creating and improving Slidev presentations
+51	arifszn/slide-wright	https://github.com/arifszn/slide-wright	AI agent skill to generate beautiful, unique slide decks with reveal.js - new design for every prompt.
+34	Phlegonlabs/Powerpoint-fancy-design	https://github.com/Phlegonlabs/Powerpoint-fancy-design	A presentation-design skill for Codex and Claude Code that turns page-structured Markdown into styled 1600x900 HTML slides, PNG renders, and exportable PPTX decks.
+20	Emily27-alt/html-to-pptx	https://github.com/Emily27-alt/html-to-pptx	Claude Code skill: convert HTML slide decks to editable .pptx (native shapes, not screenshots)
+19	milesprovus/Monocle-Teleprompter	https://github.com/milesprovus/Monocle-Teleprompter	A teleprompter app for the Monocle by Brilliant Labs using the Google Slides API
+16	prodigeproject/pradaslides	https://github.com/prodigeproject/pradaslides	Capability-aware, audience-ready presentation agent skill for PPTX, HTML slides, PDF, and deck planning.
+15	shawnzam/keynot	https://github.com/shawnzam/keynot	A Claude Code skill that turns any prompt into a polished, self-contained HTML slide deck  no Keynote or PowerPoint required.
+14	caikankan/cyberbin-ppt-skill	https://github.com/caikankan/cyberbin-ppt-skill	CyberBin PPT Skill for generating local HTML slide decks
+12	artifact-kit/html-to-pptx-skill	https://github.com/artifact-kit/html-to-pptx-skill	Teach an agent to turn HTML pages into downloadable, editable PowerPoint decks with @artifact-kit/pptxgenjs-jsx
+12	scraperai/awesome-presentations	https://github.com/scraperai/awesome-presentations	A curated showcase of AI-generated slide decks  every deck built end-to-end from a single text prompt.
+11	ABYR1206/claude-skill-hand-drawn-slides	https://github.com/ABYR1206/claude-skill-hand-drawn-slides	Claude Skill: generate hand-drawn doodle-style PowerPoint chapter divider slides  muted backgrounds, serif titles, 40-illustration SVG library
+11	ontology-of-everything/concept-skills	https://github.com/ontology-of-everything/concept-skills	Ontology, semantic-layer, concept-design, and presentation Agent Skills.
+10	NestMold/notrat-ppt-studio-skill	https://github.com/NestMold/notrat-ppt-studio-skill	?? Notrat ?????????? PowerPoint ??????? ??? / ?????? / ??????  ,????????? / ?? / ?? / ????,??GPT-Image-2?????
+10	algerchen2024/image-to-editable-pptx	https://github.com/algerchen2024/image-to-editable-pptx	ChatGPT Skill + portable PageIR/PptxGenJS workflow for rebuilding flattened slide images into source-faithful editable PowerPoint files.
+9	vedraut/slidesage	https://github.com/vedraut/slidesage	Agent-agnostic skill that generates beautiful, static .pptx decks driven by storytelling + instructional design. Works with any LLM.
+8	alphaparkinc/genpark-venture-pitch-deck-narrative-synthesizer-skill	https://github.com/alphaparkinc/genpark-venture-pitch-deck-narrative-synthesizer-skill	Venture pitch deck narrative synthesizer & TAM market modeler (AI Pitch Deck)
+8	bruc3van/bruce-pptx-generator	https://github.com/bruc3van/bruce-pptx-generator	???? AI ?? Agent ??? PPT ?? Skill,? openclaw ????????,???????????? PowerPoint ?????
+7	cosen1024/awesome-presentation-skills	https://github.com/cosen1024/awesome-presentation-skills	A curated catalog of verified Presentation Agent Skills for editable PPTX, HTML slides, and image-first decks.
+6	anyideaz/pptx-skills	https://github.com/anyideaz/pptx-skills	AI Skills that create PowerPoint from your templates. Preserves brand design, fonts, colors, layouts. For Claude Code & Copilot.
+6	thanhlamauto/weekly-research-slides	https://github.com/thanhlamauto/weekly-research-slides	Agent skill for turning weekly research into editable PowerPoint, Manim method-explainer videos with narration/subtitles, and publication-quality draw.io figures.
+5	Liuguanyi2125/editable-pptx-skill	https://github.com/Liuguanyi2125/editable-pptx-skill	??????? PowerPoint ? Codex/Claude skill ? Node.js ???
+3	bibhupradhanofficial/AI-Pitch-Deck-Generator	https://github.com/bibhupradhanofficial/AI-Pitch-Deck-Generator	A multimodal AI agent that generates complete startup pitch decks including slides, charts, product mockup images, voiceover scripts, promo video clips, and social media captions from a single text prompt.
+2	kbon526/claude-skill-pptx-cjk	https://github.com/kbon526/claude-skill-pptx-cjk	?? PPT ???? Skill  Claude Code/Agent ?,?? python-pptx + ???????CJK Chinese PowerPoint skill for Claude Code.
+1	Woo3aN/obsidian-note-ingest	https://github.com/Woo3aN/obsidian-note-ingest	??? / ??? / ????? Obsidian ??? AI Agent skill:PPTX?PDF?DOCX??????? ? ???????????????????,????? Agent ???
+1	omshdev/AI-Pitch-Deck	https://github.com/omshdev/AI-Pitch-Deck	Generate complete presentation decks directly from your knowledge base.  Upload PDFs, documents, notes, or other resources, then ask a question or provide a topic. The system researches the available context, creates a structured narrative, generates slide content, suggests visuals, and produces a presentation-ready deck.
+1	liu-ganghao/claude-skill-pptx-cn	https://github.com/liu-ganghao/claude-skill-pptx-cn	Claude Code skill  generate Chinese-first .pptx via pptxgenjs (pure Node). Navy academic palette, best-value-highlighted result tables, chart scaffolds, and a catalog of file-corrupting / Chinese-font pitfalls.
+0	yvonne96073/ai-agent-skill-slides-20260626	https://github.com/yvonne96073/ai-agent-skill-slides-20260626	
+0	yogan/agent-skills-slides	https://github.com/yogan/agent-skills-slides	Slides for a talk about https://github.com/yogan/agent-skills
+0	eduardo-hoefel-rcx/claude-skill-pptx	https://github.com/eduardo-hoefel-rcx/claude-skill-pptx	
+0	kawaji/claude-skill-pptx-preview	https://github.com/kawaji/claude-skill-pptx-preview	Claude Code skill: PowerPoint for Mac ? PPTX ??????? PNG ???????????
+0	lichuanhua0701AI/mkdir--p-.claude-skills-pptx	https://github.com/lichuanhua0701AI/mkdir--p-.claude-skills-pptx	ppt skill
+0	yuebinzhang77-hub/yb-slide-skill	https://github.com/yuebinzhang77-hub/yb-slide-skill	Nothing-style HTML slide generator  Claude Code skill. 13 slide layouts, PicNic + PPEditorialNew typography, dark/light mode.
+0	KUMAKIRI1228/claude-skill-pptx	https://github.com/KUMAKIRI1228/claude-skill-pptx	Professional PPTX creation and editing skill for Claude Code with TERRAISE design standards
+0	MasoudKaviani/revealjsskill	https://github.com/MasoudKaviani/revealjsskill	reveal.js HTML slide generator skill for AI Agents
+0	ahmedessamaliali/eha-presentation	https://github.com/ahmedessamaliali/eha-presentation	EHA Presentation skill for Claude Code  Arabic-first, RTL-aware HTML slide generator with Egypt Healthcare Authority brand identity
+0	eruto-skills/presentation	https://github.com/eruto-skills/presentation	Claude Code skill  Presentation structure design, routes to marp skill
+0	IhorShmidt/Claude-Skill-Presentation	https://github.com/IhorShmidt/Claude-Skill-Presentation	
+0	AuYoungCampeur/claude-skills-presentation	https://github.com/AuYoungCampeur/claude-skills-presentation	Marp presentation: From Prompt Engineering to AI Agent - Agent Skills Guide
+0	edengal/claude-code-skills-presentation	https://github.com/edengal/claude-code-skills-presentation	Claude Code Skills - Salesforce-styled web presentation
+0	denisagasarov-sketch/preza-5-stiley	https://github.com/denisagasarov-sketch/preza-5-stiley	Claude skill: presentation 5 styles
+0	shaharsha/claude-skill-presentation-generator	https://github.com/shaharsha/claude-skill-presentation-generator	Moved to shaharsha/claude-skills - this repo is archived. See https://github.com/shaharsha/claude-skills
+0	Athena4441/llm-wiki-demo	https://github.com/Athena4441/llm-wiki-demo	Public LLM Wiki knowledge-base presentation
+0	torreytsui/knowledge-base-presentation	https://github.com/torreytsui/knowledge-base-presentation	Offer presentation slides for promoting ideas behind knowledge base
+0	Huride/claude-skills-presentation	https://github.com/Huride/claude-skills-presentation	
