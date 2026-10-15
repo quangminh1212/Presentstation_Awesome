@@ -2,7 +2,7 @@
 
 > A curated, aggregated list of **GitHub repositories that help you build presentations, slides and PowerPoint decks with AI, agents, MCP servers, CLIs or web frameworks** — including AI generators, MCP servers, agent skills, plugins, libraries, themes and knowledge bases.
 
-**800 repositories** aggregated from GitHub search (sorted by stars). Filters applied to drop unrelated "slider/carousel", flashcard, trading-card and game-deck repos.
+**33140 repositories** aggregated from GitHub search (sorted by stars). Filters applied to drop unrelated "slider/carousel", flashcard, trading-card and game-deck repos.
 
 ## Contents
 
@@ -21,891 +21,4115 @@
 
 The highest-starred and most influential repositories across all categories:
 
-- [hakimel/reveal.js](https://github.com/hakimel/reveal.js) — ★ 72,430 — The HTML Presentation Framework
-- [slidevjs/slidev](https://github.com/slidevjs/slidev) — ★ 49,055 — Presentation Slides for Developers
-- [impress/impress.js](https://github.com/impress/impress.js) — ★ 38,153 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
-- [op7418/guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill) — ★ 27,973 — AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentati...
-- [marp-team/marp](https://github.com/marp-team/marp) — ★ 12,640 — The entrance repository of Markdown presentation ecosystem
-- [presenton/presenton](https://github.com/presenton/presenton) — ★ 11,116 — Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)
-- [yhatt/marp](https://github.com/yhatt/marp) — ★ 7,847 — The site of classic Markdown presentation writer app
-- [gitbrent/PptxGenJS](https://github.com/gitbrent/PptxGenJS) — ★ 6,272 — Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.
-- [imakewebthings/deck.js](https://github.com/imakewebthings/deck.js) — ★ 5,416 — Modern HTML Presentations
-- [zarazhangrui/beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) — ★ 4,781 — A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.
-- [jonschlinkert/gray-matter](https://github.com/jonschlinkert/gray-matter) — ★ 4,492 — Smarter YAML front matter parser, used by metalsmith, Gatsby, Netlify, Assemble, mapbox-gl, phenomic, vuejs vitepress, TinaCMS, Shopify Polaris, Ant Design, ...
-- [webpro/reveal-md](https://github.com/webpro/reveal-md) — ★ 3,912 — reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file
-- [marp-team/marp-cli](https://github.com/marp-team/marp-cli) — ★ 3,870 — A CLI interface for Marp and Marpit based converters
-- [damianavila/RISE](https://github.com/damianavila/RISE) — ★ 3,735 — RISE: "Live" Reveal.js Jupyter/IPython Slideshow Extension
-- [GordenSun/GordenPPTSkill](https://github.com/GordenSun/GordenPPTSkill) — ★ 3,630 — AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-destructive text-only editing tools (python-pptx based). Pick a template, write ...
-- [scanny/python-pptx](https://github.com/scanny/python-pptx) — ★ 3,556 — Create Open XML PowerPoint documents in Python
-- [allweonedev/presentation-ai](https://github.com/allweonedev/presentation-ai) — ★ 3,039 — ALLWEONE Open source AI presentation generator Gamma Alternative. Create professional slides with customizable themes and AI-generated content in minutes.
-- [arcsin1/oh-my-ppt](https://github.com/arcsin1/oh-my-ppt) — ★ 2,133 — Describe what you need  a presentation, lesson, or story  and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.
-- [marp-team/marp-vscode](https://github.com/marp-team/marp-vscode) — ★ 2,099 — Marp for VS Code: Create slide deck written in Marp Markdown on VS Code
-- [tantaman/strut](https://github.com/tantaman/strut) — ★ 1,892 — Strut - An Impress.js and Bespoke.js Presentation Editor
-- [GongRzhe/Office-PowerPoint-MCP-Server](https://github.com/GongRzhe/Office-PowerPoint-MCP-Server) — ★ 1,856 — A MCP (Model Context Protocol) server for PowerPoint manipulation using python-pptx. This server provides tools for creating, editing, and manipulating Power...
-- [yjwen/org-reveal](https://github.com/yjwen/org-reveal) — ★ 1,463 — Exports Org-mode contents to Reveal.js HTML presentation.
-- [marp-team/marpit](https://github.com/marp-team/marpit) — ★ 1,387 — The skinny framework for creating slide deck from Markdown
-- [MSzturc/obsidian-advanced-slides](https://github.com/MSzturc/obsidian-advanced-slides) — ★ 1,264 — Create markdown-based reveal.js presentations in Obsidian
-- [marp-team/marp-core](https://github.com/marp-team/marp-core) — ★ 1,157 — The core of Marp converter
-- [favourhong/Awesome-Marp](https://github.com/favourhong/Awesome-Marp) — ★ 1,050 — An open-source presentation theme ecosystem for Marp/Markdown users.
-- [huohua325/Memslides](https://github.com/huohua325/Memslides) — ★ 838 — A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.
-- [rajgoel/reveal.js-plugins](https://github.com/rajgoel/reveal.js-plugins) — ★ 816 — Plugins for reveal.js
-- [datitran/jupyter2slides](https://github.com/datitran/jupyter2slides) — ★ 792 — Cloud Native Presentation Slides with Jupyter Notebook + Reveal.js
-- [joshed-io/reveal-hugo](https://github.com/joshed-io/reveal-hugo) — ★ 747 — ??? Create rich HTML-based presentations with Hugo and Reveal.js
-- [harish-io/Impressionist](https://github.com/harish-io/Impressionist) — ★ 706 — Visual tool to create impress.js presentations
-- [willy-vvu/reveal.js](https://github.com/willy-vvu/reveal.js) — ★ 690 — This is what I got when I combined webcam-based gesture recognition with Hakim El Hattab's reveal.js.
-- [yu4u/convnet-drawer](https://github.com/yu4u/convnet-drawer) — ★ 608 — Python script for illustrating Convolutional Neural Networks (CNN) using Keras-like model definitions
-- [marp-team/awesome-marp](https://github.com/marp-team/awesome-marp) — ★ 523 — A curated list of awesome things related to Marp
-- [MartenBE/mkslides](https://github.com/MartenBE/mkslides) — ★ 481 — Use mkslides to easily turn markdown files into beautiful slides using the power of Reveal.js!
-- [cpp-for-yourself/lectures-and-homeworks](https://github.com/cpp-for-yourself/lectures-and-homeworks) — ★ 430 — ?? A place for all lecture scripts, projects etc. for the "C++ for yourself" course
-- [slara/generator-reveal](https://github.com/slara/generator-reveal) — ★ 427 — Yeoman generator for Reveal.js
-- [grantmcdermott/quarto-revealjs-clean](https://github.com/grantmcdermott/quarto-revealjs-clean) — ★ 417 — A minimalist and elegant presentation theme for Quarto Reveal.js
-- [ryanbbrown/revealjs-skill](https://github.com/ryanbbrown/revealjs-skill) — ★ 415 — Coding agent skill for making reveal.js presentations
-- [minorun365/minorun-marp-skill](https://github.com/minorun365/minorun-marp-skill) — ★ 406 — Marp?????????????????????????????????????????????
-- [cytoscape/cytoscape-tutorials](https://github.com/cytoscape/cytoscape-tutorials) — ★ 336 — Collection of modular Cytoscape tutorials for online presentation using reveal.js
-- [soxoj/marple](https://github.com/soxoj/marple) — ★ 332 — ?? Collect links to profiles by username through search engines and analyze with various plugins
-- [egonSchiele/mdpress](https://github.com/egonSchiele/mdpress) — ★ 331 — [DEAD] Make impress.js presentations from markdown files.
-- [rstudio/revealjs](https://github.com/rstudio/revealjs) — ★ 329 — R Markdown Format for reveal.js Presentations
-- [robonuggets/marp-slides](https://github.com/robonuggets/marp-slides) — ★ 324 — MARP presentation skill for Claude Code  22 curated example decks, SVG charts, dark/light themes, dashboard components
+- [fighting41love](https://github.com/fighting41love/funNLP) — ★ 83,911 — 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、...
+- [hakimel](https://github.com/hakimel/reveal.js) — ★ 72,430 — The HTML Presentation Framework
+- [hugohe3](https://github.com/hugohe3/ppt-master) — ★ 62,142 — AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audi...
+- [kepano](https://github.com/kepano/obsidian-skills) — ★ 49,560 — Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.
+- [slidevjs](https://github.com/slidevjs/slidev) — ★ 49,055 — Presentation Slides for Developers
+- [jgm](https://github.com/jgm/pandoc) — ★ 46,590 — Universal markup converter
+- [impress](https://github.com/impress/impress.js) — ★ 38,154 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
+- [iOfficeAI](https://github.com/iOfficeAI/OfficeCLI) — ★ 32,022 — OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, s...
+- [zarazhangrui](https://github.com/zarazhangrui/frontend-slides) — ★ 30,675 — Create beautiful slides on the web using a coding agent's frontend skills
+- [op7418](https://github.com/op7418/guizang-ppt-skill) — ★ 27,980 — AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentati...
+- [dream-num](https://github.com/dream-num/univer) — ★ 22,606 — The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-releases) — ★ 22,249 — Community plugins list, theme list, and releases of Obsidian.
+- [iamgio](https://github.com/iamgio/quarkdown) — ★ 16,315 — 🪐 Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases.
+- [Anionex](https://github.com/Anionex/banana-slides) — ★ 15,753 — 一站式原生AI PPT生成应用，几分钟内生成一套幻灯片; 支持上传任意模板图片，上传任意素材&智能解析，一句话/大纲/页面描述自动生成PPT，口头修改指定区域、一键导出可编辑ppt、视频等 - An AI-native slides generator based on nano banana pro🍌
+- [YishenTu](https://github.com/YishenTu/claudian) — ★ 15,671 — An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault
+- [AgriciDaniel](https://github.com/AgriciDaniel/claude-obsidian) — ★ 15,542 — Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain...
+- [marp-team](https://github.com/marp-team/marp) — ★ 12,640 — The entrance repository of Markdown presentation ecosystem
+- [Vinzent03](https://github.com/Vinzent03/obsidian-git) — ★ 12,119 — Integrate Git version control with automatic commit-and-sync and other advanced features in Obsidian.md
+- [maaslalani](https://github.com/maaslalani/slides) — ★ 11,685 — Terminal based presentation tool
+- [jxnblk](https://github.com/jxnblk/mdx-deck) — ★ 11,499 — ♠️ React MDX-based presentation decks
+- [presenton](https://github.com/presenton/presenton) — ★ 11,116 — Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)
+- [ksky521](https://github.com/ksky521/nodeppt) — ★ 10,330 — This is probably the best web presentation tool so far!
+- [FormidableLabs](https://github.com/FormidableLabs/spectacle) — ★ 10,179 — A React-based library for creating sleek presentations using JSX syntax that gives you the ability to live demo your code.
+- [genspark-ai](https://github.com/genspark-ai/genoffice) — ★ 9,704 — Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so C...
+- [chuspeeism](https://github.com/chuspeeism/dashi-ppt-skill) — ★ 9,536 — An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.
+- [kmaasrud](https://github.com/kmaasrud/awesome-obsidian) — ★ 9,451 — 🕶️ Awesome stuff for Obsidian
+- [pipipi-pikachu](https://github.com/pipipi-pikachu/PPTist) — ★ 9,387 — PowerPoint-ist（/'pauəpɔintist/）, An online presentation application that replicates most of the commonly used features of MS PowerPoint, allowing for the edi...
+- [open-slide](https://github.com/open-slide/open-slide) — ★ 9,247 — A slide framework built for agents.
+- [nexu-io](https://github.com/nexu-io/html-anything) — ★ 9,127 — ✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · ...
+- [mfontanini](https://github.com/mfontanini/presenterm) — ★ 8,919 — A markdown terminal slideshow tool
+- [lewislulu](https://github.com/lewislulu/html-ppt-skill) — ★ 8,696 — HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations
+- [OpenCoworkAI](https://github.com/OpenCoworkAI/open-codesign) — ★ 8,056 — Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini...
+- [yhatt](https://github.com/yhatt/marp) — ★ 7,847 — The site of classic Markdown presentation writer app
+- [logancyang](https://github.com/logancyang/obsidian-copilot) — ★ 7,830 — Run agents in Obsidian - OpenCode, Codex, Claude Code etc.
+- [The-Vibe-Company](https://github.com/The-Vibe-Company/megaparse) — ★ 7,414 — File Parser optimised for LLM Ingestion with no loss 🧠 Parse PDFs, Docx, PPTx in a format that is ideal for LLMs.
+- [grab](https://github.com/grab/cursor-talk-to-figma-mcp) — ★ 7,054 — TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code, Codex) and Figma, allowing Agentic AI to communicate with Figma for reading designs and m...
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DocumentServer) — ★ 7,020 — ONLYOFFICE Docs is a free collaborative online office suite comprising viewers and editors for texts, spreadsheets and presentations, forms and PDF, fully co...
+- [matze](https://github.com/matze/mtheme) — ★ 6,904 — A modern LaTeX Beamer theme
+- [ningzimu](https://github.com/ningzimu/codex-ppt-skill) — ★ 6,877 — GPT-Image-2 PPT Generator Skill for Creating Image-Based PowerPoint Presentations in Codex and Other Skill-Compatible Agents
+- [pomber](https://github.com/pomber/code-surfer) — ★ 6,372 — Rad code slides <🏄/>
+- [webslides](https://github.com/webslides/WebSlides) — ★ 6,326 — Create HTML presentations in seconds —
+- [gitbrent](https://github.com/gitbrent/PptxGenJS) — ★ 6,273 — Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.
+- [netease-youdao](https://github.com/netease-youdao/LobsterAI) — ★ 6,113 — Open-source, desktop-grade AI agent that gets real work done — data analysis, slides, docs, video & web research. Built on OpenClaw; runs tools on your real ...
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DesktopEditors) — ★ 5,558 — Open-source office suite pack that comprises all the tools you need to work with documents, spreadsheets, presentations, PDFs, and PDF forms on Windows, Linu...
+- [brianpetro](https://github.com/brianpetro/obsidian-smart-connections) — ★ 5,502 — Find related notes and excerpts while writing. Your link building copilot displays relevant content in graph + list view. A local embedding model powers sema...
 
 ## AI Presentation Generators (end-to-end)
 
 Turn a topic, document or prompt into a full deck automatically (HTML, PPTX or hosted slides).
 
-- [presenton/presenton](https://github.com/presenton/presenton) — ★ 11,116 — Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)
-- [allweonedev/presentation-ai](https://github.com/allweonedev/presentation-ai) — ★ 3,039 — ALLWEONE Open source AI presentation generator Gamma Alternative. Create professional slides with customizable themes and AI-generated content in minutes.
-- [arcsin1/oh-my-ppt](https://github.com/arcsin1/oh-my-ppt) — ★ 2,133 — Describe what you need  a presentation, lesson, or story  and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.
-- [CyberTimon/Powerpointer-For-Local-LLMs](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs) — ★ 308 — Local Powerpointer - A beautiful powerpoint generator which uses the power of local running large language models to generate the powerpoint slides.
-- [CyberTimon/Powerpointer](https://github.com/CyberTimon/Powerpointer) — ★ 178 — Powerpointer - A beautiful powerpoint generator which uses GPT 3.5 to generate the slides.
-- [yuyuanweb/ai-ppt-generator](https://github.com/yuyuanweb/ai-ppt-generator) — ★ 165 — 2026 ????? AI ???????,?? Python FastAPI + LangChain + LangGraph + React ? AI PPT ???,???? / ??? / ???????????????????????????????????????? PPTX ????? LangCha...
-- [Akxan/ppt-agent-skill](https://github.com/Akxan/ppt-agent-skill) — ★ 162 — ?? World-class AI presentation generator  26 styles  18 charts  benchmarked against Linear/Anthropic/Stripe/Apple/NYT  a Claude Code Skill that turns one sen...
-- [google/pagespeed-inslides](https://github.com/google/pagespeed-inslides) — ★ 58 — HTML5 Slide Deck Generator Tool Based on the PageSpeed Insights API
-- [oxidecomputer/fable](https://github.com/oxidecomputer/fable) — ★ 39 — TOML deck generator with custom templates and schema validation
-- [AIAnytime/Text-to-PPT-Generation-Streamlit-App](https://github.com/AIAnytime/Text-to-PPT-Generation-Streamlit-App) — ★ 37 — This is an official repo for "Text to PPT Streamlit App". It generates PPT from your text using GPT-X Model and Python PPTX Library.
-- [HugoBlox/hugo-theme-markdown-slides](https://github.com/HugoBlox/hugo-theme-markdown-slides) — ★ 34 — ?? Presentation slides from Markdown  LaTeX math, code highlighting, speaker notes, Git version control. AI generates pages, you own them forever. ????,Markd...
-- [SlideSpeak/slide-design-skill](https://github.com/SlideSpeak/slide-design-skill) — ★ 29 — AI presentation engine. Describe your deck and the look, it derives a bespoke style and renders polished 1920x1080 HTML slides with real charts, tables and i...
-- [nooqta/ai-presentation](https://github.com/nooqta/ai-presentation) — ★ 25 — An OpenAI Slide Deck Generator with Reveal.js
-- [alex-yelisieiev/ai-presentation-generator](https://github.com/alex-yelisieiev/ai-presentation-generator) — ★ 22 — A tool for free AI-powered cloud-based presentation generation (no API key required)
-- [Deepnar/presentation-forge](https://github.com/Deepnar/presentation-forge) — ★ 16 — Self-hosted AI presentation generator: topic or sources in, researched themed editable PPTX and report out. Docker, BYOK or Ollama; 74 slide types, 34 themes.
-- [yoheinakajima/autodeck](https://github.com/yoheinakajima/autodeck) — ★ 11 — Automatic pitch deck generator for Google Sheets (v0.1)
-- [CY202227/PPT_Generate](https://github.com/CY202227/PPT_Generate) — ★ 9 — ?? AI-powered PowerPoint generator that creates presentations using templates. Features smart content mapping, chart & SmartArt support. Built with Python an...
-- [Liyilin66/ppt-agent](https://github.com/Liyilin66/ppt-agent) — ★ 9 — AI Presentation Agent with validated Slide IR, editable PPTX rendering, QA, and structured patch editing.
-- [microsoft/IF-PowerPoint-Generator](https://github.com/microsoft/IF-PowerPoint-Generator) — ★ 7 — A dynamic PowerPoint generator that will create a branded PowerPoint deck from dynamic data
-- [glangzel/llm-pptx-generator](https://github.com/glangzel/llm-pptx-generator) — ★ 7 — Generate pptx file from your prompt or pdf using Langchain.
-- [simaraconceicao/ai-presentation-agent](https://github.com/simaraconceicao/ai-presentation-agent) — ★ 7 — Agente de IA para gerao de apresentaes com ADK, Cloud Run, Gemini, Imagen 4
-- [xlisp/aippt-agent](https://github.com/xlisp/aippt-agent) — ★ 7 — AI generates ppt, realized by autogen
-- [eldstal/cardcinogen](https://github.com/eldstal/cardcinogen) — ★ 6 — A deck generator for Tabletop Simulator, allowing users to create expansions for word-card-type games.
-- [jypengpeng/AI-Presentation-Agent](https://github.com/jypengpeng/AI-Presentation-Agent) — ★ 6 — ???? AI ????????????,?? Streamlit ??????,????????????????? HTML ?????
-- [HyphenK/mltdkei_v3](https://github.com/HyphenK/mltdkei_v3) — ★ 5 — MLTD Deck Analyzer - Score Simulator / Deck Generator of Million Live Theater Days (MLTD)
-- [Aaditya-Nanda/ai-ppt-generator](https://github.com/Aaditya-Nanda/ai-ppt-generator) — ★ 5 — AI-powered PowerPoint Generator using Google Gemini API and Pexels API. Built with Streamlit.
-- [JAICHANGPARK/workshop-harness](https://github.com/JAICHANGPARK/workshop-harness) — ★ 5 — AI agent harness, 15 specialized skills, Google Colab & Open Codelabs integrations, presentation slide deck generator, and CLI toolkit for technical workshops.
-- [zhangshi0512/SlideSpeak](https://github.com/zhangshi0512/SlideSpeak) — ★ 5 — Text to PPT & Speech Generator
-- [busto-dev/PepeteX](https://github.com/busto-dev/PepeteX) — ★ 5 — Self-hosted AI presentation generator  chat to a full PPTX deck, using your own AI keys.
-- [jc7k/llm_pptx_deck_builder](https://github.com/jc7k/llm_pptx_deck_builder) — ★ 5 — AI-powered PowerPoint presentation generator using LangChain, LlamaIndex, and Brave Search API. Creates research-backed presentations with proper citations a...
-- [Revanth-432/Pitchforge-ai](https://github.com/Revanth-432/Pitchforge-ai) — ★ 4 — AI-powered pitch deck generator that transforms project documentation into audience-specific presentations, with intelligent follow-up questions and Algorand...
-- [Crosery/ppt-anything](https://github.com/Crosery/ppt-anything) — ★ 4 — AI story-deck generator  give it a topic, get back a coherent illustrated PPT with recurring characters and visual taste
-- [supremejohnny/powergen](https://github.com/supremejohnny/powergen) — ★ 4 — The powerpoint generator powered by GPT4 and python-pptx
-- [Faizanabid36/ai-presentation-generator-web](https://github.com/Faizanabid36/ai-presentation-generator-web) — ★ 4 — AI Powerpoint presentations creator using OpenAI(ChatGPT) API.
-- [atharvaphadnis-ai/AI-pptx](https://github.com/atharvaphadnis-ai/AI-pptx) — ★ 3 — AI PowerPoint Generator creates presentations from a topic using AI. It generates slide content, adds images, shows a live preview, and lets users download a...
-- [MohamedBIqbal/demo-prep-skill](https://github.com/MohamedBIqbal/demo-prep-skill) — ★ 3 — Claude Code skill for product demos: McKinsey-style HTML presentations, PowerPoint generator, built-in timer
-- [romanchaa997/IPD-Generator](https://github.com/romanchaa997/IPD-Generator) — ★ 3 — Interactive Pitch Deck Generator
-- [fasrc/stdg](https://github.com/fasrc/stdg) — ★ 3 — Slurm Test Deck Generator
-- [Mor223/Silvaco-simulation-by-agent](https://github.com/Mor223/Silvaco-simulation-by-agent) — ★ 3 — Natural language to Silvaco TCAD DevEdit/ATHENA + ATLAS deck generator and Codex skill.??????TCAD????silvaco?deckbuild?
-- [SidU/leancanvasai](https://github.com/SidU/leancanvasai) — ★ 3 — AI Powered Lean Canvas Deck Generator
-- [vivekbopaliya/text-to-ppt](https://github.com/vivekbopaliya/text-to-ppt) — ★ 2 — Text-to-PPT is a full-stack application that lets users generate professional PowerPoint presentations from descriptive topics using AI.
-- [dappatamuno/Investor-Pitch-Generator](https://github.com/dappatamuno/Investor-Pitch-Generator) — ★ 2 — AI Pitch Deck Generator: Input your startup idea and get a polished investor pitch deck instantly! Powered by GPT-4/3.5, D3.js, and Streamlit, this free tool...
-- [c4pt0r/pys9](https://github.com/c4pt0r/pys9) — ★ 1 — yet another HTML slides generator, generate your slides with markdown
-- [chandansendh/ai-presentation-agent](https://github.com/chandansendh/ai-presentation-agent) — ★ 1 — —
-- [masteroyal/text-to-ppt-card-video](https://github.com/masteroyal/text-to-ppt-card-video) — ★ 1 — TTS-narrated PPT card presentations with timeline animation; outputs single-file HTML or MP4.
-- [simrahashmi5-debug/Powerpoint-generator-APIs-](https://github.com/simrahashmi5-debug/Powerpoint-generator-APIs-) — ★ 1 — Flask APIs that generate PPT from JSON using python-pptx- by Simra
-- [jinhchoii/ChatGPT-Powerpoint](https://github.com/jinhchoii/ChatGPT-Powerpoint) — ★ 1 — Powerpoint Generator using Chat GPT
-- [lhqqq2/Text-to-PPT](https://github.com/lhqqq2/Text-to-PPT) — ★ 1 — —
-- [ubeydturhan/AI-Quant-Analyst-Bot](https://github.com/ubeydturhan/AI-Quant-Analyst-Bot) — ★ 1 — AI-powered financial analyst bot & automated PowerPoint generator.
-- [qitar/slidepack-examples](https://github.com/qitar/slidepack-examples) — ★ 1 — Sample code for SlidePack, the PowerPoint generator API
-- [Hellboy28D/AI-PowerPoint-Generator-](https://github.com/Hellboy28D/AI-PowerPoint-Generator-) — ★ 1 — Build a PowerPoint Generator AI Agent with LLMs
-- [JenilPoria/ai-presentation-generator](https://github.com/JenilPoria/ai-presentation-generator) — ★ 1 — An AI-powered presentation generator built with LangChain, Groq, and Streamlit. Currently migrating to a FastAPI backend.
-- [Devirus124/ai-presentation-generator-](https://github.com/Devirus124/ai-presentation-generator-) — ★ 1 — —
-- [girdharkasak13-stack/Deckora-ai](https://github.com/girdharkasak13-stack/Deckora-ai) — ★ 1 — AI presentation generator built with React, Firebase and Gemini
-- [momorzq-oss/Kimibrain-Open-Source-AI-Presentation-Generator-Desktop](https://github.com/momorzq-oss/Kimibrain-Open-Source-AI-Presentation-Generator-Desktop) — ★ 1 — Kimibrain Open-Source AI Presentation Generator Desktop
-- [IndupuriMohan/ai-presentation-generator](https://github.com/IndupuriMohan/ai-presentation-generator) — ★ 1 — —
-- [Khizer-ali/AI-Presentation-generator](https://github.com/Khizer-ali/AI-Presentation-generator) — ★ 1 — —
-- [pagindlaharikaharika-boop/ai-presentation-generator](https://github.com/pagindlaharikaharika-boop/ai-presentation-generator) — ★ 1 — presentation
-- [hrishabh6/AI-Presentation-generator](https://github.com/hrishabh6/AI-Presentation-generator) — ★ 1 — —
-- [CatwalkTK/AI_Presentation_Generator](https://github.com/CatwalkTK/AI_Presentation_Generator) — ★ 1 — Presentation Generator with AI
-- [dszondy/AI_presentation_generator](https://github.com/dszondy/AI_presentation_generator) — ★ 1 — Wacky AI presentation generatior with llama7b, stabile diffusion and google tts
-- [AlishbahGhazanfar/AI-Presentation-Generator](https://github.com/AlishbahGhazanfar/AI-Presentation-Generator) — ★ 1 — —
-- [AhmadRazaCodeBits/presentationgenerator](https://github.com/AhmadRazaCodeBits/presentationgenerator) — ★ 1 — AI Presentation Generator is an innovative web application designed to help users create professional and engaging presentations in just a few seconds. Inste...
-- [suningli792-spec/html-ai-ppt](https://github.com/suningli792-spec/html-ai-ppt) — ★ 1 — A Python-based AI presentation generator powered by DeepSeek API. Generate, edit, preview, and export presentations as standalone HTML files.
-- [diegoparras/presentia](https://github.com/diegoparras/presentia) — ★ 1 — Decks from documents, data and markdown  the AI presentation generator of the Escriba Suite. A fork of Presenton.
-- [SalmanSattar01/docweaver](https://github.com/SalmanSattar01/docweaver) — ★ 1 — Best Free Local AI Presentation Generator 2026 - No Uploads, No Accounts
-- [yuanbw2025/ai-presentation](https://github.com/yuanbw2025/ai-presentation) — ★ 1 — AI ?????? AI Presentation Generator  ???????????? HTML ??? / Generate interactive HTML presentations from a prompt
-- [cobacha/ppt-agent](https://github.com/cobacha/ppt-agent) — ★ 1 — Text in, slides out. Open-source AI presentation generator  paste text or URL, get professional animated slides in 30s. 18 themes, single HTML export, self-h...
-- [MertBal-Dev/Present-AI](https://github.com/MertBal-Dev/Present-AI) — ★ 1 — An open-source AI presentation generator. Instantly create PPTX & PDF slides from a single topic using React, Node.js, and the Google Gemini AI API.
-- [Koneru10/text-to-ppt](https://github.com/Koneru10/text-to-ppt) — ★ 1 — —
-- [pricecomstock/pptxgen](https://github.com/pricecomstock/pptxgen) — ★ 1 — A random powerpoint generator!
-- [zwayth/pitchlab](https://github.com/zwayth/pitchlab) — ★ 1 — Open-source AI pitch deck generator. Describe your startup ? get a .pptx in 30 seconds. Works with Groq, Together.ai, Ollama (all free), Anthropic, or OpenAI.
-- [buildingopen/openslides](https://github.com/buildingopen/openslides) — ★ 1 — AI pitch deck generator. Point it at any website, get a branded pitch deck in seconds. Open source, runs on floom.
-- [kanakamedaladeepika6-afk/deckbetter](https://github.com/kanakamedaladeepika6-afk/deckbetter) — ★ 1 — Multi-agent AI pitch deck generator
-- [jsonforge/json-to-ppt](https://github.com/jsonforge/json-to-ppt) — ★ 1 — Declarative, LLM-friendly PowerPoint generator. Provide a strictly structured JSON ? receive a fully editable `.pptx`.
-- [ThomasKerbrat/hyper-slides](https://github.com/ThomasKerbrat/hyper-slides) — ★ 1 — HTML slides generator
-- [baverstockUX/deckhead](https://github.com/baverstockUX/deckhead) — ★ 1 — Deckhead - AI-powered PowerPoint generator using Google Gemini
-- [silentknight-sudo/ppt_generation_chatgpt](https://github.com/silentknight-sudo/ppt_generation_chatgpt) — ★ 1 — Dive into the ease of presentation creation with PowerPoint Generator, a smart web application crafted to automate PowerPoint presentations! ?? This project ...
-- [Grimbarian/PPT_Awards_Generator](https://github.com/Grimbarian/PPT_Awards_Generator) — ★ 1 — An automated CSV to PowerPoint generator which creates PPTX awards and individual certificates for schools, local organisations, or any other purpose.
-- [SoumyasreeMitra/Generative-AI-LLM-Projects-repo](https://github.com/SoumyasreeMitra/Generative-AI-LLM-Projects-repo) — ★ 1 — Built an AI-powered PowerPoint generator using Python and Google Gemini that automatically generates structured presentation slides from a user-defined topic.
-- [RajShivade/Agentic-Ai-Power-Point-Generator.](https://github.com/RajShivade/Agentic-Ai-Power-Point-Generator.) — ★ 1 — An Agentic AIpowered PowerPoint generator that creates professional, presentation-ready slides from natural-language prompts. Built using Streamlit, autonomo...
-- [samcsf/img2pptx-cli](https://github.com/samcsf/img2pptx-cli) — ★ 1 — A tool to generate pptx from a image folder.
-- [KATTEGUMMULAPOOJA/LINUX_LAB](https://github.com/KATTEGUMMULAPOOJA/LINUX_LAB) — ★ 0 — AI GENERATED PPT
-- [Sid-1524/Text-To-PPT](https://github.com/Sid-1524/Text-To-PPT) — ★ 0 — —
-- [brishtighosh90-commits/Payroll-system](https://github.com/brishtighosh90-commits/Payroll-system) — ★ 0 — Postar , source code,ai generated ppt
-- [SRPonnaganti/text-to-ppt](https://github.com/SRPonnaganti/text-to-ppt) — ★ 0 — —
-- [Aryaman-niboriya/Ai-PPT-GENERATOR-CONVERTOR](https://github.com/Aryaman-niboriya/Ai-PPT-GENERATOR-CONVERTOR) — ★ 0 — AI-powered PPT platform  generate branded presentations from topics & convert any AI-generated PPT into your school, college, or company template automatically.
-- [Krasper707/Text-to-PPT](https://github.com/Krasper707/Text-to-PPT) — ★ 0 — —
-- [SnehaRanjan162/text-to-ppt](https://github.com/SnehaRanjan162/text-to-ppt) — ★ 0 — —
-- [swapchavan86/TextToPPT](https://github.com/swapchavan86/TextToPPT) — ★ 0 — The Text to PPT Generator is an AI-based tool that converts user input text into structured PowerPoint slides. It uses ChatGPT to create slide titles, bullet...
-- [vatsalrai-evocs/Text-to-PPt-](https://github.com/vatsalrai-evocs/Text-to-PPt-) — ★ 0 — —
-- [MVenkatsai02/Text-to-PPT-](https://github.com/MVenkatsai02/Text-to-PPT-) — ★ 0 — —
-- [akilalohan-lang/presentation-agent](https://github.com/akilalohan-lang/presentation-agent) — ★ 0 — PurchasePlus AI Presentation Agent  converts documents to branded HTML presentations
-- [dailydaniel/llm-pptx-telegram](https://github.com/dailydaniel/llm-pptx-telegram) — ★ 0 — llm pptx generator in telegram
-- [SV592/pitch_deck](https://github.com/SV592/pitch_deck) — ★ 0 — AI Pitch deck generator
-- [abhishekghs197/AI-Presentation-Generator](https://github.com/abhishekghs197/AI-Presentation-Generator) — ★ 0 — All Presentation Generator with AI
-- [anika57/ai-presentation-generator](https://github.com/anika57/ai-presentation-generator) — ★ 0 — —
-- [MamindlapellyAshmitha/Slide-spark-AI-](https://github.com/MamindlapellyAshmitha/Slide-spark-AI-) — ★ 0 — AI presentation Generator
-- [elicho1/ai-presentation-generator](https://github.com/elicho1/ai-presentation-generator) — ★ 0 — —
-- [AvnishButar/vivid](https://github.com/AvnishButar/vivid) — ★ 0 — AI Presentation generator
-- [jocall3/ai-presentation-generator](https://github.com/jocall3/ai-presentation-generator) — ★ 0 — ai presentation generator
-- [rgurbanli16234/Presentation-generator-](https://github.com/rgurbanli16234/Presentation-generator-) — ★ 0 — AI Presentation Generator
-- [Nitin-777/VisionDeckAI](https://github.com/Nitin-777/VisionDeckAI) — ★ 0 — Ai presentation generator.
-- [azmart123/AI-Presentation-Generator1](https://github.com/azmart123/AI-Presentation-Generator1) — ★ 0 — AI Presentation Generator
-- [okiesfirmansyah/AI-Presentation-Generator](https://github.com/okiesfirmansyah/AI-Presentation-Generator) — ★ 0 — AI-Presentation-Generator
-- [patilketan03/agentic-ppt-generator](https://github.com/patilketan03/agentic-ppt-generator) — ★ 0 — Agentic PPT Generator turns simple text prompts into clean, professional PowerPoint presentations in seconds.
-- [gagan0116/AgentPPT](https://github.com/gagan0116/AgentPPT) — ★ 0 — Agentic PPT Generator
+- [fighting41love](https://github.com/fighting41love/funNLP) — ★ 83,911 — 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、...
+- [Anionex](https://github.com/Anionex/banana-slides) — ★ 15,753 — 一站式原生AI PPT生成应用，几分钟内生成一套幻灯片; 支持上传任意模板图片，上传任意素材&智能解析，一句话/大纲/页面描述自动生成PPT，口头修改指定区域、一键导出可编辑ppt、视频等 - An AI-native slides generator based on nano banana pro🍌
+- [presenton](https://github.com/presenton/presenton) — ★ 11,116 — Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)
+- [nexu-io](https://github.com/nexu-io/html-anything) — ★ 9,127 — ✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · ...
+- [ningzimu](https://github.com/ningzimu/codex-ppt-skill) — ★ 6,877 — GPT-Image-2 PPT Generator Skill for Creating Image-Based PowerPoint Presentations in Codex and Other Skill-Compatible Agents
+- [icip-cas](https://github.com/icip-cas/PPTAgent) — ★ 5,115 — An Agentic Framework for Reflective PowerPoint Generation
+- [HugoBlox](https://github.com/HugoBlox/hugo-theme-academic-cv) — ★ 5,077 — 🎓 Academic portfolio that boosts citations. AI generates pages, you own as Markdown. BibTeX auto-import, Jupyter, LaTeX, slides, visual block editor — free t...
+- [zLanqing](https://github.com/zLanqing/codex-claude-academic-skills) — ★ 4,903 — 本仓库包含三个面向学术科研人员的Skills，覆盖从文献阅读、论文写作到科学计算的完整研究工作流。office-academic-skill 负责论文阅读报告与学术 PPT/Word 文档生成；research-writing-skill 提供论文写作、润色与审稿回复辅助；scientific-toolkit-s...
+- [sligter](https://github.com/sligter/LandPPT) — ★ 3,618 — 一个基于LLM的演示文稿生成平台，能够自动将文档内容转换为专业的PPT演示文稿。平台支持多种AI模型，提供丰富的模板和样式选择，让用户能够创建高质量的演示文稿。
+- [adamcohenhillel](https://github.com/adamcohenhillel/ADeus) — ★ 3,433 — An open source AI wearable device that captures what you say and hear in the real world and then transcribes and stores it on your own server. You can then c...
+- [op7418](https://github.com/op7418/NanoBanana-PPT-Skills) — ★ 3,296 — NanoBanana PPT Skills 基于 AI 自动生成高质量 PPT 图片和视频的强大工具，支持智能转场和交互式播放
+- [allweonedev](https://github.com/allweonedev/presentation-ai) — ★ 3,039 — ALLWEONE Open source AI presentation generator Gamma Alternative. Create professional slides with customizable themes and AI-generated content in minutes.
+- [GordenSun](https://github.com/GordenSun/GordenSuperPPTSkills) — ★ 2,091 — AI PPT赛道终结者，史上最最最强 PPT Skill！！！  使用GPT生成豪华的图片格式PPT，然后转换为完全可编辑的PPTX文件。
+- [veasion](https://github.com/veasion/AiPPT) — ★ 1,912 — AI 智能生成 PPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画，可在线体验。AI generates PowerPoint Presentation, Supports parsing and rendering of co...
+- [Binaryify](https://github.com/Binaryify/open-kimi-ppt-skill) — ★ 1,594 — 非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browse...
+- [Unclecheng-li](https://github.com/Unclecheng-li/AI_Animation) — ★ 1,529 — 本项目整理了用于生成[炫酷 HTML 动画网页]的 AI Prompts，涵盖动画效果、3D 可视化、PPT 风格演示、UI 美化等多个类别。
+- [helloianneo](https://github.com/helloianneo/ian-handdrawn-ppt) — ★ 1,466 — 中文手绘技术 PPT 整页图像生成 Skill | 21:9 封面 + 16:9 正文配图 | PNG 输出
+- [SmartSchoolAI](https://github.com/SmartSchoolAI/ai-to-pptx) — ★ 1,462 — 前端后端同时开源。 Ai-to-pptx是一个使用AI技术(DeepSeek)制作PPTX的助手，支持在线生成和导出PPTX。 主要功能: 1 使用DeepSeek等大语言模型来生成大纲 2 生成PPTX的时候可以选择不同的模板 3 支持导出PPTX
+- [Devin-AXIS](https://github.com/Devin-AXIS/deepseek-design) — ★ 1,461 — DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness.
+- [tonyqinatcmu](https://github.com/tonyqinatcmu/SlideBot-AI) — ★ 1,215 — 🎨 SlideBot AI - AI-Powered Presentation Generator
+- [YOOTeam](https://github.com/YOOTeam/OpenPPT) — ★ 1,098 — AIPPT Online editor，Base On ChatPPT， supports document editing services throughout the entire process, including import, export, layout beautification, onlin...
+- [LearnPrompt](https://github.com/LearnPrompt/humanize-ppt) — ★ 977 — AST-based outline director for human-centered AI presentation workflows.
+- [nexu-io](https://github.com/nexu-io/codex-slides) — ★ 938 — 🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode rende...
+- [sunbigfly](https://github.com/sunbigfly/ppt-agent-skills) — ★ 911 — A code-driven presentation generation framework. 像构建软件工程一样生成演示文稿。
+- [hantang](https://github.com/hantang/latex-templates) — ★ 842 — A collection of awesome LaTeX Thesis/Dissertation templates and beyond! //（LaTeX / Word / Typst / Markdown 格式的学位论文、演示文稿、报告、项目申请书、简历、书籍等模板收藏）
+- [huohua325](https://github.com/huohua325/Memslides) — ★ 840 — A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.
+- [ai-ppt-template](https://github.com/ai-ppt-template/free-ppt-template) — ★ 770 — Free AI PPT Templates — 4,000+ AI-generated presentation templates for any deck. Works with PowerPoint, Google Slides, Keynote, LibreOffice Impress, WPS Offi...
+- [limaoyi1](https://github.com/limaoyi1/Auto-PPT) — ★ 756 — Auto generate pptx using gpt-3.5, Free to use online / 通过gpt-3.5生成PPT,免费在线使用
+- [mucsbr](https://github.com/mucsbr/ppt-agent-workflow-san) — ★ 649 — 渐进交互式ppt生成skill
+- [Unclecheng-li](https://github.com/Unclecheng-li/AI-Animation-Skill) — ★ 576 — 使用 AI 生成 HTML 演示动画的工具集，让视频创作者能够快速将科普文本转换为炫酷的演示动画。
+- [elliottzheng](https://github.com/elliottzheng/NotebookLM2PPT) — ★ 495 — 🚀从 PDF 到全可编辑 PPT 的智能转换工具，让 NotebookLM 的演示文稿真正为你所用。
+- [Licoy](https://github.com/Licoy/GoAmzAI) — ★ 481 — 🤖️ 基于 Golang + Vue3 + NaiveUI 的全新的个人、团队、企业私有化AIGC平台 ｜ 支持AI对话、AI绘画、AI视频、AI音乐、AI无限画布工作流、AI PPT、思维导图、应用广场、同时支持多用户多模型聚合平台管理使用等等，具有非常强大的运营能力以及企业内部使用能力，欢迎体验～
+- [qrpcode](https://github.com/qrpcode/pptshow) — ★ 394 — Java generates PPT documents and supports the new features of PPTX version 2010 / Java生成PPT文档，支持2010版PPTX新特性
+- [irenerachel](https://github.com/irenerachel/visual-style-ppt-skill) — ★ 392 — 【Skill】视觉风格 PPT 生成工作流
+- [shengjidaguai-china](https://github.com/shengjidaguai-china/personal-homepage-skill) — ★ 346 — 用于生成高质量个人主页与 HTML PPT 的 AI Skill：参考优先、19 个模板、Hero 视频主页、便携 HTML 与质量检查
+- [zhouwei713](https://github.com/zhouwei713/luobo-ppt) — ★ 340 — 生成和美化可编辑原生 PPT 的 Agent Skill
+- [ElemeFE](https://github.com/ElemeFE/keynote) — ★ 330 — 大前端分享会公开演示文稿
+- [sunchaokun](https://github.com/sunchaokun/PPT-Design-Skill) — ★ 329 — Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Build Mode control, AI image generation, and fully editable PPT...
+- [q1uki](https://github.com/q1uki/MoneyPrinterAICreate) — ★ 328 — 基于MoneyPrinterTurbo，AI生成分镜大纲与视频（动态，不是念ppt），接入万相通义wan2.1 ai文生视频、图生视频功能，灵活把控视频生成。Based on MoneyPrinterTurbo, AI generates image outline and video (dynamic, not...
+- [Faust-Donf](https://github.com/Faust-Donf/beamer-academic) — ★ 313 — 一键从论文生成高质量学术答辩PPT | AI-powered thesis defense slides generator | Claude Code & Codex Skill
+- [CyberTimon](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs) — ★ 308 — Local Powerpointer - A beautiful powerpoint generator which uses the power of local running large language models to generate the powerpoint slides.
+- [51yuese](https://github.com/51yuese/GoMaxAI-ChatGPT-Midjourney-Pro) — ★ 293 — 基于Node.js、Vue3、uniapp的ChatGPT+智能体+Midjourney绘画+PPT生成+Suno音乐+Pika/Runway/Sora视频 网页服务 | 个人、团队、企业私有化AIGC平台
+- [annProg](https://github.com/annProg/PanBook) — ★ 291 — Pandoc LaTeX，Epub模板，用于生成书籍，幻灯片(beamer)，简历，论文等（cv, thesis, ebook,beamer)
+- [dream-rec](https://github.com/dream-rec/dreampaper) — ★ 262 — 高质量科研论文插图与演示文稿制作Agent
+- [qrpcode](https://github.com/qrpcode/letsPPT) — ★ 245 — 一个标题AI自动生成PPT文档模板，并转换为图片和视频。带标注系统、C端页面、审核系统、小程序登录端。
+- [LangChat](https://github.com/LangChat/langchat-slides) — ★ 218 — 基于Vue3的AI PPT产品，LangChat Slides - Next-Gen AI Slide Generator
+- [SkyworkAI](https://github.com/SkyworkAI/Skywork-Skills) — ★ 203 — Skywork Agent Skills for AI office suites, including AI PPT, AI Document, AI Excel, AI Image, AI Search/DeepResearch and AI Music.  These skills can be used ...
+- [wwe-dog](https://github.com/wwe-dog/ppt-image2-editable-rebuild) — ★ 200 — 一个基于截图/参考图重建可编辑 PPT 的 Codex skill。先用 image2/imagegen 生成单页视觉参考图，再以局部截图保留复杂插图、图标、地图等视觉资产，同时用 PPT 文本框和形状重建标题、正文、卡片、箭头、标签、结论条等可编辑元素。
+- [reimertz](https://github.com/reimertz/lagom) — ★ 199 — 🖼 simplistic presentation generator
+- [snowmanzhuang](https://github.com/snowmanzhuang/yixueAIganhuo-PPT) — ★ 198 — AI workflow (base on gpt-image-2 and paddleocr vl1.6) for generating PPT decks from papers, PDFs, figures, screenshots, and prepared materials, then rebuildi...
+- [acnlie](https://github.com/acnlie/open-kimi-ppt-skill) — ★ 198 — 非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browse...
+- [cxq0517](https://github.com/cxq0517/htmltool2) — ★ 197 — 最简洁的html文字编辑器，可以直接修改html上的文字，并保证原渲染效果不变。现在可以随时微调你用AI生成的html格式的ppt、简历、信息图等各种html文件。The simplest HTML text editor. Edit text directly on an HTML page while pre...
+- [yyy-OPS](https://github.com/yyy-OPS/slidedeconstruct-ai) — ★ 180 — 针对当前 AI 生成 PPT 多为静态位图、难以二次编辑的痛点，本项目采用“识别+生成”双模型架构，实现了对静态演示文稿的深度重构与编辑。 SlideDeconstruct-AI 旨在让 AI 演示文稿从“一张死图”进化为真正可编辑、可交互的生产力工具。
+- [shower](https://github.com/shower/jekyller) — ★ 179 — Shower presentation generator with Jekyll underneath
+- [CyberTimon](https://github.com/CyberTimon/Powerpointer) — ★ 178 — Powerpointer - A beautiful powerpoint generator which uses GPT 3.5 to generate the slides.
+- [DjangoPeng](https://github.com/DjangoPeng/ChatPPT) — ★ 178 — ChatPPT 是一个基于多模态 AI 技术的智能助手，旨在提升企业办公自动化流程的效率。它能够处理语音、图像和文本等多种输入形式，通过精确的提示工程和强大的自然语言处理能力，为用户生成高质量的 PowerPoint 演示文稿。ChatPPT 不仅简化了信息收集和内容创作过程，还通过自动化的报告生成和分析功能，帮...
+- [owenthereal](https://github.com/owenthereal/jekyll_and_hyde) — ★ 171 — A HTML presentation generator that generates a basic Jekyll scaffold with Slippy hooking up.
+- [yuyuanweb](https://github.com/yuyuanweb/ai-ppt-generator) — ★ 165 — 2026 ????? AI ???????,?? Python FastAPI + LangChain + LangGraph + React ? AI PPT ???,???? / ??? / ???????????????????????????????????????? PPTX ????? LangCha...
+- [jinwyp](https://github.com/jinwyp/open-ppt-skill) — ★ 165 — Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor
+- [Akxan](https://github.com/Akxan/ppt-agent-skill) — ★ 162 — ?? World-class AI presentation generator  26 styles  18 charts  benchmarked against Linear/Anthropic/Stripe/Apple/NYT  a Claude Code Skill that turns one sen...
+- [ningzimu](https://github.com/ningzimu/awesome-ai-ppt) — ★ 162 — A curated list of AI PPT, PowerPoint automation, PPTX editing, and slide workflow tools.
+- [siddhesh-desai](https://github.com/siddhesh-desai/SlideAI) — ★ 158 — SlideAI is an automatic powerpoint presentation maker for projects built using OpenAI and Bing API
+- [composio-community](https://github.com/composio-community/open-gamma) — ★ 147 — An open source implementation of an AI agent that generates slides in google slides
+- [trikita](https://github.com/trikita/slide-html) — ★ 145 — Text presentation maker for a simplified markup language
+- [YOYZHANG](https://github.com/YOYZHANG/ai-ppt) — ★ 144 — Generated ppt by AI based on RevealJS synax
+- [ClosureTalk](https://github.com/ClosureTalk/closure-talk) — ★ 144 — Stylized talk generator
+- [asanzdiego](https://github.com/asanzdiego/markdownslides) — ★ 142 — MarkdownSlides is a Reveal.js and PDF slides generator from MARKDOWN files, that also generate HTML, EPUB and DOCX documents. The idea is that from a same MA...
+- [jaguarliuu](https://github.com/jaguarliuu/xunlong) — ★ 135 — 多模态内容创作系统 - 报告、小说、演示文稿
+- [wycmochi](https://github.com/wycmochi/cn-academic-spark) — ★ 129 — 专为中国宝宝设计的可编辑学术 PPT 生成skill。可根据学术汇报场景（论文答辩、组会汇报、课程报告、开题报告、文献综述等），依据上传的论文、报告等材料分析研究框架并输出带讲稿、带技术路线图、可编辑的pptx文件。
+- [andyhuo520](https://github.com/andyhuo520/html-ppt-designer) — ★ 120 — HTML PPT Designer v5.2 - 智能演示文稿设计器，将任何内容转化为精致的 HTML 演示文稿
+- [oil-oil](https://github.com/oil-oil/oil-ppt) — ★ 114 — 创建、修改和检查 16:9 HTML 演示文稿，支持逐页编辑、离线演示和混合可编辑 PPTX 导出。
+- [fangyuanopus](https://github.com/fangyuanopus/literature-report-ppt-builder) — ★ 111 — Open-source Codex skill for academic literature-report PPT generation
+- [metaimagine](https://github.com/metaimagine/ai-pptx) — ★ 105 — 😆 Generate PPT by LLM follow your template.  📢 Not only use llm to generate ppt, but also according to your favorite ppt template. Just you need to simply ch...
+- [het2333](https://github.com/het2333/OrgMesh) — ★ 103 — 企业私有 AI 知识工作台：中文搜索、飞书接入、Agent 与演示文稿
+- [henryhyw](https://github.com/henryhyw/slidepoise) — ★ 102 — Open-source agentic slide generation with free-form visual design and editable PowerPoint output.
+- [StarryKit](https://github.com/StarryKit/starrykit-plugin) — ★ 95 — Free AI presentation maker & free AI poster maker for Codex, Claude Code, Cursor, and more—create editable slides, decks, posters, and social graphics with S...
+- [gongxings](https://github.com/gongxings/ai-creator) — ★ 93 — A powerful AI content creation platform with AI writing, image generation, video generation, PPT generation tools, and one-click multi-platform publishing.AI...
+- [chongliujia](https://github.com/chongliujia/AI_doc_platform) — ★ 87 — 智能文档处理平台项目。一个基于 Deepseek大模型 的文档生成系统，可以根据用户提供的主题自动生成 PPT 和 Word 文档。
+- [usernamepangdun](https://github.com/usernamepangdun/PPT-AGENT) — ★ 82 — 一个基于 AI 的 PPT 自动生成工具，输入主题即可自动生成大纲、页面内容与视觉稿，并输出 .pptx 文件，支持 SVG 和 HTML 两种渲染链路。
+- [helloo1568](https://github.com/helloo1568/slidemuse) — ★ 76 — 视觉优先的 AI PPT Skill｜适用于挑战杯（大挑/小挑）、中国国际大学生创新大赛、全国大学生交通运输科技大赛（交科赛）、三创赛、正大杯、大创等竞赛，也适合学术汇报、论文答辩、项目路演与课程展示｜4 套风格 → 高质量幻灯片 → 可编辑 PPTX
+- [wiltonesten-web](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v2-1) — ★ 75 — 能将基于图片的 PPT/PPTX 幻灯片，精准还原为忠于原版的可编辑演示文稿。该技能支持语义化元素分离，生成可编辑的文本与原生形状，具备裁切与背景审查、渲染幻灯片质检，以及‘遇错即止’的交付验证功能。属于v2高精度版，搭配GPT6 Astra 轻度，效果足以。
+- [NetsecExplained](https://github.com/NetsecExplained/Attacking-and-Defending-Generative-AI) — ★ 74 — Reference notes for Attacking and Defending Generative AI presentation
+- [moneyinto](https://github.com/moneyinto/canvas-ppt) — ★ 74 — 基于Vue3.x + Typescript + canvas实现的在线演示文稿。
+- [flyer-Li](https://github.com/flyer-Li/paper-analyst) — ★ 73 — A Claude Code skill for academic paper analysis. Supports 5 analysis modes (quick/standard/extended/presentation/presentation_with_figures), anti-hallucinati...
+- [ChenShuo2004](https://github.com/ChenShuo2004/cs-xiaohuang-skill) — ★ 72 — 小黄（有温度）统一 Skill：品牌 IP 延展、中文轻手绘 PPT、文章封面与正文配图；先规划，再生成可交付 PNG。
+- [xhh678876](https://github.com/xhh678876/openclaw-sjtu) — ★ 72 — 🎓 上海交通大学全能 AI 助手 — 基于 OpenClaw 的交大校园 Skill 包 | 19项功能覆盖 DDL/选课/邮箱/食堂/图书馆/PPT生成
+- [MYZY-AI](https://github.com/MYZY-AI/dokie-ai-ppt) — ★ 70 — —
+- [stevenjinlong](https://github.com/stevenjinlong/awesome-ppt-skills) — ★ 70 — Turn a prompt into polished, full-slide PPT decks with gpt-image-2. 把一句提示词转换成由 gpt-image-2 生成的、精美完整的整页式 PPT 演示文稿。
+- [OfficeAIWork](https://github.com/OfficeAIWork/WordGPT) — ★ 62 — OfficeAI.Chat (原WordGPT)是一款一站式 AI 智能内容创作与文稿处理插件。 1. 多元内容智能生成：支持接入自定义私有知识库或联网检索权威素材，一键快速产出论文、简历、博文、新闻稿件、产品文案、短篇故事、商务邮件、影视剧本、诗词、工作总结等各类文稿；同步自动生成思维导图、配图、数据图表，依托...
+- [WayneZhon](https://github.com/WayneZhon/KingDee-PPT-Skill) — ★ 59 — 将你的内容快速生成金蝶风格 PPT
+- [google](https://github.com/google/pagespeed-inslides) — ★ 58 — HTML5 Slide Deck Generator Tool Based on the PageSpeed Insights API
+- [wilingna](https://github.com/wilingna/ai-ppt-toolkit) — ★ 57 — NotebookLM + Gemini + Gamma 三件套做PPT完整工作流
+- [blacksamuraiiii](https://github.com/blacksamuraiiii/pdf2ppt) — ★ 54 — PDF2PPT 是一个开源工具，致力于将 AI 生成的 PDF 文稿（如 Google NotebookLM 导出的内容）或其他标准 PDF 文档，通过智能解析转换为可编辑的 PowerPoint (PPTX) 演示文稿。
+- [brycewang-stanford](https://github.com/brycewang-stanford/many-ppt-skills) — ★ 53 — Every AI slide-deck skill worth knowing, on one page — both the HTML and native-PPTX routes, compared on what actually decides the choice rather than on star...
+- [wangcham](https://github.com/wangcham/ppt_killer) — ★ 52 — 使用chatgpt总结你的pptx文件，支持依据ppt内容生成问题和保存AI回答   |   Use chatgpt to summarize your pptx files and generate questions about ppt , supports saving answers and docker...
+- [wiltonesten-web](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v1) — ★ 52 — 将基于图片的 PPT/PPTX 幻灯片重建为可编辑的 PPT演示文稿，分v1节省token版和v2高精度版。本skill属于v1节省token版
+- [docmee](https://github.com/docmee/aippt-vue) — ★ 51 — Vue3 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of comp...
+- [llmlearning-x](https://github.com/llmlearning-x/aippt_PresentationGen) — ★ 50 — PresentationGen是一个通过大语言模型生成PPT文件的SpringBoot Web应用。A SpringBoot web application that generates PPT files using a llm.
+- [CCLMSY](https://github.com/CCLMSY/nonebot-plugin-sparkapi) — ★ 48 — 调用科大讯飞星火大语言模型官方API的Nonebot2机器人插件，适用于所有模型版本（默认当前最新（v4.0）），具有自定义预设、AI绘图、PPT生成等功能
+- [xiao634zhang](https://github.com/xiao634zhang/paper-ppt-skill) — ★ 48 — 科研论文汇报PPT生成工具 - 从PDF论文自动生成简洁清晰的学术汇报幻灯片，支持模板定制、演讲稿导入和图片提取，适用于组会汇报、课程展示和学术交流。
+- [goeasyway](https://github.com/goeasyway/my_notebooklm_with_ppteditable) — ★ 47 — 基于 AI 的演示文档生成器 —— 粘贴文字，自动生成专业信息图 PDF / 可编辑 PPT。
+- [touying-typ](https://github.com/touying-typ/seaslides) — ★ 47 — AI skills for presentation slides generation with Typst and Touying
+- [BJSS-China](https://github.com/BJSS-China/ppt_assistant) — ★ 45 — 这是一个通过多模态大模型+LangGraph实现的PPT生成系统，包含前端、后端以及Core核心三部分构成。
+- [1624899](https://github.com/1624899/ai-ppt-maker) — ★ 43 — AI-driven PPT generation system with editable layered PPTX export.
+- [syt2](https://github.com/syt2/paper-chat-for-zotero) — ★ 43 — AI 论文助手：论文问答、划词翻译、文献检索、笔记与 PPT 生成 ｜ AI research assistant: chat with papers, translate selections, find literature, and generate notes and slides
+- [mehdimo](https://github.com/mehdimo/GenSlide) — ★ 42 — Agentic AI PowerPoint Slide Generation using LangGraph and GPT-4o
+- [proyecto26](https://github.com/proyecto26/slides-ai-plugin) — ★ 41 — Slides AI Plugin for Claude, OpenClaw, etc that turns any idea into a full presentation — animated HTML or editable PowerPoint — from a single prompt
+- [oxidecomputer](https://github.com/oxidecomputer/fable) — ★ 39 — TOML deck generator with custom templates and schema validation
+- [vincenzo-afk](https://github.com/vincenzo-afk/SlideForge) — ★ 39 — AI-Powered Presentation Generator — pure HTML+CSS+vanilla JS, zero frameworks
+- [lkuczborski](https://github.com/lkuczborski/Codeck) — ★ 39 — Native macOS Markdown presentation maker for teaching and running live Codex prompting workflows.
+- [Git008](https://github.com/Git008/py-pptx) — ★ 39 — 利用python自动生成数据分析PPT报告
+- [msmahdinejad](https://github.com/msmahdinejad/SourceLens) — ★ 39 — Multilingual source-grounded research workspace with agentic RAG, cited chat, podcasts, PowerPoint, and video.
+- [ansuelele](https://github.com/ansuelele/KK-Chinese-Style-PPT-Song-Aesthetics) — ★ 38 — KK中国风PPT生成系统：宋代美学版 三件套交付
+- [YesIamGodt](https://github.com/YesIamGodt/knowledge-pipline) — ★ 38 — 🧠 Claude Code 技能 — 把文档（PDF/图片/视频/Office）编译成结构化知识维基，再用一句 /pipeline-ppt 生成有深度的分析报告。知识图谱 · 矛盾检测 · LivePPT 演示文稿。
+- [AIPMAndy](https://github.com/AIPMAndy/PPTskill) — ★ 38 — 🎨 AI 生成原生可编辑 PPTX — 无需设计技能 | AI-powered native editable PowerPoint generation
+- [AIAnytime](https://github.com/AIAnytime/Text-to-PPT-Generation-Streamlit-App) — ★ 37 — This is an official repo for "Text to PPT Streamlit App". It generates PPT from your text using GPT-X Model and Python PPTX Library.
+- [co-r-e](https://github.com/co-r-e/amaroad) — ★ 36 — AI Slide Creation Environment for Developers
+- [maquedexiju](https://github.com/maquedexiju/PPtYoda) — ★ 36 — 一个强大的、由 AI 驱动的演示文稿（PPt）自动化生成工具，真正生产化的工具，全流程可控，帮助用户快速制作出符合需求的 PPt。
+- [joeseesun](https://github.com/joeseesun/qiaomu-ppt) — ★ 36 — 中文优先的 PPT 生成工作流：URL/PDF/NotebookLM/HTML Deck 到可编辑、可验证演示文稿 | Chinese-first source-to-slide workflow.
+- [HugoBlox](https://github.com/HugoBlox/hugo-theme-markdown-slides) — ★ 34 — ?? Presentation slides from Markdown  LaTeX math, code highlighting, speaker notes, Git version control. AI generates pages, you own them forever. ????,Markd...
+- [Rudra-Sankha-Sinhamahapatra](https://github.com/Rudra-Sankha-Sinhamahapatra/Encorp-AI) — ★ 34 — Your AI Powered Presentation Generator.                 https://encorp.rudrasankha.com
+- [docmee](https://github.com/docmee/aippt-api-python-demo) — ★ 32 — Python 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of co...
+- [OrangeViolin](https://github.com/OrangeViolin/presentation-skill) — ★ 31 — 演讲脚本 + PPT 一键生成器。支持62种品牌级设计风格，基于 awesome-design-md。输入主题即可生成可播放的HTML幻灯片。
+- [hzsci](https://github.com/hzsci/ace-sci-origin) — ★ 31 — 研理科研线开源的 Codex Skill：生成可编辑 Origin 工程与 Origin OLE PowerPoint 科研图。
+- [670027822](https://github.com/670027822/songshuAI-chatgpt-midjourneyplus--ppt-) — ★ 30 — 一款结合了chatgpt、midjourney plus，ppt生成，思维导图生成、涂鸦绘画、dalle 3绘画的商业源码
+- [SlideSpeak](https://github.com/SlideSpeak/slide-design-skill) — ★ 29 — AI presentation engine. Describe your deck and the look, it derives a bespoke style and renders polished 1920x1080 HTML slides with real charts, tables and i...
+- [sharptoolbox](https://github.com/sharptoolbox/consulting-html-ppt) — ★ 29 — 咨询公司风格 HTML + SVG 演示页生成技能（Agent Skill）· McKinsey/BCG 风格 PPT · 三形态判定 + 双模板库 + ECharts
+- [E1nzbern](https://github.com/E1nzbern/open-kimi-ppt-skill) — ★ 29 — 非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browse...
+- [Allenpandas](https://github.com/Allenpandas/BJTU-Beamer-Theme) — ★ 28 — 🎆 北京交通大学 LaTeX 生成 PDF 的主题模板 | BJTU-Beamer-Theme
+- [comeonzhj](https://github.com/comeonzhj/DataAnalysis_ClaudeCode) — ★ 27 — 使用 Claude Code 做数据分析并生成一个可视化 PPT。示例页面为 K2 生成的报告
+- [liwenka1](https://github.com/liwenka1/video-to-ppt) — ★ 27 — 基于 WebAV 和 FFmpeg 的现代化视频分析与 PPT 生成工具，支持屏幕录制、本地视频处理和在线视频分析
+- [georgeOsdDev](https://github.com/georgeOsdDev/slidepad) — ★ 26 — HTML Slide Generator.
+- [be-a-guptaji](https://github.com/be-a-guptaji/AI-PPT-Builder) — ★ 26 — AI Presentation SaaS Platform is a modern web application built with Next.js, OpenAI, Clerk, Prisma, and Lemon Squeezy. It enables users to generate, edit, a...
+- [LearnAIHubC](https://github.com/LearnAIHubC/LearnDeck) — ★ 26 — LearnDeck: AI PPT generator for Codex that turns topics, notes, course material, and outlines into polished, editable PowerPoint decks.
+- [Weijie-Zhou](https://github.com/Weijie-Zhou/ppt_generation) — ★ 26 — 基于chatglm3-6b生成ppt大纲以及ppt详情
+- [nooqta](https://github.com/nooqta/ai-presentation) — ★ 25 — An OpenAI Slide Deck Generator with Reveal.js
+- [Yu-0312](https://github.com/Yu-0312/ppt-creator-skills) — ★ 25 — PPT creator skill for Claude Code
+- [ken-hu](https://github.com/ken-hu/ppt-autoreport-core) — ★ 25 — 【core】自动化数据替换生成动态样式模板的PPT
+- [CallStorm](https://github.com/CallStorm/ppt-web) — ★ 25 — 基于 Claude Code agent 的 PPT 生成 Web 服务，每个生成任务跑在独立 Docker 容器里，跑完自毁，产物可下载
+- [aa2246740](https://github.com/aa2246740/dsh-slidestudio) — ★ 24 — DSH SlideStudio — AI presentations for DeepSeek Harness: one-line brief → editable deck → editable PPTX
+- [Mr-Q526](https://github.com/Mr-Q526/PPTMaker-skill) — ★ 24 — 根据一句话主题、Markdown 或已有文稿生成结构化 PPT，并支持自然语言修改页面与组件后导出为可编辑 PPT。适用于需要生成大纲、创建逐页布局、维护 deck.json、渲染 HTML 预览和导出 .pptx 的场景。
+- [admithuman](https://github.com/admithuman/gzr-nsfc-ppt-skill) — ★ 24 — # GZR-NSFC-PPT-Skill：国自然风格学术答辩PPT生成器  > 专为国家自然科学基金（NSFC）答辩以及其他多个学术场景打造的专业PPT自动生成技能
+- [mshen6666](https://github.com/mshen6666/HTML-PPT-Editor) — ★ 24 — HTML PPT Editor 是一个基于 React 和 Node.js 的 HTML 演示稿编辑器。项目以可编辑 HTML deck 作为核心数据源，提供可视化编辑、预览、导出，以及可选的 AI Agent 生成工作流。
+- [docmee](https://github.com/docmee/aippt-react) — ★ 23 — React 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of com...
+- [ziqihe10-droid](https://github.com/ziqihe10-droid/shuike-pptskill) — ★ 23 — 水课PPT——大学生的救命稻草。给个课题，直接出双稿。明天要上台？忘了准备？小组甩锅？打开Claude Code说一句"帮我做个XX的PPT"，分分钟后桌面躺着presentation.pptx和speech.docx。图表自动生成，每页排版不重样，五种风格自动匹配，水课可以水 PPT不能水。
+- [LRriver](https://github.com/LRriver/AIPPT) — ★ 22 — Open-source AI PPT workbench featuring controllable end-to-end generation, per-slide editing, and editable PPTX export.
+- [weibiaoyi](https://github.com/weibiaoyi/SlideTalk) — ★ 22 — SlideTalk 是一款功能强大的桌面应用，能够将 PowerPoint 演示文稿自动转换为有声视频讲解。通过集成 AI 语音合成和视频编辑功能，让您的演示文稿动起来！
+- [liumengniu](https://github.com/liumengniu/markdown-to-pptx) — ★ 22 — 在线编辑markdown生成pptx
+- [parthgupta1208](https://github.com/parthgupta1208/PDF2PPTGenerator) — ★ 22 — PDF2PPT Generator is a Python tool that creates Powerpoint presentations from PDF files by using smart summarization techniques assisted by GPT-3.5-Turbo
+- [stone-yu](https://github.com/stone-yu/ai-draw-skill) — ★ 21 — AI画图Skill，无需额外提示词，直接描述文字、文章全文、链接地址、图片、pdf等任意需求格式，即可生成html格式渲染图或PPT，多种主题可选择，效果惊艳，且HTML方便修改和调整Type one prompt, get a polished HTML deck or architecture diagram...
+- [lgwanai](https://github.com/lgwanai/ppt-skill) — ★ 20 — AI PPT skill技能，支持克隆样式，内置PPT专家经验，内置大量SVG可商用素材，提供PPT高质量生成
+- [Heron4gf](https://github.com/Heron4gf/ai-slides) — ★ 20 — Create slides with AI
+- [mertbozkir](https://github.com/mertbozkir/PresentX) — ★ 20 — GPT-3 Based Latex Code Presentation Maker.
+- [WarriorXu0302](https://github.com/WarriorXu0302/SlideGen) — ★ 20 — AI 驱动的 HTML 演示文稿编辑器 · 支持 AI 生成 PPT、可视化编辑、PPTX 导入导出
+- [slzcn](https://github.com/slzcn/CyberPPT-Pro) — ★ 20 — 咨询风格 PPT 生成 Skill：core 共享逻辑 + Claude/Codex 双平台适配，默认全原生可编辑，HTML 样张零图像依赖，12 视觉风格 + 10 场景框架
+- [far422194](https://github.com/far422194/huaxushuo) — ★ 20 — 一句话生成可点击、有动效、能发布的演示网站，轻量实现PPT、思维导图、产品介绍等场景演示说明工作。
+- [registor](https://github.com/registor/nwafuBeamerTheme) — ★ 20 — 一组西北农林科技大学LaTeX Beamer演示文稿主题。
+- [ysskrishna](https://github.com/ysskrishna/ai-ppt-slide-generator) — ★ 19 — AI-powered FastAPI backend to generate and customize PowerPoint (PPTX) presentations using Google Gemini. Supports custom layouts, fonts, colors and programm...
+- [docmee](https://github.com/docmee/aippt-api-java-demo) — ★ 19 — Java 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of comp...
+- [yangjian102621](https://github.com/yangjian102621/geekai-ppt) — ★ 19 — 基于 AI Nano-Banana Pro 生图模型的 PPT 生成平台，通过自然语言描述或上传文档，快速生成具有现代科技美学的演示文稿。
+- [CHENJIAMIAN](https://github.com/CHENJIAMIAN/html_to_ppt) — ★ 19 — 将 HTML 转换为 PowerPoint 的工具，当前适配 ChatGLM 生成的网页幻灯片 | An HTML-to-PowerPoint converter currently tailored to web slides generated by ChatGLM
+- [AIGeeksGroup](https://github.com/AIGeeksGroup/PresentAgent-2) — ★ 18 — PresentAgent-2: Towards Generalist Multimodal Presentation Agents
+- [Mijiang111](https://github.com/Mijiang111/SylvaDeck) — ★ 18 — SylvaDeck is an agent-native presentation workbench for turning structured thinking into editable decks. A local-first, HTML-based AI presentation Creator
+- [Joe-AI-Aggregation](https://github.com/Joe-AI-Aggregation/ai-tools-aggregation) — ★ 18 — 8个国内 AI PPT 生成工具（免费）
+- [ishandutta2007](https://github.com/ishandutta2007/Awesome-Powerpoint-AI-Agents) — ★ 18 — AI Slide / PowerPoint Agents Ecosystem 🌟 Star if you like it!  🌟
+- [Govind-S-B](https://github.com/Govind-S-B/ppt_generator) — ★ 18 — A local LLM assisted ppt generation tool
+- [leehomyc](https://github.com/leehomyc/SlidesAI) — ★ 18 — Generate presentation slides automatically using AI from text, PDFs, or structured content.
+- [OfficeAIWork](https://github.com/OfficeAIWork/PptGPT) — ★ 18 — OfficeAI.Chat (原PptGPT) 是一款 AI 智能幻灯片生成插件，让制作 PPT 变得简单高效。输入主题即可自动生成演示方案与结构化提纲，一键输出带排版内容的完整演讲稿，同时提供文案润色改写、思维导图、原创配图生成、多语种翻译等能力，搭载OfficeAI智能体，从构思到成品全流程自动完成PPT创作。
+- [Y4tacker](https://github.com/Y4tacker/codex-ai-ppt) — ★ 17 — Review-gated image-based PPT generation for Codex
+- [woniuniuniu](https://github.com/woniuniuniu/four-up-ppt-generator) — ★ 17 — Four-up PPT generator based on op7418/guizang-ppt-skill
+- [ColorsOutofSpace](https://github.com/ColorsOutofSpace/code-to-ppt) — ★ 17 — Cognitively-enhanced PPT generation skill with interrogation, memory, and adversarial review
+- [pyzw618](https://github.com/pyzw618/uestc-create) — ★ 17 — 电子科技大学（UESTC/成电）课程交付物生成技能包：汇报PPT / 实验报告 / 课程论文与课程设计报告 / 开题-中期-结题规划
+- [YuxiangChai](https://github.com/YuxiangChai/OpenSlides) — ★ 17 — AI-powered slide workspace for creating, editing, versioning, and presenting beautiful reveal.js decks from prompts and source files.
+- [prodigeproject](https://github.com/prodigeproject/pradaslides) — ★ 16 — Capability-aware, audience-ready presentation agent skill for PPTX, HTML slides, PDF, and deck planning.
+- [Deepnar](https://github.com/Deepnar/presentation-forge) — ★ 16 — Self-hosted AI presentation generator: topic or sources in, researched themed editable PPTX and report out. Docker, BYOK or Ollama; 74 slide types, 34 themes.
+- [lvy010](https://github.com/lvy010/Next-AI-Slide) — ★ 16 — 🤖 Generate Slidev presentations with AI
+- [Jinjiang](https://github.com/Jinjiang/mark2slides) — ★ 16 — A markdown-to-slides generator.
+- [BigSweetPotatoStudio](https://github.com/BigSweetPotatoStudio/ai-ppt-tutorial) — ★ 15 — claude code   ai-ppt-tutorial
+- [robertwhiffin](https://github.com/robertwhiffin/ai-slide-generator) — ★ 15 — —
+- [techtalkjp](https://github.com/techtalkjp/slidecraft) — ★ 15 — AI Slide Editor
+- [chenwr727](https://github.com/chenwr727/TextToTalk) — ★ 15 — 🎬 一段文案或一个链接 → 一集 PPT 式科普讲解视频。AI 规划可编辑大纲、逐页展开分镜，TTS 配音 + 字幕 + 纯代码生成的配乐，Remotion 无头渲染导出 MP4。支持图表 / 地图 / SmartArt，不满意可逐页重做。
+- [JZCreative](https://github.com/JZCreative/Fudan-University-PPT-skill) — ★ 15 — 复旦大学学术演示文稿 Skill，支持生成原生 PPTX、离线单文件 HTML 幻灯片和可控 AI 辅助视觉素材，内置复旦校徽与校名视觉资产、蓝/红/绿高纯度学术色系、跨格式一致性规则、Base64 图片内嵌和品牌安全约束，适用于课程汇报、科研展示、论文答辩与学院报告。
+- [danb-neo4j](https://github.com/danb-neo4j/NODES2023_GDS_GenAI) — ★ 14 — Notebook and additional resources for Road to Nodes 2023 GenAI + LLM Presentation
+- [misbahsy](https://github.com/misbahsy/zentable) — ★ 14 — Generate presentation using AI. A Cursor x Gamma presentation maker.
+- [mateclaw](https://github.com/mateclaw/MatePPT) — ★ 14 — 面向 AI 演示文稿场景的 Web PPT 生成与编辑项目，支持大纲生成、模板化生成幻灯片、可视化编辑，以及 PPTX / PDF 导出
+- [2750527986liu-maker](https://github.com/2750527986liu-maker/competition-ppt-skill) — ★ 14 — 中国国际大学生创新大赛路演PPT制作Skill - 基于python-pptx + PIL的竞赛PPT自动生成方法论
+- [Zero-stargazer](https://github.com/Zero-stargazer/group-meeting-ppt-skill) — ★ 14 — group-meeting-ppt-skill 是一个面向中文科研组会和文献汇报场景的 Codex Skill。它可以根据结构化论文信息，自动生成 10 页组会 PPT 草稿、每页讲解要点、图表使用建议、老师可能追问清单和学术诚信自查清单，帮助研一、硕博和本科毕设学生从“论文读完但 PPT 空白”快速进入可修改的...
+- [likaku](https://github.com/likaku/mck-html-design-skill) — ★ 14 — Generate McKinsey-style HTML presentations with Python — 68 layouts, zero dependencies / 用 Python 一键生成麦肯锡风格 HTML 演示文稿
+- [wilingna](https://github.com/wilingna/ai-ppt-web) — ★ 13 — Web upgrade of ai-ppt-toolkit. Claude replaces 2 tools — one page, one paste, deck-ready.
+- [Mrkk1](https://github.com/Mrkk1/viaimcode) — ★ 13 — A open AI ppt Agent
+- [xj-bear](https://github.com/xj-bear/NanoBanana-PPT-Skills) — ★ 13 — NanoBanana PPT Skills - AI-powered PPT generator with Veo support
+- [brightbear2026](https://github.com/brightbear2026/PPTagent) — ★ 13 — 专业级PPT生成Agent — 6层流水线架构，多格式输入，4次人工审核，多国产LLM协同(GLM-4/DeepSeek-R1/Qwen-Max)，真实数据驱动图表，生成咨询公司级演示文稿。React+FastAPI。
+- [izhan0102](https://github.com/izhan0102/exdeck) — ★ 12 — EXdeck is an AI presentation builder. You write a short prompt, pick a theme, and get an editable deck in seconds. Drag the text boxes around, edit them inli...
+- [awsdataarchitect](https://github.com/awsdataarchitect/ai-ppt-generator) — ★ 12 — Transform any document into professional presentations instantly using AWS Bedrock AI. Upload PDFs, get context-aware slides with RAG-powered intelligence. L...
+- [andyqiu847-ai](https://github.com/andyqiu847-ai/high-quality-slides) — ★ 12 — A Claude Code skill that produces presentations worth sending — research-first, narrative-driven 5-phase workflow inspired by Genspark AI Slides.
+- [Basedonsearch-Dindayal](https://github.com/Basedonsearch-Dindayal/AutoPPT-generator) — ★ 12 — AutoPPT Generator is an open-source tool that uses Google Gemini AI to generate presentation outlines and content automatically. Designed for speed and ease ...
+- [tanakh](https://github.com/tanakh/pandoc-html5slide) — ★ 12 — Google HTML5 Slide generator
+- [houzhijun](https://github.com/houzhijun/application) — ★ 12 — iPhone应用程序是由主函数main启动，它负责调用UIApplicationMain函数，该函数的形式如下所示：  int UIApplicationMain (  int argc,  char *argv[],  NSString *principalClassName,  NSString *deleg...
+- [ChengchengDu](https://github.com/ChengchengDu/PPT-Generation) — ★ 12 — 自动PPT生成
+- [chongliujia](https://github.com/chongliujia/AI_Doc_platform_langgraph) — ★ 12 — 基于LangGraph和DeepSeek API构建的智能文档生成平台，支持自动生成PPT或Word文档，具有生成标题和大纲的优势
+- [ziguishian](https://github.com/ziguishian/better-ppt-html-deck) — ★ 12 — 一个为 Codex 设计的 PPT 生成 Skill：先确认审美方向，再生成可编辑、可预览、可播放、可导出的 HTML 版 PPT，帮助用户更快创作更好看的演示文稿。  |  Description  A Codex Skill for creating better-looking presentations:...
+- [RuiqiWang-LGD](https://github.com/RuiqiWang-LGD/TalkTrack--) — ★ 12 — 一个面向方案汇报场景的 Codex Skill。  你把 PDF、PPT 或图片型方案册交给它，它会生成一份和原文件页码同步伴读 PPT：左侧保留原页缩略图和关键词，右侧生成可以直接照读的中文汇报正文，底部提示停顿、翻页、连续讲和需要人工补充的位置。  它适合设计、品牌、产品、策划、公共汇报等多种场景以及临时要讲...
+- [HalfAI1102](https://github.com/HalfAI1102/HalfAI-gufappt) — ★ 12 — 古法 PPT 是一个本地 AI Skill，用来生成可在 PowerPoint / WPS 里继续编辑的传统风格 .pptx。它的目标不是做一份很像网页的 HTML 幻灯片，而是回到学校、职场、答辩、汇报里真正会被打开、修改、交付的那种 PPT。  Agent 负责理解资料、写大纲和选择素材；本 Skill 负责...
+- [hosiet](https://github.com/hosiet/talk-debian-2020) — ★ 12 — Debian 及自由软件社区简介（演示文稿，2020年）
+- [lainshao](https://github.com/lainshao/modern-ppt) — ★ 12 — Agent Skill for polished single-file HTML presentations / 现代投屏网页 PPT：12 layouts, 3 themes, interactive charts and motion; works with Claude Code, Codex CLI, ...
+- [gammaremover](https://github.com/gammaremover/gamma-watermark-remover-skill) — ★ 12 — Agent skill for Claude Code & OpenClaw 🦞 — remove the "Made with Gamma" watermark from   PDF & PPTX exports. Free web version: gammaremover.com
+- [ymrl](https://github.com/ymrl/mdslide) — ★ 11 — Markdown Slide Generator
+- [ontology-of-everything](https://github.com/ontology-of-everything/concept-skills) — ★ 11 — Ontology, semantic-layer, concept-design, and presentation Agent Skills.
+- [SurgePix](https://github.com/SurgePix/ai-ppt-prompts) — ★ 11 — Curated AI presentation prompt library — 120+ copy-ready PPT & slide prompts with real slide previews, 1-click copy and direct generate. Filter by use case (...
+- [suge168](https://github.com/suge168/kdocs-skill) — ★ 11 — 金山文档（WPS云文档/kdocs.cn）龙虾原生接入.你可以在龙虾OpenClaw 提到金山文档、Kdocs、云文档、在线文档、协作文档、智能文档、云表格、在线表格、在线 Excel、智能表格、多维表格、在线 PDF、演示文稿、PPT、知识库、个人知识库等意图时，调用本 skill。 支持：新建多种文档（Wor...
+- [christianwarmuth](https://github.com/christianwarmuth/openhpi-generative-ai-slides) — ★ 11 — Materialien zum openHPI Online-Kurs "ChatGPT: Was bedeutet generative KI für unsere Gesellschaft?"
+- [raphaeltony](https://github.com/raphaeltony/SlidesGenie) — ★ 11 — AI-powered Visual Learning Tool and Presentation Generator
+- [EdwardJXLi](https://github.com/EdwardJXLi/QuikSlide) — ★ 11 — An AI powered presentation generator that helps you create visual aids. Quikly. Hackathon Submission for Hack The North 2020++
+- [trabe](https://github.com/trabe/slide-pack) — ★ 11 — A really simple slides generator & viewer
+- [veigap](https://github.com/veigap/talksmith) — ★ 11 — Talksmith is a Presenter Agent that helps a human presenter turn raw exploration — articles, papers, LLM chat sessions, screenshots, notes — into a well-stru...
+- [louisazhou](https://github.com/louisazhou/slidegenerator) — ★ 11 — You write simple, readable Markdown with a few extras, and Slide Generator produces well-formatted PowerPoint and Google Slides. This is like LaTeX Beamer fo...
+- [alingowangxr](https://github.com/alingowangxr/guizang-ppt-skill) — ★ 11 — 歸藏 PPT Skill：網頁 PPT / 配圖 / 常用社群平台封面生成（支援繁簡中文）
+- [shynloc](https://github.com/shynloc/ACKS-Office-Suite-Simplify) — ★ 11 — 面向 AI Agent 的 Python 办公工具：生成、读取 Word / Excel / PPT / PDF，提供 CLI、doctor 和技能包；格式转换需 LibreOffice。
+- [pedrohcgs](https://github.com/pedrohcgs/Claude-Mini) — ★ 11 — 4-hour Notre Dame faculty seminar on agentic AI for academic research — Quarto slides + curated demo bundle. Companion to claude-code-my-workflow.
+- [Watermelon4000](https://github.com/Watermelon4000/sketch-note-ppt) — ★ 11 — AI skill that turns 'make a PPT about X' into a Sketch Notes–style deck: one self-contained HTML file, no build step.
+- [xiaohua-der](https://github.com/xiaohua-der/auto-ppt) — ★ 10 — Auto PPT Studio is a local-first AI presentation builder that turns long-form documents into chapter-aware slide outlines, generates per-slide visuals with o...
+- [domonic18](https://github.com/domonic18/ai-pptist-system) — ★ 10 — 这是一个基于PPTist开发的自动生成PPT的系统
+- [thatIAmStd](https://github.com/thatIAmStd/AiPPT) — ★ 10 — 基于多模态 AI 技术的智能助手，旨在提升企业办公自动化流程的效率。它能够处理语音、图像和文本等多种输入形式，通过精确的提示工程和强大的自然语言处理能力，为用户生成高质量的 PowerPoint 演示文稿。ChatPPT 不仅简化了信息收集和内容创作过程，还通过自动化的报告生成和分析功能，帮助企业快速、准确地完成...
+- [Aham-AIAPP](https://github.com/Aham-AIAPP/aham-ppt) — ★ 10 — 克制的 AI PPT 制作技能——参数化版式库，让 AI 产出规范、可编辑的 .pptx
+- [aryankumawat](https://github.com/aryankumawat/SlideSmith-Multi-Agent-AI-Slide-Maker-) — ★ 10 — A distributed multi-agent system for automated slide deck generation with advanced quality assurance, semantic validation, and multi-format export capabiliti...
+- [y-coder18](https://github.com/y-coder18/ppt-themes-ai) — ★ 10 — PPT主题工坊·AI — Marp PPT主题集合 + AI智能辅助，人人都能轻松制作专业幻灯片。 ppt | marp | theme | ai | slides | markdown | presentation
+- [bitcraze](https://github.com/bitcraze/aideck-esp-firmware) — ★ 10 — AI Deck ESP32 firmware
+- [thomasneff](https://github.com/thomasneff/YGOLOTDPatchDraft) — ★ 10 — Patching Tool for Yu-Gi-Oh: Legacy of the Duelist to automatically change the Battle Pack 1 draft pool and AI decks.
+- [dariusk](https://github.com/dariusk/outslide) — ★ 10 — A random slide generator. I'm sorry.
+- [cyrus2281](https://github.com/cyrus2281/MAC-SlideGenerator) — ★ 10 — Multi-Agent Collaboration: Voice-overed video slide generator
+- [bitovi](https://github.com/bitovi/jira-timeline-report) — ★ 10 — An open source jira to power point slide generator for high-level status reporting.
+- [ThunderOne18](https://github.com/ThunderOne18/ppt-expert-team) — ★ 10 — PPT 专家团：AI 做 PPT 不是生成问题，是工作流问题。八步流程 Claude/Codex skill——从文章、口播稿到可编辑 HTML PPT / 图片版 / PPTX，六套原创风格+风格选择器+12套免费商用字体。
+- [Ocean-kang](https://github.com/Ocean-kang/AI-Workflow-Prompts) — ★ 10 — 一个用于整理不同任务场景下 ChatGPT / AI 助手工作流 Prompt 模板的仓库，包括论文阅读、代码审计、科研分析、PPT 生成等。
+- [kaleidoscope257-git](https://github.com/kaleidoscope257-git/SHUbeamer) — ★ 10 — SHUbeamer是为了帮助上海大学师生撰写演示文稿而编写的LaTex Beamer模版文件
+- [woyeyao](https://github.com/woyeyao/md2pre) — ★ 10 — A lightweight Python tool that converts Markdown files into Material Design HTML presentations. Each slide is an independent HTML file — edit freely, present...
+- [wenbopeng](https://github.com/wenbopeng/Obsidian-markdeep-slides) — ★ 10 — 一个为 Obsidian 设计的插件，它利用 Markdeep 的强大功能，将您的 Markdown 笔记转换为功能丰富的 HTML 幻灯片。您可以在 Obsidian 中直接编辑笔记，并分栏实时预览生成的幻灯片效果。依赖的资源：请前往wenbopeng/markdeep-slides-project 中获取解释...
+- [CY202227](https://github.com/CY202227/PPT_Generate) — ★ 9 — ?? AI-powered PowerPoint generator that creates presentations using templates. Features smart content mapping, chart & SmartArt support. Built with Python an...
+- [Liyilin66](https://github.com/Liyilin66/ppt-agent) — ★ 9 — AI Presentation Agent with validated Slide IR, editable PPTX rendering, QA, and structured patch editing.
+- [cogine-ai](https://github.com/cogine-ai/ai-slide-templates) — ★ 9 — Self-contained HTML slide templates with metadata and AGENTS.md instructions for AI agents to create finished presentation decks.
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-ai-slides-deck-builder-skill) — ★ 9 — AI-powered presentation deck outline and slide structure
+- [danny0926](https://github.com/danny0926/ppt-skills) — ★ 9 — AI slide generator with hand-drawn style (rough.js) — text-to-PPTX pipeline with visual-first layouts, Claude Code skill, Playwright rendering, and editable ...
+- [lk19940215](https://github.com/lk19940215/ai-teaching-ppt) — ★ 9 — AI Teaching PPT Generator — Upload textbook content, AI generates interactive .pptx slides.  / 用 AI 自动化制作教学课件。快速、智能、更懂老师
+- [ggarnier](https://github.com/ggarnier/reveal.rb) — ★ 9 — Presentation generator using reveal.js
+- [wordflowlab](https://github.com/wordflowlab/pptify) — ★ 9 — ppt AI 生成工具
+- [yizhengyuan](https://github.com/yizhengyuan/shenbippt) — ★ 9 — 输入主题，一键生成精美 PPT
+- [cqzyys](https://github.com/cqzyys/ppt-maker) — ★ 9 — 输入一句简单的提示语，AI根据提示语自动规划PPT大纲，然后根据大纲自动生成PPT。
+- [23J1633](https://github.com/23J1633/RWB-HTMLtoPPT) — ★ 9 — 可由AI自动生成的基于HTML的演示文稿的VScode插件                                                   A VS Code extension that uses AI to generate HTML-based presentations.
+- [MinmusLin](https://github.com/MinmusLin/Tongji_University_Beamer_Template) — ★ 9 — Tongji university Beamer template. 同济大学演示文稿模板.
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-venture-pitch-deck-narrative-synthesizer-skill) — ★ 8 — Venture pitch deck narrative synthesizer & TAM market modeler (AI Pitch Deck)
+- [mindlesseye](https://github.com/mindlesseye/Gamma-Desktop---Gamma-AI-Presentation-2026) — ★ 8 — Gamma-Desktop - AI presentation creator with one-click slides, custom themes, and analytics.
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-ai-presentation-slide-narrative-generator-skill) — ★ 8 — AI presentation architect converting raw data into structured slide decks with speaker notes (G2 Presentation AI)
+- [TianHengZhuang](https://github.com/TianHengZhuang/One-click-AI-PPT-creation) — ★ 8 — Turn any topic into a complete business presentation deck.
+- [itarutomy97](https://github.com/itarutomy97/marp-ai-slide-generator) — ★ 8 — AI-powered slide generator using Marp - Create beautiful presentations from JSON with AI assistance
+- [lucas-tulio](https://github.com/lucas-tulio/autopresentr) — ★ 8 — Procedural presentation generator
+- [d3lio](https://github.com/d3lio/mrend) — ★ 8 — A markdown presentation generator
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-responsive-interactive-web-card-presentation-skill) — ★ 8 — Responsive web card presentation generator (Gamma Web style)
+- [kairess](https://github.com/kairess/ChatGPT-PowerPoint) — ★ 8 — PowerPoint slides generator using ChatGPT 챗GPT를 활용한 파워포인트 슬라이드 생성기
+- [andrewytliu](https://github.com/andrewytliu/vebdew) — ★ 8 — HTML5 slide generator
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-generative-deck-slide-storyboard-layout-compiler-skill) — ★ 8 — Generative presentation deck and interactive card layout compiler (Gamma style)
+- [Robertcell](https://github.com/Robertcell/ppt-ai-free) — ★ 8 — PPT AI生成免费工具汇总【2026年4月更新】
+- [proto-commons](https://github.com/proto-commons/ZhiYan-Legacy) — ★ 8 — Competition-stage AI-assisted PPT generation project; archived historical reference.
+- [docmee](https://github.com/docmee/aippt-ui-iframe-v2) — ★ 8 — UI iframe 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of...
+- [xiaohuihui202504](https://github.com/xiaohuihui202504/jimeng-slides) — ★ 8 — 一个基于DeepSeek-V3.2和即梦4.5的AI智能PPT生成工具，让PPT制作变得前所未有的简单！
+- [monkbird](https://github.com/monkbird/QCmaker) — ★ 8 — 款基于大语言模型 (LLM) 和多智能体协作 (Multi-Agent) 技术的企业级应用，旨在辅助 QC 小组高效完成质量控制活动。该系统通过 AI 驱动的选题咨询、自动数据清洗、多模型研讨、智能可视化推荐以及 PPT 终稿生成，全流程赋能 QC 活动，显著降低参与门槛，提升成果质量。
+- [torns](https://github.com/torns/Word-Cusror) — ★ 8 — Word-Cursor 是一款革新性的 AI 驱动办公文档编辑器，把 Cursor 式“对话 + 工具执行 + 可审阅变更”的生产力范式带入 Word/Excel/PPT 场景。用户只需用自然语言描述目标，系统即可在真实文件与工作区上下文中完成写作、润色、格式统一、批量替换等操作，并以 diff 形式呈现修改，支...
+- [HYY-yu](https://github.com/HYY-yu/ppt-dsl-generator) — ★ 8 — 标记好任意 PPTX ，就可以让 Codex 帮你根据模板生成无数同样风格 PPT。
+- [axuanyaa](https://github.com/axuanyaa/fangban-ppt) — ★ 8 — 方班论文汇报PPT制作技能：论文精读+科学批判分析 → 指定页数逐页规划 → 生成可上台的PPT
+- [hacker4257](https://github.com/hacker4257/weekly-report-ppt) — ★ 8 — 基于 Git 仓库变更，自动生成「程序员周报 / 迭代汇报 / PPT 汇报大纲」的 Claude Skill。
+- [BetaStreetOmnis](https://github.com/BetaStreetOmnis/teamclaw) — ★ 8 — TeamClaw：自托管的企业级 OpenClaw 团队工作台。对话驱动执行 + 需求/项目治理，一键生成 PPT/报价/巡检单/原型；内置 OpenClaw Ops（网关探测/同步/频道插件技能管理）。
+- [chenyangji666](https://github.com/chenyangji666/html-ppt-skill) — ★ 8 — 纯 HTML/CSS/JS 演示文稿引擎 + AI 生成协议
+- [nju-lug](https://github.com/nju-lug/NJUBeamer) — ★ 8 — 南京大学演示文稿模板
+- [starry-source](https://github.com/starry-source/meteor) — ★ 8 — 基于 Html 的演示文稿制作器，跨平台无软件无依赖播放
+- [v0id-byte](https://github.com/v0id-byte/peg-design-system) — ★ 8 — Minimal, type-led HTML/CSS/React design system for slide decks and data-driven presentations. 极简演示文稿设计系统，含7种幻灯片模板与React组件。
+- [LLMxPM](https://github.com/LLMxPM/web-presentation) — ★ 8 — 一个面向 AI 演示文稿创作的平台，支持页面代码化、资源管理、组件复用、主题样式配置、实时预览与PPTX导出。web-presentation is an AI-powered presentation authoring platform that supports code-based pages, asse...
+- [microsoft](https://github.com/microsoft/IF-PowerPoint-Generator) — ★ 7 — A dynamic PowerPoint generator that will create a branded PowerPoint deck from dynamic data
+- [cosen1024](https://github.com/cosen1024/awesome-presentation-skills) — ★ 7 — A curated catalog of verified Presentation Agent Skills for editable PPTX, HTML slides, and image-first decks.
+- [xlisp](https://github.com/xlisp/aippt-agent) — ★ 7 — AI generates ppt, realized by autogen
+- [TrippyEngineer](https://github.com/TrippyEngineer/ai-presentation-orchestrator) — ★ 7 — Fully automated AI presentation system — pre-generates narration, fires live n8n demo workflows, and answers audience questions via voice Q&A. Zero manual in...
+- [learner-shx](https://github.com/learner-shx/PPT-generator) — ★ 7 — PPT一键生成器（小程序），包含PPT悬赏功能
+- [Alpha-Park](https://github.com/Alpha-Park/genpark-agent-presentation-slide-deck-synthesizer-skill) — ★ 7 — Post-trained consultant-grade presentation generator structuring business topics into cohesive slide decks with golden pyramid layouts
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-agent-presentation-slide-deck-synthesizer-skill) — ★ 7 — Post-trained consultant-grade presentation generator structuring business topics into cohesive slide decks with golden pyramid layouts
+- [rsensui2](https://github.com/rsensui2/tekion-slide-generator) — ★ 7 — TEKION Slide Generator v4 — AI-driven presentation slide generator (OpenAI GPT-image-2 / Gemini 3.1 Flash). Markdown → 16:9 2K slides → PPTX/PDF. Provider ab...
+- [SlideSpeak](https://github.com/SlideSpeak/pdf-to-slides-ai-generator-tutorial) — ★ 7 — 🤖 A tutorial for an AI PDF to slide generator using OpenAI
+- [aresplus](https://github.com/aresplus/tech-slides-generator) — ★ 7 — Generate professional, cyberpunk-style .pptx slides with natural language. 一键生成科技感赛博朋克风格的原生幻灯片。
+- [docmee](https://github.com/docmee/aippt-js) — ★ 7 — js/html 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of c...
+- [docmee](https://github.com/docmee/aippt-vue-all) — ★ 7 — Vue 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of compl...
+- [Haimbeau1o](https://github.com/Haimbeau1o/leo-skill) — ★ 7 — 学术论文全生命周期智能 Agent 工具箱：支持初步撰写、查重降重优化与最终答辩 PPT 生成 | Academic AI Agent toolbox for the full lifecycle of thesis writing, optimization, and presentation generation
+- [wenfenggithub](https://github.com/wenfenggithub/ClaudeCodeClass) — ★ 7 — Claude Code 实战课程 · 教学材料（spec、PPT 生成脚本、课后作业）
+- [comeonzhj](https://github.com/comeonzhj/DAMNCOOL-slides-skill) — ★ 7 — 一个让 Agent 生成演示效果更酷网页PPT的 Skills | A Skill that let agent makes slides cool
+- [astro-koko](https://github.com/astro-koko/ppt-lai) — ★ 7 — 让传统 PPT 制作技艺在 AI 时代继续发光：一个生成与翻新千禧年风格演示稿的 AI Skill。
+- [ficooooo](https://github.com/ficooooo/Paper2ScholarSlides) — ★ 7 — 面向学术综述的高质量 PPT 生成 Skill，可将综述初稿、论文资料与模板转化为结构严谨、引用清晰、图表公式可解释、并经过导出校验的学术汇报稿。
+- [citywill](https://github.com/citywill/pocket-slide) — ★ 7 — AI友好的演示文稿生成工具。不同于 slidev、reveal.js 等工具，该项目以AI友好为原则，非常适合以 Vibe Coding 的方式开发演示文稿项目。
+- [Minecodex](https://github.com/Minecodex/vibe-design) — ★ 7 — 一个 Agent 原生的 AI 创作工作台：从想法出发生成网站、演示文稿、文档、图片与视频，再到无限画布中继续编辑和协作。
+- [registor](https://github.com/registor/shortintronwafuthesis) — ★ 7 — 为毕业论文模板使用撰写的演示文稿
+- [micooz](https://github.com/micooz/keynote-ppt-to-markdown) — ★ 7 — 一个将 Keynote/PPT 演示文稿转换为 Markdown 格式的命令行工具，支持导出演讲者注释和幻灯片图片。
+- [kyleabeauchamp](https://github.com/kyleabeauchamp/copied-io-2013-slides) — ★ 6 — Personal modifications to Google IO 2013 HTML slide generator
+- [trayburn](https://github.com/trayburn/presentation-wiki) — ★ 6 — Surviving the AI Deluge: Architecting an Agentic Memory with OKF and Obsidian  Presentation assets and reference materials
+- [eldstal](https://github.com/eldstal/cardcinogen) — ★ 6 — A deck generator for Tabletop Simulator, allowing users to create expansions for word-card-type games.
+- [ayan471](https://github.com/ayan471/Vivid) — ★ 6 — AI presentation Builder
+- [maneo](https://github.com/maneo/letsplay) — ★ 6 — Source code and samples for "Let's play! - The only AI presentation you will ever need!" - use them responsibly.
+- [erickittelson](https://github.com/erickittelson/slidemason) — ★ 6 — Open-source AI presentation builder — turn documents into polished decks in minutes using Cursor, Windsurf, Claude Code, or any AI coding agent. No API keys....
+- [Michelin-3-star-tires](https://github.com/Michelin-3-star-tires/ai-ppt-poster-prompt) — ★ 6 — AI 生成 PPT 和海报的提示词仓库，优先适配 GPT-image-2，支持模板分析和图表占位
+- [WeHomeBot](https://github.com/WeHomeBot/slidev-agent) — ★ 6 — 用 slidev 创作 ai ppt
+- [jiangzhubo](https://github.com/jiangzhubo/-AI-PPT--Local-Attention-Network) — ★ 6 — 随波竺流AI知识分享活动第六期PPT- 细粒度识别之Local Attention Network
+- [apsdehal](https://github.com/apsdehal/Zap) — ★ 6 — Minimalistic python based Wikipedia article's PPT generator
+- [lucassabreu](https://github.com/lucassabreu/mk2slide) — ★ 6 — Dead simple markdown to slides generator
+- [joeyparrish](https://github.com/joeyparrish/sega-slides) — ★ 6 — Sega Genesis Slide Generator and Viewer
+- [engchina](https://github.com/engchina/llm-ppt-translator) — ★ 6 — LLM PPT Translator
+- [MANRENYIBU](https://github.com/MANRENYIBU/ppt-creator) — ★ 6 — PPT生成工具
+- [ken861222](https://github.com/ken861222/PPT-Skill) — ★ 6 — 🎯 多阶段智能 PPT 生成 Skill — 基于 Sandun PPT Agent 方法论，从需求调研到 PPTX 导出的完整流水线。Codex Agent Skill。
+- [zeeklog](https://github.com/zeeklog/pptking) — ★ 6 — PPTKING 是一个功能强大的在线PPT(演示文稿)制作平台，结合了现代 Web 技术和人工智能能力。用户可以通过直观的界面创建专业级的PPT演示文稿，支持多种元素类型、动画效果、AI辅助创作等功能。
+- [CoderZzxy](https://github.com/CoderZzxy/PowerPointCopilot) — ★ 6 — 一个面向 PowerPoint 的本地智能助手：支持通过 AI 一键生成 PPT 大纲、自动排版并生成演示文稿。内置现代化 WebView2 界面，支持多模型配置、PPT 模板管理、Markdown 实时预览。完全本地运行，默认不留存隐私数据；项目将以 MIT 协议开放，免费、无商业限制。
+- [0a00](https://github.com/0a00/ChaosGPT) — ★ 6 — 全球最全面的AI模型聚合网站！我们汇集了全球最新的人工智能模型，包括 GPT-4、CLAUDE、Llama、Gemini、Mistral、Flus、BERT、DALL、Transformer、ResNet、YOLO、VGG、T5、XLNet、StyleGAN 等，功能包括视频生成、文本生成、图像生成、PPT生成等...
+- [mingjiepan058-lab](https://github.com/mingjiepan058-lab/adaptive-english-teaching-studio) — ★ 6 — Adaptive English Teaching Studio 是一款面向英语教师的智能备课 Skill。教师输入教材、题目、学生学段和学习情况后，可按需生成教师逐字稿、课堂教学 PPT、课堂练习及课后作业与答案。  它适用于小学、初中、高中、四六级、雅思和托福教学，能够自动分析文章主题、核心词汇、固定搭配、语...
+- [xlgwr](https://github.com/xlgwr/WpsToPdf) — ★ 6 — WpsToPdf 主要是引用WPS 对应Dll com,生成 xls,word,ppt 生成pdf的功能
+- [Wang05904](https://github.com/Wang05904/p2v-1220) — ★ 6 — 基于AI的上传教学PPT生成教学视频的自动化工具
+- [pj-000](https://github.com/pj-000/DirectionAI-Agent) — ★ 6 — 基于 DeerFlow v2 的教育 AI Agent 系统，集成 PPT 生成、教案生成、试题生成等教育技能
+- [billLiao](https://github.com/billLiao/PPT-Design-Skill) — ★ 6 — 融合多种PPT设计风格，直接生成PPT文件而不是HTML
+- [archlizheng](https://github.com/archlizheng/presentation-report-preflight) — ★ 6 — 汇报型演示前置策划 Skill：在生成 PPT/HTML 之前，把主题/源文档/旧 deck 转成一份可交接的 Presentation Strategy Brief。
+- [nchmz](https://github.com/nchmz/AHU-lab-report-skill) — ★ 6 — 一个基于 Claude Code 的实验报告自动生成Skill，专为安徽大学（AHU）学生设计。只需提供实验代码、结果图片和 PPT，即可一键生成符合学校模板要求的 LaTeX 实验报告。
+- [w1ndys](https://github.com/w1ndys/html-ppt-academic-skill) — ★ 6 — 一个面向大学生、研究生和高校教师的 HTML PPT Skill，用于生成论文答辩、开题报告、中期答辩、预答辩、组会汇报和学术演讲风格的静态 HTML 幻灯片。
+- [YHSome](https://github.com/YHSome/claude-final-exam-review) — ★ 6 — 一个期末复习Skill，能够让Claude识别ppt,pdf,docx等文件并生成可视化讲义的Claude Code skill。An end-of-term review Skill that enables Claude to recognize files such as ppt, pdf, and doc...
+- [lirouroud](https://github.com/lirouroud/research-group-ppt-skill) — ★ 6 — 一个模板优先、科研内容保真的 Codex 组会网页 PPT Skill：自动读取研究进展素材，先输出逐页大纲，确认后生成可翻页 HTML 汇报，并完成图片路径、公式单位与视觉一致性检查。
+- [mire403](https://github.com/mire403/repo2slides) — ★ 6 — Repo2Slides是一个命令行工具，可将GitHub仓库自动转换为学术风格的PPT大纲，面向学生、研究者和开发者。核心功能：自动分析仓库结构，识别代码目录、实验脚本、结果文件；解析 README，提取背景、方法、实验、结果；检测 ML 框架（PyTorch、TensorFlow 等）；分析 metrics 文...
+- [YiHarvest](https://github.com/YiHarvest/ppt-design) — ★ 6 — ppt-design 是一个 Codex 插件，它内部有三个 skill：  frontend-slides：负责演示文稿工程、固定画布 HTML、导航、编辑能力与动效规范。 baoyu-design：负责内容分析、商业叙事、视觉方向、设计系统与可编辑 PPTX 导出。 html-ppt：提供可复用的主题、整套模...
+- [HyphenK](https://github.com/HyphenK/mltdkei_v3) — ★ 5 — MLTD Deck Analyzer - Score Simulator / Deck Generator of Million Live Theater Days (MLTD)
+- [Aaditya-Nanda](https://github.com/Aaditya-Nanda/ai-ppt-generator) — ★ 5 — AI-powered PowerPoint Generator using Google Gemini API and Pexels API. Built with Streamlit.
+- [JAICHANGPARK](https://github.com/JAICHANGPARK/workshop-harness) — ★ 5 — AI agent harness, 15 specialized skills, Google Colab & Open Codelabs integrations, presentation slide deck generator, and CLI toolkit for technical workshops.
+- [zhangshi0512](https://github.com/zhangshi0512/SlideSpeak) — ★ 5 — Text to PPT & Speech Generator
+- [busto-dev](https://github.com/busto-dev/PepeteX) — ★ 5 — Self-hosted AI presentation generator  chat to a full PPTX deck, using your own AI keys.
+- [jc7k](https://github.com/jc7k/llm_pptx_deck_builder) — ★ 5 — AI-powered PowerPoint presentation generator using LangChain, LlamaIndex, and Brave Search API. Creates research-backed presentations with proper citations a...
+- [DipanNama](https://github.com/DipanNama/presentrinity) — ★ 5 — AI Presentation maker using slidev and free gemini
+- [spark798](https://github.com/spark798/iamspeaker) — ★ 5 — Local-first, open-source AI presentation coach — the AI demos your talk first, then coaches your delivery: pace, fillers, pronunciation, intonation, word cho...
+- [dongyz-code](https://github.com/dongyz-code/ai-pptx) — ★ 5 — 使用大模型，自动生成PPT
+- [bitcraze](https://github.com/bitcraze/aideck-gap8-bootloader) — ★ 5 — AI deck GAP8 second stage bootloader
+- [Gayatri8-sys](https://github.com/Gayatri8-sys/PPT-Generator-using-AI-Agent) — ★ 5 — This project is an AI-driven presentation generator that creates professional PowerPoint slides automatically from user-provided topics and content. Instead ...
+- [thnhmai06](https://github.com/thnhmai06/SlideGenerator) — ★ 5 — 🎞️ An automated, template-based presentation generator.
+- [mdmurphy822](https://github.com/mdmurphy822/Slideforge) — ★ 5 — AI-powered presentation generator that transforms structured content into professional PowerPoint presentations
+- [mmul-it](https://github.com/mmul-it/kpa_generator) — ★ 5 — KPA slides generator Ansible role
+- [ShogunPanda](https://github.com/ShogunPanda/freya) — ★ 5 — Opinionated JSX based slides generator.
+- [Wievondii](https://github.com/Wievondii/ppt-master-pro) — ★ 5 — PPT Master Pro - AI-driven PPT generation with draw.io diagram integration. Forked from hugohe3/ppt-master.
+- [Spark-Relics](https://github.com/Spark-Relics/Otter-PPT) — ★ 5 — Otter-PPT is a native editable PPT generation engine that constructs text, charts, shapes, and images directly into genuine Office elements, rather than asse...
+- [docmee](https://github.com/docmee/aippt-ui-iframe) — ★ 5 — UI iframe 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of...
+- [docmee](https://github.com/docmee/aippt-api-go-demo) — ★ 5 — GoLang 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of co...
+- [johnson7788](https://github.com/johnson7788/skill-ppt-agents) — ★ 5 — Skill版本的PPT生成
+- [gtoxlili](https://github.com/gtoxlili/deckforge) — ★ 5 — deckforge — agent 可自行安装调用的 PPT 生成 CLI
+- [RFYoung](https://github.com/RFYoung/slideweaver) — ★ 5 — 和大模型搏斗多次形成的学术汇报ppt生成skill，可以端到端半无脑生成
+- [YeeKuson](https://github.com/YeeKuson/html-exhibition) — ★ 5 — 用 HTML 网页演示替代 PPT 的 skill：先读懂项目，再组织成叙事，套暗色终端风设计系统生成自包含演示页
+- [chenyu896235554-boop](https://github.com/chenyu896235554-boop/lapian-storyboard) — ★ 5 — Codex skill：视频拉片、分镜抽帧和横版故事板 PPT 生成
+- [MURMURE11118586](https://github.com/MURMURE11118586/codex-xkppt-skill) — ★ 5 — codex-ppt-skill 是一个面向 Codex 的 PPT 制作 Skill，支持从主题、文档、PDF、Markdown 或已有 PPT 生成可编辑演示文稿，并提供参考风格、单页修改、模板套用、PDF/PNG 导出和 QA 检查流程。
+- [hapince-code](https://github.com/hapince-code/AI-EduForge) — ★ 5 — AI辅助教学平台 EduForge 是一个面向中小学教师的 AI 教学资源生成平台，支持教学 PPT、React 交互课件、PDF 试卷、课本资源库和开发者 API。
+- [csssun](https://github.com/csssun/LandPPT) — ★ 5 — 一个基于LLM的演示文稿生成平台，能够自动将文档内容转换为专业的PPT演示文稿。平台支持多种AI模型，提供丰富的模板和样式选择，让用户能够创建高质量的演示文稿。
+- [xiongwenhao112](https://github.com/xiongwenhao112/ppt-template-fill) — ★ 5 — Agent skill: 基于你自己的 PPTX 模板生成演示文稿 | Fill YOUR PowerPoint template with AI — layout-preserving, placeholder-free templates supported
+- [perper999](https://github.com/perper999/xidian-slides-skill) — ★ 5 — 🎓 西电 Slides 技能包 - 基于西电视觉规范的零依赖 HTML 演示文稿生成Skill | 支持西电官方 Logo、配色方案和专业排版，适用于毕业答辩、课程汇报、学术会议等场景
+- [jiec827](https://github.com/jiec827/slideTemplate) — ★ 5 — 基于\LaTeX{}和Beamer的演示文稿模版
+- [wenbopeng](https://github.com/wenbopeng/markdeep-slides-project) — ★ 5 — 一个基于 Markdeep 和 markdeep-slides 的高度定制化幻灯片制作工具。旨在通过简单的 Markdown 语法，帮助您快速创建功能丰富、样式精美的演示文稿。  本项目在原有基础上进行了大量优化和功能增强，尤其侧重于提升实用性和视觉表现力。新增了包括但不限于自动导航栏、自动目录、自定义比例双栏、...
+- [simonlisiyu](https://github.com/simonlisiyu/pptgenius) — ★ 5 — PPTGenius 是一个基于大语言模型的智能幻灯片生成系统。项目名称中的 "Genius" 代表智慧与创造力，突出了项目的技术深度和自动化能力。通过简单的输入，即可快速生成专业的幻灯片内容。
+- [sima1723](https://github.com/sima1723/llm-kb) — ★ 5 — 卡帕西LLM知识库构建方法论（Agent可调用版） 核心步骤： 数据摄入：原始资料存入raw目录，用Obsidian Web Clipper转网页为Markdown 自动编译：LLM生成摘要分类反向链接，输出结构化Wiki 查询输出：支持Markdown报告 Marp幻灯片 Matplotlib图表 健康检查：定...
+- [daniel-carreon](https://github.com/daniel-carreon/sf-slides) — ★ 5 — SF-Slides — The Agentic Presentation Editor. Tauri v2 + React + Fabric.js
+- [knight6669](https://github.com/knight6669/knight-html-ppt-skill) — ★ 5 — HTML PPT Agent Skill for professional Chinese reporting decks with data animation and modern navigation.
+- [FrozenAssassine](https://github.com/FrozenAssassine/Powerpoint-AI) — ★ 5 — Generate Powerpoint presentations using ChatGPT
+- [Revanth-432](https://github.com/Revanth-432/Pitchforge-ai) — ★ 4 — AI-powered pitch deck generator that transforms project documentation into audience-specific presentations, with intelligent follow-up questions and Algorand...
+- [Crosery](https://github.com/Crosery/ppt-anything) — ★ 4 — AI story-deck generator  give it a topic, get back a coherent illustrated PPT with recurring characters and visual taste
+- [VanHackathon2017HueBR](https://github.com/VanHackathon2017HueBR/presentation-builder) — ★ 4 — An awesome presentation maker
+- [daoodaba975](https://github.com/daoodaba975/agentic.coding.meetup) — ★ 4 — Slides de la prsentation "Agentic Coding : quand ton terminal devient ton co-dveloppeur" lors du Live Koor 2026.
+- [supremejohnny](https://github.com/supremejohnny/powergen) — ★ 4 — The powerpoint generator powered by GPT4 and python-pptx
+- [uddugarg](https://github.com/uddugarg/Vivid) — ★ 4 — AI Presentation Builder
+- [sleipner42](https://github.com/sleipner42/Deckium) — ★ 4 — Open-source, local-first AI presentation software with human control.
+- [samhuangai](https://github.com/samhuangai/Ai-pptx) — ★ 4 — Ai-pptx
+- [Freyaaa001](https://github.com/Freyaaa001/ai-ppt-generator) — ★ 4 — feat: 初始化PPT自动生成工具  - 搭建基于Vite + TypeScript的前端框架 - 配置Gemini API服务接口 - 建立项目基本类型定义和主题系统 - 添加基础配置文件（package.json, tsconfig, vite.config）
+- [ChatGPT3a01](https://github.com/ChatGPT3a01/ai-ppt-generator) — ★ 4 — 亮言 · 一鍵成仙 - AI 原生 PPT 生成器
+- [liuklabc-png](https://github.com/liuklabc-png/nanobanana-ai-ppt-plus) — ★ 4 — 蕉幻ppt助手改良版，可以选择三套模型：国外nanobanana，国内豆包与千问
+- [certaindragon3](https://github.com/certaindragon3/slideshot-chatzai) — ★ 4 — CLI tool optimized for chat.z.ai’s AI PPT pages to precisely crop HTML slides into high‑resolution PNG/JPEG and combine them into PDF
+- [RaghavSingh1212](https://github.com/RaghavSingh1212/AI-Slide-Generator) — ★ 4 — —
+- [AmirHossein-84](https://github.com/AmirHossein-84/AI-Slide-Puzzle) — ★ 4 — —
+- [bertovmill](https://github.com/bertovmill/slideo-ai) — ★ 4 — AI slide builder: generate, research and edit decks, with PPTX import. Live at slideo.live
+- [bitdeckai](https://github.com/bitdeckai/esp32s3_ai_deck) — ★ 4 — esp32s3 ai deck for crazyflie platform
+- [aifactory-team](https://github.com/aifactory-team/discover) — ★ 4 — Catalog of Claude Code skills by domain. First entries: KIST (brand guidelines · personnel finder · PPT generator).
+- [Nithinr-17](https://github.com/Nithinr-17/AI-Hub) — ★ 4 — AI-Hub is a skill development project featuring AI tools like Summarizer, PPT Generator, Code Generator, Paraphraser, and Generative AI for education.  Leadi...
+- [Jayden-Cho](https://github.com/Jayden-Cho/ChatPPT) — ★ 4 — AI-driven Presentation Generator with ChatGPT, Dall-E, and Stable Diffusion
+- [trevinwisaksana](https://github.com/trevinwisaksana/Livenode) — ★ 4 — Livenode is an Augmented Reality presentation maker for the iPad.
+- [Mr-vero](https://github.com/Mr-vero/Codelonger-Live-Text-Editor) — ★ 4 — A live text editor to do a quick test for HTML5/CSS3/JavaScript and also a HTML5 based presentation maker
+- [LitMoose](https://github.com/LitMoose/LitWeather) — ★ 4 — Small-talk generator based on degrees and locale.
+- [longyaoyoudu](https://github.com/longyaoyoudu/ppt_maker) — ★ 4 — 可以自定义选择不同的大模型来构建大纲和生成ppt智能体Agent
+- [ZGentleman](https://github.com/ZGentleman/DocMind) — ★ 4 — AI 智能办公助手前端 | 基于 LLM + RAG + SSE 的下一代办公生产力工具。支持 AI Agent 对话、智能 PPT 生成、演讲稿撰写、RAG 知识库管理、文件向量化检索。React + TypeScript + Tailwind CSS 构建，中英双语。
+- [docmee](https://github.com/docmee/aippt-api-dotnet-demo) — ★ 4 — .NET / C# 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of...
+- [cloudinfer](https://github.com/cloudinfer/pubmed-retrieve) — ★ 4 — 适用于生物医药专业科研人员，可根据用户输入语句自动生成pubmed查询语句并进行查询，智能体会对查询结果进行汇总梳理并形成综述论文及汇报PPT
+- [xiao634zhang](https://github.com/xiao634zhang/paper-reading-agent) — ★ 4 — Paper Reading Agent Team 是一个基于多Agent协作架构的智能论文研读系统。它能够自动完成论文搜索、PDF下载解析、摘要生成、批判性分析、PPT生成等全流程任务，帮助研究人员快速理解和呈现学术论文内容。 系统采用模块化Agent设计，各Agent分工明确、协同工作：Scraper Agen...
+- [pioupiou493](https://github.com/pioupiou493/smart-meeting-assistant) — ★ 4 — “拼好会”是一款基于RAG的智能会议辅助系统，支持实时语音识别、英文会议翻译、会议纪要生成与 AI 辅助发言。系统可同时捕获电脑音频与麦克风输入，对会议内容进行低延迟流式识别，并结合RAG技术检索导入的 PDF、PPT、Word 等会议资料，为用户提供上下文相关的发言建议与内容总结。  项目支持 OpenAI、D...
+- [Quirt-studio](https://github.com/Quirt-studio/Qurit-PPT) — ★ 4 — 使用AI制作PPT时不再使用模板，创建由AI自主生成PPT的agent(When using AI to create PPT, templates are no longer used, and an agent is created to generate PPT independently)
+- [panhongwei](https://github.com/panhongwei/html-report) — ★ 4 — 专门做ppt的SKILL,一句话触发，自动生成精美的 PPT 风格 HTML 页面,并且可以通过AI html-to-one-pptx SKILL转化为PPT，实现PPT自由
+- [670027822](https://github.com/670027822/-AI-) — ★ 4 — 松鼠AI系统ChatGPT源码+详细搭建部署教程+支持GPT4.0+支持ai绘画（Midjourney)/支持OpenAI GPT全模型+思维导图生成+ppt生成+商业源码
+- [zhytest123](https://github.com/zhytest123/ppt-narration-agent) — ★ 4 — 口播 PPT Agent 工作台：根据自然语言和参考资料生成可编辑 PPT、逐页口播稿、声纹和口播视频。AI-powered PPT narration workspace: generate editable slides, speaker scripts, voiceprints, and narrated ...
+- [includewudi](https://github.com/includewudi/web-ppt) — ★ 4 — Web PPT — 生成精美 HTML 演示文稿的 AI Skill。零依赖、浏览器直接打开、支持视频录制。
+- [Lain-k](https://github.com/Lain-k/exam-review-generator) — ★ 4 — 一个把课程 PPT、PDF、Word 等资料整理成期末复习资料的 AI Skill，可生成结构化笔记、救命小抄、练习题和零基础突击版自学讲义。
+- [Ian-QM](https://github.com/Ian-QM/business-analysis-charts-skill) — ★ 4 — 咨询风数据分析图表：10种中文经营分析图表、4套咨询风主题，支持JSON/CSV一键生成PPT级PNG与SVG。
+- [jialiruo-png](https://github.com/jialiruo-png/economics-empirical-ppt-skill) — ★ 4 — 经管/金融/实证论文 PPT 生成 Claude Code Skill：基于 PptxGenJS，支持有讲稿/无讲稿两种路径，交互式选页数 / 字数 / 风格
+- [Jum4Link](https://github.com/Jum4Link/universal_watermark) — ★ 4 — 一个支持 Word、PDF、PPT、Excel、图片和 GIF 的多格式水印生成 Skill / CLI 工具。A multi-format watermarking skill and CLI for Word, PDF, PowerPoint, Excel, images, and GIFs.
+- [nmww](https://github.com/nmww/courseforge) — ★ 4 — 离线单文件网页课件编辑器：把 PPT 升级成「基础层 + AI 互动层」的可互动网页课件。离线、零安装、零服务器，配合本地 WorkBuddy 生成互动 H5。
+- [niqinggood](https://github.com/niqinggood/openkitty-skills) — ★ 4 — penKitty 社区技能仓库 — 21个类目173个技能，涵盖投资量化、学术研究、文档处理、PPT生成、DevOps等, — 开箱即用173 AI skills across 21 categories — quantitative finance, academic research, document to...
+- [fakerqwq](https://github.com/fakerqwq/defense-ppt-outline-writer) — ★ 4 — defense-ppt-outline-writer 是一个用于学术论文答辩/展示准备的 Codex skill。它可以读取完整的论文、开题报告、研究计划等文档，按照原文结构拆解内容，精简为适合答辩 PPT 的页级大纲，并进一步生成对应的答辩/展示讲稿。
+- [joeseesun](https://github.com/joeseesun/qiaomu-course-designer) — ★ 4 — 通过多轮、依赖感知的课程设计访谈，与用户逐分支共创并锁定课程蓝图。用于用户有课程、培训、workshop、教学项目或知识产品的初步想法，希望被持续访谈、每个问题获得推荐答案、解决决策依赖，并在整体共识后再转为课程稿、教案、学员手册或 PPT。不用于已定稿课程的直接排版、PPT 美化、单次大纲生成或无
+- [learnljs](https://github.com/learnljs/papers-reading) — ★ 4 — 该skill可将中英文论文整理为标准化的中文论文阅读材料，默认输出适配周汇报PPT的精炼提纲版（涵盖摘要与引言、创新点、整体框架与方法、实验结果、结合局限性的全文总结等核心模块），仅在用户明确要求时，额外生成讲稿详版、3-5分钟口头汇报稿或8-12个贴合论文的术语拓展学习内容；处理过程严格遵循固定的版式、标题顺序...
+- [docmee](https://github.com/docmee/docmee-pptxproperty-structural-protocol) — ★ 4 — 用于维护 pptxProperty JSON 结构协议，帮助第三方开发者理解、读取、生成和校验 PPTX 结构数据。  描述一个演示文稿的页面尺寸、页面内容、幻灯片母版、版式、主题、背景和页面对象。它不是 PPTX 文件本身，而是 Docmee 系统在编辑、解析和生成 PPTX 时使用的结构化数据格式。
+- [anbulang](https://github.com/anbulang/notebooklm-ppt) — ★ 4 — 将notebooklm的演示文稿转换为可以编辑的PPT
+- [luosir1123-ai](https://github.com/luosir1123-ai/waimao-outreach-agent) — ★ 4 — 面向外贸团队的证据约束客户研究、产品推荐、市场对比、开发材料与可编辑演示文稿 Agent，保留人工审核与独立审批。
+- [aruis](https://github.com/aruis/ReelFlow) — ★ 4 — 一个为摄影师朋友打造，行在 macOS 上生成图片幻灯片视频的小工具
+- [vividitytech](https://github.com/vividitytech/pptAgent) — ★ 4 — ppt Agent to generate powerpoint slides from user conversation
+- [atharvaphadnis-ai](https://github.com/atharvaphadnis-ai/AI-pptx) — ★ 3 — AI PowerPoint Generator creates presentations from a topic using AI. It generates slide content, adds images, shows a live preview, and lets users download a...
+- [MohamedBIqbal](https://github.com/MohamedBIqbal/demo-prep-skill) — ★ 3 — Claude Code skill for product demos: McKinsey-style HTML presentations, PowerPoint generator, built-in timer
+- [romanchaa997](https://github.com/romanchaa997/IPD-Generator) — ★ 3 — Interactive Pitch Deck Generator
+- [fasrc](https://github.com/fasrc/stdg) — ★ 3 — Slurm Test Deck Generator
+- [Mor223](https://github.com/Mor223/Silvaco-simulation-by-agent) — ★ 3 — Natural language to Silvaco TCAD DevEdit/ATHENA + ATLAS deck generator and Codex skill.??????TCAD????silvaco?deckbuild?
+- [SidU](https://github.com/SidU/leancanvasai) — ★ 3 — AI Powered Lean Canvas Deck Generator
+- [tonyli99](https://github.com/tonyli99/aiPresentations) — ★ 3 — Short AI presentations for Baltimore Indie Game Devs
+- [Kaungmyatkyaw2](https://github.com/Kaungmyatkyaw2/ai-presentation-builder) — ★ 3 — AI presentation Builder
+- [AtaUlMohsin900](https://github.com/AtaUlMohsin900/Cloud-Native-AI-Presentation) — ★ 3 — Cloud Native AI Presentation
+- [jasehackman](https://github.com/jasehackman/PyNashAI) — ★ 3 — From May 2023 PyNash AI Presentation
+- [wilingna](https://github.com/wilingna/PPTFlux) — ★ 3 — End-to-end AI presentation system: turn raw input into interactive, fully editable HTML slides.
+- [lwf225-source](https://github.com/lwf225-source/610PPT) — ★ 3 — Local-first AI presentation workbench for source-grounded slide planning, Image2 generation, review, and PPTX export.｜本地 AI PPT 工作台：文档拆页、整页图生成、审阅与导出。
+- [LuxUmbra697](https://github.com/LuxUmbra697/AI-PPT-Slides) — ★ 3 — 面向中文场景的 AI PPT 演示文稿生成与编辑平台 | A Python full-stack AI presentation platform for outline generation, in-browser editing, and editable PPTX export.
+- [yashoda-krishna](https://github.com/yashoda-krishna/AI-ppt) — ★ 3 — —
+- [skychentian](https://github.com/skychentian/ai-ppt-skill) — ★ 3 — AI演示文稿全流程制作 skill - 17种视觉风格，HTML到PPTX导出
+- [svendotdev](https://github.com/svendotdev/AI-ppt-generator) — ★ 3 — This is a PowerPoint-generating product. As you can see in the README, usually we have key points to present, but sometimes we don’t have the time or the PPT...
+- [Xutsuku](https://github.com/Xutsuku/ai-ppt-editable) — ★ 3 — Generate editable PowerPoint with AI - native shapes, not flat images. Built for professional work reporting.
+- [466852675](https://github.com/466852675/YH-AI-PPT) — ★ 3 — 基于混合 AI 引擎的智能演示文稿生成平台。支持风格参考图复刻、全局视觉配置与智能大纲生成，让小白也能零门槛产出高颜值、专业级的 PPT。
+- [ShreyaJaiswal1604](https://github.com/ShreyaJaiswal1604/Generative-AI-PPT-Geneartor) — ★ 3 — Welcome to Generative AI PPT Generator—your go-to tool for effortless presentation creation. 🚀 Powered by Streamlit and OpenAI, our AI-driven app makes craft...
+- [AaronSosaRamos](https://github.com/AaronSosaRamos/ai-ppt-builder-frontend) — ★ 3 — —
+- [lesopio](https://github.com/lesopio/aptdom) — ★ 3 — ai ppt to docx or markdown
+- [LuxUmbra697](https://github.com/LuxUmbra697/AI-PPT-Report-Slides-Studio-v2) — ★ 3 — AI PPT 演示文稿生产与动态 HTML 报告生成的AI工作台｜AI workspace for editable PPTX decks and dynamic HTML reports.
+- [jing1312](https://github.com/jing1312/baidu-ai-batch) — ★ 3 — 百度网盘视频 AI PPT/笔记/讲稿自动导出
+- [Jokerealm](https://github.com/Jokerealm/ai_slides) — ★ 3 — This repo is used for machine learning coursework. This code is developed entirely using AI, without writing a single line of code, and implements an AI PPT ...
+- [WangJunqing-coder](https://github.com/WangJunqing-coder/AIOC) — ★ 3 — 本项目是一个基于Spring Boot 3 + Vue3的AI综合服务平台，集成了AI聊天、图片生成、视频生成和AI PPT制作功能。
+- [tangkun1313](https://github.com/tangkun1313/VibeChat-Android) — ★ 3 — VibeChat Android：GPT-5.5人设聊天App，内置童锦程skill、张雪峰skill、毛选skill、丁元英skill、DBS skill、金融研报skill，支持AI PPT导出APK密码Null666
+- [xuhuizhan5](https://github.com/xuhuizhan5/StreamSlide) — ★ 3 — Streamlit-powered AI slide generator, create slides seamlessly for your customized materials, perfect for paper presentation.
+- [Syndicats](https://github.com/Syndicats/estradeck) — ★ 3 — Open-source presentation studio for reveal.js — a Google-Slides-like editor with themes, AI slide generation, and PDF/MP4 export.
+- [grunion-ai](https://github.com/grunion-ai/decklet) — ★ 3 — AI slide generator for coding agents: a Claude Code and Codex skill plus CLI that turns any content into one self-contained, editable HTML slide deck (single...
+- [rocsgh](https://github.com/rocsgh/ppt-zen) — ★ 3 — A judgment layer for AI-made slides — not another PPT generator.
+- [Mishima-syk](https://github.com/Mishima-syk/markdown2pptx) — ★ 3 — PowerPoint presentation generator from markdown style text file.
+- [rioryugen](https://github.com/rioryugen/DeckCraft) — ★ 3 — DeckCraft - AI-powered presentation generator. Transform any idea into professional slide decks in seconds using GPT. Free, open source, JavaScript.
+- [tvanmaren](https://github.com/tvanmaren/mock-me) — ★ 3 — an ipsum presentation generator for all your presentation mockup needs. TIMELINE: 1 week
+- [rnutt13](https://github.com/rnutt13/claude-brand-studio) — ★ 3 — Branded HTML presentation generator for Claude Code — set up any company brand from a URL, build polished customer decks
+- [shibinsp](https://github.com/shibinsp/pptxfactory) — ★ 3 — 🎯 AI-Powered Presentation Generator - Create stunning PowerPoint presentations in seconds with Mistral AI. Features a Canva-like visual editor with futuristi...
+- [Dileep01712](https://github.com/Dileep01712/PromptSlide) — ★ 3 — ''PromptSlide: Automated AI-Powered Presentation Generator'' PromptSlide is an innovative tool designed to transform your text prompts into professional Powe...
+- [reyoung](https://github.com/reyoung/SlideGen) — ★ 3 — HTML5 Slide generator
+- [glepretre](https://github.com/glepretre/slimdes) — ★ 3 — Opinionated markdown slides generator
+- [mizchi](https://github.com/mizchi/mz-slide) — ★ 3 — static slide generator by markdown
+- [haomaaax](https://github.com/haomaaax/smartslide-webapp) — ★ 3 — Slide generator in 1 click
+- [fdsf53451001](https://github.com/fdsf53451001/slide-maker) — ★ 3 — Local-first image-based slide generator — Express server + React editor + pluggable image providers
+- [mochueloxie-sudo](https://github.com/mochueloxie-sudo/SlideForge) — ★ 3 — SlideForge is a production-grade content-to-presentation pipeline, not just a slide generator. Get started and try everything on it now
+- [Isha-upadhyay](https://github.com/Isha-upadhyay/ChillDeck) — ★ 3 — ChillDeck is an AI-powered slide generator that creates complete presentations from just a topic or even your uploaded notes while you chill.
+- [sjkncs](https://github.com/sjkncs/Ding-AI) — ★ 3 — AI-powered PPT generation tool / AI 驱动的 PPT 自动生成工具
+- [iamnigellee](https://github.com/iamnigellee/PPT-style-wow) — ★ 3 — Brand-aware PPT generation skill — extract design DNA from websites, generate native-editable PPTX, evolve a template library
+- [alexcolls](https://github.com/alexcolls/onelove) — ★ 3 — ❤️ onelove.ai | Find your love with verified people and video profiles with no filters. Based on your video presentation AI will recommend you 4 profiles eve...
+- [Raamzeez](https://github.com/Raamzeez/IntelliSlides) — ★ 3 — A presentation maker that uses gpt3 to create slides with rich information
+- [frhoyde](https://github.com/frhoyde/SlideIt) — ★ 3 — An Online Presentation Maker
+- [Polysolene](https://github.com/Polysolene/ppt-speaker-notes-generator) — ★ 3 — 专为 “全图片格式 PPT” 设计的智能备注生成工具，利用豆包视觉 API 自动生成专业、连贯的演讲备注。AI-powered speaker notes generator for image-only PPTs, using Doubao vision API to generate professional...
+- [docmee](https://github.com/docmee/aippt-vue2) — ★ 3 — Vue2 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of comp...
+- [zhh293](https://github.com/zhh293/PPT-AGENT) — ★ 3 — 一款用于生成ppt的agent
+- [RayTingTop](https://github.com/RayTingTop/PPT) — ★ 3 — 使用python根据网页内容生成ppt
+- [AIzzj](https://github.com/AIzzj/PPt-for-company) — ★ 3 — 一个强大的PPT模板解析和生成系统，可以动态生成PowerPoint演示文稿。  ## 功能特点  - **模板上传**：上传PowerPoint模板文件 - **模板解析**：解析PPT模板，提取幻灯片、元素和样式信息 - **内容生成**：为幻灯片元素生成内容，如标题、副标题等 - **PPT生成**：使用模...
+- [skycommon](https://github.com/skycommon/exam-cram) — ★ 3 — 期末速成助手 —— 一键生成复习讲义 PPT 与模拟卷的桌面应用
+- [ablikimeli](https://github.com/ablikimeli/paper2ppt-skill) — ★ 3 — Generate academic literature review PPT from paper URL/DOI/PMID. A Claude Code Skill. 从论文链接/DOI/PMID 自动生成文献汇报PPT。
+- [rain-lei](https://github.com/rain-lei/ppt_name_replacer) — ★ 3 — 从 Excel 批量生成个性化 PPT 奖状，支持命令行与 Web 界面
+- [GingerYang19](https://github.com/GingerYang19/courseware-to-lecture-script) — ★ 3 — 从PPT/PDF课件自动生成口语化讲课稿（逐字稿）的 Agent Skill
+- [KyrieWong7](https://github.com/KyrieWong7/graduate-ppt-rescuer) — ★ 3 — 研究生PPT汇报解救器 | Cursor 内一键生成中英双语学术汇报 slides.pdf + script.pdf
+- [shuhari04](https://github.com/shuhari04/open-book-index-skill) — ★ 3 — 开卷索引 Skill：从课程 PPT/PDF/DOCX/压缩包生成开卷考试索引材料
+- [Farway22](https://github.com/Farway22/P2PPT) — ★ 3 — 一个证据驱动、低幻觉、支持图表人工占位的论文转 PPT Skill,帮助用户通过Skill一键生成固定格式,内容详实的PPT生成prompt,并且可以生成图表,图片占位符,防止llm出现幻觉生成错误信息,最后加入审计步骤,进行纠错。
+- [Yang9547472171](https://github.com/Yang9547472171/D-PPT-skill) — ★ 3 — 中文商业汇报图片版 PPT/PDF 生成工作流：大纲确认、脚本 QA、质量探测、生图与交付验证
+- [jdlhr-lab](https://github.com/jdlhr-lab/OpenManus-23) — ★ 3 — 由AI驱动的对话式PPT生成工具，用户通过自然语言直接操控microsoft PowerPoint，实时生成和编辑幻灯片，支持折线图、雷达图、甘特图等复杂元素，实现“用对话完成PPT制作，所见即所得”。
+- [yushi-javatoai](https://github.com/yushi-javatoai/ai-web-ppt-maker) — ★ 3 — AI 网页 PPT 生成器：粘贴长文案，AI 流式拆解为多页网页 PPT，支持全屏演示、键盘翻页、多套主题与独立 HTML 导出。
+- [lessone1](https://github.com/lessone1/PPT-auto-nav) — ★ 3 — 自动为PPT生成动态导航栏，支持自动标题提取、超链接跳转、多段导航栏等功能
+- [AngChow](https://github.com/AngChow/ang-ppt-skill) — ★ 3 — 三套风格的网页 PPT 生成 skill — 电子杂志风(Style A) / 瑞士国际主义(Style B) / 企家有道企业风 qjyd-corp(Style C)。Fork of op7418/guizang-ppt-skill (AGPL-3.0)
+- [kirchhoff114514](https://github.com/kirchhoff114514/ppt_deduplicator) — ★ 3 — 基于感知哈希（pHash）的智云课堂 PPT 截图去重与 PDF 生成工具。高效移除录像截图中的连续重复幻灯片，确保最终生成的课件 PDF 干净、按序且无冗余。
+- [kaliwuang](https://github.com/kaliwuang/goofish-ppt-automation) — ★ 3 — 闲管家开放平台全自动发货系统 - 闲鱼订单自动分配兑换码 + Kimi PPT 生成 (RPA/中转双方案)
+- [Chaomu19](https://github.com/Chaomu19/econ-lit-review-seminar-skills1.0) — ★ 3 — 经济学文献综述组会 Skills：论文筛选、PDF 转 Markdown、PPT 完整内容生成、PptxGenJS 自动化与兜底精读工作流。
+- [CBRR38](https://github.com/CBRR38/learningskill-ppt-html) — ★ 3 — 这是一款skill，当用户说"生成数学课件"、"帮我做数学PPT"、"数学幻灯片"、"带我学习XXX"（数学相关）或类似表达时触发。直接生成纯 HTML/CSS/JS 数学幻灯片演示文稿，具备PPT式分页浏览、KaTeX公式渲染、交互式2D/3D可视化。不依赖任何 Python、Node.js 等运行时，生成的课...
+- [bulijiang](https://github.com/bulijiang/PPT-design-skill) — ★ 3 — 是一个帮你逐页生成咨询解决方案类 PPT 详细设计方案的 Claude Skill——它结合品牌配置、项目约束与受控词汇表，把每页大纲细化成包含完整文案、视觉结构和可直接用于 AI 图像生成（image2）的中文视觉提示词的独立文档，并自动管理版本与修订日志。A Claude Code skill that tu...
+- [nyantused-cpun](https://github.com/nyantused-cpun/folio) — ★ 3 — 兰亭 (Folio) · 咨询/汇报材料生成引擎：宿主无关 CLI（87 命令 / 37 种图形 / HTML·PPT·DOCX·报价同源）+ DeepSeek Harness 增强层（15 原生工具 / 会话协议 / L0 守卫 / 可换方法论包），零 key 起步。DSH verified 0.1.0-rc....
+- [piaomiaoguying](https://github.com/piaomiaoguying/ppt-video-maker) — ★ 3 — 一个全自动 AI 内容生产流水线：一份投入三种产出：📄 AI 联网调研自动生成结构化 Markdown 文档 → 🖥️  36 套主题 HTML 交互式 PPT，配备演讲者模式和提词器，真人可以直接上台讲 → 🎥 TTS 自动配音 + Remotion   毫秒级音画同步，导出标准 MP4 直接发视频平台。全程一...
+- [guochongjun](https://github.com/guochongjun/RAIN-agent) — ★ 3 — RAIN Desktop 将 Hermes Agent 强大的 AI 对话能力封装为 Windows 桌面应用，内置 20 个技能，涵盖 PPT 生成、前端设计、Web 测试、开发调试、代码审查、视频制作等场景。本版本基于Hermes深度优化，带来安全与性能的双重飞跃：安全升级：创新引入“工作目录”机制，实现运行...
+- [CoolBanHub](https://github.com/CoolBanHub/genppt) — ★ 3 — 纯Go语言实现的PowerPoint演示文稿生成库，支持创建符合OOXML (ECMA-376)标准的.pptx文件。
+- [jyjin](https://github.com/jyjin/awesome-online-ppt) — ★ 3 — 在线自定义实时演示文稿
+- [Babykiller1005](https://github.com/Babykiller1005/PPT_Architect_Pro) — ★ 3 — PPT Architect Pro：高质量演示文稿自动规划 Skill
+- [i2cy](https://github.com/i2cy/BatPPT) — ★ 3 — BatPPT 幻灯片项目，用批处理窗口的演示文稿
+- [Yvestiny-aipm](https://github.com/Yvestiny-aipm/doc2ppt) — ★ 3 — 把任意文档、文章或网页 URL 自动转换成精美的 PDF 或可编辑 PowerPoint (.pptx)演示文稿
+- [liuxingqitd](https://github.com/liuxingqitd/screencast-slides-skill) — ★ 3 — 把教程类逐字稿自动转换为「录屏+右下角圆形头像口播」专用的单文件HTML演示文稿，自带联动提词器。AI Agent Skill for screencast-style presentation slides.
+- [RaffeYang](https://github.com/RaffeYang/HiLaTex) — ★ 3 — HiLaTex是一个用于中文和英文排版的 LaTeX 模板项目，旨在提供一个灵活且易于使用的文档结构，适用于各种文档类型，如论文、报告和演示文稿。该项目包含多个示例文件，演示了如何使用不同的 LaTeX 功能，包括自定义字体、TikZ 绘图和模板设置。
+- [z953218350](https://github.com/z953218350/dsh-np-ppt) — ★ 3 — 原生 DSH (DeepSeek Harness) 插件：PPT 演示文稿专家，内置 PPTD DSL 引擎、55173 所见即所得可视化编辑器、Python-PPTX 高保真离线编译内核与一键导出 PPTX。 | Native DSH plugin: PPT presentation expert with P...
+- [beyalee](https://github.com/beyalee/cobo-html-skill) — ★ 3 — Cobo 品牌 HTML 演示技能 — 适用于 Claude Code，一行命令生成符合 cobo.com 配色的产品演示幻灯片
+- [taomin15201212](https://github.com/taomin15201212/createhub) — ★ 3 — CreateHub 是一个基于人工智能的内容创作平台，提供多种AI驱动的创作工具，帮助用户快速生成专业级的多媒体内容。该平台支持视频制作、幻灯片生成、播客创作和语音合成等功能。
+- [Zewang0217](https://github.com/Zewang0217/slidev-skill) — ★ 3 — 一个生成slidev项目的agent skill，可以生成优雅的slide
+- [yoshifujidesign](https://github.com/yoshifujidesign/3d-html-slide-skill) — ★ 3 — 3DワイヤーフレームデザインのHTMLプレゼンスライドを生成するClaude Skill。Three.js × 横スクロール × テーマカラー自動切替
+- [rv198-star](https://github.com/rv198-star/Slidethus) — ★ 3 — Provider-neutral agentic presentation engineering skill with an evidence-backed, recoverable artifact runtime.
+- [Dishant22-ml](https://github.com/Dishant22-ml/PPT-Agent-) — ★ 3 — The ppt agent is uses langchain framework powered by Groq (llama 3 model) to iteratively select the best slide theme and layout from the company's entire ppt...
+- [YossiSassi](https://github.com/YossiSassi/HackCon_2026_PowerShell_AI) — ★ 3 — Presentation & tools from HackCon 26' talk - 'Automating Securely with AI - Tips & Insights for PowerShell Professionals'
+- [bradwood](https://github.com/bradwood/yappt) — ★ 3 — Yet Another PowerPoint Tool / YAPPT ain't PowerPoint
+- [gokumaomao-sketch](https://github.com/gokumaomao-sketch/AI-Video-Research-Pipeline) — ★ 3 — 本地优先的 AI 多模态知识萃取平台：支持公开视频、本地视频/音频、PPTX、DOCX，生成结构化 Markdown 知识资产。
+- [vivekbopaliya](https://github.com/vivekbopaliya/text-to-ppt) — ★ 2 — Text-to-PPT is a full-stack application that lets users generate professional PowerPoint presentations from descriptive topics using AI.
+- [dappatamuno](https://github.com/dappatamuno/Investor-Pitch-Generator) — ★ 2 — AI Pitch Deck Generator: Input your startup idea and get a polished investor pitch deck instantly! Powered by GPT-4/3.5, D3.js, and Streamlit, this free tool...
 
-_(107 repos in this category)_
+_Showing top 500 of 4323 repos in this category — the full list with all 4323 entries is in [`data/repos.json`](data/repos.json)._
 
 ## MCP Servers for Presentations
 
 Model Context Protocol servers that let AI agents create / edit PowerPoint, Google Slides or web decks.
 
-- [GongRzhe/Office-PowerPoint-MCP-Server](https://github.com/GongRzhe/Office-PowerPoint-MCP-Server) — ★ 1,856 — A MCP (Model Context Protocol) server for PowerPoint manipulation using python-pptx. This server provides tools for creating, editing, and manipulating Power...
-- [matteoantoci/google-slides-mcp](https://github.com/matteoantoci/google-slides-mcp) — ★ 189 — MCP Server for Google Slides
-- [ykuwai/ppt-mcp](https://github.com/ykuwai/ppt-mcp) — ★ 98 — The world's best PowerPoint MCP server. Real-time control of a live PowerPoint on Windows and macOS, 156 tools for AI agents
-- [LSTM-Kirigaya/slidev-mcp](https://github.com/LSTM-Kirigaya/slidev-mcp) — ★ 91 — mcp server for slidev to make web ppt quickly and elegantly
-- [samos123/pptx-mcp](https://github.com/samos123/pptx-mcp) — ★ 35 — Create Slides with a simple MCP server using Python PPTX library
-- [epicweb-dev/slides-mcp](https://github.com/epicweb-dev/slides-mcp) — ★ 27 — An MCP server for generating Slides.com presentations.
-- [SlideSpeak/slidespeak-mcp](https://github.com/SlideSpeak/slidespeak-mcp) — ★ 14 — MCP Server for the Slidespeak API. Create PowerPoint Presentations using MCP.
-- [luan007/figma-slides-mcp](https://github.com/luan007/figma-slides-mcp) — ★ 12 — Figma Slides MCP - let your agent cook slides for you (hopefully), (some) battery included (d3 for graphics)
-- [Whatsonyourmind/deckforge](https://github.com/Whatsonyourmind/deckforge) — ★ 7 — Executive-ready slides, one API call away. API-first AI presentation engine with 32 slide types, 24 chart types, 15 themes, finance vertical. PPTX + Google S...
-- [guangxiangdebizi/PPT-MCP](https://github.com/guangxiangdebizi/PPT-MCP) — ★ 6 — Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
-- [tmustier/powerpoint-cli](https://github.com/tmustier/powerpoint-cli) — ★ 6 — CLI for creating and editing PowerPoint files, wrapping office-powerpoint-mcp-server via mcporter
-- [amcchord/slideMCP](https://github.com/amcchord/slideMCP) — ★ 6 — MCP Server for the Slide API
-- [payals/pg_rag_slide_generator](https://github.com/payals/pg_rag_slide_generator) — ★ 5 — Automatic slide deck generator using the power of Postgres as an AI control plane for RAG and MCP
-- [sankettank66/MCP-Presentation](https://github.com/sankettank66/MCP-Presentation) — ★ 5 — This Repo, walks you through setting up a Model Context Protocol (MCP) server using the Javascript SDK.
-- [ihatesea69/office-powerpoint-mcp-server](https://github.com/ihatesea69/office-powerpoint-mcp-server) — ★ 5 — Enterprise-Grade PowerPoint Automation Protocol   for AI Assistants
-- [joelbarmettlerUZH/slidev-mcp](https://github.com/joelbarmettlerUZH/slidev-mcp) — ★ 5 — MCP server for generating, rendering, and hosting Slidev presentations
-- [islem-zaraa/mcp-powerpoint](https://github.com/islem-zaraa/mcp-powerpoint) — ★ 5 — Model Context Protocol (MCP) plugin for PowerPoint operations, allowing AI assistants to create and manipulate PowerPoint presentations programmatically.
-- [moritalous/slidev-mcp-apps](https://github.com/moritalous/slidev-mcp-apps) — ★ 4 — —
-- [bohachu/botrun-google-slides-mcp](https://github.com/bohachu/botrun-google-slides-mcp) — ★ 4 — MCP server for Google Slides integration with service account authentication
-- [dovstern/google-slides-llm-tools](https://github.com/dovstern/google-slides-llm-tools) — ★ 4 — MCP Server & Langchain Tools for Google Slides API
-- [DuongNAD/aurora-slides-mcp](https://github.com/DuongNAD/aurora-slides-mcp) — ★ 4 — MCP server: Apple-keynote-style animated HTML lessons for self-study, with memory anchors, notebook pages and agent-made pictures
-- [eiceblue/spire-presentation-mcp-server](https://github.com/eiceblue/spire-presentation-mcp-server) — ★ 3 — —
-- [vuhai2002/ai-slides-mcp](https://github.com/vuhai2002/ai-slides-mcp) — ★ 3 — —
-- [hai-group/core3-mcp-presentation](https://github.com/hai-group/core3-mcp-presentation) — ★ 3 — —
-- [nitaiaharoni1/google-slides-mcp](https://github.com/nitaiaharoni1/google-slides-mcp) — ★ 2 — —
-- [moneyfactory-co/slidev-builder-mcp](https://github.com/moneyfactory-co/slidev-builder-mcp) — ★ 2 — Professional Slidev MCP Server for creating presentations with auto-generated starter slides, modular architecture, and Hatch corporate branding. Built for V...
-- [knorq-ai/pptx-mcp-server](https://github.com/knorq-ai/pptx-mcp-server) — ★ 2 — MCP server for generating professional PowerPoint presentations with McKinsey/Deloitte/Neutral themes
-- [senthiljack2808/google-slides-mcp](https://github.com/senthiljack2808/google-slides-mcp) — ★ 2 — oogle-slides-mcp
-- [jemmanuele/gslide-mcp](https://github.com/jemmanuele/gslide-mcp) — ★ 2 — Google Slide MCP solution tailored for usage with Claude Code
-- [zerob13/slidev-mcp](https://github.com/zerob13/slidev-mcp) — ★ 1 — mcp server to create slidev like a pro
-- [raykuonz/slidev-mcp-server](https://github.com/raykuonz/slidev-mcp-server) — ★ 1 — —
-- [oconsl/slidev-mcp](https://github.com/oconsl/slidev-mcp) — ★ 1 — —
-- [jonathanscholtes/Fabric-Foundry-Insight-Presentation-Agents](https://github.com/jonathanscholtes/Fabric-Foundry-Insight-Presentation-Agents) — ★ 1 — End-to-end implementation that combines Microsoft Fabric, Foundry agents, and Model Context Protocol (MCP) to transform enterprise data into natural-language...
-- [Themetralla3000/pptx-mcp-server](https://github.com/Themetralla3000/pptx-mcp-server) — ★ 1 — —
-- [shjanjua/pptx-mcp-server](https://github.com/shjanjua/pptx-mcp-server) — ★ 1 — —
-- [mario03690/ai-netcafe](https://github.com/mario03690/ai-netcafe) — ★ 1 — Compare LLM cost & latency on one prompt, translate PDF keeping layout, cited research, make PPTX  MCP server + CLI
-- [photonn/dial-pptx-mcp](https://github.com/photonn/dial-pptx-mcp) — ★ 1 — DIAL-aware remote MCP server for PowerPoint generation  extends GongRzhe/Office-PowerPoint-MCP-Server with streamable-http transport, per-session state, and ...
-- [superbereza/mac-native-pptx-mcp](https://github.com/superbereza/mac-native-pptx-mcp) — ★ 1 — Full-featured PowerPoint MCP server for macOS  drives PowerPoint for Mac via AppleScript (21 tools, full deck/slide/shape lifecycle); standalone, no upstream...
-- [alirazapoonja/mcp_presentation-](https://github.com/alirazapoonja/mcp_presentation-) — ★ 1 — mcp_presentation
-- [kacase/mcp-powerpoint](https://github.com/kacase/mcp-powerpoint) — ★ 1 — —
-- [EiriniOr/mcp-powerpoint-server](https://github.com/EiriniOr/mcp-powerpoint-server) — ★ 1 — ?? PowerPoint MCP Server - Model Context Protocol server with 36 tools for AI-assisted PowerPoint generation. Create beautiful presentations programmatically...
-- [softchris/go-mcp-presentation](https://github.com/softchris/go-mcp-presentation) — ★ 1 — —
-- [rcarvalo/powerpoint-mcp-server](https://github.com/rcarvalo/powerpoint-mcp-server) — ★ 1 — —
-- [vancealexander/Powerpoint_MCP_CrossPlatform](https://github.com/vancealexander/Powerpoint_MCP_CrossPlatform) — ★ 1 — Cross-platform PowerPoint MCP Server for Claude Desktop - Works on Windows, macOS, and Linux
-- [sruan2/neurips-mcp-presentation](https://github.com/sruan2/neurips-mcp-presentation) — ★ 1 — —
-- [Strand-AI/figma-slides-mcp](https://github.com/Strand-AI/figma-slides-mcp) — ★ 1 — —
-- [lysong9907/bento-ppt-skill](https://github.com/lysong9907/bento-ppt-skill) — ★ 1 — Bento Slides MCP Server + bento-slides skill:??? LLM ?????? .bento.html ????(Cherry Studio / Claude Desktop ??)
-- [jaderfeijo/google-slides-mcp](https://github.com/jaderfeijo/google-slides-mcp) — ★ 1 — A Google Slides MCP extension for Claude Desktop
-- [Pylogmon/powerpoint-generator-mcp](https://github.com/Pylogmon/powerpoint-generator-mcp) — ★ 1 — A PowerPoint generator for Model Context Protocol (MCP) using Bun (Note: Unable to read/edit existing presentation)
-- [ryanvo162/google-slides-mcp](https://github.com/ryanvo162/google-slides-mcp) — ★ 1 — MCP server for Google Slides - 39 tools for creating, editing, and managing presentations
-- [forayconsulting/google-slides-mcp](https://github.com/forayconsulting/google-slides-mcp) — ★ 1 — An MCP server allowing LLMs to create and manipulate Google Slides at a deeply customized level.
-- [gavanduffy/slides-mcp](https://github.com/gavanduffy/slides-mcp) — ★ 1 — —
-- [Troy-Lai/mcp-presentation](https://github.com/Troy-Lai/mcp-presentation) — ★ 0 — MCP classroom presentation
-- [Manu-Krish/MCP-Presentation-New](https://github.com/Manu-Krish/MCP-Presentation-New) — ★ 0 — MCP Presentation New
-- [rijul-procdna/MCP-Presentation-Generator](https://github.com/rijul-procdna/MCP-Presentation-Generator) — ★ 0 — —
-- [emrum01/mcp-presentation-demo](https://github.com/emrum01/mcp-presentation-demo) — ★ 0 — —
-- [danielplawgo/dotnet-mcp-presentation](https://github.com/danielplawgo/dotnet-mcp-presentation) — ★ 0 — MCP w .NET: prezentacja (Slidev) i demo ASP.NET Core pokazujace, jak udostepnic aplikacje agentom AI
-- [momodeveluk2024/mcp-presentation-web](https://github.com/momodeveluk2024/mcp-presentation-web) — ★ 0 — Recap presentation for MCP
-- [maratkand21/presentation-mcp-server](https://github.com/maratkand21/presentation-mcp-server) — ★ 0 — —
-- [EiceblueCloud/spire.presentation-mcp-server](https://github.com/EiceblueCloud/spire.presentation-mcp-server) — ★ 0 — Spire.Presentaition for MCP server
-- [konojunya/html2pptx-mcp](https://github.com/konojunya/html2pptx-mcp) — ★ 0 — html to pptx mcp server
-- [arbazpathan91/pptx-mcp-server](https://github.com/arbazpathan91/pptx-mcp-server) — ★ 0 — —
-- [loveRyujin/slidev-mcp](https://github.com/loveRyujin/slidev-mcp) — ★ 0 — —
-- [gavanduffy/slidev-mcp](https://github.com/gavanduffy/slidev-mcp) — ★ 0 — —
-- [feirate/slidev-mcp-server](https://github.com/feirate/slidev-mcp-server) — ★ 0 — —
-- [biancasivero/BIANCA-SANITY](https://github.com/biancasivero/BIANCA-SANITY) — ★ 0 — Sistema Integrado de Gesto de Contedo e Apresentaes - Sanity CMS + Slidev + MCP Tools
-- [kennyg/slidev-mcp-app](https://github.com/kennyg/slidev-mcp-app) — ★ 0 — —
-- [RAFAEL-SILVASOUZA/pptx-mcp-server](https://github.com/RAFAEL-SILVASOUZA/pptx-mcp-server) — ★ 0 — —
-- [smorand/google-slides-mcp](https://github.com/smorand/google-slides-mcp) — ★ 0 — HTTP streamable MCP server for Google Slides API integration
-- [FarukDelic/Google-Slides-MCP](https://github.com/FarukDelic/Google-Slides-MCP) — ★ 0 — —
-- [SolonaBot/google-slides-mcp](https://github.com/SolonaBot/google-slides-mcp) — ★ 0 — MCP server for Google Slides integration
-- [artemu78/google-slides-mcp](https://github.com/artemu78/google-slides-mcp) — ★ 0 — —
-- [schuang/google-slides-mcp](https://github.com/schuang/google-slides-mcp) — ★ 0 — —
-- [Stephenjhayes/google-slides-mcp](https://github.com/Stephenjhayes/google-slides-mcp) — ★ 0 — MCP Server for my Slide Maker project
-- [dvanderelst/GoogleSlidesMCP](https://github.com/dvanderelst/GoogleSlidesMCP) — ★ 0 — —
-- [JustParent/google-slides-mcp](https://github.com/JustParent/google-slides-mcp) — ★ 0 — Low-level MCP for Google Slides
-- [eliamazzon/google-slides-mcp](https://github.com/eliamazzon/google-slides-mcp) — ★ 0 — —
-- [vamsikiran353-gif/google-slides-mcp](https://github.com/vamsikiran353-gif/google-slides-mcp) — ★ 0 — —
-- [tedpecoulas/pptx-mcp-server](https://github.com/tedpecoulas/pptx-mcp-server) — ★ 0 — Serveur MCP pour skills python pour ppt
-- [leoou331/pptx-mcp-server](https://github.com/leoou331/pptx-mcp-server) — ★ 0 — MCP server for creating and editing PowerPoint presentations
-- [kunalhemnani1/google-slides-mcp-server](https://github.com/kunalhemnani1/google-slides-mcp-server) — ★ 0 — —
-- [illumination-k/google-slides-mcp](https://github.com/illumination-k/google-slides-mcp) — ★ 0 — —
-- [Dinpo/google-slides-mcp](https://github.com/Dinpo/google-slides-mcp) — ★ 0 — MCP for Google Slides with advanced functionality
-- [kriskumar/google-slides-mcp](https://github.com/kriskumar/google-slides-mcp) — ★ 0 — —
-- [micahyee415/google-slides-mcp-server](https://github.com/micahyee415/google-slides-mcp-server) — ★ 0 — Model Context Protocol (MCP) server for Google Slides: read, template-fill, and edit presentations on Cloud Run with Google OAuth.
-- [mcembalest/google-slides-mcp](https://github.com/mcembalest/google-slides-mcp) — ★ 0 — —
-- [dcc-mcp/dcc-mcp-powerpoint](https://github.com/dcc-mcp/dcc-mcp-powerpoint) — ★ 0 — Microsoft PowerPoint MCP adapter for AI agents to generate and modify editable decks, compose slides, build render review decks and validate PDF/PNG previews...
-- [jose-rodriguez-mck/mcp-presentation](https://github.com/jose-rodriguez-mck/mcp-presentation) — ★ 0 — MCP Presentation
-- [taranovoleg/Data_Out_Calculator_MCP_PowerPoint-VCc02](https://github.com/taranovoleg/Data_Out_Calculator_MCP_PowerPoint-VCc02) — ★ 0 — Task-zerocoderVcc02
-- [conda-forge/mcp-powerpoint-feedstock](https://github.com/conda-forge/mcp-powerpoint-feedstock) — ★ 0 — A conda-smithy repository for mcp-powerpoint.
-- [jordanbaucke/mcp-powerpoint-server](https://github.com/jordanbaucke/mcp-powerpoint-server) — ★ 0 — Model Context Protocol server for creating PowerPoint presentations using Azure Container Apps
-- [Yans14/powerpoint_mcp](https://github.com/Yans14/powerpoint_mcp) — ★ 0 — PowerPoint MCP server with dual COM/OOXML engines for template-aware slide automation and visual validation.
-- [omaro7/Office-PowerPoint-MCP-Server](https://github.com/omaro7/Office-PowerPoint-MCP-Server) — ★ 0 — Office-PowerPoint-MCP-Server
-- [amitk-codes/ai-presentation-generator](https://github.com/amitk-codes/ai-presentation-generator) — ★ 0 — AI presentation generator  turn a topic into a downloadable PDF & editable PowerPoint. One n8n workflow, reachable from a React web app and an MCP server (Ch...
-- [MisunK/powerpoint-mcp-server](https://github.com/MisunK/powerpoint-mcp-server) — ★ 0 — MCP server allows interaction with PPT slide
-- [rmhman/pp_mcp](https://github.com/rmhman/pp_mcp) — ★ 0 — PowerPoint MCP server
-- [cool-man-vk/Powerpoint-MCP-Server](https://github.com/cool-man-vk/Powerpoint-MCP-Server) — ★ 0 — —
-- [brijeshshetty/pptx-mcp](https://github.com/brijeshshetty/pptx-mcp) — ★ 0 — Local PowerPoint MCP Server for Claude -- 24 tools, SAP corporate template support
-- [adilmaqsood1/office-powerpoint-mcp-server](https://github.com/adilmaqsood1/office-powerpoint-mcp-server) — ★ 0 — Data science and AI
-- [kangkang0218/powerpoint-mcp](https://github.com/kangkang0218/powerpoint-mcp) — ★ 0 — Native Windows PowerPoint MCP Server for OpenCode, Claude Desktop, Cursor, and AI Agents
-- [sriram-1997/PPTMCP](https://github.com/sriram-1997/PPTMCP) — ★ 0 — Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
-- [hwwang06/powerpoint-mcp-server](https://github.com/hwwang06/powerpoint-mcp-server) — ★ 0 — —
-- [hurtener/pengui-slides](https://github.com/hurtener/pengui-slides) — ★ 0 — Pengui Slides MCP Server - HTML-first presentation generation with Design Soul constraint system
-- [prixieroxanbooc/google-slides-mcp-server](https://github.com/prixieroxanbooc/google-slides-mcp-server) — ★ 0 — Multi-tenant Google Slides MCP server for AI clients. Create and manage presentations via MCP. Node.js + Cloud Run.
-- [waiteddegree608-ship-it/paperfect](https://github.com/waiteddegree608-ship-it/paperfect) — ★ 0 — Local paper workspace: bilingual reading, evidence-grounded notes, editable academic slides, MCP and skills.
-- [7tg/mcp_presentation](https://github.com/7tg/mcp_presentation) — ★ 0 — —
-- [dboconsultingllc/mcp-presentations](https://github.com/dboconsultingllc/mcp-presentations) — ★ 0 — —
-- [xxradar/mcp-presentation](https://github.com/xxradar/mcp-presentation) — ★ 0 — —
-- [nlarif/mcp-presentation](https://github.com/nlarif/mcp-presentation) — ★ 0 — Opinionated presentation about MCP, agentic AI, and interoperability
-- [dverc/omni-mcp-presentation](https://github.com/dverc/omni-mcp-presentation) — ★ 0 — —
-- [omasan0430/mcp-presentation2](https://github.com/omasan0430/mcp-presentation2) — ★ 0 — —
-- [matnoon/MCP-Presentation](https://github.com/matnoon/MCP-Presentation) — ★ 0 — Project to help new people to insert into MCP areas
-- [CompSciGuyIT/PresentationMcpServer](https://github.com/CompSciGuyIT/PresentationMcpServer) — ★ 0 — LLM teaching-deck generator (TypeScript): Zod IR trust boundary, zero-dollar free-tier routing, misconception-grounded quizzes, converging TTS rehearsal. 97 ...
-- [arturowczarek/mcp-presentation](https://github.com/arturowczarek/mcp-presentation) — ★ 0 — Repository hosting the files for MCP presentation
-- [dianamohirta/mcp-presentation](https://github.com/dianamohirta/mcp-presentation) — ★ 0 — —
-- [hewimetall/mcp-presentation](https://github.com/hewimetall/mcp-presentation) — ★ 0 — mcp tools presentation pdf web
-- [muguliebe/mcp-presentation](https://github.com/muguliebe/mcp-presentation) — ★ 0 — Real-time Error Monitoring & AI Analysis System with Model Context Protocol
-- [alenaist/mcp-presentation](https://github.com/alenaist/mcp-presentation) — ★ 0 — —
-- [romainf28/mcp-presentation](https://github.com/romainf28/mcp-presentation) — ★ 0 — A presentation about MCP
-- [biaggiorizzo/mcp-presentation](https://github.com/biaggiorizzo/mcp-presentation) — ★ 0 — —
-- [mcp-security-project/mcp_presentations](https://github.com/mcp-security-project/mcp_presentations) — ★ 0 — Presentations
-- [kevinten-ai/mcp-presentation](https://github.com/kevinten-ai/mcp-presentation) — ★ 0 — MCP server for AI-assisted presentation generation. Create PowerPoint slides from structured content with templates.
-- [ernesthenry/mcp_presentation](https://github.com/ernesthenry/mcp_presentation) — ★ 0 — —
-- [omasan0430/mcp-presentation](https://github.com/omasan0430/mcp-presentation) — ★ 0 — —
-- [Yazhodha/mcp-presentation](https://github.com/Yazhodha/mcp-presentation) — ★ 0 — A react + vite presentation for MCP
-- [satyampsoni/mcp-presentation](https://github.com/satyampsoni/mcp-presentation) — ★ 0 — —
-- [suarez9093/model-context-protocol-presentation](https://github.com/suarez9093/model-context-protocol-presentation) — ★ 0 — MCP presentation
-- [anddtran/MCP-Presentation](https://github.com/anddtran/MCP-Presentation) — ★ 0 — —
-- [dmykolen/mcp-presentation](https://github.com/dmykolen/mcp-presentation) — ★ 0 — MCP presentation (slidev)
-- [DavidSchaferEC/MCP-Presentation](https://github.com/DavidSchaferEC/MCP-Presentation) — ★ 0 — HTML pages for MCP illustration purposes
-- [Blue-0/mcp-powerpoint-mistral](https://github.com/Blue-0/mcp-powerpoint-mistral) — ★ 0 — —
-- [corey-coders/mcp-powerpoint](https://github.com/corey-coders/mcp-powerpoint) — ★ 0 — PowerPoint MCP Server  generate board decks, pitch decks, presentations via natural language. Free.
-- [CannonJunior/mcp-powerpoint](https://github.com/CannonJunior/mcp-powerpoint) — ★ 0 — mcp-powerpoint
-- [aryeht/MCP](https://github.com/aryeht/MCP) — ★ 0 — MCP presentation
-- [narasimhatejav/mcp-powerpoint](https://github.com/narasimhatejav/mcp-powerpoint) — ★ 0 — —
-- [Alain-script/mcp-powerpoint](https://github.com/Alain-script/mcp-powerpoint) — ★ 0 — —
-- [zingbretsen/mcp-presentation](https://github.com/zingbretsen/mcp-presentation) — ★ 0 — —
-- [mnmuniz/MCP-Presentation](https://github.com/mnmuniz/MCP-Presentation) — ★ 0 — Proyecto pblico de presentacin con Playwright MCP para pruebas automatizadas.
-- [KeeTraxx/mcp-presentation](https://github.com/KeeTraxx/mcp-presentation) — ★ 0 — —
+- [grab](https://github.com/grab/cursor-talk-to-figma-mcp) — ★ 7,054 — TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code, Codex) and Figma, allowing Agentic AI to communicate with Figma for reading designs and m...
+- [taylorwilsdon](https://github.com/taylorwilsdon/google_workspace_mcp) — ★ 3,339 — Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace MCP Server & CLI Tool
+- [GongRzhe](https://github.com/GongRzhe/Office-PowerPoint-MCP-Server) — ★ 1,856 — A MCP (Model Context Protocol) server for PowerPoint manipulation using python-pptx. This server provides tools for creating, editing, and manipulating Power...
+- [dineug](https://github.com/dineug/erd-editor) — ★ 1,724 — ERD Editor: design database schemas visually, import SQL DDL, GraphQL, DBML and AML, export DDL and code for 22 languages. Web app, Google Drive, VS Code, In...
+- [johnson7788](https://github.com/johnson7788/MultiAgentPPT) — ★ 1,643 — MultiAgentPPT 是一个集成了 A2A（Agent2Agent）+ MCP（Model Context Protocol）+ ADK（Agent Development Kit） 架构的智能化演示文稿生成系统，支持通过多智能体协作和流式并发机制
+- [SylphxAI](https://github.com/SylphxAI/anymd) — ★ 1,041 — Any file → clean Markdown for AI agents: PDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OCR), audio and video (metadata, subtitles, transcri...
+- [CopilotKit](https://github.com/CopilotKit/aimock) — ★ 975 — Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.
+- [icebird1998](https://github.com/icebird1998/scientific-illustrator) — ★ 929 — Editable scientific figures in PowerPoint and draw.io via Codex/MCP with Designer-Drawer-Reviewer-Corrector quality gates.
+- [kgoedecke](https://github.com/kgoedecke/doop) — ★ 859 — The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in.
+- [jacksteamdev](https://github.com/jacksteamdev/obsidian-mcp-tools) — ★ 829 — Add Obsidian integrations like semantic search and custom Templater prompts to Claude or any MCP client.
+- [cyanheads](https://github.com/cyanheads/obsidian-mcp-server) — ★ 695 — Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.
+- [arinspunk](https://github.com/arinspunk/claude-talk-to-figma-mcp) — ★ 671 — A Model Context Protocol (MCP) that allows Claude Desktop and other AI tools (Claude Code, Cursor, Antigravity, etc.) to read, analyze, and modify Figma designs
+- [iusztinpaul](https://github.com/iusztinpaul/designing-real-world-ai-agents-workshop) — ★ 514 — Hands-on workshop: Build a multi-agent AI system from scratch — Deep Research Agent + Writing Workflow served as MCP servers. Includes code, slides, and video
+- [aaronsb](https://github.com/aaronsb/obsidian-mcp-plugin) — ★ 466 — High-performance Model Context Protocol (MCP) server for Obsidian that provides AI tools with direct vault access through semantic operations and HTTP transp...
+- [RafalWilinski](https://github.com/RafalWilinski/mcp-apple-notes) — ★ 416 — Talk with your notes in Claude. RAG over your Apple Notes using Model Context Protocol.
+- [cisco-open](https://github.com/cisco-open/network-sketcher) — ★ 408 — Network Sketcher is an AI-ready network design tool with Local MCP, Online, and Offline editions for creating network designs and exporting PowerPoint diagra...
+- [Dominic789654](https://github.com/Dominic789654/awesome-deepseek-harness) — ★ 377 — A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents ·...
+- [RafalWilinski](https://github.com/RafalWilinski/aws-mcp) — ★ 296 — Talk with your AWS using Claude. Model Context Protocol (MCP) server for AWS. Better Amazon Q alternative.
+- [breakstageaxe61](https://github.com/breakstageaxe61/genspark-claw) — ★ 289 — 🦀⚡ Community skill pack & CLI for Genspark Claw, OpenClaw & Hermes agents — 5 production-ready SKILL.md skills (deep research, reports, slides, browser autom...
+- [piotr-agier](https://github.com/piotr-agier/google-drive-mcp) — ★ 226 — A Model Context Protocol (MCP) server that provides secure integration with Google Drive, Docs, Sheets, Slides and Calendar. It allows Claude Desktop and oth...
+- [matteoantoci](https://github.com/matteoantoci/google-slides-mcp) — ★ 189 — MCP Server for Google Slides
+- [willynikes2](https://github.com/willynikes2/knowledge-base-server) — ★ 189 — Make every AI agent you use smarter. Persistent memory with SQLite FTS5, MCP server, Obsidian sync, and self-learning intelligence pipeline.
+- [devwhodevs](https://github.com/devwhodevs/engraph) — ★ 170 — Local knowledge graph for AI agents. Hybrid search + MCP server for Obsidian vaults.
+- [Aimino-Tech](https://github.com/Aimino-Tech/opendocswork-mcp) — ★ 164 — Rust-native MCP server for Office document processing (Excel, Word, PowerPoint). Sub-millisecond, local-first, open source.
+- [qiaojoin586-droid](https://github.com/qiaojoin586-droid/RAG_LearnLittleCode) — ★ 158 — 基于 RAG 的 AI 智能笔记助手「云尚」：FastAPI + LangGraph + ChromaDB + Redis 构建。ReAct / Plan-and-Execute 双 Agent 模式、深度思考、图片/视频多模态、MCP 联网搜索与网页抓取、DeepL 翻译 / Wolfram 计算 / Edge...
+- [YOOTeam](https://github.com/YOOTeam/ChatPPT-MCP) — ★ 149 — The AI-powered PPT generation service based on ChatPPT can create presentations based on themes, requirements, or uploaded documents, supporting online editi...
+- [supercurses](https://github.com/supercurses/powerpoint) — ★ 144 — A MCP Server for creating Powerpoint Presentations
+- [abcamus](https://github.com/abcamus/obsidian-sync-vault-ce) — ★ 137 — A cloud-first Obsidian vault: zero-space VFS keeps files in your cloud drive, local storage near zero, and 4K video streams on demand. Encrypted multi-device...
+- [OfficeMCP](https://github.com/OfficeMCP/OfficeMCP) — ★ 122 — The MCP server for AI like to automate Microsoft office applications like Word, Excel, Outlook, PowerPoint, Access, OneNote, Publisher, Visio, Project and al...
+- [Ayushmaniar](https://github.com/Ayushmaniar/powerpoint-mcp) — ★ 121 — Open Source Model Context Protocol server for PowerPoint automation on Windows via pywin32
+- [flowing-abyss](https://github.com/flowing-abyss/obsidian-hybrid-search) — ★ 111 — Hybrid search for Obsidian vaults via plugin, CLI, and MCP server
+- [ykuwai](https://github.com/ykuwai/ppt-mcp) — ★ 98 — The world's best PowerPoint MCP server. Real-time control of a live PowerPoint on Windows and macOS, 156 tools for AI agents
+- [capitalparser](https://github.com/capitalparser/notebooklm-wiki-pipeline) — ★ 95 — Turn Google Drive PDFs into Obsidian wiki notes via NotebookLM MCP without loading full PDFs into Claude context
+- [theWDY](https://github.com/theWDY/office-editor-mcp) — ★ 93 — 基于MCP(Model Context Protocol)的Office文档处理助手，支持在MCP Client中创建和编辑Word、Excel、Powerpoint文档。
+- [LSTM-Kirigaya](https://github.com/LSTM-Kirigaya/slidev-mcp) — ★ 91 — mcp server for slidev to make web ppt quickly and elegantly
+- [southleft](https://github.com/southleft/figma-console-mcp-skills) — ★ 91 — The most powerful Figma Console MCP capabilities, repackaged as Markdown skills for the native Figma MCP server — design tokens, variables, component analysi...
+- [Baronco](https://github.com/Baronco/GenFilesMCP) — ★ 84 — GenFilesMCP: Minimal MCP Server for Open Web UI. Generates PPTX, XLSX, DOCX or MD files using user requests and full chat context.   *Pull Requests are welco...
+- [lpaiu-cs](https://github.com/lpaiu-cs/osk-system) — ★ 76 — Source-grounded MCP memory runtime and Obsidian-compatible vault template for LLM agents.
+- [daekeun-ml](https://github.com/daekeun-ml/ppt-translator) — ★ 72 — A powerful PowerPoint translation tool that leverages Amazon Bedrock models for high-quality translation. This service can be used both as a standalone comma...
+- [NeekChaw](https://github.com/NeekChaw/mcp-server-okppt) — ★ 68 — 这个项目是一个基于MCP (Model Context Protocol) 的服务器工具，名为 "MCP OKPPT Server"。它的核心功能是允许大型语言模型（如Claude、GPT等）通过生成SVG图像来间接设计和创建PowerPoint演示文稿。工具负责将这些SVG图像高质量地插入到PPTX幻灯片中，并...
+- [ltc6539](https://github.com/ltc6539/mcp-ppt) — ★ 66 — A mcp server supporting you to generate powerpoint using LLM and natural language automatically.
+- [WenyuChiou](https://github.com/WenyuChiou/research-hub) — ★ 64 — AI-operable research workspace for Zotero, Obsidian, and NotebookLM. Use any two, or all three, through CLI, MCP, REST, and dashboard.
+- [bepitulaz](https://github.com/bepitulaz/obsidian-multivault-mcp) — ★ 62 — Multi-vault and multiuser Obsidian MCP
+- [es617](https://github.com/es617/obsidian-sync-mcp) — ★ 60 — MCP server for Obsidian — access your vault from any AI agent, even when your machine is off. Powered by Self-hosted LiveSync.
+- [BatterWorks](https://github.com/BatterWorks/Hatchdoor) — ★ 58 — Self-host your Obsidian vaults: a web UI for you, MCP for your AI agents. No Obsidian, no plugins required.
+- [msdanyg](https://github.com/msdanyg/smart-connections-mcp) — ★ 58 — Give Claude semantic memory of your Obsidian vault — local semantic search over Smart Connections embeddings via MCP. Multi-vault, block-level, 100% private.
+- [Ichigo3766](https://github.com/Ichigo3766/powerpoint-mcp) — ★ 55 — A MCP server project that creates PowerPoint presentations, forked from supercurses/powerpoint with additional features
+- [398894496-arch](https://github.com/398894496-arch/KRouter) — ★ 45 — Your coding agents remember what you decided — and what you changed. Plain-Markdown memory in Obsidian, shared by Claude Code, Codex and Cursor over MCP. Eve...
+- [moonlin1213](https://github.com/moonlin1213/cove-book-forge-mcp) — ★ 43 — Turn PDF and EPUB books into cached AI analysis, Obsidian notes, and installable Codex/Claude Agent Skills through an open MCP server.
+- [ForLegalAI](https://github.com/ForLegalAI/mcp-ms-office-documents) — ★ 42 — MCP server providing tools to create Ms Office documents like presentations, emails, spreadsheets and word docs (pptx, docx, eml, xlsx)
+- [ebullient](https://github.com/ebullient/obsidian-vault-mcp) — ★ 42 — MCP tool allowing Open WebUI or Claude Desktop to retrieve files from your vault
+- [Garrus800-stack](https://github.com/Garrus800-stack/genesis-agent) — ★ 41 — Self-aware cognitive AI agent with a persistent soul: reads, modifies & verifies its own code, plans autonomously, dreams in idle time, remembers across sess...
+- [dguido](https://github.com/dguido/google-workspace-mcp) — ★ 38 — MCP server for Google Drive, Docs, Sheets, Slides, Calendar, Gmail, and Contacts
+- [reichenbach](https://github.com/reichenbach/iwork_mcp) — ★ 37 — MCP server for Apple iWork automation — 117 tools for Numbers, Pages, and Keynote. Template discovery, Creator Studio AI tools, compound batch operations. On...
+- [lstpsche](https://github.com/lstpsche/obsidian-mcp) — ★ 37 — Fast MCP server for local Obsidian vault usage by AI Agents
+- [samos123](https://github.com/samos123/pptx-mcp) — ★ 35 — Create Slides with a simple MCP server using Python PPTX library
+- [2slides](https://github.com/2slides/mcp-2slides) — ★ 34 — The MCP Server for 2slides. AI agent for PPT/Presentation/Slides generation.
+- [sbroenne](https://github.com/sbroenne/mcp-server-powerpoint) — ★ 33 — Automate real Microsoft PowerPoint with AI via MCP Server or CLI - slides, shapes, tables, charts, SmartArt, animations, and 141 operations with export-to-ve...
+- [JazerJu](https://github.com/JazerJu/video-miner) — ★ 32 — Local-first long-video understanding for AI agents. GPU transcription at 540x real time, chapter summaries with code and slides, and MCP tools to search and ...
+- [thomas-villani](https://github.com/thomas-villani/all2md) — ★ 32 — Convert PDF, Word, PowerPoint, HTML, email & 40+ formats to clean Markdown — and back. Built for LLMs, RAG & Python pipelines, with a built-in MCP server.
+- [jenstangen1](https://github.com/jenstangen1/pptx-xlsx-mcp) — ★ 29 — Antrophics Model context protocol to edit powerpoint files
+- [epicweb-dev](https://github.com/epicweb-dev/slides-mcp) — ★ 27 — An MCP server for generating Slides.com presentations.
+- [ilia-sokolov](https://github.com/ilia-sokolov/OfficeAgent.NET) — ★ 27 — Structured Word, PowerPoint, and Excel automation for .NET and coding agents, with validated plans, MCP, tracked changes, and SharePoint
+- [Fantasality](https://github.com/Fantasality/dsh-origin-plugin) — ★ 22 — Drive OriginLab Origin scientific plotting from AI chat via MCP. 74 tools: modal-dialog watchdog, LabTalk safety gate, FigureSpec declarative YAML, fit param...
+- [southleft](https://github.com/southleft/skills-for-figma) — ★ 20 — Open-source agent skills for the native Figma MCP server — design tokens, components, accessibility, Slides, and FigJam.
+- [Godzilla675](https://github.com/Godzilla675/agentic-ai-tool-suite) — ★ 20 — A suite of Model Context Protocol (MCP) servers designed to enhance AI agent capabilities. Provides tools for media search/understanding (images, video), web...
+- [Xiao-rx](https://github.com/Xiao-rx/wps-mcp-server) — ★ 19 — MCP Server for WPS Office - 1 billion daily active users in China. Create Word documents, Excel spreadsheets, and PowerPoint presentations via AI.
+- [iwamot](https://github.com/iwamot/marp-agent-mcp) — ★ 19 — パワポ作るマンを実験的にMCP Apps化したやつ
+- [xjustloveux](https://github.com/xjustloveux/aspose-mcp-server) — ★ 18 — Aspose MCP Server - MCP 辦公文檔處理服務器  為 AI 助手提供辦公文檔處理工具。支援 Word、Excel、PowerPoint、PDF 及跨格式轉換。按需啟用、跨平台（Windows/Linux/macOS）、開箱即用。從 Releases 下載預編譯版本，配置授權檔案即可使用。
+- [buckylee2019](https://github.com/buckylee2019/powerpoint-automation-mcp) — ★ 17 — MCP server for PowerPoint
+- [neosun100](https://github.com/neosun100/notebookLM2PPT) — ★ 17 — Convert NotebookLM PDF exports to PowerPoint with watermark removal and vector graphics. CLI + Web UI + API + MCP.
+- [harryleemedia](https://github.com/harryleemedia/second-brain) — ★ 16 — A collection of Claude Code skills for building a second brain — slides, SOPs, brand voice, MCP clients, Remotion videos, and more.
+- [SlideSpeak](https://github.com/SlideSpeak/slidespeak-mcp) — ★ 14 — MCP Server for the Slidespeak API. Create PowerPoint Presentations using MCP.
+- [felimet](https://github.com/felimet/mathtype-for-word) — ★ 14 — MathType 7 AI Agent skill, Codex and Claude plugin, and MCP server for editable equations, native Word numbering, references, and PowerPoint.
+- [vAirpower](https://github.com/vAirpower/macos-office365-mcp-server) — ★ 14 — A Model Context Protocol (MCP) server for automating Microsoft Office 365 applications (PowerPoint and Word) on macOS through AI agents like Claude and Cline.
+- [masaki39](https://github.com/masaki39/marp-mcp) — ★ 13 — MCP server that lets AI agents build and edit Marp slide decks via structured tools.
+- [Duds](https://github.com/Duds/md-converter) — ★ 13 — Convert Markdown to DOCX, XLSX, and PPTX formats with Excel formula support. Includes MCP server and CLI interfaces.
+- [luan007](https://github.com/luan007/figma-slides-mcp) — ★ 12 — Figma Slides MCP - let your agent cook slides for you (hopefully), (some) battery included (d3 for graphics)
+- [hackathonweekly](https://github.com/hackathonweekly/mcp-ppt) — ★ 12 — MCP 共学 PPT
+- [orca-studio](https://github.com/orca-studio/orca-ppt) — ★ 12 — Orca PPT — agent-native 演示稿工作台:做同款 + 电影级转场。桌面应用，提供 MCP 和 PPT Skill
+- [onecer](https://github.com/onecer/AIOffice) — ★ 12 — Give your agent an Office engine — an AI-native CLI + MCP server that creates, edits, renders & validates real .docx / .xlsx / .pptx. One self-contained C#/....
+- [quinnjr](https://github.com/quinnjr/google-mcp) — ★ 11 — Model Context Protocol (MCP) server for Google Workspace - Calendar, Gmail, Drive, Docs, Sheets, Slides, Meet, Chat, Forms, YouTube, Tasks, and Contacts with...
+- [ITSpecialist111](https://github.com/ITSpecialist111/Agent365-Bridge) — ★ 11 — Connect Claude Code to Microsoft Agent 365 MCP servers — giving Claude direct access to Outlook Mail, Calendar, Word, Excel, PowerPoint, Teams, SharePoint, O...
+- [dev-ithitchhiker](https://github.com/dev-ithitchhiker/mcp-google-docs) — ★ 10 — A lightweight MCP Server for integrating Google Docs, Sheets, and Slides with custom applications. Enables seamless document management, real-time collaborat...
+- [renatogroffe](https://github.com/renatogroffe/produtividade-ias-mcps_mvpconf-sorocaba-2026-06) — ★ 10 — Slides e conteúdos da apresentação "Produtividade no Desenvolvimento com IAs: descomplicando tarefas do dia a dia com GitHub Copilot + MCP Servers".
+- [renatogroffe](https://github.com/renatogroffe/produtividade-mcps_sqlsaturday-piracicaba-2026) — ★ 10 — Slides e conteúdos da apresentação "Produtividade no uso de Bancos de Dados com IAs: descomplicando tarefas do dia a dia com MCP Servers". Palestra realizada...
+- [dmytro-ustynov](https://github.com/dmytro-ustynov/pptx-generator-mcp) — ★ 9 — MCP server to generate PPTX presentations from MD file
+- [renatogroffe](https://github.com/renatogroffe/produtividade-ias-mcps_ai-weekend-2026-01) — ★ 9 — Slides e conteúdos da apresentação "Produtividade no Desenvolvimento com IAs: descomplicando tarefas do dia a dia com MCP Servers". Inteligência Artificial, ...
+- [jongalloway](https://github.com/jongalloway/pptx-tools) — ★ 9 — A unified MCP server + CLI toolkit for automating PowerPoint: read slides, update content, insert images, and generate presentations from code or AI agents.
+- [karthikcsq](https://github.com/karthikcsq/google-tools-mcp) — ★ 9 — MCP server unifying 169 Google Workspace tools across Drive, Docs, Sheets, Slides, Gmail, Calendar, and Forms behind a single OAuth 2.0 flow. Read-before-edi...
+- [Travor278](https://github.com/Travor278/OmniMCP) — ★ 9 — 54-tool MCP server for multimodal automation  the only open-source MCP with full PPTX/DOCX/PDF lifecycle, plus FFmpeg, GIMP, Inkscape, Blender, FreeCAD, MATL...
+- [iguangyu](https://github.com/iguangyu/aippt-mcp) — ★ 8 — 讯飞智能PPT生成 MCPServer
+- [IBM](https://github.com/IBM/chuk-mcp-pptx) — ★ 8 — —
+- [charleslukowski](https://github.com/charleslukowski/ppt_mcp) — ★ 8 — —
+- [renatogroffe](https://github.com/renatogroffe/mcp-dotnetsp-xp_2025-08) — ★ 8 — Slides e conteúdos de apresentação sobre uso de .NET + MCP. Palestra realizada no dia 20/08/2025, durante o evento Potencializando Aplicações .NET com Inteli...
+- [renatogroffe](https://github.com/renatogroffe/produtividade-mcps_sqlsaturday-sp-2026) — ★ 8 — Slides e conteúdos da apresentação "Produtividade no uso de Bancos de Dados com IAs: descomplicando tarefas do dia a dia com MCP Servers". Palestra realizada...
+- [kzarzycki](https://github.com/kzarzycki/powerpoint-mcp) — ★ 8 — —
+- [juanocampo400](https://github.com/juanocampo400/powerpoint-mcp) — ★ 8 — MCP server for creating and editing PowerPoint presentations
+- [miku1130](https://github.com/miku1130/wps-editor-mcp) — ★ 8 — MCP server for AI to edit Word/Excel/PowerPoint documents
+- [dosev-ai](https://github.com/dosev-ai/mcp-office) — ★ 8 — MCP servers for Microsoft Office — Excel, Outlook, PowerPoint, Word. Local-first, governed, developer-controlled.
+- [Whatsonyourmind](https://github.com/Whatsonyourmind/deckforge) — ★ 7 — Executive-ready slides, one API call away. API-first AI presentation engine with 32 slide types, 24 chart types, 15 themes, finance vertical. PPTX + Google S...
+- [haandol](https://github.com/haandol/ppt-generator) — ★ 7 — ppt generation mcp server
+- [maekawataiki](https://github.com/maekawataiki/mcp-pandoc-md2pptx) — ★ 7 — MCP server for creating power point from markdown
+- [dream-num](https://github.com/dream-num/workbuddy-univer-office) — ★ 7 — Local Univer Office for WorkBuddy: spreadsheets, documents, slides, Base and Board with MCP previews and draft review. Development preview.
+- [nguyenm7](https://github.com/nguyenm7/html-flides) — ★ 7 — Import HTML slide decks into Figma Design as editable 1920x1080 frames via Figma MCP
+- [teknologika](https://github.com/teknologika/Deckbuilder) — ★ 7 — MCP Server for building powerpoint presentations
+- [ecator](https://github.com/ecator/cs-office-mcp-server) — ★ 7 — The MCP Server for operating Office files such as Excel,World,PowerPoint,Outlook
+- [Xiangdong-415](https://github.com/Xiangdong-415/codex-wps-office-mcp-skills) — ★ 7 — Codex workflow skills and a WPS-friendly Word MCP stdio wrapper for Word, Excel, PowerPoint, and Office document automation.
+- [guangxiangdebizi](https://github.com/guangxiangdebizi/PPT-MCP) — ★ 6 — Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
+- [tmustier](https://github.com/tmustier/powerpoint-cli) — ★ 6 — CLI for creating and editing PowerPoint files, wrapping office-powerpoint-mcp-server via mcporter
+- [amcchord](https://github.com/amcchord/slideMCP) — ★ 6 — MCP Server for the Slide API
+- [chakrikaguttameedi](https://github.com/chakrikaguttameedi/agentic-rag-chatbot) — ★ 6 — Agentic RAG Chatbot using Model Context Protocol (MCP) to answer queries from PDFs, Word, and PPT files.
+- [bsmnyk](https://github.com/bsmnyk/mdslides-mcp-server) — ★ 6 — MCP (Model Context Protocol) server for generating HTML slides from Markdown content
+- [carboneio](https://github.com/carboneio/carbone-mcp) — ★ 6 — Official MCP for Carbone — Document Generation, Document Conversion, and Universal Templating. Generate PDF,DOCX,XLSX,PPTX,CSV,MD,HTML and XML documents from...
+- [payals](https://github.com/payals/pg_rag_slide_generator) — ★ 5 — Automatic slide deck generator using the power of Postgres as an AI control plane for RAG and MCP
+- [sankettank66](https://github.com/sankettank66/MCP-Presentation) — ★ 5 — This Repo, walks you through setting up a Model Context Protocol (MCP) server using the Javascript SDK.
+- [ihatesea69](https://github.com/ihatesea69/office-powerpoint-mcp-server) — ★ 5 — Enterprise-Grade PowerPoint Automation Protocol   for AI Assistants
+- [joelbarmettlerUZH](https://github.com/joelbarmettlerUZH/slidev-mcp) — ★ 5 — MCP server for generating, rendering, and hosting Slidev presentations
+- [islem-zaraa](https://github.com/islem-zaraa/mcp-powerpoint) — ★ 5 — Model Context Protocol (MCP) plugin for PowerPoint operations, allowing AI assistants to create and manipulate PowerPoint presentations programmatically.
+- [forwardexplorer](https://github.com/forwardexplorer/PPT_skill_langgraph) — ★ 5 — 把一份 PDF（论文 / 报告 / 白皮书）自动变成可直接演示、可继续编辑的 .pptx。 底层由 LangGraph 状态机驱动，通过 MCP 协议暴露给 Claude Code 等各种智能体调用来制作PPT。如需虚拟环境可按照requirements.txt配置
+- [shanggqm](https://github.com/shanggqm/data-insight-agent) — ★ 5 — 借助claude code和数据库（mysql等）mcp server 和claude skills技术，实现的高可靠、效果出众的数据分析和报告PPT生成的Agent。A highly reliable and high-performing data analytics agent that utilizes ...
+- [pamelafox](https://github.com/pamelafox/py-ai-mcp-tool-schemas) — ★ 5 — "Improving MCP tool schemas for agent reliability" talk resources: MCP server, agents, evaluation code, and slides
+- [thangchung](https://github.com/thangchung/agentcon-Sep2025) — ★ 5 — Slides for MCP & A2A: Powering the Agentic AI Stack for Enterprise-Grade Apps topic
+- [gausoft](https://github.com/gausoft/markpdf-skill) — ★ 5 — Claude Skill — convert Markdown to premium PDFs, slides, HTML via the MarkPDF MCP server
+- [devsolux](https://github.com/devsolux/storytold) — ★ 5 — Claude Code & Codex plugin for the open-source ArtCraft Craft App Suite: one craft Skill drives 13 local, headless Craft MCP apps (photo, vector, video, RAW,...
+- [KiKi-Builds](https://github.com/KiKi-Builds/AI-Briefing-Skill) — ★ 5 — Claude skill for automated AI content briefings. Sources: Twitter/X · RSS · YouTube · Podcasts · GitHub · arXiv · Reddit · HN ·  Rednote · Tiktok· WeChat · B...
+- [choipureum](https://github.com/choipureum/mcp-file-contents-reader) — ★ 5 — A Model Context Protocol (MCP) server for reading and analyzing various file formats including PDF, Excel, Word, and PowerPoint documents.
+- [JulianPoleszczuk](https://github.com/JulianPoleszczuk/office-mcp) — ★ 5 — MCP server that lets Claude control open PowerPoint, Excel and Word on Windows through COM automation
+- [hamzabellouch](https://github.com/hamzabellouch/mcp) — ★ 5 — Production-ready Model Context Protocol (MCP) servers for Office automation (Word, Excel, PowerPoint), 3D graphics (Blender), and CAD engineering (FreeCAD) w...
+- [luozhiming931123-ops](https://github.com/luozhiming931123-ops/amazon-market-ppt-report) — ★ 5 — Amazon marketplace analysis PPTX skill for SellerSprite/SIF MCP data, covering keyword demand, competitor ASIN sampling, price bands, brand sales share, revi...
+- [moritalous](https://github.com/moritalous/slidev-mcp-apps) — ★ 4 — —
+- [bohachu](https://github.com/bohachu/botrun-google-slides-mcp) — ★ 4 — MCP server for Google Slides integration with service account authentication
+- [dovstern](https://github.com/dovstern/google-slides-llm-tools) — ★ 4 — MCP Server & Langchain Tools for Google Slides API
+- [DuongNAD](https://github.com/DuongNAD/aurora-slides-mcp) — ★ 4 — MCP server: Apple-keynote-style animated HTML lessons for self-study, with memory anchors, notebook pages and agent-made pictures
+- [lingfan36](https://github.com/lingfan36/ai-office-mcp) — ★ 4 — AI Office MCP suite: PPT generation skill + Excel MCP + Word MCP servers
+- [ykarapazar](https://github.com/ykarapazar/pptx-mcp-live) — ★ 4 — MCP server for Microsoft PowerPoint with live COM automation - 58 tools
+- [ma-nucho-pro](https://github.com/ma-nucho-pro/ARKEA-AI-AGENTE) — ★ 4 — ARKEA AI — agente de escritorio open source con voz, visión, memoria local, Ollama, OpenRouter, OpenAI, ElevenLabs, MCP, creación de Word, Excel, PPT, HTML, ...
+- [davidvonthenen](https://github.com/davidvonthenen/2025-kubecon-na) — ★ 4 — About About All resources (slides, code, etc) for 2025 KubeCon NA: Your Kubernetes Playbook at Your Fingertips: Advanced Troubleshooting With MCP, RAG, and K...
+- [smartdatabrokers](https://github.com/smartdatabrokers/slideforge-mcp) — ★ 4 — MCP server for consulting-quality PowerPoint slides. Remote — no install required.
+- [DuongNAD](https://github.com/DuongNAD/polaris-mcp) — ★ 4 — MCP server that builds a personal course: learner profile, keyless research with sources, evidence-based roadmap, schedule, and export to Aurora Slides
+- [PABannier](https://github.com/PABannier/PathView) — ★ 4 — PathView is a high-performance whole-slide image viewer for digital pathology. PathView combines GPU-accelerated tiled rendering with polygon overlays for ce...
+- [davidvonthenen](https://github.com/davidvonthenen/2025-odsc-west-workshop) — ★ 4 — About All resources (slides, code, etc) for 2025 ODSC West Workshop: Rethinking RAG: How MCP and Agent2Agent Will Transform the Future of Intelligent Search
+- [ojavadli](https://github.com/ojavadli/megadeck) — ★ 4 — AI-driven PowerPoint generation with built-in MCP server for Claude Code and any MCP-compatible client. Pydantic DSL + multi-provider LLM + visual critic loop.
+- [yang-kun-long](https://github.com/yang-kun-long/bit-ppt-template) — ★ 4 — LaTeX-free Beijing Institute of Technology style PPTX generator with YAML, CLI, Web UI, and MCP entrypoints
+- [NikiforovAll](https://github.com/NikiforovAll/mcp-landscape) — ★ 4 — Presentation on MCP Landscape, Sep 2025
+- [eiceblue](https://github.com/eiceblue/spire-presentation-mcp-server) — ★ 3 — —
+- [vuhai2002](https://github.com/vuhai2002/ai-slides-mcp) — ★ 3 — —
+- [hai-group](https://github.com/hai-group/core3-mcp-presentation) — ★ 3 — —
+- [CloakGloom](https://github.com/CloakGloom/WoLiu-AI-Agent) — ★ 3 — 我流 AI 智能体 — 桌面端全栈 AI 助手，30+ 工具插件 + MCP 可插拔工具体系，支持 ComfyUI、PPT 生成、语音合成等多模态服务
+- [h4ck4life](https://github.com/h4ck4life/mcp-pptx-server) — ★ 3 — —
+- [pansin](https://github.com/pansin/PPTMCP) — ★ 3 — PPT MCP Server
+- [ngs](https://github.com/ngs/google-mcp-server) — ★ 3 — MCP server for Google Workspace APIs - Calendar, Drive, Gmail, Sheets, Docs, and Slides integration
+- [antoniomachuca](https://github.com/antoniomachuca/MCP-Manim-Slides) — ★ 3 — MCP server (Python SDK v2) that gives AI agents the power to build interactive Manim presentations - render slides, preview single slides, and export Reveal....
+- [t-kalinowski](https://github.com/t-kalinowski/useR-2026-mcp-repl) — ★ 3 — Slides for the useR! 2026 lightning talk about mcp-repl.
+- [ZatesloFL](https://github.com/ZatesloFL/google_workspace_mcp) — ★ 3 — Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server
+- [renatogroffe](https://github.com/renatogroffe/mcp-dotnetsp-xp_2025-10) — ★ 3 — Slides e conteúdos de apresentação sobre uso de .NET + MCP. Palestra realizada no dia 10/10/2025, em evento para profissionais da XP Inc.
+- [rishapgandhi](https://github.com/rishapgandhi/google_mcp) — ★ 3 — Minimal, secure Google Workspace MCP server — 43 tools across 10 services (Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks, Chat, Meet). Only offi...
+- [PeterKalmstrom](https://github.com/PeterKalmstrom/claude-powerpoint-skill) — ★ 3 — Claude Code skill for building production-quality PowerPoint decks on Windows via MCP + COM automation
+- [jakeyShakey](https://github.com/jakeyShakey/model_context_protocol_training) — ★ 3 — A Slidev presentation and developer guide to the Model Context Protocol (MCP) by Anthropic, covering AI integration, LLM tool use, core concepts, and impleme...
+- [dd-Splunk](https://github.com/dd-Splunk/splunk-mcp) — ★ 3 — PoC: Splunk Enterprise + Splunk MCP Server in Docker. Splunk4Rookies (SA-S4R) sample data, multi-agent demo, Marp presenter deck. Cursor, Claude Desktop, or ...
+- [ArioMoniri](https://github.com/ArioMoniri/changex) — ★ 3 — Provenance-first change tracking for AI document edits — native Word track-changes + a portable, hash-chained .changex journal. Works with any model (MCP + C...
+- [gammaremover](https://github.com/gammaremover/gamma-watermark-remover-mcp) — ★ 3 — MCP server — let Claude & AI agents remove the "Made with Gamma" watermark     from PDF/PPTX, locally or via hosted endpoint
+- [nitaiaharoni1](https://github.com/nitaiaharoni1/google-slides-mcp) — ★ 2 — —
+- [moneyfactory-co](https://github.com/moneyfactory-co/slidev-builder-mcp) — ★ 2 — Professional Slidev MCP Server for creating presentations with auto-generated starter slides, modular architecture, and Hatch corporate branding. Built for V...
+- [knorq-ai](https://github.com/knorq-ai/pptx-mcp-server) — ★ 2 — MCP server for generating professional PowerPoint presentations with McKinsey/Deloitte/Neutral themes
+- [senthiljack2808](https://github.com/senthiljack2808/google-slides-mcp) — ★ 2 — oogle-slides-mcp
+- [jemmanuele](https://github.com/jemmanuele/gslide-mcp) — ★ 2 — Google Slide MCP solution tailored for usage with Claude Code
+- [lijunliu-gh](https://github.com/lijunliu-gh/auto-ppt-engine) — ★ 2 — Open-source PowerPoint generation engine — embeddable by AI agents, enterprises, and developers. MCP + CLI + HTTP. Self-hostable backend for agent workflows,...
+- [TANGZHUO12](https://github.com/TANGZHUO12/PPT-Master) — ★ 2 — 把 DeepSeek 开源智能体框架 DSH 装进一个原生 macOS App：内嵌无头 LibreOffice + 9 个幻灯片 MCP 工具 + matplotlib 图表内核，一句话生成带动画的成品 PPT，多轮修改不失忆。克隆后需自装 vendor 三件套（LibreOffice / Node / Pyt...
+- [djvosper](https://github.com/djvosper/MCP-PPTX) — ★ 2 — —
+- [zavora-ai](https://github.com/zavora-ai/mcp_slides) — ★ 2 — MCP server with tool routing for presentation authoring.
+- [PrincessGray](https://github.com/PrincessGray/ppt-mcp-ori) — ★ 2 — —
+- [Weichenleeeee123](https://github.com/Weichenleeeee123/ppt-mcp-server) — ★ 2 — A PowerPoint editing server based on MCP (Model Context Protocol) provides the complete functionality of creating and editing PowerPoint presentations, inclu...
+- [oylx666](https://github.com/oylx666/paper-reader-mcp) — ★ 2 — Local, token-efficient MCP server for evidence-first reading of PDF, DOCX, PPT, and PPTX research documents.
+- [QiYunlong-GitHub](https://github.com/QiYunlong-GitHub/NoPPT) — ★ 2 — NoPPT : PPT = NoSQL : SQL. AI-native, Web-first HTML slide generation and editing platform with MCP support. Built-in LLM/VLM review engine, closed-loop feed...
+- [datatorag](https://github.com/datatorag/gws-mcp) — ★ 2 — Google Workspace MCP extension for Claude — Gmail, Drive, Sheets, Docs, Slides, Calendar, Contacts
+- [fryorcraken](https://github.com/fryorcraken/google-docs-mcp) — ★ 2 — MCP server for Google Docs, Slides, Sheets, Drive, Gmail, and Calendar (fork of a-bonus/google-docs-mcp)
+- [mashley](https://github.com/mashley/be-the-answer) — ★ 2 — Materials for the Be the Answer workshop — slides, handouts, prompts, skills & MCP references.
+- [tomohiro-owada](https://github.com/tomohiro-owada/google-workspace-mcp) — ★ 2 — MCP server for Google Workspace APIs (Calendar, Gmail, Drive, Docs, Sheets, Slides, Chat)
+- [hosioobo](https://github.com/hosioobo/Genspark-google-mcp-public) — ★ 2 — GenSpark-focused remote Streamable HTTP MCP server for Google Drive/Docs/Sheets/Slides
+- [06ketan](https://github.com/06ketan/slideshot) — ★ 2 — Convert HTML slides to high-res PNG, WebP, and PDF — CLI, Web App, MCP Server
+- [xbill9](https://github.com/xbill9/workspace-mcp-claude) — ★ 2 — Connect Claude Code to the Google Workspace remote MCP servers (Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, People)
+- [joe-broadhead](https://github.com/joe-broadhead/workspace-lite) — ★ 2 — MCP servers for Google Workspace via Apps Script proxies: Drive, Gmail, Calendar, Sheets, Slides, Docs, Tasks, and Forms
+- [olliemorgan685-glitch](https://github.com/olliemorgan685-glitch/chart-ocr-mcp) — ★ 2 — PaddleOCR-based chart/table extraction for images and PowerPoint slides, with CLI, FastAPI UI, and local MCP tools for agents.
+- [danmo-ai](https://github.com/danmo-ai/danmo-work) — ★ 2 — Open-source AI work agent (MIT, self-hosted). Coding-agent-grade loop for long-horizon work — code, docs, slides, sheets, multi-agent, MCP & WeChat/Feishu on...
+- [sanity-labs](https://github.com/sanity-labs/slides) — ★ 2 — Brand-locked PowerPoint generation for LLMs. Author your slide template in React; Claude writes the deck through MCP without drifting on fonts, colors, or la...
+- [shiosalt](https://github.com/shiosalt/powerpoint-analyzer-mcp) — ★ 2 — PowerPoint analyze MCP Server - Extract structured content from PowerPoint files using Model Context Protocol
+- [wangzian828](https://github.com/wangzian828/powerpoint-canvas-controller) — ★ 2 — Live MCP control of an editable Microsoft PowerPoint canvas through the native COM API.
+- [Hectirry](https://github.com/Hectirry/thinkcell-mcp) — ★ 2 — Servidor MCP que envuelve la automatización .ppttc de think-cell para crear gráficos y presentaciones de PowerPoint a partir de datos
+- [sanqiuyef](https://github.com/sanqiuyef/mcp-office-writer) — ★ 2 — MCP server for creating and editing Word/Excel/PowerPoint/PDF documents - scene-based Chinese typography, live COM editing, high-fidelity LibreOffice conversion
+- [B-C-Software](https://github.com/B-C-Software/doconda-examples) — ★ 2 — Make your AI agent deliver Word, PowerPoint, Excel and PDF files: examples for Amazon Bedrock, Vertex AI, Azure OpenAI, OpenAI, Claude, LangGraph, Strands, V...
+- [Integration-Automation](https://github.com/Integration-Automation/ThesisAgent) — ★ 2 — Keyword-driven academic paper search across 11 sources (arXiv, Semantic Scholar, OpenAlex, PubMed, IEEE, ACM, DBLP, Crossref, OpenAIRE, Springer, Scholar) → ...
+- [codeRATny](https://github.com/codeRATny/AnimatedDiagrams) — ★ 2 — Animated architecture diagram editor (C++23 / Qt 6): animate request flows — retries, timeouts, fallbacks — and export to GIF, WebM, MP4, PowerPoint (video, ...
+- [withevergrow](https://github.com/withevergrow/withicons) — ★ 2 — Free, open-source icon library: 500 icons in 20 styles (10,000 SVGs), every icon animated. React, Vue, Svelte, Angular, Solid, web component, CSS classes, CD...
+- [66666-design](https://github.com/66666-design/bidding-automation) — ★ 2 — Bidding & award materials automation workflow — auto-discover case files, extract fields, generate DOCX/PPTX deliverables via Web/CLI/MCP. Apache-2.0, Python...
+- [digitalchild](https://github.com/digitalchild/deckwright) — ★ 2 — Build on-brand presentations from any .pptx template: CLI, HTTP API and MCP server
+- [Bajahaw](https://github.com/Bajahaw/ooxml-mcp-server) — ★ 2 — MCP server for creating, inspecting, editing, and validating Office Open XML documents (.docx, .pptx, .xlsx)
+- [searaylee](https://github.com/searaylee/office-mcp-server) — ★ 2 — MCP server for Office document generation, editing, and email sending. Supports DOCX, PPTX, Excel, PDF, HTML formats.
+- [brightdeck](https://github.com/brightdeck/mcp) — ★ 2 — MCP server
+- [zerob13](https://github.com/zerob13/slidev-mcp) — ★ 1 — mcp server to create slidev like a pro
+- [raykuonz](https://github.com/raykuonz/slidev-mcp-server) — ★ 1 — —
+- [oconsl](https://github.com/oconsl/slidev-mcp) — ★ 1 — —
+- [jonathanscholtes](https://github.com/jonathanscholtes/Fabric-Foundry-Insight-Presentation-Agents) — ★ 1 — End-to-end implementation that combines Microsoft Fabric, Foundry agents, and Model Context Protocol (MCP) to transform enterprise data into natural-language...
+- [Themetralla3000](https://github.com/Themetralla3000/pptx-mcp-server) — ★ 1 — —
+- [shjanjua](https://github.com/shjanjua/pptx-mcp-server) — ★ 1 — —
+- [mario03690](https://github.com/mario03690/ai-netcafe) — ★ 1 — Compare LLM cost & latency on one prompt, translate PDF keeping layout, cited research, make PPTX  MCP server + CLI
+- [photonn](https://github.com/photonn/dial-pptx-mcp) — ★ 1 — DIAL-aware remote MCP server for PowerPoint generation  extends GongRzhe/Office-PowerPoint-MCP-Server with streamable-http transport, per-session state, and ...
+- [superbereza](https://github.com/superbereza/mac-native-pptx-mcp) — ★ 1 — Full-featured PowerPoint MCP server for macOS  drives PowerPoint for Mac via AppleScript (21 tools, full deck/slide/shape lifecycle); standalone, no upstream...
+- [alirazapoonja](https://github.com/alirazapoonja/mcp_presentation-) — ★ 1 — mcp_presentation
+- [kacase](https://github.com/kacase/mcp-powerpoint) — ★ 1 — —
+- [EiriniOr](https://github.com/EiriniOr/mcp-powerpoint-server) — ★ 1 — ?? PowerPoint MCP Server - Model Context Protocol server with 36 tools for AI-assisted PowerPoint generation. Create beautiful presentations programmatically...
+- [softchris](https://github.com/softchris/go-mcp-presentation) — ★ 1 — —
+- [rcarvalo](https://github.com/rcarvalo/powerpoint-mcp-server) — ★ 1 — —
+- [vancealexander](https://github.com/vancealexander/Powerpoint_MCP_CrossPlatform) — ★ 1 — Cross-platform PowerPoint MCP Server for Claude Desktop - Works on Windows, macOS, and Linux
+- [sruan2](https://github.com/sruan2/neurips-mcp-presentation) — ★ 1 — —
+- [Strand-AI](https://github.com/Strand-AI/figma-slides-mcp) — ★ 1 — —
+- [lysong9907](https://github.com/lysong9907/bento-ppt-skill) — ★ 1 — Bento Slides MCP Server + bento-slides skill:??? LLM ?????? .bento.html ????(Cherry Studio / Claude Desktop ??)
+- [jaderfeijo](https://github.com/jaderfeijo/google-slides-mcp) — ★ 1 — A Google Slides MCP extension for Claude Desktop
+- [Pylogmon](https://github.com/Pylogmon/powerpoint-generator-mcp) — ★ 1 — A PowerPoint generator for Model Context Protocol (MCP) using Bun (Note: Unable to read/edit existing presentation)
+- [ryanvo162](https://github.com/ryanvo162/google-slides-mcp) — ★ 1 — MCP server for Google Slides - 39 tools for creating, editing, and managing presentations
+- [forayconsulting](https://github.com/forayconsulting/google-slides-mcp) — ★ 1 — An MCP server allowing LLMs to create and manipulate Google Slides at a deeply customized level.
+- [gavanduffy](https://github.com/gavanduffy/slides-mcp) — ★ 1 — —
+- [yanjiaqi1024](https://github.com/yanjiaqi1024/PrsAi_PPT_Translation_MCP) — ★ 1 — PPT
+- [Alexy-Lin](https://github.com/Alexy-Lin/office-ai) — ★ 1 — Office AI - PPT/Excel/Word automation tools using MCP and PptxGenJS
+- [slidecraft-in](https://github.com/slidecraft-in/presentations-ai-mcp-server) — ★ 1 — Official MCP server for Presentations.AI - create designed slide decks from a topic, text, or document via any MCP-compatible client.
+- [loonghao](https://github.com/loonghao/ppt-kit) — ★ 1 — 智能 PPT 生成工具 - 支持 Markdown 转换、代码高亮、Mermaid 图表渲染和 MCP AI 集成的 Office Add-in 插件
+- [shu-muling](https://github.com/shu-muling/Mochi) — ★ 1 — 🎐 麻糬 AI | 蹲在桌面上的 AI 助手 🐾 桌宠悬浮球 · 🎨 多主题 · 💬 多轮对话 · 🧠 双层记忆 · 📚 知识库 RAG · 📄 一键生成 PPT/Word/流程图 · 🔌 MCP 扩展
+- [1154663626ga-ux](https://github.com/1154663626ga-ux/codex_blender_GA) — ★ 1 — 本项目基于参考图片，使用 Blender Python 自动生成一个科研设备外观模型。  项目提供可直接运行的建模脚本、已生成的 .blend 文件、渲染预览图，以及 Codex 连接 Blender MCP 的中文教程。适合用于论文配图、PPT 展示、方案沟通和 AI 辅助三维建模流程演示。This proje...
+- [lgwanai](https://github.com/lgwanai/mypoint-mcp) — ★ 1 — 基于 PptxGenJS 的 MCP (Model Context Protocol) 服务器，提供 PowerPoint 演示文稿创建和编辑功能。
+- [alexh-scrt](https://github.com/alexh-scrt/mcp-pptx) — ★ 1 — MCP Server to generate PowerPoint presentations
+- [A1-x-Tech](https://github.com/A1-x-Tech/mcp-google-slides) — ★ 1 — MCP server for the Google Slides API — create and edit presentations, slides, text, shapes, tables and images, manage speaker notes, comments, thumbnails and...
+- [AndreaGriffiths11](https://github.com/AndreaGriffiths11/presentation-mcp-deck) — ★ 1 — HTML presentation: presentation-mcp-a-github-copilot-cli-project-presentation
+- [Hrithik-s-Raj](https://github.com/Hrithik-s-Raj/PptxGenJS-mcp-server) — ★ 1 — Node.js–based Model Context Protocol (MCP) server for programmatically generating and managing PowerPoint decks using PptxGenJS — ideal for LLMs, automation ...
+- [NgoSon3868-Quas](https://github.com/NgoSon3868-Quas/PPT-MCP) — ★ 1 — Cau hinh MCP Server PowerPoint de su dung tren nhieu may
+- [cloneorcopy](https://github.com/cloneorcopy/ppt-master-mcp) — ★ 1 — PPT-Master MCP server.
+- [MaximusBayu](https://github.com/MaximusBayu/pptx-mcp) — ★ 1 — —
+- [HADDADSOHAIB](https://github.com/HADDADSOHAIB/ppt-mcp-server) — ★ 1 — —
+- [lgh112](https://github.com/lgh112/ppt-design-mcp) — ★ 1 — —
+- [PsychQuant](https://github.com/PsychQuant/che-pptx-mcp) — ★ 1 — Swift-native MCP server for PowerPoint (.pptx) manipulation
+- [socamalo](https://github.com/socamalo/PPT_MCP_Server) — ★ 1 — —
+- [lilitong7](https://github.com/lilitong7/PPT-Refiner-MCP) — ★ 1 — This tool polishes draft PPTs for Code Agents like Openclaw,Claude Code,CodeX.It has two functions:full PPT beautification,precise local slide editing.Powere...
+- [FE-Berserker](https://github.com/FE-Berserker/Pen2ppt) — ★ 1 — Transfer pencil mcp to PPT
+- [zhengjie9510](https://github.com/zhengjie9510/mineru-docparse-mcp) — ★ 1 — MCP Server that converts Word / PDF / PPT / Excel to Markdown, powered by the MinerU
+- [open-yi](https://github.com/open-yi/mcp-bento-server) — ★ 1 — Local-first MCP server & CLI for authoring Bento decks (single-file PPT) with AI agents and live browser preview.
+- [dariusgm](https://github.com/dariusgm/quick-deck-mcp) — ★ 1 — an MCP Server for generating decks / slides.
+- [mondragon-developer](https://github.com/mondragon-developer/MCP-googleDocs) — ★ 1 — MCP server for google workspace (Docs, Sheets, Slides)
+- [Nicopradas](https://github.com/Nicopradas/slideshow-studio-mcp) — ★ 1 — Conector MCP de Slideshow Studio: replica slideshows virales de TikTok en tu nicho desde el chat
+- [toddamerrill](https://github.com/toddamerrill/presentation-mcp-platform) — ★ 1 — MCP server platform for generating slides with infographics in one
+- [cativo23](https://github.com/cativo23/curso-claude-code) — ★ 1 — Mini-curso introductorio de Claude Code: skills, plugins, statuslines, hooks, MCPs, subagents. Slides en terminal con slides CLI.
+- [pablozamudio](https://github.com/pablozamudio/it-builders-2025-meli-mcp-masterclass) — ★ 1 — Slides from MCP Masterclass in IT Builders 2025 - "¿Conversar o Codear? ¡MCPs en Acción en Mercado Libre!"
+- [Mirantis-PS](https://github.com/Mirantis-PS/mcp101-training-public) — ★ 1 — Intro to the Model Context Protocol (MCP): webinar slides + a runnable weather MCP server demo in Python.
+- [2slides](https://github.com/2slides/zed-mcp-server-2slides) — ★ 1 — The Zed MCP server extension for https://2slides.com
+- [paoloricciuti](https://github.com/paoloricciuti/tmcp-slides) — ★ 1 — Slides for "TMCP: a new way of building MCP servers with TS"
+- [telekom](https://github.com/telekom/mcp-security) — ★ 1 — Interactive demos and slide deck covering MCP security
+- [Kimmahone](https://github.com/Kimmahone/edu-workspace-mcp) — ★ 1 — Google Workspace for Education MCP server for Docs, Sheets, Slides, Forms, Drive, and Classroom
+- [n24q02m](https://github.com/n24q02m/workspace) — ★ 1 — Google Workspace MCP server (Docs/Drive/Calendar/Gmail/Sheets/Slides/Tasks/Chat/People + multi-account) — vendored gemini-cli workspace-server + mcp-core auth
+- [svesh87](https://github.com/svesh87/mcp-gdocs) — ★ 1 — MCP server for Google Docs, Sheets and Slides: template-aware editing that keeps the layout intact
+- [TriasJ](https://github.com/TriasJ/notebooklm-studio-skill) — ★ 1 — Claude Code skill for creating NotebookLM studio artifacts (podcasts, videos, slides, infographics, reports, quizzes) via MCP
+- [taashim-eng](https://github.com/taashim-eng/Google-Slides) — ★ 1 — MCP type skill for LLMs to creat Google Slide presentations
+- [CommonNinja](https://github.com/CommonNinja/vidocu-mcp-server) — ★ 1 — The AI Knowledge Platform as MCP tools. Turn videos, PDFs, and slides into subtitles, voiceovers, translations, and docs from any MCP client. Free plan works.
+- [gilsonfiho](https://github.com/gilsonfiho/forja) — ★ 1 — Forja — companion do Claude Code: agents (Jira, repos, commit/PR, relatórios, slides, RAG) orquestrados e expostos via MCP.
+- [tako0614](https://github.com/tako0614/takos-office) — ★ 1 — Unified self-hostable docs/slide/sheet worker (agent-native via MCP)
+- [Jason-Vaughan](https://github.com/Jason-Vaughan/openclaw-google-oauth) — ★ 1 — OpenClaw plugin for Google Workspace — Gmail (send/read/label/trash), Calendar (events + delete), Drive (list/share/trash), Docs (create/read/append), Sheets...
+- [arihealthbird](https://github.com/arihealthbird/opencharts-mcp) — ★ 1 — Docs for the OpenCharts MCP server — build flowcharts, notes, slides, sheets, boards, sites, agents & songs from your AI client
+- [Rotvie](https://github.com/Rotvie/decksmith) — ★ 1 — Markdown → reviewed slide plan → on-brand slide visuals. MCP server for Claude Code with approval gates and pluggable visual systems
+- [superdwayne](https://github.com/superdwayne/keynoteMP) — ★ 1 — MCP server for Apple Keynote — 67 tools for slides, text, images, shapes, exports + Design Engine with 20+ layouts, brand system, and typography
+- [fabiendupont](https://github.com/fabiendupont/mcp-google-workspace) — ★ 1 — MCP server for Google Workspace — 53 tools for Drive, Docs, Sheets, Slides, Gmail. JSON policy engine, label-scoped access, lazy discovery. Rust.
+- [us-all](https://github.com/us-all/google-drive-mcp-server) — ★ 1 — Google Drive MCP server — 96 tools for Drive, Docs, Sheets, Slides with Google Workspace awareness (Shared Drives, Labels, Approvals, domain-wide delegation).
+- [tertiarycourses](https://github.com/tertiarycourses/TGS-2024042309-Develop-AI-Agents-with-OpenAI-Agent-Development-Kit) — ★ 1 — WSQ OpenAI Agents SDK courseware with 227 visual slides and 10 self-contained Python activities covering tools, RAG, orchestration, MCP, guardrails, tracing,...
+- [R09722akaBennett](https://github.com/R09722akaBennett/nano-pdf-mcp) — ★ 1 — NanoPDF MCP Server: An AI-powered PDF editor. Visually edit and generate PDF slides locally using Gemini 3 Pro and the Model Context Protocol.
+- [jjoej15](https://github.com/jjoej15/personal-school-mcp) — ★ 1 — RAG + MCP project that connects AI agents to my Canvas, Google Calendar, and a diy KV store RPC service that holds vector embeddings for lecture slides
+- [kushaln02](https://github.com/kushaln02/acd26-vadodara) — ★ 1 — Slides, architecture diagrams, and a live-demo guide for "The Future of Data Pipelines on AWS" — AWS Community Day Vadodara 2026, on building intelligent Glu...
+- [block-town](https://github.com/block-town/google-doors) — ★ 1 — Claude Code in your Google Workspace: Gmail, Drive, Calendar, Docs, Sheets, Slides, Forms, Tasks, Contacts, Apps Script and Analytics through MCP servers on ...
+- [hejun789](https://github.com/hejun789/polymath) — ★ 1 — Multi-agent research studio: give it a topic, get a sourced markdown report + auto-generated slide deck. LangGraph orchestration, MCP tools, Chroma memory.
+- [apexlogicfocus](https://github.com/apexlogicfocus/google-workspace-mcp-cli) — ★ 1 — Google Workspace MCP server and CLI for Claude Code, Codex and AI agents. 38 tools for Gmail, Drive, Sheets, Docs, Slides, Calendar, Tasks, Forms and Contact...
+- [rare](https://github.com/rare/slidesfly-integrations) — ★ 1 — Slidesfly turns AI-generated HTML slide decks into shareable URLs with one command—no sign-up required. Integrations for GitHub Actions, MCP, Gemini CLI, Mar...
+- [chris1928a](https://github.com/chris1928a/chris-ai-stack) — ★ 1 — Chris Erler's AI brain stack: Claude Code + 31 MCP servers + 19 skills + 125 memory files + Telegram bot. ~150 EUR/mo, 23h/wk saved. Forkable templates + 8 u...
+- [mariolpantunes](https://github.com/mariolpantunes/crepe-mcp) — ★ 1 — CREPE — Compile, Research, Export, Presentation Engine. An MCP server for AI Agents that drafts slide decks in Pandoc Markdown, compiles them to Beamer PDF o...
+- [TANGZHUO12](https://github.com/TANGZHUO12/ppt-expert) — ★ 1 — One sentence in, an expert deck out. This DSH plugin adds a slide-expert persona, a LibreOffice Impress MCP server (7 tools + table reading + 18 matplotlib c...
+- [phxdev1](https://github.com/phxdev1/powerpoint-mcp) — ★ 1 — —
+- [ouns-ous](https://github.com/ouns-ous/powerpoint-live-mcp) — ★ 1 — Real-time PowerPoint Automation MCP Server for Windows with Live Visuals & Product Databases
+- [adner](https://github.com/adner/PowerPointMcpVBA) — ★ 1 — —
+- [karlll](https://github.com/karlll/kslide) — ★ 1 — Create powerpoint slideshows using MCP or CLI
+- [goya4140](https://github.com/goya4140/powerpoint-canvas-controller-macos) — ★ 1 — Editable PowerPoint canvas control on macOS through Office.js and MCP
+- [lucasgfsvd](https://github.com/lucasgfsvd/microsoft365-mcp-server) — ★ 1 — MCP server for Microsoft 365 — Mail, Calendar, Files, Teams, OneNote, Excel, Word, PowerPoint via Microsoft Graph. Alpha.
+- [B-C-Software](https://github.com/B-C-Software/doconda-mcp) — ★ 1 — Doconda MCP server: give your AI agent tools to create, review and edit Word, Excel, PowerPoint and PDF documents. Remote or local (npx @doconda/mcp).
+- [Sahith59](https://github.com/Sahith59/WordEX-MCP) — ★ 1 — MCP server that lets AI assistants read and write Word, Excel, PDF, and PowerPoint files — fully local, no cloud
+- [gauravvvvvvvvvv](https://github.com/gauravvvvvvvvvv/office-mcp) — ★ 1 — Local-first MCP server for creating, editing, analyzing, and reviewing Word, Excel, and PowerPoint files, with native Windows Office automation.
+- [groupdocs-comparison](https://github.com/groupdocs-comparison/GroupDocs.Comparison.Mcp) — ★ 1 — GroupDocs.Comparison for .NET MCP server — compare PDF, Word, Excel, PowerPoint, and text documents and produce diff reports via AI agents.
+- [paulturek](https://github.com/paulturek/m365-mcp-server) — ★ 1 — MCP Server for Microsoft 365 - Access Outlook, Calendar, OneDrive, SharePoint, Excel, Word, PowerPoint, Teams, and Power BI with automatic OAuth token refresh
+- [thomas-villani](https://github.com/thomas-villani/pptlive) — ★ 1 — Drive a running Microsoft PowerPoint from Python, CLI, or MCP — live COM automation for LLM agents, with one-click Claude Desktop install (Windows)
+- [vikisingh23](https://github.com/vikisingh23/office-mcp) — ★ 1 — MCP server for PowerPoint, Word, Excel & CSV — 32 tools to create, read, and edit Office documents from any AI coding assistant. Works with Claude Code, Curs...
+- [xjustloveux](https://github.com/xjustloveux/aspose-mcp-preview) — ★ 1 — aspose-mcp-server 的即時文件預覽擴充套件，支援 Word、Excel、PowerPoint、PDF 在瀏覽器中即時預覽
+- [changhaozhang663-shaxia](https://github.com/changhaozhang663-shaxia/codex-science-figure-mcp) — ★ 1 — 通过本地 MCP 连接 Illustrator 与 PowerPoint，制作可编辑科研图。Windows 安装包、源码与中文使用说明。
+- [mike-anderson](https://github.com/mike-anderson/doc-index-mcp) — ★ 1 — A local-first semantic search server for your documents. Index PDFs, Word docs, PowerPoints, Excel files, and text/markdown, then search them using natural l...
+- [zorost](https://github.com/zorost/alchemylake-apex) — ★ 1 — Truth, made visible. AlchemyLake turns governed lakehouse data (Databricks Unity Catalog, Genie, or your own uploads) into verified, provenance-sealed delive...
+- [kodepapa](https://github.com/kodepapa/marp-mcp) — ★ 1 — MCP server to expose Marp markdown presentation framework to agents
+- [oddysey-ai](https://github.com/oddysey-ai/oddysey) — ★ 1 — Agentic RWA command deck — Next.js on Cloudflare Workers, with x402-metered MCP access and a self-hosted facilitator.
+- [gavanduffy](https://github.com/gavanduffy/marp-mcp) — ★ 1 — —
+- [Nurkic4](https://github.com/Nurkic4/artifacts-local) — ★ 1 — Agent-first local Markdown presentation adapters for MCP and VS Code; original renderer assets excluded
+- [leedonwoo2827-ship-it](https://github.com/leedonwoo2827-ship-it/gemma-docu-writer) — ★ 1 — 로컬 PC에서 돌아가는 결과보고서 작성툴 (HWPX · PPTX 출력). React + FastAPI + Ollama(Gemma4n) / Gemini 토글 + 템플릿 주입 MCP (python-hwpx, python-pptx).
+- [launchapp-dev](https://github.com/launchapp-dev/animus-document-engine) — ★ 1 — Animus Document Engine — MCP service that renders/parses/converts Office documents (xlsx/pptx/docx) from a structured spec (pptxgenjs/docx/exceljs + LibreOff...
+- [ExaDev](https://github.com/ExaDev/documents.js) — ★ 1 — A family of independent, MIT-licensed TypeScript packages for lossless, type-safe document conversion — OOXML (docx/pptx/xlsx), OpenDocument (odt/ods/odp), M...
+- [tobias-bettinger](https://github.com/tobias-bettinger/ppt-agent) — ★ 1 — AI-powered McKinsey-level PowerPoint generation using pydantic_ai agents + FastMCP
+- [blazar-source](https://github.com/blazar-source/dsh-r7-office) — ★ 1 — R7-Office document processing plugin and MCP server for DeepSeek Harness (DOCX, XLSX, PPTX, PDF)
+- [s-b-repo](https://github.com/s-b-repo/onlyoffice-mcp-server) — ★ 1 — MCP server for creating, reading, editing and converting Office documents (docx, xlsx, pptx) — 77 async tools with version history, charts, spell-check, find...
+- [wanquanY](https://github.com/wanquanY/MusterOffice) — ★ 1 — Office engine for AI agents: editable presentations powered by Rust, with native/WASM, SDK, CLI and MCP interfaces.
+- [JaimeJunr](https://github.com/JaimeJunr/keyless-studio) — ★ 1 — Keyless visual generation for Claude Code — images, pixel-art sprites & sheets, PPTX decks, social creatives, site visuals. No OPENAI_API_KEY: routes through...
+- [Asno-dev](https://github.com/Asno-dev/Helx) — ★ 1 — Helx — the universal artifact runtime for AI agents. Create, read, edit, validate, diff, render and convert DOCX, XLSX, PPTX, PDF, Markdown, HTML and CSV — p...
+- [Troy-Lai](https://github.com/Troy-Lai/mcp-presentation) — ★ 0 — MCP classroom presentation
+- [Manu-Krish](https://github.com/Manu-Krish/MCP-Presentation-New) — ★ 0 — MCP Presentation New
+- [rijul-procdna](https://github.com/rijul-procdna/MCP-Presentation-Generator) — ★ 0 — —
+- [emrum01](https://github.com/emrum01/mcp-presentation-demo) — ★ 0 — —
+- [danielplawgo](https://github.com/danielplawgo/dotnet-mcp-presentation) — ★ 0 — MCP w .NET: prezentacja (Slidev) i demo ASP.NET Core pokazujace, jak udostepnic aplikacje agentom AI
+- [momodeveluk2024](https://github.com/momodeveluk2024/mcp-presentation-web) — ★ 0 — Recap presentation for MCP
+- [maratkand21](https://github.com/maratkand21/presentation-mcp-server) — ★ 0 — —
+- [EiceblueCloud](https://github.com/EiceblueCloud/spire.presentation-mcp-server) — ★ 0 — Spire.Presentaition for MCP server
+- [konojunya](https://github.com/konojunya/html2pptx-mcp) — ★ 0 — html to pptx mcp server
+- [arbazpathan91](https://github.com/arbazpathan91/pptx-mcp-server) — ★ 0 — —
+- [loveRyujin](https://github.com/loveRyujin/slidev-mcp) — ★ 0 — —
+- [gavanduffy](https://github.com/gavanduffy/slidev-mcp) — ★ 0 — —
+- [feirate](https://github.com/feirate/slidev-mcp-server) — ★ 0 — —
+- [biancasivero](https://github.com/biancasivero/BIANCA-SANITY) — ★ 0 — Sistema Integrado de Gesto de Contedo e Apresentaes - Sanity CMS + Slidev + MCP Tools
+- [kennyg](https://github.com/kennyg/slidev-mcp-app) — ★ 0 — —
+- [RAFAEL-SILVASOUZA](https://github.com/RAFAEL-SILVASOUZA/pptx-mcp-server) — ★ 0 — —
+- [smorand](https://github.com/smorand/google-slides-mcp) — ★ 0 — HTTP streamable MCP server for Google Slides API integration
+- [FarukDelic](https://github.com/FarukDelic/Google-Slides-MCP) — ★ 0 — —
+- [SolonaBot](https://github.com/SolonaBot/google-slides-mcp) — ★ 0 — MCP server for Google Slides integration
+- [artemu78](https://github.com/artemu78/google-slides-mcp) — ★ 0 — —
+- [schuang](https://github.com/schuang/google-slides-mcp) — ★ 0 — —
+- [Stephenjhayes](https://github.com/Stephenjhayes/google-slides-mcp) — ★ 0 — MCP Server for my Slide Maker project
+- [dvanderelst](https://github.com/dvanderelst/GoogleSlidesMCP) — ★ 0 — —
+- [JustParent](https://github.com/JustParent/google-slides-mcp) — ★ 0 — Low-level MCP for Google Slides
+- [eliamazzon](https://github.com/eliamazzon/google-slides-mcp) — ★ 0 — —
+- [vamsikiran353-gif](https://github.com/vamsikiran353-gif/google-slides-mcp) — ★ 0 — —
+- [tedpecoulas](https://github.com/tedpecoulas/pptx-mcp-server) — ★ 0 — Serveur MCP pour skills python pour ppt
+- [leoou331](https://github.com/leoou331/pptx-mcp-server) — ★ 0 — MCP server for creating and editing PowerPoint presentations
+- [kunalhemnani1](https://github.com/kunalhemnani1/google-slides-mcp-server) — ★ 0 — —
+- [illumination-k](https://github.com/illumination-k/google-slides-mcp) — ★ 0 — —
+- [Dinpo](https://github.com/Dinpo/google-slides-mcp) — ★ 0 — MCP for Google Slides with advanced functionality
+- [kriskumar](https://github.com/kriskumar/google-slides-mcp) — ★ 0 — —
+- [micahyee415](https://github.com/micahyee415/google-slides-mcp-server) — ★ 0 — Model Context Protocol (MCP) server for Google Slides: read, template-fill, and edit presentations on Cloud Run with Google OAuth.
+- [mcembalest](https://github.com/mcembalest/google-slides-mcp) — ★ 0 — —
+- [dcc-mcp](https://github.com/dcc-mcp/dcc-mcp-powerpoint) — ★ 0 — Microsoft PowerPoint MCP adapter for AI agents to generate and modify editable decks, compose slides, build render review decks and validate PDF/PNG previews...
+- [jose-rodriguez-mck](https://github.com/jose-rodriguez-mck/mcp-presentation) — ★ 0 — MCP Presentation
+- [taranovoleg](https://github.com/taranovoleg/Data_Out_Calculator_MCP_PowerPoint-VCc02) — ★ 0 — Task-zerocoderVcc02
+- [conda-forge](https://github.com/conda-forge/mcp-powerpoint-feedstock) — ★ 0 — A conda-smithy repository for mcp-powerpoint.
+- [jordanbaucke](https://github.com/jordanbaucke/mcp-powerpoint-server) — ★ 0 — Model Context Protocol server for creating PowerPoint presentations using Azure Container Apps
+- [Yans14](https://github.com/Yans14/powerpoint_mcp) — ★ 0 — PowerPoint MCP server with dual COM/OOXML engines for template-aware slide automation and visual validation.
+- [omaro7](https://github.com/omaro7/Office-PowerPoint-MCP-Server) — ★ 0 — Office-PowerPoint-MCP-Server
+- [amitk-codes](https://github.com/amitk-codes/ai-presentation-generator) — ★ 0 — AI presentation generator  turn a topic into a downloadable PDF & editable PowerPoint. One n8n workflow, reachable from a React web app and an MCP server (Ch...
+- [MisunK](https://github.com/MisunK/powerpoint-mcp-server) — ★ 0 — MCP server allows interaction with PPT slide
+- [rmhman](https://github.com/rmhman/pp_mcp) — ★ 0 — PowerPoint MCP server
+- [cool-man-vk](https://github.com/cool-man-vk/Powerpoint-MCP-Server) — ★ 0 — —
+- [brijeshshetty](https://github.com/brijeshshetty/pptx-mcp) — ★ 0 — Local PowerPoint MCP Server for Claude -- 24 tools, SAP corporate template support
+- [adilmaqsood1](https://github.com/adilmaqsood1/office-powerpoint-mcp-server) — ★ 0 — Data science and AI
+- [kangkang0218](https://github.com/kangkang0218/powerpoint-mcp) — ★ 0 — Native Windows PowerPoint MCP Server for OpenCode, Claude Desktop, Cursor, and AI Agents
+- [sriram-1997](https://github.com/sriram-1997/PPTMCP) — ★ 0 — Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
+- [hwwang06](https://github.com/hwwang06/powerpoint-mcp-server) — ★ 0 — —
+- [hurtener](https://github.com/hurtener/pengui-slides) — ★ 0 — Pengui Slides MCP Server - HTML-first presentation generation with Design Soul constraint system
+- [prixieroxanbooc](https://github.com/prixieroxanbooc/google-slides-mcp-server) — ★ 0 — Multi-tenant Google Slides MCP server for AI clients. Create and manage presentations via MCP. Node.js + Cloud Run.
+- [waiteddegree608-ship-it](https://github.com/waiteddegree608-ship-it/paperfect) — ★ 0 — Local paper workspace: bilingual reading, evidence-grounded notes, editable academic slides, MCP and skills.
+- [7tg](https://github.com/7tg/mcp_presentation) — ★ 0 — —
+- [dboconsultingllc](https://github.com/dboconsultingllc/mcp-presentations) — ★ 0 — —
+- [xxradar](https://github.com/xxradar/mcp-presentation) — ★ 0 — —
+- [nlarif](https://github.com/nlarif/mcp-presentation) — ★ 0 — Opinionated presentation about MCP, agentic AI, and interoperability
+- [dverc](https://github.com/dverc/omni-mcp-presentation) — ★ 0 — —
+- [omasan0430](https://github.com/omasan0430/mcp-presentation2) — ★ 0 — —
+- [matnoon](https://github.com/matnoon/MCP-Presentation) — ★ 0 — Project to help new people to insert into MCP areas
+- [CompSciGuyIT](https://github.com/CompSciGuyIT/PresentationMcpServer) — ★ 0 — LLM teaching-deck generator (TypeScript): Zod IR trust boundary, zero-dollar free-tier routing, misconception-grounded quizzes, converging TTS rehearsal. 97 ...
+- [arturowczarek](https://github.com/arturowczarek/mcp-presentation) — ★ 0 — Repository hosting the files for MCP presentation
+- [dianamohirta](https://github.com/dianamohirta/mcp-presentation) — ★ 0 — —
+- [hewimetall](https://github.com/hewimetall/mcp-presentation) — ★ 0 — mcp tools presentation pdf web
+- [muguliebe](https://github.com/muguliebe/mcp-presentation) — ★ 0 — Real-time Error Monitoring & AI Analysis System with Model Context Protocol
+- [alenaist](https://github.com/alenaist/mcp-presentation) — ★ 0 — —
+- [romainf28](https://github.com/romainf28/mcp-presentation) — ★ 0 — A presentation about MCP
+- [biaggiorizzo](https://github.com/biaggiorizzo/mcp-presentation) — ★ 0 — —
+- [mcp-security-project](https://github.com/mcp-security-project/mcp_presentations) — ★ 0 — Presentations
+- [kevinten-ai](https://github.com/kevinten-ai/mcp-presentation) — ★ 0 — MCP server for AI-assisted presentation generation. Create PowerPoint slides from structured content with templates.
+- [ernesthenry](https://github.com/ernesthenry/mcp_presentation) — ★ 0 — —
+- [omasan0430](https://github.com/omasan0430/mcp-presentation) — ★ 0 — —
+- [Yazhodha](https://github.com/Yazhodha/mcp-presentation) — ★ 0 — A react + vite presentation for MCP
+- [satyampsoni](https://github.com/satyampsoni/mcp-presentation) — ★ 0 — —
+- [suarez9093](https://github.com/suarez9093/model-context-protocol-presentation) — ★ 0 — MCP presentation
+- [anddtran](https://github.com/anddtran/MCP-Presentation) — ★ 0 — —
+- [dmykolen](https://github.com/dmykolen/mcp-presentation) — ★ 0 — MCP presentation (slidev)
+- [DavidSchaferEC](https://github.com/DavidSchaferEC/MCP-Presentation) — ★ 0 — HTML pages for MCP illustration purposes
+- [Blue-0](https://github.com/Blue-0/mcp-powerpoint-mistral) — ★ 0 — —
+- [corey-coders](https://github.com/corey-coders/mcp-powerpoint) — ★ 0 — PowerPoint MCP Server  generate board decks, pitch decks, presentations via natural language. Free.
+- [CannonJunior](https://github.com/CannonJunior/mcp-powerpoint) — ★ 0 — mcp-powerpoint
+- [aryeht](https://github.com/aryeht/MCP) — ★ 0 — MCP presentation
+- [narasimhatejav](https://github.com/narasimhatejav/mcp-powerpoint) — ★ 0 — —
+- [Alain-script](https://github.com/Alain-script/mcp-powerpoint) — ★ 0 — —
+- [zingbretsen](https://github.com/zingbretsen/mcp-presentation) — ★ 0 — —
+- [mnmuniz](https://github.com/mnmuniz/MCP-Presentation) — ★ 0 — Proyecto pblico de presentacin con Playwright MCP para pruebas automatizadas.
+- [KeeTraxx](https://github.com/KeeTraxx/mcp-presentation) — ★ 0 — —
+- [react-grids](https://github.com/react-grids/ai-presentation) — ★ 0 — Slides from VS Live / MS Build AI + MCP
+- [Surya2709](https://github.com/Surya2709/presentation-ai) — ★ 0 — mcps for ai ppt generations
+- [lsmman](https://github.com/lsmman/ai-slide-pipeline) — ★ 0 — Claude Code slide-deck pipelines — outline to validated PDF/PPTX with design-gate reviewers, reusable skill, and slides-grab MCP server
+- [dynknight](https://github.com/dynknight/aibgl-slide-host) — ★ 0 — Public host for slide HTML/assets so Canva's import-design-from-url MCP can fetch them.
+- [dwinter3](https://github.com/dwinter3/slidecraft-mcp) — ★ 0 — SlideCraft MCP App — Create AI slide decks from Claude Desktop
+- [dunsan2000](https://github.com/dunsan2000/ppt-generator-mcp) — ★ 0 — Excel/Word/PDF → 템플릿 디자인 보존 PPTX 자동 생성 Claude Code MCP 플러그인
+- [ralungei](https://github.com/ralungei/ppt-generator-mcp) — ★ 0 — —
+- [cryptonicsurfer](https://github.com/cryptonicsurfer/presentation-generator) — ★ 0 — Next.js presentation generator with Gemini 2.5 Flash and Claude Sonnet 4.5, using MCP tools for database access
+- [makannrojelvwp1et](https://github.com/makannrojelvwp1et/slidespeak-mcp-server) — ★ 0 — PowerPoint presentation generator, API-driven
+- [Himasri2706](https://github.com/Himasri2706/Presentation_llm) — ★ 0 — AI-powered PowerPoint presentation generator using Mistral LLM + MCP Tools + python-pptx
+- [gkdivya](https://github.com/gkdivya/mini-gamma-slides) — ★ 0 — Mini Gamma-like presentation generator with MCP server and AI integration for automated Google Slides creation
+- [frdeange](https://github.com/frdeange/powerpointagent) — ★ 0 — Multi-Agent PowerPoint Presentation Generator using Azure AI Foundry V2, FastMCP servers on ACA, and M365 Agents SDK
+- [crawde](https://github.com/crawde/ai-pitch-deck-mcp) — ★ 0 — MCP server for AI pitch deck generation — create investor-ready decks, generate slides, and get fundraising metrics
+- [SunTianTian2333](https://github.com/SunTianTian2333/mode-a-ppt-officecli) — ★ 0 — LangChain Agent + OfficeCLI MCP for PPT generation (A-PPT demo)
+- [Ryeliu](https://github.com/Ryeliu/worklab-tools) — ★ 0 — MCP Server for personal knowledge management — semantic search, audio transcription, PPT generation
+- [Varshini-rupa](https://github.com/Varshini-rupa/AutoPPT-Agent) — ★ 0 — An autonomous AI agent powered by Gemini 3.1 and MCP Architecture that researches, plans, and generates premium PowerPoint presentations with a modern split-...
+- [Arunika7](https://github.com/Arunika7/The-Auto-PPT-Agent) — ★ 0 — AI agent that turns a single prompt into a fully designed PowerPoint - dual MCP servers handle research & design, powered by Qwen2.5-7B + Streamlit.
+- [2300032166](https://github.com/2300032166/auto-ppt-agent-mcp) — ★ 0 — Auto-PPT Agent using MCP that generates themed PowerPoint presentations from real-time web data.
+- [mallampati-sumanth](https://github.com/mallampati-sumanth/calibo-ppt-agent) — ★ 0 — 🪄 Auto-PPT Agent An Enterprise-Grade, Autonomous Model Context Protocol (MCP) Ecosystem
+- [somasekharchakka](https://github.com/somasekharchakka/ppt_agent) — ★ 0 — An AI-powered Auto-PPT Agent built using MCP architecture that generates PowerPoint presentations from a single prompt using multiple tools like web search, ...
+- [gyasaswini10](https://github.com/gyasaswini10/Building_Python_Ppt-agent) — ★ 0 — Auto-PPT Agent creates PowerPoint presentations from single sentence prompts without mouse interaction. Built with MCP architecture for agentic planning and ...
+- [anicka-net](https://github.com/anicka-net/mcp-server-slide-generator) — ★ 0 — MCP server for generating PowerPoint presentations with auto-generated charts
+- [koldovsky](https://github.com/koldovsky/is-05-slidev-frontend) — ★ 0 — Day 5 workshop slides — AI Frontend Workflow 2026 (Cursor / Claude Code, Figma MCP, Next.js 16, Tailwind v4, shadcn, caveman)
+- [DaiShuaishuai](https://github.com/DaiShuaishuai/pptx-minio-mcp) — ★ 0 — 基于Office-PowerPoint-MCP-Server 扩展对接minio工具，实现PPT生成后自动上传到minio，并返回可下载链接地址
+- [modstart-lib](https://github.com/modstart-lib/focusany-plugin-Bento) — ★ 0 — FocusAny 插件「Bento」：自包含的单文件演示文稿编辑器。新建、打开并就地编辑 .bento.html 演示文稿，支持 morph 转场、图表、演讲者视图与 MCP 工具（AI 生成演示文稿）。
+- [NothingnessVOID](https://github.com/NothingnessVOID/learning-review-workbench) — ★ 0 — 本地中文学习与复盘工作台：SQLite、来源追溯、草稿审核、MCP、备份恢复。仅包含代码与独立演示。
+- [kids0cn](https://github.com/kids0cn/ai-agent-zhihu-skill) — ★ 0 — 知乎开放平台官方 API 的 AI Agent Skill：全部 18 个端点（搜索/热榜/直答/额度/问题/创作/收藏/PDF 解析/PPT 生成），stdlib-only 脚本 + 20 篇 reference + 统一 MCP
+- [nicenemo](https://github.com/nicenemo/vibe_coding_mcp_presentation) — ★ 0 — Vibe coding MCP presentation
+- [haas-labs](https://github.com/haas-labs/core3-mcp-presentation) — ★ 0 — —
+- [domainellipticlanguage](https://github.com/domainellipticlanguage/command-tower-mcp-presentation) — ★ 0 — The making of the command-tower-mcp server
+- [vbkristof](https://github.com/vbkristof/IAI_2026S_MCP_Presentation) — ★ 0 — —
+- [Ryan-PG](https://github.com/Ryan-PG/ai-flow-ai-agents-mcp-presentation) — ★ 0 — A presentation on AI Flows, the MCP (Model-Context-Protocol) and AI agents, shared at Keyhan Qom. Includes slides and a project that is hands on n8n showcasi...
+- [Michael-Zzq](https://github.com/Michael-Zzq/composio-demo) — ★ 0 — Demo repo for Composio MCP presentation
+- [Summerbey](https://github.com/Summerbey/GroupM-MCP-Website) — ★ 0 — Model Context Protocl {MCP} Presentation_Group M.
+- [Ahmed-aleryani](https://github.com/Ahmed-aleryani/pixelforge-slides) — ★ 0 — PixelForge MCP — presentation slides (Vibe Code Atelier #4)
+- [shubinjAA](https://github.com/shubinjAA/github-presentation) — ★ 0 — Testing with Azure ADO MCP & Playwright MCP - Presentation
+- [RingoTC](https://github.com/RingoTC/MCP-pptr) — ★ 0 — A pptr mcp server for better cursor
+- [jorgeOps](https://github.com/jorgeOps/mcp_ppt) — ★ 0 — MCP to create PowerPoints on your local PC by connecting to an LLM
+- [RainyNode](https://github.com/RainyNode/mcptox_ppt) — ★ 0 — MCPTox paper presentation materials and Persona-theme version
+- [lhs6395-hslee](https://github.com/lhs6395-hslee/mcp-pptx) — ★ 0 — —
+- [y1yy8](https://github.com/y1yy8/mcp-ppt) — ★ 0 — ppt
+- [stsang8](https://github.com/stsang8/MCP-PPT) — ★ 0 — A PowerPoint presentation about the Model Context Protocol (MCP)
+- [Loki-33](https://github.com/Loki-33/mcp-pptx) — ★ 0 — —
+- [811568209](https://github.com/811568209/yunfan-mcp-ppt) — ★ 0 — 云帆低代码设计器 MCP Server 技术架构与深度实践 PPT (19页, 浅蓝科技风)
+- [sujitojha1](https://github.com/sujitojha1/mcp-ppt-controller) — ★ 0 — A desktop application implementing Model Control Protocol (MCP) to remotely control PowerPoint presentations. Seamlessly manage slides, navigation, and prese...
+- [lhs6395-hslee](https://github.com/lhs6395-hslee/claude-mcp-pptx) — ★ 0 — —
+- [z9905080](https://github.com/z9905080/mcp-pptx-generator) — ★ 0 — —
+- [tianzai111](https://github.com/tianzai111/pg-mcp-ppt) — ★ 0 — pg-mcp product intro: 23-slide PPTX + copy outline + rebuildable project
+- [hirokisakabe](https://github.com/hirokisakabe/mcp-pptx-preview) — ★ 0 — PPTXファイルをSVGプレビューできるMCPサーバ
+- [fromk0326-boop](https://github.com/fromk0326-boop/hk-freee-mcp-p8v2k3) — ★ 0 — freee MCP slides
+- [denysmilimonko](https://github.com/denysmilimonko/mcp_slides) — ★ 0 — —
+- [D3f0](https://github.com/D3f0/mcp-slides) — ★ 0 — —
+- [night2tl](https://github.com/night2tl/mcp-slides) — ★ 0 — —
+- [corentinleberre](https://github.com/corentinleberre/mcp-slides) — ★ 0 — —
+- [hongoctrung1120](https://github.com/hongoctrung1120/autocad-mcp-slides) — ★ 0 — —
+- [hanx-hep](https://github.com/hanx-hep/ihep-mcp-slides) — ★ 0 — IHEP MCP 系统介绍
+- [benoitvx](https://github.com/benoitvx/atelier-mcp-slides) — ★ 0 — Slides de présentation pour un atelier de 45 minutes sur les MCP (Model Context Protocol)
+- [shanewwarren](https://github.com/shanewwarren/mcp-google-slides) — ★ 0 — MCP server that enables LLMs to create and manage Google Slides presentations with zero-config browser OAuth authentication.
+- [nexusai-kr](https://github.com/nexusai-kr/pylon-mcp-google-slides) — ★ 0 — Google Slides MCP server for Pylon Grid — calls the Google Slides REST API with the caller's own Google token (Apache-2.0)
+- [theodorebeaupre-prog](https://github.com/theodorebeaupre-prog/mcp-deck) — ★ 0 — Native macOS menu bar dashboard for MCP servers — health checks, per-client enable/disable, live logs
+- [pipeworx-io](https://github.com/pipeworx-io/mcp-deckofcards) — ★ 0 — MCP server for drawing and shuffling playing cards via Deck of Cards API
+- [cola-sk](https://github.com/cola-sk/mcp-deck) — ★ 0 — —
+- [Klien-m](https://github.com/Klien-m/mcp-deck) — ★ 0 — 基于 Tauri、React 和 Rust 的本地 MCP 配置管理器，统一管理主流 AI Agent 的 MCP 配置。
+- [phillzee](https://github.com/phillzee/mcp_deck) — ★ 0 — —
+- [yiweny](https://github.com/yiweny/mcp-deck) — ★ 0 — —
+- [DCode-v05](https://github.com/DCode-v05/MCP-Deck) — ★ 0 — A persistent, autonomous agent that works across your real SaaS accounts (GitHub, Notion, Linear, Slack) and authors live, self-updating UI as it goes.
+- [shain1912](https://github.com/shain1912/wineschool-mcp-deck) — ★ 0 — —
+- [jhchein](https://github.com/jhchein/mcp-deck-server) — ★ 0 — —
+- [ivankristianto](https://github.com/ivankristianto/belajar-mcp-deck) — ★ 0 — Slidev deck for Kelas Tanya DomaiNesia: Otomasi AI Agent. Source on main, built output on the deploy branch.
+- [crawde](https://github.com/crawde/mcp-deckforge-financial) — ★ 0 — —
+- [theodorebeaupre-prog](https://github.com/theodorebeaupre-prog/homebrew-tap) — ★ 0 — Homebrew tap for MCP Deck and other projects
+- [yansfil](https://github.com/yansfil/presentation-king) — ★ 0 — Agents draft, you finish — a local slide editor for decks your coding agent writes over MCP. deck.json scene graph, blast-radius-guarded agent edits, dual un...
+- [hzy5000](https://github.com/hzy5000/PPT_MCP_Server) — ★ 0 — —
+- [ildunari](https://github.com/ildunari/PPT-MCP) — ★ 0 — —
+- [NishthaSharma-22](https://github.com/NishthaSharma-22/ppt-mcp) — ★ 0 — an mcp to save me hours by turning student ptm data into polished ppts
+- [3588044667HZ](https://github.com/3588044667HZ/PptMcpServer) — ★ 0 — 一个以插件形式实现的ppt mcp 服务器
+- [moisesbritez92](https://github.com/moisesbritez92/ppt-mcp) — ★ 0 — MCP para power point
+- [iPycc](https://github.com/iPycc/pptx2xmind-mcp) — ★ 0 — 基于Python编写 将PPT转换为Xmind思维导图
+- [iPycc](https://github.com/iPycc/ppt2xmind-mcp) — ★ 0 — 将PPT大纲内容转换成Xmind思维导图格式
+- [tomrobin33](https://github.com/tomrobin33/ppt-mcp) — ★ 0 — —
+- [fubsi](https://github.com/fubsi/ppt-mcp) — ★ 0 — Model Context Protocol server for creating, editing, and managing PowerPoint presentations with Python, using a provided template as the basis for new files.
+- [Bestjuke](https://github.com/Bestjuke/ppt-mcp) — ★ 0 — —
+- [xintian-lab](https://github.com/xintian-lab/ppt-mcp) — ★ 0 — Cross-platform MCP server for Microsoft PowerPoint automation (Windows COM + macOS)
+- [nicksinx](https://github.com/nicksinx/ppt-mcp) — ★ 0 — —
+- [ZiChuanLan](https://github.com/ZiChuanLan/ppt-mcp) — ★ 0 — —
+- [gavanduffy](https://github.com/gavanduffy/pptxgenjs-mcp) — ★ 0 — —
+- [nahisaho](https://github.com/nahisaho/pptxgejs-mcp) — ★ 0 — —
+- [Data-Advantage](https://github.com/Data-Advantage/pptx-mcp) — ★ 0 — Stdio MCP server for pptx.dev — proxies to mcp.pptx.dev
+- [suprim-corp](https://github.com/suprim-corp/pptx-mcp) — ★ 0 — —
+- [matthewmiglio](https://github.com/matthewmiglio/pptx-mcp) — ★ 0 — MCP server for creating and editing PowerPoint presentations programmatically via Claude and other LLMs.
+- [bmateusz](https://github.com/bmateusz/pptx-mcp) — ★ 0 — Weekend project to try out generating PPTX presentations with an MCP server
+- [guanweiqiang](https://github.com/guanweiqiang/pptx-mcp) — ★ 0 — —
+- [isoittech](https://github.com/isoittech/pptx-mcp) — ★ 0 — —
+- [phoenixwu0229](https://github.com/phoenixwu0229/pptxx-mcp) — ★ 0 — —
+- [iatsiuk](https://github.com/iatsiuk/pptr-mcp) — ★ 0 — —
+- [diego-laguna](https://github.com/diego-laguna/pptr-mcp) — ★ 0 — —
+- [riverliu8](https://github.com/riverliu8/pptogo-mcp) — ★ 0 — PPToGo MCP server — AI-agent commerce: browse campaigns/products, mint tracking links, publish posts, earn commission. Hosted at https://pptogo.com/api/mcp
+- [tech-ritme](https://github.com/tech-ritme/Ppt_MCP) — ★ 0 — —
+- [gtonic](https://github.com/gtonic/pptx-mcp) — ★ 0 — MCP server to create and edit powerpoint presentations via pptx
+- [flevy-com](https://github.com/flevy-com/pptdepot-mcp) — ★ 0 — Remote MCP server for PPT Depot: professional PowerPoint templates and slides for AI assistants.
+- [engchina](https://github.com/engchina/No.1-pptx2pdf-mcp) — ★ 0 — —
+- [clauxel](https://github.com/clauxel/ppt-master-deck-mcp-mcp) — ★ 0 — PPT Master Deck MCP public documentation modeled after the MiroFish docs pattern.
+- [PavanRam](https://github.com/PavanRam/mcp-automation-1) — ★ 0 — mcp automation ppt and gmail
+- [onah](https://github.com/onah/ppt_mcp_server) — ★ 0 — —
 
-_(139 repos in this category)_
+_Showing top 500 of 831 repos in this category — the full list with all 831 entries is in [`data/repos.json`](data/repos.json)._
 
 ## Agent Skills, Plugins & Editor Extensions
 
 Claude Code / Codex skills, VS Code / Obsidian extensions and plugins that drive slide & deck generation.
 
-- [op7418/guizang-ppt-skill](https://github.com/op7418/guizang-ppt-skill) — ★ 27,973 — AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentati...
-- [zarazhangrui/beautiful-html-templates](https://github.com/zarazhangrui/beautiful-html-templates) — ★ 4,781 — A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.
-- [GordenSun/GordenPPTSkill](https://github.com/GordenSun/GordenPPTSkill) — ★ 3,630 — AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-destructive text-only editing tools (python-pptx based). Pick a template, write ...
-- [ryanbbrown/revealjs-skill](https://github.com/ryanbbrown/revealjs-skill) — ★ 415 — Coding agent skill for making reveal.js presentations
-- [minorun365/minorun-marp-skill](https://github.com/minorun365/minorun-marp-skill) — ★ 406 — Marp?????????????????????????????????????????????
-- [robonuggets/marp-slides](https://github.com/robonuggets/marp-slides) — ★ 324 — MARP presentation skill for Claude Code  22 curated example decks, SVG charts, dark/light themes, dashboard components
-- [likaku/Mck-ppt-design-skill](https://github.com/likaku/Mck-ppt-design-skill) — ★ 303 — Consulting firm-style PowerPoint design system for AI agents. 70 layout patterns, flat design, python-pptx. ????PPT?????
-- [ferdinandobons/brand-docs](https://github.com/ferdinandobons/brand-docs) — ★ 276 — BrandDocs is a set of agent skills that learn your existing Word, PowerPoint and Excel templates and generate new on-brand documents from them. Unlike generi...
-- [zouchenzhen/thesis-defense-pptx-skill](https://github.com/zouchenzhen/thesis-defense-pptx-skill) — ★ 269 — Codex / Claude Skill for editable thesis-defense PPTX from PDF or LaTeX while preserving a PowerPoint template. ??? PDF / LaTeX ??????? PPTX,????? PPT ?????
-- [ToseaAI/awesome-html-slide-skills](https://github.com/ToseaAI/awesome-html-slide-skills) — ★ 169 — A curated list of HTML slide generation skills and template libraries for Claude Code, Codex, Cursor, OpenClaw, and Hermes. ?? HTML ???? Skill ?????
-- [code-on-sunday/slide-deck-generator](https://github.com/code-on-sunday/slide-deck-generator) — ★ 152 — AI skill for coding agents that creates production-ready, browser-based presentation slide decks using React + Vite + Framer Motion
-- [Kuneosu/make-slide](https://github.com/Kuneosu/make-slide) — ★ 132 — Universal AI skill for generating standalone HTML slide decks
-- [Hasasasa/html-to-editable-pptx](https://github.com/Hasasasa/html-to-editable-pptx) — ★ 87 — Convert HTML slide decks to truly editable PPT / .pptx - text stays native PowerPoint textboxes, not screenshots. Agent Skill (Claude Code / Cursor / Codex /...
-- [edu-ai-builders/visual-cognition-slides](https://github.com/edu-ai-builders/visual-cognition-slides) — ★ 86 — An HTML slide design skill grounded in cognitive science and instructional design. Outputs presentation decks optimized for knowledge retention. ????????????...
-- [siril9/presentation-skill](https://github.com/siril9/presentation-skill) — ★ 76 — MIT-licensed agent skill and Codex plugin for content-led, editable PowerPoint decks. Rebuild from JSON; native charts, tables, and rendered visual QA.
-- [UniUni2000/slideblocks-skill](https://github.com/UniUni2000/slideblocks-skill) — ★ 76 — SlideBlocks agent skill for creating and improving Slidev presentations
-- [arifszn/slide-wright](https://github.com/arifszn/slide-wright) — ★ 51 — AI agent skill to generate beautiful, unique slide decks with reveal.js - new design for every prompt.
-- [Phlegonlabs/Powerpoint-fancy-design](https://github.com/Phlegonlabs/Powerpoint-fancy-design) — ★ 34 — A presentation-design skill for Codex and Claude Code that turns page-structured Markdown into styled 1600x900 HTML slides, PNG renders, and exportable PPTX ...
-- [Emily27-alt/html-to-pptx](https://github.com/Emily27-alt/html-to-pptx) — ★ 20 — Claude Code skill: convert HTML slide decks to editable .pptx (native shapes, not screenshots)
-- [milesprovus/Monocle-Teleprompter](https://github.com/milesprovus/Monocle-Teleprompter) — ★ 19 — A teleprompter app for the Monocle by Brilliant Labs using the Google Slides API
-- [prodigeproject/pradaslides](https://github.com/prodigeproject/pradaslides) — ★ 16 — Capability-aware, audience-ready presentation agent skill for PPTX, HTML slides, PDF, and deck planning.
-- [shawnzam/keynot](https://github.com/shawnzam/keynot) — ★ 15 — A Claude Code skill that turns any prompt into a polished, self-contained HTML slide deck  no Keynote or PowerPoint required.
-- [caikankan/cyberbin-ppt-skill](https://github.com/caikankan/cyberbin-ppt-skill) — ★ 14 — CyberBin PPT Skill for generating local HTML slide decks
-- [artifact-kit/html-to-pptx-skill](https://github.com/artifact-kit/html-to-pptx-skill) — ★ 12 — Teach an agent to turn HTML pages into downloadable, editable PowerPoint decks with @artifact-kit/pptxgenjs-jsx
-- [scraperai/awesome-presentations](https://github.com/scraperai/awesome-presentations) — ★ 12 — A curated showcase of AI-generated slide decks  every deck built end-to-end from a single text prompt.
-- [ABYR1206/claude-skill-hand-drawn-slides](https://github.com/ABYR1206/claude-skill-hand-drawn-slides) — ★ 11 — Claude Skill: generate hand-drawn doodle-style PowerPoint chapter divider slides  muted backgrounds, serif titles, 40-illustration SVG library
-- [ontology-of-everything/concept-skills](https://github.com/ontology-of-everything/concept-skills) — ★ 11 — Ontology, semantic-layer, concept-design, and presentation Agent Skills.
-- [NestMold/notrat-ppt-studio-skill](https://github.com/NestMold/notrat-ppt-studio-skill) — ★ 10 — ?? Notrat ?????????? PowerPoint ??????? ??? / ?????? / ??????  ,????????? / ?? / ?? / ????,??GPT-Image-2?????
-- [algerchen2024/image-to-editable-pptx](https://github.com/algerchen2024/image-to-editable-pptx) — ★ 10 — ChatGPT Skill + portable PageIR/PptxGenJS workflow for rebuilding flattened slide images into source-faithful editable PowerPoint files.
-- [vedraut/slidesage](https://github.com/vedraut/slidesage) — ★ 9 — Agent-agnostic skill that generates beautiful, static .pptx decks driven by storytelling + instructional design. Works with any LLM.
-- [alphaparkinc/genpark-venture-pitch-deck-narrative-synthesizer-skill](https://github.com/alphaparkinc/genpark-venture-pitch-deck-narrative-synthesizer-skill) — ★ 8 — Venture pitch deck narrative synthesizer & TAM market modeler (AI Pitch Deck)
-- [bruc3van/bruce-pptx-generator](https://github.com/bruc3van/bruce-pptx-generator) — ★ 8 — ???? AI ?? Agent ??? PPT ?? Skill,? openclaw ????????,???????????? PowerPoint ?????
-- [cosen1024/awesome-presentation-skills](https://github.com/cosen1024/awesome-presentation-skills) — ★ 7 — A curated catalog of verified Presentation Agent Skills for editable PPTX, HTML slides, and image-first decks.
-- [anyideaz/pptx-skills](https://github.com/anyideaz/pptx-skills) — ★ 6 — AI Skills that create PowerPoint from your templates. Preserves brand design, fonts, colors, layouts. For Claude Code & Copilot.
-- [thanhlamauto/weekly-research-slides](https://github.com/thanhlamauto/weekly-research-slides) — ★ 6 — Agent skill for turning weekly research into editable PowerPoint, Manim method-explainer videos with narration/subtitles, and publication-quality draw.io fig...
-- [Liuguanyi2125/editable-pptx-skill](https://github.com/Liuguanyi2125/editable-pptx-skill) — ★ 5 — ??????? PowerPoint ? Codex/Claude skill ? Node.js ???
-- [bibhupradhanofficial/AI-Pitch-Deck-Generator](https://github.com/bibhupradhanofficial/AI-Pitch-Deck-Generator) — ★ 3 — A multimodal AI agent that generates complete startup pitch decks including slides, charts, product mockup images, voiceover scripts, promo video clips, and ...
-- [kbon526/claude-skill-pptx-cjk](https://github.com/kbon526/claude-skill-pptx-cjk) — ★ 2 — ?? PPT ???? Skill  Claude Code/Agent ?,?? python-pptx + ???????CJK Chinese PowerPoint skill for Claude Code.
-- [Woo3aN/obsidian-note-ingest](https://github.com/Woo3aN/obsidian-note-ingest) — ★ 1 — ??? / ??? / ????? Obsidian ??? AI Agent skill:PPTX?PDF?DOCX??????? ? ???????????????????,????? Agent ???
-- [omshdev/AI-Pitch-Deck](https://github.com/omshdev/AI-Pitch-Deck) — ★ 1 — Generate complete presentation decks directly from your knowledge base.  Upload PDFs, documents, notes, or other resources, then ask a question or provide a ...
-- [liu-ganghao/claude-skill-pptx-cn](https://github.com/liu-ganghao/claude-skill-pptx-cn) — ★ 1 — Claude Code skill  generate Chinese-first .pptx via pptxgenjs (pure Node). Navy academic palette, best-value-highlighted result tables, chart scaffolds, and ...
-- [yvonne96073/ai-agent-skill-slides-20260626](https://github.com/yvonne96073/ai-agent-skill-slides-20260626) — ★ 0 — —
-- [yogan/agent-skills-slides](https://github.com/yogan/agent-skills-slides) — ★ 0 — Slides for a talk about https://github.com/yogan/agent-skills
-- [eduardo-hoefel-rcx/claude-skill-pptx](https://github.com/eduardo-hoefel-rcx/claude-skill-pptx) — ★ 0 — —
-- [kawaji/claude-skill-pptx-preview](https://github.com/kawaji/claude-skill-pptx-preview) — ★ 0 — Claude Code skill: PowerPoint for Mac ? PPTX ??????? PNG ???????????
-- [lichuanhua0701AI/mkdir--p-.claude-skills-pptx](https://github.com/lichuanhua0701AI/mkdir--p-.claude-skills-pptx) — ★ 0 — ppt skill
-- [yuebinzhang77-hub/yb-slide-skill](https://github.com/yuebinzhang77-hub/yb-slide-skill) — ★ 0 — Nothing-style HTML slide generator  Claude Code skill. 13 slide layouts, PicNic + PPEditorialNew typography, dark/light mode.
-- [KUMAKIRI1228/claude-skill-pptx](https://github.com/KUMAKIRI1228/claude-skill-pptx) — ★ 0 — Professional PPTX creation and editing skill for Claude Code with TERRAISE design standards
-- [MasoudKaviani/revealjsskill](https://github.com/MasoudKaviani/revealjsskill) — ★ 0 — reveal.js HTML slide generator skill for AI Agents
-- [ahmedessamaliali/eha-presentation](https://github.com/ahmedessamaliali/eha-presentation) — ★ 0 — EHA Presentation skill for Claude Code  Arabic-first, RTL-aware HTML slide generator with Egypt Healthcare Authority brand identity
-- [eruto-skills/presentation](https://github.com/eruto-skills/presentation) — ★ 0 — Claude Code skill  Presentation structure design, routes to marp skill
-- [IhorShmidt/Claude-Skill-Presentation](https://github.com/IhorShmidt/Claude-Skill-Presentation) — ★ 0 — —
-- [AuYoungCampeur/claude-skills-presentation](https://github.com/AuYoungCampeur/claude-skills-presentation) — ★ 0 — Marp presentation: From Prompt Engineering to AI Agent - Agent Skills Guide
-- [edengal/claude-code-skills-presentation](https://github.com/edengal/claude-code-skills-presentation) — ★ 0 — Claude Code Skills - Salesforce-styled web presentation
-- [denisagasarov-sketch/preza-5-stiley](https://github.com/denisagasarov-sketch/preza-5-stiley) — ★ 0 — Claude skill: presentation 5 styles
-- [shaharsha/claude-skill-presentation-generator](https://github.com/shaharsha/claude-skill-presentation-generator) — ★ 0 — Moved to shaharsha/claude-skills - this repo is archived. See https://github.com/shaharsha/claude-skills
-- [Athena4441/llm-wiki-demo](https://github.com/Athena4441/llm-wiki-demo) — ★ 0 — Public LLM Wiki knowledge-base presentation
-- [torreytsui/knowledge-base-presentation](https://github.com/torreytsui/knowledge-base-presentation) — ★ 0 — Offer presentation slides for promoting ideas behind knowledge base
-- [Huride/claude-skills-presentation](https://github.com/Huride/claude-skills-presentation) — ★ 0 — —
+- [JuliusBrussee](https://github.com/JuliusBrussee/caveman) — ★ 111,952 — 🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.
+- [kepano](https://github.com/kepano/obsidian-skills) — ★ 49,560 — Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.
+- [zarazhangrui](https://github.com/zarazhangrui/frontend-slides) — ★ 30,675 — Create beautiful slides on the web using a coding agent's frontend skills
+- [op7418](https://github.com/op7418/guizang-ppt-skill) — ★ 27,980 — AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentati...
+- [obsidianmd](https://github.com/obsidianmd/obsidian-releases) — ★ 22,249 — Community plugins list, theme list, and releases of Obsidian.
+- [YishenTu](https://github.com/YishenTu/claudian) — ★ 15,671 — An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault
+- [AgriciDaniel](https://github.com/AgriciDaniel/claude-obsidian) — ★ 15,542 — Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain...
+- [NanmiCoder](https://github.com/NanmiCoder/cc-haha) — ★ 15,015 — 本地优先的跨平台 Claude Code / AI Agent 桌面工作台：多 Agent 协作、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、桌面宠物；支持微信、飞书、钉钉及 H5 等远程访问。 | Local-first Claude Code / AI Agent d...
+- [Vinzent03](https://github.com/Vinzent03/obsidian-git) — ★ 12,119 — Integrate Git version control with automatic commit-and-sync and other advanced features in Obsidian.md
+- [genspark-ai](https://github.com/genspark-ai/genoffice) — ★ 9,704 — Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so C...
+- [chuspeeism](https://github.com/chuspeeism/dashi-ppt-skill) — ★ 9,536 — An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.
+- [kmaasrud](https://github.com/kmaasrud/awesome-obsidian) — ★ 9,451 — 🕶️ Awesome stuff for Obsidian
+- [lewislulu](https://github.com/lewislulu/html-ppt-skill) — ★ 8,696 — HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations
+- [logancyang](https://github.com/logancyang/obsidian-copilot) — ★ 7,830 — Run agents in Obsidian - OpenCode, Codex, Claude Code etc.
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DocumentServer) — ★ 7,020 — ONLYOFFICE Docs is a free collaborative online office suite comprising viewers and editors for texts, spreadsheets and presentations, forms and PDF, fully co...
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DesktopEditors) — ★ 5,558 — Open-source office suite pack that comprises all the tools you need to work with documents, spreadsheets, presentations, PDFs, and PDF forms on Windows, Linu...
+- [brianpetro](https://github.com/brianpetro/obsidian-smart-connections) — ★ 5,502 — Find related notes and excerpts while writing. Your link building copilot displays relevant content in graph + list view. A local embedding model powers sema...
+- [kepano](https://github.com/kepano/obsidian-minimal) — ★ 5,428 — A distraction-free and highly customizable theme for Obsidian.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-clipper) — ★ 5,343 — Highlight and capture the web in your favorite browser. The official Web Clipper extension for Obsidian.
+- [breferrari](https://github.com/breferrari/obsidian-mind) — ★ 5,325 — A self-organizing Obsidian vault that gives AI coding agents persistent memory.
+- [BingyanStudio](https://github.com/BingyanStudio/LapisCV) — ★ 5,099 — 📄 Easily create your resume with Markdown on VSCode / Typora / Obsidian
+- [zarazhangrui](https://github.com/zarazhangrui/beautiful-html-templates) — ★ 4,782 — A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.
+- [eugeniughelbur](https://github.com/eugeniughelbur/obsidian-second-brain) — ★ 4,767 — Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and pe...
+- [kepano](https://github.com/kepano/kepano-obsidian) — ★ 4,631 — My personal Obsidian vault template. A bottom-up approach to note-taking and organizing things I am interested in.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-sample-plugin) — ★ 4,562 — Template for Obsidian community plugins with build configuration and development best practices.
+- [community-archive](https://github.com/community-archive/obsidian-kanban) — ★ 4,529 — Create markdown-backed Kanban boards in Obsidian.
+- [JimLiu](https://github.com/JimLiu/baoyu-design) — ★ 4,384 — Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML,...
+- [nicejade](https://github.com/nicejade/markdown-online-editor) — ★ 3,982 — 📝 基于 Vue2、Vditor，所构建的在线 Markdown 编辑器，支持绘制流程图、甘特图、时序图、任务列表、echarts 图表、五线谱，以及 PPT 预览、视频音频解析、HTML 自动转换为 Markdown 等功能。https://www.niceshare.site
+- [damianavila](https://github.com/damianavila/RISE) — ★ 3,735 — RISE: "Live" Reveal.js Jupyter/IPython Slideshow Extension
+- [GordenSun](https://github.com/GordenSun/GordenPPTSkill) — ★ 3,630 — AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-destructive text-only editing tools (python-pptx based). Pick a template, write ...
+- [Ar9av](https://github.com/Ar9av/obsidian-wiki) — ★ 3,572 — Framework for AI agents to build and maintain a digital brain through Obsidian wiki | Memory System for Agents
+- [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin) — ★ 3,420 — Personal theme for Obsidian
+- [haierkeys](https://github.com/haierkeys/obsidian-fast-note-sync) — ★ 3,079 — Can be privately deployed, focusing on providing Obsidian users with a seamless, distraction-free note synchronization plugin with real-time sync across mult...
+- [ningzimu](https://github.com/ningzimu/image-to-editable-ppt-skill) — ★ 2,932 — Codex skill for converting slide images, PDFs, and image-based PPTX files into editable PowerPoint decks.
+- [LearnPrompt](https://github.com/LearnPrompt/LearnPrompt) — ★ 2,697 — 永久免费开源的 AIGC 课程, 目前已支持Claude Code，Codex，Hermes，OpenClaw，Obsidian，Prompt Engineering, ChatGPT, Midjourney, Runway, Stable Diffusion, AI数字人，AI声音&音乐，开源大模型
+- [artisticat1](https://github.com/artisticat1/obsidian-latex-suite) — ★ 2,534 — Make typesetting LaTeX as fast as handwriting through snippets, text expansion, and editor enhancements
+- [Akifyss](https://github.com/Akifyss/obsidian-border) — ★ 2,517 — A theme for obsidian.md
+- [RyotaUshio](https://github.com/RyotaUshio/obsidian-pdf-plus) — ★ 2,494 — PDF++: the most Obsidian-native PDF annotation & viewing tool ever. Comes with optional Vim keybindings.
+- [oldwinter](https://github.com/oldwinter/knowledge-garden) — ★ 2,460 — 我的第二大脑 second brain，我的数字花园 digital garden，用obsidian双链笔记软件写作而成
+- [llmsresearch](https://github.com/llmsresearch/paperbanana) — ★ 2,401 — Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new dom...
+- [chhoumann](https://github.com/chhoumann/quickadd) — ★ 2,378 — QuickAdd for Obsidian
+- [zhaohongxuan](https://github.com/zhaohongxuan/obsidian-weread-plugin) — ★ 2,276 — Obsidian Weread Plugin is a plugin to sync Weread(微信读书) hightlights and annotations into your Obsidian Vault.
+- [obsidian-nvim](https://github.com/obsidian-nvim/obsidian.nvim) — ★ 2,204 — Obsidian 🤝 Neovim (actively maintained version)
+- [scambier](https://github.com/scambier/obsidian-omnisearch) — ★ 2,163 — A search engine that "just works" for Obsidian.
+- [marp-team](https://github.com/marp-team/marp-vscode) — ★ 2,099 — Marp for VS Code: Create slide deck written in Marp Markdown on VS Code
+- [secure-77](https://github.com/secure-77/Perlite) — ★ 1,995 — A web-based markdown viewer optimized for Obsidian
+- [nhaouari](https://github.com/nhaouari/obsidian-textgenerator-plugin) — ★ 1,990 — Text Generator is a versatile plugin for Obsidian that allows you to generate text content using various AI providers, including OpenAI, Anthropic, Google an...
+- [ranuts](https://github.com/ranuts/document) — ★ 1,986 — Local-first browser editor for Word, Excel, PowerPoint and PDF, with an experimental AI assistant. No Office installation or account required.
+- [pyrochlore](https://github.com/pyrochlore/obsidian-tracker) — ★ 1,957 — A plugin tracks occurrences and numbers in your notes
+- [groepl](https://github.com/groepl/Obsidian-Templates) — ★ 1,956 — A repository containing templates and scripts for #Obsidian to support the #Zettelkasten method for note-taking.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-help) — ★ 1,934 — Help documentation for Obsidian.
+- [tantaman](https://github.com/tantaman/strut) — ★ 1,892 — Strut - An Impress.js and Bespoke.js Presentation Editor
+- [ballred](https://github.com/ballred/obsidian-claude-pkm) — ★ 1,879 — A complete starter kit for an Obsidian + Claude Code personal knowledge management system.
+- [llZektorll](https://github.com/llZektorll/OB_Template) — ★ 1,781 — OB_Templates is a Obsidian reference for note templates focused on new users of the application using only core plugins.
+- [elias-sundqvist](https://github.com/elias-sundqvist/obsidian-annotator) — ★ 1,774 — A plugin for reading and annotating PDFs and EPUBs in obsidian.
+- [sozi-projects](https://github.com/sozi-projects/Sozi) — ★ 1,715 — A "zooming" presentation editor
+- [obsidianmd](https://github.com/obsidianmd/obsidian-importer) — ★ 1,700 — Convert your data to Markdown files you can use in Obsidian. Works with Apple Notes, OneNote, Evernote, Notion, Google Keep, and many other formats.
+- [deckgo](https://github.com/deckgo/deckdeckgo) — ★ 1,674 — The web open source editor for presentations
+- [Yakitrak](https://github.com/Yakitrak/notesmd-cli) — ★ 1,595 — Obsidian CLI (Community) -  Interact with Obsidian in the terminal!
+- [Vincentwei1021](https://github.com/Vincentwei1021/video-talkcraft) — ★ 1,585 — Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe c...
+- [svnaxis](https://github.com/svnaxis/obsidian-baseline) — ★ 1,559 — A foundational Obsidian theme; the baseline of your thoughts.
+- [Developer-Mike](https://github.com/Developer-Mike/obsidian-advanced-canvas) — ★ 1,556 — ⚡ Supercharge your canvas experience! Graph view integration and unlimited styling options empower flowcharts, dynamic presentations, and interconnected know...
+- [twibiral](https://github.com/twibiral/obsidian-execute-code) — ★ 1,535 — Obsidian Plugin to execute code in a note.
+- [kepano](https://github.com/kepano/clipper-templates) — ★ 1,481 — Obsidian Web Clipper templates for various sites.
+- [freestylefly](https://github.com/freestylefly/WeChatBridge) — ★ 1,459 — 微信聊天记录一键转发到 AI Agent 与 Obsidian 的原生 macOS 工具
+- [FlorianWoelki](https://github.com/FlorianWoelki/obsidian-iconize) — ★ 1,410 — Simply add icons to anything you want in Obsidian.
+- [RafaelGB](https://github.com/RafaelGB/obsidian-db-folder) — ★ 1,399 — Obsidian Plugin to Allow Notion like database based on folders
+- [erikjuhani](https://github.com/erikjuhani/basalt) — ★ 1,377 — TUI Application to manage Obsidian notes directly from the terminal
+- [vslinko](https://github.com/vslinko/obsidian-outliner) — ★ 1,376 — Work with your lists like in Workflowy or RoamResearch
+- [KosmosisDire](https://github.com/KosmosisDire/obsidian-webpage-export) — ★ 1,366 — Export html from single files, canvas pages, or whole vaults. Direct access to the exported HTML files allows you to publish your digital garden anywhere. Fo...
+- [bevibing](https://github.com/bevibing/tutor-skills) — ★ 1,351 — A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults
+- [zoni](https://github.com/zoni/obsidian-export) — ★ 1,337 — Rust library and CLI to export an Obsidian vault to regular Markdown
+- [s2b-dev](https://github.com/s2b-dev/smart-second-brain) — ★ 1,317 — A free, open-source Obsidian plugin that makes your vault smarter: better search, an interactive knowledge graph, and an AI assistant that knows your notes.
+- [hadynz](https://github.com/hadynz/obsidian-kindle-plugin) — ★ 1,285 — Sync your Kindle notes and highlights directly into your Obsidian vault
+- [svnaxis](https://github.com/svnaxis/obsidian-cupertino) — ★ 1,276 — A native look and feel Obsidian theme crafted for the way you think.
+- [MSzturc](https://github.com/MSzturc/obsidian-advanced-slides) — ★ 1,264 — Create markdown-based reveal.js presentations in Obsidian
+- [jsmorabito](https://github.com/jsmorabito/obsidian-commander) — ★ 1,234 — Commander - Obsidian Plugin | Add Commands to every part of Obsidian's user interface
+- [NyxTides](https://github.com/NyxTides/ppt-image-first) — ★ 1,227 — PPT image-first skill for Codex/Claude Code/Opencode CLI
+- [NomaDamas](https://github.com/NomaDamas/slides-grab) — ★ 1,215 — Best harness + editor + linter for generating slides in Claude Code / Codex - Claude Design Open Source Alternative
+- [917Dhj](https://github.com/917Dhj/DeepPaperNote) — ★ 1,203 — DeepPaperNote is an agent skill for deep-reading a single paper and generating high-quality Obsidian-style research notes. Works with Claude Code, Codex, Cur...
+- [jamiebrynes7](https://github.com/jamiebrynes7/obsidian-todoist-plugin) — ★ 1,194 — Materialize Todoist tasks in Obsidian notes
+- [Gabberflast](https://github.com/Gabberflast/academic-pptx-skill) — ★ 1,185 — A Claude Skill for creating academic presentations (conference talks, seminar slides, thesis defenses, grant briefings). Enforces action titles, structured a...
+- [carnot-tech](https://github.com/carnot-tech/jinba-consulting-pptx-skill) — ★ 1,175 — AIにまじなPPTXを作らせる Claude Code / Codex スキル
+- [Gonzalo-D-Sales](https://github.com/Gonzalo-D-Sales/obsidian-velocity) — ★ 1,161 — A radically modern theme for Obsidian.
+- [quanru](https://github.com/quanru/obsidian-example-lifeos) — ★ 1,152 — LifeOS example vault for Obsidian(Combining P.A.R.A with Periodic Notes)
+- [tuan3w](https://github.com/tuan3w/obsidian-template) — ★ 1,128 — Starter templates for Obsidian
+- [tllovesxs](https://github.com/tllovesxs/wandao) — ★ 1,106 — 万能导:多平台知识库 Markdown 全项目一键导入导出工具(导入导出效果最好),用自动化代替手动复制粘贴(有道云,飞书,语雀,阿里云知识库,知识星球,印象笔记,ima,onenote,为知笔记,csdn,知乎,微信公众号导出导入).(可保留目录结构,图片,项目格式) 关键词:微信公众号导出,语雀导出导入,飞书...
+- [Achuan-2](https://github.com/Achuan-2/pandoc_docx_template) — ★ 1,092 — 设置Markdown导出为docx时的样式，可控制导出docx的段落文字、标题编号等样式，适用于obsidian、typora、思源笔记等Markdown笔记软件，支持Codex、Claude Code等调用skill丨Template for exporting Markdown to docx (Word) ...
+- [asheshgoplani](https://github.com/asheshgoplani/agent-deck) — ★ 1,084 — Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more.
+- [connertennery](https://github.com/connertennery/Notion-to-Obsidian-Converter) — ★ 1,084 — Converts exported Notion notes to work with Obsidian.
+- [undefined-ui](https://github.com/undefined-ui/second-brain-os) — ★ 1,070 — An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.
+- [stravo1](https://github.com/stravo1/obsidian-gdrive-sync) — ★ 1,052 — sync notes across devices in Obsidian via Google Drive
+- [masonlr](https://github.com/masonlr/obsidian-starter-templates) — ★ 1,041 — :rocket: Starter templates for Obsidian.md
+- [colineckert](https://github.com/colineckert/obsidian-things) — ★ 1,024 — An Obsidian theme inspired by the beautifully-designed app, Things.
+- [lucasrosati](https://github.com/lucasrosati/claude-code-memory-setup) — ★ 1,020 — Up to 71.5x fewer tokens per session on Claude Code with Obsidian + Graphify. Persistent memory, codebase knowledge graphs, and chat import pipeline. 🇧🇷 PT-B...
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-meta-bind-plugin) — ★ 1,015 — A plugin for Obsidian to make your notes interactive with inline input fields, metadata displays, and buttons.
+- [community-archive](https://github.com/community-archive/obsidian-full-calendar) — ★ 986 — Keep events and manage your calendar alongside all your other notes in your Obsidian Vault.
+- [meld-cp](https://github.com/meld-cp/obsidian-encrypt) — ★ 984 — Hide secrets in your Obsidian.md vault
+- [AgriciDaniel](https://github.com/AgriciDaniel/compass) — ★ 968 — Compass: run your whole life out of Obsidian. Daily questions, quarterly retreats, planning, habits, tasks, writing, and an AI assistant in the vault.
+- [polyipseity](https://github.com/polyipseity/obsidian-terminal) — ★ 949 — Integrate consoles, shells, and terminals.
+- [tadashi-aikawa](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin) — ★ 942 — This plugin for Obsidian enables you complete words like the auto-completion of IDE.
+- [Enveloppe](https://github.com/Enveloppe/obsidian-enveloppe) — ★ 911 — Enveloppe helps you to publish your notes on a GitHub repository from your Obsidian Vault, for free!
+- [gfxholo](https://github.com/gfxholo/iconic) — ★ 878 — Customize your icons and colors directly from the Obsidian UI, including tabs, files & folders, bookmarks, tags, properties, and ribbon commands.
+- [omnivore-app](https://github.com/omnivore-app/obsidian-omnivore) — ★ 873 — Obsidian plugin to fetch articles and highlights from Omnivore
+- [Nexus-JPF](https://github.com/Nexus-JPF/note-companion) — ★ 869 — Note Companion: AI assistant for Obsidian that goes beyond just a chat. (prev File Organizer 2000)
+- [subframe7536](https://github.com/subframe7536/obsidian-theme-maple) — ★ 869 — A sleek and modern Obsidian theme for desktop and mobile.
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Colored-Sidebar) — ★ 864 — A Colored Sidebar CSS Snippet for Obsidian.
+- [IdreesInc](https://github.com/IdreesInc/Waypoint) — ★ 863 — Obsidian plugin that gives you the power to generate dynamic MOCs in your folder notes. Enables folders to show up in the graph view and removes the need for...
+- [Railly](https://github.com/Railly/agentfiles) — ★ 850 — Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 12 coding tools — from Obsidian.
+- [Ellpeck](https://github.com/Ellpeck/ObsidianCustomFrames) — ★ 847 — An Obsidian plugin that turns web apps into panes using iframes with custom styling. Also comes with presets for Google Keep, Todoist and more.
+- [kytmanov](https://github.com/kytmanov/obsidian-llm-wiki-local) — ★ 837 — Karpathy’s LLM Wiki, 100% local with Ollama. Drop Markdown notes → AI extracts concepts → your Obsidian wiki auto-links and grows. Zero sharing. Your notes s...
+- [HEmile](https://github.com/HEmile/juggl) — ★ 821 — An interactive, stylable and expandable graph view for Obsidian. Juggl is designed as an advanced 'local' graph view, where you can juggle all your thoughts ...
+- [PandoraReads](https://github.com/PandoraReads/apex-dashboard) — ★ 819 — Stop switching between Obsidian notes. One page. Everything you need. Memo your thoughts, crush your todos, track your projects — and make it look incredible...
+- [noatpad](https://github.com/noatpad/obsidian-banners) — ★ 817 — An Obsidian plugin that adds banners to your notes
+- [rajgoel](https://github.com/rajgoel/reveal.js-plugins) — ★ 816 — Plugins for reveal.js
+- [WebBreacher](https://github.com/WebBreacher/obsidian-osint-templates) — ★ 814 — These templates are suggestions of how the Obsidian notetaking tool can be used during an OSINT investigation. The example data in those files should allow y...
+- [phibr0](https://github.com/phibr0/obsidian-charts) — ★ 809 — Charts - Obsidian Plugin | Create editable, interactive and animated Charts in Obsidian via Chart.js
+- [InlitX](https://github.com/InlitX/Obsidian-Dashboard-Gallery) — ★ 791 — Beautiful, ready-to-use dashboard templates for Obsidian PKM✨
+- [chrisgurney](https://github.com/chrisgurney/obsidian-note-toolbar) — ★ 789 — Flexible, context-aware toolbars for your notes in Obsidian.
+- [bennyxguo](https://github.com/bennyxguo/hexo-theme-obsidian) — ★ 788 — 🎨 A dark Hexo theme, it's responsive, simple but elegant.
+- [SlRvb](https://github.com/SlRvb/Obsidian--ITS-Theme) — ★ 777 — Theme designed with readability and customizability in mind. Change it easily to your liking with the Style Settings plugin installed.
+- [ppeetteerrs](https://github.com/ppeetteerrs/obsidian-zola) — ★ 777 — A no-brainer solution to turning your Obsidian PKM into a Zola site.
+- [PKM-er](https://github.com/PKM-er/awesome-obsidian-zh) — ★ 774 — Obsidian 优秀中文插件、主题与资源
+- [jplattel](https://github.com/jplattel/obsidian-clipper) — ★ 749 — A Chrome extension that easily clips selections to Obsidian
+- [dotpm](https://github.com/dotpm/obsidian-pm) — ★ 746 — Project management inside Obsidian. Table, Gantt and Kanban over plain Markdown notes, with a local API for agents and scripts.
+- [LostPaul](https://github.com/LostPaul/obsidian-folder-notes) — ★ 740 — Create notes within folders that can be accessed without collapsing the folder, similar to the functionality offered in Notion.
+- [NicholasSpisak](https://github.com/NicholasSpisak/second-brain) — ★ 740 — LLM-maintained personal knowledge base for Obsidian. Based on Andrej Karpathy's LLM Wiki pattern.
+- [staruhub](https://github.com/staruhub/ClaudeSkills) — ★ 727 — 13 curated Agent Skills for research, product decisions, decks, publishing, audits, and more — portable across skills-compatible agents.
+- [jason-effi-lab](https://github.com/jason-effi-lab/karpathy-llm-wiki-vault) — ★ 725 — 基于 Karpathy LLM Wiki 理念构建的 SKILL 和 Obsidian 知识库，将碎片信息整理为结构化、互联的知识网络。
+- [agarwalvishal](https://github.com/agarwalvishal/claude-chat-exporter) — ★ 722 — One-click, privacy-first exporter for Claude.ai chats — clean Markdown with artifacts and attachments, ready for Obsidian and RAG.
+- [swarmclawai](https://github.com/swarmclawai/swarmvault) — ★ 717 — The local-first LLM Wiki: open-source knowledge graph builder, RAG knowledge base, and agent memory store. Built on Andrej Karpathy's pattern. An Obsidian al...
+- [djsudduth](https://github.com/djsudduth/keep-it-markdown) — ★ 708 — Export and convert Google Keep notes dynamically to markdown for Obsidian, Apple Notes, Logseq, Joplin and Notion using the unofficial Keep API. Also, import...
+- [GD4AI](https://github.com/GD4AI/obsidian-llm-wiki) — ★ 708 — Karpathy's LLM Wiki implementation plugin for Obsidian - turns notes and PDFs into a linked, LLM-powered knowledge base with entity pages, concept pages, gra...
+- [artisticat1](https://github.com/artisticat1/obsidian-tikzjax) — ★ 704 — Render LaTeX and TikZ diagrams in your notes
+- [jaredrhod](https://github.com/jaredrhod/ai-memory-vault) — ★ 700 — Give your AI a real, persistent memory. The open-source system plus templates that turn an Obsidian vault into your AI's working memory. No vector database, ...
+- [soberhacker](https://github.com/soberhacker/obsidian-telegram-sync) — ★ 685 — Transfer messages and files from Telegram to Obsidian
+- [ieshreya](https://github.com/ieshreya/obsidian-cheat-sheet) — ★ 670 — all the basic cheatsheets you need to get started to make notes in obsidian.
+- [Crauzer](https://github.com/Crauzer/Obsidian) — ★ 668 — Wad archive editor for League of Legends
+- [infiolab](https://github.com/infiolab/infio-copilot) — ★ 660 — A Cursor-inspired AI assistant for Obsidian that offers smart autocomplete and interactive chat with your selected notes
+- [jobindjohn](https://github.com/jobindjohn/obsidian-publish-mkdocs) — ★ 652 — A Template to Publish Obsidian/Foam Notes on Github Pages (uses MkDocs)
+- [scambier](https://github.com/scambier/obsidian-text-extractor) — ★ 644 — A (companion) plugin to facilitate the extraction of text from images (OCR) and PDFs.
+- [groepl](https://github.com/groepl/Obsidian-Zettelkasten-Starter-Kit) — ★ 636 — A Starter Kit for Obsidian with all essential elements to build up your own Zettelkasten system.
+- [emotixco](https://github.com/emotixco/claude-skills-founder) — ★ 629 — Claude Code skills for startup founders — product briefs, competitor analysis, pricing strategy, pitch decks, and GTM plans from your terminal
+- [oxdc](https://github.com/oxdc/obsidian-vertical-tabs) — ★ 623 — An Obsidian plugin that displays open tabs vertically, allowing users to group and organize tabs for a better navigation experience.
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Vault-Template) — ★ 614 — A Template for my Obsidian Vault.
+- [zosmaai](https://github.com/zosmaai/pi-llm-wiki) — ★ 611 — Self-maintaining, Obsidian-compatible knowledge base for pi — turn raw sources into an interlinked wiki that compounds. Native Open Knowledge Format (OKF) v0.2.
+- [benmaster82](https://github.com/benmaster82/Kwipu) — ★ 610 — Ask questions across your Markdown notes using a fully local Graph RAG engine. Built for Obsidian vaults, works with any folder of Markdown files. Extracts e...
+- [mayurankv](https://github.com/mayurankv/Obsidian-Code-Styler) — ★ 610 — A plugin for Obsidian.md for styling codeblocks and inline code
+- [xiao24bei](https://github.com/xiao24bei/xiaobei-skill) — ★ 596 — 小北在读研开源 Codex Skills 合集：Image to VBA、Academic Paper to PPT 等 AI + 科研工作流。
+- [atlas-vtt](https://github.com/atlas-vtt/atlas-vtt) — ★ 595 — Open Source virtual tabletop for Obsidian: battle maps, tokens, fog of war, dice, initiative and a separate player view.
+- [quanru](https://github.com/quanru/obsidian-lifeos) — ★ 590 — Obsidian Plugin for combining P.A.R.A with Periodic Notes(LifeOS for Obsidian)
+- [kepano](https://github.com/kepano/obsidian-hider) — ★ 580 — Hide Obsidian UI elements such as tooltips, status, titlebar and more
+- [taskgenius](https://github.com/taskgenius/taskgenius-plugin) — ★ 577 — Comprehensive task management plugin for Obsidian
+- [mgmeyers](https://github.com/mgmeyers/obsidian-california-coast-theme) — ★ 576 — A minimalist obsidian theme inspired by macOS Big Sur
+- [fxyadela](https://github.com/fxyadela/write-then-publish) — ★ 570 — 本地优先的中文内容排版工具：把 Markdown 转成小红书图文卡片、公众号长文和可下载图片，并支持 Obsidian 工作流。
+- [mokeyish](https://github.com/mokeyish/obsidian-enhancing-export) — ★ 551 — This is an enhancing export plugin base on Pandoc for Obsidian (https://obsidian.md/ ). It's allow you to export to formats like Markdown、Markdown (Hugo http...
+- [Karovia](https://github.com/Karovia/fullstack-ai-agent-roadmap) — ★ 539 — 🎯 从零基础到 AI Agent 全栈工程师 · 110 个详细教程 · 58 万字 · 400+ GitHub 项目精选 · Obsidian 友好 · 中文
+- [obsidianmd](https://github.com/obsidianmd/obsidian-maps) — ★ 533 — Map layout for Obsidian Bases. Display your notes as an interactive map view.
+- [fenjalien](https://github.com/fenjalien/obsidian-typst) — ★ 532 — Renders typst code blocks in Obsidian into images using Typst through the power of WASM!
+- [archlizheng](https://github.com/archlizheng/frontend-slides-editable) — ★ 531 — Editable HTML presentation skill for Codex/Claude Code with drag-resize editing, slide reordering, local save/export, and PPTX-to-web conversion. Shout out t...
+- [joethei](https://github.com/joethei/obsidian-plantuml) — ★ 531 — Generate PlantUML Diagrams inside Obsidian.md
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Notebook-Themes) — ★ 530 — A Series of Notebook Theme CSS Snippets for Obsidian.
+- [obsidian-pkm-vault](https://github.com/obsidian-pkm-vault/awesome-obsidian-vault) — ★ 526 — Awesome list of obsidian vaults
+- [hauselin](https://github.com/hauselin/obsidian-alfred) — ★ 512 — Alfred workflow for Obsidian note-taking app. Open vaults and files in Obsidian.
+- [damiankorcz](https://github.com/damiankorcz/Prism-Theme) — ★ 509 — A Comprehensive, Highly-Customisable and Elegant Light/Dark Theme for Obsidian.md
+- [chhoumann](https://github.com/chhoumann/MetaEdit) — ★ 507 — MetaEdit for Obsidian
+- [Stardusten](https://github.com/Stardusten/ob-table-enhancer) — ★ 500 — Manipulate markdown tables without touching the source code in Obsidian.
+- [Pierrad](https://github.com/Pierrad/obsidian-github-copilot) — ★ 498 — A bridge between Obsidian and Github Copilot
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-media-db-plugin) — ★ 492 — A plugin that can query multiple APIs for movies, series, anime, games, music and wiki articles, and import them into your vault.
+- [JimmySadek](https://github.com/JimmySadek/video-fetcher-to-markdown) — ★ 488 — Portable AI-agent skill: turn YouTube, Instagram, TikTok, X and other video links into Obsidian-ready Markdown notes: captions or local Whisper transcripts, ...
+- [ObsidianMC](https://github.com/ObsidianMC/Obsidian) — ★ 480 — A C# implementation of the Minecraft server protocol.
+- [hkcanan](https://github.com/hkcanan/katmer-code) — ★ 474 — Multi-provider AI sidebar for Obsidian — Claude, Gemini, Codex, Antigravity. Per-tab routing, same-tab consult, inline diff, CLAUDE.md auto-mirror, academic ...
+- [evilz](https://github.com/evilz/vscode-reveal) — ★ 472 — Revealjs vsCode extension
+- [nicksp](https://github.com/nicksp/dotfiles) — ★ 470 — My personal dotfiles: Zsh, Git, VSCode, Obsidian, Ghostty, cmux, etc.
+- [joethei](https://github.com/joethei/obsidian-rss) — ★ 470 — Read RSS Feeds from inside Obsidian
+- [Sadsnake1](https://github.com/Sadsnake1/word-smith) — ★ 466 — Dedicated Writing Studio for Obsidian
+- [QuZhan51496](https://github.com/QuZhan51496/paper2anything) — ★ 461 — An agent skills pack that turns an academic paper PDF into slides, a poster, a webpage, a Xiaohongshu post, or a WeChat article (paper2slides/poster/html/xhs...
+- [vran-dev](https://github.com/vran-dev/obsidian-contribution-graph) — ★ 461 — generate interactive gitxxx style contribution graph for obsidian, use it to track your goals, habits, or anything else you want to track.
+- [tldraw](https://github.com/tldraw/obsidian-plugin) — ★ 459 — A plugin to integrate tldraw into Obsidian.
+- [tu2-atmanand](https://github.com/tu2-atmanand/Task-Board) — ★ 458 — An Obsidian plugin to view and manage your tasks from whole vault using much efficient boards using various methodologies.
+- [derek-larson14](https://github.com/derek-larson14/obsidian-claude-sidebar) — ★ 453 — Run Claude Code, Codex, and other agent CLIs in Obsidian
+- [gadenbuie](https://github.com/gadenbuie/xaringanExtra) — ★ 449 — :ferris_wheel: A playground of enhancements and extensions for xaringan slides.
+- [coatless](https://github.com/coatless/quarto-webr) — ★ 448 — Community developed Quarto Extension to Embed webR for HTML Documents, RevealJS, Websites, Blogs, and Books.
+- [denolehov](https://github.com/denolehov/obsidian-url-into-selection) — ★ 444 — Paste URLs into selected text "notion style"
+- [llZektorll](https://github.com/llZektorll/Template_Hub) — ★ 434 — Obsidian Template Hub started on the 13th of June 2022. It was set up to gather as many note templates as possible.
+- [hfactor](https://github.com/hfactor/jekyll-garden) — ★ 429 — A simple Jekyll theme that turns your Obsidian notes into a beautiful website.
+- [devidw](https://github.com/devidw/obsidian-to-hugo) — ★ 428 — Process Obsidian notes to publish them with Hugo. Supports transformation of Obsidian wiki links into Hugo shortcodes for internal linking.
+- [reorx](https://github.com/reorx/obsidian-paste-image-rename) — ★ 423 — Renames pasted images and all the other attachments added to the vault
+- [ryanbbrown](https://github.com/ryanbbrown/revealjs-skill) — ★ 415 — Coding agent skill for making reveal.js presentations
+- [james-tindal](https://github.com/james-tindal/obsidian-mindmap-nextgen) — ★ 408 — Create mind maps from your obsidian markdown files
+- [minorun365](https://github.com/minorun365/minorun-marp-skill) — ★ 406 — Marp?????????????????????????????????????????????
+- [tadashi-aikawa](https://github.com/tadashi-aikawa/obsidian-another-quick-switcher) — ★ 404 — This is an Obsidian plugin which is another choice of Quick switcher.
+- [smixs](https://github.com/smixs/agent-second-brain) — ★ 400 — An always-on second brain you talk to. Voice notes in Telegram → typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you alr...
+- [tth05](https://github.com/tth05/obsidian-completr) — ★ 396 — Auto-completion plugin for the obsidian editor.
+- [AlexW00](https://github.com/AlexW00/obsidian-3d-graph) — ★ 392 — 👓 A 3D graph for Obsidian!
+- [ascott1](https://github.com/ascott1/bigSlide.js) — ★ 391 — ⚠️**DEPRECATED**⚠️ A tiny slide panel navigation jQuery plugin with big dreams
+- [danielo515](https://github.com/danielo515/obsidian-modal-form) — ★ 391 — Define forms for filling data that you will be able to open from anywhere you can run JS
+- [davidvkimball](https://github.com/davidvkimball/vaultcms) — ★ 385 — Use Obsidian as a content management system for your Astro website.
+- [obsidian-html](https://github.com/obsidian-html/obsidian-html) — ★ 384 — Python code to convert Obsidian notes to proper markdown and optionally to create an html site too.
+- [SoRobby](https://github.com/SoRobby/ObsidianStarterVault) — ★ 383 — Organize your Universe: An Obsidian starter vault for everyone, bridging the gap between ideas and actions
+- [nikdanilov](https://github.com/nikdanilov/whisper-obsidian-plugin) — ★ 380 — Speech-to-text in Obsidian using Whisper
+- [clairefro](https://github.com/clairefro/obsidian-plugin-chronos) — ★ 376 — Render interactive timelines in your Obsidian notes from simple Markdown.
+- [lumoe](https://github.com/lumoe/obsidian-rollover-daily-todos) — ★ 370 — An obsidian plugin that rolls over todo items from the previous daily note
+- [cooklang](https://github.com/cooklang/cooklang-obsidian) — ★ 366 — Edit and display Cooklang recipes in Obsidian
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Daily-Themes) — ★ 363 — A Series of Daily Theme CSS Snippets for Obsidian.
+- [mugiwara85](https://github.com/mugiwara85/CodeblockCustomizer) — ★ 358 — Codeblock Customizer plugin for Obsidian
+- [LBF38](https://github.com/LBF38/obsidian-syncthing-integration) — ★ 358 — Obsidian plugin for Syncthing integration
+- [Santofer](https://github.com/Santofer/Remindian) — ★ 354 — Sync Obsidian Tasks or TaskNotes with Apple Reminders or Things 3 — two-way sync, surgical edits, tag mapping, menu-bar app for macOS
+- [j-palindrome](https://github.com/j-palindrome/obsidian-time-ruler) — ★ 352 — A drag-and-drop time ruler combining the best of a task list and a calendar view (integrates with Tasks, Full Calendar, and Dataview).
+- [runesleo](https://github.com/runesleo/ai-health-vault) — ★ 351 — AI + Obsidian private health management system template
+- [thesamim](https://github.com/thesamim/TickTickSync) — ★ 346 — Bidirectional synchronization between Obsidian and TickTick. Mobile compatible.
+- [BlandAlpha](https://github.com/BlandAlpha/obsidian_math) — ★ 345 — 适用于Obsidian的考研数学2笔记。
+- [mgmeyers](https://github.com/mgmeyers/obsidian-smart-typography) — ★ 343 — Converts quotes to curly quotes, dashes to em dashes, and periods to ellipses
+- [joeseesun](https://github.com/joeseesun/qiaomu-clipper) — ★ 342 — 乔木剪藏：剪藏网页到 Obsidian，阅读、编辑，并向 AI 提问 | Clip the web to Obsidian, then read, edit and chat with AI about it.
+- [NicklasVraa](https://github.com/NicklasVraa/Obsidian-academic-export) — ★ 341 — Turn your obsidian notes into academic papers.
+- [philips](https://github.com/philips/supernote-obsidian-plugin) — ★ 333 — Supernote A5, A5X, A6X, A6X2 (Nomad), and A5X2 (Manta) integration for Obsidian. Generate markdown, capture screen mirror, and more.
+- [voidashi](https://github.com/voidashi/obsidian-vault-template) — ★ 333 — Simple and efficient template to build your second brain in Obsidian
+- [soxoj](https://github.com/soxoj/marple) — ★ 332 — ?? Collect links to profiles by username through search engines and analyze with various plugins
+- [hassancs91](https://github.com/hassancs91/claude-youtube-editor) — ★ 332 — Record the talking head, Claude Code does the rest: the cut, the visuals, the voice, the sound effects, the thumbnail, and the YouTube upload. Every screen m...
+- [TarsLab](https://github.com/TarsLab/obsidian-tars) — ★ 331 — Obsidian tars plugin that supports text generation based on tag suggestions, using services like DeepSeek, Claude, OpenAI, OpenRouter, SiliconFlow, Gemini, O...
+- [robonuggets](https://github.com/robonuggets/marp-slides) — ★ 324 — MARP presentation skill for Claude Code  22 curated example decks, SVG charts, dark/light themes, dashboard components
+- [travisvn](https://github.com/travisvn/obsidian-edge-tts) — ★ 322 — Free, high quality text-to-speech for your Obsidian notes, leveraging Microsoft Edge's Read Aloud API.
+- [d2lang](https://github.com/d2lang/d2-obsidian) — ★ 317 — The official D2 plugin for Obsidian. D2 is a modern diagram scripting language thats turns text to diagrams.
+- [geekjourneyx](https://github.com/geekjourneyx/obsidian-md2wechat) — ★ 316 — Obsidian → WeChat | Obsidian 插件一键排版发布到微信公众号，键排版发布到微信公众号：支持 40+ 排版样式和专业主题 、AI 配图 、批量发布 、多账号管理
+- [trganda](https://github.com/trganda/obsidian-attachment-management) — ★ 316 — Attachment Management of Obsidian
+- [Li-Baichuan-James](https://github.com/Li-Baichuan-James/summarize-slides-skill) — ★ 315 — —
+- [KovaMD](https://github.com/KovaMD/Kova) — ★ 314 — Kova - Markdown presentation editor.
+- [obsidian-tools](https://github.com/obsidian-tools/obsidian-tools) — ★ 311 — An unofficial collection of tools that helps you build plugins for obsidian.md
+- [trashhalo](https://github.com/trashhalo/obsidian-extract-url) — ★ 310 — Plugin to extract markdown out of urls
+- [Twigonometry](https://github.com/Twigonometry/OSCP-Notes-Template) — ★ 309 — A template Obsidian Vault for storing your OSCP revision notes
+- [marc0l92](https://github.com/marc0l92/obsidian-jira-issue) — ★ 306 — This plugin allows you to track the progress of Atlassian Jira issues from your Obsidian notes.
+- [likaku](https://github.com/likaku/Mck-ppt-design-skill) — ★ 303 — Consulting firm-style PowerPoint design system for AI agents. 70 layout patterns, flat design, python-pptx. ????PPT?????
+- [MichaelDeBoey](https://github.com/MichaelDeBoey/gatsby-remark-embedder) — ★ 302 — Gatsby Remark plugin to embed well known services by their URL.
+- [M1ck4](https://github.com/M1ck4/pdfmd) — ★ 302 — Smart PDF to Markdown converter with intelligent heading detection, automatic header/footer removal, orphan fragment merging, and image export. Features a us...
+- [caronchen](https://github.com/caronchen/obsidian-chartsview-plugin) — ★ 302 — Data visualization solution in Obsidian, support plots and graphs.
+- [d-eniz](https://github.com/d-eniz/jupymd) — ★ 301 — JupyMD: Use Obsidian as a Jupyter notebook IDE
+- [Obsidian-TTRPG-Community](https://github.com/Obsidian-TTRPG-Community/ObsidianTTRPGShare) — ★ 301 — This is a repository for sharing TTRPG elements that may be useful for Obsidian.md TTRPG Users.
+- [AgriciDaniel](https://github.com/AgriciDaniel/claude-canvas) — ★ 300 — AI-orchestrated visual production for Obsidian Canvas. Create presentations, flowcharts, mood boards, knowledge graphs, and galleries with intelligent layout...
+- [elias-sundqvist](https://github.com/elias-sundqvist/obsidian-react-components) — ★ 293 — Write and use React (Jsx) components in your Obsidian notes.
+- [ashuotaku](https://github.com/ashuotaku/Personal-Wiki) — ★ 292 — A showcase of my obsidian vault to help others to organize their notes in a better way.
+- [helloianneo](https://github.com/helloianneo/obsidian-ai-second-brain) — ★ 289 — Obsidian + Claude AI 个人知识库完整搭建指南 | 基于 Karpathy LLM Wiki 方法论 | 4 阶段 12 步 | 不用写代码
+- [AlexW00](https://github.com/AlexW00/obsidian-note-linker) — ★ 289 — 🔗 Automatically link your Obsidian notes.
+- [Ariestar](https://github.com/Ariestar/obsidian-dragger) — ★ 283 — An Obsidian plugin for dragging and rearranging any block.
+- [ozntel](https://github.com/ozntel/oz-clear-unused-images-obsidian) — ★ 283 — Obsidian plugin to clear the images that are not used in note files anymore
+- [johansatge](https://github.com/johansatge/obsidian-automatic-table-of-contents) — ★ 282 — 💠 An Obsidian plugin to create a table of contents in a note, that updates itself when the note changes
+- [awesome-yasin](https://github.com/awesome-yasin/PDF-Verse) — ★ 281 — PDF Verse is a powerful web based PDF Editor with tools for editing, converting, and manipulating PDFs. Merge, compress, add or remove pages, or extract text...
+- [zimya](https://github.com/zimya/zhihu_obsidian) — ★ 281 — Zhihu on Obsidian | 知乎 Obsidian 插件
+- [ebullient](https://github.com/ebullient/obsidian-slides-extended) — ★ 278 — Create markdown-based reveal.js presentations in Obsidian
+- [ferdinandobons](https://github.com/ferdinandobons/brand-docs) — ★ 276 — BrandDocs is a set of agent skills that learn your existing Word, PowerPoint and Excel templates and generate new on-brand documents from them. Unlike generi...
+- [compiiile](https://github.com/compiiile/compiiile) — ★ 276 — The most convenient way to render and deploy a folder containing markdown files. Previewing and searching markdown files has never been that easy. Your alter...
+- [Benature](https://github.com/Benature/obsidian-text-format) — ★ 271 — Format seleted text in Obsdidian.md
+- [akaalias](https://github.com/akaalias/obsidian-extract-pdf) — ★ 270 — Extract PDFs to Markdown within Obsidian
+- [obsidian-userland](https://github.com/obsidian-userland/publish) — ★ 270 — Open source Obsidian Publish alternative
+- [zouchenzhen](https://github.com/zouchenzhen/thesis-defense-pptx-skill) — ★ 269 — Codex / Claude Skill for editable thesis-defense PPTX from PDF or LaTeX while preserving a PowerPoint template. ??? PDF / LaTeX ??????? PPTX,????? PPT ?????
+- [davisriedel](https://github.com/davisriedel/obsidian-typewriter-mode) — ★ 269 — Typewriter Mode is a plugin that adds typewriter scrolling (current line stays at a fixed position on the screen), a highlight for the current line, dimming ...
+- [UNLINEARITY](https://github.com/UNLINEARITY/Obsidian-CodeSpace) — ★ 268 — Professional code file management with visual dashboard, syntax highlighting editor, Markdown embedding, external folder mounts, and terminal integration.  在...
+- [samuele-cozzi](https://github.com/samuele-cozzi/obsidian-marp-slides) — ★ 267 — Create markdown-based Marp presentations in Obsidian
+- [ycnmhd](https://github.com/ycnmhd/obsidian-lineage) — ★ 267 — Gingko-like interface in obsidian
+- [chhoumann](https://github.com/chhoumann/PodNotes) — ★ 266 — PodNotes is a plugin for Obsidian that helps the user write notes on podcasts.
+- [Seniblue](https://github.com/Seniblue/Underwater) — ★ 264 — An obsidian.md theme
+- [kytmanov](https://github.com/kytmanov/synto) — ★ 262 — More than just Karpathy’s LLM Wiki, 100% local with Ollama. Drop Markdown notes → AI extracts concepts → your Obsidian wiki auto-links and grows. Zero sharin...
+- [hjinco](https://github.com/hjinco/synch) — ★ 262 — End-to-end encrypted sync for Obsidian vaults
+- [Seraphli](https://github.com/Seraphli/obsidian-link-embed) — ★ 260 — This plugin allow you to convert URLs in your notes into embeded previews.
+- [oliveryh](https://github.com/oliveryh/obsidian-emoji-toolbar) — ★ 259 — An Obsidian plugin to quickly add emojis into your notes
+- [hasanyilmaz](https://github.com/hasanyilmaz/operon) — ★ 258 — Task management system for humans and agents in Obsidian.
+- [tanepiper](https://github.com/tanepiper/obsidian-garden) — ★ 258 — A knowledge management garden for https://obsidian.md, in which to grow your ideas
+- [drbap](https://github.com/drbap/dashboard-navigator-for-obsidian) — ★ 258 — Dashboard navigator plugin for Obsidian.
+- [ganesshkumar](https://github.com/ganesshkumar/obsidian-excel-to-markdown-table) — ★ 257 — An Obsidian plugin to paste data from Microsoft Excel, Google Sheets, Apple Numbers and LibreOffice Calc as Markdown tables in Obsidian editor.
+- [Papela](https://github.com/Papela/Obsidian-Portable) — ★ 257 — Obsidian Portable Repository
+- [slidevjs](https://github.com/slidevjs/slidev-vscode) — ★ 256 — VS Code extension for Slidev
+- [jupyterlab-contrib](https://github.com/jupyterlab-contrib/rise) — ★ 254 — RISE: "Live" Reveal.js JupyterLab Slideshow Extension
+- [seburbandev](https://github.com/seburbandev/obsidian-dataview-cheatsheet) — ★ 254 — This cheatsheet provides a handy reference guide for writing powerful queries using the dataview plugin in Obsidian.
+- [abcjs-music](https://github.com/abcjs-music/obsidian-plugin-abcjs) — ★ 254 — Plugin which renders music notations from code blocks
+- [zremboldt](https://github.com/zremboldt/obsidian-media-grid) — ★ 252 — Add more meaning and visual interest to your markdown documents by grouping sets of images, videos, or even audio tracks into grid layouts in Obsidian.
+- [RyotaUshio](https://github.com/RyotaUshio/obsidian-latex-theorem-equation-referencer) — ★ 252 — A powerful indexing & referencing system for theorems & equations in your Obsidian vault.
+- [ganesshkumar](https://github.com/ganesshkumar/obsidian-table-editor) — ★ 250 — An Obsidian plugin to provide an editor for Markdown tables. It can open CSV data and data from Microsoft Excel, Google Sheets, Apple Numbers and LibreOffice...
+- [ZekunC](https://github.com/ZekunC/Obsidian-Typora-Vue-Theme) — ★ 248 — A theme for Obsidian(https://obsidian.md/), inspired by typora-vue.
+- [carlonicora](https://github.com/carlonicora/obsidian-rpg-manager) — ★ 247 — RPG Manager is a tool to simplify the plot, run and track of role playing game campaigns, helping storytellers to run better campaigns in less time.
+- [iammatthias](https://github.com/iammatthias/com) — ★ 246 — Digital garden built using Astro, Obsidian, and other goodies.
+- [bencodezen](https://github.com/bencodezen/bens-obsidian-boilerplate) — ★ 246 — An opinionated kit to provide people some inspiration and ideas for their own workflows.
+- [aoout](https://github.com/aoout/obsidian-epub-importer) — ★ 244 — Import EPUB files as Markdown.
+- [akaalias](https://github.com/akaalias/obsidian-extract-pdf-highlights) — ★ 243 — Extract highlights, underlines and annotations from your PDFs into Obsidian
+- [dsebastien](https://github.com/dsebastien/obsidian-life-tracker-base-view) — ★ 242 — Capture and visualize the data that matters in your life
+- [joeseesun](https://github.com/joeseesun/qiaomu-book-reader-legacy) — ★ 242 — 在 Obsidian 中阅读 EPUB、FB2 与 PDF，划线批注、就地问 AI、笔记回到原文 | Read EPUB/FB2/PDF in Obsidian: highlights, inline AI Q&A, and notes that link back to the source.
+- [ebullient](https://github.com/ebullient/obsidian-task-collector) — ★ 242 — Manage tasks and logs within an Obsidian note.
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-shiki-plugin) — ★ 240 — An Obsidian plugin that offers better code highlighting via shiki and Expressive Code.
+- [HatanoChihiro](https://github.com/HatanoChihiro/obsidian-webnovel-assistant) — ★ 240 — 为小说故事创作设计的 Obsidian 插件 | Obsidian plugin for novel and story writing
+- [Cursivez](https://github.com/Cursivez/journalit) — ★ 237 — Obsidian trading journal with broker sync, trade imports, analytics, prop firm tracking, reviews and rule-based trading workflows.
+- [uwidev](https://github.com/uwidev/life-disciplines-projects) — ★ 237 — Life-Disciplines-Projects (LDP) is a life-management framework built within Obsidian. Feel free to transform it for your own personal needs.
+- [hubeiqiao](https://github.com/hubeiqiao/apple-bento-grid) — ★ 236 — Agent skill that generates Apple-inspired bento grid presentation cards. For Claude Code, Codex, and any AI coding agent.
+- [chenyukang](https://github.com/chenyukang/obweb) — ★ 236 — ObWeb = Obsidian on Mobile + Flomo + Rss Reader
+- [ykhwong](https://github.com/ykhwong/ppt-ndi) — ★ 235 — A PowerPoint plugin for the NewTek NDI integration
+- [davidvkimball](https://github.com/davidvkimball/astro-modular) — ★ 235 — A flexible Astro blog theme designed for Obsidian users.
+- [nguyenvanduocit](https://github.com/nguyenvanduocit/obsidian-open-gate) — ★ 234 — Empower your Obsidian notes with seamless web integration.
+- [phibr0](https://github.com/phibr0/obsidian-emoji-shortcodes) — ★ 231 — Emoji Shortcodes - Obsidian Plugin | Adds Support for Emoji Shortcodes to Obsidian
+- [churnish](https://github.com/churnish/dynamic-views) — ★ 230 — Obsidian plugin that adds elegant grid and masonry card views for Bases.
+- [alopezrivera](https://github.com/alopezrivera/OneNoteExporter) — ★ 230 — Export your OneNote note collection to Obsidian, Logseq, Org Mode or any other plain text note-taking app!
+- [MrXujiang](https://github.com/MrXujiang/pptx) — ★ 229 — A PPT online editor based on the web terminal ｜ 一款基于web端的ppt在线编辑器
+- [basilioss](https://github.com/basilioss/obsidian-scrapers) — ★ 228 — Get information from link for Obsidian
+- [CyanVoxel](https://github.com/CyanVoxel/vauxhall-obsidian) — ★ 227 — 🌌 A Theme Echoing From the Deep [Obsidian]
+- [trashhalo](https://github.com/trashhalo/obsidian-webhooks) — ★ 227 — Connect obsidian to the internet of things via webhooks
+- [visini](https://github.com/visini/obsidian-icons-plugin) — ★ 225 — Add icons to your Obsidian notes – Experimental Obsidian Plugin
+- [ArtemXTech](https://github.com/ArtemXTech/claude-code-obsidian-starter) — ★ 225 — Free starter kit: Claude Code + Obsidian. Pre-configured vault with skills for projects, tasks, clients, and daily routines. Just open and go.
+- [HisMax](https://github.com/HisMax/awesome-openclaw-ob) — ★ 224 — OpenClaw 深度研究 Obsidian 知识库 | 351 篇笔记 · 3250+ 双链 · 100 张配图 · 9 大主题 | AI Agent 最全中文知识图谱
+- [azyarashi](https://github.com/azyarashi/obsidian-typst-mate) — ★ 224 — Render math expressions with Typst instead of MathJax in Obsidian.
+- [EESJGong](https://github.com/EESJGong/scholar-skill) — ★ 223 — An OpenClaw skill for academic reading, knowledge linking, reflection, and knowledge evolution in Obsidian.
+- [EveryInc](https://github.com/EveryInc/hands-on-deck) — ★ 220 — Agent-native PowerPoint manipulation — one CLI lets AI agents inspect, edit, create, and verify .pptx files through atomic JSON patches. Packaged as an Agent...
+- [kbravh](https://github.com/kbravh/obsidian-tweet-to-markdown) — ★ 220 — An Obsidian.md plugin to save tweets as Markdown files.
+- [chiimagnus](https://github.com/chiimagnus/SyncNos) — ★ 217 — A web clipper for saving AI chats, web articles, and video transcripts to Notion, Obsidian, Feishu, and GitHub, with CLI automation.
+- [joshwingreene](https://github.com/joshwingreene/Obsidian-JG-Method) — ★ 216 — A starter kit that follows how I use Obsidian to manage my goals, tasks, notes, and software development knowledge base.
+- [kh4f](https://github.com/kh4f/flexplorer) — ★ 214 — 🗃️ Obsidian File Explorer Enhancer
+- [Rooyca](https://github.com/Rooyca/obsidian-api-request) — ★ 213 — Obsidian plugin that allows you to integrate API data into your notes with request caching, variable support, and precise JSON extraction.
+- [FHachez](https://github.com/FHachez/obsidian-convert-url-to-iframe) — ★ 211 — Plugin for Obsidian.md to convert a selected URL to an iframe.
+- [polyipseity](https://github.com/polyipseity/obsidian-unhide) — ★ 211 — (formerly Show Hidden Files) Unhide hidden files, like dotfiles.
+- [ShZhao27208](https://github.com/ShZhao27208/Aut_Sci_Write) — ★ 209 — Academic research skills suite for AI Agent — literature search/download (WoS+Elsevier+Springer), PDF   extraction, figure cropping, review writing, Zotero s...
+- [connerohnesorge](https://github.com/connerohnesorge/awesome-vaults) — ★ 208 — This is an List of Obsidian Vaults that show off features or collections of Notes.
+- [jparkerweb](https://github.com/jparkerweb/pixel-banner) — ★ 208 — 🚩 Enhance your Obsidian notes with customizable banner images, including AI-generated designs and a curated store of downloadable banners. Transform your wor...
+- [agentii-ai](https://github.com/agentii-ai/agentii-investment-intelligence) — ★ 206 — Claude-type skills for institutional equity research — 25 AI agent skills with SEC   filings, XBRL financials, earnings calendars, DCF/comps/LBO models, and ...
+- [czottmann](https://github.com/czottmann/obsidian-actions-uri) — ★ 205 — A plugin for Obsidian (https://obsidian.md) that adds additional `x-callback-url` endpoints to the app for common actions — it's a clean, super-charged addit...
+- [Michael-OvO](https://github.com/Michael-OvO/obsidian-knowledge-agent) — ★ 204 — Agent-driven pipeline that turns raw material (PDFs, slides, syllabi, papers, URLs) into structured, teaching-quality Obsidian notes: ingest, compile, distri...
+- [henrikingo](https://github.com/henrikingo/impressionist) — ★ 202 — A Visual 3D editor for creating stunning impress.js presentations
+- [mgmeyers](https://github.com/mgmeyers/obsidian-contextual-typography) — ★ 202 — —
+- [Ellpeck](https://github.com/Ellpeck/ObsidianSimpleTimeTracker) — ★ 200 — Multi-purpose time trackers for your notes!
+- [tcmmichaelb139](https://github.com/tcmmichaelb139/obsidian-tokyonight) — ★ 199 — Tokyo Night theme for Obsidian
+- [w1163222589-coder](https://github.com/w1163222589-coder/slide-image-to-editable-pptx) — ★ 196 — A Codex skill for converting slide screenshots into editable PowerPoint decks.
+- [caronchen](https://github.com/caronchen/obsidian-calibre-plugin) — ★ 195 — Allow you to access your calibre libraries and read books directly in Obsidian.
+- [acheng-byte](https://github.com/acheng-byte/discourse-saver) — ★ 195 — Discourse 论坛帖子保存工具 - 一键保存到 Obsidian/飞书/Notion/WebDAV/百度网盘，支持飞书云文档，自动按论坛域名分文件夹
+- [lukasbach](https://github.com/lukasbach/obsidian-code-files) — ★ 195 — Plugin for ObsidianMD to show and edit code files along other notes.
+- [pricklywiggles](https://github.com/pricklywiggles/niamos) — ★ 193 — Obsidian productivity system and second brain.
+- [ljavuras](https://github.com/ljavuras/obsidian-power-tools) — ★ 193 — Obsidian custom scripts, templates and workflows developed for myself. Take whatever you need.
+- [r-wasm](https://github.com/r-wasm/quarto-drop) — ★ 192 — Drop down an interactive R or Python console, code editor, and plotting window from the top of your Quarto slides.
+- [PKM-er](https://github.com/PKM-er/Obsidian-Plug-and-Play) — ★ 192 — 一个简单的Obsidian 即开即用库，希望它能节省你调试的时间，更多关注笔记和知识本身。A simple Obsidian plug and play vault.Hopefully it will save you time debugging and pay more attention to the no...
+- [gapmiss](https://github.com/gapmiss/obsidian-plugin-skill) — ★ 192 — Agent SKILL for Obsidian.md plugin development
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-js-engine-plugin) — ★ 192 — An Obsidian plugin that offers a multiple ways to run JavaScript from within Obsidian.
+- [Aetherinox](https://github.com/Aetherinox/obsidian-dataview-snippets) — ★ 190 — A collection of Obsidian.md scripts which include Tag & Page Clouds, Table of Contents / ToC, Bad / Missing Link reporting, etc.
+- [arpitbbhayani](https://github.com/arpitbbhayani/obsidian-hackernews) — ★ 190 — Displays top stories from Hacker News inside Obsidian.
+- [ykerus](https://github.com/ykerus/obsidian-templates) — ★ 190 — Obsidian vault with task reminders, milestone and lesson trackers, automated tools for keeping things tidy, several templates to kickstart meetings and proje...
+- [sytone](https://github.com/sytone/obsidian-queryallthethings) — ★ 188 — Query all your data stored in Obsidian, this plugin allows SQL based queries against the data collections available in Obsidian and Dataview. Output can then...
+- [jjmaldonis](https://github.com/jjmaldonis/obsidian-audio-notes) — ★ 186 — Easily take notes on podcasts and other audio files using Obsidian Audio Notes.
+- [Numstr](https://github.com/Numstr/Obsidian-Portable) — ★ 185 — Obsidian Portable For Windows
+- [banisterious](https://github.com/banisterious/obsidian-charted-roots) — ★ 182 — Professional genealogical tools for Obsidian. Interactive family charts, geographic maps, PDF reports, GEDCOM/Gramps import-export, evidence tracking, and fi...
+- [velviagris](https://github.com/velviagris/obsidian-local-backup) — ★ 182 — Automatically creates a local backup of the vault.
+- [franciskafieh](https://github.com/franciskafieh/obsidian-list-modified) — ★ 182 — 🪨 The advanced and adaptive changelog for Obsidian. Links all modified files meeting certain criteria to a timed (daily, weekly, monthly) note.
+- [NicoNekoru](https://github.com/NicoNekoru/obsidan-advanced-table-xt) — ★ 180 — Plugin that adds features to tables in obsidian including merging, vertical headers, and custom css
+- [lachsh](https://github.com/lachsh/obsidian-recipe-view) — ★ 179 — View your Obsidian notes as interactive recipe cards while you cook.
+- [jplattel](https://github.com/jplattel/obsidian-query-language) — ★ 178 — An Obsidian plugin allowing you to query your notes
+- [ebullient](https://github.com/ebullient/obsidian-day-planner-og) — ★ 178 — An Obsidian plugin for day planning and managing pomodoro timers from a markdown task list.
+- [JichouP](https://github.com/JichouP/obsidian-marp-plugin) — ★ 177 — Plugin to use Marp with Obsidian
+- [czottmann](https://github.com/czottmann/obsidian-mononote) — ★ 177 — An Obsidian plugin that ensures each note occupies only one tab. If a note is already open, its existing tab will be focussed instead of opening the same fil...
+- [IssacW228](https://github.com/IssacW228/student-llm-wiki) — ★ 177 — 📚 Student LLM Wiki — AI-compiled knowledge base for university students. Drop course slides, get a persistent interlinked wiki. Feynman review, exam prep, co...
+- [macedotavares](https://github.com/macedotavares/obsidian-utilities) — ★ 176 — An Alfred workflow focusing on quick entry and logging.
+- [olvidalo](https://github.com/olvidalo/obsidian-chord-sheets) — ★ 176 — Work with chord sheets (chords over lyrics or inline in brackets) in Obsidian: Chord diagrams for guitar, ukulele and mandolin, transpose, autoscroll and mor...
+- [noduslabs](https://github.com/noduslabs/infranodus-obsidian-plugin) — ★ 175 — Advanced graph view for Obsidian: text analysis, topic modeling, and AI with InfraNodus AI text analysis tool: https://infranodus.com
+- [holubj](https://github.com/holubj/obsidian-dialogue-plugin) — ★ 174 — Dialogue plugin for Obsidian.md
+- [daniel-style](https://github.com/daniel-style/magic-slide) — ★ 172 — A skill that generates polished self-contained HTML presentations with smooth Magic Move-style slide transitions.
+- [Sadsnake1](https://github.com/Sadsnake1/cursor-smith) — ★ 172 — Cursor Customization Engine for Obsidian
+- [diegoeis](https://github.com/diegoeis/obsidianotion) — ★ 172 — Just a little theme for obsidian with notion inspired design
+- [yan42685](https://github.com/yan42685/obsidian-clever-search) — ★ 171 — Helping you quickly locate the notes in your mind in the easiest way, without the need for complex search syntax to find relevant content.
+- [namiwang](https://github.com/namiwang/fiber-note) — ★ 171 — A networked note-taking app, open and self-hosted, inspired by roam-research, obsidian and others.
+- [dream-num](https://github.com/dream-num/obsidian-univer) — ★ 171 — Create, edit, and view spreadsheets and documents in various formats like Excel and Word directly within your knowledge base.
+- [appautomaton](https://github.com/appautomaton/document-SKILLs) — ★ 170 — Claude Code and Codex SKILLs for PDF, Excel, Word, and PowerPoint manipulation — extraction, forms, formulas, tracked changes, adapted from Anthropic skills.
+- [ToseaAI](https://github.com/ToseaAI/awesome-html-slide-skills) — ★ 169 — A curated list of HTML slide generation skills and template libraries for Claude Code, Codex, Cursor, OpenClaw, and Hermes. ?? HTML ???? Skill ?????
+- [dsebastien](https://github.com/dsebastien/obsidian-dataview-serializer) — ★ 167 — Obsidian plugin that gives you the power of Dataview, but generates Markdown, making it compatible with Obsidian Publish, and making the links appear on the ...
+- [benoror](https://github.com/benoror/obsidianos_work) — ★ 165 — ObsidianOS - Work Vault
+- [eightHundreds](https://github.com/eightHundreds/obsidian-dida-sync) — ★ 164 — 滴答清单同步到obsidian(ticktick sync to obsidian)
+- [jhofker](https://github.com/jhofker/obsidian-hoarder) — ★ 164 — An Obsidian.md community plugin that allows syncing with https://karakeep.app/
+- [wengzige](https://github.com/wengzige/html-deck-editor) — ★ 163 — Anchor Deck: local-first HTML presentation editor for converting AI-generated slides into editable HTML decks
+- [mnaoumov](https://github.com/mnaoumov/obsidian-custom-attachment-location) — ★ 163 — Customize attachment location with variables($filename, $data, etc) like Typora.
+- [tallguyjenks](https://github.com/tallguyjenks/Obsidian-For-Business) — ★ 161 — Using Obsidian.... For Business!
+- [aitorllj93](https://github.com/aitorllj93/obsidian-lovely-bases) — ★ 159 — Beautiful, visual bases views for Obsidian
+- [chaitanyabsprip](https://github.com/chaitanyabsprip/present.nvim) — ★ 158 — Presentation plugin for neovim written in lua
+- [notoriouslab](https://github.com/notoriouslab/vault-curate) — ★ 158 — Find, connect, rediscover your notes — a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths f...
+- [gasparschott](https://github.com/gasparschott/obsidian-continuous-mode) — ★ 158 — Displays all open notes in a tab group as if they were a continuous scrollable document (similar to Scrivener’s "Scrivenings mode"). Open all notes in Contin...
+- [ozntel](https://github.com/ozntel/file-explorer-note-count) — ★ 157 — Obsidian Plugin for viewing the number of elements under each folder within the file explorer
+- [psinetron](https://github.com/psinetron/echoes-vault-opencode) — ★ 157 — Persistent memory plugin for OpenCode. Obsidian-style knowledge base that survives across sessions
+- [Azhi-ss](https://github.com/Azhi-ss/academic-figure-skills) — ★ 156 — 三个 skill 画论文图：fig-analyze 看材料，fig-draw 先看 6 种风格再出图。交付后询问要不要做成可编辑 PPT，同意后 fig-pptx 才做。npx skills add Azhi-ss/academic-figure-skills
+- [proflead](https://github.com/proflead/obsidian-sync) — ★ 156 — Sync Obsidian Notes COMPLETELY Free Across Devices
+- [jrgilbertson](https://github.com/jrgilbertson/networked-thinking) — ★ 156 — An Obsidian companion vault for putting Networked Thinking into practice, with the notes, templates, and folder structure from the book.
+- [HiDeoo](https://github.com/HiDeoo/starlight-obsidian) — ★ 156 — Starlight plugin to publish Obsidian vaults
+- [somesanity](https://github.com/somesanity/draw-io-obsidian) — ★ 155 — A plugin for Obsidian that integrates the draw.io editor into Obsidian.
+- [bandantonio](https://github.com/bandantonio/obsidian-apple-books-highlights-plugin) — ★ 155 — ⚡️Fastest Apple Books highlights importer to Obsidian 🗄️ The only one protecting your own reflections across imports 🎨 Fully customizable
+- [chrisgrieser](https://github.com/chrisgrieser/obsidian-theme-design-utilities) — ★ 155 — Some utilities and Quality-of-Life features for designers of Obsidian themes.
+- [xiwcx](https://github.com/xiwcx/obsidian-bases-kanban) — ★ 154 — A kanban-style drag-and-drop custom view for Obsidian Bases that allows you to organize your notes into columns based on any property.
+- [natelandau](https://github.com/natelandau/obsidian-metadata) — ★ 154 — Batch updates to metadata in an Obsidian vault
+- [marcjulianschwarz](https://github.com/marcjulianschwarz/obsidian-raycast) — ★ 154 — Raycast extension with commands for the note taking app Obsidian.
+- [Trikzon](https://github.com/Trikzon/obsidian-web-browser) — ★ 154 — An Obsidian plugin that lets you browse the web within Obsidian.
+- [dimonier](https://github.com/dimonier/tg2obsidian) — ★ 154 — This bot pulls new messages from a Telegram chat or group and puts them into Obsidian vault on a local machine
+- [markdown-confluence](https://github.com/markdown-confluence/obsidian-integration) — ★ 153 — Sync / Publish Obsidian Notes to Confluence
+- [code-on-sunday](https://github.com/code-on-sunday/slide-deck-generator) — ★ 152 — AI skill for coding agents that creates production-ready, browser-based presentation slide decks using React + Vite + Framer Motion
+- [reveal](https://github.com/reveal/multiplex) — ★ 152 — The reveal.js Multiplex Plugin
+- [Falcion](https://github.com/Falcion/UNITADE.md) — ★ 151 — A plugin for note-taking app Obsidian which allows you to treat any file extension as markdown note-file
+- [arnau](https://github.com/arnau/obsidian-metatable) — ★ 150 — An Obsidian plugin to display the frontmatter section as a fully expanded table.
+- [bgarciamoura](https://github.com/bgarciamoura/obsidian-notion-bases-plugin) — ★ 149 — Turn any folder into a Notion-style database — 7 views, 17 column types, formulas, relations, rollups, and subtasks. All stored in plain Markdown frontmatter.
+- [campfirium](https://github.com/campfirium/obsidian-tile-line-base) — ★ 149 — The Native Plain-Text Database for Obsidian. Build Tables, Kanban, and Slides with Zero Frontmatter.
+- [psimaker](https://github.com/psimaker/vaultsync) — ★ 149 — Self-hosted Obsidian vault sync for iOS — powered by Syncthing.
+- [cuken](https://github.com/cuken/obsidian-weave) — ★ 149 — Obsidian Vault Template for Software Developers/Managers working in the corporate world.
+- [mnaoumov](https://github.com/mnaoumov/obsidian-codescript-toolkit) — ★ 149 — Plugin for Obsidian that allows to do a lot of things with JavaScript/TypeScript scripts from inside the Obsidian itself
+- [sunkeke-ai](https://github.com/sunkeke-ai/Life-Compass-Obsidian-CN) — ★ 148 — Compass 的非官方简体中文本地化；原项目由 Daniel Agrici（@AgriciDaniel）创建。
+- [h-sphere](https://github.com/h-sphere/sql-seal) — ★ 148 — Query your files using SQL directly from your Obsidian Vault
+- [BBazard](https://github.com/BBazard/obsidian-orgmode-cm6) — ★ 147 — Orgmode plugin for Obsidian
+- [Chaoses-Ib](https://github.com/Chaoses-Ib/ObsidianShell) — ★ 147 — Associate Markdown files with Obsidian
+- [TrshPuppy](https://github.com/TrshPuppy/obsidian-notes) — ★ 147 — All of my personal notes on topics including Hacking, Coding, Math, Data-Structures, and more! Open to all for use!
+- [Sanqui](https://github.com/Sanqui/obsidian-persistent-graph) — ★ 147 — An Obsidian plugin for saving and restoring the positions of nodes on the global graph view
+- [MehmetGoekce](https://github.com/MehmetGoekce/llm-wiki) — ★ 147 — Build Karpathy's LLM Wiki with Claude Code. L1/L2 cache architecture. Logseq + Obsidian support.
+- [marcjulianschwarz](https://github.com/marcjulianschwarz/obsidian-file-link) — ★ 146 — A plugin for the note taking app Obsidian to add better external file links to your notes.
+- [Enveloppe](https://github.com/Enveloppe/mkdocs-publisher-template) — ★ 146 — The template for Obsidian Mkdocs Publisher, a free obsidian publish alternative throught Mkdocs.
+- [nicojeske](https://github.com/nicojeske/mousewheel-image-zoom) — ★ 145 — An Obsidian plugin that enables you to increase/decrease the size of an image by holding down a configurable key (defaults to left alt), hovering over an ima...
+- [rpggio](https://github.com/rpggio/obsidian-chat-stream) — ★ 145 — Obsidian canvas plugin for using AI completion with threads of canvas nodes
+- [Developer-Mike](https://github.com/Developer-Mike/obsidian-docxer) — ★ 144 — 🚀 Boost your productivity by previewing and converting Word files easily to markdown.
+- [konodyuk](https://github.com/konodyuk/obsidian-typing) — ★ 143 — Programmatic customizations for groups of notes
+- [DuckTapeKiller](https://github.com/DuckTapeKiller/obsidian-aubade) — ★ 143 — A retro-brutalist theme prioritising strict geometry, high contrast, and tactile interactions.
+- [tomzorz](https://github.com/tomzorz/obsidian-link-archive) — ★ 142 — Link Archive plugin for Obsidian
+- [karfekr](https://github.com/karfekr/obsidian-persian-calendar) — ★ 141 — This plugin adds the Solar-Hijri(Jalali) calendar to Obsidian, offering Iranian users a more pleasant journaling experience.
+- [tbfisher](https://github.com/tbfisher/sublimetext-Pandoc) — ★ 140 — A Sublime Text plugin that uses Pandoc to convert text from one markup format into another. Pandoc can convert documents in markdown, reStructuredText, texti...
+- [kepano](https://github.com/kepano/obsidian-minimal-publish) — ★ 139 — Minimal Theme for Obsidian Publish
+- [noonesimg](https://github.com/noonesimg/obsidian-audio-player) — ★ 139 — audio player plugin with bookmarks for Obsidian.md
+- [hadynz](https://github.com/hadynz/obsidian-sidekick) — ★ 138 — A companion to identify hidden connections that match your tags and pages
+- [cristianvasquez](https://github.com/cristianvasquez/obsidian-prettify) — ★ 137 — A markdown prettifier for obsidian
+- [drshahizan](https://github.com/drshahizan/obsidian) — ★ 137 — Obsidian.md stands out as an exceptional note-taking application tailored specifically for academic writing. This repository is part of the activities for th...
+- [stormyark](https://github.com/stormyark/Obsidian-Vault) — ★ 137 — A Template for my Obsidian Vault.
+- [avirut](https://github.com/avirut/obsidian-metatemplates) — ★ 135 — Take advantage of YAML front-matter in generating notes from templates (for obsidian.md)
+- [rafaelveiga](https://github.com/rafaelveiga/obsidian-widgets) — ★ 134 — Add cool widgets to your notes or your dashboard in Obsidian
+- [dracula](https://github.com/dracula/obsidian) — ★ 133 — 🧛🏻‍♂️ Dark theme for Obsidian
+- [Kuneosu](https://github.com/Kuneosu/make-slide) — ★ 132 — Universal AI skill for generating standalone HTML slide decks
+- [noname-oni](https://github.com/noname-oni/obsidian-keyboard-analyzer) — ★ 132 — Obsidian plugin to display command hotkeys on a visible keyboard layout
+- [ParthSareen](https://github.com/ParthSareen/obsidian-rag) — ★ 131 — Talk to your Obsidian notes!
+- [rien7](https://github.com/rien7/obsidian-colorful-tag) — ★ 130 — Make your tag more beautiful and powerful!
+- [addozhang](https://github.com/addozhang/obsidian-image-upload-toolkit) — ★ 130 — An obsidian plugin for uploading local images embedded in markdown to remote store and export markdown for publishing to static site.
+- [blue-pho3nix](https://github.com/blue-pho3nix/pentesting_templates_obsidian) — ★ 130 — Obsidian Templates for OSCP, CPTS, and Training labs
+- [ebullient](https://github.com/ebullient/obsidian-snippetor) — ★ 129 — An assist for creating CSS snippets for Obsidian
+- [Acylation](https://github.com/Acylation/obsidian-chem) — ★ 129 — Chemistry support for Obsidian. Rendering SMILES strings into chemistry structures.
+- [Amine-LG](https://github.com/Amine-LG/Obsidian-Text-Transformer-LocalAI) — ★ 129 — Transform your .txt and .md notes into visually appealing and well-structured Markdown for Obsidian, powered by local LLMs using Ollama.
+- [Martinomagnifico](https://github.com/Martinomagnifico/reveal.js-appearance) — ★ 127 — An animation plugin for Reveal.js that animates elements sequentially like in Powerpoint. Perfect for online portfolios or other presentations with images.
+- [CreArts-Community](https://github.com/CreArts-Community/CreArts-Obsidian-Vault) — ★ 127 — Obsidian Vault | v1.1.0 | by Corellan
+- [qawatake](https://github.com/qawatake/obsidian-core-search-assistant-plugin) — ★ 126 — An Obsidian plugin to enhance built-in search: keyboard interface, card preview, bigger preview
+- [4Source](https://github.com/4Source/settings-profiles-obsidian-plugin) — ★ 126 — This is a plugin for Obsidian (https://obsidian.md). Allows you to create various global settings profiles. You can sync them between different vaults. To ke...
+- [MariosGkMeng](https://github.com/MariosGkMeng/Straightforward-Obsidian2Latex) — ★ 126 — A complete converter from Obsidian to Latex, which unfolds embedded notes (write your scientific papers in Obsidian --> print to LateX)
+- [ecarrara](https://github.com/ecarrara/obsidian-garden) — ★ 123 — Transform Obsidian Vault's notes into web pages. Converts your markdown notes, created in Obsidian, into fully functional site, ready for deployment.
+- [Vasallo94](https://github.com/Vasallo94/ObsidianRAG) — ★ 123 — Ask questions about your Obsidian notes using local AI. Privacy-first RAG with Ollama, LM Studio, or any OpenAI-compatible server. Obsidian plugin + Docker +...
+- [joethei](https://github.com/joethei/obsidian-tts) — ★ 123 — Text to speech for Obsidian. Hear your notes.
+- [MetaCorp](https://github.com/MetaCorp/obsidian-augmented-canvas) — ★ 123 — Supercharge your Obsidian canvas experience with AI features.
+- [mathe00](https://github.com/mathe00/obsidian-plugin-python-bridge) — ★ 122 — Develop Obsidian plugins in Python! 🐍 Interact with your notes, retrieve frontmatter, send notifications, and much more – all through simple Python scripts. ...
+- [pourmand1376](https://github.com/pourmand1376/obsidian-custom-font) — ★ 122 — A plugin to set custom font for obsidian
+- [HEmile](https://github.com/HEmile/obsidian-search-on-internet) — ★ 122 — Add context menu items in Obsidian to search the internet.
+- [A-F-V](https://github.com/A-F-V/obsidian-arcana) — ★ 122 — Supercharge your Obsidian note-taking through AI-powered insights and suggestions
+- [software-ai-life](https://github.com/software-ai-life/Awesome-PPT-Design-Skills) — ★ 121 — Agent-agnostic PPT design skills for creating high-end, editable presentation styles.
+- [perkinsben](https://github.com/perkinsben/obs_tools) — ★ 121 — Various python tools/scripts to work with Obsidian data
+- [DrLeucine](https://github.com/DrLeucine/obsidian-pandoc-templates) — ★ 121 — A repository for pandoc templates. Geared for Obsidian.
+- [johansan](https://github.com/johansan/obsidian-featured-image) — ★ 121 — Obsidian plugin to automatically set a featured image property in your notes based on the first image, YouTube link, or Auto Card Link image found in your do...
+- [cassidoo](https://github.com/cassidoo/cardstock) — ★ 120 — A clean Obsidian theme
+- [RamXX](https://github.com/RamXX/zettelvault) — ★ 119 — Transform an Obsidian vault into PARA + Zettelkasten structure using DSPy and RLM
+- [rknastenka](https://github.com/rknastenka/obsidian-mini-notes) — ★ 119 — Your quick thoughts, beautifully displayed, with a Google Keep-style colorful card-based view.
+- [radekkozak](https://github.com/radekkozak/discordian) — ★ 119 — Obsidian dark theme inspired by Discord
+- [takeshy](https://github.com/takeshy/obsidian-gemini-helper) — ★ 118 — AI chat, workflow automation, semantic search (RAG), LLM Wiki (OKF)  powered by Google Gemini. Works on both desktop and mobile.
+- [inokawa](https://github.com/inokawa/remark-docx) — ★ 117 — remark plugin to compile markdown to docx (Microsoft Word, Office Open XML).
+- [rcvd](https://github.com/rcvd/obsidian_ia) — ★ 117 — A clean and minimal theme for obsidian, heavily inspired by iA Writer.
+- [Mara-Li](https://github.com/Mara-Li/Obsidian-Snippet-collection) — ★ 117 — A collection of snippet to customize obsidian
+- [GrimmTheShrimp](https://github.com/GrimmTheShrimp/aw-watcher-obsidian) — ★ 116 — Obsidian plugin to track user activity with ActivityWatch
+- [Hipst3rMusic](https://github.com/Hipst3rMusic/obsidian-third-mind-reader) — ★ 115 — An opinionated EPUB & PDF reader for Obsidian. Read, annotate, and chat with your books. Every highlight stays in your vault as plain markdown, linked back t...
+- [Alt-er](https://github.com/Alt-er/obsidian-sync-share) — ★ 114 — Sync and share (publish) your notes in your own private service.
+- [ellimist-afk](https://github.com/ellimist-afk/handwriting) — ★ 114 — Pen ink on ordinary Markdown notes in Obsidian.
+- [renehernandez](https://github.com/renehernandez/obsidian-readwise) — ★ 114 — Sync Readwise highlights into your obsidian vault
+- [SuperChamp234](https://github.com/SuperChamp234/habitica-sync) — ★ 113 — This is a under-development Obsidian Plugin for Habitica
+- [bnjmnt4n](https://github.com/bnjmnt4n/reveal-code-focus) — ★ 112 — A Reveal.js plugin that allows focusing on specific lines of code blocks.
+- [timrogers](https://github.com/timrogers/obsidian-share-as-gist) — ★ 112 — An Obsidian (https://obsidian.md/) plugin for sharing your notes as a GitHub gist - either privately or publicly.
+- [sotte](https://github.com/sotte/presenting.nvim) — ★ 110 — presenting.nvim is a neovim plugin that turns your markup files into slides (in neovim).
+- [k4a-l](https://github.com/k4a-l/obsidian-heading-shifter) — ★ 110 — Easily Shift and Change markdown headings.
+- [obsidianmd](https://github.com/obsidianmd/eslint-plugin) — ★ 110 — Check your Obsidian plugin against the official developer guidelines.
+- [Natumsol](https://github.com/Natumsol/obsidian-pangu) — ★ 109 — 为 Obsidian 笔记加上「盘古之白」，排版强迫症者的福音。 | A small plugin aims to add space between Chinese Characters and English Alphabet, and it is a boon for typographically com...
+- [hunter-ji](https://github.com/hunter-ji/obsidian-easy-tracker) — ★ 109 — An Obsidian plugin for ultra-simple goal and habit tracking in any note.
+- [MichelNivard](https://github.com/MichelNivard/Ridian) — ★ 109 — This is Ridian: R in Obsidian
+- [officecli](https://github.com/officecli/officecli) — ★ 108 — OfficeCLI is AI document generation CLI for PPTX, DOCX, XLSX, Reports, and Images. Generate editable Office files from prompts with npm install, hosted trial...
+- [joybro](https://github.com/joybro/obsidian-similar-notes) — ★ 108 — —
+- [mnaoumov](https://github.com/mnaoumov/obsidian-dev-utils) — ★ 108 — Collection of essential functions and CLI tools designed to streamline your Obsidian plugin development process
+- [Vaccarini-Lorenzo](https://github.com/Vaccarini-Lorenzo/MagicCalendar) — ★ 108 — An obsidian plugin that exploit a natural language processing engine to find potential events and sync them with iCalendar
+- [aitorllj93](https://github.com/aitorllj93/astro-loader-obsidian) — ★ 108 — Easily integrate your markdown notes, assets, and internal links into your Astro site with minimal setup.
+- [drpwchen](https://github.com/drpwchen/lecture-to-notes) — ★ 108 — Lecture recordings → structured grounded notes + a synced HTML viewer: video, timestamped transcript and curated summary on one page. Local GPU pipeline (Whi...
+- [iros](https://github.com/iros/deck.js-codemirror) — ★ 107 — CodeMirror extension for deck.js
+- [jdpolasky](https://github.com/jdpolasky/ai-chief-of-staff) — ★ 107 — The original AI Chief of Staff built on Claude Code and Obsidian. ADHD prosthetic, open to anyone. Superseded by chief-of-staff-2.
+- [tingmelvin](https://github.com/tingmelvin/willemstad-x) — ★ 107 — A fully-fledged Obsidian.md theme, evolved from the original theme variant for Chris Grieser (pseudometa)'s theme Shimmering Focus
+- [GeorgioWan](https://github.com/GeorgioWan/Oi) — ★ 106 — A WYSIWYG Editor to create slides in impress.js.
+- [byteclubfr](https://github.com/byteclubfr/uncloak) — ★ 106 — A live theme editor for reveal.js (colors, font, sizes...)
+- [NomarCub](https://github.com/NomarCub/obsidian-copy-url-in-preview) — ★ 106 — Image Context Menus - Obsidian.md image context menus: copy, open in default app, show in system explorer, reveal in navigation context menu. Also Open PDF e...
+- [armourinfosec](https://github.com/armourinfosec/Enterprise-Windows-Infrastructure-Security) — ★ 106 — An Obsidian-based knowledge base for Windows Server administration and defensive hardening.
+- [iurykrieger](https://github.com/iurykrieger/claude-bedrock) — ★ 106 — Second Brain automation for Obsidian vaults — entity management, ingestion, compression, and sync via Claude Code skills
+- [duanxianpi](https://github.com/duanxianpi/obsidian-zotero-reader-plugin) — ★ 106 — Read and annotate PDFs/EPUB/HTML inside Obsidian with awesome Zotero Reader!
+- [lynchjames](https://github.com/lynchjames/obsidian-writing-goals) — ★ 106 — Set yourself dynamic writing goals for notes and folders to help you hit your long form writing targets with Obsidian.
+- [husjon](https://github.com/husjon/obsidian-file-cleaner-redux) — ★ 105 — A plugin for Obsidian to help clean up files in your vault
+- [thor314](https://github.com/thor314/obsidian-setup) — ★ 105 — The best resource you will ever find for getting started with Obsidian, probably
+- [AndrewRao114](https://github.com/AndrewRao114/vault-activity-heatmap) — ★ 105 — Cross-device Obsidian activity heatmap with mobile tasks, edit timelines, AI summaries, and customizable panel themes
+- [victorb](https://github.com/victorb/obsidian-wielder) — ★ 105 — Clojure inside your Obsidian documents!
+- [KIRVO-REPORTING](https://github.com/KIRVO-REPORTING/video-to-notes) — ★ 104 — Local-first video-to-notes CLI for YouTube/Bilibili transcripts, Whisper fallback, timestamped AI summaries, and Notion/Obsidian export.
+- [agentopology](https://github.com/agentopology/agentopology) — ★ 104 — Harness as code — the Terraform for AI agents. Define your agent team AND its memory once, deploy to Claude Code, OpenClaw, Cursor, Codex, Gemini, Copilot, K...
+- [JuckZ](https://github.com/JuckZ/awesome-brain-manager) — ★ 104 — A plugin that tries to solve all the trivial problems most people usually encountered in obsidian. 旨在解决大多数人在Obsidian中遇到的所有琐碎问题
+- [swati1024](https://github.com/swati1024/torrents) — ★ 103 — Skip to content   Search… All gists Back to GitHub Sign in Sign up Instantly share code, notes, and snippets.  @giansalex giansalex/torrent-courses-download-...
+- [Emrie-Candera](https://github.com/Emrie-Candera/Bubble-Space-Theme) — ★ 103 — A theme for https://obsidian.md/ inspired by Bubbles for Light Mode and Outer Space for Dark Mode!
+- [gapmiss](https://github.com/gapmiss/badges) — ★ 103 — A light-weight plugin for displaying inline "badges" in Obsidian.md
+- [WHG555](https://github.com/WHG555/obsidian-docker) — ★ 103 — 在docker中安装了obsidian可以部署在服务器上通过网页进行访问
+- [awaken233](https://github.com/awaken233/wiz2obsidian) — ★ 103 — 使用python将为知笔记中的所有笔记都导出到本地, 转化为纯markdown文本文件.
+- [AndrewKochulab](https://github.com/AndrewKochulab/jarvis-dashboard) — ★ 103 — A modular, fully configurable DataviewJS dashboard for Obsidian — monitor Claude Code sessions in   real-time, manage AI agent fleets, track 30-day analytics...
 
-_(59 repos in this category)_
+_Showing top 500 of 2927 repos in this category — the full list with all 2927 entries is in [`data/repos.json`](data/repos.json)._
 
 ## HTML Slide Frameworks
 
 Browser-based presentation frameworks and runtimes for building slide decks with web tech.
 
-- [hakimel/reveal.js](https://github.com/hakimel/reveal.js) — ★ 72,430 — The HTML Presentation Framework
-- [slidevjs/slidev](https://github.com/slidevjs/slidev) — ★ 49,055 — Presentation Slides for Developers
-- [impress/impress.js](https://github.com/impress/impress.js) — ★ 38,153 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
-- [imakewebthings/deck.js](https://github.com/imakewebthings/deck.js) — ★ 5,416 — Modern HTML Presentations
-- [jonschlinkert/gray-matter](https://github.com/jonschlinkert/gray-matter) — ★ 4,492 — Smarter YAML front matter parser, used by metalsmith, Gatsby, Netlify, Assemble, mapbox-gl, phenomic, vuejs vitepress, TinaCMS, Shopify Polaris, Ant Design, ...
-- [webpro/reveal-md](https://github.com/webpro/reveal-md) — ★ 3,912 — reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file
-- [damianavila/RISE](https://github.com/damianavila/RISE) — ★ 3,735 — RISE: "Live" Reveal.js Jupyter/IPython Slideshow Extension
-- [tantaman/strut](https://github.com/tantaman/strut) — ★ 1,892 — Strut - An Impress.js and Bespoke.js Presentation Editor
-- [yjwen/org-reveal](https://github.com/yjwen/org-reveal) — ★ 1,463 — Exports Org-mode contents to Reveal.js HTML presentation.
-- [MSzturc/obsidian-advanced-slides](https://github.com/MSzturc/obsidian-advanced-slides) — ★ 1,264 — Create markdown-based reveal.js presentations in Obsidian
-- [rajgoel/reveal.js-plugins](https://github.com/rajgoel/reveal.js-plugins) — ★ 816 — Plugins for reveal.js
-- [datitran/jupyter2slides](https://github.com/datitran/jupyter2slides) — ★ 792 — Cloud Native Presentation Slides with Jupyter Notebook + Reveal.js
-- [joshed-io/reveal-hugo](https://github.com/joshed-io/reveal-hugo) — ★ 747 — ??? Create rich HTML-based presentations with Hugo and Reveal.js
-- [harish-io/Impressionist](https://github.com/harish-io/Impressionist) — ★ 706 — Visual tool to create impress.js presentations
-- [willy-vvu/reveal.js](https://github.com/willy-vvu/reveal.js) — ★ 690 — This is what I got when I combined webcam-based gesture recognition with Hakim El Hattab's reveal.js.
-- [MartenBE/mkslides](https://github.com/MartenBE/mkslides) — ★ 481 — Use mkslides to easily turn markdown files into beautiful slides using the power of Reveal.js!
-- [slara/generator-reveal](https://github.com/slara/generator-reveal) — ★ 427 — Yeoman generator for Reveal.js
-- [grantmcdermott/quarto-revealjs-clean](https://github.com/grantmcdermott/quarto-revealjs-clean) — ★ 417 — A minimalist and elegant presentation theme for Quarto Reveal.js
-- [cytoscape/cytoscape-tutorials](https://github.com/cytoscape/cytoscape-tutorials) — ★ 336 — Collection of modular Cytoscape tutorials for online presentation using reveal.js
-- [egonSchiele/mdpress](https://github.com/egonSchiele/mdpress) — ★ 331 — [DEAD] Make impress.js presentations from markdown files.
-- [rstudio/revealjs](https://github.com/rstudio/revealjs) — ★ 329 — R Markdown Format for reveal.js Presentations
-- [zweix123/jyyslide-md](https://github.com/zweix123/jyyslide-md) — ★ 323 — ??Markdown????????????????Web?????(Base on Reveal.js)
-- [asciidoctor/asciidoctor-reveal.js](https://github.com/asciidoctor/asciidoctor-reveal.js) — ★ 314 — :crystal_ball: A reveal.js converter for Asciidoctor and Asciidoctor.js. Write your slides in AsciiDoc!
-- [wshuyi/mindmap2slide](https://github.com/wshuyi/mindmap2slide) — ★ 296 — convert Mindnode Mindmap (textbundle format) to reveal.js slides
-- [denehyg/reveal.js-menu](https://github.com/denehyg/reveal.js-menu) — ★ 288 — Slide out menu for reveal.js
-- [LSTM-Kirigaya/slidev-ai](https://github.com/LSTM-Kirigaya/slidev-ai) — ★ 284 — ai app for slidev
-- [ebullient/obsidian-slides-extended](https://github.com/ebullient/obsidian-slides-extended) — ★ 278 — Create markdown-based reveal.js presentations in Obsidian
-- [slidevjs/slidev-vscode](https://github.com/slidevjs/slidev-vscode) — ★ 256 — VS Code extension for Slidev
-- [adityab/Awwation](https://github.com/adityab/Awwation) — ★ 244 — Prezi clone in HTML5, Js, and SVG. Can use different animation backends, for example impress.js. [I NO LONGER OWN AWWATION.COM]
-- [bmcmurray/hekyll](https://github.com/bmcmurray/hekyll) — ★ 243 — a Jekyll generator for Impress.js presentations
-- [nekomeowww/talks](https://github.com/nekomeowww/talks) — ★ 235 — ????? Public talks I presented historically in VueConf, ViteConf, KubeCon, @DaoCloud, Demo Day, Demo Inn, all built with @slidevjs
-- [slidevjs/themes](https://github.com/slidevjs/themes) — ★ 221 — Official themes for Slidev
-- [LittleSound/talks-template](https://github.com/LittleSound/talks-template) — ★ 218 — Talks of Template, using Slidev
-- [alvarosabu/slidev-theme-penguin](https://github.com/alvarosabu/slidev-theme-penguin) — ★ 217 — A Penguin ??   theme for Slidev
-- [henrikingo/impressionist](https://github.com/henrikingo/impressionist) — ★ 202 — A Visual 3D editor for creating stunning impress.js presentations
-- [JeremyLikness/vanillajs-deck](https://github.com/JeremyLikness/vanillajs-deck) — ★ 200 — A Vanilla.js Single Page App (SPA) slide deck for a presentation about Vanilla.js written with no frameworks.
-- [PlatformRelay/Kubernetes-Workshop](https://github.com/PlatformRelay/Kubernetes-Workshop) — ★ 198 — Free, vendor-neutral, hands-on Kubernetes workshop with 28 modules, a three-day curriculum, standalone labs, Slidev decks and PDF releases.
-- [whoisryosuke/next-mdx-deck](https://github.com/whoisryosuke/next-mdx-deck) — ★ 192 — Presentation decks using MDX, React, and Next.JS
-- [marianoguerra/rst2html5](https://github.com/marianoguerra/rst2html5) — ★ 176 — transform restructuredtext documents to html5 + twitter's bootstrap css, deck.js or reveal.js
-- [leochiu-a/slidev-workspace](https://github.com/leochiu-a/slidev-workspace) — ★ 171 — Slidev Workspace is a specialized command-line tool designed to manage and showcase multiple Slidev presentations.
-- [alexanderdavide/slidev-theme-academic](https://github.com/alexanderdavide/slidev-theme-academic) — ★ 170 — Academic presentations with Slidev made simple ??
-- [gureckis/slidev-theme-neversink](https://github.com/gureckis/slidev-theme-neversink) — ★ 165 — Slidev Theme Neversink
-- [gcalmettes/reveal.js-d3](https://github.com/gcalmettes/reveal.js-d3) — ★ 151 — Full integration of animated javascript-based visualizations (D3, vega-lite, semiotic, etc ...) into Reveal.js presentations
-- [ryanj/gist-reveal](https://github.com/ryanj/gist-reveal) — ★ 148 — Gist-powered reveal.js presentations
-- [zcag/tahta](https://github.com/zcag/tahta) — ★ 142 — A pristine, themeable design system for Slidev  switch the entire visual style (type, shape, texture, palette) with one line.
-- [tbfisher/sublimetext-Pandoc](https://github.com/tbfisher/sublimetext-Pandoc) — ★ 140 — A Sublime Text plugin that uses Pandoc to convert text from one markup format into another. Pandoc can convert documents in markdown, reStructuredText, texti...
-- [regebro/impress-console](https://github.com/regebro/impress-console) — ★ 133 — Speaker notes for impress.js
-- [slidevjs/docs](https://github.com/slidevjs/docs) — ★ 121 — [Mirrored] Documentation for Slidev
-- [GeorgioWan/react-impressjs](https://github.com/GeorgioWan/react-impressjs) — ★ 116 — Making an awesome presentations easy with React
-- [nico-bachner/slidev-theme-geist](https://github.com/nico-bachner/slidev-theme-geist) — ★ 116 — The Vercel theme for Slidev
-- [cubewebsites/Impress.js-Tutorial](https://github.com/cubewebsites/Impress.js-Tutorial) — ★ 114 — An online tutorial for Impress.js
-- [nttmdlab-nlp/SlideVQA](https://github.com/nttmdlab-nlp/SlideVQA) — ★ 107 — SlideVQA: A Dataset for Document Visual Question Answering on Multiple Images (AAAI2023)
-- [iros/deck.js-codemirror](https://github.com/iros/deck.js-codemirror) — ★ 107 — CodeMirror extension for deck.js
-- [GeorgioWan/Oi](https://github.com/GeorgioWan/Oi) — ★ 106 — A WYSIWYG Editor to create slides in impress.js.
-- [slideshow-templates/slideshow-impress.js](https://github.com/slideshow-templates/slideshow-impress.js) — ★ 100 — impress.js - Slide Show (S9) Template Pack
-- [whitphx/slidev-addon-fancy-arrow](https://github.com/whitphx/slidev-addon-fancy-arrow) — ★ 94 — Arrows with fancy styles and intuitive positioning for Slidev.
-- [edjafarov/remote-impress](https://github.com/edjafarov/remote-impress) — ★ 88 — This is remote Impress.js and Deck.js presentation controller. Allows to use phone for switching slides.
-- [codepen/slideVars](https://github.com/codepen/slideVars) — ★ 87 — UI for Updating CSS Custom Properties
-- [yoshiki/markdown2impress](https://github.com/yoshiki/markdown2impress) — ★ 87 — markdown2impress is script to convert markdown into presentation using impress.js.
-- [bketelsen/slides](https://github.com/bketelsen/slides) — ★ 86 — create, live-preview, edit, and publish reveal.js slide decks
-- [amnotyoung/slide-meme-inserter](https://github.com/amnotyoung/slide-meme-inserter) — ★ 82 — Plan, source, and insert recognizable memes into HTML slide decks for Claude Code and Codex.
-- [Dawntraoz/slidev-theme-unicorn](https://github.com/Dawntraoz/slidev-theme-unicorn) — ★ 80 — A Unicorn theme for Slidev slides based on dawntraoz.com design.
-- [LinusBorg/slidev-theme-vuetiful](https://github.com/LinusBorg/slidev-theme-vuetiful) — ★ 76 — A Slidev Theme for my talks about Vue.js
-- [twitter-archive/cdk](https://github.com/twitter-archive/cdk) — ★ 75 — CDK is a tool to quickly generate single-file html slide presentations from AsciiDoc
-- [iridite/slidev-templates](https://github.com/iridite/slidev-templates) — ★ 74 — ??????? Slidev ????????
-- [MuTsunTsai/slidev-theme-frankfurt](https://github.com/MuTsunTsai/slidev-theme-frankfurt) — ★ 74 — A theme for Slidev, inspired by the Frankfurt theme in Beamer.
-- [n2o/reveal-cljs](https://github.com/n2o/reveal-cljs) — ★ 73 — reveal.js + ClojureScript = Awesome presentations with joy
-- [antfu/slidev-new](https://github.com/antfu/slidev-new) — ★ 73 — Slidev Online, powered by StackBlitz ??
-- [emacsmirror/org-re-reveal](https://github.com/emacsmirror/org-re-reveal) — ★ 72 — Org export to reveal.js presentations
-- [humrochagf/revelation](https://github.com/humrochagf/revelation) — ★ 71 — Make awesome reveal.js presentations with revelation :sparkler:
-- [mcanouil/quarto-revealjs-coeos](https://github.com/mcanouil/quarto-revealjs-coeos) — ★ 70 — Quarto reveal.js template extension.
-- [rsarver/stella-decks](https://github.com/rsarver/stella-decks) — ★ 69 — HTML slide deck system with design system, viewer, and PDF export. AI-native via Claude Code.
-- [estruyf/slidev-theme-the-unnamed](https://github.com/estruyf/slidev-theme-the-unnamed) — ★ 69 — Slidev Theme - The unnamed
-- [lightvue/slidev-theme-light-icons](https://github.com/lightvue/slidev-theme-light-icons) — ★ 67 — A light and Elegant theme for Slidev
-- [beatrizmilz/quarto-rladies-theme](https://github.com/beatrizmilz/quarto-rladies-theme) — ★ 63 — R-Ladies template for Quarto presentations with reveal.js
-- [jimmyjacobson/swot](https://github.com/jimmyjacobson/swot) — ★ 57 — Reveal.JS presentation for SWOT class
-- [wmh/circular-slides-generator](https://github.com/wmh/circular-slides-generator) — ★ 56 — Generates circular slides for impress.js presentations.
-- [imakewebthings/deck2pdf](https://github.com/imakewebthings/deck2pdf) — ★ 55 — What it says on the tin. deck.js -> pdf
-- [tell-k/sphinxjp.themes.revealjs](https://github.com/tell-k/sphinxjp.themes.revealjs) — ★ 55 — A sphinx theme for generate reveal.js presentation. #sphinxjp
-- [bouzidanas/react-reveal-slides](https://github.com/bouzidanas/react-reveal-slides) — ★ 53 — Create and add reveal.js presentations in react
-- [xarvh/elm-slides](https://github.com/xarvh/elm-slides) — ★ 53 — Awesome presentation framework to create your slides in Elm.
-- [shameerc/Revealer.js](https://github.com/shameerc/Revealer.js) — ★ 51 — Multi-user Reveal.js presentations.
-- [seacen/deckify](https://github.com/seacen/deckify) — ★ 49 — URL to HTML slide design system that genuinely enables AI-native slides for real work environments
-- [regisb/reveal.js-fullscreen-img](https://github.com/regisb/reveal.js-fullscreen-img) — ★ 48 — [DEPRECATED] Display gorgeous fullscreen images in reveal.js presentations
-- [hexmode/ox-reveal](https://github.com/hexmode/ox-reveal) — ★ 46 — Reveal.js Presentation Back-End for Org Export Engine
-- [m42e/impress.js-progress](https://github.com/m42e/impress.js-progress) — ★ 46 — Progressbar and pagexounter for impress.js presentation
-- [frederickf/presentable](https://github.com/frederickf/presentable) — ★ 45 — Adds a table of contents to HTML based presentations including reveal.js, html5slides, io-2012-slide, Shower and impress.js
-- [pheymann/scala-reveal-js](https://github.com/pheymann/scala-reveal-js) — ★ 45 — Build reveal.js presentations in Scala
-- [superwf/vue-impress](https://github.com/superwf/vue-impress) — ★ 45 — vue component inspired by impress.js
-- [patrick-fu/frontend-harness-slides](https://github.com/patrick-fu/frontend-harness-slides) — ★ 44 — Build slide decks as a harness-guarded engineering project  robust, maintainable, and hard to break. A step up from single-file HTML slides.
-- [EmilHvitfeldt/quarto-revealjs-letterbox](https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox) — ★ 44 — A Quarto reveal.js theme based on xaringan letterbox
-- [ulf/markdown2deckjs](https://github.com/ulf/markdown2deckjs) — ★ 44 — Create beautiful deck.js slides directly from markdown text
-- [slara/generator-impress](https://github.com/slara/generator-impress) — ★ 44 — A Yeoman generator for the breathtaking Impress.js presentation framework.
-- [wuhaoyupku/html-mender](https://github.com/wuhaoyupku/html-mender) — ★ 43 — HTML Slide Mender helps you visually edit HTML slide decks and AI-generated presentation pages.
-- [imvanessali/HTML-Slides-Editor](https://github.com/imvanessali/HTML-Slides-Editor) — ★ 41 — Edit HTML slides with ease. Edit text freely. Drag and drop to replace an image.
-- [teone/reveal.js-diagram-plugin](https://github.com/teone/reveal.js-diagram-plugin) — ★ 40 — A plugin to add diagrams to a reveal.js presentation
-- [fbedussi/reveal-js-editor](https://github.com/fbedussi/reveal-js-editor) — ★ 39 — A cross platform editor (build upon the electron framework) to author reveal.js presentation in markdown.
-- [houqp/asciidoc-deckjs](https://github.com/houqp/asciidoc-deckjs) — ★ 39 — A deck.js backend for asciidoc
-- [alleyinteractive/revealjs-wp-theme](https://github.com/alleyinteractive/revealjs-wp-theme) — ★ 38 — Power your reveal.js presentation with WordPress
-- [cliffe/AwesomeSlides](https://github.com/cliffe/AwesomeSlides) — ★ 36 — AwesomeSlides makes awesome HTML5/CSS slides (based on Reveal.js) by converting slides made with LibreOffice.
-- [danielsimons1/impress-audio](https://github.com/danielsimons1/impress-audio) — ★ 36 — Small addition to impress.js to allow for html5 audio in your presentation
-- [nikku/pfwr](https://github.com/nikku/pfwr) — ★ 35 — Turns your Markdown file into a beautiful HTML slide deck. Batteries included.
-- [EmilHvitfeldt/quarto-revealjs-earth](https://github.com/EmilHvitfeldt/quarto-revealjs-earth) — ★ 34 — Watercolor earth Quarto reveal.js theme
-- [zhangrongchuan/slideleaf](https://github.com/zhangrongchuan/slideleaf) — ★ 32 — AI-native HTML slide studio for generating, editing, and collaborating on presentation workspaces.
-- [mcanouil/quarto-revealjs-spotlight](https://github.com/mcanouil/quarto-revealjs-spotlight) — ★ 30 — A Quarto extension for Reveal.js allowing to highlight the current mouse position with a spotlight.
-- [ThomasWeinert/reveal-embed-video](https://github.com/ThomasWeinert/reveal-embed-video) — ★ 30 — Embed live local media (including video) into a reveal.js presentation
-- [ThomasR/minislides](https://github.com/ThomasR/minislides) — ★ 29 — The minimal HTML slide presentation framework
-- [theno/revealjs_template](https://github.com/theno/revealjs_template) — ★ 29 — reveal.js presentation written in markdown
-- [jschildgen/reveal.js-poll-plugin](https://github.com/jschildgen/reveal.js-poll-plugin) — ★ 29 — Plugin for embedding polls / quizzes into reveal.js presentations
-- [silentbicycle/markdown_to_reveal](https://github.com/silentbicycle/markdown_to_reveal) — ★ 27 — minimal plumbing to convert slides in markdown to reveal.js presentations via pandoc
-- [georgeOsdDev/slidepad](https://github.com/georgeOsdDev/slidepad) — ★ 26 — HTML Slide Generator.
-- [sukima/tiddlywiki-reveal-js](https://github.com/sukima/tiddlywiki-reveal-js) — ★ 25 — Embed Reveal.js presentations inside a TiddlyWiki
-- [mattdark/reveal.js-gallery](https://github.com/mattdark/reveal.js-gallery) — ★ 25 — A gallery for your reveal.js presentations
-- [dime-worldbank/quarto-dime-theme](https://github.com/dime-worldbank/quarto-dime-theme) — ★ 24 — DIME theme for Quarto Reveal.js Presentations
-- [Design-Arena/html-to-pptx](https://github.com/Design-Arena/html-to-pptx) — ★ 24 — Convert HTML slide decks to editable PowerPoint files using browser-based DOM measurement
-- [tavallaie/pyreveal](https://github.com/tavallaie/pyreveal) — ★ 24 — PyReveal is a Python library that allows users to generate Reveal.js presentations programmatically. With PyReveal, you can easily create slides, set themes,...
-- [awgreenblatt/reveal-shaders](https://github.com/awgreenblatt/reveal-shaders) — ★ 23 — Reveal.js presentation using CSS Shaders for transitions
-- [sunu/reveal-editor](https://github.com/sunu/reveal-editor) — ★ 23 — web based graphical editor to make reveal.js presentations. (abandoned prototype)
-- [jinnyjiinlee/presenter-mode](https://github.com/jinnyjiinlee/presenter-mode) — ★ 22 — PowerPoint-grade presenter view for HTML slide decks  speaker notes, timer, ink, area zoom, break screen. One file, no install, works offline. (HTML ????? ??...
-- [carlosfrodrigues/silkscreen](https://github.com/carlosfrodrigues/silkscreen) — ★ 21 — Generate FullPage HTML slides with Markdown
-- [shkumagai/sphinxjp.themes.impressjs](https://github.com/shkumagai/sphinxjp.themes.impressjs) — ★ 20 — HTML Slide Theme package for Sphinx documentation tool.
-- [EmilHvitfeldt/quarto-revealjs-cinco-de-mayo](https://github.com/EmilHvitfeldt/quarto-revealjs-cinco-de-mayo) — ★ 19 — Cinco de Mayo Quarto reveal.js theme
-- [marko-knoebl/rehype-slides](https://github.com/marko-knoebl/rehype-slides) — ★ 18 — unified plugin to create HTML slides (usually from markdown)
-- [d28b/html-slides](https://github.com/d28b/html-slides) — ★ 16 — HTML Presentation Slides
-- [javier-mora/pptx-to-html](https://github.com/javier-mora/pptx-to-html) — ★ 15 — Converts PPTX presentations into self-contained HTML slides using TypeScript.
-- [adamhollett/jekyll-and-slide](https://github.com/adamhollett/jekyll-and-slide) — ★ 15 — Markdown slides in Jekyll with reveal.js
-- [Honghurumeng/oc_sdk_ppt](https://github.com/Honghurumeng/oc_sdk_ppt) — ★ 14 — ?? PPT ?? Agent:??????????,??? @opencode-ai/sdk ?? LLM ????????,??? HTML slides,?????? deck.pptx?
-- [chrisdavies/markdown-slides](https://github.com/chrisdavies/markdown-slides) — ★ 14 — A chrome extension to make remark easier to use on any markdown file on the web...
-- [ungoldman/jekyll-reveal](https://github.com/ungoldman/jekyll-reveal) — ★ 13 — markdown ? slides (reveal.js) ? gh-pages (jekyll)
-- [jronallo/starterdeck-node](https://github.com/jronallo/starterdeck-node) — ★ 13 — HTML slide deck with audience synced handouts
-- [lqdev/RemarkFS](https://github.com/lqdev/RemarkFS) — ★ 11 — F# Markdown Slide Creation Tool based on Remark
-- [nlj626/html-to-pptx](https://github.com/nlj626/html-to-pptx) — ★ 8 — ? html-ppt ??? HTML ????????? PPTX / Convert html-ppt HTML presentations to PPTX in one click
-- [kyleabeauchamp/copied-io-2013-slides](https://github.com/kyleabeauchamp/copied-io-2013-slides) — ★ 6 — Personal modifications to Google IO 2013 HTML slide generator
-- [studentkittens/pandoc-revealjs-presentation](https://github.com/studentkittens/pandoc-revealjs-presentation) — ★ 4 — Some presentation about Docker that I've done in reveal.js + pandoc
-- [yohhaan/pandoc-reveal.js-slides](https://github.com/yohhaan/pandoc-reveal.js-slides) — ★ 4 — My setup to create slide decks with pandoc and reveal.js
-- [jjc54/posit_2024_quarto_presentation](https://github.com/jjc54/posit_2024_quarto_presentation) — ★ 4 — Full markdown, resources, and HTML presentation for my talk from posit::conf 2024!
-- [karol-f/ShapeMyPresentation](https://github.com/karol-f/ShapeMyPresentation) — ★ 3 — Awesome presentation with Shape Shifter and Reveal.js
-- [infologie/md-pandoc-reveal](https://github.com/infologie/md-pandoc-reveal) — ★ 3 — Tutoriel pour fabriquer des prsentations HTML Reveal.js avec Markdown et Pandoc.
-- [era7bio/pandoc-revealjs-slides](https://github.com/era7bio/pandoc-revealjs-slides) — ★ 3 — A template for creating slides with pandoc markdown and reveal.js
-- [m2ci-msp/gradle-pandoc-reveal-plugin](https://github.com/m2ci-msp/gradle-pandoc-reveal-plugin) — ★ 2 — Apply common build logic to a slideshow project using Pandoc and reveal.js
-- [AlexandreAmice/QuartoPresentationStarter](https://github.com/AlexandreAmice/QuartoPresentationStarter) — ★ 2 — A minimal, reusable Quarto + reveal.js presentation starter with scripts for macros, include-aware preview, and asset regeneration.
-- [vitay/quarto-presentation](https://github.com/vitay/quarto-presentation) — ★ 2 — Template for reveal.js presentations using quarto
-- [httk/rsttools](https://github.com/httk/rsttools) — ★ 1 — ReStructuredText (ReST) HTML slide generator for reveal.js
-- [brettinternet/hugo-slides](https://github.com/brettinternet/hugo-slides) — ★ 1 — A simple directory for your Reveal.js slides with slide sync
-- [lassepe/pandoc-revealjs-clean](https://github.com/lassepe/pandoc-revealjs-clean) — ★ 1 — A clean repository to clone and create a new deck of reveal.js  slides with pandoc.
-- [WanderHuang/simple-slides](https://github.com/WanderHuang/simple-slides) — ★ 1 — A simple pandoc + reveal.js ppt template for frontend developer to present. ????ppt?
-- [HackingMondays/monday-slides](https://github.com/HackingMondays/monday-slides) — ★ 1 — HackingMondays markdown + pandoc + reveal.js presentation slides template
-- [Manchery/markdown-slide](https://github.com/Manchery/markdown-slide) — ★ 1 — To make slides with markdown +  pandoc + reveal.js
-- [sajulmala17/slideforge](https://github.com/sajulmala17/slideforge) — ★ 0 — HTML Slide Generator
-- [joseantoniolopezlorenzo/pandoc-revealjs](https://github.com/joseantoniolopezlorenzo/pandoc-revealjs) — ★ 0 — Presentaciones reveal.js realizadas con Pandoc y Gulp
-- [shinyay/pandoc-revealjs](https://github.com/shinyay/pandoc-revealjs) — ★ 0 — Presentation with Pandoc and Reveal.js
-- [ted-juan/pandoc-reveal.js](https://github.com/ted-juan/pandoc-reveal.js) — ★ 0 — use pandoc to transfer markdown file to reveal.js presentation slides
-- [davidaparicio/hugo_slides](https://github.com/davidaparicio/hugo_slides) — ★ 0 — Hugo Reveal.js Bundle Example is a Hugo website for keynote.
-- [directionless/slides-template](https://github.com/directionless/slides-template) — ★ 0 — Trivial Wrapper scripts for Remark / Markdown slides
-- [loup-brun/presentation-pandoc-reveal](https://github.com/loup-brun/presentation-pandoc-reveal) — ★ 0 — Build Reveal.js HTML presentation with Pandoc and easily host on GitHub Pages (or elsewhere).
-- [heeeedjr/obsidian-presentation](https://github.com/heeeedjr/obsidian-presentation) — ★ 0 — My obsidian demo presentation using reveal.js
+- [hakimel](https://github.com/hakimel/reveal.js) — ★ 72,430 — The HTML Presentation Framework
+- [slidevjs](https://github.com/slidevjs/slidev) — ★ 49,055 — Presentation Slides for Developers
+- [impress](https://github.com/impress/impress.js) — ★ 38,154 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
+- [Dujltqzv](https://github.com/Dujltqzv/Some-Many-Books) — ★ 24,768 — 个人收藏书籍列表
+- [ksky521](https://github.com/ksky521/nodeppt) — ★ 10,330 — This is probably the best web presentation tool so far!
+- [webslides](https://github.com/webslides/WebSlides) — ★ 6,326 — Create HTML presentations in seconds —
+- [imakewebthings](https://github.com/imakewebthings/deck.js) — ★ 5,416 — Modern HTML Presentations
+- [shower](https://github.com/shower/shower) — ★ 4,876 — Shower HTML presentation engine
+- [joanrod](https://github.com/joanrod/star-vector) — ★ 4,622 — StarVector is a foundation model for SVG generation that transforms vectorization into a code generation task. Using a vision-language modeling architecture,...
+- [jonschlinkert](https://github.com/jonschlinkert/gray-matter) — ★ 4,492 — Smarter YAML front matter parser, used by metalsmith, Gatsby, Netlify, Assemble, mapbox-gl, phenomic, vuejs vitepress, TinaCMS, Shopify Polaris, Ant Design, ...
+- [webpro](https://github.com/webpro/reveal-md) — ★ 3,912 — reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file
+- [astefanutti](https://github.com/astefanutti/decktape) — ★ 2,431 — PDF exporter for HTML presentations
+- [arcsin1](https://github.com/arcsin1/oh-my-ppt) — ★ 2,133 — Describe what you need  a presentation, lesson, or story  and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.
+- [enisn](https://github.com/enisn/UraniumUI) — ★ 1,472 — The presentation framework for .NET MAUI.
+- [yjwen](https://github.com/yjwen/org-reveal) — ★ 1,463 — Exports Org-mode contents to Reveal.js HTML presentation.
+- [marcolago](https://github.com/marcolago/flowtime.js) — ★ 1,343 — Flowtime.js HTML5/CSS3/JS Websites and Presentation Framework
+- [Seldaek](https://github.com/Seldaek/slippy) — ★ 809 — HTML Presentations
+- [datitran](https://github.com/datitran/jupyter2slides) — ★ 792 — Cloud Native Presentation Slides with Jupyter Notebook + Reveal.js
+- [sinedied](https://github.com/sinedied/backslide) — ★ 777 — :sweat_drops: CLI tool for making HTML presentations with Remark.js using Markdown
+- [joshed-io](https://github.com/joshed-io/reveal-hugo) — ★ 747 — ??? Create rich HTML-based presentations with Hugo and Reveal.js
+- [harish-io](https://github.com/harish-io/Impressionist) — ★ 706 — Visual tool to create impress.js presentations
+- [willy-vvu](https://github.com/willy-vvu/reveal.js) — ★ 690 — This is what I got when I combined webcam-based gesture recognition with Hakim El Hattab's reveal.js.
+- [andreypopp](https://github.com/andreypopp/react-css-components) — ★ 672 — Define React presentational components with CSS
+- [briancavalier](https://github.com/briancavalier/slides) — ★ 496 — A slide presentation framework in HTML, JS, and OOCSS
+- [MartenBE](https://github.com/MartenBE/mkslides) — ★ 481 — Use mkslides to easily turn markdown files into beautiful slides using the power of Reveal.js!
+- [facebookarchive](https://github.com/facebookarchive/exerslide) — ★ 434 — A framework to create React-based HTML presentations and tutorials.
+- [slara](https://github.com/slara/generator-reveal) — ★ 427 — Yeoman generator for Reveal.js
+- [grantmcdermott](https://github.com/grantmcdermott/quarto-revealjs-clean) — ★ 417 — A minimalist and elegant presentation theme for Quarto Reveal.js
+- [lucasrla](https://github.com/lucasrla/remarks) — ★ 399 — Extract annotations (highlights and scribbles) from PDF, EPUB, and notebooks marked with reMarkable tablets. Export to Markdown, PDF, PNG, SVG
+- [cytoscape](https://github.com/cytoscape/cytoscape-tutorials) — ★ 336 — Collection of modular Cytoscape tutorials for online presentation using reveal.js
+- [egonSchiele](https://github.com/egonSchiele/mdpress) — ★ 331 — [DEAD] Make impress.js presentations from markdown files.
+- [rstudio](https://github.com/rstudio/revealjs) — ★ 329 — R Markdown Format for reveal.js Presentations
+- [davidlyons](https://github.com/davidlyons/threejs-intro) — ★ 324 — Intro to WebGL with Three.js presentation
+- [zweix123](https://github.com/zweix123/jyyslide-md) — ★ 323 — ??Markdown????????????????Web?????(Base on Reveal.js)
+- [asciidoctor](https://github.com/asciidoctor/asciidoctor-reveal.js) — ★ 314 — :crystal_ball: A reveal.js converter for Asciidoctor and Asciidoctor.js. Write your slides in AsciiDoc!
+- [wshuyi](https://github.com/wshuyi/mindmap2slide) — ★ 296 — convert Mindnode Mindmap (textbundle format) to reveal.js slides
+- [partageit](https://github.com/partageit/markdown-to-slides) — ★ 293 — A command line interface to convert markdown documents to an HTML slideshow
+- [denehyg](https://github.com/denehyg/reveal.js-menu) — ★ 288 — Slide out menu for reveal.js
+- [datalorax](https://github.com/datalorax/slidex) — ★ 288 — Convert PowerPoint Slides to xaringan (remark.js) Slides
+- [LSTM-Kirigaya](https://github.com/LSTM-Kirigaya/slidev-ai) — ★ 284 — ai app for slidev
+- [neatsoftware](https://github.com/neatsoftware/term-sheets) — ★ 262 — Create animated terminal presentations. Export as SVG, animated GIF, or HTML+CSS
+- [nyergler](https://github.com/nyergler/hieroglyph) — ★ 261 — Generate HTML presentations from plain text sources with all the power of Sphinx.
+- [fsprojects](https://github.com/fsprojects/FsReveal) — ★ 261 — FsReveal parses markdown and F# script file and generates reveal.js slides.
+- [adityab](https://github.com/adityab/Awwation) — ★ 244 — Prezi clone in HTML5, Js, and SVG. Can use different animation backends, for example impress.js. [I NO LONGER OWN AWWATION.COM]
+- [bmcmurray](https://github.com/bmcmurray/hekyll) — ★ 243 — a Jekyll generator for Impress.js presentations
+- [nekomeowww](https://github.com/nekomeowww/talks) — ★ 235 — ????? Public talks I presented historically in VueConf, ViteConf, KubeCon, @DaoCloud, Demo Day, Demo Inn, all built with @slidevjs
+- [piatra](https://github.com/piatra/kreator.js) — ★ 232 — slide tool interface for reveal.js
+- [byteclubfr](https://github.com/byteclubfr/prez) — ★ 232 — Generate Reveal.js slideshows from a set of markdowns
+- [slidevjs](https://github.com/slidevjs/themes) — ★ 221 — Official themes for Slidev
+- [LittleSound](https://github.com/LittleSound/talks-template) — ★ 218 — Talks of Template, using Slidev
+- [alvarosabu](https://github.com/alvarosabu/slidev-theme-penguin) — ★ 217 — A Penguin ??   theme for Slidev
+- [JeremyLikness](https://github.com/JeremyLikness/vanillajs-deck) — ★ 200 — A Vanilla.js Single Page App (SPA) slide deck for a presentation about Vanilla.js written with no frameworks.
+- [PlatformRelay](https://github.com/PlatformRelay/Kubernetes-Workshop) — ★ 198 — Free, vendor-neutral, hands-on Kubernetes workshop with 28 modules, a three-day curriculum, standalone labs, Slidev decks and PDF releases.
+- [bespokejs](https://github.com/bespokejs/generator-bespoke) — ★ 196 — Create Bespoke.js presentations using Yeoman.
+- [whoisryosuke](https://github.com/whoisryosuke/next-mdx-deck) — ★ 192 — Presentation decks using MDX, React, and Next.JS
+- [1-2-3](https://github.com/1-2-3/remark-it) — ★ 188 — markdown -> slideshow ——Write PPT like a programmer
+- [Qualy-org](https://github.com/Qualy-org/qualy-presenter) — ★ 186 — A boilerplate to create presentations using Reveal.JS, Gulp, Stylus and more.
+- [jhrscom](https://github.com/jhrscom/JHRS) — ★ 177 — The JHRS WPF framework is used to demonstrate how to use wpf and xamarin to build a development framework. The presentation framework only provides an idea. ...
+- [marianoguerra](https://github.com/marianoguerra/rst2html5) — ★ 176 — transform restructuredtext documents to html5 + twitter's bootstrap css, deck.js or reveal.js
+- [8ARTEK](https://github.com/8ARTEK/projector) — ★ 176 — 📽 A simple HTML mockup presentation engine for projects
+- [mattmakai](https://github.com/mattmakai/choose-your-own-adventure-presentations) — ★ 174 — "Choose Your Own Adventure" live voting presentations with Reveal.js, Flask, WebSockets and SMS.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-editable) — ★ 172 — Repositioning and resizing of images and text directly in quarto revealjs slides
+- [leochiu-a](https://github.com/leochiu-a/slidev-workspace) — ★ 171 — Slidev Workspace is a specialized command-line tool designed to manage and showcase multiple Slidev presentations.
+- [alexanderdavide](https://github.com/alexanderdavide/slidev-theme-academic) — ★ 170 — Academic presentations with Slidev made simple ??
+- [MordragT](https://github.com/MordragT/nix-templates) — ★ 169 — ❄️ Nix flake templates for: 🦀 Rust, 🦖 Deno, 🐍 Python and 🗒️ reveal.js among others
+- [gureckis](https://github.com/gureckis/slidev-theme-neversink) — ★ 165 — Slidev Theme Neversink
+- [fand](https://github.com/fand/ratride) — ★ 164 — A tiny CLI presentation tool
+- [akira-cn](https://github.com/akira-cn/matrix) — ★ 156 — Open source slideshare lab for user to create slideshares by reveal.js.
+- [chunqiuyiyu](https://github.com/chunqiuyiyu/qov) — ★ 154 — The terminal presentation tool.
+- [gcalmettes](https://github.com/gcalmettes/reveal.js-d3) — ★ 151 — Full integration of animated javascript-based visualizations (D3, vega-lite, semiotic, etc ...) into Reveal.js presentations
+- [ryanj](https://github.com/ryanj/gist-reveal) — ★ 148 — Gist-powered reveal.js presentations
+- [zcag](https://github.com/zcag/tahta) — ★ 142 — A pristine, themeable design system for Slidev  switch the entire visual style (type, shape, texture, palette) with one line.
+- [rajasegar](https://github.com/rajasegar/svelte-slides) — ★ 141 — A Reveal.js boilerplate with Svelte,  TailwindCSS and Vite
+- [kt3k](https://github.com/kt3k/remarker) — ★ 141 — :arrow_forward: Remark cli
+- [regebro](https://github.com/regebro/impress-console) — ★ 133 — Speaker notes for impress.js
+- [attakei](https://github.com/attakei/sphinx-revealjs) — ★ 129 — HTML Presentation builder for Pythonista
+- [dploeger](https://github.com/dploeger/jekyll-revealjs) — ★ 126 — A Jekyll-based framework for creating presentations based on Reveal.js and markdown.
+- [reveal](https://github.com/reveal/revealjs.com) — ★ 124 — The official reveal.js website and documentation
+- [slidevjs](https://github.com/slidevjs/docs) — ★ 121 — [Mirrored] Documentation for Slidev
+- [TonyCrane](https://github.com/TonyCrane/slide-template) — ★ 120 — TonyCrane's slide template for reveal-md
+- [dijith-481](https://github.com/dijith-481/Markweavia) — ★ 117 — A no-nonsense tool that transforms your Markdown into elegant, professional, platform-independent HTML presentations, all  with familiar Vim motions.
+- [GeorgioWan](https://github.com/GeorgioWan/react-impressjs) — ★ 116 — Making an awesome presentations easy with React
+- [nico-bachner](https://github.com/nico-bachner/slidev-theme-geist) — ★ 116 — The Vercel theme for Slidev
+- [cubewebsites](https://github.com/cubewebsites/Impress.js-Tutorial) — ★ 114 — An online tutorial for Impress.js
+- [rei](https://github.com/rei/rei-cedar-vue-2) — ★ 114 — Welcome to the REI Digital Design System presentation framework. A home for modular components based on our evolving design patterns.
+- [Skarlso](https://github.com/Skarlso/adventure-voter) — ★ 113 — Choose your own adventure style Presentation framework.
+- [pranaygp](https://github.com/pranaygp/mdx-code) — ★ 110 — MDX deck layout for runnable code
+- [jtrussell](https://github.com/jtrussell/bedecked) — ★ 109 — Turn markdown files into html presentations you can share with dropbox (or S3, or...)
+- [nttmdlab-nlp](https://github.com/nttmdlab-nlp/SlideVQA) — ★ 107 — SlideVQA: A Dataset for Document Visual Question Answering on Multiple Images (AAAI2023)
+- [shower](https://github.com/shower/core) — ★ 101 — Core of Shower HTML presentation engine
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-impress.js) — ★ 100 — impress.js - Slide Show (S9) Template Pack
+- [frictionlessdata](https://github.com/frictionlessdata/livemark) — ★ 99 — Data presentation framework for Python that generates static sites from extended Markdown with interactive charts, tables, scripts, and other features
+- [wshuyi](https://github.com/wshuyi/markdown2slides) — ★ 98 — Tools for converting Markdown Source File to Reveal.js HTML5 slides
+- [kslides](https://github.com/kslides/kslides) — ★ 96 — kslides is a Kotlin DSL wrapper for reveal.js. It is meant for people who would prefer to build presentations with IntelliJ than Powerpoint.
+- [piever](https://github.com/piever/Remark.jl) — ★ 94 — Create markdown presentations from Julia
+- [slidekit](https://github.com/slidekit/s6) — ★ 91 — S6 Blank - Slideshow templates using HTML 5, CSS 3 'n' JavaScript 2017+ w/ Bespoke.js-compatible "microkernel"
+- [edjafarov](https://github.com/edjafarov/remote-impress) — ★ 88 — This is remote Impress.js and Deck.js presentation controller. Allows to use phone for switching slides.
+- [HugoGranstrom](https://github.com/HugoGranstrom/nimiSlides) — ★ 88 — A Reveal.js theme for nimib for making slideshow presentations in Nim
+- [emitanaka](https://github.com/emitanaka/ninja-theme) — ★ 88 — A xaringan / remark js ninja theme
+- [codepen](https://github.com/codepen/slideVars) — ★ 87 — UI for Updating CSS Custom Properties
+- [yoshiki](https://github.com/yoshiki/markdown2impress) — ★ 87 — markdown2impress is script to convert markdown into presentation using impress.js.
+- [bketelsen](https://github.com/bketelsen/slides) — ★ 86 — create, live-preview, edit, and publish reveal.js slide decks
+- [hrbrmstr](https://github.com/hrbrmstr/quarto-organization-template) — ★ 83 — A Quarto RevealJS Organization Boilerplate Template You Can Clone And Modify Quickly
+- [Chleba](https://github.com/Chleba/tui-slides) — ★ 83 — Terminal Presentation program with modern TUI
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-codewindow) — ★ 82 — Styled code block windows with file tabs for Quarto RevealJS presentations.
+- [amnotyoung](https://github.com/amnotyoung/slide-meme-inserter) — ★ 82 — Plan, source, and insert recognizable memes into HTML slide decks for Claude Code and Codex.
+- [rajgoel](https://github.com/rajgoel/reveal.js-demos) — ★ 82 — Demo presentations for reveal.js
+- [garthtarr](https://github.com/garthtarr/sydney_xaringan) — ★ 82 — University of Sydney theme for xaringan (remark.js)
+- [Dawntraoz](https://github.com/Dawntraoz/slidev-theme-unicorn) — ★ 80 — A Unicorn theme for Slidev slides based on dawntraoz.com design.
+- [ChristianKohler](https://github.com/ChristianKohler/web-presentation) — ★ 78 — Pure Web Components Presentation Framework
+- [tasmo](https://github.com/tasmo/reveal-jekyll) — ★ 78 — Online presentation for GitHub Pages and Jekyll in Markdown using reveal.js with a Solarized Color Theme
+- [argyleink](https://github.com/argyleink/slyd) — ★ 77 — Snappy, responsive, touch optimized, bi-directional presentation framework
+- [LinusBorg](https://github.com/LinusBorg/slidev-theme-vuetiful) — ★ 76 — A Slidev Theme for my talks about Vue.js
+- [gamell](https://github.com/gamell/markpress) — ★ 76 — A command line tool and node package to convert markdown files into self-contained impressjs html presentations
+- [bbucior](https://github.com/bbucior/drposter) — ★ 76 — Generate Academic Posters in R Markdown and CSS, inspired by 'reveal.js'
+- [twitter-archive](https://github.com/twitter-archive/cdk) — ★ 75 — CDK is a tool to quickly generate single-file html slide presentations from AsciiDoc
+- [manoelcampos](https://github.com/manoelcampos/asciidoctor-ghpages-action) — ★ 75 — 📄⚙️ GitHub Action to build AsciiDoc GitHub Pages: recursively converts every adoc file to html, renaming resulting README.html to index.html. It also enables...
+- [incompl](https://github.com/incompl/slide) — ★ 75 — JavaScript slides without pain
+- [iridite](https://github.com/iridite/slidev-templates) — ★ 74 — ??????? Slidev ????????
+- [MuTsunTsai](https://github.com/MuTsunTsai/slidev-theme-frankfurt) — ★ 74 — A theme for Slidev, inspired by the Frankfurt theme in Beamer.
+- [ex-makina](https://github.com/ex-makina/marklight) — ★ 74 — MarkLight is a presentation framework for Unity that allows you to create scene elements in a language similar to HTML.
+- [n2o](https://github.com/n2o/reveal-cljs) — ★ 73 — reveal.js + ClojureScript = Awesome presentations with joy
+- [antfu](https://github.com/antfu/slidev-new) — ★ 73 — Slidev Online, powered by StackBlitz ??
+- [emacsmirror](https://github.com/emacsmirror/org-re-reveal) — ★ 72 — Org export to reveal.js presentations
+- [joshed-io](https://github.com/joshed-io/revealjs-themes) — ★ 72 — 👨‍🎨 Free Reveal.js themes including robot-lung and sunblind
+- [humrochagf](https://github.com/humrochagf/revelation) — ★ 71 — Make awesome reveal.js presentations with revelation :sparkler:
+- [rsarver](https://github.com/rsarver/stella-decks) — ★ 69 — HTML slide deck system with design system, viewer, and PDF export. AI-native via Claude Code.
+- [estruyf](https://github.com/estruyf/slidev-theme-the-unnamed) — ★ 69 — Slidev Theme - The unnamed
+- [lorniu](https://github.com/lorniu/ox-spectacle) — ★ 68 — Slideshow tool on Emacs, that build HTML presentation with Spectacle.js from Org Mode.
+- [lightvue](https://github.com/lightvue/slidev-theme-light-icons) — ★ 67 — A light and Elegant theme for Slidev
+- [w0rm](https://github.com/w0rm/elm-slice-show) — ★ 66 — A simple presentation engine in Elm
+- [a-nau](https://github.com/a-nau/markdownslides) — ★ 65 — A "markdown-first" approach for generating beautiful browser-based slides easily. Based on Reveal.js and Reveal-Jekyll.
+- [berteh](https://github.com/berteh/mindslide) — ★ 64 — View Freeplane mindmap as an HTML presentation (aka freemind to powerpoint slideshow)
+- [hylarucoder](https://github.com/hylarucoder/slidev-react) — ★ 64 — —
+- [beatrizmilz](https://github.com/beatrizmilz/quarto-rladies-theme) — ★ 63 — R-Ladies template for Quarto presentations with reveal.js
+- [zanecole10](https://github.com/zanecole10/presentation-builder) — ★ 63 — AI-powered presentation creation system using Claude Code to transform scripts into beautiful HTML presentations
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-nes-theme) — ★ 60 — A Quarto reveal.js theme based on NES.css
+- [haschek](https://github.com/haschek/Foafpress) — ★ 59 — An open-source PHP web application and presentation engine for RDF data stored in files, e.g. your FOAF profile. It allows you to aggregate and publish data ...
+- [Gnepux](https://github.com/Gnepux/SlideView) — ★ 58 — —
+- [jimmyjacobson](https://github.com/jimmyjacobson/swot) — ★ 57 — Reveal.JS presentation for SWOT class
+- [wmh](https://github.com/wmh/circular-slides-generator) — ★ 56 — Generates circular slides for impress.js presentations.
+- [ventas319](https://github.com/ventas319/microsoft-ai-livestream-slidevault) — ★ 56 — Microsoft AI Trainer 2026 LiveStream Slides & Presentation Deck Guide
+- [imakewebthings](https://github.com/imakewebthings/deck2pdf) — ★ 55 — What it says on the tin. deck.js -> pdf
+- [tell-k](https://github.com/tell-k/sphinxjp.themes.revealjs) — ★ 55 — A sphinx theme for generate reveal.js presentation. #sphinxjp
+- [codesstar](https://github.com/codesstar/next-slide) — ★ 55 — 你的下个 slide，何必是 PPT — AI-powered HTML presentations. 26+ styles, zero dependencies, bilingual. Works with Claude Code & OpenClaw.
+- [oknozor](https://github.com/oknozor/unveil-rs) — ★ 55 — Unveil Rs is a tool to create presentations from markdown inspired by reveal.js, mdbook and zola.
+- [Smile-SA](https://github.com/Smile-SA/slidev-component-poll) — ★ 55 — Poll component for Slidev
+- [bouzidanas](https://github.com/bouzidanas/react-reveal-slides) — ★ 53 — Create and add reveal.js presentations in react
+- [xarvh](https://github.com/xarvh/elm-slides) — ★ 53 — Awesome presentation framework to create your slides in Elm.
+- [jirengu](https://github.com/jirengu/ppt-cli) — ★ 52 — a slides framework using makrdown
+- [gapple](https://github.com/gapple/myplanet-revealjs) — ★ 52 — Reveal.js with Myplanet Theme
+- [fabianabarca](https://github.com/fabianabarca/slidev-theme-kalouk) — ★ 52 — A theme for Slidev
+- [shameerc](https://github.com/shameerc/Revealer.js) — ★ 51 — Multi-user Reveal.js presentations.
+- [agentofuser](https://github.com/agentofuser/remark-oembed) — ★ 51 — Convert URLs in markdown for youtube, twitter, etc. surrounded by newlines into html embeds
+- [e-gor](https://github.com/e-gor/Reveal.js-Title-Footer) — ★ 50 — Footer showing title for Reveal.js HTML presentations
+- [e-gor](https://github.com/e-gor/Reveal.js-TOC-Progress) — ★ 50 — LaTeX Beamer-like progress indicator according to table of contents for Reveal.js HTML presentations
+- [AvencastF](https://github.com/AvencastF/slidev-theme-hep) — ★ 50 — Academic style Slidev theme for High Energy Physics
+- [asciidoctor](https://github.com/asciidoctor/asciidoctor-bespoke) — ★ 50 — :b: An Asciidoctor converter that generates the HTML component of a Bespoke.js presentation from AsciiDoc.
+- [seacen](https://github.com/seacen/deckify) — ★ 49 — URL to HTML slide design system that genuinely enables AI-native slides for real work environments
+- [SpringOne2GX-2014](https://github.com/SpringOne2GX-2014/microservice-security) — ★ 49 — Various code samples from the http://presos.dsyer.com/decks/microservice-security.html presentation by Dave Syer
+- [regisb](https://github.com/regisb/reveal.js-fullscreen-img) — ★ 48 — [DEPRECATED] Display gorgeous fullscreen images in reveal.js presentations
+- [felixrieseberg](https://github.com/felixrieseberg/Reveal-PikeStreet) — ★ 48 — "Pike Street" Theme for Reveal.js, intended for Microsoft's DX's Open Source Engineers
+- [ebow](https://github.com/ebow/bespoke-fx) — ★ 48 — CSS slide transitions for Bespoke.js
+- [Rokt33r](https://github.com/Rokt33r/remark-collapse) — ★ 48 — Make a section collapsible!
+- [jxpeng98](https://github.com/jxpeng98/slidev-theme-scholarly) — ★ 47 — A professional presentation theme for Slidev, designed specifically for academic presentations with LaTeX Beamer-inspired styling.
+- [hexmode](https://github.com/hexmode/ox-reveal) — ★ 46 — Reveal.js Presentation Back-End for Org Export Engine
+- [m42e](https://github.com/m42e/impress.js-progress) — ★ 46 — Progressbar and pagexounter for impress.js presentation
+- [TheoCUC](https://github.com/TheoCUC/slidev-theme-prussianblue) — ★ 46 — a nice slidev theme
+- [frederickf](https://github.com/frederickf/presentable) — ★ 45 — Adds a table of contents to HTML based presentations including reveal.js, html5slides, io-2012-slide, Shower and impress.js
+- [pheymann](https://github.com/pheymann/scala-reveal-js) — ★ 45 — Build reveal.js presentations in Scala
+- [superwf](https://github.com/superwf/vue-impress) — ★ 45 — vue component inspired by impress.js
+- [patrick-fu](https://github.com/patrick-fu/frontend-harness-slides) — ★ 44 — Build slide decks as a harness-guarded engineering project  robust, maintainable, and hard to break. A step up from single-file HTML slides.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox) — ★ 44 — A Quarto reveal.js theme based on xaringan letterbox
+- [ulf](https://github.com/ulf/markdown2deckjs) — ★ 44 — Create beautiful deck.js slides directly from markdown text
+- [slara](https://github.com/slara/generator-impress) — ★ 44 — A Yeoman generator for the breathtaking Impress.js presentation framework.
+- [Loewe1000](https://github.com/Loewe1000/typstage) — ★ 44 — Animated HTML presentations from a single Typst file, and a slide deck and handout as PDF from the same source. Typst typesets, the browser moves.
+- [arthurrump](https://github.com/arthurrump/tldreveal) — ★ 44 — A drawing tool for Reveal.js based on tldraw
+- [wuhaoyupku](https://github.com/wuhaoyupku/html-mender) — ★ 43 — HTML Slide Mender helps you visually edit HTML slide decks and AI-generated presentation pages.
+- [sergioramos](https://github.com/sergioramos/remark-hint) — ★ 43 — Sprinkle hints/tips/warnings on your documents
+- [RealOrangeOne](https://github.com/RealOrangeOne/hugo-theme-revealjs) — ★ 43 — Use Hugo to build a presentation, powered by RevealJS
+- [shower](https://github.com/shower/material) — ★ 42 — Material theme for Shower HTML presentation engine
+- [PerfectlySoft](https://github.com/PerfectlySoft/Perfect-Markdown) — ★ 42 — A solution to convert markdown text into html presentation in Swift, based on GerHobbelt's "upskirt" project.
+- [iiif-prezi](https://github.com/iiif-prezi/iiif-prezi3) — ★ 42 — IIIF Presentation API 3 Python Library
+- [BrendanEich](https://github.com/BrendanEich/Strange-Loop-2012) — ★ 41 — My Strange Loop 2012 slideshow (reveal.js-based HTML/JS/CSS)
+- [smallqiang](https://github.com/smallqiang/SlideView) — ★ 41 — 模仿网易新闻和搜狐新闻的首页效果，在内容页拖动的时候将不会加载数据
+- [RobinCK](https://github.com/RobinCK/vue-presentation) — ★ 41 — :books: A Vue.js presentation 🇺🇦
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-imagemover) — ★ 40 — repositioning and resizing of images directly in quarto revealjs slides
+- [triplecanopy](https://github.com/triplecanopy/alongslide) — ★ 40 — Alongslide is a responsive, horizontal presentation framework for long-form reading on the web, employing a lightweight templating syntax for Markdown.
+- [Zenika](https://github.com/Zenika/asciidoc-stack) — ★ 40 — SYNCHRONIZED FROM GITLAB. A full AsciiDoc extended example generating both HTML PDF and Reveal.js slides #asciidoctor #plantuml #reveal
+- [Multiomics-Analytics-Group](https://github.com/Multiomics-Analytics-Group/vuegen) — ★ 40 — VueGen automates the creation of reports from bioinformatics outputs, supporting formats like PDF, HTML, DOCX, ODT, PPTX, Reveal.js, Jupyter notebooks, and S...
+- [brenopolanski](https://github.com/brenopolanski/remark-boilerplate) — ★ 40 — A boilerplate to create presentations using remark, Gulp, Stylus and more.
+- [houqp](https://github.com/houqp/asciidoc-deckjs) — ★ 39 — A deck.js backend for asciidoc
+- [krasimir](https://github.com/krasimir/simpre) — ★ 39 — HTML presentation framework
+- [shower](https://github.com/shower/ribbon) — ★ 39 — Ribbon theme for Shower HTML presentation engine
+- [flowtricks](https://github.com/flowtricks/remarkable) — ★ 39 — Sanity + Next.js Presentation visual page builder — canvas editing, drag reorder, 3D logo
+- [alleyinteractive](https://github.com/alleyinteractive/revealjs-wp-theme) — ★ 38 — Power your reveal.js presentation with WordPress
+- [pacharanero](https://github.com/pacharanero/revealjs-submodule-template) — ★ 38 — Reveal.js template presentation in a GitHub repo template. Test it out at:
+- [justin-vanwinkle](https://github.com/justin-vanwinkle/presentation-builder) — ★ 38 — A simplistic way to create stunning presentations with speed using Reveal.js and Docker.
+- [SamanLan](https://github.com/SamanLan/SlideValidation) — ★ 38 — 滑动验证码
+- [leochiu-a](https://github.com/leochiu-a/slidev-workspace-starter) — ★ 38 — Slidev monorepo starter with pnpm workspace support.
+- [shinokada](https://github.com/shinokada/markdown-docs-as-pdf) — ★ 38 — A Bash Script to create PDF documents for React, Vue, Svelte, SvelteKit, Nuxt, Vitest, pnpm, Slidev, and more.
+- [swartzrock](https://github.com/swartzrock/reveal.js-to-pdf) — ★ 37 — Convert a Reveal.js slide deck to PDF
+- [cliffe](https://github.com/cliffe/AwesomeSlides) — ★ 36 — AwesomeSlides makes awesome HTML5/CSS slides (based on Reveal.js) by converting slides made with LibreOffice.
+- [danielsimons1](https://github.com/danielsimons1/impress-audio) — ★ 36 — Small addition to impress.js to allow for html5 audio in your presentation
+- [twitwi](https://github.com/twitwi/deck.js) — ★ 36 — Better Modern HTML Presentations
+- [slidevjs](https://github.com/slidevjs/container) — ★ 36 — Container building scripts for Slidev
+- [nikku](https://github.com/nikku/pfwr) — ★ 35 — Turns your Markdown file into a beautiful HTML slide deck. Batteries included.
+- [gcalmettes](https://github.com/gcalmettes/reveal.js-webpack-kit) — ★ 35 — The power of Reveal combined with the convenience and versatility of a build system
+- [lissy93](https://github.com/lissy93/cyber-defence-presentation) — ★ 35 — 🖥️ A reveal.js website for presenting the cyber security basics to humans
+- [tangramor](https://github.com/tangramor/slidev_docker) — ★ 35 — Docker image scripts for Slidev
+- [kokdemo](https://github.com/kokdemo/impress.js-tutorial-in-Chinese) — ★ 35 — impress.js的中文教程
+- [iiif-prezi](https://github.com/iiif-prezi/iiif-prezi) — ★ 35 — IIIF Presentation API implementation in Python
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-earth) — ★ 34 — Watercolor earth Quarto reveal.js theme
+- [bouzidanas](https://github.com/bouzidanas/streamlit-reveal-slides) — ★ 34 — Create and add reveal.js HTML presentations to your Streamlit app!
+- [slidevjs](https://github.com/slidevjs/slidev-covers) — ★ 34 — —
+- [naugtur](https://github.com/naugtur/builder4impress) — ★ 34 — A tool to build slides in impress.js in a WYSIWYG manner
+- [jeffgca](https://github.com/jeffgca/html5slides) — ★ 34 — Fork from google code of Google's html5 slides, to use for doing html-based online slide decks
+- [heycalmdown](https://github.com/heycalmdown/miniseminar) — ★ 33 — Confluence as a backend -> Express -> reveal.js as a presentation -> Profit!
+- [biqinglin](https://github.com/biqinglin/slideView) — ★ 33 — 三张卡片无限复用
+- [baptiste-genest](https://github.com/baptiste-genest/slope) — ★ 33 — A C++ 3D animated slide engine based on polyscope. Easily pluggable on top of your scientific code to bring it to life.
+- [zhangrongchuan](https://github.com/zhangrongchuan/slideleaf) — ★ 32 — AI-native HTML slide studio for generating, editing, and collaborating on presentation workspaces.
+- [hax](https://github.com/hax/Slides) — ★ 32 — Just a simple slides framework built on HTML5 techs
+- [sudodoki](https://github.com/sudodoki/reveal-cleaver-theme) — ★ 32 — Reveal.js theme for cleaver slides
+- [qti3e](https://github.com/qti3e/Impress-full) — ★ 32 — Impress.js with lots of new animation and etc, demo:
+- [Termina1](https://github.com/Termina1/react-shower) — ★ 32 — Shower presentation engine running on React
+- [azu](https://github.com/azu/slide-pdf.js) — ★ 32 — Presentation tools for pdf file in browser.
+- [melissavanbussel](https://github.com/melissavanbussel/theme-generator) — ★ 31 — A Quarto revealjs theme generator
+- [sylhare](https://github.com/sylhare/Reveal-Jekyll) — ★ 31 — ✨ Web presentation with Markdown, Reveal.js and Jekyll
+- [orapouso](https://github.com/orapouso/fox-angular-scrollReveal.js) — ★ 31 — Angular directive to allow the use of scrollReveal.js project
+- [anantshri](https://github.com/anantshri/present) — ★ 31 — revealjs workflow automation: reveal.js + external markdown mixed with some bash awesomeness to automate routine presentation tasks
+- [gawel](https://github.com/gawel/impress) — ★ 31 — generate slide with impress.js based on a rest file
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-timeline) — ★ 31 — Styled timeline layouts for Quarto HTML and RevealJS documents, with horizontal, vertical, and alternating modes.
+- [ThomasWeinert](https://github.com/ThomasWeinert/reveal-embed-video) — ★ 30 — Embed live local media (including video) into a reveal.js presentation
+- [lunarmoon26](https://github.com/lunarmoon26/UnityPresentationFramework) — ★ 30 — Archived Unity 5.5 3D presentation framework; continued by the independent PrismDeckJS project
+- [anthonywritescode](https://github.com/anthonywritescode/markdown-to-presentation) — ★ 30 — A build tool to turn markdown into an html presentation and then publish to gh-pages
+- [moudev](https://github.com/moudev/slidev-theme-purplin) — ★ 30 — Slidev theme
+- [leochiu-a](https://github.com/leochiu-a/slidev-theme-gemini) — ★ 30 — A Slidev theme inspired by cinematic cover layouts, dramatic typography, and staged motion.
+- [twitwi](https://github.com/twitwi/deck.browsercast.js) — ★ 30 — Synchronize an audio soundtrack with you deck.js slides.
+- [threefoldtecharchive](https://github.com/threefoldtecharchive/slides2html) — ★ 30 — convert google slides to revealjs website
+- [ThomasR](https://github.com/ThomasR/minislides) — ★ 29 — The minimal HTML slide presentation framework
+- [theno](https://github.com/theno/revealjs_template) — ★ 29 — reveal.js presentation written in markdown
+- [FormidableLabs](https://github.com/FormidableLabs/spectacle-cli) — ★ 29 — CLI for the Spectacle Presentation Framework
+- [ronalfy](https://github.com/ronalfy/wp-presenter) — ★ 29 — A WordPress theme based on Reveal.js
+- [Demons-Bee](https://github.com/Demons-Bee/SlideViewControllerDemo) — ★ 29 — Demo集侧滑,Nav,Tab,ViewPager,SideView,TapGesture于一身,可以高度自定义的容器
+- [rmackinnon](https://github.com/rmackinnon/impresto.js) — ★ 29 — Client-side control of an impress.js slide show. To be used with the Prestidigitation server.
+- [ysugimoto](https://github.com/ysugimoto/resumify) — ★ 28 — Capture screenshot and make PDF on your HTML presentation.
+- [dmitry-korolev](https://github.com/dmitry-korolev/remeal) — ★ 28 — Reveal.js remote control
+- [jens-na](https://github.com/jens-na/jekyll-reveal) — ★ 28 — Jekyll template for presentations with reveal.js
+- [filiphric](https://github.com/filiphric/slidev-theme-excali-slide) — ★ 28 — —
+- [klamping](https://github.com/klamping/deck.narrator.js) — ★ 28 — Module for deck.js to add audio narration to slides
+- [artpolikarpov](https://github.com/artpolikarpov/shower-meteor) — ★ 28 — Create, store and remotely control your Shower presentation
+- [benstigsen](https://github.com/benstigsen/RemarkPortable) — ★ 28 — Remark made simple and portable
+- [remarkjs](https://github.com/remarkjs/remark-jsx) — ★ 28 — A simple way to use React inside Markdown.
+- [iamskok](https://github.com/iamskok/jamstack.systems) — ★ 28 — Gatsby MDX Deck presentation about JAMstack 💛 ⚙️ 📝
+- [pomber](https://github.com/pomber/create-code-surfer-deck) — ★ 28 — Initialize a project with mdx deck and code surfer
+- [amouat](https://github.com/amouat/revealjs-docker) — ★ 27 — Reveal JS Presentation Software in a Docker Container
+- [Farewe1ll](https://github.com/Farewe1ll/quarto-revealjs-beamer) — ★ 27 — —
+- [silentbicycle](https://github.com/silentbicycle/markdown_to_reveal) — ★ 27 — minimal plumbing to convert slides in markdown to reveal.js presentations via pandoc
+- [bentolor](https://github.com/bentolor/java8-lightningtalk) — ★ 27 — What's new in Java 8? A developer focuses short presentation (20 min) created with the awesome reveal.js
+- [godkun](https://github.com/godkun/ppt-template) — ★ 27 — blazing ppt template with slidev
+- [houlucky](https://github.com/houlucky/SlideViewDemo) — ★ 27 — 仿钉钉头像动画
+- [skeeto](https://github.com/skeeto/jekyll-deck) — ★ 27 — Template for Jekyll / deck.js presentations
+- [harperreed](https://github.com/harperreed/bigpy) — ★ 27 — a quick python helper that generates a big.js presentation
+- [laysent](https://github.com/laysent/remark-ruby) — ★ 27 — Custom syntax for remarkjs, adding ruby (furigana) to markdown.
+- [vivaxy](https://github.com/vivaxy/node-reveal) — ★ 26 — 🎁A reveal.js cli
+- [tboerger](https://github.com/tboerger/slidev-theme-meetup) — ★ 26 — Meetup theme for Slidev
+- [tompro](https://github.com/tompro/impress-server) — ★ 26 — A node server that allows you to share an impress.js presentation with other browsers
+- [extrawurst](https://github.com/extrawurst/presentui) — ★ 26 — small and simple terminal presentation tool written in rust
+- [sukima](https://github.com/sukima/tiddlywiki-reveal-js) — ★ 25 — Embed Reveal.js presentations inside a TiddlyWiki
+- [mattdark](https://github.com/mattdark/reveal.js-gallery) — ★ 25 — A gallery for your reveal.js presentations
+- [nrennie](https://github.com/nrennie/learning-statistics-with-webR) — ★ 25 — Quarto revealjs slides to teach introductory statistics concepts using webR.
+- [kbariotis](https://github.com/kbariotis/presentador) — ★ 25 — 📽 An opinionated presentation framework. Just write what you want to present and it will do the rest.
+- [Brain-ai-biz](https://github.com/Brain-ai-biz/Brain-edit-slides) — ★ 25 — ✏️ Canva-style visual Edit Mode for any HTML presentation built with Claude Code - drag, edit text, paste screenshots, save. Zero dependencies.
+- [Martinomagnifico](https://github.com/Martinomagnifico/quarto-simplemenu) — ★ 25 — A simple menu for Reveal.js using Quarto
+- [anjandn](https://github.com/anjandn/manim_reveal) — ★ 25 — Combines the manim library with reveal.js to create animated slides.
+- [kecrily](https://github.com/kecrily/slidev-theme-takahashi) — ★ 25 — A takahashi style slidev theme.
+- [7449](https://github.com/7449/SlideView) — ★ 25 — Address Book Quick Index
+- [kvenux](https://github.com/kvenux/poddeck) — ★ 25 — Podcast → Slidev deck aggregator, generated by Claude Code
+- [ktym4a](https://github.com/ktym4a/slidev-theme-ktym4a) — ★ 25 — A pastel-colored Slidev theme built with Catppuccin palette, designed for developers who love soft and eye-friendly colors.
+- [dime-worldbank](https://github.com/dime-worldbank/quarto-dime-theme) — ★ 24 — DIME theme for Quarto Reveal.js Presentations
+- [Design-Arena](https://github.com/Design-Arena/html-to-pptx) — ★ 24 — Convert HTML slide decks to editable PowerPoint files using browser-based DOM measurement
+- [tavallaie](https://github.com/tavallaie/pyreveal) — ★ 24 — PyReveal is a Python library that allows users to generate Reveal.js presentations programmatically. With PyReveal, you can easily create slides, set themes,...
+- [ofkoru](https://github.com/ofkoru/quarto-leader-line) — ★ 24 — Draw a line between HTML elements in your Quarto-Revealjs presentation using leader-line.
+- [fdehau](https://github.com/fdehau/deck) — ★ 24 — CLI to make HTML presentations from Markdown documents
+- [Smile-SA](https://github.com/Smile-SA/slidev-component-progress) — ★ 24 — Progress component for Slidev
+- [johnpolacek](https://github.com/johnpolacek/WhatTheHeckIsResponsiveWebDesign-impressjs) — ★ 24 — An impress.js presentation on responsive web design.
+- [awgreenblatt](https://github.com/awgreenblatt/reveal-shaders) — ★ 23 — Reveal.js presentation using CSS Shaders for transitions
+- [grantmcdermott](https://github.com/grantmcdermott/quarto-revealjs-clean-demo) — ★ 23 — Demo slides for the clean Quarto revealjs theme
+- [octosteve](https://github.com/octosteve/slide_hero) — ★ 23 — Used to create slides backed by reveal.js
+- [Kat-Codes](https://github.com/Kat-Codes/building-talks-with-reveal.js) — ★ 23 — A talk about building talks with Reveal.js (with React)
+- [nicdaCosta](https://github.com/nicdaCosta/generator-revealjs) — ★ 23 — A Yeoman generator for creating a reveal.js slide show
+- [dermike](https://github.com/dermike/slide-beacon) — ★ 23 — Share URL's in presentational slides from a Physical Web Eddystone beacon, making the current Reveal.js slide link only a tap away for the audience.
+- [tycloud97](https://github.com/tycloud97/slidev-aws) — ★ 23 — —
+- [mizuirorivi](https://github.com/mizuirorivi/slidev-overflow-checker) — ★ 23 — A CLI tool that automatically cycles through each page (slide) and detects overflows.
+- [pjdoland](https://github.com/pjdoland/deck2video) — ★ 23 — Convert Marp or Slidev decks into narrated MP4 videos with local or cloud-based AI voice cloning.
+- [mikejholly](https://github.com/mikejholly/impressive-markdown) — ★ 23 — Generate fancy impress.js presentations using markdown.
+- [eueung](https://github.com/eueung/hugo-remark-twemoji) — ★ 23 — Writing remark slides with conversational (Tw)emoji within Hugo
+- [Jancat](https://github.com/Jancat/react-native-slide-verify) — ★ 23 — A pure JavaScript <SlideVerify> component for react-native
+- [jinnyjiinlee](https://github.com/jinnyjiinlee/presenter-mode) — ★ 22 — PowerPoint-grade presenter view for HTML slide decks  speaker notes, timer, ink, area zoom, break screen. One file, no install, works offline. (HTML ????? ??...
+- [martinring](https://github.com/martinring/cobra) — ★ 22 — Proof and Code Presentation Framework
+- [datopian](https://github.com/datopian/portal.js.bak) — ★ 22 — 🌀 The JS data presentation framework. For a single dataset to a full catalog.
+- [dhondta](https://github.com/dhondta/mkdocs-revealjs-template) — ★ 22 — Template of MkDocs + Reveal.js static documentation website
+- [int64ago](https://github.com/int64ago/node-reveal) — ★ 22 — :package: [npm] Node CLI for reveal.js
+- [jsulpis](https://github.com/jsulpis/slides-template) — ★ 22 — Minimalist template for creating slides with Reveal.js and Astro
+- [benfoxall](https://github.com/benfoxall/slide-builder) — ★ 22 — A dynamic slide builder for reveal.js
+- [alejandrogallo](https://github.com/alejandrogallo/reveal-template) — ★ 22 — Simple reveal.js template with mathjax support and no node or npm dependencies, just a good old Makefile
+- [StephanSchmidt](https://github.com/StephanSchmidt/loupe) — ★ 22 — Open-source CLI that measures AI coding-assistant impact (Claude Code, Copilot, Cursor, Aider) across Bitbucket+Jira, GitHub, GitLab, Azure DevOps, or Linear...
+- [maiermic](https://github.com/maiermic/reveal-md-mermaid-animation-example) — ★ 22 — Example of how to animate mermaid diagrams in reveal-md using fragments
+- [cedricdelpoux](https://github.com/cedricdelpoux/gatsby-remark-images-grid) — ★ 22 — Use css grid layouts in markdown
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quartomonothemer) — ★ 21 — Makes a Monotone Theme for Quarto Revealjs, {ggplot2}, and {gt}.
+- [carlosfrodrigues](https://github.com/carlosfrodrigues/silkscreen) — ★ 21 — Generate FullPage HTML slides with Markdown
+- [JuliusWiedemann](https://github.com/JuliusWiedemann/MarpThemeWave) — ★ 21 — Custom theme "wave" for the marp presentation framework
+- [rossb34](https://github.com/rossb34/PortfolioAnalyticsPresentation) — ★ 21 — Repository for exploring ways to develop html presentation for the PortfolioAnalytics package
+- [awesome-skills](https://github.com/awesome-skills/create-html-deck) — ★ 21 — Build and verify browser-native HTML presentations for laptops and projectors.
+- [gshmu](https://github.com/gshmu/regex_slide) — ★ 21 — 基于markdown和remarkjs的regex课件
+- [shkumagai](https://github.com/shkumagai/sphinxjp.themes.impressjs) — ★ 20 — HTML Slide Theme package for Sphinx documentation tool.
+- [popomore](https://github.com/popomore/liquidluck-theme-reveal) — ★ 20 — liquidluck theme for reveal.js
+- [13rac1](https://github.com/13rac1/rjsmake) — ★ 20 — Use Markdown to generate a Reveal.js presentation in minutes.
+- [thlorenz](https://github.com/thlorenz/talks) — ★ 20 — Numerous talks I gave at meetups and conferences some based on reveal.js.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/workshop-slidecrafting) — ★ 20 — A 2-hour hands-on workshop on making beautiful slides with reveal.js and Quarto
+- [sanjeed5](https://github.com/sanjeed5/cursor-slidev) — ★ 20 — Make slides using Cursor. Sample slides below:
+- [loftkun](https://github.com/loftkun/slidev-example) — ★ 20 — an example of using Slidev to generate presentation slides from Markdown.
+- [sylvainw](https://github.com/sylvainw/HTML5-Future) — ★ 20 — Quick presentation about HTML5 future based on Impress.JS
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-cinco-de-mayo) — ★ 19 — Cinco de Mayo Quarto reveal.js theme
+- [bahmutov](https://github.com/bahmutov/reveal-vite) — ★ 19 — Example HTML presentation with Reveal.js bundled with Vite.js
+- [jfonsecarivera](https://github.com/jfonsecarivera/imessage-wrapped) — ★ 19 — Generate Spotify Wrapped-style HTML presentations for your iMessage conversations
+- [MrOrz](https://github.com/MrOrz/webdev) — ★ 19 — 不囉唆學 HTML。以 reveal.js 製作的 HTML / CSS / JS 投影片。
+- [jschildgen](https://github.com/jschildgen/db-slides) — ★ 19 — Interactive SQL lecture slides based on reveal.js
+- [rhuss](https://github.com/rhuss/docker-reveal) — ★ 19 — Docker image for creating and serving reveal.js presentation ... special effects included
+- [julie-ng](https://github.com/julie-ng/tidy-revealjs) — ★ 19 — A custom theme and build system for reveal.js
+- [Esri](https://github.com/Esri/reveal.js) — ★ 19 — perennial location for Esri Reveal.js conference templates
+- [jlabusch](https://github.com/jlabusch/reveal-sync) — ★ 19 — Synchronized distributed Reveal.js presentations
+- [TheoCUC](https://github.com/TheoCUC/slidev-theme-vatis) — ★ 19 — A slide theme for vats
+- [LSTM-Kirigaya](https://github.com/LSTM-Kirigaya/slidev-theme-miracle) — ★ 19 — Academic slidev theme for USTC 🎓
+- [yhatt](https://github.com/yhatt/poc-marp-slidev) — ★ 19 — —
+- [chrisjaure](https://github.com/chrisjaure/deckjs-remote) — ★ 19 — Remote control for deck.js
+- [DamonOehlman](https://github.com/DamonOehlman/deckem) — ★ 19 — DEPRECATED: Jade + deck.js awesomeness
+- [camerond](https://github.com/camerond/remarkymark) — ★ 19 — A Middleman server for Remark.js presentations
+- [Wodsoft](https://github.com/Wodsoft/upf) — ★ 18 — Universal Presentation Framework
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-reveal.js) — ★ 18 — reveal.js - Slide Show (S9) Template Pack
+- [jctophefabre](https://github.com/jctophefabre/deveal) — ★ 18 — a reveal.js helper tool
+- [Data-Wise](https://github.com/Data-Wise/dtslides) — ★ 18 — Quarto reveal.js themes for academic presentations — academic (navy/slate) and UNM-branded (cherry/turquoise)
+- [Naereen](https://github.com/Naereen/slides) — ★ 18 — All the slides of my talks since 2016! Written in LaTeX or Markdown, compiled to pretty PDF with pandoc :sparkles:, and experiments with Marp, reveal.js, rem...
+- [danestves](https://github.com/danestves/slidev-theme-flayyer) — ★ 18 — —
+- [greyli](https://github.com/greyli/image-wall) — ★ 18 — Image wall generator made with impress.js and Flask.
+- [ryan-roemer](https://github.com/ryan-roemer/deck.js-starter) — ★ 18 — A deck.js presentation starter kit with Jade, CodeMirror, JavaScript / CoffeeScript and more goodness.
+- [defunctzombie](https://github.com/defunctzombie/node-presentation) — ★ 18 — c++ modules with node.js presentation and support material
+- [docker-training](https://github.com/docker-training/docker-present) — ★ 18 — Presentation engine for official Mirantis training
+- [nrennie](https://github.com/nrennie/rss-2023-teaching-webR) — ★ 17 — Quarto revealjs slides for RSS International Conference 2023 presentation on teaching with webR.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-spotlight) — ★ 17 — Quarto revealjs spotlight
+- [Granze](https://github.com/Granze/applause) — ★ 17 — HTML presentations powered by Angular JS
+- [yanping](https://github.com/yanping/reveal.js-with-pandoc) — ★ 17 — pandoc template of reveal.js slides
+- [iamvdo](https://github.com/iamvdo/Reveal-liveCoding) — ★ 17 — Live coding in Reveal.js
+- [dougmvieira](https://github.com/dougmvieira/presentations) — ★ 17 — My reveal.js presentations hosted at GitHub Pages
+- [fghaas](https://github.com/fghaas/cookiecutter-presentation) — ★ 17 — A cookiecutter template that generates an opinionated reveal.js presentation
+- [aaronr](https://github.com/aaronr/revealz) — ★ 17 — A simple adaptation of Reveal.js that assumes you want to have your whole presentation in one md file
+- [Martinomagnifico](https://github.com/Martinomagnifico/reveal.js-internation) — ★ 17 — Localization (i10n) or Internationalization (i18n) of Reveal.js presentations. Easy start for translation.
+- [nwinkler](https://github.com/nwinkler/reveal-highlight-themes) — ★ 17 — The Highlight.js syntax themes repackaged for easy usage with Reveal.js
+- [stevegrunwell](https://github.com/stevegrunwell/wordpress-git) — ★ 17 — Reveal.js version of my "Keeping WordPress Under [Version] Control with Git" blog post
+- [rohitshetty00](https://github.com/rohitshetty00/beethoven-melody) — ★ 17 — A gui for creating impress.js presentation!!!
+- [IIIF](https://github.com/IIIF/prezi-2-to-3) — ★ 17 — Libraries to upgrade Presentation API v2 to v3 automatically
+- [d28b](https://github.com/d28b/html-slides) — ★ 16 — HTML Presentation Slides
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-chat-bubbles) — ★ 16 — Add iOS-style chat bubbles to Quarto RevealJS presentations, with fragment support and auto-scroll.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-seasons) — ★ 16 — quarto revealjs seasons theme template
+- [andre-bergner](https://github.com/andre-bergner/qrezi) — ★ 16 — qrezi is a QML based presentation framework inspired by prezi
+- [neo-technologies](https://github.com/neo-technologies/meteor-reveal-js) — ★ 16 — Reveal.js package for Meteor
+- [mikemiles86](https://github.com/mikemiles86/reveal-line-numbers) — ★ 16 — Reveal.js library for displaying line numbers in code examples styled with highlight.js
+- [cologneintelligence](https://github.com/cologneintelligence/reveal.js-remote) — ★ 16 — Remote control your reveal.js presentation with your smartphone!
+- [leouieda](https://github.com/leouieda/talk-template) — ★ 16 — MOVED TO CODEBERG: Template for my reveal.js based slides
+- [hakimel](https://github.com/hakimel/CSS-3D-Slideshow) — ★ 16 — This project has moved to http://github.com/hakimel/reveal.js
+- [wanghao15536870732](https://github.com/wanghao15536870732/SlideView) — ★ 16 — 🔖   Card RecycleViewManager, to make your interface cool.Use recyclerView to add cool effects to the view.
+- [wnielson](https://github.com/wnielson/sencha-SlideView) — ★ 16 — An updated version of sencha-SlideNavigation that is more flexible and also supports containers docked to both sides simultaneously
+- [idbrii](https://github.com/idbrii/vim-remarkjs) — ★ 16 — Turn Markdown into self-contained html slideshows (using remark.js)
+- [javier-mora](https://github.com/javier-mora/pptx-to-html) — ★ 15 — Converts PPTX presentations into self-contained HTML slides using TypeScript.
+- [adamhollett](https://github.com/adamhollett/jekyll-and-slide) — ★ 15 — Markdown slides in Jekyll with reveal.js
+- [segdeha](https://github.com/segdeha/SlideKit) — ★ 15 — Slide deck presentation framework leveraging WebKit transitions
+- [wuyoujae](https://github.com/wuyoujae/matcha.js) — ★ 15 — A modular web presentation framework that transforms Markdown into stunning slides. With per-slide theming and smooth animations, matcha.js is fully extensib...
+- [jvcasillas](https://github.com/jvcasillas/ru_xaringan) — ★ 15 — RU style theme for xaringan html presentations
+- [lifesign](https://github.com/lifesign/laravel_slide) — ★ 15 — A html presentation about laravel
+- [DjebbZ](https://github.com/DjebbZ/revealjs-docpad) — ★ 15 — Create Reveal.js presentations easily with DocPad.
+- [abruzzi](https://github.com/abruzzi/reveal-tw-boilerplate) — ★ 15 — Reveal.js with ThoughtWorks new VI
+- [matbury](https://github.com/matbury/mod_revealjs) — ★ 15 — Moodle 2.5+ resource module for displaying reveal.js multimedia HTML/CSS/JS slide show presentations
+- [divshot](https://github.com/divshot/quick-deck) — ★ 15 — A fast, Markdown based boilerplate for putting together Reveal.js decks.
+- [fbxyz](https://github.com/fbxyz/respysive-slide) — ★ 15 — A Python package that allows you to create interactive presentations  using Python, Bootstrap and Reveal.js.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-diagrams) — ★ 15 — Reveal.js diagram layouts for Quarto slides — circle-flow, pie, process, pyramid, matrix, hierarchy, venn, funnel, and cycle.
+- [cdaringe](https://github.com/cdaringe/revealer) — ★ 15 — develop reveal.js presentations happily, without redundant source or boilerplate
+- [addcnos](https://github.com/addcnos/slidev.ai) — ★ 15 — ai for slidev
+- [Oluwasetemi](https://github.com/Oluwasetemi/school_of_engineering_v4) — ★ 15 — A modern HTML education platform built with Slidev and Vue.js for engineering students. Delivers interactive presentations with custom components, smooth ani...
+- [amra](https://github.com/amra/reveal-md-scripts) — ★ 15 — reveal-md is great project. Improve your presentation even more with custom user scripts. Here is the place to find them.
+- [rlofc](https://github.com/rlofc/understate) — ★ 15 — make stunning terminal presentations using markdown and some ncurses magic
+- [gadenbuie](https://github.com/gadenbuie/revealjs-text-resizer) — ★ 15 — Resize text on quarto slides
+- [olostan](https://github.com/olostan/dacsslide) — ★ 15 — Dart CSS3 based presentation engine
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-tegaki) — ★ 15 — Animated handwriting effects for Quarto HTML and RevealJS documents using the tegaki library.
+- [Honghurumeng](https://github.com/Honghurumeng/oc_sdk_ppt) — ★ 14 — ?? PPT ?? Agent:??????????,??? @opencode-ai/sdk ?? LLM ????????,??? HTML slides,?????? deck.pptx?
+- [DandyLyons](https://github.com/DandyLyons/LinkPreviews) — ★ 14 — A SwiftUI wrapper around LPLinkView from the Link Presentation framework by Apple.
+- [milon](https://github.com/milon/uposthapon) — ★ 14 — Simple markdown to html presentation converver
+- [melix](https://github.com/melix/gradle-presentation-template) — ★ 14 — A presentation template using Asciidoctor+Reveal.js and Gradle
+- [keimlink](https://github.com/keimlink/cookiecutter-reveal.js) — ★ 14 — :bar_chart: A cookiecutter template for reveal.js presentations.
+- [stevegrunwell](https://github.com/stevegrunwell/reveal-ga) — ★ 14 — Add Google Universal Analytics tracking to your reveal.js presentation.
+- [asciidoctor](https://github.com/asciidoctor/asciidoctorj-reveal.js) — ★ 14 — AsciidoctorJ Reveal.js bundles the Asciidoctor Reveal.js RubyGem (asciidoctor-revealjs) so it can be loaded into the JVM using JRuby
+- [patarapolw](https://github.com/patarapolw/reveal-md) — ★ 14 — View markdown files as a presentation in Reveal.js  with CLI
+- [AnneTee](https://github.com/AnneTee/reveal-js-themes) — ★ 14 — reveal.js template slides and custom themes
+- [csev](https://github.com/csev/dazzleSketch) — ★ 14 — A JavaScript library that allows one to sketch over reveal.js presentations or any web page - OmniDazzle meets JavaScript
+- [ofkoru](https://github.com/ofkoru/quarto-animate-graph) — ★ 14 — Create clear, step-by-step visualizations to enhance your teaching and explanations in Reveal.js without any coding knowledge.
+- [mengxn](https://github.com/mengxn/SlideView) — ★ 14 — 滑动显示隐藏菜单，在任何你需要的地方
+- [Mokkapps](https://github.com/Mokkapps/slidev-theme-mokkapps) — ★ 14 — Slidev theme for my brand
+- [lilstiffy](https://github.com/lilstiffy/SlideView) — ★ 14 — A highly customisable slide to trigger action view for Compose!
+- [scottcheng](https://github.com/scottcheng/revolutionary-css3) — ★ 14 — A non-technical intro to CSS level 3, made with impress.js, Jade and Stylus
+- [seppo0010](https://github.com/seppo0010/deck.remote.js) — ★ 14 — Allow clients for deck.js
+- [bespokejs](https://github.com/bespokejs/bespoke-state) — ★ 14 — Slide-Specific Deck Styles for Bespoke.js
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-deck.js) — ★ 14 — deck.js - Slide Show (S9) Template Pack
+- [aldeka](https://github.com/aldeka/5-minute-design) — ★ 14 — PyCon lightning talk on design using deck.js
+- [sapegin](https://github.com/sapegin/grunt-shower-markdown) — ★ 14 — Grunt task that generates Shower presentations from Markdown source
+- [pascalduez](https://github.com/pascalduez/react-module-boilerplate) — ★ 14 — Sample React presentational components package.
+- [ilich](https://github.com/ilich/node-2fa) — ★ 14 — Sample code for Two-factor authentication with Node.js presentation.
+- [adityachauhan0](https://github.com/adityachauhan0/deckdown) — ★ 14 — Markdown presentation engine for AI agents with local PDF, PNG, and PPTX output
+- [aarkue](https://github.com/aarkue/slide-template) — ★ 14 — A heavily customizable presentation template with RevealJS, React and Tailwind CSS
+- [ungoldman](https://github.com/ungoldman/jekyll-reveal) — ★ 13 — markdown ? slides (reveal.js) ? gh-pages (jekyll)
+- [jronallo](https://github.com/jronallo/starterdeck-node) — ★ 13 — HTML slide deck with audience synced handouts
+- [nbrownuk](https://github.com/nbrownuk/docker-revealjs) — ★ 13 — Dockerfiles for the reveal.js presentation framework
+- [sekaiamber](https://github.com/sekaiamber/fairy.js) — ★ 13 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
+- [shower](https://github.com/shower/bright) — ★ 13 — Bright theme for Shower HTML presentation engine
+- [johndoe31415](https://github.com/johndoe31415/pyradium) — ★ 13 — Creating HTML presentations with LaTeX-ish features from XML source
+- [seifkamal](https://github.com/seifkamal/slide.css) — ★ 13 — A minimal, pure CSS stylesheet for making HTML presentations.
+- [uofa-cmput404](https://github.com/uofa-cmput404/slides-xt) — ★ 13 — Refreshed reveal.js slides for CMPUT 404
+- [MichaelBitard](https://github.com/MichaelBitard/revealjs_heroku) — ★ 13 — how to make reveal.js work on heroku
+- [danidemi](https://github.com/danidemi/docker-reveal.js) — ★ 13 — A docker container to run your docker-reveal.js based slideshow without headhache.
+- [owid](https://github.com/owid/slides) — ★ 13 — reveal.js template and slides for Our World in Data
+- [jamjolu](https://github.com/jamjolu/tts_basics_for_revealjs) — ★ 13 — Add text-to-speech to your reveal.js slideshow and have your slides read out loud.
+- [Ennoriel](https://github.com/Ennoriel/svelte-reveal.js) — ★ 13 — Reveal.js Svelte wrapper
+- [mbotsch](https://github.com/mbotsch/revealSlides) — ★ 13 — Framework for producing HTML slides with markdown, pandoc, and reveal.js
+- [gabriel-del](https://github.com/gabriel-del/slidev) — ★ 13 — slidev multi-entry template
+- [wingsrao](https://github.com/wingsrao/SlideViewForFilter) — ★ 13 — 二级侧滑菜单，用于复杂条件筛选
+- [JeremyMeissner](https://github.com/JeremyMeissner/slidev-theme-apple-basic) — ★ 13 — An Apple like theme for Slidev
+- [yamazakidaisuke](https://github.com/yamazakidaisuke/impressJs_Build) — ★ 13 — The GUI tool which can design impress.js.
+- [petele](https://github.com/petele/HTML5Slides) — ★ 13 — An HTML5 Slide Template - based on the Google HTML5 Slide Template
+- [puzzle](https://github.com/puzzle/pitc-revealjs-theme) — ★ 13 — Revealjs theme based upon the Puzzle style guide
+- [yinshipeng](https://github.com/yinshipeng/vue-exp) — ★ 12 — Based on the Vue.js 2.0 version presentation framework
+- [athos](https://github.com/athos/prejenter) — ★ 12 — Presentation framework for Clojurians
+- [Cobenian](https://github.com/Cobenian/Presentex) — ★ 12 — Elixir -> HTML/JavaScript based presentation framework intended for showing Elixir code
+- [kamsar](https://github.com/kamsar/Blade) — ★ 12 — Blade is a presentation framework for Sitecore 7. Blade is currently considered deprecated as Sitecore MVC is mature enough to make Blade no longer needed. S...
+- [ibrews](https://github.com/ibrews/spatial-deck) — ★ 12 — A self-contained, single-file HTML presentation framework with annotation/move modes for AI-collaborative editing. No build, no framework — just one file.
+- [joshed-io](https://github.com/joshed-io/programming-quotes) — ★ 12 — A demo presentation for the reveal-hugo Reveal.js Hugo theme
+- [PHLAK](https://github.com/PHLAK/presentation) — ★ 12 — Presentation template using reveal.js + Tailwind CSS
+- [wincent](https://github.com/wincent/presentation-template) — ★ 12 — Simple starting template for slideshow presentations built using reveal.js, highlight.js and HTML
+- [cesar](https://github.com/cesar/reveal-cli) — ★ 12 — Command Line Interface for Reveal.js
+- [siakas](https://github.com/siakas/op-bandersnatch) — ★ 12 — Markdown file convert to Reveal.js by Pandoc
+- [xieby1](https://github.com/xieby1/markdown_revealjs) — ★ 12 — Converting Markdown to Reveal.js Sildes
+- [ZuopanYao](https://github.com/ZuopanYao/SlideVerify) — ★ 12 — iOS平台滑动验证码
+- [makerjackie](https://github.com/makerjackie/ai-cursor-slidev-ppt) — ★ 12 — —
+- [luoling8192](https://github.com/luoling8192/talks) — ★ 12 — 我的技术分享合集,用 Slidev 搭建
+- [lezhangxyz](https://github.com/lezhangxyz/IntroToNode) — ★ 12 — Intro To Node presentation built on Impress.js & Express.js webserver, Heroku ready.
+- [TimHeckel](https://github.com/TimHeckel/impressr) — ★ 12 — Real-time sync for impress.js presentations
+- [imperialists](https://github.com/imperialists/impress.dart) — ★ 12 — impress.js implementation in Dart
+- [Springerle](https://github.com/Springerle/hovercraft-slides) — ★ 12 — :cookie: A template for new Hovercraft presentation projects (impress.js slides in reStructuredText)
+- [haoHu](https://github.com/haoHu/ppt-online) — ★ 12 — 利用impress.js这款基于css3转 换和过渡、工作于现代浏览器(Google Chrome或Safari (或 Firefox 10 或 IE10))、并受prezi.com的理念启发的演示工具，制作在线PPT，为演示带来便捷和不一般的显示效果
+- [jessecravens](https://github.com/jessecravens/robodeck) — ★ 12 — Sencha mobile remote controls a deck.js presentation running on node.js, express.js and socket.io.
+- [duijf](https://github.com/duijf/mnml) — ★ 12 — mnml is a simple theme for deck.js with a tad of class
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-template) — ★ 12 — Personal Quarto Revealjs Template
+- [fradav](https://github.com/fradav/quarto-revealjs-animate) — ★ 12 — —
+- [sfeir-open-source](https://github.com/sfeir-open-source/sfeir-school-theme) — ★ 12 — Theme for Sfeir School for RevealJS
+- [alivx](https://github.com/alivx/revealjs-digital-signage) — ★ 12 — Free Presentation Digital Signage for Everyone. Start using this tool right now. Ego View Digital Signage is an easy tool to create Digital Signage.
+- [lqdev](https://github.com/lqdev/RemarkFS) — ★ 11 — F# Markdown Slide Creation Tool based on Remark
+- [mostage-app](https://github.com/mostage-app/mostage) — ★ 11 — Presentation framework based on markdown and HTML (Core Library + CLI)
+- [KatieK2](https://github.com/KatieK2/html5-slides) — ★ 11 — Slides / presentation framework built with web technologies to run in modern web browsers.
+- [christer-eriksson](https://github.com/christer-eriksson/reveal_countdown) — ★ 11 — A count down clock to embed in reveal.js presentations.
+- [xmelsky](https://github.com/xmelsky/reveal.js-boilerplates) — ★ 11 — Webpack based boilerplates for quick start with Reveal.js framework
+- [pantajoe](https://github.com/pantajoe/reveal.js-tracking) — ★ 11 — An advanced tracking plug-in for reveal.js for purposes like Learning Analytics
+- [nascherman](https://github.com/nascherman/react-revealjs) — ★ 11 — reaveal-js component for React. Pass markdown or markup for creating reveal-js presentations.
+- [y-usuzumi](https://github.com/y-usuzumi/reveal-hs) — ★ 11 — Write your Reveal.js presentations in Haskell!
+- [afonsojramos](https://github.com/afonsojramos/slidev-decks) — ★ 11 — CLI companion for managing multiple Slidev presentations
+- [luocfprime](https://github.com/luocfprime/slidev-theme-ustc) — ★ 11 — A clean academic Slidev theme for USTC presentations.
+- [hyuunnn](https://github.com/hyuunnn/ida-slides) — ★ 11 — Marp / Slidev slide decks docked in IDA Pro
+- [noblepayne](https://github.com/noblepayne/nix-anywhere-else-talk) — ★ 11 — A Slidev presentation about the "dark arts" of ELF surgery and Nix, built entirely with Nix.
+- [henrikingo](https://github.com/henrikingo/presentations) — ★ 11 — Impress.js presentations I've done
+- [4QuantOSS](https://github.com/4QuantOSS/shiny-impress.js) — ★ 11 — A Shiny-based demo showing how to use the igraph library of R to make impress.js/jmpress presentations
+- [enygma](https://github.com/enygma/impress-gen) — ★ 11 — Generator for Markdown to Impress.js Slideshow
+- [SamaneYaghoubi](https://github.com/SamaneYaghoubi/Angular-Presentation) — ★ 11 — :rocket: Made with impress.js
+- [danielbayerlein](https://github.com/danielbayerlein/middleman-impress) — ★ 11 — A @middleman project template built with impress.js, Haml, Sass and CoffeeScript.
+- [medikoo](https://github.com/medikoo/bespoke-notes) — ★ 11 — Display slide notes in Bespoke.js presentations
+- [extrawurst](https://github.com/extrawurst/gitui-presentation) — ★ 11 — retro terminal presentation of gitui at @RustBerlin meetup
+- [rpodcast](https://github.com/rpodcast/quarto-revealjs-terminal) — ★ 11 — Quarto revealjs theme with retro terminal style
+- [MMJansen](https://github.com/MMJansen/workshop_quarto_slides) — ★ 11 — Workshop for the VVSOR on creating slides with Quarto. The workshop is mainly about Revealjs.
+- [fhiegel](https://github.com/fhiegel/slide-template) — ★ 11 — Static site template, using MkDocs with mkdocs-material and providing a RevealJS page template.
+- [fslides](https://github.com/fslides/fslides) — ★ 10 — A no-bullshit HTML presentation framework
+- [theznerd](https://github.com/theznerd/PoSHPF) — ★ 10 — "PowerShell Presentation Framework" for executing WPF
+- [sortega](https://github.com/sortega/markdown-slidy) — ★ 10 — Pandoc-powered slidy template helps you to create html presentations using markdown.
+- [ThomasWeinert](https://github.com/ThomasWeinert/reveal-badges) — ★ 10 — Badges for reveal.js
+- [negativetwelve](https://github.com/negativetwelve/rails-reveal-js) — ★ 10 — Gem for adding Reveal.js to the Rails Asset Pipeline (Rails 4.0)
+- [codecentric](https://github.com/codecentric/codecentric-reveal-template) — ★ 10 — Template for reveal.js codecentric presentations
+- [rossbachp](https://github.com/rossbachp/revealjs-presentation) — ★ 10 — My docker reveal.js presentation base images template
+- [slidevjs](https://github.com/slidevjs/docs-es) — ★ 10 — Spanish translation for Slidev docs
+- [imageslr](https://github.com/imageslr/slidev-bytedance) — ★ 10 — 一款基于 Slidev 的 Bytedance PPT 模板
+- [kxxt](https://github.com/kxxt/slidev-template-repo) — ★ 10 — A template repo for slidev slides with automatic GitHub Pages deployment
+- [tmr232](https://github.com/tmr232/Ink2Impress) — ★ 10 — Create Impress.js presentations with Inkscape!
+- [csainty](https://github.com/csainty/ImpressGame) — ★ 10 — Text adventure engine built on Impress.js
+- [ilagokarn](https://github.com/ilagokarn/Impressify) — ★ 10 — Impressify.js is a visual interactive development environment (IDE) to create stunning Impress.JS presentations on CSS transformations and transitions.
+- [asciidoctor](https://github.com/asciidoctor/asciidoctor-deck.js) — ★ 10 — :no_entry: ARCHIVED: deck.js converter templates for Asciidoctor, implemented in Haml
+- [bespokejs](https://github.com/bespokejs/bespoke-loop) — ★ 10 — Looping Presentations for Bespoke.js
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-transitions) — ★ 10 — GPU-accelerated GL Transitions for Quarto RevealJS slides, with 100+ GLSL shader effects.
 
-_(156 repos in this category)_
+_Showing top 500 of 5965 repos in this category — the full list with all 5965 entries is in [`data/repos.json`](data/repos.json)._
 
 ## Markdown → Slides (Marp / Quarto / Typst / Pandoc / Org / Reveal-md)
 
 Author slides in Markdown / Typst / Org / R and render to reveal.js, Marp, Beamer or HTML.
 
-- [marp-team/marp](https://github.com/marp-team/marp) — ★ 12,640 — The entrance repository of Markdown presentation ecosystem
-- [yhatt/marp](https://github.com/yhatt/marp) — ★ 7,847 — The site of classic Markdown presentation writer app
-- [marp-team/marp-cli](https://github.com/marp-team/marp-cli) — ★ 3,870 — A CLI interface for Marp and Marpit based converters
-- [marp-team/marp-vscode](https://github.com/marp-team/marp-vscode) — ★ 2,099 — Marp for VS Code: Create slide deck written in Marp Markdown on VS Code
-- [marp-team/marpit](https://github.com/marp-team/marpit) — ★ 1,387 — The skinny framework for creating slide deck from Markdown
-- [marp-team/marp-core](https://github.com/marp-team/marp-core) — ★ 1,157 — The core of Marp converter
-- [favourhong/Awesome-Marp](https://github.com/favourhong/Awesome-Marp) — ★ 1,050 — An open-source presentation theme ecosystem for Marp/Markdown users.
-- [marp-team/awesome-marp](https://github.com/marp-team/awesome-marp) — ★ 523 — A curated list of awesome things related to Marp
-- [soxoj/marple](https://github.com/soxoj/marple) — ★ 332 — ?? Collect links to profiles by username through search engines and analyze with various plugins
-- [kaisugi/marp-theme-academic](https://github.com/kaisugi/marp-theme-academic) — ★ 283 — Academic Presentation Slides with Marp
-- [samuele-cozzi/obsidian-marp-slides](https://github.com/samuele-cozzi/obsidian-marp-slides) — ★ 267 — Create markdown-based Marp presentations in Obsidian
-- [yhatt/marp-cli-example](https://github.com/yhatt/marp-cli-example) — ★ 213 — The good starter for using Marp via Marp CLI, by the author of Marp
-- [cunhapaulo/marpstyle](https://github.com/cunhapaulo/marpstyle) — ★ 207 — Repository for Marp Themes created with beauty and simplicity in mind.
-- [arpitbbhayani/deckrun](https://github.com/arpitbbhayani/deckrun) — ★ 178 — A local-first presentation tool for writing, editing, presenting, and exporting Markdown slides or self-contained HTML docs.
-- [JichouP/obsidian-marp-plugin](https://github.com/JichouP/obsidian-marp-plugin) — ★ 177 — Plugin to use Marp with Obsidian
-- [EmilHvitfeldt/quarto-revealjs-editable](https://github.com/EmilHvitfeldt/quarto-revealjs-editable) — ★ 172 — Repositioning and resizing of images and text directly in quarto revealjs slides
-- [jeffreykegler/Marpa--R2](https://github.com/jeffreykegler/Marpa--R2) — ★ 164 — Parse any language you can describe in BNF
-- [dadoomer/markdown-slides](https://github.com/dadoomer/markdown-slides) — ★ 157 — Using markdown, write simple but beautiful presentations with math, animations and media.
-- [minorun365/marp-agent](https://github.com/minorun365/marp-agent) — ★ 124 — ???????
-- [matsubara0507/marp-themes](https://github.com/matsubara0507/marp-themes) — ★ 119 — Theme for Marp Next
-- [rnd195/my-marp-themes](https://github.com/rnd195/my-marp-themes) — ★ 118 — Collection of my CSS themes for Marp Markdown presentations
-- [manjavacas/typslides](https://github.com/manjavacas/typslides) — ★ 116 — Minimalistic Typst slides.
-- [rainbowflesh/Rose-Pine-For-Marp](https://github.com/rainbowflesh/Rose-Pine-For-Marp) — ★ 106 — Ros Pine For Marp
-- [mikael-ros/neobeam](https://github.com/mikael-ros/neobeam) — ★ 106 — A modern take on the LaTeX beamer theme, for Marp
-- [BeWaterMyFriend7/Marp-Theme-UCAS](https://github.com/BeWaterMyFriend7/Marp-Theme-UCAS) — ★ 100 — markdown Slide made by marp
-- [ogom/sublimetext-markdown-slideshow](https://github.com/ogom/sublimetext-markdown-slideshow) — ★ 93 — Sublime Text 2/3 plugin for markdown slideshow
-- [cunhapaulo/MarpX](https://github.com/cunhapaulo/MarpX) — ★ 87 — Try MarpX! It is still 'Marp themes', created with beauty and simplicity in mind. (like a Marpstyle 2.0)
-- [zhaoluting/marp-themes](https://github.com/zhaoluting/marp-themes) — ★ 87 — marp??,?????????????????
-- [robalexdev/marp-to-pages](https://github.com/robalexdev/marp-to-pages) — ★ 85 — Example marp action
-- [hrbrmstr/quarto-organization-template](https://github.com/hrbrmstr/quarto-organization-template) — ★ 83 — A Quarto RevealJS Organization Boilerplate Template You Can Clone And Modify Quickly
-- [chenyang1999/Marp_theme_for_THUslides](https://github.com/chenyang1999/Marp_theme_for_THUslides) — ★ 83 — ?? Marp ???????? Slides??
-- [EmilHvitfeldt/quarto-revealjs-codewindow](https://github.com/EmilHvitfeldt/quarto-revealjs-codewindow) — ★ 82 — Styled code block windows with file tabs for Quarto RevealJS presentations.
-- [classmethod/classmethod-marp-theme](https://github.com/classmethod/classmethod-marp-theme) — ★ 77 — ???????????Marp???????
-- [marp-team/marp-web](https://github.com/marp-team/marp-web) — ★ 75 — [INACTIVE] Markdown presentation writer for web interface
-- [justincampbell/tp](https://github.com/justincampbell/tp) — ★ 62 — Terminal Presenter: Presents Markdown slides in your terminal
-- [BabyJ723/blast-ON](https://github.com/BabyJ723/blast-ON) — ★ 50 — # Awesome Keycloak [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sind...
-- [FlixCoder/typst-slides](https://github.com/FlixCoder/typst-slides) — ★ 42 — Typst beamer/slides template for presentations
-- [EmilHvitfeldt/quarto-revealjs-imagemover](https://github.com/EmilHvitfeldt/quarto-revealjs-imagemover) — ★ 40 — repositioning and resizing of images directly in quarto revealjs slides
-- [hofbi/tum-marp-template](https://github.com/hofbi/tum-marp-template) — ★ 35 — TUM Marp Template for Markdown Slides
-- [melissavanbussel/theme-generator](https://github.com/melissavanbussel/theme-generator) — ★ 31 — A Quarto revealjs theme generator
-- [yKicchan/awesome-marp-template](https://github.com/yKicchan/awesome-marp-template) — ★ 29 — An ultimate Marp template for your awesome presentation!
-- [sjtug/touying-sjtu](https://github.com/sjtug/touying-sjtu) — ★ 27 — ?? Touying ??????? Typst ????? (Typst Slide Theme for SJTU Based on Touying)
-- [Farewe1ll/quarto-revealjs-beamer](https://github.com/Farewe1ll/quarto-revealjs-beamer) — ★ 27 — —
-- [nrennie/learning-statistics-with-webR](https://github.com/nrennie/learning-statistics-with-webR) — ★ 25 — Quarto revealjs slides to teach introductory statistics concepts using webR.
-- [ofkoru/quarto-leader-line](https://github.com/ofkoru/quarto-leader-line) — ★ 24 — Draw a line between HTML elements in your Quarto-Revealjs presentation using leader-line.
-- [grantmcdermott/quarto-revealjs-clean-demo](https://github.com/grantmcdermott/quarto-revealjs-clean-demo) — ★ 23 — Demo slides for the clean Quarto revealjs theme
-- [kazuyanagimoto/quartomonothemer](https://github.com/kazuyanagimoto/quartomonothemer) — ★ 21 — Makes a Monotone Theme for Quarto Revealjs, {ggplot2}, and {gt}.
-- [HoGentTIN/hogent-markdown-slides](https://github.com/HoGentTIN/hogent-markdown-slides) — ★ 21 — —
-- [gophergala2016/fireup](https://github.com/gophergala2016/fireup) — ★ 21 — Push and broadcast markdown slides on the fly
-- [hanlife02/pkusli](https://github.com/hanlife02/pkusli) — ★ 21 — Based on the typst slides template, handle your team meeting in five minutes from scratch!
-- [nrennie/rss-2023-teaching-webR](https://github.com/nrennie/rss-2023-teaching-webR) — ★ 17 — Quarto revealjs slides for RSS International Conference 2023 presentation on teaching with webR.
-- [EmilHvitfeldt/quarto-revealjs-spotlight](https://github.com/EmilHvitfeldt/quarto-revealjs-spotlight) — ★ 17 — Quarto revealjs spotlight
-- [EmilHvitfeldt/quarto-revealjs-chat-bubbles](https://github.com/EmilHvitfeldt/quarto-revealjs-chat-bubbles) — ★ 16 — Add iOS-style chat bubbles to Quarto RevealJS presentations, with fragment support and auto-scroll.
-- [FDUCSLG/typst-slides-fudan](https://github.com/FDUCSLG/typst-slides-fudan) — ★ 16 — ???????? Typst ???An unofficial Fudan slide theme for Typst.
-- [EmilHvitfeldt/quarto-revealjs-seasons](https://github.com/EmilHvitfeldt/quarto-revealjs-seasons) — ★ 16 — quarto revealjs seasons theme template
-- [ivoputzer/md-slides-template](https://github.com/ivoputzer/md-slides-template) — ★ 15 — Markdown Slides Template
-- [EmilHvitfeldt/quarto-revealjs-highlightword](https://github.com/EmilHvitfeldt/quarto-revealjs-highlightword) — ★ 15 — RevealJS plugin to highlight specific parts of code in Quarto presentations.
-- [UtrechtUniversity/uu-quarto-presentation-template](https://github.com/UtrechtUniversity/uu-quarto-presentation-template) — ★ 13 — Template repository for creating a UU styled Quarto presentation
-- [Juanvvc/markdown-slides](https://github.com/Juanvvc/markdown-slides) — ★ 11 — A project to teach MARP and store themes
-- [neuroinformatics-unit/quarto-presentation-template](https://github.com/neuroinformatics-unit/quarto-presentation-template) — ★ 11 — —
-- [jillymackay/ed_quarto_themes](https://github.com/jillymackay/ed_quarto_themes) — ★ 10 — The basic structure of a University of Edinburgh R(D)SVS themed Quarto presentation. Please feel free to copy this for your own purposes.
-- [SkiFire13/typst-slides-unipd](https://github.com/SkiFire13/typst-slides-unipd) — ★ 10 — —
-- [jthomasmock/quarto-presentation](https://github.com/jthomasmock/quarto-presentation) — ★ 9 — —
-- [Dale2003/pku-typst-slides](https://github.com/Dale2003/pku-typst-slides) — ★ 8 — —
-- [non/literati](https://github.com/non/literati) — ★ 8 — Literate programming for Scala from within Markdown slides
-- [brennop/scrolls](https://github.com/brennop/scrolls) — ★ 7 — Markdown slides
-- [ccbaumler/analyzing-lit](https://github.com/ccbaumler/analyzing-lit) — ★ 6 — A quarto presentation on distilling scientific literature with Bibliometric analysis and R tools
-- [benzipperer/metropolyst](https://github.com/benzipperer/metropolyst) — ★ 6 — configurable metropolis theme clone for typst slides
-- [numbats/monash-quarto-presentation](https://github.com/numbats/monash-quarto-presentation) — ★ 6 — —
-- [supxinfy/BerryPhaseSlides](https://github.com/supxinfy/BerryPhaseSlides) — ★ 5 — Typst slides for Master's defence and a seminar talk
-- [kazuyanagimoto/quarto-slides-typst](https://github.com/kazuyanagimoto/quarto-slides-typst) — ★ 5 — Some Examples for Quarto + Typst Slides
-- [ccbaumler/managing-lit](https://github.com/ccbaumler/managing-lit) — ★ 5 — A quarto presentation on managing scientific literature with Zotero
-- [AlbertRapp/my_quarto_presentation_default](https://github.com/AlbertRapp/my_quarto_presentation_default) — ★ 5 — —
-- [danilofreire/quarto-presentation](https://github.com/danilofreire/quarto-presentation) — ★ 5 — A fork of the beautiful Quarto Clean presentation theme
-- [tilburgsciencehub/quarto_presentation_template](https://github.com/tilburgsciencehub/quarto_presentation_template) — ★ 4 — Templates to make presentations and report in Quarto
-- [EmilHvitfeldt/quarto-revealjs-video-fragments](https://github.com/EmilHvitfeldt/quarto-revealjs-video-fragments) — ★ 4 — Control video playback clip-by-clip with RevealJS fragments in Quarto presentations.
-- [Jzzzi/slide-thu](https://github.com/Jzzzi/slide-thu) — ★ 4 — A Typst slide template for Tsinghua University
-- [nicolasfara/Template-for-Typst-Slides](https://github.com/nicolasfara/Template-for-Typst-Slides) — ★ 4 — —
-- [chengluyu/typst-slides-template](https://github.com/chengluyu/typst-slides-template) — ★ 4 — —
-- [connachermurphy/typst-slides](https://github.com/connachermurphy/typst-slides) — ★ 3 — Slides template for Typst
-- [wiesehahn/quarto_presentation_template](https://github.com/wiesehahn/quarto_presentation_template) — ★ 3 — Template repository to provide a starting point for my presentations
-- [eLearningHub/quarto-beamer-starter](https://github.com/eLearningHub/quarto-beamer-starter) — ★ 3 — A Quarto presentation starter with a focus on Beamer
-- [yelpevade/touying-nudt](https://github.com/yelpevade/touying-nudt) — ★ 3 — ?? Touying ??????? Typst ????? (Typst Slide Theme for NUDT Based on Touying)
-- [nhsengland/nhse-quarto-presentations](https://github.com/nhsengland/nhse-quarto-presentations) — ★ 2 — —
-- [statik/cc-quarto-video](https://github.com/statik/cc-quarto-video) — ★ 2 — using live camera feed in quarto presentation similar to Keynote Live Video feature
-- [syqwq-OMG/ecnu-typst-slide](https://github.com/syqwq-OMG/ecnu-typst-slide) — ★ 2 — typst slide template for ECNU using touying
-- [wiuri/xjtu_bristol](https://github.com/wiuri/xjtu_bristol) — ★ 2 — _typst_slides_template
-- [pauladam94/ENS-Rennes-Typst-Slides-Template](https://github.com/pauladam94/ENS-Rennes-Typst-Slides-Template) — ★ 2 — Typst Slide Template for ENS Rennes
-- [coli-saar/typst-uds-slides](https://github.com/coli-saar/typst-uds-slides) — ★ 1 — Typst slides in the official UdS style
-- [leichaoL/touying-simpl-swufe](https://github.com/leichaoL/touying-simpl-swufe) — ★ 1 — A simple Typst slides template for SWUFE
-- [elisescu/pandoc-reveal](https://github.com/elisescu/pandoc-reveal) — ★ 1 — pandoc reveal template
-- [dajuno/pandoc-revealjs-mathjax](https://github.com/dajuno/pandoc-revealjs-mathjax) — ★ 1 — Instructions and template for pandoc config using revealjs and mathjax
-- [donaldwuid/pandoc_revealjs_template](https://github.com/donaldwuid/pandoc_revealjs_template) — ★ 1 — pandoc generated revealjs template
-- [KaelZhang321/pptx-cli](https://github.com/KaelZhang321/pptx-cli) — ★ 0 — Convert Markdown to PowerPoint presentations
-- [ghamerly/pandoc-revealjs-highlightjs](https://github.com/ghamerly/pandoc-revealjs-highlightjs) — ★ 0 — Minimal demonstration of using highlightjs with pandoc-generated revealjs slides
-- [matthiasmoe/pandoc_revealjs_workflow](https://github.com/matthiasmoe/pandoc_revealjs_workflow) — ★ 0 — —
-- [fylearn/pandoc-reveal](https://github.com/fylearn/pandoc-reveal) — ★ 0 — —
-- [shahenazmonia/pandoc-reveal](https://github.com/shahenazmonia/pandoc-reveal) — ★ 0 — —
-- [VenkiPhy6/venkislides](https://github.com/VenkiPhy6/venkislides) — ★ 0 — reveal-hugo slides html
+- [jgm](https://github.com/jgm/pandoc) — ★ 46,590 — Universal markup converter
+- [marp-team](https://github.com/marp-team/marp) — ★ 12,640 — The entrance repository of Markdown presentation ecosystem
+- [yhatt](https://github.com/yhatt/marp) — ★ 7,847 — The site of classic Markdown presentation writer app
+- [gitpitch](https://github.com/gitpitch/gitpitch) — ★ 5,475 — Markdown Presentations for Tech Conferences, Training, Developer Advocates, and Educators.
+- [visit1985](https://github.com/visit1985/mdp) — ★ 5,281 — A command-line based markdown presentation tool.
+- [marp-team](https://github.com/marp-team/marp-cli) — ★ 3,870 — A CLI interface for Marp and Marpit based converters
+- [jaspervdj](https://github.com/jaspervdj/patat) — ★ 2,744 — Terminal-based presentations using Pandoc
+- [touying-typ](https://github.com/touying-typ/touying) — ★ 2,386 — Touying is a powerful package for creating presentation slides in Typst.
+- [polylux-typ](https://github.com/polylux-typ/polylux) — ★ 1,609 — A package for creating slides in Typst
+- [yihui](https://github.com/yihui/xaringan) — ★ 1,523 — Presentation Ninja 幻灯忍者 · 写轮眼
+- [marp-team](https://github.com/marp-team/marpit) — ★ 1,387 — The skinny framework for creating slide deck from Markdown
+- [marp-team](https://github.com/marp-team/marp-core) — ★ 1,157 — The core of Marp converter
+- [favourhong](https://github.com/favourhong/Awesome-Marp) — ★ 1,051 — An open-source presentation theme ecosystem for Marp/Markdown users.
+- [marp-team](https://github.com/marp-team/awesome-marp) — ★ 523 — A curated list of awesome things related to Marp
+- [MartinPacker](https://github.com/MartinPacker/md2pptx) — ★ 514 — Markdown To PowerPoint converter
+- [gadenbuie](https://github.com/gadenbuie/xaringanthemer) — ★ 445 — 😎 Give your xaringan slides some style
+- [vercel-labs](https://github.com/vercel-labs/mdxg) — ★ 364 — Spec for markdown presentation and interaction
+- [kaisugi](https://github.com/kaisugi/marp-theme-academic) — ★ 283 — Academic Presentation Slides with Marp
+- [jaantollander](https://github.com/jaantollander/Markdown-Templates) — ★ 230 — Templates for creating scientific, academic and technical documents using Markdown and Pandoc that support equations, code blocks, citations, Unicode symbols...
+- [yhatt](https://github.com/yhatt/marp-cli-example) — ★ 213 — The good starter for using Marp via Marp CLI, by the author of Marp
+- [cunhapaulo](https://github.com/cunhapaulo/marpstyle) — ★ 207 — Repository for Marp Themes created with beauty and simplicity in mind.
+- [jhk0530](https://github.com/jhk0530/showmaker) — ★ 188 — Markdown to Slide
+- [arpitbbhayani](https://github.com/arpitbbhayani/deckrun) — ★ 178 — A local-first presentation tool for writing, editing, presenting, and exporting Markdown slides or self-contained HTML docs.
+- [jhelvy](https://github.com/jhelvy/renderthis) — ★ 178 — An R package for building xaringan slides into multiple outputs, including html, pdf, png, gif, pptx, and mp4.
+- [ad-si](https://github.com/ad-si/invoice-maker) — ★ 175 — Generate beautiful invoices from simple Typst or YAML data records
+- [skriptum](https://github.com/skriptum/diatypst) — ★ 169 — easy slides in typst
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--R2) — ★ 164 — Parse any language you can describe in BNF
+- [rhiokim](https://github.com/rhiokim/haroopress) — ★ 164 — A static site generator built with Node.js, "Haroo" means "a day" Support Markdown presentation, Syntax Highlight, Themes
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quarto-clean-typst) — ★ 160 — A minimalistic presentation theme for Quarto + Typst by Touying
+- [gadenbuie](https://github.com/gadenbuie/countdown) — ★ 159 — ⏲ countdown timer for slides and HTML docs in Quarto, R Markdown, and Shiny
+- [dadoomer](https://github.com/dadoomer/markdown-slides) — ★ 157 — Using markdown, write simple but beautiful presentations with math, animations and media.
+- [Splines](https://github.com/Splines/pptypst) — ★ 144 — Bring the power of Typst to PowerPoint
+- [touying-typ](https://github.com/touying-typ/touying-exporter) — ★ 142 — Export presentation slides in various formats for Touying.
+- [developer0hye](https://github.com/developer0hye/office2pdf) — ★ 140 — Pure-Rust library and CLI for converting DOCX, XLSX, and PPTX files to PDF.  No LibreOffice, no Chromium, no Docker — just a single binary powered by Typst.
+- [minorun365](https://github.com/minorun365/marp-agent) — ★ 124 — ???????
+- [matsubara0507](https://github.com/matsubara0507/marp-themes) — ★ 119 — Theme for Marp Next
+- [rnd195](https://github.com/rnd195/my-marp-themes) — ★ 118 — Collection of my CSS themes for Marp Markdown presentations
+- [manjavacas](https://github.com/manjavacas/typslides) — ★ 116 — Minimalistic Typst slides.
+- [tajpure](https://github.com/tajpure/vortex) — ★ 113 — A markdown presentation tool.
+- [rainbowflesh](https://github.com/rainbowflesh/Rose-Pine-For-Marp) — ★ 106 — Ros Pine For Marp
+- [mikael-ros](https://github.com/mikael-ros/neobeam) — ★ 106 — A modern take on the LaTeX beamer theme, for Marp
+- [BeWaterMyFriend7](https://github.com/BeWaterMyFriend7/Marp-Theme-UCAS) — ★ 100 — markdown Slide made by marp
+- [cunhapaulo](https://github.com/cunhapaulo/MarpX) — ★ 87 — Try MarpX! It is still 'Marp themes', created with beauty and simplicity in mind. (like a Marpstyle 2.0)
+- [zhaoluting](https://github.com/zhaoluting/marp-themes) — ★ 87 — marp??,?????????????????
+- [kantord](https://github.com/kantord/zoetic) — ★ 86 — 🌱 🎥 Markdown presentations using your webcam
+- [robalexdev](https://github.com/robalexdev/marp-to-pages) — ★ 85 — Example marp action
+- [chenyang1999](https://github.com/chenyang1999/Marp_theme_for_THUslides) — ★ 83 — ?? Marp ???????? Slides??
+- [TomBener](https://github.com/TomBener/quarto-chinese) — ★ 82 — Quarto template for Chinese academic writing
+- [pat-s](https://github.com/pat-s/xaringan-metropolis) — ★ 79 — Metropolis theme of R package xaringan
+- [classmethod](https://github.com/classmethod/classmethod-marp-theme) — ★ 77 — ???????????Marp???????
+- [marp-team](https://github.com/marp-team/marp-web) — ★ 75 — [INACTIVE] Markdown presentation writer for web interface
+- [flaxsearch](https://github.com/flaxsearch/marple) — ★ 74 — Browser-driven explorer for lucene indexes
+- [dracula](https://github.com/dracula/marp) — ★ 70 — 🧛🏻‍♂️ Dark theme for Marp
+- [Kumaiu](https://github.com/Kumaiu/cursor-to-marp) — ★ 68 — —
+- [hzy24](https://github.com/hzy24/ucas_marpit_slide) — ★ 66 — 果壳/国科大slide模板_Written by Marpit
+- [justincampbell](https://github.com/justincampbell/tp) — ★ 62 — Terminal Presenter: Presents Markdown slides in your terminal
+- [hahnec](https://github.com/hahnec/marp-recipes) — ★ 62 — Marp presentation slides and templates
+- [neurodata](https://github.com/neurodata/marp-poster-template) — ★ 53 — Template for an academic poster using Marp
+- [KoharaKazuya](https://github.com/KoharaKazuya/marp-cli-action) — ★ 49 — A GitHub Action to convert markdown files into static HTML / CSS, PDF, PowerPoint document, and image(s) by @marp-team/marp-cli.
+- [szaghi](https://github.com/szaghi/MaTiSSe) — ★ 49 — Markdown To Impressive Scientific Slides
+- [spcanelon](https://github.com/spcanelon/xaringan-basics-and-beyond) — ★ 48 — Sharing Your Work with xaringan: Workshop created for the NHS-R Community 2020 Virtual Conference.
+- [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel/hello-quarto) — ★ 48 — Source code for the "Hello Quarto" keynote for rstudio::conf(2022) with Julia Stewart Lowndes - July 2022
+- [leonardosalasd](https://github.com/leonardosalasd/doc-engine-cli) — ★ 47 — A high-performance CLI to transform Markdown into premium, academic-grade PDFs via Typst. Zero configuration required.
+- [rnd195](https://github.com/rnd195/marp-community-themes) — ★ 46 — Theme gallery for Marp maintained by the community
+- [FlixCoder](https://github.com/FlixCoder/typst-slides) — ★ 42 — Typst beamer/slides template for presentations
+- [leostudiooo](https://github.com/leostudiooo/typst-touying-theme-endfield) — ★ 42 — Typst Touying theme inspired by Arknights: Endfield.
+- [tomo-makes](https://github.com/tomo-makes/marp-styles) — ★ 41 — —
+- [schochastics](https://github.com/schochastics/quarto-blackboard-theme) — ★ 40 — A quarto reveal js theme
+- [codebytes](https://github.com/codebytes/marp-slides-template) — ★ 39 — —
+- [HypoxanthineOvO](https://github.com/HypoxanthineOvO/SHTU-PPT-Template) — ★ 37 — PPT Template of ShanghaiTech University. Include Powerpoint, Markdown Marp, LaTeX Beamer
+- [hofbi](https://github.com/hofbi/tum-marp-template) — ★ 35 — TUM Marp Template for Markdown Slides
+- [muryoimpl](https://github.com/muryoimpl/slippr) — ★ 34 — markdown presentation app by Electron
+- [zhiiiyang](https://github.com/zhiiiyang/XaringanTutorial) — ★ 34 — A quick tutorial on making slides using xaringan
+- [yingle1991](https://github.com/yingle1991/H-rise) — ★ 33 — 📝 基于 Electron、Vue、Vditor，所构建的在线 Markdown 编辑器，支持绘制流程图、甘特图、时序图、任务列表、echarts 图表、五线谱，以及 PPT 预览、视频音频解析、HTML 自动转换为 Markdown 等功能。
+- [yoanbernabeu](https://github.com/yoanbernabeu/MARP-Template-Library) — ★ 32 — Theme CSS Repositories for MARP
+- [trungleduc](https://github.com/trungleduc/marpyter) — ★ 31 — marpyter - Marp for JupyterLab
+- [linhaosheng](https://github.com/linhaosheng/TouYingProjector) — ★ 31 — android投屏具有扫描设备，连接，发送图片，视频，音乐和镜像的功能。
+- [n-ari](https://github.com/n-ari/marp-theme-nordic-beamer) — ★ 30 — Marp theme, with Beamer-like blocks, and Nord-like color scheme.
+- [cita-777](https://github.com/cita-777/hfut-awesome-marp-theme) — ★ 30 — 以人类与 AI 都擅长的 Markdown 为中间媒介语言，与 AI 协助写出高颜值答辩 & 汇报 PPT。适用于合肥工业大学HFUT本科生各类答辩、课程汇报等场景的 PPT 模板。
+- [dhruvasagar](https://github.com/dhruvasagar/vim-marp) — ★ 30 — Presentations from within VIM
+- [yKicchan](https://github.com/yKicchan/awesome-marp-template) — ★ 29 — An ultimate Marp template for your awesome presentation!
+- [LevinTamir](https://github.com/LevinTamir/MARPY) — ★ 29 — A low-cost, open-source 3D-printed robot platform for learning ROS 2 with real hardware and simulation.
+- [Xuzhenhua55](https://github.com/Xuzhenhua55/AdaMARP) — ★ 29 — [ACL2026 Finding]We propose an adaptive multi-agent interaction framework, dubbed AdaMARP, featuring an immersive message format that interleaves [Thought], ...
+- [nicolas-goudry](https://github.com/nicolas-goudry/marp-deck-directory) — ★ 29 — Zero-config, fully reproducible presentation environment using Marp and Nix
+- [emilyriederer](https://github.com/emilyriederer/xaringan_columns) — ★ 29 — JavaScript macro for adding multiple columns to xaringan (.Rmd) slides
+- [malcolmbarrett](https://github.com/malcolmbarrett/kakashi) — ★ 29 — kakashi theme for xaringan slides
+- [jmablog](https://github.com/jmablog/simple-presentations-generator) — ★ 28 — A series of templates for Quarto to convert a single Markdown input into beautiful and simple Powerpoint, HTML, and PDF presentations.
+- [emitanaka](https://github.com/emitanaka/xaringan-book) — ★ 28 — —
+- [sjtug](https://github.com/sjtug/touying-sjtu) — ★ 27 — ?? Touying ??????? Typst ????? (Typst Slide Theme for SJTU Based on Touying)
+- [mastern2k3](https://github.com/mastern2k3/marpit-nord-theme) — ★ 27 — This is a Marp / Marpit slides theme based on the Nord color palette.
+- [abap34](https://github.com/abap34/slide-template) — ★ 27 — Slide Template with Marp.
+- [yJader](https://github.com/yJader/Awesome-Marp-XMU) — ★ 27 — 厦门大学Marp模板
+- [Coekjan](https://github.com/Coekjan/touying-buaa) — ★ 27 — Touying Slide Theme for Beihang University
+- [marp-team](https://github.com/marp-team/marp-react) — ★ 26 — [INACTIVE] Marp renderer component for React
+- [leminhnguyen](https://github.com/leminhnguyen/slide-ai-agent) — ★ 26 — 🐙 AI-powered presentation builder with a conversational agent, live Marp preview, and lightweight presentation on your browser.
+- [marp-team](https://github.com/marp-team/marp-vue) — ★ 25 — [INACTIVE] Marp renderer component for Vue
+- [gitpitch](https://github.com/gitpitch/templates) — ★ 25 — [DEPRECATED] GitPitch Markdown Presentation Templates
+- [taishi-n](https://github.com/taishi-n/marp-theme-tmu-cs) — ★ 24 — TMU-CS Marp theme with citeproc, code annotations, math annotations, and step expansion.
+- [Dregen-Yor](https://github.com/Dregen-Yor/sdu-touying-simpl) — ★ 24 — 基于touying库，参考SDU-Beamer，diatypst，touying-pres-ustc等模板制作而成的演示模板
+- [speee](https://github.com/speee/marp-speee-theme) — ★ 23 — Speee用のmarpテーマ
+- [pretenderlu](https://github.com/pretenderlu/doodlio) — ★ 22 — Doodlio is a hand-drawn online whiteboard for mind maps, multi-source screen recording, Markdown presentations, and visual storytelling.
+- [tcgriffith](https://github.com/tcgriffith/xaringan_gh) — ★ 22 — Example repo to host xaringan on ghpage
+- [QuadnucYard](https://github.com/QuadnucYard/touying-theme-seu) — ★ 22 — Touying theme for Southeast University 东南大学幻灯片模板（typst）
+- [HoGentTIN](https://github.com/HoGentTIN/hogent-markdown-slides) — ★ 21 — —
+- [gophergala2016](https://github.com/gophergala2016/fireup) — ★ 21 — Push and broadcast markdown slides on the fly
+- [hanlife02](https://github.com/hanlife02/pkusli) — ★ 21 — Based on the typst slides template, handle your team meeting in five minutes from scratch!
+- [zoomla](https://github.com/zoomla/marpit-ppt) — ★ 21 — 基于marpit的PPT制作展示
+- [Lincest](https://github.com/Lincest/BUAA-Marp-Theme) — ★ 21 — A marp-based academic slide theme
+- [brshallo](https://github.com/brshallo/tidyverse-gifs) — ★ 21 — Code for using `flair`, `xaringan`, `pagedown`, and `magick` to build gif of steps in a series of piped operations.  Example pulled from "Many Models" chapte...
+- [YHan228](https://github.com/YHan228/calmly-touying) — ★ 21 — A typst touying based presentation template
+- [spidersouris](https://github.com/spidersouris/touying-unistra-pristine) — ★ 21 — An academic Touying theme for creating presentation slides in Typst for members of the University of Strasbourg, France
+- [touying-typ](https://github.com/touying-typ/touying-poster) — ★ 21 — Aqua Metropolis University Stargazer
+- [freundTech](https://github.com/freundTech/kit-slides-typst) — ★ 21 — A Karlsruhe Institute of Technology Slides Theme for Typst. This is only a mirror.
+- [simonreif](https://github.com/simonreif/zewwwwEcon) — ★ 21 — Quarto Templates for Applied Economic Research Projects
+- [saniales](https://github.com/saniales/ai-lesson-planner) — ★ 20 — Chat-first toolkit for teachers to plan complete courses and lessons with multi-agent workflows, template-based artifacts, and MARP slide generation.
+- [tjohnson250](https://github.com/tjohnson250/overview_causal_inference) — ★ 20 — A Brief Overview of Causal Inference (xaringan presentation)
+- [mkearney](https://github.com/mkearney/xaringan_slides) — ★ 20 — 📺 Links to HTML5 presentations made using the R package {xaringan}.
+- [nwiizo](https://github.com/nwiizo/3shake-marp-templates) — ★ 18 — Collection of Marp-based presentation templates for 3-SHAKE. Features standardized designs, citation styles, and custom layouts for cloud-native technology a...
+- [robalexdev](https://github.com/robalexdev/marp-action) — ★ 18 — Publish your Marp Presentation to GitHub Pages automatically using a GitHub Action
+- [xkevio](https://github.com/xkevio/parcio-typst) — ★ 18 — ParCIO-inspired thesis, report & slides template made with Typst.
+- [marcothms](https://github.com/marcothms/clean-polylux-typst) — ★ 18 — A clean and dynamic polylux presentation template for typst 0.10
+- [posit-conf-2025](https://github.com/posit-conf-2025/quarto-brand) — ★ 18 — Branded Websites, Presentations, Dashboards, and PDFs with Quarto
+- [syw-robotics](https://github.com/syw-robotics/sustech-academic-marp-theme) — ★ 17 — SUSTech Customized Academic Presentation Slides with Marp / 南方科技大学Marp学术汇报主题
+- [gadenbuie](https://github.com/gadenbuie/xaringan-logo) — ★ 17 — xaringan template with logo on all slides
+- [gadenbuie](https://github.com/gadenbuie/xaringan2powerpoint) — ★ 17 — a snarky powerpoint from xaringan demo
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/xaringancolor) — ★ 17 — Uniform Colors in Xaringan Presentations
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/xaringan-gallery) — ★ 17 — xaringan gallery, a growing collection of examples and custom themes
+- [FDUCSLG](https://github.com/FDUCSLG/typst-slides-fudan) — ★ 16 — ???????? Typst ???An unofficial Fudan slide theme for Typst.
+- [drvinceknight](https://github.com/drvinceknight/md2reveal) — ★ 16 — A script to easily convert (simple) markdown to reveal html.
+- [duhaode520](https://github.com/duhaode520/marp-theme-PKU) — ★ 16 — marp themes for Peking University
+- [marp-team](https://github.com/marp-team/marpit-svg-polyfill) — ★ 16 — Polyfill for inline SVG slides rendered by Marpit
+- [Robinlovelace](https://github.com/Robinlovelace/reproducible-project-template) — ★ 16 — Flexible repo template for reproducible slides with Quarto and continuous deployment via GitHub actions
+- [ivoputzer](https://github.com/ivoputzer/md-slides-template) — ★ 15 — Markdown Slides Template
+- [ClementPeter](https://github.com/ClementPeter/marpp_web) — ★ 15 — UI Landing Page for a Marketing Application built with Flutter
+- [pn11](https://github.com/pn11/marp-A4-theme) — ★ 15 — A4-sized theme for Marp.
+- [noraj](https://github.com/noraj/cybertopia-marp) — ★ 15 — 🎨 A dark theme for Marp / Marpit slides ecosystem with a custom highlight.js theme.
+- [hyuunnn](https://github.com/hyuunnn/marp-black-white) — ★ 15 — Marp Theme using black and white
+- [schochastics](https://github.com/schochastics/xaringan-themes) — ★ 15 — Xaringan themes for presentations in R
+- [PauloUbirajara](https://github.com/PauloUbirajara/motion-canvas-rs) — ★ 15 — A high-performance vector animation engine inspired by Motion Canvas, built on Vello and Typst.
+- [rstacruz](https://github.com/rstacruz/marp-basetype) — ★ 14 — Basic slide deck theme for Marp
+- [pstuifzand](https://github.com/pstuifzand/go-marpa) — ★ 14 — Higher level Marpa parser for Go
+- [chenyang1999](https://github.com/chenyang1999/Marp_OUCtheme) — ★ 14 — 中国海洋大学 marp 模板
+- [Han-0107](https://github.com/Han-0107/Marp_CSU) — ★ 14 — 基于Marp开发的中南大学主题PPT模板
+- [markslide](https://github.com/markslide/markslide) — ★ 14 — Markdown to slides. Easy and smooth.
+- [rstudio-conf-2020](https://github.com/rstudio-conf-2020/slide-templates) — ★ 14 — A repository to share rstudio::conf sample slide templates for Keynote, PowerPoint, R Markdown (xaringan)
+- [UtrechtUniversity](https://github.com/UtrechtUniversity/uu-quarto-presentation-template) — ★ 13 — Template repository for creating a UU styled Quarto presentation
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-C-AST) — ★ 13 — Translate C source code to AST using Marpa
+- [SaturDJang](https://github.com/SaturDJang/warp) — ★ 13 — Warp is a web based markdown presentation service
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quarto-slides-example) — ★ 13 — My Quarto Slides Examples
+- [spcanelon](https://github.com/spcanelon/RLadies-xaringan-template) — ★ 13 — Xaringan presentation template with an R-Ladies theme
+- [ecomaikgolf](https://github.com/ecomaikgolf/typst-isec-slides-template) — ★ 13 — Typst ISEC TUGraz Slides Template
+- [johannesber](https://github.com/johannesber/typst-ppt-addin) — ★ 13 — PoC: Typst PowerPoint Add-In
+- [coatless-tutorials](https://github.com/coatless-tutorials/next-gen-data-science-education-wasm) — ★ 13 — This repository contains code powering "The Next-Generation Data Science Education with WebAssembly" Quarto website demonstration.
+- [performance-queries](https://github.com/performance-queries/marple) — ★ 12 — Parse SQL queries for network performance monitoring
+- [yhatt](https://github.com/yhatt/marp-vue-slide) — ★ 12 — A practical browser-based Marp slide deck made by Marp Vue
+- [ddps-lab](https://github.com/ddps-lab/ddps-lab-marp-theme) — ★ 12 — ddps-lab-marp-theme
+- [christopherkenny](https://github.com/christopherkenny/projector) — ★ 12 — A Quarto template using Typst's Polylux to make slides
+- [mxpiotrowski](https://github.com/mxpiotrowski/pandoc-lecturenotes) — ★ 12 — Pandoc Lua filters for producing slides and notes from a single Markdown document
+- [phlummox](https://github.com/phlummox/pptx-to-md) — ★ 12 — Convert PowerPoint or LibreOffice Impress files to Beamer-friendly, Pandoc-style markdown
+- [Juanvvc](https://github.com/Juanvvc/markdown-slides) — ★ 11 — A project to teach MARP and store themes
+- [neuroinformatics-unit](https://github.com/neuroinformatics-unit/quarto-presentation-template) — ★ 11 — —
+- [CouesF](https://github.com/CouesF/marp-theme-zju) — ★ 11 — a marp theme with Zhejiang University's color and LOGO
+- [Zambrini](https://github.com/Zambrini/MARP-Templates) — ★ 11 — MARP Presentation Templates
+- [ullenboom](https://github.com/ullenboom/ppt2asciidocslides) — ★ 11 — Converts slides from PPTX to Asciidoc(tor) or Marp
+- [Sallos725](https://github.com/Sallos725/MARP) — ★ 11 — Multi-agent RP analysis pipeline for RisuAI: parallel world, plot, and character analysis
+- [faymek](https://github.com/faymek/marp-sjtu) — ★ 11 — —
+- [spcanelon](https://github.com/spcanelon/xaringan-rladies-xalapa) — ★ 11 — Taller de xaringan creado para R-Ladies Xalapa
+- [tangyc8866](https://github.com/tangyc8866/rmarkdown-xaringan-slides) — ★ 11 — rmarkdown-xaringan-slides
+- [EMOAIRX](https://github.com/EMOAIRX/ppt-agent) — ★ 11 — AI-powered frontend application for creating and editing Typst presentations using natural language commands.
+- [chantakan](https://github.com/chantakan/typst_slide_template) — ★ 11 — Typstのslide用テンプレート
+- [shenxiangzhuang](https://github.com/shenxiangzhuang/presentia) — ★ 11 — Elegant presentation template in LaTex and Typst
+- [JL-ghcoder](https://github.com/JL-ghcoder/Typst-Pre-Template) — ★ 11 — Academic presentation template in Typst for researchers
+- [nithitsuki](https://github.com/nithitsuki/amrita-ppt-template) — ★ 11 — typst ppt template for amrita students
+- [jillymackay](https://github.com/jillymackay/ed_quarto_themes) — ★ 10 — The basic structure of a University of Edinburgh R(D)SVS themed Quarto presentation. Please feel free to copy this for your own purposes.
+- [SkiFire13](https://github.com/SkiFire13/typst-slides-unipd) — ★ 10 — —
+- [ttyskg](https://github.com/ttyskg/marp-themes) — ★ 10 — Custom themes for Marp Next
+- [Huigz](https://github.com/Huigz/marp-theme-skku) — ★ 10 — a marp theme with SKKU style
+- [omarroth](https://github.com/omarroth/marpa) — ★ 10 — A Crystal interface to the Marpa library.
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-book) — ★ 10 — The Marpa book
+- [HsergeyF](https://github.com/HsergeyF/marp-python) — ★ 10 — Python Library for generating Marp presentations.
+- [dabrahams](https://github.com/dabrahams/SwiftMarpa) — ★ 10 — Swift wrapper for the libMarpa parsing library
+- [Tonanguyxiro](https://github.com/Tonanguyxiro/HKUST-GZ_Marpit_Template) — ★ 10 — HKUST(GZ) Marpit Template for Presentation
+- [Jzurde](https://github.com/Jzurde/canyon) — ★ 10 — 世界一使いやすいスライドテンプレート(with Marp)
+- [Shuvam-Banerji-Seal](https://github.com/Shuvam-Banerji-Seal/introduction-to-molecular-simulation) — ★ 10 — Introduction to Molecular Simulation — talk companion: what it is, why it works, and how to make one. Slides (Marp), concept notes, and hands-on examples.
+- [pduran5](https://github.com/pduran5/CCNA) — ★ 10 — CCNAv7 Presentations and GNS3 Labs tags: #FpInfor #ASIXMP07 #ASIXM07 #ASIRMP07 #ASIRM07 #CCNA  CCNAv7 presentations made with Marp and GNS3 CCNA Labs portabl...
+- [gitpitch](https://github.com/gitpitch/feature-demo) — ★ 10 — Demonstrations of markdown presentation features to the GitPitch community.
+- [libjohn](https://github.com/libjohn/workshop_slides_markdown_xaringan) — ★ 10 — Use R Markdown and the xaringan package to render presentation slides as reproducible reports.
+- [hithesis](https://github.com/hithesis/hiTouyingBeamer) — ★ 10 — 嗨！投影 Beamer！更现代的哈尔滨工业大学 Beamer 主题
+- [t0mrg](https://github.com/t0mrg/md2pptx) — ★ 10 — Markdown to powerpoint
+- [eric861129](https://github.com/eric861129/MD2PPT-Evolution) — ★ 10 — 🚀 Instantly convert Markdown to professional PowerPoint (PPTX) slides in your browser. Features real-time          preview, dark mode, and custom themes. No ...
+- [sjackman](https://github.com/sjackman/open-science) — ★ 10 — :microscope: Open, reproducible science using Make, RMarkdown and Pandoc
+- [jthomasmock](https://github.com/jthomasmock/quarto-presentation) — ★ 9 — —
+- [KoharaKazuya](https://github.com/KoharaKazuya/marp-cli-action-gh-pages-template) — ★ 9 — Marp CLI Action with GitHub Pages Template
+- [tweag](https://github.com/tweag/nix-marp) — ★ 9 — Run Marp tools via Nix
+- [pstuifzand](https://github.com/pstuifzand/Marpa-parser-generator) — ★ 9 — Parser generator for Marpa::XS. This contains some things I tried. For a better module take a look at MarpaX::Parser::Marpa.
+- [ruz](https://github.com/ruz/Marpa-Simple-Lexer) — ★ 9 — simplify lexing for Marpa parser
+- [ensoft](https://github.com/ensoft/marple) — ★ 9 — MARPLE is an open-source system profiling tool for Linux-based systems
+- [kozovka22](https://github.com/kozovka22/temata_maturita) — ★ 9 — Marp prezentace na maturitní otázky ze SPŠ Prosek
+- [sebastiandres](https://github.com/sebastiandres/quarto_slides_template) — ★ 9 — A template for creating nice presentations in quarto. Personal notes and links.
+- [jhelvy](https://github.com/jhelvy/lexis) — ★ 9 — A theme for xaringan slides
+- [touying-typ](https://github.com/touying-typ/touying-template) — ★ 9 — Touying template for online presentation.
+- [markdown-tool](https://github.com/markdown-tool/markdown-tool.github.io) — ★ 9 — online markdown to ppt
+- [mcanouil](https://github.com/mcanouil/quarto-prism) — ★ 9 — Attach format-specific values to a single Div, Span, or CodeBlock and let each output pick its own.
+- [sahasatvik](https://github.com/sahasatvik/minislides) — ★ 9 — A script for generating HTML/CSS presentation slides from markdown.
+- [Dale2003](https://github.com/Dale2003/pku-typst-slides) — ★ 8 — —
+- [non](https://github.com/non/literati) — ★ 8 — Literate programming for Scala from within Markdown slides
+- [imjasonh](https://github.com/imjasonh/marptalk) — ★ 8 — Generate narrated Marp presentations using AI
+- [toku345](https://github.com/toku345/marp-slides) — ★ 8 — Marp を使用したスライド作成・管理プロジェクト
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--XS) — ★ 8 — OBSOLETE version of Marpa [ARCHIVED]
+- [stanfrbd](https://github.com/stanfrbd/A4-marp) — ★ 8 — A4-marp is a good way to do A4-sized presentations with Marp. This is actually a custom CSS.
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-arxiv-paper) — ★ 8 — The repository of the arxiv.org version of the Marpa paper.
+- [hnsol](https://github.com/hnsol/marp-custom-theme) — ★ 8 — css files
+- [koki-yamada-lab](https://github.com/koki-yamada-lab/lab-coding-guideline) — ★ 8 — 研究室のコーディングガイドラインです．スライド資料はMarpで作成しています．
+- [miguelcfernandes](https://github.com/miguelcfernandes/mdslides) — ★ 8 — Simple markdown presentation tool
+- [marcelofabri](https://github.com/marcelofabri/DecksetExport) — ★ 8 — A CLI for for generating PDFs from Markdown presentations created with Deckset.
+- [xmdjy](https://github.com/xmdjy/sdu-touying-template) — ★ 8 — —
+- [mzsuetam](https://github.com/mzsuetam/beamer-theme-aghmd) — ★ 8 — AGHMD is a LaTeX Beamer theme designed to be used with the Pandoc document converter.
+- [deckflow](https://github.com/deckflow/deckrender) — ★ 8 — Render any document format into visual artifacts — PPTX, PDF, DOCX, Keynote, Pages, Numbers, HTML and Markdown to images, PDF or video.
+- [brennop](https://github.com/brennop/scrolls) — ★ 7 — Markdown slides
+- [marpa-guide](https://github.com/marpa-guide/marpa-guide) — ★ 7 — Guide to Marpa
+- [zerosum](https://github.com/zerosum/azusa3-marp-theme) — ★ 7 — Azusa 3 theme for Marp
+- [eyssette](https://github.com/eyssette/marp-slides) — ★ 7 — Des diaporamas créés avec Marp et le thème Teaching
+- [kamijin-fanta](https://github.com/kamijin-fanta/sakura-marp-theme) — ★ 7 — —
+- [kazuki853](https://github.com/kazuki853/ulab-marp-theme) — ★ 7 — —
+- [JMcrafter26](https://github.com/JMcrafter26/Marp-AI) — ★ 7 — Marp AI - Generate presentations using Ollama AI and Marp
+- [Gityosan](https://github.com/Gityosan/marp-slide-template) — ★ 7 — marp-slide-template repository
+- [upura](https://github.com/upura/marp-examples) — ★ 7 — Presentation slides created by Marp
+- [firedev](https://github.com/firedev/marp-boilerplate) — ★ 7 — Fork this repo and start building your next presentation in markdown.
+- [ryuichiueda](https://github.com/ryuichiueda/slides_marp) — ★ 7 — my slides
+- [syumai](https://github.com/syumai/marp-pages-example) — ★ 7 — A Cloudflare Pages application which renders Marp slides without static site generation.
+- [humanophilic](https://github.com/humanophilic/humanophilic-marp-theme) — ★ 7 — 学会発表用のスライドテーマです。Marpを使ってスライドを作成する際に利用できます。
+- [luhuiwang](https://github.com/luhuiwang/Marp-Theme-For-XJTU) — ★ 7 — —
+- [smondet](https://github.com/smondet/makmash) — ★ 7 — Make Markdown Slides Hackishly …
+- [satRdays](https://github.com/satRdays/sponsoring) — ★ 7 — xaringan template for sponsoring
+- [alejandraandrea](https://github.com/alejandraandrea/slides-xaringan-mixed-models) — ★ 7 — —
+- [libjohn](https://github.com/libjohn/dukeslides) — ★ 7 — Template for R Markdown based slides using Duke University color palette:  dukeslides is built on top of xaringan
+- [sophieehill](https://github.com/sophieehill/xaringan-template) — ★ 7 — A template for making customisable slides in RMarkdown with Xaringan
+- [matt-dray](https://github.com/matt-dray/gdstheme) — ★ 7 — :page_with_curl::package: R package: {xaringan} theme and template, (unofficial) Government Digital Service style
+- [cyliu-phy](https://github.com/cyliu-phy/sjtu-touying) — ★ 7 — SJTUBeamer in typst & touying
+- [JSB-Unscarred](https://github.com/JSB-Unscarred/shuimu-touying) — ★ 7 — —
+- [exAClior](https://github.com/exAClior/touying-simpl-hkustgz) — ★ 7 — —
+- [juraph-dev](https://github.com/juraph-dev/usyd-slides-typst) — ★ 7 — Polylux slide template for University of Sydney themed presentations
+- [ghxm](https://github.com/ghxm/gesis-pandoc-beamer) — ★ 7 — GESIS presentation template adapted to pandoc (incl. Quarto and Rmarkdown) for use with beamer
+- [JoshuaLampert](https://github.com/JoshuaLampert/clean-math-presentation) — ★ 7 — Typst presentation template specialized on needs of mathematics.
+- [mcanouil](https://github.com/mcanouil/publishing-templates) — ★ 7 — Publishing templates (e.g., slides, reports, etc.) using Quarto/RMarkdown
+- [ViCo-Lab](https://github.com/ViCo-Lab/candy) — ★ 7 — Code-oriented Animation eNgine Designed for tYpst 为Typst设计的面向代码的动画引擎
+- [xingjian-zhang](https://github.com/xingjian-zhang/typst2img) — ★ 7 — A fast script to render your Typst formulas to svg and png. Integrate formulas to your slides in seconds!
+- [ccbaumler](https://github.com/ccbaumler/analyzing-lit) — ★ 6 — A quarto presentation on distilling scientific literature with Bibliometric analysis and R tools
+- [benzipperer](https://github.com/benzipperer/metropolyst) — ★ 6 — configurable metropolis theme clone for typst slides
+- [numbats](https://github.com/numbats/monash-quarto-presentation) — ★ 6 — —
+- [jddurand](https://github.com/jddurand/c-marpaESLIF) — ★ 6 — Extended perl's Marpa::R2 SLIF grammar writen in C
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-theory) — ★ 6 — Papers and notes on the math behind Marpa [ARCHIVED]
+- [stevemarple](https://github.com/stevemarple/SteveMarple-Eagle-Library) — ★ 6 — Library for Cadsoft Eagle
+- [cherryamme](https://github.com/cherryamme/Marp-theme_SYSU) — ★ 6 — Marp-theme_SYSU
+- [emilyzjin](https://github.com/emilyzjin/marple) — ★ 6 — Code for the paper "MARPLE: A Benchmark for Long-Horizon Inference", NeurIPS 2025 Datasets & Benchmarks
+- [pczarn](https://github.com/pczarn/rust-marpa) — ★ 6 — Bindings to libmarpa
+- [marpledata](https://github.com/marpledata/marple-sdk) — ★ 6 — Official Marple SDKs for Marple DB and Insight.
+- [RitaDee](https://github.com/RitaDee/marplex-video-rtm) — ★ 6 — A real time messaging & video calling web app. Built with HTML, CSS and JavaScript.
+- [cp-20](https://github.com/cp-20/marp-trap-theme) — ★ 6 — —
+- [siuying](https://github.com/siuying/markdown-slides) — ★ 6 — Create HTML based presentation using markdown!
+- [alohays](https://github.com/alohays/paper2pr) — ★ 6 — AI/ML Paper → Presentation-ready Beamer + Quarto slides via Claude Code multi-agent workflow
+- [schochastics](https://github.com/schochastics/UoM-xaringan) — ★ 6 — University of Manchester PowerPoint theme for xaringan in R
+- [libjohn](https://github.com/libjohn/slide-template-dukeu) — ★ 6 — A Xaringan slide template using the Duke University Color Palette
+- [uestc-typst](https://github.com/uestc-typst/uestc_slide_touying) — ★ 6 — 电子科技大学 Touying（基于Typst） 模版
+- [dssgabriel](https://github.com/dssgabriel/cea-slides) — ★ 6 — Touying theme for crafting Typst presentations conforming with the corporate identity of the French Atomic Energy Commission (CEA)
+- [habemus-python](https://github.com/habemus-python/quarto-agh-slides) — ★ 6 — AGH slides template for Quarto
+- [hddevteam](https://github.com/hddevteam/cuemode) — ★ 6 — 🎯 Professional teleprompter with Line Height Adjustment, Markdown Toggle, Mirror Flip, Focus Mode, 7 themes & 6-language support. L-key line spacing, D-key m...
+- [supxinfy](https://github.com/supxinfy/BerryPhaseSlides) — ★ 5 — Typst slides for Master's defence and a seminar talk
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quarto-slides-typst) — ★ 5 — Some Examples for Quarto + Typst Slides
+- [ccbaumler](https://github.com/ccbaumler/managing-lit) — ★ 5 — A quarto presentation on managing scientific literature with Zotero
+- [AlbertRapp](https://github.com/AlbertRapp/my_quarto_presentation_default) — ★ 5 — —
+- [danilofreire](https://github.com/danilofreire/quarto-presentation) — ★ 5 — A fork of the beautiful Quarto Clean presentation theme
+- [jrobsonchase](https://github.com/jrobsonchase/marpa) — ★ 5 — —
+- [s10akir](https://github.com/s10akir/marp-theme) — ★ 5 — —
+- [xueleecs](https://github.com/xueleecs/MARPPI) — ★ 5 — MARPPI: Boosting prediction of protein−protein interactions  with multi-scale architecture residual network
+- [impatrq](https://github.com/impatrq/marp) — ★ 5 — —
+- [ictsc](https://github.com/ictsc/marp-ictsc-theme) — ★ 5 — ICTSC の marp テーマ
+- [SakaITa](https://github.com/SakaITa/MarpToCloudflarePagesSample) — ★ 5 — Marp で作ったプレゼンテーションを Cloudflare Pages にデプロイするサンプルです。
+- [hirokidaichi](https://github.com/hirokidaichi/marp-lens) — ★ 5 — marpをいいかんじにする
+- [JanaVPetrova](https://github.com/JanaVPetrova/miss-marple) — ★ 5 — —
+- [RyuyaIshibashi](https://github.com/RyuyaIshibashi/marp-docs) — ★ 5 — —
+- [VeroMarpe](https://github.com/VeroMarpe/VeroMarpe) — ★ 5 — —
+- [abbott567](https://github.com/abbott567/accessible-marp-decks) — ★ 5 — Create accessible slide decks using Markdown, powered by Marp.
+- [halftermeyer](https://github.com/halftermeyer/neo4j-marp-template) — ★ 5 — —
+- [nibzard](https://github.com/nibzard/slidegauge) — ★ 5 — Static analyzer for Marp Markdown decks - validates slide quality for AI agents
+- [matildeopbravo](https://github.com/matildeopbravo/shell-basics) — ★ 5 — Markdown slides for a talk about Shell Basics
+- [KorbinianKuhn](https://github.com/KorbinianKuhn/markdown-slides) — ★ 5 — Generate HTML-Slides with from Markdown-Files with Stuttgart Media University (HDM) branding
+- [nmfs-opensci](https://github.com/nmfs-opensci/xaringan-nmfs) — ★ 5 — xaringan theme with NMFS branding
+- [Kuan-Liu](https://github.com/Kuan-Liu/xaringan_utoronto) — ★ 5 — Creating a University of Toronto xaringan theme template - fun project =D
+- [StefanJuenger](https://github.com/StefanJuenger/woRkshoptools) — ★ 5 — R-Package to create, build, and maintain xaringan slides for our workshops
+- [ZhengliangDuanfang](https://github.com/ZhengliangDuanfang/QSBlue) — ★ 5 — A Typst Touying template for Zhejiang University (ZJU) users.
+- [Ri-Nai](https://github.com/Ri-Nai/touying-euphonium) — ★ 5 — —
+- [Quaternijkon](https://github.com/Quaternijkon/touying-flow) — ★ 5 — —
+- [KlnSdr](https://github.com/KlnSdr/touying-htwk-stripes) — ★ 5 — —
+- [typst-tud](https://github.com/typst-tud/tud-slides) — ★ 5 — Typst template for slides and presentations for TU Dresden
+- [mcanouil](https://github.com/mcanouil/quarto-better-word) — ★ 5 — Playground for a custom OpenXML Pandoc template in Quarto docx output (advanced title/author block customisation).
+- [orumin](https://github.com/orumin/slide_pandoc) — ★ 5 — slide template with pandoc
+- [Marmare314](https://github.com/Marmare314/typst-presentation) — ★ 5 — An easy to use presentation template.
+- [NMarkgraf](https://github.com/NMarkgraf/NPBT) — ★ 5 — Norman's Pandoc Beamer Themes
+- [tidoust](https://github.com/tidoust/slidyremote) — ★ 5 — HTML Slidy remote - Proof of concept demo for the Presentation API
+- [davidedellagiustina](https://github.com/davidedellagiustina/uniud-slides) — ★ 5 — Unofficial Typst template for presentation slides at the University of Udine.
+- [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel/hello-quarto-cvt) — ★ 5 — Source code for the "Hello Quarto" talk for the Coronavirus Visualization Team - August 2022
+- [tilburgsciencehub](https://github.com/tilburgsciencehub/quarto_presentation_template) — ★ 4 — Templates to make presentations and report in Quarto
+- [Jzzzi](https://github.com/Jzzzi/slide-thu) — ★ 4 — A Typst slide template for Tsinghua University
+- [nicolasfara](https://github.com/nicolasfara/Template-for-Typst-Slides) — ★ 4 — —
+- [chengluyu](https://github.com/chengluyu/typst-slides-template) — ★ 4 — —
+- [tugraz-isds](https://github.com/tugraz-isds/rslidy) — ★ 4 — Rslidy: Lightweight, Accessible, and Responsive HTML5 Slide Decks
+- [lianxhcn](https://github.com/lianxhcn/marp-book) — ★ 4 — Guides and tips for making Marp slides.
+- [probinso](https://github.com/probinso/introduction-git) — ★ 4 — marp slides and material for git talk
+- [ronsavage](https://github.com/ronsavage/marpa.papers) — ★ 4 — Various documents pertaining to Mapra (Introduction, FAQ, etc)
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-web-site) — ★ 4 — Marpa web site
+- [HaseloffLab](https://github.com/HaseloffLab/MarpoDB) — ★ 4 — An open registry of Marchantia polymorpha genetic parts
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--R3) — ★ 4 — R3 version of Marpa parser -- ALPHA (under development)
+- [ronsavage](https://github.com/ronsavage/MarpaX-Languages-Lua-Parser) — ★ 4 — A Lua source code parser
+- [marp-team](https://github.com/marp-team/actions) — ★ 4 — Common GitHub Actions and scripts for Marp team projects
+- [OscarPellicer](https://github.com/OscarPellicer/marp_template) — ★ 4 — My MARP template for all kinds of slides
+- [roidelapluie](https://github.com/roidelapluie/marpit-inuits) — ★ 4 — —
+- [matsubara0507](https://github.com/matsubara0507/pub-slides) — ★ 4 — My Published Slides by marp-cli + Netlify
+- [d8niz](https://github.com/d8niz/marp-cli-demo) — ★ 4 — Marp Demo
+- [ebibibi](https://github.com/ebibibi/marp2pptx) — ★ 4 — Convert Marp Markdown slides to editable PowerPoint with auto-sizing fonts
+- [ineprimo](https://github.com/ineprimo/MARP) — ★ 4 — susto
+- [5h1nnN](https://github.com/5h1nnN/marp-theme-tongji) — ★ 4 — Marp Theme for Tongji University 同济大学Marp主题
+- [yanorei32](https://github.com/yanorei32/marp-video) — ★ 4 — Marp-based Video Generator
+- [Kazuma](https://github.com/Kazuma/Marpet) — ★ 4 — Marpet is convert HTML into Markdown using the redcarpet.
+- [abnerhexu](https://github.com/abnerhexu/milky-marp-theme) — ★ 4 — marp theme for highland cs college
+- [HKUST-KnowComp](https://github.com/HKUST-KnowComp/MarPT) — ★ 4 — Code for Prospect Theory Fails for LLMs: Instability of Decision-Making under Epistemic Uncertainty
+- [astro-plugins](https://github.com/astro-plugins/astro-marp) — ★ 4 — —
+- [karaage0703](https://github.com/karaage0703/llm-marp-slides) — ★ 4 — —
+- [d9k](https://github.com/d9k/presentation-marp-demo) — ★ 4 — —
+- [Th30utcast](https://github.com/Th30utcast/MARP-Guide-AI) — ★ 4 — MARP-Guide-AI was the project for Studio Design 2 built using Pythong and JavaScript, where the main focus was to discover and implement modern day LLM's int...
+- [Sunwood-ai-labs](https://github.com/Sunwood-ai-labs/marp-editable-ui) — ★ 4 — —
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-theory-paper) — ★ 4 — The Marpa theory paper [ARCHIVED]
+- [renandamasceno](https://github.com/renandamasceno/TemplateMarpUFC) — ★ 4 — Template for Federal University of Ceará (UFC) presentations in Marp.
+- [NTNU-MCS](https://github.com/NTNU-MCS/MarPowSim) — ★ 4 — Marine Power System Simulator
+- [noeliampgar](https://github.com/noeliampgar/MARP-Juez-2C) — ★ 4 — Problemas del segundo cuatrimestre de la asignatura MARP
+- [johannesdewit](https://github.com/johannesdewit/marp-theme-universiteit-leiden) — ★ 4 — Unofficial Leiden University theme for producing easy slides with Marp || Officieus Universiteit Leiden thema om gemakkelijk presentaties te maken met Marp
+- [grokify](https://github.com/grokify/videoascode) — ★ 4 — Convert Marp presentations with voiceovers to video files. This tool takes a Marp markdown presentation with voiceover text in HTML comments, generates speec...
+- [EnEmerson](https://github.com/EnEmerson/aitp-github-workshop) — ★ 4 — Github/Markdown presentation
+- [gentle-giraffe-apps](https://github.com/gentle-giraffe-apps/Gentle-Presentations) — ★ 4 — Markdown Presentations on Various Topics
+- [matsubara0507](https://github.com/matsubara0507/elmdeck) — ★ 4 — Markdown presentation writer with Elm.
+- [arpitbbhayani](https://github.com/arpitbbhayani/present-md-export) — ★ 4 — Export present-md markdown presentations to PDF.
+- [gadenbuie](https://github.com/gadenbuie/extra-awesome-xaringan) — ★ 4 — —
+- [matt-dray](https://github.com/matt-dray/ninja-scaffold) — ★ 4 — :ninja::bamboo: Adapting Emi Tanaka's {xaringan} Ninjutsu classes for slide layouts
+- [Quaternijkon](https://github.com/Quaternijkon/touying-pres-ustc) — ★ 4 — —
+- [touying-typ](https://github.com/touying-typ/touying-typ.github.io) — ★ 4 — Documentation for Touying
+- [rustam2027](https://github.com/rustam2027/touying-mmf-nsu) — ★ 4 — NSU presentation template for Touying Typst package.
+- [Ri-Nai](https://github.com/Ri-Nai/touying-campus-talk) — ★ 4 — Campus talk Touying theme (THU / BIT / custom)
+- [Kisechan](https://github.com/Kisechan/snl-compiler) — ★ 4 — 吉林大学 2023 级《编译原理》项目，C++ SNL 编译器，包含展示的 WebUI 和介绍的 Touying Slides
+- [inuEbisu](https://github.com/inuEbisu/SlideTemplate) — ★ 4 — inuEbisu's template for MkSlides / 犬戎的 MkSlides 模板
+- [LordBlacky](https://github.com/LordBlacky/leonux) — ★ 4 — Typst-Minimalist-Slides-Template
+- [thomasjpfan](https://github.com/thomasjpfan/slides-template-quarto) — ★ 4 — —
+- [Ender-events](https://github.com/Ender-events/pandoc) — ★ 4 — github action with pandoc + Metropolis Latex beamer theme
+- [mielpeeters](https://github.com/mielpeeters/pitcher) — ★ 4 — Minimal and modern configurable slide tool for Typst.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-shapes) — ★ 4 — CSS shape classes for Quarto — style divs as shapes that can contain text and other elements
+- [connachermurphy](https://github.com/connachermurphy/typst-slides) — ★ 3 — Slides template for Typst
+- [wiesehahn](https://github.com/wiesehahn/quarto_presentation_template) — ★ 3 — Template repository to provide a starting point for my presentations
+- [eLearningHub](https://github.com/eLearningHub/quarto-beamer-starter) — ★ 3 — A Quarto presentation starter with a focus on Beamer
+- [yelpevade](https://github.com/yelpevade/touying-nudt) — ★ 3 — ?? Touying ??????? Typst ????? (Typst Slide Theme for NUDT Based on Touying)
+- [JesonChou](https://github.com/JesonChou/buaa-marp-template) — ★ 3 — 用于AI Agent自动排版的BUAA Marp PPT模板
+- [cjohnson74](https://github.com/cjohnson74/Python-NewsFeed) — ★ 3 — In this course, you’ll use Python to refactor an existing application that was originally built using Node.js. The app, called Just Tech News, is a website w...
+- [Einundzwanzig-Podcast](https://github.com/Einundzwanzig-Podcast/slides) — ★ 3 — Präsentationsvorlage für Einundzwanzig-Vorträge, basierend auf Marp
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Parser-Marpa) — ★ 3 — More advanced parser for marpa files.
+- [BIwashi](https://github.com/BIwashi/marp-slides) — ★ 3 — —
+- [drforr](https://github.com/drforr/perl6-Marpa) — ★ 3 — Perl6 binding for Marpa
+- [junyi0111](https://github.com/junyi0111/MarpPPT) — ★ 3 — MarpPPT: turn Markdown into editable PowerPoint presentations
+- [Zeng-WH](https://github.com/Zeng-WH/MARP) — ★ 3 — Marp模板
+- [Paulalemany](https://github.com/Paulalemany/MARP) — ★ 3 — —
+- [jongalloway](https://github.com/jongalloway/MarpToPptx) — ★ 3 — A .NET 10 CLI and library for compiling Marp-flavored Markdown into editable PowerPoint presentations.
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Simple-Rules) — ★ 3 — Very simple Marpa::XS rule parser.
+- [jvverde](https://github.com/jvverde/MarpaX-xPathLike) — ★ 3 — MarpaX::xPathLike - a xpath like processor for perl data-structures (hashes and arrays)!
+- [latk](https://github.com/latk/p5-MarpaX-Grammar-Preprocessor) — ★ 3 — MarpaX::Grammar::Preprocessor - Shortcuts for Marpa::R2 SLIF grammars
+- [sotetsuk](https://github.com/sotetsuk/marp-ai-friendly) — ★ 3 — Academic Presentation Slides with Marp
+- [vainiusd](https://github.com/vainiusd/marp-cheatslides) — ★ 3 — Collection of MARP slide examples
+- [LinuxLab-ESGI](https://github.com/LinuxLab-ESGI/LinuxLab-MARP-template) — ★ 3 — LinuxLab ESGI MARP template for presentations.
+- [yutaro-t](https://github.com/yutaro-t/atom-marp) — ★ 3 — Live rendering from markdown to presentation slides, using Marp
+- [Jonathansumner](https://github.com/Jonathansumner/Marple-Tilt) — ★ 3 — Digital recreation of the "Labyrinth" marble tilt maze game.
+- [marpledata](https://github.com/marpledata/marple-installation) — ★ 3 — Deployment configurations for Marple DB and Insight.
+- [szw0407](https://github.com/szw0407/Marp-Theme-For-SDU) — ★ 3 — Marp Theme For Shandong University。山东大学（山大/沙袋）Marp主题
+- [latk](https://github.com/latk/Marpa-Inline) — ★ 3 — An alternative DSL for the Marpa::R2 parser generator
+- [moskensoap](https://github.com/moskensoap/marp-server) — ★ 3 — Use Docker Compose to run VS Code Server and Marp Server together for writing and previewing Markdown-based slides in one web UI.
+- [kdmsnr](https://github.com/kdmsnr/marp-preview) — ★ 3 — —
+- [fosslover69](https://github.com/fosslover69/marp-shot) — ★ 3 — —
+- [mkwisniewski](https://github.com/mkwisniewski/POLIMI_Marp_Template) — ★ 3 — POLIMI Marp Template for Markdown Slides.
+- [OrangeX4](https://github.com/OrangeX4/marp-pdr) — ★ 3 — —
+- [eyemono-moe](https://github.com/eyemono-moe/marp-eyemono-theme) — ★ 3 — —
+- [marekpsenka](https://github.com/marekpsenka/edhouse-marp-template) — ★ 3 — Edhouse template for Marp - the markdown presentation ecosystem
+- [Mitachi-H](https://github.com/Mitachi-H/paper-to-marp) — ★ 3 — —
+- [hashbangcode](https://github.com/hashbangcode/marp-talk-template) — ★ 3 — —
+- [pstuifzand](https://github.com/pstuifzand/marpa-cpp-rules) — ★ 3 — C++ experiment with Marpa
+- [ArviSlayer](https://github.com/ArviSlayer/Marpel-Destek-Sistemi) — ★ 3 — Ly3ssia#1000'den Alındı
+- [pstuifzand](https://github.com/pstuifzand/go-marpa-gen) — ★ 3 — Parser/generator for Marpa grammars in Go
+- [kentar0kozai](https://github.com/kentar0kozai/Marp_for_OMRON) — ★ 3 — —
+- [ultsaza](https://github.com/ultsaza/my-marp-template) — ★ 3 — —
+- [ENIB-Community](https://github.com/ENIB-Community/enib-marp-theme) — ★ 3 — Marp theme designed in accordance with the ENIB colors
+- [mikael-ros](https://github.com/mikael-ros/minecraft-on-marp) — ★ 3 — A Minecraft theme for Marp - now with extra jank
+- [noeliampgar](https://github.com/noeliampgar/MARP-Juez-1C) — ★ 3 — Problemas del primer cuatrimestre de la asignatura MARP
+- [steelpipe75](https://github.com/steelpipe75/marp-lt-slides-template) — ★ 3 — Marpによるライトニングトークのスライド作成 テンプレート
+- [alterationx10](https://github.com/alterationx10/scala-slides) — ★ 3 — Generate Scala Slides with mdoc, marp, and scala-cli
+- [chaoyian](https://github.com/chaoyian/Markdown-Resume-Builder---Create-A4-CV-with-AI) — ★ 3 — Privacy-conscious bilingual A4 resume toolkit built with Marp and refactored with AI assistance.
+- [howardroatti](https://github.com/howardroatti/banco-de-dados-faesa) — ★ 3 — Material didatico de Banco de Dados (FAESA) - slides em Marp. Prof. M.Sc. Howard Cruz Roatti. CC BY 4.0.
+- [nugehoodg](https://github.com/nugehoodg/MoSlides) — ★ 3 — MoSlides is an ultrafast & lightweight Markdown slides maker for Android.
+- [kadamwhite](https://github.com/kadamwhite/grunt-codeblock-jshint) — ★ 3 — Run JSHint against code snippets within Markdown slides.
+- [ccaprani](https://github.com/ccaprani/scholium) — ★ 3 — Automated generation of video lessons from markdown slides
+- [gwillz](https://github.com/gwillz/slides) — ★ 3 — Markdown Presentations
+- [zhouzhuojie](https://github.com/zhouzhuojie/hast-electron) — ★ 3 — Hast markdown presentation in Electron
+- [guileen](https://github.com/guileen/mkd2slide) — ★ 3 — markdown to slide pdf
+- [SnehalRaj](https://github.com/SnehalRaj/markdown-to-slides) — ★ 3 — Pandoc + Beamer pipeline for creating polished PDF slide decks from Markdown with automated layout analysis
+- [lnnrtwttkhn](https://github.com/lnnrtwttkhn/dra-fair-teaching) — ★ 3 — Source code for Quarto slides on reproducible and FAIR teaching materials
+- [PythonCoderUnicorn](https://github.com/PythonCoderUnicorn/Quarto-RLadies) — ★ 3 — a dark theme for Quarto slide presentation
+- [Pat-Laub](https://github.com/Pat-Laub/UNSW-Quarto-Slides-Template) — ★ 3 — A template for using Quarto to produce slides with the UNSW theme.
+- [beatrizmilz](https://github.com/beatrizmilz/aMostra-IME-2019-Xaringan) — ★ 3 — —
+- [nanhung](https://github.com/nanhung/xaringan-tamu) — ★ 3 — Xaringan X TAMU template
+- [vrbiki](https://github.com/vrbiki/learning-xaringan) — ★ 3 — Working through the NHSR workshop on "Sharing Your Work with xaringan"
+- [QuinnAsena](https://github.com/QuinnAsena/growth_lecture) — ★ 3 — Population growth lecture in xaringan and shiny app
+- [angela-li](https://github.com/angela-li/dc-r-2018) — ★ 3 — Materials for xaringan slides for DC R 2018
+- [denis-cohen](https://github.com/denis-cohen/mzes-xaringan-metropolis) — ★ 3 — A Xaringan Metropolis template inspired by the MZES corporate design
+- [issactoast](https://github.com/issactoast/uiowa-rworkshop) — ★ 3 — xaringan template with xaringan themer
+- [gadenbuie](https://github.com/gadenbuie/xaringan-club) — ★ 3 — A place to talk about xaringan
+- [kannyjyk](https://github.com/kannyjyk/ggplot2-xaringan) — ★ 3 — The introduction of ggplot2 made by xaringan
+- [beatrizmilz](https://github.com/beatrizmilz/apresentacao_RLadies_xaringan) — ★ 3 — Apresentação meetup RLadies sobre como criar apresentações no R utilizando o pacote Xaringan.
+- [matt-dray](https://github.com/matt-dray/ninja-knitting) — ★ 3 — :ninja::yarn: Demo: iterative rendering of {xaringan} slides with params using {purrr}
+- [royfrancis](https://github.com/royfrancis/workshop-template-rmd-ga) — ★ 3 — RMarkdown based website for workshops built and rendered through Github Actions. Contains html reports and xaringan slides.
+- [ccyoung3](https://github.com/ccyoung3/touying-simpl-ecnu) — ★ 3 — Typst Touying Slide Theme for East China Normal University
+- [HPDell](https://github.com/HPDell/touying-brandred-uobristol) — ★ 3 — —
+- [vuw-scps](https://github.com/vuw-scps/tuhi-presentation-vuw) — ★ 3 — Typst template for presentation slides with touying
+- [onsdagens](https://github.com/onsdagens/scholarly-ltupresentation) — ★ 3 — Touying-based Typst LTU beamer template
+- [maxchang3](https://github.com/maxchang3/touying-simpl-cau) — ★ 3 — Touying Slide Theme for China Agricultural University
+- [Lyrics2196](https://github.com/Lyrics2196/BUAA-Slide) — ★ 3 — A BUAA slide template based on touying/typst.
+- [augustozanellato](https://github.com/augustozanellato/touying-unipd) — ★ 3 — —
+- [rlridenour](https://github.com/rlridenour/touying-slides-handout) — ★ 3 — Generate slides and a handout from a single content file using the Touying presentation package for Typist.
+- [maxx27](https://github.com/maxx27/md2pptx) — ★ 3 — Converter of Markdown files into PowerPoint presentations
+- [upstairs-at-erics](https://github.com/upstairs-at-erics/pptx-template-filler) — ★ 3 — PPTX Template Filler API. A lightweight, containerised Flask REST API for uploading, inspecting, and filling PowerPoint templates using placeholder tags. Bui...
+- [elinscott](https://github.com/elinscott/psi-slides-template) — ★ 3 — typst template for PSI slides
+- [Pepengu](https://github.com/Pepengu/pepentation) — ★ 3 — Typst presentation template
+- [vinvolve](https://github.com/vinvolve/UET-presentation-template-typst) — ★ 3 — —
+- [mcanouil](https://github.com/mcanouil/2026-ggplot2-extenders-gribouille) — ★ 3 — Talk for the ggplot2 extenders club: "The Grammar of Graphics Assembles", on Gribouille, a native Typst grammar-of-graphics package.
+- [nhsengland](https://github.com/nhsengland/nhse-quarto-presentations) — ★ 2 — —
+- [statik](https://github.com/statik/cc-quarto-video) — ★ 2 — using live camera feed in quarto presentation similar to Keynote Live Video feature
+- [syqwq-OMG](https://github.com/syqwq-OMG/ecnu-typst-slide) — ★ 2 — typst slide template for ECNU using touying
+- [wiuri](https://github.com/wiuri/xjtu_bristol) — ★ 2 — _typst_slides_template
+- [pauladam94](https://github.com/pauladam94/ENS-Rennes-Typst-Slides-Template) — ★ 2 — Typst Slide Template for ENS Rennes
+- [ComPDFKit](https://github.com/ComPDFKit/compdfkit-conversion-sdk-java) — ★ 2 — Enterprise-grade PDF conversion SDK for Java, built for Spring Boot and JVM-based server applications. Convert PDF files to Word, Excel, PPT, HTML, CSV, imag...
+- [JavOrraca](https://github.com/JavOrraca/posit-conf-2023-presentation) — ★ 2 — posit::conf(2023) highlights wrapped into Quarto web slides
+- [icheft](https://github.com/icheft/marp-template) — ★ 2 — —
+- [alphagov](https://github.com/alphagov/marples) — ★ 2 — Message destination arbiter
+- [mcf1110](https://github.com/mcf1110/marp-themes) — ★ 2 — The themes I use in my Marp presentations
+- [vibe-code-tours](https://github.com/vibe-code-tours/marp-templates) — ★ 2 — Six self-contained Marp slide templates for Vibe Code Tours projects (copy one file, render).
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Parser-MarpaBase) — ★ 2 — Simple base for Marpa parsers
+- [pedrobejarano](https://github.com/pedrobejarano/marped1) — ★ 2 — —
+- [LL-Xu](https://github.com/LL-Xu/MARP-main) — ★ 2 — MARP From Xu
+- [Fernadoo](https://github.com/Fernadoo/MARP) — ★ 2 — A testbed for multi-agent route planning.
+- [cyntrist-UCM-GDV](https://github.com/cyntrist-UCM-GDV/MARP) — ★ 2 — —
+- [TonioGela](https://github.com/TonioGela/marp) — ★ 2 — Custom theme for Markdown presentations with Marp
+- [jddurand](https://github.com/jddurand/c-marpaWrapper) — ★ 2 — Marpa parsing library convenience wrappers
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Parser-Loader) — ★ 2 — Load and generate a MarpaX::Parser from a file at runtime.
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-ECMAScript-AST) — ★ 2 — ECMAScript AST using Marpa
+- [leegemstone](https://github.com/leegemstone/marp-themes) — ★ 2 — Some custom Marp themes
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-SQL-AST) — ★ 2 — SQL AST written with Marpa
+- [dywsy21](https://github.com/dywsy21/Marp-Slides) — ★ 2 — Marp & Awesome-Marp & AI: Empower you to make elegant slides more than easily.
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-SQL2003-AST) — ★ 2 — —
+- [rns](https://github.com/rns/MarpaX-Languages-CommonMark-AST) — ★ 2 — BNF-based implementation of spec.commonmark.org using Marpa::R2
+- [Glasgow-College-UESTC](https://github.com/Glasgow-College-UESTC/ip-lectures) — ★ 2 — IP slides based on MARP
+- [traP-jp](https://github.com/traP-jp/marp-template) — ★ 2 — The template repository of Marp
+- [dunossauro](https://github.com/dunossauro/marpy) — ★ 2 — My python lib to create marp presentations
+- [Hronrad](https://github.com/Hronrad/marper) — ★ 2 — a simple and fast  tool designed to flawlessly convert any Markdown document into formatted, highly precise PPTX and PDF presentations
+- [msetzu](https://github.com/msetzu/marpee) — ★ 2 — —
+- [SaundersLab](https://github.com/SaundersLab/marple) — ★ 2 — Pipeline for analysis of stem rust (Pgt) and yellow rust (Pst) reads for MARPLE
+- [raku-community-modules](https://github.com/raku-community-modules/Marpa) — ★ 2 — Raku binding for Marpa
+- [voidash](https://github.com/voidash/slides) — ★ 2 — slides for the presentation files. Mainly in markdown format using Marp, or pptx format using google slides
+- [jmmartinez](https://github.com/jmmartinez/parm) — ★ 2 — Scripts for making slides with Marp
+- [alexdewar](https://github.com/alexdewar/presentation_template) — ★ 2 — A Cookiecutter recipe for Marp presentations
+- [asm0dey](https://github.com/asm0dey/marp-presentation-template) — ★ 2 — Template for creating presentation with Marp
+- [htlin222](https://github.com/htlin222/lizard_marp) — ★ 2 — Marp presentation template with custom CSS themes for markdown slide decks, supporting HTML/PDF export and a live development server.
+- [nickytonline](https://github.com/nickytonline/marp-kit) — ★ 2 — Starter kit for Marp decks: local preview, HTML/PDF/PPTX builds, and Netlify deploy
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--HTML) — ★ 2 — OBSOLETE Marpa-powered HTML parser [ARCHIVED]
+- [yang3kc](https://github.com/yang3kc/marp_template) — ★ 2 — A template for creating slides using Marp
+- [samisaliveagain](https://github.com/samisaliveagain/Marposs-hackathon) — ★ 2 — ICNAP Fraunhofer hackathon project
+- [hnrobert](https://github.com/hnrobert/Marp-Tutorial) — ★ 2 — —
+- [yuta0306](https://github.com/yuta0306/academic-marp) — ★ 2 — —
+- [xuwithbean](https://github.com/xuwithbean/xu_marp) — ★ 2 — —
+- [lutelute](https://github.com/lutelute/marp-pptx) — ★ 2 — Academic conference slide templates for Marp
+- [drspoulsen](https://github.com/drspoulsen/Onion_Marp) — ★ 2 — —
+- [nibzard](https://github.com/nibzard/marp-validator) — ★ 2 — A comprehensive validation tool for Marp presentations that analyzes slide readability and formatting
+- [paulamrtnez](https://github.com/paulamrtnez/MARP_2021) — ★ 2 — Ejercicios resueltos y aprobados por el juez automático de la asignatura de Métodos Algorítmicos en Resolución de Problemas
+- [techbuzzz](https://github.com/techbuzzz/marp-play) — ★ 2 — Free online Markdown-to-Slides presentation player powered by Marp Core. Paste Marp markdown, preview slides in real-time, export to PDF, use fullscreen mode...
+- [klieret](https://github.com/klieret/marp-cookiecutter) — ★ 2 — Cookiecutter template for my presentations with marp 📝🍪✂️
+- [Justtofind](https://github.com/Justtofind/Marp_Markdown) — ★ 2 — 将markdown直接转为ppt提升论文汇报效率
+- [posaune0423](https://github.com/posaune0423/marp-template) — ★ 2 — —
+- [feamster](https://github.com/feamster/paper-marp) — ★ 2 — —
+- [HK-SHAO](https://github.com/HK-SHAO/Marp-theme-for-SCNUslides) — ★ 2 — SCNU主题的marp模板
+- [adriansousapoza](https://github.com/adriansousapoza/ucph-marp-template) — ★ 2 — This Repo contains a MARP template based on the design guide of the university of copenhagen
+- [aimerneige](https://github.com/aimerneige/marp_git-github) — ★ 2 — Git & GitHub Teach PPT build with Marp
+- [NYPL](https://github.com/NYPL/nypl-marp-template) — ★ 2 — Marp template themed with NYPL design guidelines.
+- [kamijin-fanta](https://github.com/kamijin-fanta/itc-marp-theme) — ★ 2 — —
+- [Yvonne0413](https://github.com/Yvonne0413/marple_mini_behavior) — ★ 2 — MiniGrid Implementation of BEHAVIOR Tasks on Marple projects
+- [boborbt](https://github.com/boborbt/marp-dev-preview) — ★ 2 — A CLI tool to preview Marp markdown files
+- [porscheofficial](https://github.com/porscheofficial/marp-cli-wrapper) — ★ 2 — A Node.js wrapper for Marp CLI that simplifies creating professional presentations from Markdown
+- [marpelt](https://github.com/marpelt/marpelt.github.io) — ★ 2 — Explore my portfolio showcasing a collection of projects that reflect my journey as a developer.
+- [franzhuang](https://github.com/franzhuang/sync-marp.nvim) — ★ 2 — Sync your marp preview window with neovim's cursor.
+- [LucasFernandez11](https://github.com/LucasFernandez11/MarPel-Peliculas) — ★ 2 — —
 
-_(99 repos in this category)_
+_Showing top 500 of 2792 repos in this category — the full list with all 2792 entries is in [`data/repos.json`](data/repos.json)._
 
 ## PPTX / OOXML Libraries & CLI Tools
 
 Libraries and command-line tools to build, edit, convert and translate native .pptx files.
 
-- [gitbrent/PptxGenJS](https://github.com/gitbrent/PptxGenJS) — ★ 6,272 — Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.
-- [scanny/python-pptx](https://github.com/scanny/python-pptx) — ★ 3,556 — Create Open XML PowerPoint documents in Python
-- [yfedoseev/office_oxide](https://github.com/yfedoseev/office_oxide) — ★ 153 — The fastest Office document library for Python, Rust, Go, JS/TS, C# and WASM. DOCX, XLSX, PPTX, DOC, XLS, PPT. Up to 100 faster than python-docx/openpyxl/pyt...
-- [Mira-13/figure-gen](https://github.com/Mira-13/figure-gen) — ★ 151 — A Python package to effortlessly assemble images in comparison figures. Supports LaTeX, PPTX, and HTML.
-- [matthewrenze/powerpoint-to-pdf](https://github.com/matthewrenze/powerpoint-to-pdf) — ★ 109 — A set of Python scripts to convert PowerPoint (PPT/PPTX) files to Adobe PDF
-- [hl123-123/yiyan-ppt](https://github.com/hl123-123/yiyan-ppt) — ★ 108 — ??????+Python-pptx ,????????PPT
-- [jackbrookes/batch-ppt-to-pdf](https://github.com/jackbrookes/batch-ppt-to-pdf) — ★ 97 — Python script to convert a bunch of Microsoft Powerpoint files (.ppt or .pptx) to PDF
-- [ianustec/openwebui-generate-slides](https://github.com/ianustec/openwebui-generate-slides) — ★ 64 — Native PowerPoint (.pptx) generator tool for Open WebUI  JSON spec in, native charts/icons/layouts out. MIT.
-- [DraviaVemal/openxml-office](https://github.com/DraviaVemal/openxml-office) — ★ 56 — Create or Modify Power Point/Presentation (pptx), Excel/Spreadsheet (xlsx) & Word/Document (docx) file with ease in Rust, C#, Python????, Java????,Go???? or ...
-- [python-openxml/python-opc](https://github.com/python-openxml/python-opc) — ★ 49 — Python library for manipulating Open Packaging Convention (OPC) files like .docx, .pptx, and .xslx
-- [ThibaudLamothe/translate-pptx](https://github.com/ThibaudLamothe/translate-pptx) — ★ 47 — Using Selenium and DeepL to translate powerpoint files with python-pptx
-- [samirsaci/automate-powerpoint](https://github.com/samirsaci/automate-powerpoint) — ★ 47 — Automate PowerPoint Slides Creation with Python
-- [natter1/python_pptx_interface](https://github.com/natter1/python_pptx_interface) — ★ 45 — Interface for python-pptx to easily create simple pptx files
-- [kwlo/python-pptx-templater](https://github.com/kwlo/python-pptx-templater) — ★ 45 — Create customizable PowerPoint Presentation (.pptx) using a predefined layout template
-- [mashu3/drawio2pptx](https://github.com/mashu3/drawio2pptx) — ★ 38 — drawio2pptx is a Python package that converts draw.io (diagrams.net) files to PowerPoint (.pptx) presentations.
-- [iyulab/undoc](https://github.com/iyulab/undoc) — ★ 36 — High-performance Rust library for extracting content from DOCX, XLSX, and PPTX into Markdown, plain text, or JSON with CJK support and .NET/Python bindings.
-- [LeoFC97/pptx-maker](https://github.com/LeoFC97/pptx-maker) — ★ 36 — Automao do processo de criao de apresentaes em powerPoint
-- [artifact-kit/pptxgenjs-jsx](https://github.com/artifact-kit/pptxgenjs-jsx) — ★ 34 — LLM-friendly JSX declaration layer for PptxGenJS
-- [it-beyondit/html2pptxgenjs](https://github.com/it-beyondit/html2pptxgenjs) — ★ 34 — Converts HTML into Pptx2genjs text.
-- [aws-samples/pptx-translator](https://github.com/aws-samples/pptx-translator) — ★ 34 — Python script that translates pptx files using Amazon Translate service.
-- [scholer/pptx-downsizer](https://github.com/scholer/pptx-downsizer) — ★ 24 — Python tool for downsizing Microsoft PowerPoint presentations (pptx) files.
-- [SlideSpeak/image-extractor-cli](https://github.com/SlideSpeak/image-extractor-cli) — ★ 22 — A Python ?? CLI tool to extract images from PowerPoint, Word or PDF files. Supports PPTX, DOCX, PDF.
-- [timetric/python-openxml](https://github.com/timetric/python-openxml) — ★ 20 — OpenXML library for Python: create .docx & .pptx files
-- [lofcz/pptxgenjs-plus](https://github.com/lofcz/pptxgenjs-plus) — ★ 19 — Build PowerPoint presentations with JavaScript. Works with Node, Browser, and more.
-- [zythum/pptxgen-ts-starter](https://github.com/zythum/pptxgen-ts-starter) — ★ 18 — A starter template for creating PowerPoint presentations using JSX + TypeScript with pptxgenjs. Build slides declaratively, preview instantly in the browser,...
-- [huangzhenhao90/pptx-deck-builder](https://github.com/huangzhenhao90/pptx-deck-builder) — ★ 17 — Build professional presentation decks with PptxGenJS, structured content workflows, and swappable visual themes
-- [ncukondo/presentation-generator](https://github.com/ncukondo/presentation-generator) — ★ 14 — PptxGenJS + Gemini TTS + ffmpeg ????????????????????
-- [zythum/pptxgenjsx](https://github.com/zythum/pptxgenjsx) — ★ 11 — A JSX runtime for building PowerPoint presentations with [pptxgenjs](https://github.com/gitbrent/pptxgenjs). Write your slides as JSX components and render t...
-- [CacinieP/slide-recipes](https://github.com/CacinieP/slide-recipes) — ★ 9 — Editable PPTX + Markdown, AI outlines. China: https://slides.linguistwantstech.online/ | Global: https://slide-recipes-web.vercel.app/
-- [cm-uehara/classmethod-pptxgenjs-template](https://github.com/cm-uehara/classmethod-pptxgenjs-template) — ★ 9 — ???????????PptxGenJS????????????
-- [ProgrammerSteve/powerpointWithChatGpt](https://github.com/ProgrammerSteve/powerpointWithChatGpt) — ★ 8 — A simple script that uses openai's "text-davinci-003" model and pptxgenjs to make a quick powerpoint on a specified topic
-- [anotb/pptx-masters](https://github.com/anotb/pptx-masters) — ★ 6 — Extract PptxGenJS slide masters from corporate PowerPoint templates
-- [beautifulai/PptxGenJS](https://github.com/beautifulai/PptxGenJS) — ★ 6 — Create PowerPoint presentations with a powerful, concise JavaScript API.
-- [marp-team/pptx](https://github.com/marp-team/pptx) — ★ 5 — A wrapper module for creating PPTX using PptxGenJS, with the least module size
-- [anmism/pptxgenjs-animation](https://github.com/anmism/pptxgenjs-animation) — ★ 5 — Pptxgenjs + Animation - Create Animated Slides
-- [hashi-demo-lab/html2pptx-cli](https://github.com/hashi-demo-lab/html2pptx-cli) — ★ 2 — —
-- [DNA-Dave/RAS_Image_Powerpoint_Generator](https://github.com/DNA-Dave/RAS_Image_Powerpoint_Generator) — ★ 1 — I had around 100 images in six treatment groups that I wanted to be able to create a powerpoint presentation with one image from each treatment group in orde...
-- [IanDarwin/TextToPpt](https://github.com/IanDarwin/TextToPpt) — ★ 1 — Convert tab-indented slide outline into modern PPTX
-- [TrinhVinh2003/TextToPPTX](https://github.com/TrinhVinh2003/TextToPPTX) — ★ 1 — —
-- [niyo-oyin/llm-pptx-gen-test](https://github.com/niyo-oyin/llm-pptx-gen-test) — ★ 1 — —
-- [ThomasRohde/pptx-cli](https://github.com/ThomasRohde/pptx-cli) — ★ 1 — —
-- [shandianchengzi/ai-generate-ppt-html-and-split-framework](https://github.com/shandianchengzi/ai-generate-ppt-html-and-split-framework) — ★ 0 — AI??ppt????????????,????????????,?????pptx??????????????
-- [huatam391/ai-generate-pptx](https://github.com/huatam391/ai-generate-pptx) — ★ 0 — —
-- [Furqon-ahmad/ai-generate-pptx](https://github.com/Furqon-ahmad/ai-generate-pptx) — ★ 0 — —
-- [ars52/text_to_pptx](https://github.com/ars52/text_to_pptx) — ★ 0 — —
-- [themoonwalker1/llm_pptx](https://github.com/themoonwalker1/llm_pptx) — ★ 0 — Create powerpoints using LLMS
-- [qy-777/llm-posttraining-ppt-resources-20260906](https://github.com/qy-777/llm-posttraining-ppt-resources-20260906) — ★ 0 — Public datasets, scripts, and Qwen evaluation evidence referenced by LLM.pptx
-- [deckflow/html2deck](https://github.com/deckflow/html2deck) — ★ 0 — html to deck(pptx) cli tool, support macos, win, linux
-- [XiRouz/pptxpresenter_client](https://github.com/XiRouz/pptxpresenter_client) — ★ 0 — —
-- [TheOneGuo/Notebooklm-pptx-cli](https://github.com/TheOneGuo/Notebooklm-pptx-cli) — ★ 0 — —
-- [shazam19/MdToPptx.Client](https://github.com/shazam19/MdToPptx.Client) — ★ 0 — —
-- [caraya/md2pptx-cli](https://github.com/caraya/md2pptx-cli) — ★ 0 — —
+- [hugohe3](https://github.com/hugohe3/ppt-master) — ★ 62,142 — AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audi...
+- [pipipi-pikachu](https://github.com/pipipi-pikachu/PPTist) — ★ 9,387 — PowerPoint-ist（/'pauəpɔintist/）, An online presentation application that replicates most of the commonly used features of MS PowerPoint, allowing for the edi...
+- [The-Vibe-Company](https://github.com/The-Vibe-Company/megaparse) — ★ 7,414 — File Parser optimised for LLM Ingestion with no loss 🧠 Parse PDFs, Docx, PPTx in a format that is ideal for LLMs.
+- [gitbrent](https://github.com/gitbrent/PptxGenJS) — ★ 6,273 — Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.
+- [unidoc](https://github.com/unidoc/unioffice) — ★ 4,934 — Pure go library for creating and processing Office Word (.docx), Excel (.xlsx) and Powerpoint (.pptx) documents
+- [open-xml-templating](https://github.com/open-xml-templating/docxtemplater) — ★ 3,638 — Generate docx, pptx, and xlsx from templates (Word, Powerpoint and Excel documents), from Node.js or the browser. Demo: https://www.docxtemplater.com/demo. #...
+- [scanny](https://github.com/scanny/python-pptx) — ★ 3,556 — Create Open XML PowerPoint documents in Python
+- [CatchTheTornado](https://github.com/CatchTheTornado/text-extract-api) — ★ 3,182 — Document (PDF, Word, PPTX ...) extraction and parse API using state of the art modern OCRs + Ollama supported models. Anonymize documents. Remove PII. Conver...
+- [MaxHu-xuan](https://github.com/MaxHu-xuan/artifactproof) — ★ 823 — Verify that the PowerPoint you are about to deliver is exactly the PPTX that passed QA—locally, offline, and with tamper-evident evidence.
+- [g21589](https://github.com/g21589/PPTX2HTML) — ★ 637 — Convert pptx file to HTML by using pure javascript
+- [addsumtech](https://github.com/addsumtech/slides_maker) — ★ 561 — Turn papers, code, and docs into presentation-ready, natively editable PPTX in Codex / Claude Code. Native charts and equations, speaker notes, click-build a...
+- [harshankur](https://github.com/harshankur/officeParser) — ★ 558 — A robust, strictly-typed Node.js and Browser library for parsing office files into a rich Abstract Syntax Tree (AST) and generating high-fidelity output in m...
+- [pipipi-pikachu](https://github.com/pipipi-pikachu/pptxtojson) — ★ 455 — Office PowerPoint(.pptx) file to JSON | 将 PPTX 文件转为可读的 JSON 数据
+- [ShapeCrawler](https://github.com/ShapeCrawler/ShapeCrawler) — ★ 442 — PowerPoint .NET library for reading, modifying, and generating PPTX presentations without Microsoft Office
+- [atharva9167j](https://github.com/atharva9167j/dom-to-pptx) — ★ 379 — A client-side library that converts any HTML element into a fully editable PowerPoint slide. **dom-to-pptx** transforms DOM structures into pixel-accurate `....
+- [laihenyi](https://github.com/laihenyi/NBLM2PPTX) — ★ 345 — Convert NotebookLM PDFs to PPTX with separated background images and editable text layers using Gemini AI
+- [openooxml](https://github.com/openooxml/betteroffice) — ★ 293 — Native OOXML engines in Rust - DOCX, XLSX & PPTX editing, rendering and real-time collaboration, compiled to WASM for the web.
+- [singerla](https://github.com/singerla/pptx-automizer) — ★ 249 — A template based pptx generator for Node.js
+- [corazzon](https://github.com/corazzon/pptx-design-styles) — ★ 248 — pptx-design-styles
+- [evgo2017](https://github.com/evgo2017/Office2PDF) — ★ 224 — Batch convert Word, Excel, PPT to PDF - 批量转 Word、Excel、PPT 为 PDF
+- [ibisjp](https://github.com/ibisjp/ibis-office) — ★ 216 — The next-gen Office suite built with Rust & GPUI. Blazing-fast, memory-safe, and highly accurate editing for DOCX, XLSX, and PPTX with pixel-perfect renderin...
+- [jeongwhanchoi](https://github.com/jeongwhanchoi/convert-ppt-to-pdf) — ★ 192 — Batch convert ppt files to pdf files by Automator on MacOS
+- [mujingquan835](https://github.com/mujingquan835/Dawang-ppt) — ★ 192 — Dawang-PPT：内容驱动的中文演示技能，融合场景规划、风格构图、浏览器编辑与本地可编辑 PPTX 导出（实验版）
+- [heavysixer](https://github.com/heavysixer/node-pptx) — ★ 190 — Generate PPTX files on the server-side with JavaScript.
+- [yfedoseev](https://github.com/yfedoseev/office_oxide) — ★ 153 — The fastest Office document library for Python, Rust, Go, JS/TS, C# and WASM. DOCX, XLSX, PPTX, DOC, XLS, PPT. Up to 100 faster than python-docx/openpyxl/pyt...
+- [Mira-13](https://github.com/Mira-13/figure-gen) — ★ 151 — A Python package to effortlessly assemble images in comparison figures. Supports LaTeX, PPTX, and HTML.
+- [AmNotAGoose](https://github.com/AmNotAGoose/PPTX-Presentation-Generator) — ★ 151 — —
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DocumentBuilder) — ★ 141 — ONLYOFFICE Document Builder is powerful text, spreadsheet, presentation and PDF generating tool
+- [tokgolich](https://github.com/tokgolich/doctotext) — ★ 133 — Converts DOC, XLS, XLSB, PPT, RTF, ODF (ODT, ODS, ODP),  OOXML (DOCX, XLSX, PPTX), iWork (PAGES, NUMBERS, KEYNOTE),   ODFXML (FODP, FODS, FODT), PDF, EML and...
+- [erdos](https://github.com/erdos/stencil) — ★ 133 — templating engine for DOCX and PPTX files
+- [zyl-ui](https://github.com/zyl-ui/vue-file-viewer) — ★ 131 — 一个基于iframe提供跨框架、多格式、纯前端渲染的文件浏览解决方案（支持格式：pptx,docx,xlsx,pdf,mp4,纯文本和图片）
+- [aiden0z](https://github.com/aiden0z/pptx-renderer) — ★ 128 — High-fidelity, browser-native PPTX renderer in TypeScript. Parses OOXML into HTML/SVG DOM with rich text, shapes, images, tables, 2D charts, SmartArt, equati...
+- [ShZhao27208](https://github.com/ShZhao27208/Aut_Sci_ppt) — ★ 121 — Aut_Sci_PPt is an automated agent designed to convert academic papers (PDF) or structured text into professional, presentation-ready PowerPoint files (.pptx)...
+- [m3dev](https://github.com/m3dev/pptx-template) — ★ 119 — Build PowerPoint presentation from template(pptx) and model(json) data like other template engines
+- [ChristopherVR](https://github.com/ChristopherVR/pptx-viewer) — ★ 119 — Moved to ChristopherVR/ooxml (viewers/pptx). The PowerPoint viewer, its history and npm packages now live there.
+- [DemchaAV](https://github.com/DemchaAV/GraphCompose) — ★ 114 — Declarative Java engine for structured documents. Automatic layout, pagination, reusable templates and themes. Render print-ready PDF, export editable PowerP...
+- [matthewrenze](https://github.com/matthewrenze/powerpoint-to-pdf) — ★ 109 — A set of Python scripts to convert PowerPoint (PPT/PPTX) files to Adobe PDF
+- [deckflow](https://github.com/deckflow/deckuse) — ★ 109 — 💻 A local-first structural editing engine for PPTX files.
+- [hl123-123](https://github.com/hl123-123/yiyan-ppt) — ★ 108 — ??????+Python-pptx ,????????PPT
+- [ASML-Labs](https://github.com/ASML-Labs/PPTX.jl) — ★ 99 — Generate PowerPoint PPTX files from Julia
+- [jackbrookes](https://github.com/jackbrookes/batch-ppt-to-pdf) — ★ 97 — Python script to convert a bunch of Microsoft Powerpoint files (.ppt or .pptx) to PDF
+- [shobhitsharma](https://github.com/shobhitsharma/pptx-compose) — ★ 94 — Parser to convert PPTX to JSON format
+- [EvolutionJobs](https://github.com/EvolutionJobs/b2xtranslator) — ★ 87 — .NET Core library to convert Microsoft Office binary files (doc, xls and ppt) to Open XML (docx, xlsx and pptx).
+- [Skrol29](https://github.com/Skrol29/opentbs) — ★ 83 — With OpenTBS you can merge OpenOffice - LibreOffice and Ms Office documents with PHP using the TinyButStrong template engine. Simple use OpenOffice - LibreOf...
+- [Albonire](https://github.com/Albonire/notebooklm-watermark-remover) — ★ 80 — a simply water mark remover for pdf, png, pptx files generated from notebooklm
+- [ianustec](https://github.com/ianustec/neura-office) — ★ 79 — NEURA Office: native Word, PowerPoint and Excel for Open WebUI. LibreOffice-compatible OOXML. MS365 assistant planned.
+- [ianustec](https://github.com/ianustec/openwebui-generate-slides) — ★ 64 — Native PowerPoint (.pptx) generator tool for Open WebUI  JSON spec in, native charts/icons/layouts out. MIT.
+- [TejasS1233](https://github.com/TejasS1233/opencode-parser) — ★ 64 — Parse any file in opencode. Supports PDF, DOCX, XLSX, PPTX, images, EPUB, HTML, Markdown, Jupyter, archives, and plain text.
+- [rodydavis](https://github.com/rodydavis/open_xml) — ★ 58 — Create PowerPoint (pptx) presentations in Flutter and Dart
+- [DraviaVemal](https://github.com/DraviaVemal/openxml-office) — ★ 56 — Create or Modify Power Point/Presentation (pptx), Excel/Spreadsheet (xlsx) & Word/Document (docx) file with ease in Rust, C#, Python????, Java????,Go???? or ...
+- [developer0hye](https://github.com/developer0hye/anytomd-rs) — ★ 56 — Pure Rust document-to-Markdown converter for LLM workflows (DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, images).
+- [tkrotoff](https://github.com/tkrotoff/PptxTemplater) — ★ 55 — C# library to generate PowerPoint files from templates
+- [ahmadullahpk](https://github.com/ahmadullahpk/all-documents-reader) — ★ 52 — This library reads any type of documents like (doc, docx, xls, xlsx, ppt, pptx,pdf, rtf, csv, json, html, xml,txt,and kotlin)F files.
+- [python-openxml](https://github.com/python-openxml/python-opc) — ★ 49 — Python library for manipulating Open Packaging Convention (OPC) files like .docx, .pptx, and .xslx
+- [CoreOffice](https://github.com/CoreOffice/CryptoOffice) — ★ 49 — Office Open XML (OOXML) formats (.xlsx, .docx, .pptx) decryption for Swift
+- [shakirth-anisha](https://github.com/shakirth-anisha/pesu-slide-download-automator) — ★ 48 — Automates the process of downloading all PESU Academy Slides + helps merge them + helps convert them from PPTX to PDF
+- [ThibaudLamothe](https://github.com/ThibaudLamothe/translate-pptx) — ★ 47 — Using Selenium and DeepL to translate powerpoint files with python-pptx
+- [samirsaci](https://github.com/samirsaci/automate-powerpoint) — ★ 47 — Automate PowerPoint Slides Creation with Python
+- [ddvader44](https://github.com/ddvader44/Office-Buddy) — ★ 47 — A document viewer for Android supporting PDF, DOCX, XLSX and PPTX.
+- [natter1](https://github.com/natter1/python_pptx_interface) — ★ 45 — Interface for python-pptx to easily create simple pptx files
+- [kwlo](https://github.com/kwlo/python-pptx-templater) — ★ 45 — Create customizable PowerPoint Presentation (.pptx) using a predefined layout template
+- [CodingFeng101](https://github.com/CodingFeng101/slide-alchemy) — ★ 45 — Convert slide screenshots, image-based PPTX, and scanned decks into truly editable PowerPoint files with real text boxes and native shapes.
+- [stefslon](https://github.com/stefslon/exportToPPTX) — ★ 41 — MATLAB tool for exporting data to PowerPoint 2007+ files without the need COM-object automation.
+- [JadeLiu-tech](https://github.com/JadeLiu-tech/px-image2pptx) — ★ 39 — Convert static images to editable PowerPoint slides — OCR, inpaint, reconstruct
+- [mashu3](https://github.com/mashu3/drawio2pptx) — ★ 38 — drawio2pptx is a Python package that converts draw.io (diagrams.net) files to PowerPoint (.pptx) presentations.
+- [DemoMacro](https://github.com/DemoMacro/office-open) — ★ 37 — Create Word, Excel, and PowerPoint files (.docx, .xlsx, .pptx) from plain JSON or fully typed APIs — generate, parse, and patch. Built for AI agents, LLM too...
+- [iyulab](https://github.com/iyulab/undoc) — ★ 36 — High-performance Rust library for extracting content from DOCX, XLSX, and PPTX into Markdown, plain text, or JSON with CJK support and .NET/Python bindings.
+- [LeoFC97](https://github.com/LeoFC97/pptx-maker) — ★ 36 — Automao do processo de criao de apresentaes em powerPoint
+- [ai-forever](https://github.com/ai-forever/slides_generator) — ★ 36 — Single-prompt pptx generation framework
+- [Hansanshi](https://github.com/Hansanshi/pptutil) — ★ 36 — Convert slideshow(ppt or pptx format) to images(jpg, png, bmp or wbmp format)
+- [slhck](https://github.com/slhck/compress-pptx) — ★ 35 — Compress a PPTX file, converting all PNG/TIFF images to lossy JPEGs
+- [artifact-kit](https://github.com/artifact-kit/pptxgenjs-jsx) — ★ 34 — LLM-friendly JSX declaration layer for PptxGenJS
+- [it-beyondit](https://github.com/it-beyondit/html2pptxgenjs) — ★ 34 — Converts HTML into Pptx2genjs text.
+- [aws-samples](https://github.com/aws-samples/pptx-translator) — ★ 34 — Python script that translates pptx files using Amazon Translate service.
+- [FluidForm-ai](https://github.com/FluidForm-ai/fluiddocs-deck-builder) — ★ 33 — Type-correct, brand-aware HTML deck builder for Claude Code. Pitch, sales, launch, keynote, all-hands. PDF and PPTX import.
+- [maximecaruchet](https://github.com/maximecaruchet/html2pptx) — ★ 30 — Translate HTML to PPTX
+- [HututuWorks](https://github.com/HututuWorks/sci-diagram-pptx) — ★ 29 — Reconstruct scientific frameworks, mechanisms, and flow diagrams as native editable PowerPoint—with provenance-bound, fail-closed QA for Codex.
+- [kocurvik](https://github.com/kocurvik/beampptx) — ★ 28 — Convert LaTeX Beamer slides to PowerPoint with flawless vector graphics and embedded video support.
+- [jiadizhunine](https://github.com/jiadizhunine/deepPPT) — ★ 28 — Lightweight agent framework for research PowerPoint generation, editable PPTX delivery, and rendered QA
+- [CristalTeam](https://github.com/CristalTeam/pptx) — ★ 27 — 🎞️ Copy, move, merge and template Powerpoint files (.pptx) using PHP
+- [Wiseair-srl](https://github.com/Wiseair-srl/json-to-office) — ★ 27 — Generate professional .docx and .pptx files from JSON definitions
+- [dam4rus](https://github.com/dam4rus/msoffice-pptx-rs) — ★ 27 — A library to deserialize pptx files in Rust
+- [GemBoxLtd](https://github.com/GemBoxLtd/GemBox.Presentation.Examples) — ★ 26 — GemBox.Presentation is a .NET library that enables you to read, write, convert, and print presentation files (PPTX, PPT, and PPSX) from .NET applications in ...
+- [scholer](https://github.com/scholer/pptx-downsizer) — ★ 24 — Python tool for downsizing Microsoft PowerPoint presentations (pptx) files.
+- [abdelkrimkr](https://github.com/abdelkrimkr/html2pptx) — ★ 24 — Automatically convert HTML files to PowerPoint presentations - Command-line tool and Node.js library
+- [openize-com](https://github.com/openize-com/openize-open-xml-sdk-net) — ★ 23 — A .NET library that simplifies working with OpenXML documents. Create, read, and manipulate Wordprocessing documents (Docx), Excel spreadsheets (Xlsx), and P...
+- [jstrosch](https://github.com/jstrosch/graph-maldoc-similar-images) — ★ 23 — A script that extracts embedded images from Office Open XML (OOXML) documents and generates image hash similarity graphs that cluster visually similar images...
+- [F2-AI-Inc](https://github.com/F2-AI-Inc/docray) — ★ 23 — X-ray for documents: lossless PDF & PPTX extraction to JSON with bounding boxes, fonts, and colors — CLI, HTTP API, and an in-browser playground. Rust + PDFium.
+- [Milor123](https://github.com/Milor123/notebooklm-unified) — ★ 23 — Unifies, cleans and converts NotebookLM presentations in a single step. Join multiple PPTXs, remove watermark, output clean PPTX.
+- [mehuljariwala](https://github.com/mehuljariwala/react-doc-viewer) — ★ 23 — React document viewer and PDF viewer component — render PDF, Word (DOCX inline), Excel, PowerPoint, Markdown, images, video, CSV and 20+ file types with anno...
+- [SlideSpeak](https://github.com/SlideSpeak/image-extractor-cli) — ★ 22 — A Python ?? CLI tool to extract images from PowerPoint, Word or PDF files. Supports PPTX, DOCX, PDF.
+- [chirag-ji](https://github.com/chirag-ji/DocuConverter) — ★ 22 — An api and library that converts documents from one format to another, say DOCX to PDF or PPT to PDF
+- [djwxfdt](https://github.com/djwxfdt/ppt-parse) — ★ 22 — pptx to json server.no need for ms-office component
+- [haesleinhuepf](https://github.com/haesleinhuepf/translate-pptx) — ★ 21 — translate-pptx is a command line tool that translates PowerPoint PPTX files from one language to another.
+- [timetric](https://github.com/timetric/python-openxml) — ★ 20 — OpenXML library for Python: create .docx & .pptx files
+- [wiltonesten-web](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v2-2) — ★ 20 — Parallel multi-page V2.1 upgrade for 3, 6, or 9 image-based slides, with hardware-aware scaling, full fidelity gates, and ordered PPTX merging.
+- [lofcz](https://github.com/lofcz/pptxgenjs-plus) — ★ 19 — Build PowerPoint presentations with JavaScript. Works with Node, Browser, and more.
+- [sadmann7](https://github.com/sadmann7/pptx) — ★ 19 — Composable primitives for viewing and editing PowerPoint presentations in the browser. Unstyled, accessible, and entirely yours to build on.
+- [connectaman](https://github.com/connectaman/RAGAlchamy) — ★ 19 — Summarize and perform RAG on PPTx/PPT file formats
+- [zythum](https://github.com/zythum/pptxgen-ts-starter) — ★ 18 — A starter template for creating PowerPoint presentations using JSX + TypeScript with pptxgenjs. Build slides declaratively, preview instantly in the browser,...
+- [ChristopherVR](https://github.com/ChristopherVR/ooxml) — ★ 18 — All the logic behind the Office viewers (DOCX, PPTX, OPC, XML, DrawingML shapes): one package, ooxml-core
+- [huangzhenhao90](https://github.com/huangzhenhao90/pptx-deck-builder) — ★ 17 — Build professional presentation decks with PptxGenJS, structured content workflows, and swappable visual themes
+- [arsentievalex](https://github.com/arsentievalex/streamlit-pptx-generator) — ★ 17 — —
+- [fongandrew](https://github.com/fongandrew/pptx-note-remover) — ★ 17 — Python script to remove notes from PPTX Powerpoint files
+- [bryanperdana](https://github.com/bryanperdana/captivela-office) — ★ 16 — Open-source AI-native desktop office suite for DOCX, XLSX/XLS/CSV, PPTX, and PDF.
+- [fschaeck](https://github.com/fschaeck/python-pptx-text-replacer) — ★ 15 — A Python script to replace text in a PowerPoint presentation (pptx)
+- [caichuanwang](https://github.com/caichuanwang/OpenDocs) — ★ 15 — Convert local documents (PDF, DOCX, PPTX, images, TXT, Markdown) to clean Markdown with optional LLM vision — Python SDK
+- [kevinresol](https://github.com/kevinresol/openxml) — ★ 15 — Write OpenXML (xlsx, docx, pptx) files with Haxe
+- [maxrousseau](https://github.com/maxrousseau/pynoter) — ★ 15 — Convert powerpoint (pptx) files into raw text org or LaTeX files
+- [shakiyam](https://github.com/shakiyam/pptx2txt) — ★ 15 — pptx2txt is a tool that converts PowerPoint .pptx format to text.
+- [ncukondo](https://github.com/ncukondo/presentation-generator) — ★ 14 — PptxGenJS + Gemini TTS + ffmpeg ????????????????????
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-Python) — ★ 14 — Open-source Python library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, charts, animations, transitions...
+- [GoneTone](https://github.com/GoneTone/markitdown-website) — ★ 14 — 免費線上文件轉換工具，將 PDF、DOCX、XLSX、PPTX、HTML、CSV、EPUB 轉換為 Markdown。檔案處理在瀏覽器本機端完成，網址轉換經由伺服器代理，完全保護隱私。 由 Microsoft MarkItDown 提供轉換核心，透過 Pyodide（Python WebAssembly）在瀏覽器...
+- [scholer](https://github.com/scholer/ooxml-git-hooks) — ★ 14 — Pre-commit and post-checkout hooks making git better suited for version control of zipped Office Open XML files, e.g. Word/.docx, Excel/.xlsx, and PowerPoint...
+- [wangan0214](https://github.com/wangan0214/fange-ai-toolbox) — ★ 14 — 帆哥AI工具箱 · 本地优先(local-first)的 AI 效率工具集合。首款工具：本地修改 HTML 格式的 PPT，HTML 一键导出 PPTX（浏览器改字落盘/拖拽排序/历史回滚）。
+- [flyfish-dev](https://github.com/flyfish-dev/office-preview-js) — ★ 14 — Restricted static Office preview demo for DOC/DOCX/PPT/PPTX/XLS/XLSX
+- [emptygamer](https://github.com/emptygamer/power-player) — ★ 14 — A PowerPoint runtime player executes code and assets contained within a pptx file.
+- [wangmarkqi](https://github.com/wangmarkqi/changeOffice) — ★ 13 — Most of the python MsOffice processing libraries are dealing with new 07 file formate (ie: xlsx,pptx,docx). This package can change doc2docx,xls2xlsx,ppt2pptx.
+- [SAP-archive](https://github.com/SAP-archive/utils-pptx-templater) — ★ 13 — The pptx templater modifies powerpoint template with provided data before docxtemplater generates the final version of the document.
+- [kartikxisk](https://github.com/kartikxisk/docx-xlsx-pptx-pdf-viewer-nextjs-and-reactjs) — ★ 13 — Render DOCX, XLSX, PPTX, and PDF Files in Next.js and React.js
+- [thaoshibe](https://github.com/thaoshibe/cs-conference-posters) — ★ 13 — A collection of my posters with pptx files...
+- [clipboard-org](https://github.com/clipboard-org/clipboard) — ★ 12 — A c# library that provides the ability to extract text from various document file formats, e.g. pdf, docx, ppt, etc...
+- [and-zhao](https://github.com/and-zhao/noedit_core) — ★ 12 — A minimal PPT creation core in Python — build multi-page decks and export to pptx / pdf / html / png / svg
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-Cpp) — ★ 12 — Open-source C++ library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, fills, effects, notes and comments...
+- [ch040602](https://github.com/ch040602/MdPr) — ★ 12 — Deterministic Markdown-to-editable-PPTX runtime with layout planning, theme support, and visual validation.
+- [zythum](https://github.com/zythum/pptxgenjsx) — ★ 11 — A JSX runtime for building PowerPoint presentations with [pptxgenjs](https://github.com/gitbrent/pptxgenjs). Write your slides as JSX components and render t...
+- [NewLifeX](https://github.com/NewLifeX/NewLife.Office) — ★ 11 — 一个功能全面的 .NET 办公自动化库，覆盖 Excel（xlsx/xls）、Word（docx/doc）、PPT（pptx/ppt）、PDF、Markdown、RTF、ODS、Email（eml/msg）、iCalendar、vCard、EPUB、XPS 以及基于 OLE2/BIFF8 的老式二进制格式，致力于...
+- [tvanyo](https://github.com/tvanyo/obsPPTXwithPython) — ★ 11 — —
+- [lukefire5156](https://github.com/lukefire5156/PPTs_TO_PDFs_AND_Merger) — ★ 11 — A script to convert MS Office PPT/PPTX files to PDF files and then merge all the PDF files to a single PDF file.
+- [Ryuodan](https://github.com/Ryuodan/PPT-to-PDF-Converter) — ★ 11 — Python 3 script using COM to convert powerpoint to pdf file
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-Java) — ★ 11 — Open-source Java library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, fills, effects, notes and comment...
+- [unStone](https://github.com/unStone/web-ppt) — ★ 11 — Pure-browser PPT rendering engine — .pptx / .ppt → unified JSON Schema → SVG. Zero server, zero framework, files never leave the browser.
+- [hirokisakabe](https://github.com/hirokisakabe/pptx-glimpse) — ★ 11 — Render and edit PowerPoint (.pptx) files in Node.js or the browser. Output slides as SVG or PNG.
+- [STARDUSTLC666](https://github.com/STARDUSTLC666/dsh-ppt) — ★ 11 — 把材料制作成 HTML 放映、可编辑 PPTX 和可继续修改的工程文件。 欢迎提交 issues 和 PR。
+- [jesamkim](https://github.com/jesamkim/aws-pptx-script-generator) — ★ 11 — AWS Presentation script generator specialized for AWS Service Introduction Deck (pptx)
+- [syncfusion-content](https://github.com/syncfusion-content/fileformat-docs) — ★ 11 — This repository contains the documentation of Syncfusion file format .NET libraries which is used to create, read, edit and convert PDF, Excel, Word and PPTX...
+- [SeitaroShinagawa](https://github.com/SeitaroShinagawa/summary-to-pptx) — ★ 10 — paper slide summary maker using python-pptx on Windows
+- [brkcvlk](https://github.com/brkcvlk/pptxtoimages) — ★ 10 — pptxtoimages is a lightweight Python package to convert .pptx PowerPoint presentations into image files (PNG by default).
+- [ernestyao](https://github.com/ernestyao/PPT2PDF) — ★ 10 — convert PPT/PPTX to PDF as images and watermark
+- [liamwang](https://github.com/liamwang/openxml-ppt) — ★ 10 — This is a .NET library that reads and writes PPT files using OpenXml.
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-.NET) — ★ 10 — Open-source C#/.NET library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, fills, effects, notes and comm...
+- [sakurahello1](https://github.com/sakurahello1/ppt-studio) — ★ 10 — 跟 AI 说一句话，整套 PPT 逐页画出来；图片型 PPT 还能反向重建成可编辑的 pptx。自部署，Windows 双击即用 / Linux · macOS · Docker。One sentence → a whole deck; image-only decks → editable pptx.
+- [airpptx](https://github.com/airpptx/airppt) — ★ 10 — Global CLI to convert Powerpoint (PPTX) to clean HTML/CSS using the airppt libraries
+- [CacinieP](https://github.com/CacinieP/slide-recipes) — ★ 9 — Editable PPTX + Markdown, AI outlines. China: https://slides.linguistwantstech.online/ | Global: https://slide-recipes-web.vercel.app/
+- [cm-uehara](https://github.com/cm-uehara/classmethod-pptxgenjs-template) — ★ 9 — ???????????PptxGenJS????????????
+- [ShreshtaSutar](https://github.com/ShreshtaSutar/Prastuti__PPT-Generator-from-Text) — ★ 9 — Prastuti is a powerful, minimal, and fast AI-powered PPTX generator. Paste any text or markdown → choose your LLM (OpenAI / Claude / Gemini / AI Pipe) → opti...
+- [pterror](https://github.com/pterror/ooxml) — ★ 9 — Rust library for parsing and writing Office Open XML files (DOCX, XLSX, PPTX)
+- [alex-krassavin](https://github.com/alex-krassavin/reamkit) — ★ 9 — Read .docx .xlsx .pptx .pdf .doc .xls .ppt → convert to PDF, SVG, HTML, Markdown, DOCX or XLSX — pure TypeScript, no LibreOffice, no headless Office, no comm...
+- [JoeSangAI](https://github.com/JoeSangAI/PPT-GOD) — ★ 9 — Agent 驱动的 PPT 工作流：内容可控、风格一致、品牌准确，交付可继续修改的 PPTX。
+- [iory](https://github.com/iory/pptx-tools) — ★ 9 — Powerpoint video tools
+- [ProgrammerSteve](https://github.com/ProgrammerSteve/powerpointWithChatGpt) — ★ 8 — A simple script that uses openai's "text-davinci-003" model and pptxgenjs to make a quick powerpoint on a specified topic
+- [Tailen](https://github.com/Tailen/python-pptx-merger) — ★ 8 — Merge PowerPoint (.pptx) files
+- [ktsstudio](https://github.com/ktsstudio/gentle-python-pptx) — ★ 8 — Processes pptx presentations, optimized for repetitive processing large ones
+- [fillano](https://github.com/fillano/node-pptx-parser) — ★ 8 — simple pptx parser
+- [dxsun97](https://github.com/dxsun97/html2pptx-pro) — ★ 8 — Convert HTML to PowerPoint presentations with JavaScript.
+- [BramAlkema](https://github.com/BramAlkema/svg2ooxml) — ★ 8 — Convert SVG to editable PowerPoint (.pptx) with native DrawingML, animation support, and validation-backed output.
+- [adithya-s-k](https://github.com/adithya-s-k/research-presentation-template) — ★ 8 — A template for research talks: fixed-canvas React deck, dark/light themes, PPTX + PDF export, and AI authoring instructions.
+- [glangzel](https://github.com/glangzel/llm-pptx-generator) — ★ 7 — Generate pptx file from your prompt or pdf using Langchain.
+- [mbachtell](https://github.com/mbachtell/python-pptx-table-styles) — ★ 7 — —
+- [knanne](https://github.com/knanne/mspandas) — ★ 7 — Convenience wrapper for reusable reporting from pandas DataFrames to python-pptx and python-docx
+- [elliottcarlson](https://github.com/elliottcarlson/pptx-canvas) — ★ 7 — Canvas-like interface for drawing in PPTX files using Python
+- [nickdirienzo](https://github.com/nickdirienzo/python-office-tools) — ★ 7 — Python parser and writer for DOCX, PPTX, and XLSX.
+- [eluckydog](https://github.com/eluckydog/ppt-scene-graph) — ★ 7 — Visual Scene Graph for PowerPoint. Extracts structured layout data from PPTX files, enabling AI agents to parse element positions, understand spatial relatio...
+- [Nanford](https://github.com/Nanford/html2pptx) — ★ 7 — html转化为pptx
+- [scusi](https://github.com/scusi/unzipOpenXML) — ★ 7 — unpack Office OpenXML files (docx, xlsx, pptx)
+- [Suchun-sv](https://github.com/Suchun-sv/video2ppt) — ★ 7 — capture the image of the video and generate pptx file.
+- [jparkerweb](https://github.com/jparkerweb/pptx-in-html-out) — ★ 7 — ⚙️ npm package to convert PowerPoint presentations to HTML with high fidelity
+- [rse](https://github.com/rse/psd2pptx) — ★ 7 — Convert Photoshop (PSD) layers to PowerPoint (PPTX) slides
+- [ArvinH](https://github.com/ArvinH/reapptx) — ★ 7 — A small prototype of custom react renderer, let you render React component to pptx files.
+- [thiagoperes](https://github.com/thiagoperes/pptx-translate) — ★ 7 — Translate PowerPoint files (pptx) using OpenAI
+- [anotb](https://github.com/anotb/pptx-masters) — ★ 6 — Extract PptxGenJS slide masters from corporate PowerPoint templates
+- [beautifulai](https://github.com/beautifulai/PptxGenJS) — ★ 6 — Create PowerPoint presentations with a powerful, concise JavaScript API.
+- [Xakki](https://github.com/Xakki/convertor) — ★ 6 — Convert PDF, PPT, PPTX, DOC, DOCX, XLS, XLSX, HTML, EPUB, image to text
+- [kobit-develop](https://github.com/kobit-develop/jsx-presentation) — ★ 6 — Convert JSX to presentation file(.pptx)
+- [ifpeopensource](https://github.com/ifpeopensource/certificate-generator) — ★ 6 — Python program to automate the generation of PDF certificates from a PPTX model (PowerPoint file).
+- [chbrown](https://github.com/chbrown/openxml) — ★ 6 — openxml is a Python library to create and manipulate .docx and .pptx files
+- [brnyxx](https://github.com/brnyxx/pptx2html-turbo) — ★ 6 — High-fidelity PowerPoint (PPTX) to self-contained HTML converter in pure Rust/WASM for browsers, CLI, and Python
+- [cloudismos](https://github.com/cloudismos/notestoslide) — ★ 6 — Python script to insert speaker notes into PowerPoint (.pptx) slides from a text file organized by slide number.
+- [stephotee](https://github.com/stephotee/auto-slides-with-charts) — ★ 6 — A script for automatically generating PPT slides with charts from a source file, based on @Scanny's python-pptx
+- [rsamwilson2323-cloud](https://github.com/rsamwilson2323-cloud/PPT-Slide-Extractor) — ★ 6 — 📊 PPT Slide Extractor A Python-based tool that automatically converts PowerPoint presentations into high-quality PNG images. Upload a PPT/PPTX file, and each...
+- [WXY-123123](https://github.com/WXY-123123/High-Performance-Image-Filter-Digital-Circuit-Design-and-FPGA-Prototype-Verification) — ★ 6 — 雕刻和马赛克用的是uart通信，用python收发数据；二值化用的是PS和PL互联，使用zynq7020实现。所有vivado工程在vivado_data文件夹中。本项目注重高性能计算单元的应用。具体介绍见高性能滤镜.pptx。
+- [ahmedessam090](https://github.com/ahmedessam090/pptx-to-pdf) — ★ 6 — Pure TypeScript PPTX-to-PDF converter. No LibreOffice. No native dependencies. Just buffer in, PDF out.
+- [nilskruthoff](https://github.com/nilskruthoff/pptx-parser) — ★ 6 — Parses PowerPoint presentations into Markdown syntax
+- [Muprprpr](https://github.com/Muprprpr/Go-pptx) — ★ 6 — Create Open XML PowerPoint documents in Go
+- [hidemi-ito](https://github.com/hidemi-ito/rust-pptx) — ★ 6 — —
+- [openxml](https://github.com/openxml/openxml-pptx) — ★ 6 — Create .pptx files with Ruby
+- [palburtus](https://github.com/palburtus/powerpointparser) — ★ 6 — C# Library for parsing PowerPoint speaker notes using OpenXML to HTML
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/pptxtemplates) — ★ 6 — Provide themed powerpoint presentation templates to rmarkdown
+- [Love-Ash](https://github.com/Love-Ash/archforge) — ★ 6 — The preflight linter for AI-generated PowerPoint: silent font fallback (deep CJK coverage), collisions, off-canvas text, and AI tells in built .pptx files
+- [rsasaki0109](https://github.com/rsasaki0109/rust-office) — ★ 6 — Native Rust office suite: Writer, Calc, Impress — LibreOffice/MS Office–class alternative (ODT/DOCX/XLSX/PPTX/PDF)
+- [yrjwcharm](https://github.com/yrjwcharm/react-native-ohos-docviewer) — ★ 6 — 这是一款基于React Native HarmonyOS端文件文档查看器(pdf、png、jpg、xml、xls、doc、ppt、xlsx、docx、pptx 等）开源插件
+- [MJrFusion](https://github.com/MJrFusion/Docxion) — ★ 6 — Open-source Android Jetpack Compose library for viewing Microsoft Office documents, including DOC, DOCX, XLS, XLSX, PPT, and PPTX.
+- [wp-a](https://github.com/wp-a/paper2ppt) — ★ 6 — 将学术论文转为可编辑、可溯源的中文 PPTX，兼容 Codex 与 Claude Code。
+- [marp-team](https://github.com/marp-team/pptx) — ★ 5 — A wrapper module for creating PPTX using PptxGenJS, with the least module size
+- [anmism](https://github.com/anmism/pptxgenjs-animation) — ★ 5 — Pptxgenjs + Animation - Create Animated Slides
+- [DhiaHan](https://github.com/DhiaHan/Images-to-document-converter) — ★ 5 — If you have pictures/screenshots that are for a book/news paper/article or anything and want to copy texts on it to a PDF/DOC/DOCX/PPT/PPTX file, this progra...
+- [kelcey2023](https://github.com/kelcey2023/ZeeLin-image2-PPT) — ★ 5 — 一行命令把 Markdown 变成带 AI 配图的专业 PPT｜GPT-image-2 自动配图 · 输出 .pptx 可编辑 · 100 页只需几元 · 13种版式 · 学术+产业通用风
+- [fengdeqiao](https://github.com/fengdeqiao/python-pptx2video) — ★ 5 — python pptx to video
+- [bowespublishing](https://github.com/bowespublishing/bulk-import-images-to-powerpoint-with-python) — ★ 5 — Using Python-PPTX To Bulk Import Images Into A Presentation One Per Slide
+- [0xp47](https://github.com/0xp47/notebooklm-watermark-remover) — ★ 5 — Fast, lightweight pure Python CLI tool to remove NotebookLM watermarks from PDF, PPTX, and image files.
+- [ShinChven](https://github.com/ShinChven/doc-gpt) — ★ 5 — doc-gpt is a Python CLI tool that processes document files (pdf, docx, pptx, txt, md) using Large Language Models.
+- [harshankur](https://github.com/harshankur/officeparserpy) — ★ 5 — A Python library to parse text from any office file. Currently supports docx, pptx, xlsx, odt, odp, ods and pdf files.
+- [Water-Run](https://github.com/Water-Run/pptx2png) — ★ 5 — 一个将.pptx转换为.png图片的工具集: 包括一个Windows桌面端程序和一个Python库. | A toolkit for converting .pptx files into .png images, including a Windows desktop application and a Pyt...
+- [domonic18](https://github.com/domonic18/ppt_manager) — ★ 5 — 这是一个基于python-pptx二次开发的PPT组件库，以便进行PPT的读取和操作
+- [Hehua-Fan](https://github.com/Hehua-Fan/html2pptx-backend) — ★ 5 — —
+- [xarsh](https://github.com/xarsh/ooxml-validator) — ★ 5 — Fast, zero-dependency OOXML validator for Node.js (.docx/.pptx/.xlsx etc.).
+- [t-ujiie-g](https://github.com/t-ujiie-g/moon-pptx) — ★ 5 — Pure-MoonBit library for reading, building, and writing PPTX (OOXML) presentations with a type-safe builder API.
+- [young2j](https://github.com/young2j/oxmltotext) — ★ 5 — A lightweight and efficient text content extractor mainly for OOXML files (typically referring to docx/xlsx/pptx).
+- [PsycOwl](https://github.com/PsycOwl/Certificate_Generator_PPTX_PDF_Converter) — ★ 5 — Generates certificate from a powerpoint template. Puts information to the certificate from excel file and generate new certificates in bulk from a single fil...
+- [minorun365](https://github.com/minorun365/bedrock-pptx-agent) — ★ 5 — Bedrock AgentsにPowerPoint資料を作らせるハンズオン用サンプル
+- [gakowalski](https://github.com/gakowalski/docx-repack) — ★ 5 — Batch script to re-compress DOCX, XLSX, PPTX, ODT and ODS files so their size is smaller and they can be still opened by Microsoft Office without any additio...
+- [LangModule](https://github.com/LangModule/ingestlib) — ★ 5 — Self-hosted document intelligence for RAG — parse, classify, split, and extract from PDF/DOCX/PPTX and images: searchable, cited, retrieval-ready chunks and ...
+- [harshpreet931](https://github.com/harshpreet931/anyview) — ★ 5 — View any document in React: PDF, DOCX, XLSX, PPTX, CSV, Markdown, code, HTML & images, rendered natively in the browser. No iframes, no uploads, files never ...
+- [SoftUni](https://github.com/SoftUni/SoftUni-Course-Converter) — ★ 5 — Converts PPTX and DOCX documents from the old SoftUni template to the new templates
+- [ysrock](https://github.com/ysrock/pdf2pptx-ai-tool) — ★ 4 — Privacy first, ready to use out of the box! An AI-powered PDF-to-PPTX tool: OCR extracts text + AI restores backgrounds, converting files into fully editable...
+- [devansharora18](https://github.com/devansharora18/auto-ppt-to-pdf) — ★ 4 — Automatically converts newly downloaded PowerPoint files (.ppt/.pptx) to PDF format. It continuously monitors the Downloads folder and triggers the conversio...
+- [jinbaozi](https://github.com/jinbaozi/pptx-creator) — ★ 4 — —
+- [Andrefsbernardo](https://github.com/Andrefsbernardo/ExcelSlide-pptx-slide-generator) — ★ 4 — Python automation script to batch-generate PowerPoint slides from Excel data
+- [canvas-fr](https://github.com/canvas-fr/chaoxing-course-downloader) — ★ 4 — 自动发现并提取学习通页面中的 PDF/PPT/PPTX 课件下载链接，提供控制面板进行单个或批量下载。修复 Safari 下 PPTX 文件类型识别错误及中文文件名乱码问题。
+- [mhawksey](https://github.com/mhawksey/gemini-managed-agents-for-google-workspace) — ★ 4 — Autonomous Google Workspace agent built with Google Apps Script, Gemini Managed Agents (Antigravity), and the Google Workspace CLI (gws) to turn Drive docs i...
+- [liamcryan](https://github.com/liamcryan/pptx-tables) — ★ 4 — Use pptx-tables to create tables more easily through Python-pptx.
+- [cmzhuzhu](https://github.com/cmzhuzhu/FilesToPics) — ★ 4 — This Python package can ppt/pptx into pictures
+- [bowespublishing](https://github.com/bowespublishing/draw-daily-planner-template-using-python-pptx) — ★ 4 — Utilising Python-PPTX to demonstrate how you can draw a template that scales + imports date
+- [sunchaokun](https://github.com/sunchaokun/pptx-designer) — ★ 4 — Code-first Python library for generating editable PowerPoint presentations with native PPTX objects, SVG support, and LLM-friendly build APIs.
+- [darkhunter141](https://github.com/darkhunter141/Python-PPTX) — ★ 4 — Basic Python
+- [JaHIY](https://github.com/JaHIY/ppt2video) — ★ 4 — A tool written in Python that utilizes Edge TTS to convert PPT/PPTX files into video files
+- [PaleNeutron](https://github.com/PaleNeutron/pptx-replace) — ★ 4 — A python package for replacing words, images and other elements in pptx
+- [bowespublishing](https://github.com/bowespublishing/convert-123-sudoku-to-abc) — ★ 4 — Using python-pptx to convert traditional '123' Sudoku puzzles into ABC Sudoku puzzles
+- [Ameyanagi](https://github.com/Ameyanagi/easypptx) — ★ 4 — Python library for creating and manipulating PowerPoint presentations programmatically.
+- [brudvik](https://github.com/brudvik/MarkItDownAPI) — ★ 4 — A Clean Architecture ASP.NET Core Web API that wraps Microsoft's MarkItDown Python library. Convert PDF, DOCX, PPTX, images, audio, and URLs to Markdown. Fea...
+- [Ruqyai](https://github.com/Ruqyai/Convert-YouTube-to-PPTX) — ★ 4 — This Colab notebook provides a simple way to convert YouTube videos into a PowerPoint presentation (PPTX) format. It utilizes the power of Python, Google Col...
+- [rsamwilson2323-cloud](https://github.com/rsamwilson2323-cloud/PPT_TOOLBOX) — ★ 4 — PPT Toolbox is a lightweight, browser-based PowerPoint utility designed for fast and private presentation management. Create PPTX files, convert images to pr...
+- [pranjalprateek6](https://github.com/pranjalprateek6/Keyword-Extraction-Web-App) — ★ 4 — The "Keyword Extraction Web App" is a web application created using Streamlit, a Python library for building web-based data applications. This particular app...
+- [GurYN](https://github.com/GurYN/vibe-slides) — ★ 4 — Vibe Slides is a "Vibe Coding" application for presentation creation. It enables users to create professional PowerPoint presentations by describing what the...
+- [shbernal](https://github.com/shbernal/pptx-ts) — ★ 4 — Create PowerPoint presentations from TypeScript
+- [gongzyes](https://github.com/gongzyes/pptx2pdf-web) — ★ 4 — PPT转PDF在线转换工具 - PPTX to PDF online converter powered by LibreOffice
+- [fefeding](https://github.com/fefeding/pptx-parser) — ★ 4 — pptx2html 解析pptx文件
+- [Mirza-Glitch](https://github.com/Mirza-Glitch/node-pptx-parser) — ★ 4 — —
+- [evgenyorlov1](https://github.com/evgenyorlov1/powerPoint_template_creator) — ★ 4 — Script that takes pptx template to fullfill it with values and produces ppts presentation.
+- [kinshukdua](https://github.com/kinshukdua/AutoCert) — ★ 4 — AutoCert is a command line program that automates the process of generating certificates in bulk given a pptx template.
+- [AndreKraemer](https://github.com/AndreKraemer/OpenXMLSample) — ★ 4 — Repository with the sample code of my Open XML Talk
+- [rse](https://github.com/rse/pptx-surgeon) — ★ 4 — PowerPoint OpenXML File Surgeon
+- [thecodebuzz](https://github.com/thecodebuzz/excel-import-export-dotnetcore2.0) — ★ 4 — Work with excel or word or powerpoint in dotnet core using OpenXML SDK.Please see more details @ https://thecodebuzz.com/
+- [teamsimplepay](https://github.com/teamsimplepay/ooxml_crypt) — ★ 4 — A Ruby library for encrypting/decrypting password-protected Microsoft Office XML (OOXML) files (e.g. .docx, .xlsx, .pptx)
+- [ice-curtain](https://github.com/ice-curtain/pptx) — ★ 4 — Rust-based ooxml parsing library for pptx files
+- [NathanCastle](https://github.com/NathanCastle/ppmd) — ★ 4 — Converts PowerPoint OOXML (PPTX) files to Markdown-based presentations
+- [meatRoll](https://github.com/meatRoll/slideforge) — ★ 4 — SlideForge — PPTD (YAML presentation DSL) parser/validator → editable OOXML PPTX compiler
+- [jonaskobler](https://github.com/jonaskobler/docx-ast) — ★ 4 — A reduced representation of the OOXML structure for simple interactions (work in progress)
+- [fieldcure](https://github.com/fieldcure/fieldcure-document-parsers) — ★ 4 — Document text extraction library for DOCX, HWPX, XLSX, PPTX, and PDF. Supports OOXML math-to-LaTeX conversion, Hancom equation parsing, and IMediaDocumentPar...
+- [causemx](https://github.com/causemx/gpt2ppt) — ★ 4 — Auto generating pptx from gpt3+
+- [Ali-Awad](https://github.com/Ali-Awad/Paper-to-Presentation) — ★ 4 — A clean LaTeX Beamer presentation template (16:9) inspired by the MTU style, with custom footer, page count, date, logo support, and optional PPTX export.
+- [aarontzeng](https://github.com/aarontzeng/Appt-OCR) — ★ 4 — Batch OCR tool for PPTX/PDF files — extracts text from images, reconstructs editable text boxes, and optionally erases original text using AI inpainting (LaMa)
+- [sammyview80](https://github.com/sammyview80/converter) — ★ 4 — Convert ppt or doc or docx to pdf using aspose.
+- [dulajkavinda](https://github.com/dulajkavinda/pptxto.txt) — ★ 4 — 📄 A text extraction node module, thtat can convert pptx and ppt file formats into pure text.
+- [pynickle](https://github.com/pynickle/ppt-notes) — ★ 4 — for making pptx notes with animation
+- [michioxd](https://github.com/michioxd/tcvn2uni) — ★ 4 — Công cụ trực tuyến miễn phí và mã nguồn mở giúp chuyển đổi ký tự từ bảng mã TCVN3 (tiêu chuẩn cũ) trong file Microsoft Word (.docx), Microsoft PowerPoint (.p...
+- [yejiming](https://github.com/yejiming/dsh-ppt) — ★ 4 — PPT design preset and editable PPTX production tools for DeepSeek Harness
+- [denelwu-GH](https://github.com/denelwu-GH/scene-native-pptx) — ★ 4 — Stop redrawing slides. Turn slide designs and screenshots into stable, native, editable PowerPoint with no repair prompts.
+- [roanpy](https://github.com/roanpy/doc-media-toolkit) — ★ 4 — PPTX-first desktop toolkit for target-size media compression, quality auditing, watermark export, and reusable video/image asset libraries. 支持 DOCX/PDF/XLSX。
+- [sugatoray](https://github.com/sugatoray/pptxdiff) — ★ 4 — A diff tool for visualizing and reviewing powerpoint files
+- [hetao29](https://github.com/hetao29/libreoffice) — ★ 4 — office 文件（ppt,pptx,word,excel）转换成 png/jpeg 的 grpc 服务
+- [XinyuanWang283](https://github.com/XinyuanWang283/sketch-to-scientific-figure) — ★ 4 — Researcher-controlled workflow that turns hand-drawn method sketches into validated, editable scientific figures (SVG, PPTX, draw.io, PDF).
+- [timothywarner-org](https://github.com/timothywarner-org/pptx-shredder) — ★ 4 — Transform PowerPoint presentations into LLM-optimized markdown while preserving instructional design narrative. Built for technical trainers.
+- [kyungseo](https://github.com/kyungseo/ai-deck-compiler) — ★ 3 — Generate consistent, editable PPTX from AI-authored blueprints with a rules-based TypeScript renderer.
+- [centipede13](https://github.com/centipede13/PPT_Generation_with_Python-pptx) — ★ 3 — A python program to generate a ppt with text and image using python-pptx package.
+- [vriddhi23100](https://github.com/vriddhi23100/Queryfy) — ★ 3 — Queryfy is a lightweight web app that converts study material(PDFs, Word files, PPTs, or text) into structured assessments like MCQs, true/false, numerical, ...
+- [Chanakan5591](https://github.com/Chanakan5591/AutoGeneratePPTX-Rewrite) — ★ 3 — **READ** This is made before I even realize I could just use markdown. This is very old now and I probably won't be coming back to make it better, use LaTeX ...
+- [commi235](https://github.com/commi235/PPTX_CREATOR) — ★ 3 — Create PowerPoint Slide-Decks based on a template slide.
+- [SuTn](https://github.com/SuTn/PPT-Agent) — ★ 3 — 通过自然语言对话，自动完成主题研究 → 大纲设计 → 幻灯片制作，一键导出 PPTX，支持上传文件（word,excel,md,ppt等），可导出pptx和图片两种格式。
+- [zhuo-zz](https://github.com/zhuo-zz/ImageToPPT) — ★ 3 — ImageToPPT 是一个基于 Qt Widgets 和 C++17 开发的图片转 PPT 半自动重建工具。它不是简单地把整张图片塞进幻灯片，而是让用户手动框选图片区域和文字区域，再导出为可继续编辑的 PPTX 文件。
+- [WenTao-Love](https://github.com/WenTao-Love/pptx-rs) — ★ 3 — Rust 实现的 PowerPoint `.pptx` / `.ppt` 读写库，对标 [python-pptx](https://github.com/scanny/python-pptx)。
+- [wanglihui](https://github.com/wanglihui/pptx-go) — ★ 3 — go operate pptx like python-pptx, like addslide, replace placeholder, get placeholder ,save and so on
+- [ajshovon](https://github.com/ajshovon/ppt2pdf) — ★ 3 — Convert ppt/pptx to pdf with the power of python in just two clicks!
+- [Apcan](https://github.com/Apcan/OfficeToPdf.py) — ★ 3 — office (.doc,.docx,.ppt,.pptx,.xls,.xxls) convert to pdf base on office 2010 and python
+- [harperreed](https://github.com/harperreed/big-pptx) — ★ 3 — A simple python script that takes a dir of images and turns it into a pptx file
+- [HuiTurn](https://github.com/HuiTurn/ppt2pptx) — ★ 3 — A pure-Python converter from legacy PowerPoint 97–2003 (.ppt) files to editable .pptx—no PowerPoint, LibreOffice, COM, or external services required.
+- [gantrack31-pixel](https://github.com/gantrack31-pixel/HackMoscVKbro) — ★ 3 — Deckly.Ai — AI-помощник для создания презентаций с экспортом в PPTX, PDF и HTML. Python · FastAPI · React. Хакатонный проект, созданный с помощью нейросетей.
+- [potados99](https://github.com/potados99/mass-slide) — ★ 3 — An automatic, text file based pptx slide maker.
+- [Jobenland](https://github.com/Jobenland/Power-Point-Search) — ★ 3 — Takes an entire directory of .pptx files and searches a keyword in all of them
+- [luongnv89](https://github.com/luongnv89/slide-speech) — ★ 3 — SlideSpeech is a Python script that automates the presentation of a PDF or PPTX file, playing an audio file for each slide. The time spent on each slide depe...
+- [yaroslavkrutiak](https://github.com/yaroslavkrutiak/MarkItDownMac) — ★ 3 — A native macOS app that converts documents to Markdown using the markitdown Python CLI. Drag-and-drop or right-click files in Finder to convert PDFs, DOCX, P...
+- [YoSoyRev](https://github.com/YoSoyRev/Convertidor-en-python) — ★ 3 — Herramienta Python para la conversión masiva y fiel de documentos de Office (DOCX, XLSX, PPTX) e imágenes a PDF. Permite la selección gráfica de archivos y l...
+- [wisetwo](https://github.com/wisetwo/pptx-code-helper) — ★ 3 — An helper tool that helps getting object dimensions (size and position) and font attribute (font name and size etc.) in powerpoint files, by which improves t...
+- [yuese12333](https://github.com/yuese12333/pptx2js) — ★ 3 — 一个强大的 Node.js 逆向工具，可将现有的 PPTX 文件解析并转化为可执行的 PptxGenJS 脚本代码，支持媒体资源提取与优雅的样式降级。
+- [SyncfusionExamples](https://github.com/SyncfusionExamples/PowerPoint-Examples) — ★ 3 — This repo contains examples for using Syncfusion's .NET PowerPoint library, which allows programmatically to create, read, edit and convert PowerPoint files.
+- [hckrnews](https://github.com/hckrnews/ppt2pdf) — ★ 3 — Convert ppt to pdf
+- [shadmanshaikh](https://github.com/shadmanshaikh/pdfcoverter) — ★ 3 — Desktop Application to convert PPT to PDF
+- [sooriya-ms](https://github.com/sooriya-ms/Office-Tools) — ★ 3 — This application is a GUI based, made from PyQt5 library in Python. It is used to convert PDF to WORD, WORD to PDF, PDF to JPG (image), JPG to PDF, PPT to PD...
+- [tracy-meilin](https://github.com/tracy-meilin/parsecore) — ★ 3 — ppt/pptx parse
+- [longway-code](https://github.com/longway-code/rustypptx) — ★ 3 — A PPTX parser written in Rust. Extracts text, metadata, and images from PowerPoint files using parallel slide processing.
+- [tycoworks](https://github.com/tycoworks/tycoslide) — ★ 3 — Create editable PowerPoint slides from markdown, using your existing .pptx templates.
+- [dbdoan](https://github.com/dbdoan/ThinkcellAuto) — ★ 3 — A FastAPI-based backend for automating PowerPoint generation using Think-Cell. Users upload .pptx templates and .ppttc chart data files, which are modified w...
+- [byungjunjang](https://github.com/byungjunjang/slide-html) — ★ 3 — HTML × html2pptx 기반의 16:9 editable PPTX 디자인 시스템
+- [Xupai2022](https://github.com/Xupai2022/html2pptx) — ★ 3 — —
+- [niklaskarl](https://github.com/niklaskarl/BinaryMesh.OpenXml) — ★ 3 — .NET Standard Library to create and manipulate Open XML Documents (Word, Excel, Powerpoint)
+- [nbwiss](https://github.com/nbwiss/openpptx-addin) — ★ 3 — Open-source, bring-your-own-key AI task pane add-in for PowerPoint. Builds and edits decks against your own template. No backend, no telemetry.
+- [freudolacaniana](https://github.com/freudolacaniana/officemath2latex.js) — ★ 3 — This program defines a function named processMathNode that converts mathematical expressions in OfficeMath format (DocumentFormat.OpenXml.Math) to LaTeX code...
+- [Ank-KhoaHo](https://github.com/Ank-KhoaHo/DocToolkit) — ★ 3 — Convert HTML to DOCX/PDF and edit DOCX/XLSX/PPTX from .NET. Pure managed - no native binaries, no browser, no LibreOffice. Runs on Linux, works offline.
+- [ezeh2](https://github.com/ezeh2/Simple-OOXML-Package-Explorer) — ★ 3 — Simple OOXML Package Explorer allows to parse content of xlsx, docx and pptx-files, which are created by Microsoft Office since version 2007.
+- [idling-mind](https://github.com/idling-mind/pptx_renderer) — ★ 3 — Write python snippets inside your ppt and run it like a jupyter-notebook
+- [marcog83](https://github.com/marcog83/pptx-renderer) — ★ 3 — React Renderer for creating Powerpoint File with React. It is a PPTXJS binding for react
+- [Amadeus0k](https://github.com/Amadeus0k/pptx-builder) — ★ 3 — Describe a talk in YAML, get a real editable .pptx with embedded video, native tables, rendered equations, and a clickable index.
+- [sukujgrg](https://github.com/sukujgrg/pptx-builder-from-yaml) — ★ 3 — CLI to generate powerpoint slides from simple yaml file[s]
+- [cg123](https://github.com/cg123/pptx-api) — ★ 3 — Generate PPTX files from a simple JSON schema. For LLMs.
+- [ozyurterdem](https://github.com/ozyurterdem/glpi-isms-toolkit) — ★ 3 — Configuration-as-code toolkit for GLPI with ISO 27001 ISMS integration. YAML-driven ITIL v4 SLA, gap analysis, executive reports (PDF/PPTX).
+- [yyyanbj](https://github.com/yyyanbj/tools-for-pptx) — ★ 3 — 🔨 PPTX 处理的工具
+- [vnsavitri](https://github.com/vnsavitri/vivid-clean) — ★ 3 — Local-first AI watermark cleaner for text, DOCX and PPTX. Removes deterministic marks and document metadata, preserves formatting, and reports what remains.
+- [ch1209498273](https://github.com/ch1209498273/ai-lesson-prep) — ★ 3 — 大学教师备课全流程 AI 技能包：课表截图 → 授课 Excel → 教学方案 → 教案 → 课件（讲稿备注），一条链路交付 xlsx/docx/pptx。为 Claude Code / ZCode 等 AI 编程助手设计，中文教学场景深适配，MIT 开源。
+- [kimtth](https://github.com/kimtth/mini-notebooklm-agent-pptx) — ★ 3 — A mini NotebookLM for PPTX — convert CSV, DOCX, MD, PDF, or TXT into slides (150 slides in <2 min, 5× fewer tokens). 🦋
+- [Ric01](https://github.com/Ric01/wireframe-ppt-pptx) — ★ 3 — Wireframe UI Kit for landing pages
+- [tdawe1](https://github.com/tdawe1/translation-tools) — ★ 3 — Zero-touch JP→EN translation pipeline for PDF/PPTX/DOCX/XLSX: Drive-in/out, cache-first batch LLM , layout-preserving autofit, style & QA, iterative improvem...
+- [CoderLambert](https://github.com/CoderLambert/filevista) — ★ 3 — React file viewer for PDF, DOCX, PPTX, XLSX, EPUB, Markdown, code and media—20+ formats, rendered entirely in the browser.
+- [BlaCkinkGJ](https://github.com/BlaCkinkGJ/pptx-note-mirror-program) — ★ 3 — Programs that can control PowerPoint over the network and mirror to client the presentation note.
+- [hashi-demo-lab](https://github.com/hashi-demo-lab/html2pptx-cli) — ★ 2 — —
+- [veerakarthick235](https://github.com/veerakarthick235/AI-Presentation-Maker) — ★ 2 — This project generates a PowerPoint presentation (pptx), images for slides, and per-slide narration from a single input topic using Google AI for text and im...
+- [0Armaan025](https://github.com/0Armaan025/conspiracy-ppt-generator-api) — ★ 2 — this api will return conspiracy theory , and a pptx on it.
+- [Sami-samira](https://github.com/Sami-samira/insightslm_studio_pptx_generator) — ★ 2 — —
+- [MarcoPerdomo](https://github.com/MarcoPerdomo/PDF-PPTX-Text-to-CSV) — ★ 2 — Transform all the text from a bundle of PDF or PPTX to a csv format. This is useful to later convert into a dataframe and apply Machine Learning or Deep Lear...
+- [SautinSoft](https://github.com/SautinSoft/SautinSoft.UseOffice.Examples) — ★ 2 — UseOffice .Net is a robust component to convert between DOC, DOCX, RTF, XLS, XLSX, HTML, PPT, CSV, Text and PDF, documents with tables, images, fonts, colors...
+- [arnelienemann](https://github.com/arnelienemann/Wordcloud-Webapp) — ★ 2 — Small webapp using streamlit to create a wordcloud from text input. Export to ppt using python-pptx library.
+- [Jlu45](https://github.com/Jlu45/group-meeting-ppt-agent) — ★ 2 — 🎓 组会PPT智能体 - From any document to a polished, template-compliant PPTX
+- [whxisdsg1998-dotcom](https://github.com/whxisdsg1998-dotcom/PPT-COPYER) — ★ 2 — CSCECppt — PPTX 模板复刻工作流：把现成PPT当模板，AI自动套新内容(保留版式/字体/装饰,只换文字图片)
+- [myon-bioinformatics](https://github.com/myon-bioinformatics/Ironmate) — ★ 2 — Python toolkit for Markdown-to-PPTX conversion, existing PPTX text/color editing, and pixel-grid art prototypes.
+- [machanic16](https://github.com/machanic16/PowerPoint-automation) — ★ 2 — The Purpose of this repository is practice and master the Python-pptx library
+- [pgrit](https://github.com/pgrit/texsnip) — ★ 2 — Compile & crop LaTeX to .pdf / .png / .pptx from Python
+- [AvishrantsSh](https://github.com/AvishrantsSh/python-pptx-stubs) — ★ 2 — Type stubs for python-pptx package
+- [stellatechnologies](https://github.com/stellatechnologies/python-pptx-template) — ★ 2 — Automatically generate PowerPoint documents using Jinja2 tags. Homage to python-docx-template.
+- [bharath5673](https://github.com/bharath5673/python-pptx-tables) — ★ 2 — Use pptx-tables to create tables more easily through Python-pptx.
+- [nt-hai](https://github.com/nt-hai/python-copy-slide-pptx) — ★ 2 — —
+- [bowespublishing](https://github.com/bowespublishing/PPTX-TO-PNG-PYTHON) — ★ 2 — Using Python & Libre Office To Convert PPTX files (PowerPoint) into PNGs
+- [farukaknc](https://github.com/farukaknc/pptx-python-to-latex-beamer-converter) — ★ 2 — The script converts the .pptx file into Latex Beamer code format slide by slide. Covertible slide shapes are the images (being saved into a file), texts (bul...
+- [miromx](https://github.com/miromx/pptx-translator) — ★ 2 — Simple script for translate *.pptx files using request & python-pptx packages
+- [xicheng412](https://github.com/xicheng412/html2pptx) — ★ 2 — convert html to pptx with python
+- [cultivate5253](https://github.com/cultivate5253/text_extract_from_pptx) — ★ 2 — Extract text from ppt using python-pptx
+- [xianlimei](https://github.com/xianlimei/honeytoken) — ★ 2 — A simple honeytoken injection script written in Python. It can be inject into docx, pptx, xslx, odt, odp, ods documents.
+- [shruti2212-ctrl](https://github.com/shruti2212-ctrl/automated-presentation-builder) — ★ 2 — Python tool that generates branded, consulting-style .pptx decks programmatically (python-pptx + Claude), with an automated visual QA pass.
+- [rino0601](https://github.com/rino0601/pptx-blank-maker) — ★ 2 — A CLI program made by python. It makes blanked pptx file from normal pptx file.
+- [bbiyongel](https://github.com/bbiyongel/ppt_translator) — ★ 2 — A python script for translating the content in a .ppt or .pptx file
+- [dronperminov](https://github.com/dronperminov/pptx-shapes) — ★ 2 — Python library for adding basic geometric shapes directly to PowerPoint (.pptx) slides by editing the XML structure.
+- [FakeEyes2Wo](https://github.com/FakeEyes2Wo/pptx_readonly_decrypt) — ★ 2 — pptx_readonly_decrypt 是一个 Python 脚本，用于解除 PowerPoint (.pptx) 文件的只读保护。这通过删除 .pptx 文件中的 <p:modifyVerifier> 标签来实现，从而允许用户编辑文件。
+- [ZhunHao](https://github.com/ZhunHao/msoffice-unprotector) — ★ 2 — A clean, zero-dependency Python tool to inspect, strip, or reset document protection in modern Office files (.docx, .xlsx, .pptx).
+- [A-H-911](https://github.com/A-H-911/tarseem) — ★ 2 — Schema-driven Python diagram engine: JSON specs -> architecture-grade SVG/PNG/PDF + editable draw.io & PPTX, with ELK layout, swimlanes, and Arabic/RTL-first...
+- [tdawe1](https://github.com/tdawe1/multi-llm-translator) — ★ 2 — An automated Python translation assistant that monitors for jobs, processes documents (.docx, .pptx, .xlsx), and uses multiple models for high-quality, compa...
+- [Zitu8](https://github.com/Zitu8/Automated-Presentation-Generation) — ★ 2 — Automated PowerPoint presentation system using Python. Scrapes, filters, and stores data from the web into MongoDB, dynamically generating slides with charts...
+- [GiuseppeLeviBo](https://github.com/GiuseppeLeviBo/pyxtxt) — ★ 2 — is a simple and powerful Python library to extract text from various file formats.   It supports PDF, DOCX, XLSX, PPTX, ODT, HTML, XML, TXT, legacy XLS files...
+- [MuhammadNoman76](https://github.com/MuhammadNoman76/MagicConvert) — ★ 2 — MagicConvert is a Python library that converts various document formats (PDF, DOCX, XLSX, PPTX, HTML, Images) to markdown text. Features include OCR support,...
+- [Mohammadshadab1](https://github.com/Mohammadshadab1/employee-performance-analysis) — ★ 2 — 📊 HR & People Analytics on 100K employee records (2014–2024). Job title drives pay (72% gap), attrition is a flat 10%, satisfaction doesn't predict exits. Py...
+- [AbduazizBobomalikovNode](https://github.com/AbduazizBobomalikovNode/ml_convertor_free) — ★ 2 — Office fayl konvertori Ushbu Python skripti ofis hujjatlarini (Excel, Word, PowerPoint) turli formatlarga aylantirish uchun kuchli yechimni taqdim etadi. U P...
+- [darknight2163](https://github.com/darknight2163/ppt-to-video) — ★ 2 — A Python library that converts PowerPoint (.pptx) files into narrated MP4 videos — extracting slide text, generating text-to-speech narration, rendering slid...
+- [bowespublishing](https://github.com/bowespublishing/qqwing-gui-svg-png-jpg-output) — ★ 2 — A small python script that controls qqwing.exe and enables users to create sudoku puzzles with a user friendly GUI and export to SVG, JPG, JPG or PPTX using ...
+- [Ebinezer-cloud](https://github.com/Ebinezer-cloud/ppt-slide-extractor) — ★ 2 — 📊 PPT Slide Extractor — A Python & Streamlit tool that automatically converts PowerPoint presentations (.ppt/.pptx) into high-quality PNG slide images. Featu...
+- [abhijiths19](https://github.com/abhijiths19/PowerPoint-Generator-Using-Gemini-AI) — ★ 2 — This project leverages Google's Gemini 2.5 Pro API to automatically generate engaging, well-structured PowerPoint presentations on any topic. It combines gen...
+- [lIHJIl](https://github.com/lIHJIl/MDrip) — ★ 2 — Stop paying the LLM format tax. MDrip converts PDF, DOCX, PPTX, XLSX and CSV into clean Markdown, cutting tokens by up to 88%. Lower API costs, faster replie...
+- [fozankhana](https://github.com/fozankhana/DocBild-Conversions-Images-and-Documents) — ★ 2 — **DocBild-Conversions-Images-and-Documents** is a Python-based GUI application for converting various image and document formats. It supports popular formats...
+- [Nikhil-264](https://github.com/Nikhil-264/pptx-inconsistency-analyzer) — ★ 2 — This project is an AI-enabled Python tool that analyzes multi-slide PowerPoint presentations (PPTX) and associated slide images to automatically detect factu...
+- [tellang](https://github.com/tellang/ppt-maker) — ★ 2 — 정부 업무보고 스타일 PPTX 생성기 (PptxGenJS + Noto Sans KR)
+- [MayTheSForceBeWithYou](https://github.com/MayTheSForceBeWithYou/PptxGenJsForce) — ★ 2 — Take a slide-show generating JavaScript library. Put "Force" on the end. Voilà!
+- [ChibaYuki347](https://github.com/ChibaYuki347/pptgenerator-cli) — ★ 2 — Manus-style outline → HTML preview → PPTX. Markdown / JSON in, Tailwind + Iconify HTML and a real .pptx out, via headless chromium + PptxGenJS.
+- [zhouzhouwangwang](https://github.com/zhouzhouwangwang/Markdown-webTheme-PPTX) — ★ 2 — 把结构化 Markdown 一键变成完全可编辑的 PPTX——原生文本框而非截图；零 LLM、纯本地确定性转换，15 套主题、按内容高度自动分页、丰富图片版式，FastAPI + Docker 自包含部署。
+- [ringpackages](https://github.com/ringpackages/pptxlib) — ★ 2 — PPTX library for the Ring programming language
+- [UyLeQuoc](https://github.com/UyLeQuoc/Slight) — ★ 2 — PPTX Generator Webapp with AI
+- [dkmar](https://github.com/dkmar/pptx-to-pdf) — ★ 2 — Finder "Quick Action" to convert powerpoint files to pdf using Microsoft Powerpoint
+- [schatteleyn](https://github.com/schatteleyn/PPT-To-PDF) — ★ 2 — Automator script to transform a bunch of PPT's to PDFs
+- [hard02](https://github.com/hard02/ppt-to-pdf) — ★ 2 — Convert PowerPoint files to PDF using LibreOffice on Linux or Windows systems with Python script and tkinter GUI.
+- [Shahi77](https://github.com/Shahi77/CLI_Slide2PDF) — ★ 2 — CLI tool for ppt to pdf conversion and merging pdfs.
+- [ting5875](https://github.com/ting5875/pptx-to-jpeg) — ★ 2 — Convert pptx to pdf/jpeg with animation state
+- [laekov](https://github.com/laekov/sealpdf) — ★ 2 — A service that converts pptx to pdf and adds watermark
+- [nextJS9127](https://github.com/nextJS9127/DocMasterAI) — ★ 2 — PDF/PPTX parsing + LLM-powered executive reports. OpenAI, Claude, Gemini.
+- [Ccccc-spec](https://github.com/Ccccc-spec/PPTX-parser) — ★ 2 — —
+- [sherazenergetic](https://github.com/sherazenergetic/PPTX_Parser) — ★ 2 — This is a partial code to parse the PPTX and emit it to an XML with limited features.
+- [Danamagentapink178](https://github.com/Danamagentapink178/Chiselo) — ★ 2 — Refine existing HTML files for visual polish and export them to clean HTML, high-fidelity PDF, or editable PPTX formats on macOS.
+- [Yuichi-Ikeda](https://github.com/Yuichi-Ikeda/translate-pptx) — ★ 2 — —
+- [manuviswam](https://github.com/manuviswam/go-pptx) — ★ 2 — Golang library for manipulating openxml pptx presentations
+- [mgilbir](https://github.com/mgilbir/spine) — ★ 2 — Zero-dependency Go library for reading and writing Microsoft Office documents (.docx, .xlsx, .pptx) with byte-identical round-trip fidelity
+- [artpar](https://github.com/artpar/puppt) — ★ 2 — Go CLI for inspecting, editing, creating, validating, reviewing, and rendering editable PowerPoint .pptx files.
+- [rcosta02](https://github.com/rcosta02/pptxrs) — ★ 2 — Performant Rust/WASM library for creating, reading, and modifying PowerPoint (.pptx) files in Node.js - with text measurement and JSON interchange.
+- [Fab2bprog](https://github.com/Fab2bprog/office-toolkit) — ★ 2 — A Rust library to create, read, and modify Microsoft Office documents (Word/Excel/PowerPoint) in the modern Open XML (OOXML) format.
+- [FFFyyls](https://github.com/FFFyyls/ppt-chart-link-repair) — ★ 2 — Repair broken PowerPoint chart data links from OOXML cache and rebuild editable Excel-linked charts on Windows.
+- [Vector-Legal](https://github.com/Vector-Legal/blackline) — ★ 2 — Unopinionated Office Open XML toolkit for DOCX, XLSX, and PPTX
+- [OpenPresentation](https://github.com/OpenPresentation/opf-pptx) — ★ 2 — Pure local OPF to PPTX export and PPTX to OPF import tooling
+- [timothyandrew](https://github.com/timothyandrew/pptx-service) — ★ 2 — Web Service that Generates PPTX files
+- [spencernero2021-hash](https://github.com/spencernero2021-hash/pptx-agent-toolkit) — ★ 2 — Agent-Native PPTX Engineering Library — Built for AI agent pipelines, not template filling.  22 unified layouts | 4 brand palettes | WCAG-AA color safety | N...
+- [arg3ntuum](https://github.com/arg3ntuum/JavaCourse) — ★ 2 — Java-курс для початківців з нуля до програміста. Презентації(.pptx) + дз(.docx)
+- [qq371944997-design](https://github.com/qq371944997-design/xgj-chatgpt-ppt) — ★ 2 — A Page Blueprint workflow for generating editable PPTX files with ChatGPT.
+- [pollhammer](https://github.com/pollhammer/office-morph) — ★ 2 — High-performance automation utility to batch-convert legacy Office binaries (.doc, .xls, .ppt) into modern XML standards (.docx, .xlsx, .pptx) using the nati...
+- [huanyu-a](https://github.com/huanyu-a/MarkFlow) — ★ 2 — 纯前端、零后端 的 Markdown / HTML 多场景排版与导出工作台。  通过使用本工作台既定的渲染方式，与外部 AI 协作，快捷将内容渲染为 A4 正式文档 · 公众号长图文 · 小红书图文卡片 · 风格化 HTML 画布， 并导出为富文本 / 高清 PNG / 矢量 PDF / Word (.docx)...
+- [seowan2](https://github.com/seowan2/korean-research-ppt-master) — ★ 2 — 한국어 연구·R&D 발표자료를 기획부터 PPTX 제작·렌더링 QA까지 완주하는 Codex 마스터 스킬
+- [sort-tech](https://github.com/sort-tech/image-to-ppt) — ★ 2 — A lightweight tool to convert images into editable PowerPoint (.pptx) presentations automatically.
+- [kdnsna](https://github.com/kdnsna/pptlint) — ★ 2 — Local PPTX delivery preflight, explicit cleanup copies, repair plans, and post-edit verification.
+- [chillboy67](https://github.com/chillboy67/ahmu-pptx-download) — ★ 2 — 安徽医科大学网络教学平台 PPT/PPTX 课件直链提取与下载（借用平台接口 activities→uploads→url）
+- [przntperfect](https://github.com/przntperfect/prznt-deck) — ★ 2 — Build fully editable PowerPoint decks in the Prznt Perfect design system. Turns content or a topic into a structured .pptx using defined grids, typography, s...
+- [amir13872](https://github.com/amir13872/virus-pptx-) — ★ 2 — این پروژه یک ارائه کامل درباره ویروس‌های کامپیوتری است که شامل معرفی، انواع، اهداف، ویژگی‌ها و روش‌های انتشار آن‌ها می‌باشد. همچنین، نمونه‌هایی از ویروس‌های ...
+- [PeterAkande](https://github.com/PeterAkande/flutter_document_viewer) — ★ 2 — Docx, PPTx, Pdf Reader for Flutter
+- [Veyss43](https://github.com/Veyss43/dom-to-pptx) — ★ 2 — 🎨 Convert modern HTML to fully editable PowerPoint presentations with high-fidelity styles and accurate rendering, ensuring your design looks exactly as inte...
+- [VoDaiLocz](https://github.com/VoDaiLocz/PDF-PPTX-JSON-Converter) — ★ 2 — A lightweight tool for converting between PDF, PPTX, and JSON formats.
+- [Akshay090](https://github.com/Akshay090/ppt_decrypt) — ★ 2 — NPM package to decrypt password protected pptx file
+- [KOUISAmine](https://github.com/KOUISAmine/ppt-to-pptx) — ★ 2 — PPT to PPTX is an online tool that converts PPT (PowerPoint Presentation) files into PPTX (PowerPoint Presentation XML) files.
+- [huang-kc](https://github.com/huang-kc/png2pptx) — ★ 2 — Replicate an AI-generated slide image as a real, editable .pptx — native text boxes and shapes, reconstructed 1:1, not a picture on a blank slide.
+- [nimbase](https://github.com/nimbase/opendocs) — ★ 2 — A collection of document readers and writers: DOCX, PDF, RTF, ODT, TXT, XLSX, PPTX
+- [sinteric](https://github.com/sinteric/hanji) — ★ 2 — Rust libraries and CLI for round-trip editing and previewing DOCX, PPTX, XLSX and HWPX, with Markdown-like text and WebAssembly support.
+- [dakken205](https://github.com/dakken205/pptx-maker) — ★ 2 — 定例会資料作成支援ツール
+- [dzylikecode](https://github.com/dzylikecode/notebook-easy) — ★ 2 — display pptx word doc docx pdf on github 在GitHub 上显示 pdf word ppt
+- [serpo-dev](https://github.com/serpo-dev/GoStringFinder) — ★ 2 — 🔍 Go File Content Search Tool - A fast, multi-format CLI tool for searching strings in PDF, TXT, DOCX, XLSX, PPTX, JSON, XML, CSV, LOG, HTML files with suppo...
+- [pmdci](https://github.com/pmdci/pptx-toolkit) — ★ 2 — Lightweight, cross-platform Microsoft® PowerPoint manipulation toolkit
+- [oscarsun72](https://github.com/oscarsun72/insertGuaXingtoPowerPnt) — ★ 2 — insert Yi Jing Gua Xing to PowerPnt 在Powerpoint簡報中插入《易經》卦形-已擴充為一切字圖乃至圖片插入Word docx 與Power Point pptx 之應用
+- [Lyt060814](https://github.com/Lyt060814/CUA-Gym.pptx) — ★ 2 — Scale validated computer-use RL tasks from real PowerPoint decks
+- [marjaanah-stack](https://github.com/marjaanah-stack/zapier-finance-agent-rev-vs-budget) — ★ 2 — Zapier AI Agent that produces a monthly Revenue vs Budget pack from Google Sheets data, writes a Notion log, creates a Google Slides deck, exports to PowerPo...
+- [simrahashmi5-debug](https://github.com/simrahashmi5-debug/Powerpoint-generator-APIs-) — ★ 1 — Flask APIs that generate PPT from JSON using python-pptx- by Simra
+- [DNA-Dave](https://github.com/DNA-Dave/RAS_Image_Powerpoint_Generator) — ★ 1 — I had around 100 images in six treatment groups that I wanted to be able to create a powerpoint presentation with one image from each treatment group in orde...
+- [IanDarwin](https://github.com/IanDarwin/TextToPpt) — ★ 1 — Convert tab-indented slide outline into modern PPTX
+- [TrinhVinh2003](https://github.com/TrinhVinh2003/TextToPPTX) — ★ 1 — —
+- [niyo-oyin](https://github.com/niyo-oyin/llm-pptx-gen-test) — ★ 1 — —
+- [samcsf](https://github.com/samcsf/img2pptx-cli) — ★ 1 — A tool to generate pptx from a image folder.
+- [ThomasRohde](https://github.com/ThomasRohde/pptx-cli) — ★ 1 — —
+- [Siddharth-6](https://github.com/Siddharth-6/Autonomous-AI-Presentation-Creator) — ★ 1 — An autonomous multi-agent workflow built with **MachinaOS** that researches a topic, generates structured presentation content, and automatically creates a p...
+- [YonatanRA](https://github.com/YonatanRA/AI_PPTX_Creator) — ★ 1 — Creating pptx from pdf with ai.
+- [Ngoc-An-Nguyen](https://github.com/Ngoc-An-Nguyen/AI_PPTX_Translator) — ★ 1 — Automate the translation of Powerpoint decks into a variety of languages.
+- [yurake](https://github.com/yurake/pptx_generator) — ★ 1 — —
+- [glnnhoffman](https://github.com/glnnhoffman/ppt-generator) — ★ 1 — Code used in a custom GPT to generate pptx files based on a template, with summarization  and execution by ChatGPT
+- [TahaSnoussi](https://github.com/TahaSnoussi/pptx-generator) — ★ 1 — Generate professional PowerPoint presentations from Markdown with Mermaid diagram support
+- [bajarang-agarwal](https://github.com/bajarang-agarwal/pptx-generator) — ★ 1 — PPTX Generator
+- [izayoi-ami](https://github.com/izayoi-ami/pptx-generator) — ★ 1 — —
+- [Fahmialfayadh](https://github.com/Fahmialfayadh/bukang-pptx-generator) — ★ 1 — —
+- [MajsMan2](https://github.com/MajsMan2/bubble-pptx-generator) — ★ 1 — —
+- [Ruben95Amaro](https://github.com/Ruben95Amaro/AutoPPTX-Generator) — ★ 1 — Automated reporting tool that retrieves data from REST APIs, processes information and generates professional PowerPoint presentations.
+- [liaochengjiaao-oliver](https://github.com/liaochengjiaao-oliver/vt-pptx-generator) — ★ 1 — Generate branded Virginia Tech PowerPoint presentations from Markdown
+- [kesh-model-ml](https://github.com/kesh-model-ml/grid_output_pptx_generator) — ★ 1 — Generates PPTx based on Model ML grid output
+- [sameer9860](https://github.com/sameer9860/PowerPoint-PPTX--Generator) — ★ 1 — —
+- [fountainnnnn](https://github.com/fountainnnnn/quiz-slides-generator) — ★ 1 — Turns lecture slides into a ready-to-present quiz deck (PPTX) with answers and explanations: vision-model slide reading, LLM question writing.
+- [rocha985](https://github.com/rocha985/pptx-to-text-api) — ★ 1 — FastAPI service to extract text from PowerPoint (PPTX) files.
+- [Teahana](https://github.com/Teahana/Pdf-Ppt-to-Text) — ★ 1 — To convert ppt/pptx and pdf files that have way too many colors and designs and only extract their text for the purpose of submitting to AI such as GPT
+- [YAOdat](https://github.com/YAOdat/pptx-with-images-to-text) — ★ 1 — Convert a pptx with its images to a text file.
+- [ohadsam](https://github.com/ohadsam/extract_pptx_to_text_images) — ★ 1 — NodeJS tool to extract text and images from PPTX (use for AI projects)
+- [FurqanHun](https://github.com/FurqanHun/textnomnom-py) — ★ 1 — Extract text from PDFs, PPTs, & URLs (with OCR support). Converts PPT to PDF & handles files or folders. 🦍
+- [alexbenfica](https://github.com/alexbenfica/presentation_replacer) — ★ 1 — Replaces text inside ppt, pptx and compatible formats. Very useful to automate presentations and keep them always updated!
+- [groupdocs-free-consulting](https://github.com/groupdocs-free-consulting/Extract-Text-from-Microsoft-PowerPoint-Presentation-using-JAVA-SDK-of-GroupDocs.Parser-REST-API) — ★ 1 — This is GroupDocs free consulting project that helps you to extract Text from Microsoft PowerPoint Presentation PPTX/PPT using GroupDocs.Parser Cloud SDK for...
+- [FreeCodeCampXYG](https://github.com/FreeCodeCampXYG/starline-study-web) — ★ 1 — Analyze one or more learning sources supplied as TXT files, PPT/PPTX decks, or public video links, synthesize a source-grounded study note, and create a resp...
+- [Khalil-Rehman9](https://github.com/Khalil-Rehman9/PPtx-AI-Sumerizer) — ★ 1 — —
+- [felpssdev](https://github.com/felpssdev/pptx-ai-generator) — ★ 1 — —
+- [Aswin-Raksha](https://github.com/Aswin-Raksha/SmartPptx) — ★ 1 — SmartPptx is an n8n workflow that dynamically generates professional PowerPoint presentations (.pptx) based on user input. This automation leverages AI-drive...
+- [pritisarkar9](https://github.com/pritisarkar9/smart-ppt-search) — ★ 1 — This project enables semantic search over PowerPoint (.pptx) files using Large Language Models (LLMs). It extracts slide text, converts content into vector e...
+- [TwoSea1997](https://github.com/TwoSea1997/Zhihuishu_Smartcourse_PPTX_Download) — ★ 1 — 智慧树智慧课程PPTX下载助手
+- [Chetan496](https://github.com/Chetan496/AutomatedPPTReporting) — ★ 1 — Using DOcX4J and OpenXML to create charts,tables,reports in PPT
+- [iyui1223](https://github.com/iyui1223/AutoPPTX) — ★ 1 — Automatically insert multiple images to Microsoft pptx while maximizing the figure sizes. Users can constrain the order of images by adding headers to image-...
+- [IsaacWritesCodeGithub](https://github.com/IsaacWritesCodeGithub/Auto-pptx) — ★ 1 — —
+- [prasertcbs](https://github.com/prasertcbs/automate_pptx_nameplate) — ★ 1 — —
+- [danyellambert](https://github.com/danyellambert/PPT-creator) — ★ 1 — A professional JSON-to-PPTX engine for executive-grade presentations.
+- [RISE-UNIBAS](https://github.com/RISE-UNIBAS/didi_hackathon_pptx_creator) — ★ 1 — Simple script to create a Powerpoint slideshow with images.
+- [yujisatojr](https://github.com/yujisatojr/slide-generator) — ★ 1 — Automating PowerPoint slide generation with Python and python-pptx
+- [Moodswing9](https://github.com/Moodswing9/claude-deck-generator) — ★ 1 — Generate polished presentations from any topic using Claude AI — remix existing decks, choose themes, control slide count, and export to .pptx or .html.
+- [Halcyonsong](https://github.com/Halcyonsong/vector-repository) — ★ 1 — 基于 Spring Boot 3、Spring AI、Redis 和向量检索能力构建的智能知识库问答后端项目，主要实现了流式对话、会话管理、聊天记忆、历史归档、知识库文档上传与向量化、RAG 检索增强以及历史摘要压缩等功能。项目支持 txt、pdf、ppt、pptx 等文档接入，能够结合知识库内容进行上下文检索问...
+- [cannoncoug](https://github.com/cannoncoug/CbqYfuSj) — ★ 1 — 2025年网络工程毕设一套基于机器学习的Web漏洞检测系统的设计(论文+程序源码文件+演示视频+附件外文翻译开题调研报告源程序代码清单文档)定稿(源设计太大客服发).docx
+- [panhongwei](https://github.com/panhongwei/html-to-one-pptx) — ★ 1 — 让 AI 自动完成从 HTML  PPT到pptx 文件的一比一还原，通过html-report-generator，再还原为可编辑的PPTX
+- [Xingzaozhan43-ultimate](https://github.com/Xingzaozhan43-ultimate/pptx-bilingual-translate) — ★ 1 — Claude 技能：中文 PPT 课件整章翻译成英文版 + 中英对照版，自动重排版面、处理 WPS 隐藏内容、防止溢出
+- [HJH-0102](https://github.com/HJH-0102/ppt-to-study-guide) — ★ 1 — 将任意 PPT/PPTX 转化为期末复习资料 PDF。自动识别文字/图片/混合格式，并行提取并展开知识点，LaTeX 或 Word 双路排版输出。兼容 QoderWork、Codex、Claude Code、Cursor 等 AI 编码助手。
+- [mateusflorez](https://github.com/mateusflorez/lumen-studio) — ★ 1 — Ferramenta desktop de autoria para professores — escreva em Markdown, gere slides (.pptx) e atividades (.pdf) com um único clique.
+- [pseudosavant](https://github.com/pseudosavant/markdown-pptx) — ★ 1 — Agent-friendly CLI to convert constrained Markdown slide decks into editable PowerPoint .pptx files.
+- [mocaluna0117](https://github.com/mocaluna0117/md_to_pptx) — ★ 1 — Markdownをpptxに変換するwebサイト
+- [intelkevinputnam](https://github.com/intelkevinputnam/md-to-pptx) — ★ 1 — test repo for creating golden slide set from markdown
+- [arvrschool](https://github.com/arvrschool/markdown-to-pptx) — ★ 1 — —
+- [JulioXC4](https://github.com/JulioXC4/markdown-to-pptx-automator) — ★ 1 — Herramienta CLI para resumir documentacion de GitHub mediante Gemini API y generar presentaciones PowerPoint.
+- [llulai](https://github.com/llulai/pypyt) — ★ 1 — high level pptx python renderer
+- [GayashanSameera](https://github.com/GayashanSameera/PythonPPTXGen) — ★ 1 — —
+- [yutsang](https://github.com/yutsang/python-pptx) — ★ 1 — This project is mainly import a md-formatting text (from AI output or any source) into pptx template, and also a demonstration on how python control/edit the...
+- [0minKoh](https://github.com/0minKoh/python-pptx) — ★ 1 — —
+- [jkm2000korea](https://github.com/jkm2000korea/python_pptx) — ★ 1 — python-pptx를 활용한 리포트 생성 자동화
+- [handwriter](https://github.com/handwriter/python-pptx) — ★ 1 — —
+- [EgaSepyana](https://github.com/EgaSepyana/try-python-pptx-gen-pptx-v2) — ★ 1 — —
+- [bbui1997](https://github.com/bbui1997/python-pptx-tags) — ★ 1 — Parse PowerPoint metadata w/ CTO team
+- [danjan1234](https://github.com/danjan1234/Python-pptx-demo) — ★ 1 — Statistical data visualization and automatic generation of PowerPoint slides
+- [Cazeho](https://github.com/Cazeho/Pptx-Python-guide) — ★ 1 — Python & Powerpoint & XML
+- [sandeep6174](https://github.com/sandeep6174/python_pptx_functions) — ★ 1 — This project contains custom functions created with help of python-pptx library to make power point presentations easily.
+- [gmferratti](https://github.com/gmferratti/exploring_python_pptx) — ★ 1 — Trying to make a MLFlow presentation with Python_PPTX
+- [yikenman](https://github.com/yikenman/python-pptx-wasm) — ★ 1 — A WASM JavaScript library for manipulating PowerPoint presentations via Python-pptx and pyodide.
+- [pikum99](https://github.com/pikum99/python-pptx-demo) — ★ 1 — —
+- [almirmav](https://github.com/almirmav/easy-python-pptx) — ★ 1 — Python utility for using python-pptx libraries to insert titles, texts of pandas DataFrame table to pptx slides.
+- [grasshopperTrainer](https://github.com/grasshopperTrainer/my-python-pptx) — ★ 1 — —
+- [Tawesh](https://github.com/Tawesh/pptx-studio-python-api) — ★ 1 — A highly-customizable PowerPoint generation API built with Flask & python-pptx. Create stunning PPTX files from a single JSON payload — 32+ UI components, 12...
+- [thedjdoorn](https://github.com/thedjdoorn/python-pptx-image-extract) — ★ 1 — —
+- [haint-dev](https://github.com/haint-dev/python-copy-slide-pptx) — ★ 1 — —
+- [ramselvaraj](https://github.com/ramselvaraj/python-pptx-pdf-bot) — ★ 1 — python script that converts pptx files to pdf files
+- [peti651155](https://github.com/peti651155/python-JSON-to-PPTX) — ★ 1 — Egy JSON file-ból beolvasom az információkat ami alapján létrehozom a pptx prezentációt.
+- [yqjdcyy](https://github.com/yqjdcyy/Product_Python_Anything2PPTX) — ★ 1 — fill pdf.images| images into a template.pptx
+- [jmm](https://github.com/jmm/python-pptx-repro-chart-style) — ★ 1 — —
+- [vhngroup](https://github.com/vhngroup/Edit_Pptx_Presentation_With_Python) — ★ 1 — This exercise is a example to edit or modify a Pptx - PowerPoint file with python. I use python-pptx to edit and save the slides
+- [SurgeonTalus](https://github.com/SurgeonTalus/appendixTableGeneratorForPowerPoint-PythonPPTX) — ★ 1 — Generate Powerpoint tables based on content
+- [jmm](https://github.com/jmm/python-pptx-repro-doughnut-data-labels) — ★ 1 — —
+- [jmm](https://github.com/jmm/python-pptx-repro-doughnut-chart-title) — ★ 1 — —
+- [SakibAhmedShuva](https://github.com/SakibAhmedShuva/PPTX-to-TXT-Converter-Python-HTML) — ★ 1 — PPTX to TXT ConverterPPTX to TXT Converter Python HTML
+- [sufyn](https://github.com/sufyn/Ppt_python) — ★ 1 — Creating presentation file using python pptx
+- [vinigonz1993](https://github.com/vinigonz1993/ppt-report) — ★ 1 — Create a presentation using python pptx
+- [leppardwang](https://github.com/leppardwang/pptx-lint) — ★ 1 — Lint / quality checker for python-pptx presentations
+- [CandyButcher27](https://github.com/CandyButcher27/Granuler) — ★ 1 — Technology Maturity Assessment API — Bubble form to branded 54-slide PPTX via LiteLLM + python-pptx
+- [Jackdame](https://github.com/Jackdame/PPT_Builder) — ★ 1 — A project that used python-pptx and deepseek api
+- [ysau](https://github.com/ysau/image-assembler) — ★ 1 — Assembling data images into PowerPoint slides using python-pptx
+- [lybhb8](https://github.com/lybhb8/video-to-pptx) — ★ 1 — Convert video courseware/lectures into .pptx slides via ffmpeg frame extraction, perceptual-hash dedup, OCR, and python-pptx.
+- [paxprot](https://github.com/paxprot/pptx-scripts) — ★ 1 — Some PPTX scripts written in Python, compatible with Azure TTS
+- [geminizb](https://github.com/geminizb/ppt-util) — ★ 1 — An utility to copy, move, delete slides by python-pptx
+- [GitToby](https://github.com/GitToby/pptx2txt2) — ★ 1 — Parse .pptx and .odp files to strings in pure python.
+- [jhlimm8](https://github.com/jhlimm8/AutoTranslatePPT) — ★ 1 — Auto Translate PowerPoint Slides using python-pptx and LLM APIs
 
-_(52 repos in this category)_
+_Showing top 500 of 2123 repos in this category — the full list with all 2123 entries is in [`data/repos.json`](data/repos.json)._
 
 ## Themes, Templates & Curated Lists
 
 Visual themes, starter templates and awesome-lists for presentations and slides.
 
-- [juliocesar/shining](https://github.com/juliocesar/shining) — ★ 108 — Awesome presentations in HTML + JS + CSS
-- [robbie-cao/awesome-slides](https://github.com/robbie-cao/awesome-slides) — ★ 93 — Awesome Slides for Presentation
-- [slideshow-s9/awesome-slideshows](https://github.com/slideshow-s9/awesome-slideshows) — ★ 41 — Awesome Slide Shows / Presentations / Talks - Tools, Themes & Templates, Articles, etc.
-- [aspose-slides/Awesome-Presentations](https://github.com/aspose-slides/Awesome-Presentations) — ★ 38 — Awesome Presentations - A Curated List of Free Tools for Creating Beautiful Presentations. This list contains free tools and resources for creating, designin...
-- [runablehq/Awesome-presentation-tools](https://github.com/runablehq/Awesome-presentation-tools) — ★ 33 — Awesome presentation tools
-- [unindented/webpack-presentation](https://github.com/unindented/webpack-presentation) — ★ 24 — "Webpack is Awesome" presentation.
-- [gdgistanbul/awesome-presentations](https://github.com/gdgistanbul/awesome-presentations) — ★ 21 — A community-curated list of selective conferences around the world for developers
-- [Dowwie/awesome-presentation-libs](https://github.com/Dowwie/awesome-presentation-libs) — ★ 9 — Awesome libraries for creating presentations
-- [sico/Slides-for-Wordpress](https://github.com/sico/Slides-for-Wordpress) — ★ 9 — Slides Gallery is a WordPress plugin that replaces the built in gallery functionality with a slideshow using the very awesome Slides.js plugin by Nathan Sear...
-- [odimodugno/vanillajs-before-after](https://github.com/odimodugno/vanillajs-before-after) — ★ 8 — BeforeAfterJs is a simple Javascript library to create the awesome sliding effect of two images (It's mobile compatible).
-- [Lalospidey/awesome-csirt](https://github.com/Lalospidey/awesome-csirt) — ★ 8 — A list of awesome CSIRT tools and presentations
-- [aman29100/GPT-Awesome-List-Generator](https://github.com/aman29100/GPT-Awesome-List-Generator) — ★ 7 — This is a Python program that automatically generates an "awesome list" for a specific keyword as a markdown file. An "awesome list" is a list of resources r...
-- [wuhua2026/ppt-templates](https://github.com/wuhua2026/ppt-templates) — ★ 6 — ??PPT?????,230??????,??Python/JS??
-- [trayburn/presentation-wiki](https://github.com/trayburn/presentation-wiki) — ★ 6 — Surviving the AI Deluge: Architecting an Agentic Memory with OKF and Obsidian  Presentation assets and reference materials
-- [mojavelinux/presentation-power-tools-for-writers](https://github.com/mojavelinux/presentation-power-tools-for-writers) — ★ 6 — This presentation provides an overview of the tools in the Asciidoctor ecosystem and how they make writers more awesome.
-- [Pondidum/awesome-talks](https://github.com/Pondidum/awesome-talks) — ★ 4 — Awesome presentations and conference talks
-- [joescii/presentera.g8](https://github.com/joescii/presentera.g8) — ★ 4 — g8 template for making awesome presentations with Presentera
-- [VanHackathon2017HueBR/presentation-builder](https://github.com/VanHackathon2017HueBR/presentation-builder) — ★ 4 — An awesome presentation maker
-- [meonkeys/git-talk](https://github.com/meonkeys/git-talk) — ★ 4 — Awesome presentation on some Git concepts
-- [kakcura/AwesomeSlides](https://github.com/kakcura/AwesomeSlides) — ★ 3 — Awesome presentations by just waving to a web-cam! A hand-gesture controlled fully client-side presentation platform.
-- [ilaborie/css-awesome](https://github.com/ilaborie/css-awesome) — ★ 3 — CSS is Awesome! presentation
-- [xadahiya/gcm-tensorflow-udacity](https://github.com/xadahiya/gcm-tensorflow-udacity) — ★ 3 — Tutorial to use Google cloud compute instances with tensorflow. Thanks John graves (https://github.com/jg1141) for such an awesome presentation!
-- [anhttra/how-to-make-an-awesome-presentation](https://github.com/anhttra/how-to-make-an-awesome-presentation) — ★ 3 — My keynotes about how to make a good presentation
-- [Arish-Shah/make-slides](https://github.com/Arish-Shah/make-slides) — ★ 3 — HTML Framework for creating awesome presentations
-- [ameerthehacker/mdx-slides](https://github.com/ameerthehacker/mdx-slides) — ★ 3 — Build awesome presentations using mdx
-- [yuuki61neko/anime-slide](https://github.com/yuuki61neko/anime-slide) — ★ 3 — ?Enjoy anime gallery using awesome slide-show?
-- [osramywj/obsidian-presentation-mode](https://github.com/osramywj/obsidian-presentation-mode) — ★ 2 — Obsidian Full-Screen Presentation Plugin
-- [dev203934/GPT-Awesome-List-Generator](https://github.com/dev203934/GPT-Awesome-List-Generator) — ★ 2 — This is a Python program that automatically generates an "awesome list" for a specific keyword as a markdown file. An "awesome list" is a list of resources r...
-- [CofferHub/awesome-presentation](https://github.com/CofferHub/awesome-presentation) — ★ 2 — A template for making tech talks and presentations :speech_balloon:.
-- [winsmith/howto.ppt](https://github.com/winsmith/howto.ppt) — ★ 2 — Even good ideas need awesome presentation.
-- [trsneed/SlidingUpPanelDemo](https://github.com/trsneed/SlidingUpPanelDemo) — ★ 2 — A demonstration of Cheesebaron's awesome Sliding Up Panel component for xamarin android.
-- [ananyap-codes/ai-powerpoint-generator](https://github.com/ananyap-codes/ai-powerpoint-generator) — ★ 1 — Convert text to PowerPoint presentations using AI and custom templates
-- [J0shW/ObsidianPresentation](https://github.com/J0shW/ObsidianPresentation) — ★ 1 — —
-- [gbraad-docs/obsidian-presentation](https://github.com/gbraad-docs/obsidian-presentation) — ★ 1 — Introductory presentation about Obsidian using Obsidian
-- [oscarpfernandez/present-reveal](https://github.com/oscarpfernandez/present-reveal) — ★ 0 — Go presentation tool based in the awesome revealjs
-- [rhythem/Presenter](https://github.com/rhythem/Presenter) — ★ 0 — An HTML5 Presentation tool that creates awesome presentations on the fly.
-- [gbraad-docs/obsidian-presentation-template](https://github.com/gbraad-docs/obsidian-presentation-template) — ★ 0 — —
-- [hubeek/obsidian_presentation](https://github.com/hubeek/obsidian_presentation) — ★ 0 — —
+- [owainlewis](https://github.com/owainlewis/awesome-artificial-intelligence) — ★ 16,668 — A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.
+- [matze](https://github.com/matze/mtheme) — ★ 6,904 — A modern LaTeX Beamer theme
+- [serenakeyitan](https://github.com/serenakeyitan/awesome-notebookLM-prompts) — ★ 4,684 — A curated collection of the strongest NotebookLM slide prompts sourced from the real creative underground . Your go-to resource for AI powerpoint :P
+- [martinbjeldbak](https://github.com/martinbjeldbak/ultimate-beamer-theme-list) — ★ 1,823 — A collection of Beamer themes from the community
+- [obsidianmd](https://github.com/obsidianmd/knap) — ★ 637 — A simple template language that turns data into Markdown.
+- [pcafrica](https://github.com/pcafrica/focus-beamertheme) — ★ 546 — Focus: a minimalist presentation theme for LaTeX Beamer.
+- [gossip-ink](https://github.com/gossip-ink/gossip) — ★ 525 — Give awesome and informative presentation efficiently.
+- [tuna](https://github.com/tuna/THU-Beamer-Theme) — ★ 469 — A LaTeX beamer theme template for Tsinghua students.
+- [Urinx](https://github.com/Urinx/LaTeX-PPT-Template) — ★ 420 — Seven awesome latex ppt templates for researchers or students.
+- [anishathalye](https://github.com/anishathalye/auriga) — ★ 405 — Auriga is a minimalist LaTeX beamer presentation theme 📽
+- [sanographix](https://github.com/sanographix/azusa-colors) — ★ 374 — Keynote template
+- [pmichaillat](https://github.com/pmichaillat/latex-presentation) — ★ 299 — Minimalist LaTeX template for academic presentations
+- [hamaluik](https://github.com/hamaluik/Beamer-Theme-Execushares) — ★ 298 — A minimalist and modern Beamer theme
+- [piazzai](https://github.com/piazzai/arguelles) — ★ 282 — Simple, typographic beamer theme
+- [pm25](https://github.com/pm25/SimplePlus-BeamerTheme) — ★ 279 — 🍃 SimplePlus - A minimalist and clean LaTeX Beamer theme
+- [XiangyunHuang](https://github.com/XiangyunHuang/awesome-beamers) — ★ 271 — beamer template collection
+- [benjamin-weiss](https://github.com/benjamin-weiss/hsrmbeamertheme) — ★ 231 — Beamer theme that complies with the corporate design of the RheinMain University of Applied Sciences.
+- [RatulSaha](https://github.com/RatulSaha/presento) — ★ 216 — A clean, simple and extensible template for presentations. Supports XeTeX and Beamer.
+- [FvNCCR228](https://github.com/FvNCCR228/SCU-Beamer-Theme) — ★ 199 — 四川大学非官方Beamer模板 | Unofficial Beamer Template for Sichuan University
+- [inFaaa](https://github.com/inFaaa/PKU-Beamer-Theme) — ★ 197 — A Beamer Theme of PKU for academic report, thesis and talk.
+- [tisho](https://github.com/tisho/framer-templates) — ★ 190 — Presentation templates for your Framer.js prototypes.
+- [mholson](https://github.com/mholson/sthlmNordBeamerTheme) — ★ 169 — sthlmNord is a LaTeX Beamer slide deck theme inspired by the arctic north blueish colour palette of Nord. The code base is HEAVILY influenced by hsrmbeamer a...
+- [ambropo](https://github.com/ambropo/JambroBeamerTheme) — ★ 166 — JambroBeamerTheme
+- [LukasPietzschmann](https://github.com/LukasPietzschmann/awesome-beamer) — ★ 165 — Kinda awesome beamer theme
+- [kai-tub](https://github.com/kai-tub/latex-beamer-pure-minimalistic) — ★ 165 — A true minimalistic LaTeX beamer template
+- [BolajiAyodeji](https://github.com/BolajiAyodeji/awesome-jamstack) — ★ 147 — :notebook_with_decorative_cover: Curated list of resources: books, videos, articles, speaker decks, tools about using the Jamstack.
+- [mozilla](https://github.com/mozilla/mozilla-presentation-templates) — ★ 144 — DEPRECATED
+- [jacklenox](https://github.com/jacklenox/picard-present) — ★ 143 — A presentation theme that uses the REST API
+- [sanographix](https://github.com/sanographix/azusa3) — ★ 137 — Google Slides & Keynote template
+- [deuslirio](https://github.com/deuslirio/UFGTeX-Presentation) — ★ 115 — A Modern LaTeX Template to presentations, with different layouts and support to AI assistants
+- [juliocesar](https://github.com/juliocesar/shining) — ★ 108 — Awesome presentations in HTML + JS + CSS
+- [YangLaTeX](https://github.com/YangLaTeX/thubeamer) — ★ 106 — A Beamer Theme for Tsinghua University (THU).
+- [junwei-wang](https://github.com/junwei-wang/beamerthemeNord) — ★ 105 — Nord beamer theme
+- [zbowang](https://github.com/zbowang/BeamerTheme) — ★ 102 — Define a simple beamer theme
+- [pm25](https://github.com/pm25/SimpleDarkBlue-BeamerTheme) — ★ 100 — 🫐 SimpleDarkBlue - A simple and clear LaTeX Beamer theme
+- [ivan-cukic](https://github.com/ivan-cukic/latex-beamer-theme-elegance) — ★ 100 — Beamer theme based on HSRM with some nice configuration options
+- [robbie-cao](https://github.com/robbie-cao/awesome-slides) — ★ 93 — Awesome Slides for Presentation
+- [gongnyang](https://github.com/gongnyang/awesome-html-scrolline-deck) — ★ 93 — Scroll-driven presentation decks: one continuous timeline, beats that turn into the next, six concept packs and 80 moves.
+- [Anthony0630](https://github.com/Anthony0630/Defense-PPT-Template) — ★ 92 — 各类答辩PPT汇报模板
+- [martinbjeldbak](https://github.com/martinbjeldbak/beamertheme-bjeldbak) — ★ 91 — A simple, minimalistic Beamer theme to keep eyes on the content
+- [gix](https://github.com/gix/PresentationTheme.Aero) — ★ 82 — A highly polished Windows Aero theme for WPF
+- [Allenpandas](https://github.com/Allenpandas/BJTU-Slides-Template) — ★ 81 — 🏫 北京交通大学PPT模板 | Beijing Jiaotong University slides template
+- [hsuantien](https://github.com/hsuantien/beamerTaiwan) — ★ 80 — a beamer theme based on the beautiful green color of Taiwan
+- [sonnyhcl](https://github.com/sonnyhcl/beamerthemefdu) — ★ 78 — Unofficial latex beamer theme for Fudan
+- [nschloe](https://github.com/nschloe/ua-beamer) — ★ 76 — A LaTeX beamer theme for the University of Antwerp
+- [nacos-group](https://github.com/nacos-group/nacos-template) — ★ 73 — nacos-template include PPT template and knote
+- [sanhacheong](https://github.com/sanhacheong/stanford-beamer-presentation) — ★ 72 — This is an unofficial LaTeX Beamer presentation template for Stanford University.
+- [sano-jin](https://github.com/sano-jin/express-beamer) — ★ 72 — A modern LaTeX Beamer theme
+- [catppuccin](https://github.com/catppuccin/powerpoint-slides) — ★ 72 — 📽️ Soothing pastel theme for your PowerPoint slides
+- [nomie7](https://github.com/nomie7/nano-banana-slides-prompter) — ★ 70 — Generate optimized AI prompts for Nano Banana Pro Slides with dynamic character generation, 50+ content-aware slide templates, and cinematic visual styles
+- [kailashbuki](https://github.com/kailashbuki/beamerthemesaarland) — ★ 70 — Saarland Beamer Theme
+- [odoo](https://github.com/odoo/odoodays-2014) — ★ 68 — Presentations & templates for 2014 R&D
+- [Piotr1215](https://github.com/Piotr1215/terminal-slides-template) — ★ 67 — Quickly setup terminal based presentation slides
+- [quxiaofeng](https://github.com/quxiaofeng/PolyU_beamer_theme) — ★ 65 — An Unofficial Beamer Theme For PolyU and COMP
+- [JinnyWong](https://github.com/JinnyWong/FudanPPT) — ★ 64 — 🗄️ Fudan University PowerPoint presentation templates. 复旦大学PPT模板
+- [ntnu-tex](https://github.com/ntnu-tex/beamerthementnu) — ★ 61 — A LaTeX beamer theme for presentations in the NTNU corporate design
+- [famuvie](https://github.com/famuvie/beamerthemesimple) — ★ 61 — A minimalist Beamer theme with a watermark in the background
+- [fliptanedo](https://github.com/fliptanedo/FlipBeamerTheme) — ★ 57 — Flip's Beamer Template (for presentations in LaTeX)
+- [Irubataru](https://github.com/Irubataru/beamer-themes) — ★ 56 — Some beamer themes
+- [UweZiegenhagen](https://github.com/UweZiegenhagen/LaTeX-Beamer-Theme-Overview) — ★ 56 — An overview of Beamer themes
+- [YenalyLiew](https://github.com/YenalyLiew/CircularRevealSwitch) — ★ 56 — Just one line of code to achieve the Circular Reveal Theme Switch Animation in Telegram
+- [seifreed](https://github.com/seifreed/awesome-sandbox-evasion) — ★ 56 — A summary about different projects/presentations/tools to test how to evade malware sandbox systems
+- [fperez](https://github.com/fperez/nb-slideshow-template) — ★ 55 — A template for a notebook-based slideshow (talk), with setup instructions.
+- [klb2](https://github.com/klb2/beamer-presentation-template) — ★ 53 — LaTeX beamer template for presentations with a clean and simple style
+- [sybila](https://github.com/sybila/presentation-template) — ★ 52 — Simple presentation template.
+- [makokal](https://github.com/makokal/beamer-themes) — ★ 50 — Latex beamer themes for presentations
+- [aviel08](https://github.com/aviel08/unity_presentation_template) — ★ 49 — Unity 3D presentation template
+- [vipowueb](https://github.com/vipowueb/minflat-beamer) — ★ 49 — Minimal beamer theme in flat design
+- [Witiko](https://github.com/Witiko/fibeamer) — ★ 49 — A former repository of the beamer theme for the typesetting of thesis defense presentations at the Masaryk University in Brno. Now migrated to the URL below.
+- [shoya140](https://github.com/shoya140/zebra2) — ★ 48 — Keynote template designed for research/technical presentations
+- [StickCui](https://github.com/StickCui/XDUstyle-Beamer-Theme) — ★ 48 — 西安电子科技大学 Beamer 主题
+- [2slides](https://github.com/2slides/awesome-nano-banana-ppt-prompts) — ★ 48 — 🍌 selected Nano Banana Pro prompts for PPT, infographics with images, multilingual support, and instant gallery preview. Open-source prompt engineering library.
+- [ppletscher](https://github.com/ppletscher/beamerthemezurich) — ★ 47 — A blue beamer theme
+- [michaelroland](https://github.com/michaelroland/jku-templates-presentation-latex) — ★ 46 — LaTeX Beamer Theme for Johannes Kepler University Linz
+- [Adarsh-Barik](https://github.com/Adarsh-Barik/SimpleBeamerTheme) — ★ 46 — A minimal, clean and simple theme for beamer presentation.
+- [hplgit](https://github.com/hplgit/MAlley-slide-templates) — ★ 45 — Templates for Michael Alley's assertion-evidence design of slides.
+- [malramsay64](https://github.com/malramsay64/usyd-beamer-theme) — ★ 45 — A Beamer theme that adheres to the University of Sydney Branding
+- [GohUnTsuan](https://github.com/GohUnTsuan/RUC-Beamer-Theme) — ★ 45 — A LaTeX beamer theme template for Renmin University of China students. 中国人民大学beamer模板.
+- [sierxue](https://github.com/sierxue/beamer-theme-collection) — ★ 45 — LaTeX 幻灯片 (PPT) Beamer 模板集 --- 中文、中英混排、英文
+- [pcafrica](https://github.com/pcafrica/beamerthemepolimi) — ★ 43 — Beamer port of the official PoliMi presentation theme.
+- [Liam0205](https://github.com/Liam0205/easy_slides) — ★ 43 — Easy slides template for LaTeX users, based on the article class.
+- [slideshow-s9](https://github.com/slideshow-s9/awesome-slideshows) — ★ 41 — Awesome Slide Shows / Presentations / Talks - Tools, Themes & Templates, Articles, etc.
+- [Coreoz](https://github.com/Coreoz/PPT-Templates) — ★ 40 — PPT Template is a small templating library to generate PowerPoint presentations.
+- [YangLaTeX](https://github.com/YangLaTeX/hitszbeamer) — ★ 40 — A beamer theme for Harbin Institute of Technology, ShenZhen
+- [maxnoe](https://github.com/maxnoe/TUDoBeamerTheme) — ★ 40 — —
+- [hithesis](https://github.com/hithesis/HITBeamer) — ★ 39 — 基于 THU-Beamer-Theme (https://github.com/Trinkle23897/THU-Beamer-Theme) 删删改改而成的 :bug:
+- [matafokka](https://github.com/matafokka/PowerPointDarkThemeFix) — ★ 39 — When a custom (especially dark) theme is applied, default PowerPoint's color picker messes grey colors for fill, borders, shadow and glow. PowerPointDarkThem...
+- [aspose-slides](https://github.com/aspose-slides/Awesome-Presentations) — ★ 38 — Awesome Presentations - A Curated List of Free Tools for Creating Beautiful Presentations. This list contains free tools and resources for creating, designin...
+- [jtriley](https://github.com/jtriley/mit-beamer) — ★ 38 — Latex-beamer presentation template for MIT (derived from Andreas Kloeckner's brown-beamer)
+- [Thysrael](https://github.com/Thysrael/GreenParkBeamerTheme) — ★ 38 — 北京航空航天大学 BUAA LaTeX Beamer 非官方主题
+- [cocodrips](https://github.com/cocodrips/keynote-themes) — ★ 37 — Free Keynote templates.
+- [mattblackwell](https://github.com/mattblackwell/cousteau) — ★ 37 — A beamer theme
+- [mzyy94](https://github.com/mzyy94/Slidoon) — ★ 36 — SplatoonっぽいKeynote theme
+- [EagleoutIce](https://github.com/EagleoutIce/beamer-themes) — ★ 35 — A hopefully growing collection of (latex) beamer-themes that i have created over the years. All themes supplied are standalone versions.
+- [htlin222](https://github.com/htlin222/lizard-gslide-module) — ★ 34 — Google Apps Script toolkit for automating Google Slides formatting, batch styling, badges, watermarks, and theme application with a custom sidebar menu.
+- [eshoyuan](https://github.com/eshoyuan/SEU_Beamer_Template_Latex) — ★ 34 — Southeast University(SEU) beamer template 东南大学PPT模板 (已更新PowerPoint版本)
+- [runablehq](https://github.com/runablehq/Awesome-presentation-tools) — ★ 33 — Awesome presentation tools
+- [jeromebelleman](https://github.com/jeromebelleman/beamer-cern) — ★ 33 — A CERN LaTeX Beamer theme mimicking the official one
+- [luistar](https://github.com/luistar/unina-beamer) — ★ 33 — A modern beamer theme for people at the University of Naples "Federico II" (UniNA)
+- [iamjarryfeng](https://github.com/iamjarryfeng/Waseda-Beamer-Slide) — ★ 32 — A LaTeX beamer theme template for Waseda Univ. students.
+- [mpetroff](https://github.com/mpetroff/beamer-theme-matrix) — ★ 32 — Shows variations of the Beamer LaTeX package's themes and color themes
+- [JuanRdBO](https://github.com/JuanRdBO/expo-circular-reveal) — ★ 31 — Telegram-style circular reveal theme transitions for React Native (Expo Module). iOS: CAShapeLayer mask animation. Android: PixelCopy + Path clipping.
+- [martinhelso](https://github.com/martinhelso/UiB) — ★ 30 — Beamer theme for the University of Bergen
+- [schliflo](https://github.com/schliflo/OnePageR) — ★ 29 — A minimalistic single page slides template based on jQuery
+- [thwfhk](https://github.com/thwfhk/PKU-Beamer-Theme) — ★ 29 — 基于Metropolis修改的北大风格Beamer主题
+- [madlifer](https://github.com/madlifer/BentoGrid-Html-Slide) — ★ 27 — A Bento Grid Style Slide template.
+- [gbif](https://github.com/gbif/ppt-template) — ★ 27 — GBIF PowerPoint template repository
+- [dawbarton](https://github.com/dawbarton/UoB-beamer-theme) — ★ 27 — A LaTeX Beamer theme for the University of Bristol
+- [corybrunson](https://github.com/corybrunson/beamerthemeuconn) — ★ 27 — LaTeX Beamer themes for the University of Connecticut
+- [IQSS](https://github.com/IQSS/iqss-beamer-theme) — ★ 27 — A Beamer theme featuring IQSS orange.
+- [aecio](https://github.com/aecio/beamer-theme) — ★ 27 — A super simple and clean  latex beamer theme for slide presentations.
+- [vidonne](https://github.com/vidonne/unhcrdown) — ★ 26 — UNHCR branded R Markdown templates for reports, presentations, and web documents
+- [gatsbyjs](https://github.com/gatsbyjs/mdx-deck-theme) — ★ 26 — The theme we use for Gatsby-related slide decks powered by `mdx-deck`
+- [spbu-se](https://github.com/spbu-se/report_presentation_template) — ★ 26 — Шаблон презентации для квалификационных работ
+- [fedoradesign](https://github.com/fedoradesign/fedora-presentation-template) — ★ 26 — Presentation templates with Fedora branding for slide decks / presentations
+- [owickstrom](https://github.com/owickstrom/automating-the-build-of-your-technical-presentation-template) — ★ 26 — The full template for "Automating the Build of your Technical Presentation"
+- [zlliang](https://github.com/zlliang/beamer-fudan) — ★ 26 — An unofficial beamer theme for Fudan University
+- [transientlunatic](https://github.com/transientlunatic/glasgow-theme) — ★ 26 — A beamer theme conforming approximately to the University of Glasgow branding guidelines.
+- [lvjr](https://github.com/lvjr/concrete) — ★ 26 — A collection of flat beamer themes for LaTeX presentations
+- [nuaa803](https://github.com/nuaa803/nuaa-slides) — ★ 25 — Slide templates for NUAA (including LaTeX Beamer & PowerPoint formats)
+- [KodeinKoders](https://github.com/KodeinKoders/CuP-Presentation-Template) — ★ 25 — Create your CuP speaker deck in a glimpse
+- [tanaikech](https://github.com/tanaikech/TemplateApp) — ★ 25 — This is a Google Apps Script library for easily managing the template of Google Documents and Google Slides using Google Spreadsheet as a database using Goog...
+- [unindented](https://github.com/unindented/webpack-presentation) — ★ 24 — "Webpack is Awesome" presentation.
+- [MiladJoodi](https://github.com/MiladJoodi/Photography_Website) — ★ 24 — In this project, I employed a range of cutting-edge technologies, including Next.js, Tailwind CSS, ShadCN UI, Framer Motion, React Count Up, React Awesome Re...
+- [fghaas](https://github.com/fghaas/presentation-template) — ★ 24 — This repo is deprecated. Please use the Cookiecutter-based template instead!
+- [auth0-ambassadors](https://github.com/auth0-ambassadors/presentations) — ★ 24 — Repository of presentation templates, past talks, etc.
+- [eatingli](https://github.com/eatingli/ppt-template) — ★ 23 — On NPM
+- [dustincys](https://github.com/dustincys/progressbar) — ★ 23 — Beamer theme
+- [103yiran](https://github.com/103yiran/XDUtheme) — ★ 23 — an unofficial LaTeX beamer theme for Xidian University
+- [chefkitchenjoy](https://github.com/chefkitchenjoy/presentation-tool) — ★ 22 — The secret weapon for MS PowerPoint. Access 3,000+ pro presentation templates, infographics, and pitch decks directly inside PowerPoint.
+- [cedricmauclair](https://github.com/cedricmauclair/beamer-themes) — ★ 22 — —
+- [gc3-uzh-ch](https://github.com/gc3-uzh-ch/beamer-theme-gc3) — ★ 22 — The GC3 theme for LaTeX/Beamer slides.
+- [zinccat](https://github.com/zinccat/PKU-beamer-theme) — ★ 22 — 从某清华模版魔改的beamer主题x
+- [gdgistanbul](https://github.com/gdgistanbul/awesome-presentations) — ★ 21 — A community-curated list of selective conferences around the world for developers
+- [yhbcode000](https://github.com/yhbcode000/sustech-slides-template) — ★ 21 — 📊 学术报告 · 论文分享 · 课题答辩一站式中英文 LaTeX Beamer 模板 | SUSTech Beamer Slide Template — paper share, region survey, proposal, progress record, finalisation
+- [maltmannx](https://github.com/maltmannx/slides-templates-and-copywriting) — ★ 21 — 视频中出现的幻灯片模版，效果和文案
+- [SizheWei](https://github.com/SizheWei/SJTU-LaTeX-Template) — ★ 21 — This is slides template using LaTeX beamer. It may be convenient for students from Shanghai Jiao Tong University.
+- [doitian](https://github.com/doitian/intridea-beamer-theme) — ★ 21 — Beamer theme for Intridea
+- [mundya](https://github.com/mundya/unofficial-university-of-manchester-beamer) — ★ 21 — Unofficial University of Manchester Beamer Theme
+- [smanchajm](https://github.com/smanchajm/Jacquenetta-beamer-theme) — ★ 21 — Modern, minimalist LaTeX Beamer theme for scientific presentations.
+- [HFUTTUG](https://github.com/HFUTTUG/HFUT-Beamer) — ★ 21 — Collection of Beamer themes for Hefei University of Technology
+- [jgable](https://github.com/jgable/MVC-3-HTML5-Slideshow-Presentation-Template) — ★ 20 — A .Net MVC 3 Site template for creating HTML5 Slideshow presenations.  Based on @robflaherty 's html5-slideshow project.
+- [chili-epfl](https://github.com/chili-epfl/paper-poster-presentation-template) — ★ 20 — A LaTeX template pack for ieeetran, sigchi, acm-sig-alternate, llncs2e, baposter, nccr-poster and beamer
+- [cabify](https://github.com/cabify/deckset-slides-theme) — ★ 20 — A custom, on brand Cabify theme for Deckset, the app to create super nice presentations with just Markdown
+- [qznc](https://github.com/qznc/nakedbeamer) — ★ 20 — A minimalistic LaTeX-beamer theme
+- [FMuro](https://github.com/FMuro/seville) — ★ 20 — A gorgeous LaTeX beamer theme
+- [liantze](https://github.com/liantze/beamerthemeMirage) — ★ 20 — A beamer theme inspired by the "Mirage" song poster
+- [corenel](https://github.com/corenel/zju-beamer-theme) — ★ 20 — Beamer theme for oral defense in  Zhejiang University.
+- [xinchen13](https://github.com/xinchen13/WHU-Beamer-Theme) — ★ 20 — WHU-style beamer theme
+- [XD111ds](https://github.com/XD111ds/sii-beamer-theme) — ★ 20 — An unofficial LaTeX Beamer theme for Shanghai Innovation Institute (SII).
+- [AshishMK](https://github.com/AshishMK/indian_meesenger) — ★ 19 — India's first social network with chat messaging app.Switch from Foreign App to Indian Messenger to send and receive messages, calls, photos, videos, and Voi...
+- [owickstrom](https://github.com/owickstrom/minimal-beamer-slides-template) — ★ 19 — A minimal template for LaTeX Beamer slideshows
+- [cbourjau](https://github.com/cbourjau/frederiksberg_beamer) — ★ 19 — LaTex beamer theme for the University of Copenhagen
+- [aarondwolf](https://github.com/aarondwolf/wildcat) — ★ 19 — A beamer theme for Northwestern University
+- [haechi](https://github.com/haechi/beamer-erlangen) — ★ 19 — A pdfTeX beamer theme for the Technical Faculty of the FAU Erlangen
+- [peng-yq](https://github.com/peng-yq/UCAS-Beamer-Theme) — ★ 19 — A Beamer Theme of UCAS for academic report, thesis and talk.
+- [pomber](https://github.com/pomber/gatsby-theme-deck-n-blog) — ★ 18 — Create a deck (with mdx-deck) and a blog post from the same MDX
+- [craftzdog](https://github.com/craftzdog/presentation-themes) — ★ 18 — Presentation themes based on popular syntax themes
+- [mnm-team](https://github.com/mnm-team/latex-beamer) — ★ 18 — Latex Beamer Theme
+- [pblottiere](https://github.com/pblottiere/dark-beamer-theme) — ★ 18 — A beautiful dark beamer theme
+- [fritzw](https://github.com/fritzw/beamerthemeLUH) — ★ 18 — An unofficial LaTeX Beamer theme that is trying to follow the Coprorate Design Guidelines of Leibniz Universität Hannover.
+- [GohUnTsuan](https://github.com/GohUnTsuan/JLU-Beamer-Theme) — ★ 18 — A LaTeX beamer theme template for Jilin University students. 吉林大学beamer模板.
+- [yistLin](https://github.com/yistLin/beamertheme-yeast) — ★ 18 — Yeast, a lite and light beamer theme
+- [Tang1705](https://github.com/Tang1705/BJTU-Beamer) — ★ 18 — 北京交通大学 Beamer 主题（非官方）｜Beamer Theme for Beijing Jiaotong University (unofficial)
+- [Spacebody](https://github.com/Spacebody/SUSTech-Defense-Slides) — ★ 18 — Beamer theme for defense slide
+- [ost-fh](https://github.com/ost-fh/Latex-Beamer-Theme) — ★ 18 — Vorlage für Latex-Beamer im OST Corporate Design
+- [skeptrunedev](https://github.com/skeptrunedev/sherp) — ★ 17 — sherp is a CLI for building presentations from Markdown/MDX.   Instant dev server, multiple themes, keyboard navigation, and PDF export.
+- [jxnblk](https://github.com/jxnblk/mdx-deck-theme-example) — ★ 17 — Demo of `@mdx-deck/gatsby-theme` with `@jxnblk/gatsby-theme-mdx-blog`
+- [thomasjpfan](https://github.com/thomasjpfan/slides-template-hugo) — ★ 17 — —
+- [Bili-Sakura](https://github.com/Bili-Sakura/Latex-Slides-Template-GenAI) — ★ 17 — A modern, clean LaTeX Beamer presentation template with a sleek design inspired by keynote presentations.
+- [llancia](https://github.com/llancia/MaterialBeamer) — ★ 17 — A Material Design Beamer Theme
+- [jacksonllee](https://github.com/jacksonllee/uchicago-beamer) — ★ 17 — LaTeX beamer theme for University of Chicago-themed presentation slides
+- [gsarkis](https://github.com/gsarkis/McGill-Beamer-Theme) — ★ 17 — A Latex beamer theme with McGill University's logo.
+- [aaronbaggett](https://github.com/aaronbaggett/youngmetro) — ★ 17 — R Markdown Beamer Theme Based on sthlm, HSRM, and Metropolis themes
+- [neardws](https://github.com/neardws/Chongqing-University-Beamer-Theme) — ★ 17 — A LaTeX beamer theme template for CQU students.
+- [michaelkirker](https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme) — ★ 17 — Files to theme your LaTeX Beamer presentation to match the University of Chicago colors.
+- [ShinoharaHaruna](https://github.com/ShinoharaHaruna/SDU-Beamer-Theme) — ★ 17 — 山东大学 (Shandong University, SDU) LaTeX Beamer 主题模板 — beamer theme for academic slides, thesis defense and presentations. Actively maintained.
+- [yumdocs](https://github.com/yumdocs/yumdocs) — ★ 16 — Yumdocs is a template engine to automate Word, PowerPoint and Excel documents.
+- [mvsoom](https://github.com/mvsoom/beamerthemeblei) — ★ 16 — A clean and minimal Beamer theme mimicking David Blei's presentation theme
+- [Tonanguyxiro](https://github.com/Tonanguyxiro/SUSTech-Slide-Template-LateX-EN) — ★ 16 — Slide template for SUSTech sutdent
+- [Y006](https://github.com/Y006/slide_template) — ★ 16 — 电子科技大学 Beamer 模版
+- [zhicongsun](https://github.com/zhicongsun/SUSTech-Beamer-Theme) — ★ 16 — This is LaTex PDF(PPT) template for SUSTech, you can use it to perform your presentations.
+- [andy123t](https://github.com/andy123t/Beamer-Themes) — ★ 16 — LaTeX Beamer themes for presentations
+- [menegola](https://github.com/menegola/inf-beamer) — ★ 16 — A beamer theme with the new Institute of Informatics (from UFRGS) visual identity style
+- [Helmholtz-AI-Energy](https://github.com/Helmholtz-AI-Energy/beamer-template) — ★ 15 — Latex beamer slide template for Helmholtz AI
+- [xamarin](https://github.com/xamarin/evolve-presentation-template) — ★ 15 — Evolve 2016 Presentation Templates
+- [bmondal94](https://github.com/bmondal94/Leipzig-Beamer-Template) — ★ 15 — Leipzig university beamer presentation template
+- [johanjvrens](https://github.com/johanjvrens/SUnORE-presentation) — ★ 15 — SUnORE (Stellenbosch Unit for Operations Research and Engineering) lab Latex presentation template
+- [tianxiaogu](https://github.com/tianxiaogu/beamertheme-njupurple) — ★ 15 — A beamer theme for NJU.
+- [NicklasXYZ](https://github.com/NicklasXYZ/NXYZBeamerTheme) — ★ 15 — A simple and minimalistic LaTeX beamer theme.
+- [christophergandrud](https://github.com/christophergandrud/LSE-Beamer-Theme) — ★ 15 — An Unofficial LSE LaTeX Beamer Theme
+- [martinhelso](https://github.com/martinhelso/OsloMet) — ★ 15 — Beamer theme for OsloMet - Oslo Metropolitan University
+- [samanthalclarke](https://github.com/samanthalclarke/USYD-Beamer-Theme) — ★ 15 — An Unofficial USYD LaTeX Beamer Template and Theme
+- [cpa2001](https://github.com/cpa2001/SLAI-Beamer-Template) — ★ 15 — A SINTEF-based LaTeX Beamer theme with CUHK/SLAI branding (colors, blocks, chapter/side-picture slides).
+- [MostafaAnter](https://github.com/MostafaAnter/CircularRevealThemesChanger) — ★ 15 — helper library for Android that enables you to dynamically change themes using a circular reveal animation.
+- [cbwang2016](https://github.com/cbwang2016/PresentationLaTexTemplate) — ★ 15 — My template for presentation in LaTeX
+- [cainmagi](https://github.com/cainmagi/UH-beamer-templates) — ★ 15 — A collection of beamer templates for presentations for University of Houston (UH).
+- [Cinofix](https://github.com/Cinofix/latex-scientific-templates) — ★ 15 — Collection of latex templates used for my master's thesis, presentations and assignment reports.
+- [Relaxkartikey](https://github.com/Relaxkartikey/prior-gsap-animation-portfolio-website-template) — ★ 14 — Free open-source GSAP ScrollTrigger website template with canvas frame-scrub, parallax video, clip-path reveals & cinematic scroll effects. Vanilla HTML/CSS/...
+- [girldevelopit](https://github.com/girldevelopit/gdi-slides-template) — ★ 14 — Template for GDI Slides
+- [jachoo](https://github.com/jachoo/pg-beamer) — ★ 14 — Gdańsk University of Technology - LaTeX Beamer presentation template
+- [lancelet](https://github.com/lancelet/beamer-trek) — ★ 14 — A Star Trek inspired slide theme for the Beamer LaTeX document class.
+- [satta](https://github.com/satta/zbh-beamer-theme) — ★ 14 — LaTeX-beamer theme for the ZBH
+- [classysoftware](https://github.com/classysoftware/classyslides) — ★ 14 — A LaTeX Beamer theme for classy slides
+- [kyawaway](https://github.com/kyawaway/kyasual) — ★ 14 — A smart-casual LaTeX Beamer theme
+- [LaneGong](https://github.com/LaneGong/SHU-Beamer-Theme) — ★ 14 — 上海大学Beamer主题PPT模版
+- [amirhakh](https://github.com/amirhakh/persian-beamer) — ★ 14 — Persian template for slide with beamer and xepersian (in LaTeX)
+- [GavinnnTann](https://github.com/GavinnnTann/Your-Valentines-Invite) — ★ 13 — A beautiful, interactive Valentine's Day website template with parallax scrolling, photo timeline, mini-game, and invitation reveal. Built with Next.js 14 an...
+- [estelle](https://github.com/estelle/slides) — ★ 13 — HTML5 Slide Template
+- [edouardfouche](https://github.com/edouardfouche/kit-jupyter-slides-theme) — ★ 13 — (un)official css theme for KIT presentations with jupyter notebook slideshow
+- [lsy3](https://github.com/lsy3/beamer-unsw-theme) — ★ 13 — A Latex Beamer Theme for the University of New South Wales
+- [solstice](https://github.com/solstice/uzk-theme) — ★ 13 — Beamer theme for the University of Cologne.
+- [aknierim](https://github.com/aknierim/tudobeamertheme_dark) — ★ 13 — LaTeX Beamer Theme for TU Dortmund with dark theme option
+- [scraperai](https://github.com/scraperai/awesome-presentations) — ★ 12 — A curated showcase of AI-generated slide decks  every deck built end-to-end from a single text prompt.
+- [SoftVarE-Group](https://github.com/SoftVarE-Group/SlideTemplate) — ★ 12 — A beamer latex template for slides and lectures at University of Ulm
+- [Mizera-Mondo](https://github.com/Mizera-Mondo/HHU-Slides-Template) — ★ 12 — 河海大学演示文档模板 / Unofficial PPT and Beamer Template for Hohai University
+- [thinkingserious](https://github.com/thinkingserious/interactive-presentation-template) — ★ 12 — —
+- [mbovel](https://github.com/mbovel/presentation-template) — ★ 12 — —
+- [hamid-m](https://github.com/hamid-m/UofMN-Beamer-Template) — ★ 12 — Beamer presentation template with University of MN colors
+- [JoeyEremondi](https://github.com/JoeyEremondi/UBC-Metropolis-Beamer) — ★ 12 — Metropolis Beamer theme with UBC Colors and Logo
+- [uio-latex](https://github.com/uio-latex/MathDept) — ★ 12 — Beamer theme for the Department of Mathematics, University of Oslo
+- [rispace](https://github.com/rispace/unofficial-FSU-beamer-theme-template) — ★ 12 — Florida State Beamer Theme and Template for poster and presentation (Unofficial)
+- [sbindel](https://github.com/sbindel/beamer-theme-uha) — ★ 12 — LaTeX beamer template of UHA university
+- [zondie17](https://github.com/zondie17/UCAS_Beamer) — ★ 12 — A LaTeX beamer theme template for UCAS students.
+- [jsh9](https://github.com/jsh9/Caltech-beamer-theme) — ★ 12 — Caltech LaTeX template for presentations, adopted by Overleaf
+- [AlexZabashta](https://github.com/AlexZabashta/ITMO-Beamer-theme) — ★ 12 — LaTex template for ITMO style presentations
+- [CQULeaf](https://github.com/CQULeaf/DIY_LaTeX_Template) — ★ 12 — 面向知识笔记、论文报告、日常汇报与个人简历的 LaTeX 模板集合，支持独立编译、场景复用与个人定制拓展。
+- [HuanPP](https://github.com/HuanPP/TeXDeck) — ★ 12 — Turn a PDF into a finished LaTeX Beamer deck. The template file is the prompt.
+- [abuyukcakir](https://github.com/abuyukcakir/bilkent-beamer-template) — ★ 12 — More simplistic Bilkent Beamer Template that uses exact color scheme of Bilkent University
+- [jaredwilli](https://github.com/jaredwilli/io-slides) — ★ 11 — Google I/O 2012 slide template
+- [ishugaepov](https://github.com/ishugaepov/vk_presentation_template) — ★ 11 — VK Beamer Presentation Template
+- [primer](https://github.com/primer/keynote-octicons) — ★ 11 — Keynote templates for using GitHub's octicons in presentations
+- [rjturner](https://github.com/rjturner/cmu-beamer) — ★ 11 — Beamer theme for Carnegie Mellon University
+- [maminian](https://github.com/maminian/uncmathbeamer) — ★ 11 — A minimal beamer theme for UNC Chapel Hill
+- [uwabami](https://github.com/uwabami/beamerthemeKansaiDebianMeeting) — ★ 11 — latex-beamer theme for KansaiDebianMeeting
+- [pbelmans](https://github.com/pbelmans/ugent-beamer) — ★ 11 — A LaTeX beamer theme for the University of Ghent
+- [mvonthron](https://github.com/mvonthron/beamer-polymtl) — ★ 11 — Beamer theme for Polytechnique Montréal (http://www.polymtl.ca/)
+- [igankevich](https://github.com/igankevich/SaintPetersburg) — ★ 11 — Saint-Petersburg: Beamer theme for SPbU
+- [alirezaafzalaghaei](https://github.com/alirezaafzalaghaei/latex-persian-slide) — ★ 10 — A Persian latex slide template using beamer package
+- [jsconf](https://github.com/jsconf/presentation-templates) — ★ 10 — —
+- [rob-p](https://github.com/rob-p/carlworld-beamer-slide-theme) — ★ 10 — Carl Compliant Beamer slide theme
+- [ibab](https://github.com/ibab/beamertheme-vertex) — ★ 10 — A clean, basic beamer theme
+- [abarbu](https://github.com/abarbu/purdue-beamer) — ★ 10 — Purdue LaTeX beamer themes for posters and talks
+- [alejogm0520](https://github.com/alejogm0520/latexEAFIT) — ★ 10 — A modern LATEX beamer theme for the Universidad EAFIT
+- [starryious](https://github.com/starryious/NWU-latex-template) — ★ 10 — A LaTeX beamer theme template for NWU students (Northwest University).
+- [electricant](https://github.com/electricant/beamerThemePadovaDEI) — ★ 10 — Beamer theme for the Department of Information Engineering at the Univeristy of Padova
+- [Daeinar](https://github.com/Daeinar/beamer-uni-passau) — ★ 10 — Inofficial Universität Passau LaTeX Beamer Theme
+- [AmmarMian](https://github.com/AmmarMian/Shibui-beamer) — ★ 10 — Yet another beamer theme
+- [ClConstantine](https://github.com/ClConstantine/CCNU-Beamer-Theme) — ★ 10 — —
+- [andrewboyd-811](https://github.com/andrewboyd-811/back-4-blood-hack-2026-cleaner-deck-toolkit) — ★ 10 — Back 4 Blood Hack 2026 themed PC companion for Cleaner builds, weapon loadouts, card decks, team planning, run tracking and combat analytics.
+- [vakahnke](https://github.com/vakahnke/seedcorn) — ★ 10 — Seedcorn (formerly Timeline). Plan it. Run it. Adjust as you go. Share the plan that worked. A self-hosted project planner with a canvas Gantt timeline you c...
+- [Dowwie](https://github.com/Dowwie/awesome-presentation-libs) — ★ 9 — Awesome libraries for creating presentations
+- [tyohan](https://github.com/tyohan/Polyslide) — ★ 9 — HTML5 Slide Presentation Template Using Polymer
+- [EricZQu](https://github.com/EricZQu/DKU-beamer-presentation) — ★ 9 — This is an unofficial latex beamer presentation theme for Duke Kunshan University, adapted from Stanford.
+- [UweZiegenhagen](https://github.com/UweZiegenhagen/MINT-Lecture-Slide-Template) — ★ 9 — A template for Lectures in math/programming based on LaTeX Beamer
+- [UMM-CSci](https://github.com/UMM-CSci/senior-seminar) — ★ 9 — Public materials for senior seminar, including assignments, past papers/slides, templates, etc.
+- [SteveHartzog](https://github.com/SteveHartzog/slides-template) — ★ 9 — A slides template for tech speakers.
+- [zhtluo](https://github.com/zhtluo/purdue-slide-template) — ★ 9 — A LaTeX Slide Template for Purdue University
+- [Gorcenski](https://github.com/Gorcenski/accessible-slides) — ★ 9 — A repository for some Accessible Slide templates incorporating best practices for accessibility
+- [Kairui-SHI](https://github.com/Kairui-SHI/WHU-PPT-Template) — ★ 9 — 武汉大学 PPT 模板 (Wuhan University PPT/ Slides Templates)
+- [sils](https://github.com/sils/guadec-presentation-templates) — ★ 9 — MOVED TO https://git.gnome.org/browse/presentation-templates/
+- [danrot](https://github.com/danrot/presentation-template) — ★ 9 — —
+- [ProofLabs](https://github.com/ProofLabs/StevensBeamerLatexTemplate) — ★ 9 — Unofficial Stevens Institute of Technology Latex(beamer) Presentation Template
+- [Guanyu-Li](https://github.com/Guanyu-Li/Defense-Reporting-ppt) — ★ 9 — 答辩ppt模板（吉林大学数学学院）Defence ppt Template
+- [dlunde](https://github.com/dlunde/kth-beamer) — ★ 9 — A (very) simple beamer theme for KTH presentations
+- [tvalimaki](https://github.com/tvalimaki/beamertheme-tuni) — ★ 9 — A beamer theme for Tampere Universities presentations
+- [ljleppan](https://github.com/ljleppan/beamer-uh) — ★ 9 — A Beamer theme styled after the University of Helsinki powerpoint theme
+- [aalfons](https://github.com/aalfons/beamerthemeESE) — ★ 9 — LaTeX Beamer theme for Erasmus School of Economics
+- [codeforthailand](https://github.com/codeforthailand/beamer-sanour) — ★ 9 — a Beamer theme that supports Thai and looks pleasant
+- [vskbellala](https://github.com/vskbellala/metropolis-brown) — ★ 9 — Brown University color scheme for Metropolis beamer theme.
+- [xianrui5891](https://github.com/xianrui5891/OUC_beamer_theme) — ★ 9 — A beamer theme designed for Ocean University of China
+- [cococo2000](https://github.com/cococo2000/ICT-Beamer) — ★ 9 — ICT Beamer Theme: A simple Beamer template for the Institute of Computing Technology, CAS.
+- [slidekit](https://github.com/slidekit/talks-starter) — ★ 9 — talks starter (s6 blank) - write your talks / presentations / slides in plain text w/ markdown formatting conventions ++ setup uses the jekyll talks theme (u...
+- [Viniciuscarvalho](https://github.com/Viniciuscarvalho/slidedown) — ★ 9 — Transform Markdown files into spectacular presentations with 6 themes and AI-powered design
+- [kannansuresh](https://github.com/kannansuresh/PowerPoint-Downsizer-Add-In) — ★ 9 — A PowerPoint add-in to remove unused layouts and master slides. This reduces size of our PowerPoint files created from heavy templates.
+- [EternallyAscend](https://github.com/EternallyAscend/PreLaTeX) — ★ 9 — Simple LaTeX Beamer Template
+- [Lalospidey](https://github.com/Lalospidey/awesome-csirt) — ★ 8 — A list of awesome CSIRT tools and presentations
+- [kunny](https://github.com/kunny/io-slides) — ★ 8 — HTML5 slide template for Google I/O
+- [Zoher15](https://github.com/Zoher15/IU-Metropolis-Beamer-Theme) — ★ 8 — A modern Beamer presentation theme combining Metropolis with Indiana University branding
+- [Solar-WU](https://github.com/Solar-WU/SWJTU_Slides_Template) — ★ 8 — An unofficial beamer slides template for SWJTUers / Latex版本的非官方西南交通大学幻灯片模板
+- [csoriano1618](https://github.com/csoriano1618/gnome-slides-template) — ★ 8 — A LibreOffice Impress template with Gnome branding for talks
+- [astomodynamics](https://github.com/astomodynamics/GT-presentation-template) — ★ 8 — Beamer Presentation Template for Georgia Tech Community
+- [nschloe](https://github.com/nschloe/matheon-html5-template) — ★ 8 — Matheon HTML5 presentation template
+- [atherosai](https://github.com/atherosai/latex-beamer-with-bibtex-presentation) — ★ 8 — Latex Beamer presentation template with Bibtex support
+- [deepmancer](https://github.com/deepmancer/latex-presentation-template) — ★ 8 — Effortlessly create professional presentation slides with Beamer and LaTeX.
+- [botprof](https://github.com/botprof/qu-slides) — ★ 8 — A LaTeX Beamer class and presentation template for Queen's University at Kingston, Ontario, Canada.
+- [ahmetuysal](https://github.com/ahmetuysal/KU-LaTeX-Beamer-Template) — ★ 8 — Unofficial Koç University LaTeX Beamer presentation template.
+- [lsy3](https://github.com/lsy3/hugo-academic-unsw-slides) — ★ 8 — UNSW Slide theme for Hugo Academic
+- [apreshill](https://github.com/apreshill/ppt-templates) — ★ 8 — —
+- [xnliang98](https://github.com/xnliang98/buaa-beamer) — ★ 8 — beihang beamer ppt template
+- [aanklewicz](https://github.com/aanklewicz/macOS9_keynote_template) — ★ 8 — —
+- [akrah](https://github.com/akrah/LatexThemeTelecomNancy) — ★ 8 — Personnal beamer theme used for Telecom Nancy slides.
+- [JonkopingAI](https://github.com/JonkopingAI/ju-beamer-theme) — ★ 8 — A LaTeX beamer theme with elements from Jönköping University branding
+- [fneum](https://github.com/fneum/beamerthemeKarlsruhe) — ★ 8 — Inofficial Karlsruhe Institute of Technology (KIT)-Style Latex Beamer Theme
+- [pm25](https://github.com/pm25/General-Beamer-Theme) — ★ 8 — A General Purpose Latex Beamer Theme.
+- [mbork](https://github.com/mbork/beamerorgtheme) — ★ 8 — An Org-mode inspired Beamer theme
+- [YanMing-lxb](https://github.com/YanMing-lxb/GUET_Beamer) — ★ 8 — Guet_Beamer_Theme
+- [yhzhu99](https://github.com/yhzhu99/buaa-beamer-theme) — ★ 8 — BUAA Beamer Theme
+- [mayhewsw](https://github.com/mayhewsw/uiuc-beamer-theme) — ★ 8 — Beamer theme for UIUC
+- [TeXhackse](https://github.com/TeXhackse/CCCamp19_beamer) — ★ 8 — LaTeX beamer theme for CCCamp19
+- [joszuijderwijk](https://github.com/joszuijderwijk/beamer-uu) — ★ 8 — An unofficial beamer theme for Utrecht University.
+- [arranger1044](https://github.com/arranger1044/spinaceto-beamer-theme) — ★ 8 — Spinaceto is a minimalistic beamer theme with a typographic accent
+- [lwDavid](https://github.com/lwDavid/ShanghaiTech-Beamer-Theme) — ★ 8 — An unofficial LaTeX beamer template for ShanghaiTech students.
+- [Submarinedriver](https://github.com/Submarinedriver/XiamenUniversity-Beamer-Theme) — ★ 8 — This project provides a great beamer template for XiamenUniversity
+- [aman29100](https://github.com/aman29100/GPT-Awesome-List-Generator) — ★ 7 — This is a Python program that automatically generates an "awesome list" for a specific keyword as a markdown file. An "awesome list" is a list of resources r...
+- [binout](https://github.com/binout/asciidoctor-slide-generator) — ★ 7 — A template projet to generate slide with asciidoctor
+- [warsawjs](https://github.com/warsawjs/meetup-slides-template) — ★ 7 — 📋 WarsawJS Meetup: Slides template
+- [canadalearningcode](https://github.com/canadalearningcode/llc-slidedeck-template) — ★ 7 — Slide presentation template
+- [chkwon](https://github.com/chkwon/UB_Beamer_Template) — ★ 7 — LaTeX Slide Template for University at Buffalo
+- [AhsanAyaz](https://github.com/AhsanAyaz/reveal-multi-slides-template) — ★ 7 — —
+- [gaspanik](https://github.com/gaspanik/SketchSlideHD) — ★ 7 — HD Slide Template for Sketch 3
+- [hust-latex](https://github.com/hust-latex/hustbeamer) — ★ 7 — :orange_book: An Unofficial Slide Template in LaTeX for Huazhong University of Science and Technology
+- [bjoseru](https://github.com/bjoseru/notability-ipad-pro-slide-templates) — ★ 7 — Slide templates for the Notability App on iPad Pro
+- [mevalid](https://github.com/mevalid/MTCircleChart) — ★ 7 — Circle chart with percentage slide template written in Swift 4. Can be used for diagram, graph, chart, report, data visualization, presentation.
+- [inwonakng](https://github.com/inwonakng/unofficial-rpi-presentation-template) — ★ 7 — —
+- [ubuconeurope](https://github.com/ubuconeurope/2019sintra-presentation-template) — ★ 7 — Presentation template in several formats used in Ubucon Europe 2019 Sintra.
+- [xamarin](https://github.com/xamarin/evolve-2014-presentation-template) — ★ 7 — Evolve 2014 Presentation Template
+- [el-bart](https://github.com/el-bart/beamer_cpp) — ★ 7 — beamer for C++ presentations template
+- [scifig-ai](https://github.com/scifig-ai/scientific-poster-and-presentation-templates) — ★ 7 — Free scientific poster & presentation PowerPoint templates from scifig.ai — 154 files: A0/A1/US-size posters, e-posters, and conference/journal-club/lab-meet...
+- [RickyXu99](https://github.com/RickyXu99/MUST-PPT-Template) — ★ 7 — 澳科大开题报告/毕业论文/汇报模板   M.U.S.T. Proposal/Graduation Thesis/Report Template
+- [mrislambd](https://github.com/mrislambd/unofficial-FSU-beamer-theme-template) — ★ 7 — Florida State Beamer Theme and Template for poster and presentation (Unofficial)
+- [godehardt](https://github.com/godehardt/beamerthemeFrankfurtUAS) — ★ 7 — LaTeX beamer theme according to the corporate design of Frankfurt University of Applied Sciences.
+- [fyqqyf](https://github.com/fyqqyf/WHU-Beamer-Theme) — ★ 7 — 武汉大学 Beamer Theme(非官方)
+- [ming-hao-xu](https://github.com/ming-hao-xu/Ritsumeikan-beamer) — ★ 7 — A LaTeX beamer theme template for Ritsumeikan students.
+- [fseiffarth](https://github.com/fseiffarth/LatexBeamerThemeUniBonnStyle) — ★ 7 — Latex beamer template in Uni Bonn style.
+- [AllenYolk](https://github.com/AllenYolk/metropolis-pku) — ★ 7 — A delicate beamer theme for PKU students, modified from Metropolis.
+- [rl-institut](https://github.com/rl-institut/beamer_theme) — ★ 7 — The RLI LaTeX Beamer theme for creating CI-proof slides with Latex
+- [shr2333](https://github.com/shr2333/UCASS-Beamer-Theme) — ★ 7 — LaTeX beamer template for UCASS students, based and modified most on Tsinghua Beamer Theme https://github.com/Trinkle23897/THU-Beamer-ThemeUpdated in January...
+- [display-design-studio](https://github.com/display-design-studio/sanity-starter) — ★ 7 — A Sanity Studio v6 starter template with built-in localization utilities, presentation tool, and automatic types generation.
+- [FLGMwt](https://github.com/FLGMwt/gatsby-theme-slidedeck) — ★ 7 — Gatsby theme for generating slide decks from markdown
+- [kslides](https://github.com/kslides/kslides-template) — ★ 7 — A template repo for building a kslides presentation
+- [uditkumar489](https://github.com/uditkumar489/PPT-selected_designs) — ★ 7 — Ready to use - handpicked powerpoint designer templates .
+- [wuhua2026](https://github.com/wuhua2026/ppt-templates) — ★ 6 — ??PPT?????,230??????,??Python/JS??
+- [mojavelinux](https://github.com/mojavelinux/presentation-power-tools-for-writers) — ★ 6 — This presentation provides an overview of the tools in the Asciidoctor ecosystem and how they make writers more awesome.
+- [linas-p](https://github.com/linas-p/VU-MIF-II-slides-template-1) — ★ 6 — VU MIF latex skaidrių šablonas
+- [fat](https://github.com/fat/slides) — ★ 6 — My keynote slide template
+- [OWASP](https://github.com/OWASP/HTML5SlideTemplates) — ★ 6 — HTML 5 slide templates for OWASP presentations (beta)
+- [dainachiba](https://github.com/dainachiba/MacauMetropolis) — ★ 6 — Unofficial LaTeX Beamer Metropolis presentation slide templates for the University of Macau
+- [benoitvx](https://github.com/benoitvx/dsfr-slides-template) — ★ 6 — Template de présentation web conforme au Design System de l'État (DSFR). Écrivez vos slides en Markdown, déployez sur GitHub Pages.
+- [neuroinformatics-unit](https://github.com/neuroinformatics-unit/slides-templates-atlases) — ★ 6 — On brain templates & atlases, and how to build them.
+- [hilinxinhui](https://github.com/hilinxinhui/NEU_Beamer_Slide) — ★ 6 — Northeastern University Beamer Slide Template
+- [canxin121](https://github.com/canxin121/xdu-beamer-template) — ★ 6 — XDU Beamer slide template for presentations
+- [mdaniyalk](https://github.com/mdaniyalk/latex-ugm-presentation-template) — ★ 6 — —
+- [liangchenn](https://github.com/liangchenn/ntu-beamer-template) — ★ 6 — A National Taiwan University beamer presentation template
+- [underovsky](https://github.com/underovsky/instant-presentation) — ★ 6 — A simple open source presentation template written in HTML/CSS/JS
+- [Nekoion](https://github.com/Nekoion/CUHK_PPT_Template) — ★ 6 — This is a PPT template made for CUHK
+- [MaxW322](https://github.com/MaxW322/GDUT-Beamer-Template) — ★ 6 — A LaTeX beamer  (ppt) template of Guangdong University of Technology. 广东工业大学 Latex beamer 模板
+- [kenchan0130](https://github.com/kenchan0130/keynote-template-deployment) — ★ 6 — Deploy a Keynote app template programmatically
+- [greene-giant](https://github.com/greene-giant/beamer-UCLA) — ★ 6 — An unofficial UCLA beamer theme
+- [dscroft](https://github.com/dscroft/coventry_beamer) — ★ 6 — LaTex beamer theme suitable for Coventry University lectures
+- [ibab](https://github.com/ibab/beamertheme-manc) — ★ 6 — A minimal beamer theme designed with legibility in mind
+- [jeffmxu](https://github.com/jeffmxu/beamer-theme-tutorial) — ★ 6 — A light modern LaTeX Beamer theme for academics
+- [mvonthron](https://github.com/mvonthron/beamer-utbm) — ★ 6 — A Beamer theme for UTBM (http://www.utbm.fr/)
+- [MartinHu1997](https://github.com/MartinHu1997/HHU-Beamer-Theme) — ★ 6 — The Latex codes of Beamer Theme for Hohai Univ., China
+- [SFr682k](https://github.com/SFr682k/beamerthemeMWG) — ★ 6 — A LaTeX beamer theme for every possible use. The theme uses the red color and the logo of the Markgräfin Wilhelmine Gymnasium in Bayreuth.
+- [alick](https://github.com/alick/beamerthemetamu) — ★ 6 — A beamer theme designed for use in Texas A&M University (TAMU).
+- [Poeschl](https://github.com/Poeschl/DarkConsole-Beamer-Theme) — ★ 6 — A Latex Beamer theme I often use for presentations around coding related topics
+- [liuguitics](https://github.com/liuguitics/BNU-Beamer-Theme) — ★ 6 — This template is adapted from THU Beamer Theme and DLUT Beamer Theme, the contents, fonts, navigation bar, color and logo were modified. Note that smoothbars...
+- [ZZUTUG](https://github.com/ZZUTUG/ZZU-Beamer) — ★ 6 — Collection of Beamer themes for Zhengzhou University
+- [VIP233333](https://github.com/VIP233333/UCAS-beamer) — ★ 6 — A Beamer Theme of UCAS for academic report, thesis and talk.
+- [horle](https://github.com/horle/beamer-uni-siegen) — ★ 6 — A LaTeX beamer theme for the new University of Siegen design
+- [egarpor](https://github.com/egarpor/picsec) — ★ 6 — A fresh and clean beamer theme, with pictures in the titles of the sections
+- [wuchlei](https://github.com/wuchlei/tsinghua-beamer-theme) — ★ 6 — Unofficial Tsinghua University Beamer Template, forked from https://github.com/basaldella/beamerthemeuniud
+- [zemarchezi](https://github.com/zemarchezi/CleanEasy_BeamerTheme) — ★ 6 — —
+- [ymliucs](https://github.com/ymliucs/SUDA-Beamer-Theme) — ★ 6 — 苏州大学 Beamer 主题模板
+- [MKupperman](https://github.com/MKupperman/uw-beamer-theme) — ★ 6 — A University of Washington Themed beamer presentation
+- [htlin222](https://github.com/htlin222/lumiterm) — ★ 6 — Light-themed web terminal (ttyd) for live presentations, demos & teaching with real-time audience comments (Cloudflare), AI command explanations (Groq), spot...
+- [timerring](https://github.com/timerring/SDU-beamer) — ★ 6 — An unofficial LaTeX Template of Beamer for Shandong University.  山东大学 Beamer 模板。
+- [carboneio](https://github.com/carboneio/carbone-sdk-java) — ★ 6 — Generate documents with Carbone, using templates and JSON data-set. Create invoices, reports, certificates, contracts, financial statements, documents like W...
+- [Helmholtz-AI-Energy](https://github.com/Helmholtz-AI-Energy/beamer-template-2024) — ★ 6 — Beamer template for the 2024 Helmholtz AI style
+- [Aermisty](https://github.com/Aermisty/beamer-sgp940) — ★ 6 — LaTeX beamer template based on Singapore theme
+- [nakajmg](https://github.com/nakajmg/talkie-generator) — ★ 5 — Templates generator for Talkie.js
+- [mozilla](https://github.com/mozilla/html-presentation-templates) — ★ 5 — INACTIVE - http://mzl.la/ghe-archive - HTML-only slide templates in the Mozilla style
+- [creazy231](https://github.com/creazy231/nuxt-reveal) — ★ 5 — Reveal Bootstrap Theme with Nuxt.js
+- [carmellolb](https://github.com/carmellolb/Simple-Fluent-Web-Template) — ★ 5 — A template made of pure HTML, JS, CSS, and Bootstrap code meant to bring Microsoft's Fluent Design effects, like Acrylic, Reveal, shadows, and more to the web.
+- [AhianZhang](https://github.com/AhianZhang/web-slides-template) — ★ 5 — 使用 reveal 制作网页版幻灯片模板及示例
+- [pinam45](https://github.com/pinam45/utbm-beamer-theme) — ★ 5 — A LaTeX beamer version of the UTBM presentation theme using TikZ
+- [eduardotlc](https://github.com/eduardotlc/IqUSPtex) — ★ 5 — LaTeX beamer presentation theme, created for the University of São Paulo institue of chemistry (IQ-USP)
+- [planetoftheweb](https://github.com/planetoftheweb/slides_template) — ★ 5 — —
+- [huxuan](https://github.com/huxuan/latex_buaasoft_bachelor_slide) — ★ 5 — The LaTeX Slide Template for Bachelor Thesis Defence of Software College in BUAA
+- [gongcastro](https://github.com/gongcastro/slides-template) — ★ 5 — A template repository for my slides.
+- [Sutto](https://github.com/Sutto/slidedown-template) — ★ 5 — a simple base project for a presentation built on slidedown
+- [adparadise](https://github.com/adparadise/jekyll-slides-template) — ★ 5 — This project is a starting point for an HTML-based slideshow system.
+- [ubucon-asia](https://github.com/ubucon-asia/2021-slide-template) — ★ 5 — Presentation templates for UbuCon Asia 2021
+- [hrs](https://github.com/hrs/latex-presentation-template) — ★ 5 — A template to create new presentation projects using LaTeX and Beamer
+- [Team-1207](https://github.com/Team-1207/Presentation-template) — ★ 5 — Presentation template for ETU "LETI" based on original brandbook
+- [olsn](https://github.com/olsn/presentr) — ★ 5 — html5 presentation template
+- [ceylon](https://github.com/ceylon/ceylon-presentations) — ★ 5 — Presentation template for Ceylon
+- [berlin-econ](https://github.com/berlin-econ/BSE-template) — ★ 5 — Poster and presentation templates for members of the Berlin School of Economics (BSE).
+- [mljar](https://github.com/mljar/mercury-slides-themes) — ★ 5 — Slides themes available in the Mercury framework
+- [ChasNelson1990](https://github.com/ChasNelson1990/durham-university-beamer-theme) — ★ 5 — A Latex Beamer Theme based on the Durham PPT Template. All rights belong to Durham University.
+- [kaimast](https://github.com/kaimast/cornell-beamer) — ★ 5 — A beamer theme for Cornell
+- [StickCui](https://github.com/StickCui/BeamerForXidian) — ★ 5 — Mainly package for Xidian University‘s Beamer. Beamer theme based on Berkeley.
+- [Eivysaur](https://github.com/Eivysaur/Beamer-NMBU) — ★ 5 — Beamer theme for NMBU
+- [kidzik](https://github.com/kidzik/stanford-beamer) — ★ 5 — Unofficial Stanford's beamer theme (template) LaTeX
+- [wolfsonliu](https://github.com/wolfsonliu/wolf_beamer) — ★ 5 — Beamer themes.
+- [doitian](https://github.com/doitian/beamer-themes) — ★ 5 — customized beamer themes
+- [Albert-Li-Sz](https://github.com/Albert-Li-Sz/NJXZU-Beamer-Theme-master) — ★ 5 — NJXZU-Beamer-Theme-master
+- [Kekkodf](https://github.com/Kekkodf/Unofficial-Beamer-Template-Unipd) — ★ 5 — Unofficial Beamer theme LaTeX
+- [TeXhackse](https://github.com/TeXhackse/37c3-beamer) — ★ 5 — unofficial beamer theme for 37c3
+- [tuw-cpsg](https://github.com/tuw-cpsg/tuw-latex-beamer-theme) — ★ 5 — TU Wien Latex beamer theme
+- [Miracle0565](https://github.com/Miracle0565/BUCT-Beamer-Theme) — ★ 5 — A beamer theme for BUCT
+- [cola4cube](https://github.com/cola4cube/beamer-theme-tub) — ★ 5 — Beamer theme for Technische Universität Berlin
+- [ScPoEcon](https://github.com/ScPoEcon/scpo-beamer) — ★ 5 — A beamer theme for Sciences Po
+- [D-viddddd](https://github.com/D-viddddd/TU-Dresden-Beamer-Template) — ★ 5 — Minimal unofficial TU Dresden blue Beamer theme
+- [Falkor](https://github.com/Falkor/beamerthemeFalkor) — ★ 5 — My personal LaTeX Beamer theme, provided in a working environment
+- [longr](https://github.com/longr/lancaster_theme) — ★ 5 — Lancaster University beamer theme based off of the metropolis theme
+- [MTCreator](https://github.com/MTCreator/UHBeamerTheme) — ★ 5 — An unofficial UHasselt Beamer theme, because they only provide a PowerPoint template :(
+- [chaeger](https://github.com/chaeger/chalmers-beamer) — ★ 5 — A LaTeX Beamer theme for students and researchers at Chalmers University of Technology
+- [wuenzhe](https://github.com/wuenzhe/HZAUBeamer) — ★ 5 — 华中农业大学Beamer模板(Unofficial latex beamer theme for HZAU)
+- [Hazegard](https://github.com/Hazegard/BeamerTheme) — ★ 5 — Theme for Beamer inspired by https://github.com/edasubert/beamerMaterialDesign
+- [latexstudio](https://github.com/latexstudio/HUST-Beamer-Theme) — ★ 5 — A LaTeX beamer theme template for Huazhong University of Science and Technology。华中科技大学beamer模板（简单更改自THUBeamer模板）
+- [uta-smile](https://github.com/uta-smile/beamer-theme) — ★ 5 — —
+- [tpanum](https://github.com/tpanum/aau-beamer-theme) — ★ 5 — A LaTeX Beamer template for Aalborg University.
+- [Xuezhenggdut](https://github.com/Xuezhenggdut/GDUT-Beamer-Theme) — ★ 5 — —
+- [JonnyS1226](https://github.com/JonnyS1226/hit-simple-beamer-theme) — ★ 5 — 源自College-Beamer-Template的哈工大beamer模版（非官方）
+- [Neo-Oli](https://github.com/Neo-Oli/browser-presentation-tool) — ★ 5 — A simple template for making a presentations in html/css
+- [KuntzeM](https://github.com/KuntzeM/LaTex-Beamer-Template) — ★ 5 — template for presentations with latex
+- [nguyengiabach1201](https://github.com/nguyengiabach1201/Prezen) — ★ 5 — A lightweight, zero‑dependency CLI for transforming GitHub‑flavored Markdown into full‑screen presentation slides. It bundles syntax highlighting, MathJax su...
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-s6-blank) — ★ 5 — S6 Blank - Slide Show (S9) Template Pack
+- [ufuk-cakir](https://github.com/ufuk-cakir/manim-deck) — ★ 5 — Template for animated research presentations with Manim & Manim Slides
+- [henrythemes](https://github.com/henrythemes/jekyll-talks-theme) — ★ 5 — jekyll talks theme (using the s6 slideshow templates / machinery / kit )
+- [Pondidum](https://github.com/Pondidum/awesome-talks) — ★ 4 — Awesome presentations and conference talks
+- [joescii](https://github.com/joescii/presentera.g8) — ★ 4 — g8 template for making awesome presentations with Presentera
+- [meonkeys](https://github.com/meonkeys/git-talk) — ★ 4 — Awesome presentation on some Git concepts
+- [zayennn](https://github.com/zayennn/let-it-draw) — ★ 4 — 🎨 Let It Draw — Christmas-themed interactive drawing animation. Watch SVG artwork (trees, deer, star) draw themselves automatically. Hover to reveal hidden i...
+- [josefaidt](https://github.com/josefaidt/mdx-deck-theme-garlic) — ★ 4 — garlic theme for mdx-deck
+- [rauchg](https://github.com/rauchg/mdx-deck-theme-berkshire) — ★ 4 — —
+- [ujhelyiz](https://github.com/ujhelyiz/Presentation-Theme) — ★ 4 — An Eclipse theme suited for demo presentations (e.g. larger font-size)
+- [iiasa](https://github.com/iiasa/beamer-theme-iiasa) — ★ 4 — A presentation theme for the LaTeX Beamer package
+- [bhood4](https://github.com/bhood4/SlideTemplate) — ★ 4 — Google Slide Add-on to templatize the slide, replacing ${} variables with values from a sidebar form.
+- [StephenGrider](https://github.com/StephenGrider/Famous-SlideTemplateApp) — ★ 4 — —
+- [bamboofox](https://github.com/bamboofox/slide-template) — ★ 4 — :book: Bamboofox slide template
+- [hist2](https://github.com/hist2/slide_template) — ★ 4 — 上海科技大学演示模板，两个文件类型：beamer和powerpoint
+- [Neiou8](https://github.com/Neiou8/Neepu-Slides-Template) — ★ 4 — Neepu Beamer Template
+- [proracer5576-create](https://github.com/proracer5576-create/notebooklm-slide-templates) — ★ 4 — 14 NotebookLM slide design templates for presentations
+- [jespercockx](https://github.com/jespercockx/lagda-slides-template) — ★ 4 — A template for creating Beamer slides with literate Agda code
+- [siraom15](https://github.com/siraom15/slide-share) — ★ 4 — Website for sharing slide template :)
+- [PoisotLab](https://github.com/PoisotLab/PLPT) — ★ 4 — Presentation template
+- [CampusHash](https://github.com/CampusHash/deck) — ★ 4 — CampusHash HTML5 Presentation Template.
+- [AlbertXiebnu](https://github.com/AlbertXiebnu/presentationTemplate) — ★ 4 — 自制北师大学术PPT模板
+- [KIOS-Research](https://github.com/KIOS-Research/KIOS-CoE-LaTeX-Presentation-Template) — ★ 4 — The KIOS CoE LaTeX Beamer Template for presentations.
+- [xuhangc](https://github.com/xuhangc/UMac-Beamer-Template) — ★ 4 — Beamer presentation template for University of Macau
+- [christian-nils](https://github.com/christian-nils/presentation_template) — ★ 4 — Presentation template using VueJS and EagleJS, with some custom components
+- [jefeish](https://github.com/jefeish/presentation-template) — ★ 4 — —
+- [hkilter](https://github.com/hkilter/presentation-template) — ★ 4 — Personal TeX template based on a custom Beamer theme
+- [JJLibra](https://github.com/JJLibra/Paper-presentation-template) — ★ 4 — 📑 A modern, responsive Next.js template for presenting research papers or projects. 一个基于 Next.js 的展示模板，用于展示科研论文或项目
+- [juliandunn](https://github.com/juliandunn/github-iapresenter-theme) — ★ 4 — iA Presenter theme to mimic GitHub's 2022 Presentation templates
+- [rocketman768](https://github.com/rocketman768/NUBeamer) — ★ 4 — A LaTeX Beamer presentation template with Northwestern University colors and logos.
+- [evanca](https://github.com/evanca/flutter_deck_gde_template) — ★ 4 — A vibe-codeable Google Developer Experts presentation template built with Flutter and flutter_deck.
+- [jonas-kell](https://github.com/jonas-kell/beamer-theme-unia-mntf) — ★ 4 — A theme for the Latex package beamer that replicates the look of the powerpoint-presentation-template published by and for the University of Augsburg.
+- [KevinGuo1007](https://github.com/KevinGuo1007/GDUE-Beamer-Slides-Theme) — ★ 4 — 广东第二师范学院 Beamer 模版 | Beamer template for Guangdong University of Education
+- [NEARLab-MedicalRobotics](https://github.com/NEARLab-MedicalRobotics/Templates) — ★ 4 — LaTeX, Word and PPT templates for writing MSc thesis
+- [Rasukarusan](https://github.com/Rasukarusan/keynote-template) — ★ 4 — Keynote's my-shape template
+- [mantzaris](https://github.com/mantzaris/PegasusBeamer) — ★ 4 — A beamer theme for the University Of Central Florida (UCF)
+- [jamie-lilly](https://github.com/jamie-lilly/osu-beamer-theme) — ★ 4 — A custom Beamer theme for Oregon State University.
+- [ssloxford](https://github.com/ssloxford/beamer-oxford) — ★ 4 — Customisable beamer theme for Oxford presentations
+- [tugi](https://github.com/tugi/ZAH_beamer) — ★ 4 — Beamer theme for ZAH
+- [vachan-potluri](https://github.com/vachan-potluri/beamer_themes) — ★ 4 — A repo for different beamer themes
+- [fgrelard](https://github.com/fgrelard/mtheme) — ★ 4 — Beamer theme inspired from modern theme
+- [lgienapp](https://github.com/lgienapp/leipzig-theme) — ★ 4 — A beamer theme that conforms to the corporate design of the University of Leipzig.
+- [Markus-de-Koster](https://github.com/Markus-de-Koster/LaTeX-beamer-TH-Koeln) — ★ 4 — LaTeX beamer theme in the design of cologne university of applied sciences - TH Köln
+- [hayamiz](https://github.com/hayamiz/beamerMoreBlue) — ★ 4 — LaTeX Beamer theme
+- [ethiy](https://github.com/ethiy/ign_beamer_theme) — ★ 4 — @IGNF beamer theme.
+- [jorgehatccrma](https://github.com/jorgehatccrma/ccrma-beam) — ★ 4 — LaTeX CCRMA Beamer Theme
+- [Mesabloo](https://github.com/Mesabloo/beamer-theme) — ★ 4 — A simple colorful beamer theme
+- [DeruiZhao](https://github.com/DeruiZhao/Aarhus-University-beamer-theme) — ★ 4 — Aarhus University LaTeX beamer theme, unofficial
+- [kittykat](https://github.com/kittykat/guadec-theme-2013) — ★ 4 — A beamer theme for GUADEC 2013 presentations
+- [raden](https://github.com/raden/beamer-ampang) — ★ 4 — Latex Beamer theme which uses Ubuntu font
+- [royaleconqueso](https://github.com/royaleconqueso/fsu-beamer-theme) — ★ 4 — Florida State University Beamer Theme for LaTeX
+- [xunyoyo](https://github.com/xunyoyo/SHZU-Beamer-Theme) — ★ 4 — 石河子大学(SHZU)-Beamer-Theme
+- [maxnoe](https://github.com/maxnoe/beamerthemectao) — ★ 4 — Unofficial LaTeX beamer theme using the new CTAO CD
+- [erictleung](https://github.com/erictleung/beamer-theme) — ★ 4 — :bar_chart: My custom LaTeX beamer theme for presentations
+- [haemka](https://github.com/haemka/beamerthemestralsund) — ★ 4 — LaTeX Beamer theme for University of Applied Sciences Stralsund
+- [nimpo](https://github.com/nimpo/GreyWolfsScoutsBeamerTheme) — ★ 4 — A Beamer theme for LaTeX presentations using the Scout Brand
+- [JulAgu](https://github.com/JulAgu/simpleMIA_beamer_theme) — ★ 4 — Minimalist unofficial beamer theme for MIA Paris-Saclay Unit Research.
+- [raysuzeyu-lgtm](https://github.com/raysuzeyu-lgtm/su-dsv-beamer) — ★ 4 — SU-Ray: An unofficial Beamer theme for Stockholm University DSV students.
+- [VIP233333](https://github.com/VIP233333/BUCEA-beamer) — ★ 4 — A Beamer Theme of BUCEA for academic report, thesis and talk.
+- [tobywf](https://github.com/tobywf/leeds-beamer) — ★ 4 — A beamer theme based loosely on the University of Leeds style guide (around 2010)
+- [wanglh03](https://github.com/wanglh03/SCUT-Beamer-Theme) — ★ 4 — A Beamer Theme of SCUT. 华南理工大学 Beamer 模板。
+- [sambuysse](https://github.com/sambuysse/inuits-latex-beamer-theme) — ★ 4 — Inuits themed latex beamer template.
+- [Giuseppe499](https://github.com/Giuseppe499/Metropolis-Uninsubria) — ★ 4 — An unofficial beamer theme for the University of Insubria (Università degli Studi dell'Insubria). This is an adaptation of the metropolis theme
+- [stealthemoon0331](https://github.com/stealthemoon0331/latex-beamer-theme-elegance) — ★ 4 — —
+- [xemadp](https://github.com/xemadp/kntu-beamer-presentation-modern) — ★ 4 — Beamer Presentation Modern Theme for KNTU
+- [bahremsd](https://github.com/bahremsd/itutextemplates) — ★ 4 — This repository contains LaTeX templates for Istanbul Technical University, including theses, assignments, emails, and slides. These templates are designed t...
+- [Ruinius](https://github.com/Ruinius/bluefin-ai-demo) — ★ 4 — Zero-dependency HTML demo of my new project. Sharing this as a template for others to create beautiful demo-presentations.
+- [arm-education](https://github.com/arm-education/PPT-branding-tool) — ★ 4 — Productivity tool for batch rebranding and template refactoring of PowerPoint presentations (internal, tools)
+- [brandonhimpfen](https://github.com/brandonhimpfen/awesome-powerpoint) — ★ 4 — A curated list of tools, templates, add-ins, design resources, automation tools, learning materials, and communities for Microsoft PowerPoint.
+- [mustaddon](https://github.com/mustaddon/PowerPointService) — ★ 4 — .NET PowerPoint presentation based on template and model
+- [ceplan](https://github.com/ceplan/template-slides) — ★ 4 — Modelos de apresentação
+- [moritzhoferer](https://github.com/moritzhoferer/beamer_template) — ★ 4 — Templates for the members of the MIP chair at ETH Zurich and everybody else.
+- [afnizarnur](https://github.com/afnizarnur/be-awesome-with-git) — ★ 4 — A slide how to be awesome with Git 😎
+- [borjapetit](https://github.com/borjapetit/tex_template_slides) — ★ 4 — A Beamer template for academic presentations
+- [swup](https://github.com/swup/slide-theme) — ★ 4 — A swup theme for slide and fade animations 🎨
+- [kakcura](https://github.com/kakcura/AwesomeSlides) — ★ 3 — Awesome presentations by just waving to a web-cam! A hand-gesture controlled fully client-side presentation platform.
+- [ilaborie](https://github.com/ilaborie/css-awesome) — ★ 3 — CSS is Awesome! presentation
+- [xadahiya](https://github.com/xadahiya/gcm-tensorflow-udacity) — ★ 3 — Tutorial to use Google cloud compute instances with tensorflow. Thanks John graves (https://github.com/jg1141) for such an awesome presentation!
+- [anhttra](https://github.com/anhttra/how-to-make-an-awesome-presentation) — ★ 3 — My keynotes about how to make a good presentation
+- [Arish-Shah](https://github.com/Arish-Shah/make-slides) — ★ 3 — HTML Framework for creating awesome presentations
+- [ameerthehacker](https://github.com/ameerthehacker/mdx-slides) — ★ 3 — Build awesome presentations using mdx
 
-_(38 repos in this category)_
+_Showing top 500 of 2898 repos in this category — the full list with all 2898 entries is in [`data/repos.json`](data/repos.json)._
 
 ## Knowledge Bases, Datasets, Agents & Misc
 
 Agent frameworks, datasets, brand/knowledge skills and related misc tooling.
 
-- [huohua325/Memslides](https://github.com/huohua325/Memslides) — ★ 838 — A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.
-- [yu4u/convnet-drawer](https://github.com/yu4u/convnet-drawer) — ★ 608 — Python script for illustrating Convolutional Neural Networks (CNN) using Keras-like model definitions
-- [cpp-for-yourself/lectures-and-homeworks](https://github.com/cpp-for-yourself/lectures-and-homeworks) — ★ 430 — ?? A place for all lecture scripts, projects etc. for the "C++ for yourself" course
-- [robflaherty/html-slideshow](https://github.com/robflaherty/html-slideshow) — ★ 177 — Lightweight HTML5-based slideshow
-- [relevance/org-html-slideshow](https://github.com/relevance/org-html-slideshow) — ★ 160 — JavaScript presentation slides generated from Emacs org-mode
-- [riverscn/intro-agentic-ai](https://github.com/riverscn/intro-agentic-ai) — ★ 126 — ?? Agentic AI:?????????
-- [robflaherty/firstImpression.js](https://github.com/robflaherty/firstImpression.js) — ★ 104 — Micro-library for detecting new users
-- [fabianabarca/kalouk-xyz](https://github.com/fabianabarca/kalouk-xyz) — ★ 104 — Sitio web con presentaciones interactivas usando Kalouk.
-- [henryhyw/slidepoise](https://github.com/henryhyw/slidepoise) — ★ 102 — Open-source agentic slide generation with free-form visual design and editable PowerPoint output.
-- [Aherontas/Pycon_Greece_2025_Presentation_Agents](https://github.com/Aherontas/Pycon_Greece_2025_Presentation_Agents) — ★ 95 — —
-- [tanaikech/DocsServiceApp](https://github.com/tanaikech/DocsServiceApp) — ★ 69 — This is a Google Apps Script library for supporting Document service, Docs API, Spreadsheet service, Sheets API, Slides service and Slides API. The aim of th...
-- [gatelynch/html-slides](https://github.com/gatelynch/html-slides) — ★ 43 — —
-- [ashleygwilliams/jsconf-2015-deck](https://github.com/ashleygwilliams/jsconf-2015-deck) — ★ 42 — deck for jsconf2015 talk, "if you wish to learn e6/2015 from scratch, you must first invent the universe"
-- [beyondworks/lean-deck](https://github.com/beyondworks/lean-deck) — ★ 31 — One slide API, seventeen design languages. Token-driven React slide deck kit.
-- [slideshare/SlideshareAPIExamples](https://github.com/slideshare/SlideshareAPIExamples) — ★ 31 — Wrappers and examples for how to use the Slideshare API
-- [amouat/revealjs-docker](https://github.com/amouat/revealjs-docker) — ★ 27 — Reveal JS Presentation Software in a Docker Container
-- [gpenessot/Automate-Presentation-Creation-with-Python](https://github.com/gpenessot/Automate-Presentation-Creation-with-Python) — ★ 25 — Gnrer des prsentations PowerPoint depuis Python. Compagnon d'un article Medium
-- [googleworkspace/slides-api](https://github.com/googleworkspace/slides-api) — ★ 23 — Learn How to Use the Google Slides API
-- [hairizuanbinnoorazman/rgoogleslides](https://github.com/hairizuanbinnoorazman/rgoogleslides) — ★ 23 — R wrapper for Google Slides API
-- [CommerceClarity/presentation-agent](https://github.com/CommerceClarity/presentation-agent) — ★ 19 — —
-- [AIGeeksGroup/PresentAgent-2](https://github.com/AIGeeksGroup/PresentAgent-2) — ★ 18 — PresentAgent-2: Towards Generalist Multimodal Presentation Agents
-- [xueyouluo/presentation_agent](https://github.com/xueyouluo/presentation_agent) — ★ 16 — ?????? PPT ??? Agent? SAAS ??,???? claude code ???
-- [josephdadams/presentationbridge-client](https://github.com/josephdadams/presentationbridge-client) — ★ 14 — Interfaces with your lyric software to then send midi messages, http requests, etc. over the network based on current slide data
-- [dtao/slidedown](https://github.com/dtao/slidedown) — ★ 12 — Markdown slide decks
-- [ymrl/mdslide](https://github.com/ymrl/mdslide) — ★ 11 — Markdown Slide Generator
-- [RKNITH/POWERPOINT-GENERATOR-PYTHON](https://github.com/RKNITH/POWERPOINT-GENERATOR-PYTHON) — ★ 10 — —
-- [Spencer-Easton/Apps-Script-Slides-Library](https://github.com/Spencer-Easton/Apps-Script-Slides-Library) — ★ 9 — A generated Google Apps Script library for the Slides API
-- [moefc32/pitch-deck-generator](https://github.com/moefc32/pitch-deck-generator) — ★ 8 — A pitch deck documents generator powered by Gemini AI
-- [azurity/md-slide](https://github.com/azurity/md-slide) — ★ 7 — a markdown slide server
-- [jvenezia/slideshare_api](https://github.com/jvenezia/slideshare_api) — ★ 7 — Ruby wrapper for the Slideshare API.
-- [equalsgibson/goslide](https://github.com/equalsgibson/goslide) — ★ 6 — Slide API Library written in Go
-- [lanroth/tts-playing-card-deck-generator](https://github.com/lanroth/tts-playing-card-deck-generator) — ★ 6 — turn a set of image files into a Tabletop Simulator compatible deck of regular playing cards
-- [RealAdamSinger/board-game-deck-generator](https://github.com/RealAdamSinger/board-game-deck-generator) — ★ 5 — Generate Custom Cards for Quickly Printing and Prototyping Your Board Games!
-- [lucasgdb/deck-generator](https://github.com/lucasgdb/deck-generator) — ★ 5 — Gerador de Deck multifuno para Clash Royale (Windows 7 e posterior)
-- [vcampitelli/slides-apis-seguras](https://github.com/vcampitelli/slides-apis-seguras) — ★ 5 — Slides da minha palestra "Criando APIs seguras"
-- [lordofsunshine/ai-powerpoint-generator-agent](https://github.com/lordofsunshine/ai-powerpoint-generator-agent) — ★ 5 — Utility for creating Powerpoint presentations using artificial intelligence (AI) based on the io.net library.
-- [xie186/gs2video](https://github.com/xie186/gs2video) — ★ 4 — GS2Video is a Python tool that converts Google Slides presentations into videos. It uses Google Slides API to fetch the presentation content, generates audio...
-- [abharadwaj09/Voice-to-Slide-Deck--Generator](https://github.com/abharadwaj09/Voice-to-Slide-Deck--Generator) — ★ 4 — VoiceToSlide  AI-powered platform that converts spoken audio and supporting PDFs into professional PowerPoint presentations using AI, with customizable slide...
-- [5c0tt411en/SkateBoardDeckGenerator](https://github.com/5c0tt411en/SkateBoardDeckGenerator) — ★ 4 — Skate board deck path generator for DIY skate board maker.
-- [daoodaba975/agentic.coding.meetup](https://github.com/daoodaba975/agentic.coding.meetup) — ★ 4 — Slides de la prsentation "Agentic Coding : quand ton terminal devient ton co-dveloppeur" lors du Live Koor 2026.
-- [esausilva/synology-photos-slideshow-api](https://github.com/esausilva/synology-photos-slideshow-api) — ★ 4 — An API that downloads random photos from a Synology NAS, converts them to WebP, and serves them for slideshow clients.
-- [Fltvv/ai-pitch-deck-generator](https://github.com/Fltvv/ai-pitch-deck-generator) — ★ 4 — —
-- [NKI-AI/slidescore-api](https://github.com/NKI-AI/slidescore-api) — ★ 3 — Python utilities to interface with SlideScore
-- [tolares/powerpoint-generator](https://github.com/tolares/powerpoint-generator) — ★ 3 — Generate a powerpoint based on a topic
-- [ioannalachana/academic_presentation_agent](https://github.com/ioannalachana/academic_presentation_agent) — ★ 3 — —
-- [Musavirkhaliq/Presentation_agent](https://github.com/Musavirkhaliq/Presentation_agent) — ★ 2 — —
-- [HatemSal/presentation-agent](https://github.com/HatemSal/presentation-agent) — ★ 2 — —
-- [AminHaghdadi/Text_to_PPT](https://github.com/AminHaghdadi/Text_to_PPT) — ★ 2 — Generate PowerPoint using OpenAI Models
-- [jmagnone/codeigniter-slideshare-api](https://github.com/jmagnone/codeigniter-slideshare-api) — ★ 2 — This is a Slideshare API for CodeIgniter based on SSUtils and ported to CodeIgniter
-- [tmlabss/noguardian](https://github.com/tmlabss/noguardian) — ★ 2 — A GoGuardian (possibly other filters) bypass that uses iframes and the Google Slides api to fully cloak your item in a https://docs.google.com web popup. Wri...
-- [laurentChin/rt-shared-slideshow-api](https://github.com/laurentChin/rt-shared-slideshow-api) — ★ 2 — —
-- [davejlong/n8n-nodes-slide](https://github.com/davejlong/n8n-nodes-slide) — ★ 2 — n8n Community node for the Slide API
-- [EVEprosper/ProsperSlides](https://github.com/EVEprosper/ProsperSlides) — ★ 2 — Use Google's Slides API to automate show layout
-- [RLee38/SlideFlick](https://github.com/RLee38/SlideFlick) — ★ 2 — A gesture controlled google slides tool using the a media API and the Google Slides API that is written in Python
-- [Mark-McCracken/Quiz-Powerpoint-Generator](https://github.com/Mark-McCracken/Quiz-Powerpoint-Generator) — ★ 2 — automation code to turn quiz questions into powerpoint presentation
-- [vanduc2514/presentation-agent-harness](https://github.com/vanduc2514/presentation-agent-harness) — ★ 1 — A presentation about modern Agentic IDE evaluation
-- [Archita2721/Text_to_PPT](https://github.com/Archita2721/Text_to_PPT) — ★ 1 — A Streamlit application utilizing OpenAI's  model to dynamically generate PowerPoint presentations based on user-provided topics.
-- [kiruthikpurpose/TextToPPT](https://github.com/kiruthikpurpose/TextToPPT) — ★ 1 — —
-- [kumaresankp/AI_Powerpoint_Generator](https://github.com/kumaresankp/AI_Powerpoint_Generator) — ★ 1 — —
-- [JorgeSotoAudelo/AI_PresentationGenerator](https://github.com/JorgeSotoAudelo/AI_PresentationGenerator) — ★ 1 — —
-- [patrickjvsa/ChatPPT_AI_Presentation_Generator](https://github.com/patrickjvsa/ChatPPT_AI_Presentation_Generator) — ★ 1 — —
-- [athxrva02/adversarial-presentation-agent](https://github.com/athxrva02/adversarial-presentation-agent) — ★ 1 — —
-- [NyxFoundation/presentation-agent](https://github.com/NyxFoundation/presentation-agent) — ★ 1 — —
-- [che-lor/powerpoint-generator](https://github.com/che-lor/powerpoint-generator) — ★ 1 — —
-- [FCO/PresentationCLI](https://github.com/FCO/PresentationCLI) — ★ 1 — —
-- [tiwariaashish24/Ai-Pitch-Deck](https://github.com/tiwariaashish24/Ai-Pitch-Deck) — ★ 1 — —
-- [Paritosh008/AI-Pitch-Deck-Generator](https://github.com/Paritosh008/AI-Pitch-Deck-Generator) — ★ 1 — A user submits a startup idea ? an AI agent generates structured slide content ? OpenAI creates images ? ImageKit hosts them ? Inngest runs everything in the...
-- [Nikethan-1234/edufinance-ai-pitch-deck](https://github.com/Nikethan-1234/edufinance-ai-pitch-deck) — ★ 1 — —
-- [YogyaChhatwani/ai-pitch-deck](https://github.com/YogyaChhatwani/ai-pitch-deck) — ★ 1 — —
-- [Aestheticsuraj234/ai-pitch-deck-build](https://github.com/Aestheticsuraj234/ai-pitch-deck-build) — ★ 1 — —
-- [mediafinger/Sandwichr](https://github.com/mediafinger/Sandwichr) — ★ 1 — w6 / d1 / u350 / Slides API
-- [esimkowitz/Slide-Summarizer](https://github.com/esimkowitz/Slide-Summarizer) — ★ 1 — Experiment with the new Google Slides API.
-- [n-witt/powerpointkaraoke_generator](https://github.com/n-witt/powerpointkaraoke_generator) — ★ 1 — Assigns Slidedecks randomly to PowerpointKaraoke Players
-- [hedulove/powerpoints_generator](https://github.com/hedulove/powerpoints_generator) — ★ 1 — PowerPoint presentations generator using Google Gemini API
-- [Spencer-Easton/Apps-Script-SlidesApp-Service](https://github.com/Spencer-Easton/Apps-Script-SlidesApp-Service) — ★ 1 — A Google Apps Script service level library for the Slides API
-- [pmboutet/n8n-google-slides-api](https://github.com/pmboutet/n8n-google-slides-api) — ★ 1 — Optimized Google Slides API integration code for n8n workflows with comprehensive examples and utilities
-- [jorgebotas/gslides-claudecode](https://github.com/jorgebotas/gslides-claudecode) — ★ 1 — Google Slides API wrapper for Claude Code projects: append text, bullets, images, tables, and speaker notes via service account
-- [howdy39/google-slides-api-demo](https://github.com/howdy39/google-slides-api-demo) — ★ 1 — Google Slides API demo
-- [arturo21/slideapi](https://github.com/arturo21/slideapi) — ★ 1 — Slide API para general.js
-- [PriyaBhanushali102/morphdeck](https://github.com/PriyaBhanushali102/morphdeck) — ★ 0 — AI-Generated PPT
-- [SrinivasShirure/Ai-Generated-PPT-for-Devops-concept-](https://github.com/SrinivasShirure/Ai-Generated-PPT-for-Devops-concept-) — ★ 0 — —
-- [brishtighosh90-commits/Payroll-system-Postar-source-code-ai-generated-ppt](https://github.com/brishtighosh90-commits/Payroll-system-Postar-source-code-ai-generated-ppt) — ★ 0 — —
-- [xfu4739-commits/AI-Generate-PPT](https://github.com/xfu4739-commits/AI-Generate-PPT) — ★ 0 — —
-- [rvats01/text_to_ppt](https://github.com/rvats01/text_to_ppt) — ★ 0 — —
-- [14mb1v45h/Cyberdudebivash_TextToPPT_Converter](https://github.com/14mb1v45h/Cyberdudebivash_TextToPPT_Converter) — ★ 0 — GUI-based tool built in Python that converts input text (e.g., outlines, articles, or notes) into a markdown-formatted PPT presentation structure. I
-- [jatinshrivastava/TextToPPT-Library](https://github.com/jatinshrivastava/TextToPPT-Library) — ★ 0 — —
-- [KrutiSahu1610/text_to_ppt](https://github.com/KrutiSahu1610/text_to_ppt) — ★ 0 — —
-- [saeel03/TextToPpt](https://github.com/saeel03/TextToPpt) — ★ 0 — GenSlides is a React + Flask app that lets users instantly generate presentations from topics or content, convert PDF ? Word, and build professional resumes....
-- [jatinshrivastava/TextToPPTWeb](https://github.com/jatinshrivastava/TextToPPTWeb) — ★ 0 — This application uses TextToPPT-Library.
-- [TrungHocCode/presentation-agent](https://github.com/TrungHocCode/presentation-agent) — ★ 0 — —
-- [bbrunossf/presentationAgent](https://github.com/bbrunossf/presentationAgent) — ★ 0 — —
-- [MariamManjo/presentation-agent](https://github.com/MariamManjo/presentation-agent) — ★ 0 — —
-- [Marvin19700118/presentation-agent](https://github.com/Marvin19700118/presentation-agent) — ★ 0 — multiagents
-- [Chepurnikh/PresentationCLI](https://github.com/Chepurnikh/PresentationCLI) — ★ 0 — ???? PresentationCLI is cli in C++ for editing presentations
-- [10xDevAman/AiPitchDeck](https://github.com/10xDevAman/AiPitchDeck) — ★ 0 — —
-- [alexmany29/html-slide-generator](https://github.com/alexmany29/html-slide-generator) — ★ 0 — SlideForge - Create stunning presentations with HTML, CSS, and JavaScript
-- [DanielJosefKrueger/PresentationClient](https://github.com/DanielJosefKrueger/PresentationClient) — ★ 0 — —
-- [Norbi0801/presentation-cli](https://github.com/Norbi0801/presentation-cli) — ★ 0 — —
-- [Valeronlol/presentation-cli](https://github.com/Valeronlol/presentation-cli) — ★ 0 — —
-- [SarveshN07/AiPitchDeck](https://github.com/SarveshN07/AiPitchDeck) — ★ 0 — —
-- [priyank-kelp/Teaser-JSON-to-HTML-Slide-Generator](https://github.com/priyank-kelp/Teaser-JSON-to-HTML-Slide-Generator) — ★ 0 — converts json file to html
-- [gopallchoudhary/Deckly](https://github.com/gopallchoudhary/Deckly) — ★ 0 — AI Pitch Deck
-- [asdaSDasdrhgrth7/PresentationCLI](https://github.com/asdaSDasdrhgrth7/PresentationCLI) — ★ 0 — ???? PresentationCLI is cli in C++ for editing presentations
-- [valubah/finshieldai](https://github.com/valubah/finshieldai) — ★ 0 — FinShield Ai Pitch Deck
-- [aayush-gupta90/slidely-ai-pitch-deck](https://github.com/aayush-gupta90/slidely-ai-pitch-deck) — ★ 0 — Slidely AI pitch deck
-- [andreirizeaa/ib-pitchbook-builder](https://github.com/andreirizeaa/ib-pitchbook-builder) — ★ 0 — AI Pitch Deck Builder
-- [dgarcia-eu/CollectiveAI](https://github.com/dgarcia-eu/CollectiveAI) — ★ 0 — Collective Behavior of AI Agents presentation slides
-- [StastnyJ/presentations-client](https://github.com/StastnyJ/presentations-client) — ★ 0 — —
-- [JayAI623/AI_presentation_generator](https://github.com/JayAI623/AI_presentation_generator) — ★ 0 — repo to generate the presentation automatically
-- [jakeheaps-coder/domo-deck-engine](https://github.com/jakeheaps-coder/domo-deck-engine) — ★ 0 — Domo AI Deck Engine  end-to-end AI PowerPoint generation system
-- [vinay4appsentinels/hybrid-workforce-talk](https://github.com/vinay4appsentinels/hybrid-workforce-talk) — ★ 0 — The Hybrid Workforce: Managing Teams of Humans and AI Agents - Presentation slides and content
-- [notgoodatc/AI-Powerpoint-Generation](https://github.com/notgoodatc/AI-Powerpoint-Generation) — ★ 0 — —
-- [ncomet/presentation-clisthene](https://github.com/ncomet/presentation-clisthene) — ★ 0 — —
-- [eltntawy/Presentation_Client](https://github.com/eltntawy/Presentation_Client) — ★ 0 — Presentation Cilent Android Application
-- [skumarm-git/agentic-ppt-generator](https://github.com/skumarm-git/agentic-ppt-generator) — ★ 0 — An agentic pipeline using Microsoft AutoGen and Mistral API to research topics and automatically generate PowerPoint presentations.
-- [23f3000511/powerpoint-generator](https://github.com/23f3000511/powerpoint-generator) — ★ 0 — —
-- [fredrik-franksson/powerpoint-generator](https://github.com/fredrik-franksson/powerpoint-generator) — ★ 0 — —
-- [Btran1291/TypingMind-PowerpointGenerator](https://github.com/Btran1291/TypingMind-PowerpointGenerator) — ★ 0 — —
-- [woaixxyang/Apoint_powerpointGenerator](https://github.com/woaixxyang/Apoint_powerpointGenerator) — ★ 0 — —
-- [FahadSalamatRandhawa/powerpoint_generator](https://github.com/FahadSalamatRandhawa/powerpoint_generator) — ★ 0 — —
-- [kentaro1216/powerpoint_generator](https://github.com/kentaro1216/powerpoint_generator) — ★ 0 — —
-- [yashwanthram04/Powerpoint-Generator](https://github.com/yashwanthram04/Powerpoint-Generator) — ★ 0 — —
-- [RyanOM/hugoSlides](https://github.com/RyanOM/hugoSlides) — ★ 0 — Slides with motivational quotes built using Hugo and editable using Forestry.
-- [duksis/slides](https://github.com/duksis/slides) — ★ 0 — Presentation slides https://hugo-slides.herokuapp.com
-- [DIASAcode/powerpoint-generator](https://github.com/DIASAcode/powerpoint-generator) — ★ 0 — Generator that creates editable Powerpoint slides from Lizzy's outputs
-- [guntarion/powerpoint-generator](https://github.com/guntarion/powerpoint-generator) — ★ 0 — —
+- [iOfficeAI](https://github.com/iOfficeAI/OfficeCLI) — ★ 32,022 — OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, s...
+- [dream-num](https://github.com/dream-num/univer) — ★ 22,606 — The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.
+- [iamgio](https://github.com/iamgio/quarkdown) — ★ 16,315 — 🪐 Markdown with superpowers: from ideas to papers, presentations, websites, books, and knowledge bases.
+- [Open-LLM-VTuber](https://github.com/Open-LLM-VTuber/Open-LLM-VTuber) — ★ 14,098 — Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D avatar running locally across platforms
+- [maaslalani](https://github.com/maaslalani/slides) — ★ 11,685 — Terminal based presentation tool
+- [jxnblk](https://github.com/jxnblk/mdx-deck) — ★ 11,499 — ♠️ React MDX-based presentation decks
+- [FormidableLabs](https://github.com/FormidableLabs/spectacle) — ★ 10,179 — A React-based library for creating sleek presentations using JSX syntax that gives you the ability to live demo your code.
+- [open-slide](https://github.com/open-slide/open-slide) — ★ 9,247 — A slide framework built for agents.
+- [mfontanini](https://github.com/mfontanini/presenterm) — ★ 8,919 — A markdown terminal slideshow tool
+- [OpenCoworkAI](https://github.com/OpenCoworkAI/open-codesign) — ★ 8,056 — Open-source Claude Design alternative. One-click import your Claude Code / Codex API key. Prompt → prototype / slides / PDF. Multi-model (Claude, GPT, Gemini...
+- [dair-ai](https://github.com/dair-ai/ML-Course-Notes) — ★ 6,687 — 🎓 Sharing machine learning course / lecture notes.
+- [pomber](https://github.com/pomber/code-surfer) — ★ 6,372 — Rad code slides <🏄/>
+- [netease-youdao](https://github.com/netease-youdao/LobsterAI) — ★ 6,113 — Open-source, desktop-grade AI agent that gets real work done — data analysis, slides, docs, video & web research. Built on OpenClaw; runs tools on your real ...
+- [cirosantilli](https://github.com/cirosantilli/x86-bare-metal-examples) — ★ 5,397 — Dozens of minimal operating systems to learn x86 system programming. Tested on Ubuntu 17.10 host in QEMU 2.10 and real hardware. Userland cheat at: https://g...
+- [hiroppy](https://github.com/hiroppy/fusuma) — ★ 5,357 — ✍️ Fusuma makes slides with Markdown easily.
+- [googleworkspace](https://github.com/googleworkspace/md2googleslides) — ★ 4,727 — Generate Google Slides from markdown
+- [vinayak-mehta](https://github.com/vinayak-mehta/present) — ★ 4,339 — A terminal-based presentation tool with colors and effects.
+- [MariaLetta](https://github.com/MariaLetta/free-gophers-pack) — ★ 4,004 — ✨ This pack of 100+ gopher pictures and elements will help you to build own design of almost anything related to Go Programming Language: presentations, post...
+- [jpetazzo](https://github.com/jpetazzo/container.training) — ★ 3,957 — Slides and code samples for training, tutorials, and workshops about Docker, containers, and Kubernetes.
+- [slackhq](https://github.com/slackhq/PanModal) — ★ 3,771 — An elegant and highly customizable presentation API for constructing bottom sheet modals on iOS.
+- [obsidianmd](https://github.com/obsidianmd/jsoncanvas) — ★ 3,724 — An open file format for infinite canvas data.
+- [FeeiCN](https://github.com/FeeiCN/Security-PPT) — ★ 3,604 — Security-related Slide Presentation & Security Research Report（大安全各领域各公司各会议分享的PPT以及各类安全研究报告）
+- [aiming-lab](https://github.com/aiming-lab/MetaClaw) — ★ 3,461 — 🦞 Just talk to your agent — it learns and EVOLVES 🧬.
+- [tmcw](https://github.com/tmcw/big) — ★ 3,321 — presentations for busy messy hackers
+- [deck-of-cards](https://github.com/deck-of-cards/deck-of-cards) — ★ 3,151 — Deck of Cards (old version)
+- [hyperoslo](https://github.com/hyperoslo/Presentation) — ★ 3,068 — :bookmark_tabs: Presentation helps you to make tutorials, release notes and animated pages.
+- [IcaliaLabs](https://github.com/IcaliaLabs/Presentr) — ★ 3,038 — Swift wrapper for custom ViewController presentations on iOS
+- [Natively-AI-assistant](https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant) — ★ 2,972 — Natively — Free open-source AI meeting assistant, interview copilot, and note taker. The best alternative to Cluely, Otter, Granola, Final Round AI, Fireflie...
+- [QwenAudio](https://github.com/QwenAudio/qwen-audio-agent) — ★ 2,917 — A realtime voice runtime that keeps Agents talking, working, and present.  Real-time Voice Runtime for AI Agents
+- [OpenDCAI](https://github.com/OpenDCAI/Paper2Any) — ★ 2,809 — Turn paper/text/topic into editable research figures, technical route diagrams, and presentation slides.
+- [TritonHo](https://github.com/TritonHo/slides) — ★ 2,232 — it is a repository to store all slides used by Triton Ho's public presentation and course.
+- [Haptic-Apps](https://github.com/Haptic-Apps/Slide) — ★ 1,773 — Slide is an open-source, ad-free Reddit browser for Android.
+- [animotionjs](https://github.com/animotionjs/animotion) — ★ 1,758 — 🪄 Create beautiful presentations with Svelte
+- [inspire-js](https://github.com/inspire-js/inspire.js) — ★ 1,754 — Lean, hackable, extensible slide deck framework. Previously known as CSSS.
+- [DataTalksClub](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) — ★ 1,695 — A free, hands-on course on using AI developer tools to build, test, deploy, extend, and audit software without losing engineering discipline. The 2026 cohort...
+- [Cimbali](https://github.com/Cimbali/pympress) — ★ 1,685 — Pympress is a simple yet powerful PDF reader designed for dual-screen presentations
+- [mancj](https://github.com/mancj/SlideUp-Android) — ★ 1,614 — SlideUp is a small library that allows you to add sweet slide effect to any view.
+- [xmuSistone](https://github.com/xmuSistone/VerticalSlideFragment) — ★ 1,598 — vertical slide to switch to the next fragment page,  looks like vertical viewpager
+- [sfx101](https://github.com/sfx101/deck) — ★ 1,484 — DECK is a powerful and high performant local web development studio, an open source alternative to Docker desktop
+- [m2dsupsdlclass](https://github.com/m2dsupsdlclass/lectures-labs) — ★ 1,473 — Slides and Jupyter notebooks for the Deep Learning lectures at Master Year 2 Data Science from Institut Polytechnique de Paris
+- [baotlake](https://github.com/baotlake/office-website) — ★ 1,468 — Web Office: Local-First & Private. Professional-grade Word, Excel, and PowerPoint editing powered by WebAssembly. Zero data uploads, 100% client-side for unc...
+- [yuzeguitarist](https://github.com/yuzeguitarist/Deck) — ★ 1,454 — Deck is a modern, native, privacy-first clipboard manager for macOS.
+- [nextcloud](https://github.com/nextcloud/deck) — ★ 1,427 — 🗂 Kanban-style project & personal management tool for Nextcloud, similar to Trello
+- [tybenz](https://github.com/tybenz/vimdeck) — ★ 1,407 — VIM as a presentation tool
+- [PHPOffice](https://github.com/PHPOffice/PHPPresentation) — ★ 1,372 — A pure PHP library for reading and writing presentations documents
+- [wzpan](https://github.com/wzpan/BeamerStyleSlides) — ★ 1,299 — 🌈Beamer风格的幻灯片模板集。包含了PowerPoint和Keynote两套格式。
+- [arnehilmann](https://github.com/arnehilmann/markdeck) — ★ 1,272 — presentations as code - author cool slide decks, text-only, offline-ready, collaborative
+- [mokshablr](https://github.com/mokshablr/gander) — ★ 1,269 — Take a gander at any file. Offline, zero-permission Android viewer for PDF, Word, Excel, PowerPoint, ODT, RTF, ZIP, STL, photos, video, audio, Markdown and c...
+- [k1LoW](https://github.com/k1LoW/deck) — ★ 1,241 — deck is a tool for creating deck using Markdown and Google Slides.
+- [joogps](https://github.com/joogps/SlideOverCard) — ★ 1,219 — A SwiftUI card view, made great for setup interactions.
+- [nathantannar4](https://github.com/nathantannar4/Transmission) — ★ 1,187 — Bridges UIKit presentation APIs to a SwiftUI API so you can use presentation controllers, interactive transitions and more.
+- [ongridio](https://github.com/ongridio/ongrid) — ★ 1,178 — An ops AI Agent that understands your infrastructure, finds the root cause, and fixes it — right from Slack, Telegram, Lark or DingTalk.
+- [ayufan](https://github.com/ayufan/steam-deck-tools) — ★ 1,143 — (Windows) Steam Deck Tools - Fan, Overlay, Power Control and Steam Controller for Windows
+- [ClickHouse](https://github.com/ClickHouse/clickhouse-presentations) — ★ 1,083 — Presentations, meetups and talks about ClickHouse
+- [ayuayue](https://github.com/ayuayue/PiDeck) — ★ 1,080 — PiDeck 是一个开源的桌面工作台，用于在本地项目目录中统一管理 PI | DSH Agent 会话，并支持导入 Codex、Claude 本地会话以便统一浏览和恢复。支持多项目工作区、会话历史、Git 集成、内置终端、模型配置和插件管理，基于 Electron 构建。
+- [officecli](https://github.com/officecli/officedex) — ★ 1,070 — OfficeDex is the first Al-Native VibeOfficing platform  for documents, slides, and spreadsheets
+- [CRui5in](https://github.com/CRui5in/paper-ppt-agent) — ★ 1,064 — Generate editable PPT decks from paper PDFs or LaTeX sources
+- [jeertmans](https://github.com/jeertmans/manim-slides) — ★ 960 — Tool for live presentations using manim
+- [williamfzc](https://github.com/williamfzc/chat-gpt-ppt) — ★ 917 — Use ChatGPT (or other backends) to generate PPT automatically, all in one single file.
+- [h2non](https://github.com/h2non/videoshow) — ★ 903 — Simple node.js utility to create video slideshows from images with optional audio and visual effects using ffmpeg
+- [panglesd](https://github.com/panglesd/slipshow) — ★ 898 — An engine for displaying slips, the next-gen version of slides
+- [danielsaidi](https://github.com/danielsaidi/DeckKit) — ★ 892 — Card and deck-based SwiftUI views.
+- [ethanplusai](https://github.com/ethanplusai/jarvis) — ★ 871 — JARVIS — a voice assistant for Claude Code. Talk to your Mac and he brainstorms a project with you, builds it, and tells you out loud when a Claude Code sess...
+- [amanjeetsahu](https://github.com/amanjeetsahu/Natural-Language-Processing-Specialization) — ★ 860 — This repo contains my coursework, assignments, and Slides for Natural Language Processing Specialization by deeplearning.ai on Coursera
+- [ramnathv](https://github.com/ramnathv/slidify) — ★ 842 — Generate reproducible html5 slides from R markdown
+- [zengwenliang416](https://github.com/zengwenliang416/ppt-agent) — ★ 835 — —
+- [IncarnaMind](https://github.com/IncarnaMind/IncarnaMind) — ★ 810 — IncarnaMind is a free, open-source desktop app for macOS, Windows and Linux where you write with AI and ask questions about your own documents (PDF, Word, Po...
+- [ningyu1](https://github.com/ningyu1/e-books) — ★ 780 — IT technical related e-books and PPT information, continuous updating. For those in need, Keep real, peace and love.
+- [WUBING2023](https://github.com/WUBING2023/ExamPass-Assistant) — ★ 777 — 把课堂讲义变成考试利器 一键将 PPT、Word、PDF 课件转化为结构清晰的知识清单和交互式测试题，让复习事半功倍。 适用人群：大学生、各个阶段老师、其他需要对付短期考试的朋友
+- [presenta-software](https://github.com/presenta-software/presenta-lib) — ★ 706 — The javascript presentation library for the automation era.
+- [xKiian](https://github.com/xKiian/GeekedTest) — ★ 683 — Geetest v4 slide, icon, gobang & ai solver - 100% python implementation - no browser needed
+- [crazychicken](https://github.com/crazychicken/t-scroll) — ★ 631 — A modern reveal-on-scroll library with useful options and animations. (Animate Elements On Reveal)
+- [csinva](https://github.com/csinva/csinva.github.io) — ★ 624 — Slides, paper notes, class notes, blog posts, and research on ML 📉, statistics 📊, and AI 🤖.
+- [joshdholtz](https://github.com/joshdholtz/DeckUI) — ★ 622 — Swift DSL for writing slide decks in Xcode
+- [criptogus](https://github.com/criptogus/HermesOffice) — ★ 610 — Free, open-source AI Office suite (Word, Excel, PowerPoint, PDF, Markdown) — macOS build, one-click install
+- [wookayin](https://github.com/wookayin/tensorflow-talk-debugging) — ★ 608 — 💬 Slides and supplementary codes for my talk 'Debugging Tips on TensorFlow' (2016)
+- [shiburagi](https://github.com/shiburagi/Drawer-Behavior) — ★ 590 — Drawer behavior is a library that provide an extra behavior on drawer, such as, move view or scaling view's height while drawer on slide.
+- [stefan-niedermann](https://github.com/stefan-niedermann/nextcloud-deck) — ★ 571 — 📋 Android client for nextcloud deck app
+- [alyssaxuu](https://github.com/alyssaxuu/figma-to-google-slides) — ★ 568 — Convert Figma frames into a Google Slides presentation 🍭
+- [marph91](https://github.com/marph91/jimmy) — ★ 534 — Convert your notes to Markdown
+- [fabe](https://github.com/fabe/gatsby-starter-deck) — ★ 514 — 🗣 Create presentations using Gatsby, React & Markdown.
+- [bvaughn](https://github.com/bvaughn/react-presents) — ★ 509 — React slideshow framework
+- [ahomu](https://github.com/ahomu/Talkie) — ★ 498 — Simple slide presentation library. Responsive scaling & markdown ready.
+- [ertugrulcetin](https://github.com/ertugrulcetin/immersa) — ★ 489 — Open Source Web-based 3D Presentation Tool
+- [thewh1teagle](https://github.com/thewh1teagle/mobslide) — ★ 489 — Turn your smartphone into presentation remote controller
+- [Haptic-Apps](https://github.com/Haptic-Apps/Slide-iOS) — ★ 483 — A powerful new way to Reddit on iOS.
+- [takaxp](https://github.com/takaxp/org-tree-slide) — ★ 468 — A presentation tool for org-mode based on the visibility of outline trees
+- [icyphox](https://github.com/icyphox/shlide) — ★ 462 — :framed_picture: a slide deck presentation tool written in pure bash
+- [danielepiccone](https://github.com/danielepiccone/ng-pageslide) — ★ 445 — AngularJS sliding panel for serving additional content from off the page
+- [iappyx](https://github.com/iappyx/Instrumenta) — ★ 443 — Free and open source consulting-style Powerpoint toolbar
+- [cpp-for-yourself](https://github.com/cpp-for-yourself/lectures-and-homeworks) — ★ 430 — ?? A place for all lecture scripts, projects etc. for the "C++ for yourself" course
+- [servicemesher](https://github.com/servicemesher/meetup-slides) — ★ 423 — Slides archive of Service Mesh meetups - https://www.servicemesher.com/tags/meetup
+- [otahina](https://github.com/otahina/PowerPoint-Generator-Python-Project) — ★ 409 — Discover the power of GPT-3.5 turbo in presentation creation! 💻🤩  This web application can effortlessly generate captivating PowerPoint presentations. Say go...
+- [z3tt](https://github.com/z3tt/OutlierConf2021) — ★ 408 — ⭕ Slides and hands-on codes for my talk "ggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R" at the 1st OutlierConf, February 4–7 2021.
+- [mtj0928](https://github.com/mtj0928/SlideKit) — ★ 406 — SwiftUI framework for presentation slides
+- [wangpeiming110](https://github.com/wangpeiming110/EnterAnimation) — ★ 400 — android  进入/转场动画，入场动画效果合集，自定义view实现动画，百叶窗，擦除，盒状，阶梯，菱形效果，轮子，劈裂，棋盘，切入，扇形展开，十字扩展，随机线条，向内溶解，圆形扩展效果，适用于任何view和viewgroup，activity即用于页面根部viewgroup，自定义viewgroup自动换行l...
+- [femioladeji](https://github.com/femioladeji/react-slideshow) — ★ 386 — A react component for slideshow supporting slide, fade and zoom
+- [taggon](https://github.com/taggon/highlight) — ★ 379 — Rich featured syntax highlighter for Keynote slides.
+- [lukalabs](https://github.com/lukalabs/replika-research) — ★ 378 — Replika.ai Research Papers, Posters, Slides & Datasets
+- [msoedov](https://github.com/msoedov/hacker-slides) — ★ 347 — A small UI for building presentation slides from markdown markup
+- [llt22](https://github.com/llt22/talkio) — ★ 341 — Local-first multi-AI group chat desktop app — pull gpt, Claude, Gemini, DeepSeek into one conversation. Tauri 2 + React 19.
+- [trikita](https://github.com/trikita/slide) — ★ 338 — Minimal presentation tool for Android, perfect for using Takahashi method
+- [wusb](https://github.com/wusb/slide-ruler) — ★ 336 — 📏 Slide Ruler 滑尺数值选择器
+- [vizzuhq](https://github.com/vizzuhq/ipyvizzu-story) — ★ 334 — Build, present and share animated data stories in Jupyter Notebook and similar environments.
+- [fgiris](https://github.com/fgiris/composePPT) — ★ 323 — An experimental UI toolkit for generating PowerPoint presentation files using Compose
+- [Justineo](https://github.com/Justineo/working-with-ai) — ★ 322 — Working with AI - presentation slides
+- [rmcgibbo](https://github.com/rmcgibbo/slidedeck) — ★ 321 — Beautiful HTML5 slides in markdown. A easy-to-use fork of the google-io-2012 slide deck
+- [Hona-Cao](https://github.com/Hona-Cao/FlyPPTTimer) — ★ 321 — PPT计时器：支持 PowerPoint/WPS 联动、手机局域网遥控、正倒计时、文件规则与多显示器。
+- [ugorsahin](https://github.com/ugorsahin/TalkingHeads) — ★ 321 — A library to communicate with ChatGPT, Claude, Copilot, Gemini, HuggingChat, and Pi
+- [cirosantilli](https://github.com/cirosantilli/cirosantilli) — ★ 318 — 小粉红小朋友们，新issue 在这儿开： https://github.com/cirosantilli/china-dictatorship/issues # 21世纪新政宣言（2020年4月5曰笫四次修改稿)（2020年6月19曰第七次修改，以下“【】”内文字为非正文内容的说明）20世纪苏联的消亡和东欧的大变...
+- [ajstarks](https://github.com/ajstarks/deck) — ★ 313 — A Go Package for generation of slide decks and information displays
+- [willemmulder](https://github.com/willemmulder/Presenteer.js) — ★ 312 — Flexible HTML5 Presentation Tool
+- [natolambert](https://github.com/natolambert/colloquium) — ★ 307 — A markdown native slides tool for academics building with agents.
+- [sbueringer](https://github.com/sbueringer/kubecon-slides) — ★ 301 — Kubecon Slides & Download utility
+- [Rico00121](https://github.com/Rico00121/decktap) — ★ 291 — A lightweight local-network presentation remote. Control your slides wirelessly from your phone.
+- [pikdum](https://github.com/pikdum/steam-deck) — ★ 283 — steam deck tools for installing vortex
+- [baldsealion](https://github.com/baldsealion/Steamdeck-Ultimate-Windows11-Guide) — ★ 278 — Customizations and instructions for Windows 10/11 setup for Steam Deck
+- [coldnew](https://github.com/coldnew/org-ioslide) — ★ 273 — Export org-mode to Google I/O HTML5 slide.
+- [moraroy](https://github.com/moraroy/NonSteamLaunchersDecky) — ★ 272 — NonSteamLaunchers Decky Loader Version
+- [rabbit-shocker](https://github.com/rabbit-shocker/rabbit) — ★ 270 — A programmable presentation tool by Ruby.
+- [Vatshayan](https://github.com/Vatshayan/Fake-News-Detection-Project) — ★ 264 — Final Year Fake News Detection using Machine learning Project with  Report, PPT, Code, Research Paper, Documents and Video Explanation.
+- [mimseyedi](https://github.com/mimseyedi/pysentation) — ★ 262 — pysentation is a CLI for displaying Python presentations.
+- [ValShaped](https://github.com/ValShaped/rwfus) — ★ 259 — RW OverlayFS for Steam Deck!
+- [melix](https://github.com/melix/deck2pdf) — ★ 252 — Converts various HTML5 slide decks to PDF
+- [Optixal](https://github.com/Optixal/CEHv10-Notes) — ★ 248 — :closed_book: Both personal and public notes for EC-Council's CEHv10 312-50, because it's thousands of pages/slides of boredom, and a braindump to many
+- [smartdoca](https://github.com/smartdoca/doca) — ★ 246 — Doca｜开源文档管理与知识库，支持多人协同编辑、在线文档、Markdown、表格、幻灯片、画布和 AI 助手。Self-hosted document management, knowledge base & real-time collaborative editing for individuals and...
+- [yusukebe](https://github.com/yusukebe/revealgo) — ★ 244 — Markdown driven presentation tool written in Go!
+- [znck](https://github.com/znck/vue-slides) — ★ 240 — Present with Vue
+- [biigpongsatorn](https://github.com/biigpongsatorn/vue-infinite-slide-bar) — ★ 237 — ∞ Infinite slide bar component (no dependency and light weight 1.48 KB)
+- [Devlight](https://github.com/Devlight/SlideImageView) — ★ 222 — Simple and convenient library that allows you to slide images through a view.
+- [zhx47](https://github.com/zhx47/ppt-agent) — ★ 219 — —
+- [mkobuolys](https://github.com/mkobuolys/flutter_deck) — ★ 218 — A lightweight, customizable, and easy-to-use framework to create presentations in Flutter.
+- [tslide](https://github.com/tslide/tslide) — ★ 216 — Terminal SlideDeck, supporting markdown.
+- [sircharlo](https://github.com/sircharlo/meeting-media-manager) — ★ 213 — A cross platform app to download and present media for congregation meetings of Jehovah’s Witnesses in any language. Features include automatic media downloa...
+- [psobot](https://github.com/psobot/keynote-parser) — ★ 212 — A packer/unpacker for Apple Keynote presentation files.
+- [shiburagi](https://github.com/shiburagi/Drawer-Behavior-Flutter) — ★ 211 — Drawer behavior is a library that provide an extra behavior on drawer, such as, move view or scaling view's height while drawer on slide.
+- [beeware](https://github.com/beeware/podium) — ★ 210 — A Markdown-based native presentation tool
+- [phillipcaudell](https://github.com/phillipcaudell/Google-Drive-for-Mac) — ★ 210 — A standalone macOS app for Google Docs, Sheets and Slides
+- [PowerPointLabs](https://github.com/PowerPointLabs/PowerPointLabs) — ★ 208 — This is the project for PowerPointLabs, a productivity add-in for PowerPoint
+- [netgen](https://github.com/netgen/query-translator) — ★ 206 — Query Translator is a search query translator with AST representation
+- [JReinhold](https://github.com/JReinhold/mdx-deck-live-code) — ★ 205 — A component for mdx-deck to live code in your slides. 🤯
+- [JuL1205](https://github.com/JuL1205/SlideshowToolbar) — ★ 203 — Slideshow Imageview for Android
+- [jedcn](https://github.com/jedcn/reveal-ck) — ★ 202 — Create slides with ruby (and usually in markdown)
+- [JoshKarpel](https://github.com/JoshKarpel/spiel) — ★ 201 — Display richly-styled presentations using your terminal
+- [hiyeshu](https://github.com/hiyeshu/codeck) — ★ 198 — No Keynote. No dragging. No font sizes.
+- [excalideck](https://github.com/excalideck/excalideck) — ★ 194 — Weapon for Legendary Slides
+- [SlidePilot](https://github.com/SlidePilot/SlidePilot-macOS) — ★ 190 — Ultimate PDF Presentation Tool for macOS 🖥
+- [giszzt](https://github.com/giszzt/figedit) — ★ 189 — Turn raster figures into editable SVG and native PowerPoint files.
+- [slideshow-s9](https://github.com/slideshow-s9/slideshow) — ★ 189 — slideshow gems - write your slides / talks / presentations in plain text with markdown formatting conventions
+- [AnonymousAAArdvark](https://github.com/AnonymousAAArdvark/GesturePresenter) — ★ 189 — Control Google Slides With Just Hand Gestures!
+- [doersino](https://github.com/doersino/markdeep-slides) — ★ 188 — Build presentation slides with Markdeep and present them right in your browser.
+- [ghaiklor](https://github.com/ghaiklor/kittik) — ★ 185 — Create slides in TypeScript and present them in the terminal using ASCII only!
+- [molefrog](https://github.com/molefrog/presa) — ★ 183 — 🎞 Make stylish presentations in React, powered by styled-components
+- [nirmalnishant645](https://github.com/nirmalnishant645/Virtual-Classroom) — ★ 178 — In the wake of the current, novel coronavirus COVID-19 pandemic, since the entire world is under lockdown. It is the time of the year when academic and teach...
+- [robflaherty](https://github.com/robflaherty/html-slideshow) — ★ 177 — Lightweight HTML5-based slideshow
+- [ChangbaFE](https://github.com/ChangbaFE/presentation) — ★ 177 — 唱吧前端分享会
+- [SlideSpeak](https://github.com/SlideSpeak/presentation-design-prompts) — ★ 177 — Free presentation slide design.md you can paste into ChatGPT, Claude or any of your AI tools.
+- [solid-shuwen](https://github.com/solid-shuwen/shuttleslide) — ★ 175 — Python toolkit for PowerPoint ↔ HTML, built for AI. Round-trip fidelity preserves formatting across every edit loop — ideal for RAG ingestion, LLM agents, an...
+- [scastiel](https://github.com/scastiel/excalidraw-slides) — ★ 174 — Create slides using Excalidraw.
+- [swillner](https://github.com/swillner/highlight-pointer) — ★ 172 — Highlight mouse pointer/cursor using a dot - useful for presentations, screen sharing, ...
+- [hearmecode](https://github.com/hearmecode/slides) — ★ 171 — Slides + What can I do after taking Lesson 1? Lesson 2? ... etc
+- [DenizThatMenace](https://github.com/DenizThatMenace/More-Modern-CMake) — ★ 169 — Contains the slides and examples for my "More Modern CMake" and "Oh No! More Modern CMake" talks from "Meeting C++" 2018 and 2019
+- [jamesrochabrun](https://github.com/jamesrochabrun/Easel) — ★ 168 — Easel is a Codex and Claude macOS workspace for AI-assisted product design and frontend iteration. It brings a local project library, design-system setup, Co...
+- [huangrz92](https://github.com/huangrz92/ViewHolder-Slide-Helper) — ★ 168 — recyclerview holder animation
+- [ezefranca](https://github.com/ezefranca/watchpresenter) — ★ 166 — ⌚️ 🤓 Controlling your Keynote using Apple Watch
+- [halfrost](https://github.com/halfrost/threes-ai) — ★ 165 — 🏆 Threes! AI: deck-aware expectimax, N-tuple TD learning, and AlphaZero
+- [EvotecIT](https://github.com/EvotecIT/PSWriteOffice) — ★ 165 — MIT-licensed PowerShell document automation for Word, Excel, PowerPoint, PDF, email, PST/OST, OneNote, Visio, OpenDocument, and mixed-format Reader workflows.
+- [xcfcode](https://github.com/xcfcode/What-I-Have-Read) — ★ 163 — Paper Lists, Notes and Slides, Focus on NLP.  For summarization, please refer to https://github.com/xcfcode/Summarization-Papers
+- [relevance](https://github.com/relevance/org-html-slideshow) — ★ 160 — JavaScript presentation slides generated from Emacs org-mode
+- [leonid20000](https://github.com/leonid20000/odin-slides) — ★ 154 — This is an advanced Python tool that empowers you to effortlessly draft customizable PowerPoint slides using the Generative Pre-trained Transformer (GPT) of ...
+- [cebe](https://github.com/cebe/pdfpc-latex-notes) — ★ 152 — Latex Package that allows creating a pdfpc compatible notes file directly from your latex presentation \notes.
+- [wookayin](https://github.com/wookayin/TensorFlowKR-2017-talk-bestpractice) — ★ 151 — 💬 Slides and Tutorial Codes for the talk 'Toward Best Practices of TensorFlow Code Patterns' (2017)
+- [ryuzee](https://github.com/ryuzee/SlideHub) — ★ 147 — SlideHub is an Open Source Slide Sharing Application for Azure / AWS
+- [vogievetsky](https://github.com/vogievetsky/IntroD3) — ★ 143 — Introduction talk to D3
+- [WendellAdriel](https://github.com/WendellAdriel/slidewire) — ★ 141 — Create beautiful presentations powered by Livewire
+- [PocketDecks](https://github.com/PocketDecks/pokemon-tcg-pocket-cards) — ★ 140 — Pokémon TCG Pocket card data as versioned JSON, published on npm. Cards, expansions, and deck-builder numbers with scraping and validation tooling
+- [mengxianliang](https://github.com/mengxianliang/XLSlideSwitch) — ★ 138 — iOS 仿照今日头条滚动列表
+- [davnag](https://github.com/davnag/DJSemiModalViewController) — ★ 137 — Simple semi modal presentation dialog with stacked content
+- [ivantsepp](https://github.com/ivantsepp/ssh-slides) — ★ 137 — Terminal-based Presentations Over SSH
+- [freebsd](https://github.com/freebsd/freebsd-papers) — ★ 137 — The FreeBSD Papers, Slides, and Video Collection
+- [dobin](https://github.com/dobin/yookiterm-slides) — ★ 136 — Exploitation and Mitigation Slides
+- [Artanidos](https://github.com/Artanidos/AnimationMaker) — ★ 135 — Create animated presentations and export them to a video or xml file.
+- [itailang](https://github.com/itailang/poster_guide) — ★ 134 — A conference poster format with structure, content, creation, and presentation recommendations.
+- [aws-samples](https://github.com/aws-samples/sample-spec-driven-presentation-maker) — ★ 130 — —
+- [mengxianliang](https://github.com/mengxianliang/XLSlideMenu) — ★ 130 — iOS 仿QQ的左右抽屉效果
+- [beamerpresenter](https://github.com/beamerpresenter/BeamerPresenter) — ★ 129 — Modular multi-screen pdf presentation viewer
+- [ComPDFKit](https://github.com/ComPDFKit/compdfkit-conversion-sdk-android) — ★ 125 — High-performance PDF conversion library for Android mobile apps. Convert PDF to Word, Excel, PPT, HTML, CSV, images, text, RTF, searchable PDF, JSON, Markdow...
+- [juanjuanjie](https://github.com/juanjuanjie/html-presentation) — ★ 118 — 制作技术课程演示HTML
+- [deckflow](https://github.com/deckflow/deckprobe) — ★ 117 — ffprobe for documents — probe PDF, Microsoft Office, and Apple iWork files without opening them. Rust CLI + browser WASM SDK returning structured JSON with c...
+- [ruuda](https://github.com/ruuda/pris) — ★ 117 — A language for designing slides
+- [ComPDFKit](https://github.com/ComPDFKit/compdfkit-conversion-sdk-mac) — ★ 115 — High-performance PDF conversion library for macOS desktop apps. Convert PDF to Word, Excel, PPT, HTML, CSV, images, text, RTF, searchable PDF, JSON, Markdown...
+- [jennybc](https://github.com/jennybc/debugging) — ★ 115 — Talk about general debugging strategies. How to be less confused and frustrated.
+- [eliasnogueira](https://github.com/eliasnogueira/public-speaking) — ★ 114 — List of presentation, workshops, and initiatives
+- [robintw](https://github.com/robintw/PandasToPowerpoint) — ★ 114 — Python utility to take a Pandas DataFrame and create a Powerpoint table
+- [cesarolvr](https://github.com/cesarolvr/murphyjs) — ★ 112 — A JavaScript vanilla library to scroll based reveal animations. The murphy.js is a lightweight JavaScript animation library with a simple implementation way....
+- [storybookjs](https://github.com/storybookjs/brand) — ★ 111 — 🎨 Materials for your articles and talks about storybook
+- [ALucek](https://github.com/ALucek/ppt2desc) — ★ 111 — Convert PowerPoint files into semantically rich text using vision language models
+- [ComPDFKit](https://github.com/ComPDFKit/compdfkit-conversion-sdk-windows) — ★ 109 — High-performance PDF conversion library for Windows desktop apps. Convert PDF to Word, Excel, PPT, HTML, CSV, images, text, RTF, searchable PDF, JSON, Markdo...
+- [francescolaffi](https://github.com/francescolaffi/elastic-google-io-slides) — ★ 106 — A mod of google html5 slides that scale down with css3 transform if view is smaller than the slide instead of cropping
+- [CodeRunner5235](https://github.com/CodeRunner5235/Opencore-Steam-Deck) — ★ 106 — An opencore EFI configuration for the steamdeck
+- [Johnbatey](https://github.com/Johnbatey/bible-song-pro) — ★ 104 — Bible Song Pro is a free and open-source modern church presentation system for OBS Studio.
+- [nanxiaobei](https://github.com/nanxiaobei/react-slide-routes) — ★ 104 — 🏄‍♂️ The easiest way to slide React routes
+- [monswag](https://github.com/monswag/Keynote-Helper) — ★ 103 — 一份帮助你做 Keynote 的 Keynote。
+- [braziljs](https://github.com/braziljs/power-polygon) — ★ 101 — The definitive html5 presentation tool
+- [rodrigolourencofarinha](https://github.com/rodrigolourencofarinha/ProDeck) — ★ 101 — PowerPoint toolbar to streamline slide creation and editing.
+- [szabgab](https://github.com/szabgab/slides) — ★ 101 — The source of the slides of Gabor Szabo shared on the Code Maven site
+- [hyjiacan](https://github.com/hyjiacan/vue-slideout) — ★ 99 — A Slide-Out component for Vue.js 2/3.
+- [alkrauss48](https://github.com/alkrauss48/simple-slides) — ★ 98 — Simple Slides is a responsive and text-first presentation tool that keeps your audience engaged.
+- [museslabs](https://github.com/museslabs/kyma) — ★ 98 — Presentations from markdown in the terminal with fancy transition animations
+- [vittorioromeo](https://github.com/vittorioromeo/cppcon2015) — ★ 97 — Repository for the slides and the code of my CppCon 2015 talks.
+- [CodingFeng101](https://github.com/CodingFeng101/CanvasAnvil) — ★ 97 — CanvasAnvil is an AI multi-canvas creation platform for flowcharts, interior design, presentations, posters, infographics, and product storytelling.
+- [Aherontas](https://github.com/Aherontas/Pycon_Greece_2025_Presentation_Agents) — ★ 95 — —
+- [kentcdodds](https://github.com/kentcdodds/react-hooks-pitfalls) — ★ 95 — The slides and code examples for my talk "React Hook Pitfalls"
+- [IIIF-Commons](https://github.com/IIIF-Commons/biiif) — ★ 94 — Organise your files according to a simple naming convention to generate IIIF Presentation API json using nodejs (Dat and IPFS compatible)
+- [explosion](https://github.com/explosion/talks) — ★ 94 — 💥 Browser-based slides or PDFs of our talks and presentations
+- [zyxue](https://github.com/zyxue/youtube_RL_course_by_David_Silver) — ★ 92 — Collection of Slides for David Silver's Reinforcement Learning Course on Youtube
+- [slidesk](https://github.com/slidesk/slidesk) — ★ 92 — Speaker companion
+- [RockySteveJobs](https://github.com/RockySteveJobs/LockerScreen) — ★ 92 — Android lock screen，slide to unlock ! 安卓锁屏，上滑解锁，效果酷炫，值得拥有！
+- [dragonked2](https://github.com/dragonked2/Dons) — ★ 90 — Dons Js Scanner is a sleek command-line tool that hunts for hidden treasures—API keys, credentials, and secrets—lurking in the JavaScript of websites. Its vi...
+- [puppetlabs](https://github.com/puppetlabs/puppet-strings) — ★ 90 — The next generation Puppet documentation extraction and presentation tool.
+- [ajstarks](https://github.com/ajstarks/decksh) — ★ 90 — decksh implements a domain-specific scripting language for presentations, visualizations, and information displays
+- [RubenVerborgh](https://github.com/RubenVerborgh/WebFundamentals) — ★ 90 — Slides for the “Web Development” class at Ghent University
+- [huijing](https://github.com/huijing/slides) — ★ 90 — :movie_camera: Slides for talks and stuff
+- [toddmotto](https://github.com/toddmotto/flaunt-js) — ★ 88 — Flaunt JS, stylish responsive navigations with nested click to reveal
+- [html5rocks](https://github.com/html5rocks/slides.html5rocks.com) — ★ 88 — The Original HTML5 Slide Deck
+- [alstn2468](https://github.com/alstn2468/2022-jsconf-presentation) — ★ 88 — 🖥 2022 JSConf "프론트엔드에서 함수형을 추구하면 안되는걸까?" 발표 자료 🌈
+- [GDQuest](https://github.com/GDQuest/godot-presentations) — ★ 88 — Create beautiful interactive presentations and localize them! Made with the Godot game engine
+- [flodlol](https://github.com/flodlol/PDF-Slides-to-Handouts-Converter) — ★ 87 — Privacy-first PDF handout generator – convert presentation slides into printable n-up layouts (2, 4, 6, 9 per page) using Next.js and pdf-lib.
+- [slidesdown](https://github.com/slidesdown/slidesdown) — ★ 87 — Presentations at the speed of Markdown
+- [tao12345666333](https://github.com/tao12345666333/slides) — ★ 87 — —
+- [Sicos1977](https://github.com/Sicos1977/OfficeExtractor) — ★ 87 — Extracts embedded OLE objects from Word, Excel, PowerPoint, Open Office and RTF files without needing the original programs
+- [lesteroliver911](https://github.com/lesteroliver911/ai-pdf-ppt-generator-openai) — ★ 86 — A fun project where I use the power of AI to analyze a PDF. The AI extracts key information based on the user's instructions and selections (see the UI demo)...
+- [ssocean](https://github.com/ssocean/PPT_Pilot) — ★ 86 — 【PPT汇报Agent】An AI agent that can present, answer questions, and control slides in real time.
+- [drego85](https://github.com/drego85/HackInBo) — ★ 86 — Official collection of HackInBo® talks, slides, and event programs.
+- [sol-eng](https://github.com/sol-eng/powerpoint) — ★ 85 — Render PowerPoint presentations from R Markdown documents
+- [minibear2333](https://github.com/minibear2333/tools) — ★ 81 — 实用工具：markdown写PPT、命令行自动演示工具、前端组件库等
+- [chromakode](https://github.com/chromakode/pow) — ★ 80 — An experimental HTML5 presentation tool.
+- [jynus](https://github.com/jynus/query-optimization) — ★ 80 — Slides and material for MySQL and MariaDB query optimization.
+- [AIPMAndy](https://github.com/AIPMAndy/LivePPT) — ★ 79 — 🎬 把 PPT 变成电影级网页演示 | Transform slides into cinematic web showcases
+- [SwiftCairo](https://github.com/SwiftCairo/MeetupSessions) — ★ 79 — Sharing meetup sessions: Code/slides/videos and links
+- [monoplasty](https://github.com/monoplasty/vue3-slide-verify) — ★ 79 — vue3 typescript slide verify
+- [lucas-goldner](https://github.com/lucas-goldner/FlutterShow) — ★ 78 — Unleash your creativity with presentations like never before! FlutterShow is an easy-to-use framework built in Flutter for crafting engaging and interactive ...
+- [phuvf](https://github.com/phuvf/oscpoint) — ★ 78 — OSCPoint is a PowerPoint add-in that allows Open Sound Control (OSC) control of PowerPoint on Windows
+- [AppleResearcher](https://github.com/AppleResearcher/Nano-Banana-Flow) — ★ 77 — 一个强大的 Chrome 浏览器插件，专为 Google Gemini 打造。支持批量输入提示词，自动调用 Nano Banana Pro 模型进行连续生图，并实现自动下载与按序保存，显著提升 PPT 素材制作效率。生图速度仅取决于Nano Banana 模型本身，使用者可以同步做别的事情，等返回页面生图已经完成...
+- [sbryngelson](https://github.com/sbryngelson/Fake-Beamer) — ★ 77 — You like Beamer? You need Powerpoint? Fake Beamer is for you!
+- [codrops](https://github.com/codrops/ItemRevealer) — ★ 76 — An experiment where grid items get revealed and unrevealed with animated, morphing SVG paths using anime.js.
+- [w3c](https://github.com/w3c/presentation-api) — ★ 76 — Presentation API
+- [pakco77](https://github.com/pakco77/pakco-html) — ★ 75 — 60+ 风格 · 演示 & 纵向页面 · taste / 图文 · 一键复制 Prompt
+- [simonwep](https://github.com/simonwep/presentr) — ★ 74 — Minimalistic javascript presentation-library. Zero dependencies. Can be used in combination with frameworks like Bootstrap, Materialize, Vue etc.
+- [arkham-build](https://github.com/arkham-build/arkham.build) — ★ 73 — Deck builder for Arkham Horror: The Card Game™
+- [iZettle](https://github.com/iZettle/Presentation) — ★ 73 — Presentation is an iOS Swift library for working with UI presentations in a more structured way
+- [darrarski](https://github.com/darrarski/swift-composable-presentation) — ★ 73 — Navigation helpers for SwiftUI applications built with ComposableArchitecture
+- [cdreier](https://github.com/cdreier/slide-serve) — ★ 73 — presentation and dev server for simple slides, inspired by https://github.com/trikita/slide-html
+- [vilmacio](https://github.com/vilmacio/gslides-maker) — ★ 72 — Generate Google Slides from Wikipedia content
+- [chaonan99](https://github.com/chaonan99/ppt_presenter) — ★ 70 — Convert ppt to video with audio track, using text to speech synthesis
+- [rembish](https://github.com/rembish/TextAtAnyCost) — ★ 70 — PHP moduels to read text content from different binary formats: PDF, DOC, PPT, RTF (not binary) etc.
+- [jspahrsummers](https://github.com/jspahrsummers/effective-code-review) — ★ 70 — Presentation about my process for making code reviews as effective as possible
+- [spirali](https://github.com/spirali/elsie) — ★ 70 — Python framework for making slides
+- [Dsiner](https://github.com/Dsiner/SlideLayout) — ★ 70 — SlideLayout for Android    ——Sliding delete, sliding menu, implementation by scroller ；侧滑删除, 侧滑菜单, Scroller方式实现
+- [tanaikech](https://github.com/tanaikech/DocsServiceApp) — ★ 69 — This is a Google Apps Script library for supporting Document service, Docs API, Spreadsheet service, Sheets API, Slides service and Slides API. The aim of th...
+- [0phoff](https://github.com/0phoff/MDXP) — ★ 69 — Web Slides Made Easy
+- [ztabs-official](https://github.com/ztabs-official/markdown-to-slides) — ★ 69 — —
+- [hiroppy](https://github.com/hiroppy/slides) — ★ 69 — My slides
+- [markslides](https://github.com/markslides/markslides) — ★ 68 — Entrance repository of MarkSlides
+- [PUITAR](https://github.com/PUITAR/DeepSlide) — ★ 68 — Not just slides - delivery-ready talks
+- [zzorba](https://github.com/zzorba/marvelsdb) — ★ 67 — MarvelsDB - a deck builders for Marvel Champions - The Card Game
+- [amio](https://github.com/amio/eloc) — ★ 67 — A CLI for presentations in markdown
+- [yegor256](https://github.com/yegor256/ssd16) — ★ 67 — 16 lectures about "Software Systems Design" presented in Innopolis University in 2021 for 3rd year BSc students
+- [slidevjs](https://github.com/slidevjs/docs-cn) — ★ 66 — Chinese documentation for sli.dev
+- [pramodkoujalagi](https://github.com/pramodkoujalagi/Automated-Course-Content-Generator) — ★ 66 — Automated Course Content Generator (ACCG) is an AI-powered Streamlit app for SMEs, Content Creators, and Educators. Input Course Name, Audience Level, Diffic...
+- [chapulina](https://github.com/chapulina/simslides) — ★ 65 — Presentation slides inside robot simulations 🎥🤖
+- [MadhavBahl](https://github.com/MadhavBahl/slides) — ★ 65 — Slides from some of my talks/YouTube videos. Do leave a star ⭐
+- [legendjslc](https://github.com/legendjslc/IT-PPT) — ★ 63 — IT 行业相关的 PPT 收集，关注大数据、人工智能、软件架构等。
+- [AlexandreKempf](https://github.com/AlexandreKempf/svelte-slides) — ★ 63 — —
+- [Slye3D](https://github.com/Slye3D/slye) — ★ 63 — A web application to create 3D presentations based on WebGL
+- [Master-Hash](https://github.com/Master-Hash/pdfpc-ts) — ★ 63 — Slideshow with presenter view in the browser
+- [hchauvet](https://github.com/hchauvet/beampy) — ★ 62 — Beampy is a python tool to create slide-show in svg that can be displayed in web browser or pdf
+- [stefankueng](https://github.com/stefankueng/demohelper) — ★ 61 — A tool which helps in demonstrations, presentations or if you just need to explain someone something on your computer. DemoHelper is an annotation and screen...
+- [Remix-Design](https://github.com/Remix-Design/RemixIcon-Slides) — ★ 61 — Remix Icon for PowerPoint and Keynote
+- [nicholasdille](https://github.com/nicholasdille/container-slides) — ★ 61 — Slides for my container talks
+- [liunianhuaguoyanxi](https://github.com/liunianhuaguoyanxi/ZWTopSelectVcView) — ★ 61 — 快速导入多个控制器，通过顶部选择菜单切换控制器，实现一个页面多个控制器切换处理.(It's an so easy way to add your all kinds of childControllers into superViewController, then you can slide around or...
+- [molefrog](https://github.com/molefrog/stateful-animations) — ★ 60 — 🌟 HolyJS Talk: Animations in the Stateful World (How to Animate Things in React)
+- [bitcraze](https://github.com/bitcraze/aideck-gap8-examples) — ★ 59 — Examples on how to use the GAP8 on the AI-deck
+- [haixin-fang](https://github.com/haixin-fang/tojson.js) — ★ 59 — tojson.js is a class library that supports parsing Psd, Sketch, and PPT to JSON. This JSON conforms to the data format of fabric.js rendering. (tojson.js 是一个...
+- [Langhalsdino](https://github.com/Langhalsdino/StageMate) — ★ 58 — StageMate is the smart assistant for your presentation. It will cover all aspects of your pitch from skipping slides to reminding you if you miss some major ...
+- [k8gege](https://github.com/k8gege/PPT) — ★ 58 — PPT教程
+- [BaizeAI](https://github.com/BaizeAI/talks) — ★ 57 — 📈 Repository of slides of talks we shared to the community
+- [adithyan-ak](https://github.com/adithyan-ak/Slides) — ★ 57 — The repo contains all the slide deck that was used during my presentation at various webinars, conferences, and meetups.
+- [joe-re](https://github.com/joe-re/cafe-pitch) — ★ 56 — Markdown-driven presentation tool built on Electron.
+- [ericlewis](https://github.com/ericlewis/PageSheet) — ★ 55 — Customizable sheets using UISheetPresentationController in SwiftUI
+- [googlecodelabs](https://github.com/googlecodelabs/bigquery-sheets-slides) — ★ 55 — Code repo for the Google Apps Script BigQuery-Sheets-Slides codelab application
+- [lectureStudio](https://github.com/lectureStudio/lectureStudio) — ★ 54 — An integrated tool for presenting lectures.
+- [bennymi](https://github.com/bennymi/presveltation) — ★ 54 — PreSveltation: Create fun, interactive, and dynamic presentations and slideshows with Svelte / SvelteKit and Tailwind CSS.
+- [parthgupta1208](https://github.com/parthgupta1208/PresentSmart) — ★ 54 — PresentSmart is a AI tool that generates a Powerpoint presentation for the topics provided by the user. It uses gpt3.5turbo to generate on-point & in-depth P...
+- [codythegreat](https://github.com/codythegreat/dss) — ★ 53 — Dead Simple Slides - A terminal based presentation tool with Vim style keybindings
+- [joncardasis](https://github.com/joncardasis/SizeSlideButton) — ★ 53 — A fun Swift UIControl for picking a size
+- [Skadro](https://github.com/Skadro/Full-Japanese-Study-Deck) — ★ 52 — Full Japanese Study Deck + Raw Notes + Deck Builder
+- [baoerger](https://github.com/baoerger/editable-ppt-rebuilder) — ★ 52 — Auditable workflow for rebuilding raster slides into editable PowerPoint decks with OCR, semantic assets, ImageGen, and strict QA
+- [ryanrudolfoba](https://github.com/ryanrudolfoba/SecureBootForSteamDeck) — ★ 51 — This repository contains the instructions on how to generate and install the Platform Key (PK), Key Exchange Key (KEK) and Signature Database (DB) to enable ...
+- [IIIF-Commons](https://github.com/IIIF-Commons/manifesto) — ★ 50 — IIIF Presentation API client and server utility library.
+- [yingkitw](https://github.com/yingkitw/ppt-rs) — ★ 50 — The Rust library for generating PowerPoint presentations that actually works.
+- [glukicov](https://github.com/glukicov/slideops) — ★ 50 — Turn a repository into a slide deck that tells you when it stops matching the code
+- [Staacks](https://github.com/Staacks/Game-Boy-Slideshow-Generator) — ★ 49 — Create slideshow ROMs for your Game Boy directly in your browser.
+- [keithmcnulty](https://github.com/keithmcnulty/ppt-generation) — ★ 49 — Generate parameterized powerpoint with Python and R
+- [WilliamSmithEdward](https://github.com/WilliamSmithEdward/pyOpenVBA) — ★ 49 — Pure-Python reader/writer for VBA macros embedded in Excel / PowerPoint / Word / Access files. Zero dependencies, deterministic round-trip, safe on protected...
+- [norahe0304-art](https://github.com/norahe0304-art/30x-mckinsey-research-deck) — ★ 49 — McKinsey-grade market research decks for Claude Code — adversarially verified numbers, 15 McKinsey methodologies as executable workflow, multi-agent pipeline...
+- [Austin-Patrician](https://github.com/Austin-Patrician/Wordless) — ★ 49 — Less talk. Finish the work.
+- [tinyclub](https://github.com/tinyclub/markdown-lab) — ★ 49 — Docker based Markdown Editing Environment for slides, resume, books and articles; New Linux ELF Video Course from this project author: https://www.cctalk.com...
+- [slidewiki](https://github.com/slidewiki/slidewiki-platform) — ★ 48 — SlideWiki Platform
+- [cortiz2894](https://github.com/cortiz2894/mouse-effects) — ★ 47 — A collection of interactive mouse effects built with Next.js, Three.js, and GSAP. This project showcases creative cursor interactions including water ripple ...
+- [IIIF](https://github.com/IIIF/presentation-validator) — ★ 47 — Validator for the Presentation API
+- [ChiChou](https://github.com/ChiChou/slides) — ★ 47 — Mirror my talk materials
+- [yegor256](https://github.com/yegor256/painofoop) — ★ 47 — Object-oriented programming is a pain if we do it wrong: Lecture Notes for a BSc course
+- [Huxpro](https://github.com/Huxpro/sw-101-gdgdf) — ★ 47 — Slides: Service Worker 101 @ GDG DevFest 2016
+- [genmini-ai](https://github.com/genmini-ai/OpenCanvas) — ★ 47 — Generate stunning presentations from any topic or PDF in minutes - with AI evaluation and self-evolution
+- [kydecker](https://github.com/kydecker/lissajous-svg) — ★ 47 — Lissajous curve SVG generator
+- [Shimmur](https://github.com/Shimmur/swiftui-uikit-presenting) — ★ 46 — UIKit presentation APIs in SwiftUI
+- [japplis](https://github.com/japplis/Joeffice) — ★ 46 — Java Office Suite - Word processor - Spreadsheet - Presentation - Database - Drawing - Main Libraries: NetBeans Platform and Apache POI - Apache License
+- [jassics](https://github.com/jassics/cybersecurity-slides) — ★ 46 — Collection of mine and others presentations on various topics like application security, python, cloud security, DevSecOps and so on... These are free to use...
+- [managedcode](https://github.com/managedcode/PrompterOne) — ★ 45 — Browser-first teleprompter, rehearsal, and live presentation studio built with .NET 10 and Blazor WebAssembly.
+- [shining1984](https://github.com/shining1984/talks) — ★ 45 — 史宁宁（知乎ID:小乖他爹（已经改为：编译船夫），CSDN ID：snsn1984）的演讲交流PPT及相关资料。
+- [jceb](https://github.com/jceb/mdshow) — ★ 45 — Turn markdown files into beautiful presentations quickly
+- [bojanczyk](https://github.com/bojanczyk/slajdomat) — ★ 45 — A program for making zooming slides in figma.
+- [LinusBorg](https://github.com/LinusBorg/talks) — ★ 45 — Collection of talks I gave
+- [kienerj](https://github.com/kienerj/molecule-slide-generator) — ★ 44 — Generate images of molecules and their properties for use in presentations and reports
+- [rniemeyer](https://github.com/rniemeyer/SamplePresentation) — ★ 44 — Reference sample for a presentation tool that can show live coded Knockout samples
+- [idris-maps](https://github.com/idris-maps/middle-manager) — ★ 44 — The no bullshit presentation tool
+- [SymfonyLive](https://github.com/SymfonyLive/paris-2022-talks) — ★ 44 — —
+- [chinalwb](https://github.com/chinalwb/slidetoconfirm) — ★ 44 — Slide to confirm component on Android
+- [JoshDSommer](https://github.com/JoshDSommer/nativescript-ngx-slides) — ★ 44 — A NativeScript + Angular module for to add a slides component to your mobile app
+- [gatelynch](https://github.com/gatelynch/html-slides) — ★ 43 — —
+- [mizzy](https://github.com/mizzy/peitho) — ★ 43 — An HTML-native presentation tool that treats Markdown as the source of truth.
+- [wandersick](https://github.com/wandersick/aerozoom) — ★ 43 — Simplify screen magnifying on Windows for Mac-like zoom experience with this keyboard-free presentation/HTPC tool
+- [Tsuyoken](https://github.com/Tsuyoken/MSBackdoor) — ★ 43 — [Discontinued] Transform your payload into fake powerpoint (.ppt)
+- [mahdinasseri](https://github.com/mahdinasseri/Open-Presentations) — ★ 43 — Sharing a Decade of Knowledge: Open Repository of My Educational Tech Startup Slides
+- [ashleygwilliams](https://github.com/ashleygwilliams/jsconf-2015-deck) — ★ 42 — deck for jsconf2015 talk, "if you wish to learn e6/2015 from scratch, you must first invent the universe"
+- [Turtlebody](https://github.com/Turtlebody/android-doc-picker) — ★ 42 — A simple and easy to use documents Picker android library. Choose any documents like pdf, ppt, text, word or media files from your device
+- [apreshill](https://github.com/apreshill/talks) — ★ 42 — —
+- [abilian](https://github.com/abilian/prezo) — ★ 42 — TUI presentation tool
+- [SlideSpeak](https://github.com/SlideSpeak/slidespeak-webapp) — ★ 42 — Frontend for SlideSpeak. Create PowerPoints with AI. Get summaries, ask questions, create presentations and more.
+- [treeleaves30760](https://github.com/treeleaves30760/Markdown_PPT_Converter) — ★ 42 — Help you create ppt by LLM generated Markdown
+- [Teddy-van-Jerry](https://github.com/Teddy-van-Jerry/pdf2ppt) — ★ 41 — Convert PDF Slides to PowerPoint Presentations (PPT)
+- [kookma](https://github.com/kookma/TW-Tamasha) — ★ 41 — Presentation and slideshow app using web technology based onTiddlywiki
+- [bhrutledge](https://github.com/bhrutledge/jupyter-django) — ★ 41 — Using Jupyter Notebook with Django: a presentation
+- [turbo-eth](https://github.com/turbo-eth/turbo-slides) — ★ 41 — 📖 Slide Decks with Web3 Capabilities
+- [gurecn](https://github.com/gurecn/LibreOffice-android) — ★ 41 — LibreOffice 是一款功能强大的办公软件，支持ODF,Word, Excel,PowerPoint,Visio,PDF等各类文档浏览，LibreOffice-android为安卓版本，可直接安装使用。
+- [orchestructure](https://github.com/orchestructure/presentations) — ★ 41 — Holds and organizes all past, present, and future presentations at the meetup
+- [Xiaokebuyu](https://github.com/Xiaokebuyu/Nodesign) — ★ 40 — 与 Agent 共用一块画布：以画布为中心的 Agent 工作台。网站、演示稿、Word 文档、图像与视频集中在同一块画布上，用户指定、整理与修改，Agent 制作、检查与说明。支持 Windows 桌面版与自有密钥（BYOK）。
+- [yuwenhui2020](https://github.com/yuwenhui2020/PPT-Addin) — ★ 40 — ppt 网页 webview2 显示 在线网页这是一个ppt网页插件，可以在ppt内显示网页，使用要求为win10以上，安装了net 4.8和webview2，This is a PPT web plug-in, which can display web pages in PPT, and the use re...
+- [xudafeng](https://github.com/xudafeng/slide) — ★ 40 — my slides
+- [kentcdodds](https://github.com/kentcdodds/aha-programming-slides) — ★ 40 — —
+- [pragmamark](https://github.com/pragmamark/pragmaconf17) — ★ 40 — A collection of slide decks, videos and other material from the Pragma Conference 2017 talks
+- [yusukebe](https://github.com/yusukebe/App-revealup) — ★ 40 — HTTP Server app for viewing Markdown formatted text as slides
+- [mverissimo](https://github.com/mverissimo/tweenslideshow) — ★ 40 — A simple slideshow using Tweenmax
+- [troygoode](https://github.com/troygoode/node-shuffle) — ★ 39 — node.js package for shuffling and dealing decks of cards (or anything else you'd like to shuffle)
+- [amontalenti](https://github.com/amontalenti/rapid-web-slides) — ★ 39 — Rapid Web Prototyping with Lightweight Tools: slides from a PyCon tutorial.
+- [soypat](https://github.com/soypat/go-presentx) — ★ 39 — golang's present tool but with code syntax highlighting
+- [wanadev](https://github.com/wanadev/wanaprez) — ★ 39 — Simply turns Markdown into presentation
+- [Comp-Labs](https://github.com/Comp-Labs/Google-Docs) — ★ 39 — Google Docs Desktop App made with :electron:. Includes Google Docs, Sheets, Slides, Forms, and Drive.
+- [tjunttila](https://github.com/tjunttila/pdf2video) — ★ 38 — A tool for making videos from PDF presentations.
+- [raulh82vlc](https://github.com/raulh82vlc/Image-Detection-Samples) — ★ 38 — This sample app supports "Building a MVP with Face recognition and AR" and "Quest of a Hero part 2" presentations as well as it has two different possibiliti...
+- [shioyadan](https://github.com/shioyadan/kuroko) — ★ 38 — Kuroko is a small tool to convert from EMF to PDF. A typical use of this tool is to create PDF files from PowerPoint/Excel for use in LaTeX. You can download...
+- [AkechiShiro](https://github.com/AkechiShiro/slides-talks) — ★ 38 — My own cybersecurity research talks/slides
+- [vikingmute](https://github.com/vikingmute/scrambl) — ★ 37 — Scrambl is a zero-dependency TypeScript library for creating text scramble, decode, and reveal animations in Vanilla JS, React, and Vue.
+- [n-alex-goncalves](https://github.com/n-alex-goncalves/BiscaMultiplayer) — ★ 37 — Bisca (Portuguese card-trick game) in a HTML/JS web application. Developed using socket.io, Deck of Cards API and Framer Motion.
+- [it-security-kassel-nordhessen](https://github.com/it-security-kassel-nordhessen/meetup) — ★ 37 — Slides of IT-Security Meetup Kassel
+- [auntiepickle](https://github.com/auntiepickle/ff7seventhheavensteamdeck) — ★ 37 — 7th Heaven Steam Deck Install Guide
+- [jardicc](https://github.com/jardicc/ActionManagerHumanizer) — ★ 36 — This tool will reveal for you occult mystery of Photoshop ActionDescriptors and will transform them into well known JSON strings and JS objects
+- [anthonychian](https://github.com/anthonychian/shadowverse-client) — ★ 36 — Shadowverse Evolve Online Simulator. An online multiplayer card game simulator for Shadowverse Evolve. Features deck creation with 1000+ cards, 1v1 battles w...
+- [LeoNatan](https://github.com/LeoNatan/LNWindowManager) — ★ 36 — A window manager that makes working with UIWindow objects easily using an API similar to the UIViewController modal presentation API.
+- [dbmdz](https://github.com/dbmdz/iiif-server-hymir) — ★ 36 — Hymir is a Java based IIIF Server. It is based on "IIIF Image API Java Libraries" and "IIIF Presentation API Java Libraries" projects (see https://github.com...
+- [Vija02](https://github.com/Vija02/TheOpenPresenter) — ★ 36 — TheOpenPresenter is open-source version of ProPresenter that uses modern technologies to simplify presenting and save time for everyone involved.
+- [jbowes](https://github.com/jbowes/cl-eye-catching-uis) — ★ 36 — GopherCon 2018 tutorial session slides and examples
+- [benedict-armstrong](https://github.com/benedict-armstrong/presio) — ★ 36 — Present PDFs from your browser. Including speaker notes, mp4/YouTube/Vimeo support and more! Presentations stay on your machine unless explicitly shared!
+- [broccolini](https://github.com/broccolini/design-systems-and-react) — ★ 36 — Slide deck for my talk on using React for design systems, watch on YouTube https://youtu.be/N-5TNKJ7eB0?t=15m25s
+- [peerigon](https://github.com/peerigon/talks) — ★ 36 — Everything @peerigon talks about...
+- [Qwejay](https://github.com/Qwejay/QTimer) — ★ 35 — 极简流线型桌面悬浮计时器。专为说课、答辩、演讲与会议打造，支持 PPT 放映自动检测、多环节流转、防抢焦点与变色提醒。 | A minimalist floating presentation timer with PPT auto-detection, multi-stage flow & zero drift.
+- [Trkzi-Omar](https://github.com/Trkzi-Omar/PFE-projects) — ★ 35 — A repository to group reports & presentations of end of studies projects (PFE) of students in the software engineering field in Morocco 🇲🇦.
+- [BountyMachine](https://github.com/BountyMachine/about) — ★ 35 — A central place to keep track of relevant BountyMachine talks, blogs, and interesting things!
+- [gabrielrcouto](https://github.com/gabrielrcouto/presentation-from-docker-to-kubernetes) — ★ 35 — How can we deploy PHP applications using Docker containers? How can we scale PHP applications using Kubernetes? This presentation will make an overview over ...
+- [markdownreveal](https://github.com/markdownreveal/markdownreveal) — ★ 35 — A tool for creating presentations with simple Markdown notation.
+- [SymfonyLive](https://github.com/SymfonyLive/paris-2020-talks) — ★ 35 — —
+- [Pakillo](https://github.com/Pakillo/GISwithR) — ★ 35 — GIS with R: slides for the unconverted
+- [elliottzheng](https://github.com/elliottzheng/ppt2fig) — ★ 34 — PPT2Fig 用来把 PPT 页面导出成适合论文、汇报和文档插图使用的 PDF，并自动裁掉多余白边。
+- [TateZhouSiu](https://github.com/TateZhouSiu/image-ppt-king) — ★ 34 — Turn slide screenshots and generated images into editable PowerPoint decks with visual-layer splitting, OCR evidence, and QA.
+- [JasonKhew96](https://github.com/JasonKhew96/Docs2Pdf) — ★ 34 — Bulk convert word/powerpoint/excel file to pdf.
+- [KyuDan1](https://github.com/KyuDan1/Talk-to-Your-Slides) — ★ 34 — PowerPoint Slide Editing Agent, accepted at ACL 2026 Findings
+- [GoSecure](https://github.com/GoSecure/presentations) — ★ 34 — Material from presentations done by GoSecure researchers
+- [MobSF](https://github.com/MobSF/MobSF-Related-Materials) — ★ 34 — MobSF related Presentations, Slides and Others.
+- [markwk](https://github.com/markwk/python4selftrackers) — ★ 34 — Presentations on Quantified Self and Self-Tracking with Python
+- [tinesoft](https://github.com/tinesoft/ngx-wow) — ★ 33 — Angular module for WOW.js: a customizable library to reveal animations when you scroll.
+- [rockettomatooo](https://github.com/rockettomatooo/slate-react-presentation) — ★ 33 — A small presentation package for slate.js documents
+- [apreshill](https://github.com/apreshill/ohsu-biodatavis) — ★ 33 — "Take a Sad Plot & Make It Better" Talk @ OHSU's BioData Club
+- [hoijui](https://github.com/hoijui/sent) — ★ 33 — a simple plaintext presentation tool
+- [dekk-app](https://github.com/dekk-app/dekk) — ★ 33 — 👁 A presentation tool written in react.js
+- [brianyu28](https://github.com/brianyu28/presenter) — ★ 33 — A presentation tool for programmatically building animated visual slides
+- [iiif-prezi](https://github.com/iiif-prezi/osullivan) — ★ 33 — IIIF Presentation API for Ruby
+- [aozhimin](https://github.com/aozhimin/iOS-Reverse-Engineering-presentation) — ★ 33 — iOS Reverse Engineering Presentation
+- [tristan-mcinnis](https://github.com/tristan-mcinnis/PPT-Translator-Formatting-Intact-with-LLMs) — ★ 33 — A powerful PowerPoint translation tool that preserves all formatting while translating content using the Deepseek API. This tool maintains fonts, colors, lay...
+- [mr-ubik](https://github.com/mr-ubik/machine-learning-for-dummies) — ★ 33 — Series of talks/workshops aimed at guiding newcomers through Python basics, Data Analysis and Machine Learning.
+- [0xricksanchez](https://github.com/0xricksanchez/HITB2020_FSFUZZER) — ★ 33 — My Material for the HITB presentation
+- [kuanyui](https://github.com/kuanyui/takahashi.js) — ★ 33 — Make Takahashi-style slide easily!
+- [SymfonyLive](https://github.com/SymfonyLive/paris-2023-talks) — ★ 33 — —
+- [ajstarks](https://github.com/ajstarks/dchart) — ★ 33 — dchart makes charts using deck markup
+- [djetelina](https://github.com/djetelina/pyCardDeck) — ★ 33 — Deck of cards with all the logic, so you don't have to!
+- [rladies](https://github.com/rladies/rladies_global_presentations) — ★ 33 — Slides and posters from RLadies+ Global conference talks
+- [Sonnenstrahl](https://github.com/Sonnenstrahl/traktor-now-playing) — ★ 32 — A Node.JS script that reads the Tracks on Deck A and B from Traktor via midi.
+- [jxnblk](https://github.com/jxnblk/redeck) — ★ 32 — DEPRECATED: see https://github.com/jxnblk/mdx-deck
+- [bodil](https://github.com/bodil/pink) — ★ 32 — A presentation tool.
+- [BerlinChan](https://github.com/BerlinChan/askent) — ★ 32 — A simple interaction and presentation tool, a clone of Sli.do.
+- [MacoskoLab](https://github.com/MacoskoLab/slideseq-tools) — ★ 32 — Tools for analyzing Slide-seq data
+- [citypaul](https://github.com/citypaul/fullstack-react-tdd-example) — ★ 32 — A repository designed to show good modern testing practices. Created to illustrate key points for a talk I gave: https://www.youtube.com/watch?v=jBkEz-Azsak
+- [aKaReZa75](https://github.com/aKaReZa75/Presentations) — ★ 32 — This repository contains all the presentation files used in my educational videos.
+- [nickolasrm](https://github.com/nickolasrm/TimelineBubbles) — ★ 32 — Beautiful timelines for your presentations ⚪⏳
+- [niwattep](https://github.com/niwattep/material-slide-date-picker) — ★ 32 — A slide date picker for Android
+- [beyondworks](https://github.com/beyondworks/lean-deck) — ★ 31 — One slide API, seventeen design languages. Token-driven React slide deck kit.
+- [slideshare](https://github.com/slideshare/SlideshareAPIExamples) — ★ 31 — Wrappers and examples for how to use the Slideshare API
+- [diessica](https://github.com/diessica/password-revealer.js) — ★ 31 — :eyes: easily reveal/hide passwords in input fields.
+- [nextjs](https://github.com/nextjs/react-view-transitions-demo) — ★ 31 — Next.js gallery app showcasing React View Transitions — shared element morphs, directional navigation, Suspense reveals, and more
+- [chenxingqiang](https://github.com/chenxingqiang/ppt-agents) — ★ 31 — A Python-based tool for automatically generating PowerPoint presentations from markdown files using AI agents.
+- [tjmahr](https://github.com/tjmahr/MadR_Pipelines) — ★ 31 — Slides and materials for my talk to the Madison R Users Group
+- [eugeniosegala](https://github.com/eugeniosegala/easy_background) — ★ 31 — An extremely easy and clear SlideShow Background dev in Vanilla JS.
+- [azu](https://github.com/azu/slide) — ★ 31 — スライド置き場
+- [opensourcedesign](https://github.com/opensourcedesign/talks) — ★ 31 — :information_desk_person: Talks, slides, brainstorming decks about Open Source Design
+- [Lucaber](https://github.com/Lucaber/deckjoy) — ★ 31 — Connect your Steam Deck as USB Controller GameController/Keyboard/Mouse to your PC. No additional software or drivers required.
+- [slidoapp](https://github.com/slidoapp/sliger) — ★ 31 — Slide of the Tiger
+- [nirnejak](https://github.com/nirnejak/react-presentation) — ★ 30 — Use your React components as presentation slides
+- [0ki](https://github.com/0ki/presentation-toolkit) — ★ 30 — Tools to help in creating technical presentations on IT
+- [youchan](https://github.com/youchan/gibier) — ★ 30 — A slide tool inspired by rabbit
+- [airpptx](https://github.com/airpptx/airppt-parser) — ★ 30 — Parses a Powerpoint Deck to create standardized elements that can be reused
+- [rockyxia](https://github.com/rockyxia/vue-superslide) — ★ 30 — SuperSlide component for Vue
+- [quasilyte](https://github.com/quasilyte/talks) — ★ 30 — A collection of slides, notes and other related stuff from talks I have given.
+- [utrechtjug](https://github.com/utrechtjug/slides) — ★ 30 — A repo containing all the available presentations given @ our JUG.
+- [greenpeace](https://github.com/greenpeace/gpes-html5-scorm-presentation) — ★ 29 — Create a presentation using html5. Use it independently or upload it as an elearning SCORM package.
+- [qti3e](https://github.com/qti3e/slye) — ★ 29 — 3D presentation  desktop application
+- [pyneng](https://github.com/pyneng/all-pyneng-slides) — ★ 29 — Слайды к лекциям моих курсов
+- [wlzhao22](https://github.com/wlzhao22/clecture) — ★ 29 — Programming in C  lecture slides written in Latex
+- [cutting-room-floor](https://github.com/cutting-room-floor/Mapresent) — ★ 28 — Interactive map presentation tool for iPad which exports to video
+- [fukamachi](https://github.com/fukamachi/L5) — ★ 28 — Yet Another Presentation Tool for Lispers
+- [GoogleChromeLabs](https://github.com/GoogleChromeLabs/presentation-api-samples) — ★ 28 — —
+- [sunghwan2789](https://github.com/sunghwan2789/Bible2PPT) — ★ 28 — 성경2PPT - 성경 구절을 PPT로 만들어주는 프로그램
+- [JoelGMSec](https://github.com/JoelGMSec/MyTalks) — ★ 28 — Collection of my talks and workshops about hacking & cybersecurity
+- [samdark](https://github.com/samdark/slides) — ★ 28 — Alexander Makarov conference slides
+- [awmleer](https://github.com/awmleer/morph) — ★ 28 — Turn your Markdown documents into slides.
+- [sylvanc](https://github.com/sylvanc/pony-lecture) — ★ 28 — Slides for Pony lectures
+- [puntorigen](https://github.com/puntorigen/recover-source) — ★ 27 — Light up your lost JS/TS source code with Recover-Source! 🚀 This handy CLI tool recovers and revives your original source code from a directory packed with m...
+- [canadalearningcode](https://github.com/canadalearningcode/llc-intro-to-javascript) — ★ 27 — Full day Intro to JavaScript (SLIDES - http://ladieslearningcode.github.io/llc-intro-to-javascript/slides.html), (LEARNER FILES - http://bit.ly/1oNRFA2), no ...
+- [janoliver](https://github.com/janoliver/inkslides) — ★ 27 — A rewrite of the inkscapeslide script to create PDF presentations out of inkscape SVG files.
+- [lojikil](https://github.com/lojikil/kyoto-go-nihilism) — ★ 27 — A quick and dirty Golang security talk
+- [Daenyth](https://github.com/Daenyth/intro-cats-effect) — ★ 27 — Slides and video recording for my "Intro to Cats-Effect" talk
+- [natenka](https://github.com/natenka/old-pyneng-slides) — ★ 27 — СТАРЫЕ презентации к курсу Python для сетевых инженеров
+- [sixfeetup](https://github.com/sixfeetup/rally-llm-presentation) — ★ 26 — —
+- [jyheo](https://github.com/jyheo/android-lecture) — ★ 26 — android lecture notes
+- [desjarlais](https://github.com/desjarlais/Office-File-Explorer-v2) — ★ 26 — This tool can be used to view details of Office Open Xml formatted files (Word, Excel, PowerPoint) for troubleshooting purposes...Click here to download the ...
+- [agostontorok](https://github.com/agostontorok/slides-of-loci) — ★ 26 — A presentation tool for functional and effective 3D presentations
+- [zairuilab](https://github.com/zairuilab/consulting-deck) — ★ 26 — Turn complex sources into evidence-traceable, layout-safe, natively editable McKinsey-style PowerPoint — 45 semantic page contracts and verified chart data.
+- [rumyantseva](https://github.com/rumyantseva/going-secure) — ★ 26 — [talk] GoDays 2019: Going secure with Go
+- [rladies](https://github.com/rladies/meetup-presentations_berlin) — ★ 26 — R-Ladies Berlin - Collection of presentation and information
+- [bigwhite](https://github.com/bigwhite/talks) — ★ 26 — my personal speaking slides for tech conference
+- [audioslides](https://github.com/audioslides/audioslides.io) — ★ 26 — Use Amazon Polly, Google Slides and FFMpeg to create videos that can be updated at anytime by anyone. This project is written in Elixir.
+- [gpenessot](https://github.com/gpenessot/Automate-Presentation-Creation-with-Python) — ★ 25 — Gnrer des prsentations PowerPoint depuis Python. Compagnon d'un article Medium
+- [kingrishabdugar](https://github.com/kingrishabdugar/fizzdoc) — ★ 25 — Free, private PDF, image, audio, Word, Excel & PowerPoint tools that run 100% in your browser. Remove backgrounds from photos, GIFs and videos, edit and conv...
+- [tkp-archive](https://github.com/tkp-archive/jupyterlab_powerpoint) — ★ 25 — Creating PowerPoints from jupyter notebooks and vice versa
+- [Asperamanca](https://github.com/Asperamanca/monadic_operations_cpp23) — ★ 25 — Material for my talk "Safe and Readable Code: Monadic Operations in C++23"
+- [CFinTech](https://github.com/CFinTech/TJCS-Slides) — ★ 25 — 同济大学 Slides 模板，适用于 Powerpoint，Google Slides，提供适合工科生的 slides 设计素材与思路
+- [jessesquires](https://github.com/jessesquires/talks) — ★ 25 — Slides and materials for talks that I've given
+- [awalterschulze](https://github.com/awalterschulze/ragax) — ★ 25 — A Talk on Ragalur Expressions
+- [tchatel](https://github.com/tchatel/angular-showoff) — ★ 24 — A simple presentation tool written with AngularJS, and directly inspired by ShowOff.
+- [behdad](https://github.com/behdad/slippy) — ★ 24 — Simple PyCairo-based presentation tool
+- [spellfire](https://github.com/spellfire/CrossFire) — ★ 24 — Spellfire Game Utility: Online Play, Deck Builder, Card Search and more
+- [ANRDigital](https://github.com/ANRDigital/ANR-Deck-Builder) — ★ 24 — Netrunner Deck Builder App for Android
+- [pennypny163](https://github.com/pennypny163/mbb-deck-builder) — ★ 24 — —
+- [wulab](https://github.com/wulab/mithril-slides) — ★ 24 — A Keynote-inspired presentation app written with Mithril
+- [imkira](https://github.com/imkira/gostudy) — ★ 24 — Go study session presentation at CyberAgent
+- [analystacademy](https://github.com/analystacademy/flight-check) — ★ 24 — Final check for AI-generated slide decks — catches fake sources, AI tells, and other mistakes you don't want in your presentation.
+- [roskakori](https://github.com/roskakori/talks) — ★ 24 — Slides and code examples for my talks
+- [polito-WA1-2020](https://github.com/polito-WA1-2020/course-materials) — ★ 24 — Study material (slides, documents, etc) for the Web Applications I course (Politecnico di Torino, 2019/2020)
+- [bkase](https://github.com/bkase/slides) — ★ 24 — Slide decks rendered from mardown
+- [ualex73](https://github.com/ualex73/slide) — ★ 24 — Slide Component for Home Assistant
+- [tilfin](https://github.com/tilfin/deck) — ★ 24 — Deck is a multi-timeline viewer for GitHub repository events.
+- [googleworkspace](https://github.com/googleworkspace/slides-api) — ★ 23 — Learn How to Use the Google Slides API
+- [hairizuanbinnoorazman](https://github.com/hairizuanbinnoorazman/rgoogleslides) — ★ 23 — R wrapper for Google Slides API
+- [airportyh](https://github.com/airportyh/Preston) — ★ 23 — A simple browser-based presentation tool based on Markdown.
+- [salihgueler](https://github.com/salihgueler/DroidKaigi2019Presentation) — ★ 23 — The Flutter presentation that I made at the DroidKaigi conference
+- [zntfdr](https://github.com/zntfdr/talks) — ★ 23 — Slides and materials for talks I've given 🎤
+- [sellout](https://github.com/sellout/category-parametric-talk) — ★ 23 — Talks on category-parametric programming.
+- [fsrocha-dev](https://github.com/fsrocha-dev/slidefy) — ★ 23 — ▶️ A slideshow focused on reading markdown files.
+- [Jack-Li-Npu](https://github.com/Jack-Li-Npu/PPTMixed) — ★ 23 — Restore PDF slides with AI-assisted inpainting and high-resolution redraw. Export to PDF or PowerPoint.
+- [kmierzeje](https://github.com/kmierzeje/plantuml-powerpoint-addin) — ★ 23 — This add-in allows to embed PlantUml diagrams in PowerPoint presentations.
+- [rbaker26](https://github.com/rbaker26/Programming-Merit-Badge) — ★ 23 — PowerPoint and Code Resources for BSA Programming Merit Badge
+- [aspeddro](https://github.com/aspeddro/slides.nvim) — ★ 23 — Slides presentation in your Neovim
+- [kodandy](https://github.com/kodandy/slides) — ★ 23 — Presentation slides
+- [gustavecortal](https://github.com/gustavecortal/natural-language-processing) — ★ 23 — Slides, exercises, and exams for my course "Natural Language Processing" (École Pour l'Informatique et les Techniques Avancées, 2024 and 2025)
+- [prithvi-rajan-222](https://github.com/prithvi-rajan-222/slide-cn) — ★ 23 — A structured way to create presentations using code.
+- [Mte90](https://github.com/Mte90/Mozilla-Presentation-Boilerplate) — ★ 23 — —
+- [wulu007](https://github.com/wulu007/geetest-bypass) — ★ 23 — Geetest v4 CAPTCHA solver — slide, match, voice. No browser or click simulation. 极验 v4 验证码求解库，支持滑块/找图/语音。无需浏览器，无需模拟点击。
+- [mebitek](https://github.com/mebitek/tui-deck) — ★ 23 — A TUI frontend for Nextcloud Deck app written in GO
+- [alex-yelisieiev](https://github.com/alex-yelisieiev/ai-presentation-generator) — ★ 22 — A tool for free AI-powered cloud-based presentation generation (no API key required)
+- [wannanbigpig](https://github.com/wannanbigpig/AiDeck) — ★ 22 — 使用utools插件告别繁琐的账号切换与配置重载。本工具提供统一的调度层，深度集成 Antigravity 与 Codex 等环境。支持多账号并发运行，助你灵活调度不同实例的算力资源，让 AI 开发效率翻倍。
+- [Deams51](https://github.com/Deams51/TextExtractor-UE4) — ★ 22 — Unreal Engine 4 integraton of Apache Tika to detect and extract metadata and text from over a thousand different file types (such as PPT, XLS, and PDF).
 
-_(126 repos in this category)_
+_Showing top 500 of 11281 repos in this category — the full list with all 11281 entries is in [`data/repos.json`](data/repos.json)._
 
 ## Full dataset
 
-All 800 matched repositories (with categories and stars) are saved in [`data/repos.json`](data/repos.json).
+All 33140 matched repositories (with categories and stars) are saved in [`data/repos.json`](data/repos.json).
 
 ## How this list was built
 
-- Repositories were discovered via `gh search repos` across ~30 queries (AI presentation, MCP server, Marp, Slidev, reveal.js, python-pptx, PptxGenJS, agent skills, awesome-lists, ...).
+- Repositories were discovered via `gh search repos` across **214 queries** (AI presentation / PPT generators, MCP servers, agent skills, Marp / Slidev / reveal.js frameworks, python-pptx / PptxGenJS, themes & templates, knowledge bases, plus Chinese-language AI-PPT tools and `topic:` filters) — yielding ~45,600 unique repos after de-duplication.
 - Results were merged, de-duplicated and noise-filtered (card-game decks, flashcards, image sliders/carousels removed).
 - Each repo was auto-classified into one of 8 categories by keyword; the curated lists above exclude obvious non-presentation noise.
 

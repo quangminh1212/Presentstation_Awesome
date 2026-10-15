@@ -47,6 +47,30 @@ def clean(repo, section):
         if kw in blob: return False
     return True
 
+# strong presentation signal used to decide which repos belong in "Featured"
+STRONG_PRESENT = ["presentation","slides","slide "," ppt","pptx","powerpoint","keynote","beamer",
+    "reveal","marp","slidev","impress","quarto","xaringan","pandoc","typst","touying","obsidian",
+    "google-slides","lecture","演示","幻灯","汇报","演讲","プレゼン","프레젠","슬라이드","deck","decks",
+    "pitchdeck","pitch-deck","html-slide","html-slides"]
+PRESENT_CATS = {"AI / LLM Generators (end-to-end)","MCP Servers","Slides Frameworks (HTML/Web)",
+    "Markdown -> Slides (Marp/Quarto/RISE/Org/Pandoc)","PPTX / OOXML Libraries & Tools"}
+
+def is_present_topic(repo):
+    if repo["category"] in PRESENT_CATS:
+        return True
+    blob = (repo["owner_name"]+" "+repo["name"]+" "+(repo.get("desc") or "")).lower()
+    return any(k in blob for k in STRONG_PRESENT)
+
+# famous repos that match a weak keyword but are NOT presentation-related
+FEATURED_EXCLUDE = {"dujltqzv/some-many-books","owainlewis/awesome-artificial-intelligence",
+    "dair-ai/ml-course-notes"}
+
+def repo_key(r):
+    return r["url"].replace("https://github.com/","").rstrip("/").lower()
+
+# how many repos to show per section in the README (the full set lives in data/repos.json)
+CAP = 500
+
 # build buckets
 buckets = {cat: [] for _,cat,_ in SECTIONS}
 for repo in data:
@@ -85,7 +109,9 @@ out.append("## Featured")
 out.append("")
 out.append("The highest-starred and most influential repositories across all categories:")
 out.append("")
-featured = sorted([r for r in data if clean(r, "")], key=lambda r:-r["stargazersCount"])[:45]
+featured = sorted([r for r in data if clean(r, "") and is_present_topic(r)
+                     and (repo_key(r) not in FEATURED_EXCLUDE)],
+                   key=lambda r:-r["stargazersCount"])[:45]
 for r in featured:
     out.append(fmt(r))
 out.append("")
@@ -101,10 +127,14 @@ for label, cat, blurb in SECTIONS:
         out.append("_No repositories matched._")
         out.append("")
         continue
-    for r in items:
+    shown = items[:CAP]
+    for r in shown:
         out.append(fmt(r))
     out.append("")
-    out.append(f"_({len(items)} repos in this category)_")
+    if len(items) > CAP:
+        out.append(f"_Showing top {CAP} of {len(items)} repos in this category — the full list with all {len(items)} entries is in [`data/repos.json`](data/repos.json)._")
+    else:
+        out.append(f"_({len(items)} repos in this category)_")
     out.append("")
 
 out.append("## Full dataset")
@@ -113,7 +143,7 @@ out.append(f"All {len(data)} matched repositories (with categories and stars) ar
 out.append("")
 out.append("## How this list was built")
 out.append("")
-out.append("- Repositories were discovered via `gh search repos` across ~30 queries (AI presentation, MCP server, Marp, Slidev, reveal.js, python-pptx, PptxGenJS, agent skills, awesome-lists, ...).")
+out.append("- Repositories were discovered via `gh search repos` across **214 queries** (AI presentation / PPT generators, MCP servers, agent skills, Marp / Slidev / reveal.js frameworks, python-pptx / PptxGenJS, themes & templates, knowledge bases, plus Chinese-language AI-PPT tools and `topic:` filters) — yielding ~45,600 unique repos after de-duplication.")
 out.append("- Results were merged, de-duplicated and noise-filtered (card-game decks, flashcards, image sliders/carousels removed).")
 out.append("- Each repo was auto-classified into one of 8 categories by keyword; the curated lists above exclude obvious non-presentation noise.")
 out.append("")
@@ -134,4 +164,4 @@ print("README lines:", len(out))
 print("Featured:", len(featured))
 for label,cat,_ in SECTIONS:
     cnt = len([r for r in buckets.get(cat,[]) if clean(r,cat)])
-    print(f"  {label}: {cnt}")
+    print(f"  {cat}: {cnt}")
