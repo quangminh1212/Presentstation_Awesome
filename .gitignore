@@ -2,6 +2,7 @@
 research/*.json
 research/*.tsv
 research/*.txt
+research/*.csv
 !research/gen_readme.py
 !research/classify.py
 !research/export.py
