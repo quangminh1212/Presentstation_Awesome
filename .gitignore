@@ -11,3 +11,7 @@ research/*.txt
 Thumbs.db
 *.bak
 *.swp
+
+# Raw fetched README cache (kept locally, not published)
+readmes/
+
