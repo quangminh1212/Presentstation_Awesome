@@ -1,0 +1,38 @@
+## Lecture Slides for C Programming
+
+This project shares the "Programming in C" lecture slides (in English) written with Latex. The slides are fully composed and organized by Wan-Lei Zhao (from Xiamen University, China). These lecture slides are targeted to the first year undergraduate student, who has zero knowledge about computer and programming. There are 524 lecture slides that cover 11 subjects of programming in C. Fifty-one programming problems are given. **Please do star on this project when either you find it useful or you actully use it in your lecture.**
+
+
+## Syllabus
+#### Lecture 1 Introduction to Computer and Programming
+#### Lecture 2 Binary, Octal and hexadexical Codes, Data Types and Basic Operators
+#### Lecture 3 Sequential and Conditional Control
+#### Lecture 4 Loops
+#### Lecture 5 Functions and Macros
+#### Lecture 6 Array and String
+#### Lecture 7 struct, union and enum
+#### Lecture 8 Pointers
+#### Lecture 9 File Operations
+#### Lecture 10 Bitwise Operations
+#### Lecture 11 make and Makefile
+
+
+## Compile
+One can compile slides of every lecture with "pdflatex" smoothly. For instance
+```
+pdflatex lec1.tex
+```
+
+For the laboratory slides, namely ''lab*.tex'' series, one can comment/uncomment following line in in lab*.tex to decide either hide or show the answers.
+```
+\def\answer{ANS}
+```
+
+## Copyright Issue
+It is free to use for any one who receives these slides and material. BUT when one shows them in any form or in any situation, one should point out that "**they are designed by Wan-Lei Zhao from China**". By the way, I am looking for the collaborators who are willing to contribute to this project. For anyone who would like to join in the project, please contact me via email wlzhao@xmu.edu.cn. 
+
+## Exercises for the lectures
+The exercises are organized into a PDF file 'problemset.pdf' in this package.
+
+## Author
+Wan-Lei Zhao

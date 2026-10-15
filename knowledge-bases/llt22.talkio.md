@@ -1,0 +1,224 @@
+<p align="center">
+  <img src="src-tauri/icons/128x128@2x.png" width="100" alt="Talkio Logo" />
+</p>
+
+<h1 align="center">Talkio</h1>
+
+<p align="center">
+  <strong>让多个 AI 在你的桌面上同时对话。</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/llt22/talkio/releases"><img src="https://img.shields.io/github/v/release/llt22/talkio?style=flat-square&color=blue" alt="Release" /></a>
+  <a href="https://github.com/llt22/talkio/blob/main/LICENSE"><img src="https://img.shields.io/github/license/llt22/talkio?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/llt22/talkio/stargazers"><img src="https://img.shields.io/github/stars/llt22/talkio?style=flat-square" alt="Stars" /></a>
+  <a href="https://github.com/llt22/talkio/releases"><img src="https://img.shields.io/github/downloads/llt22/talkio/total?style=flat-square&color=green" alt="Downloads" /></a>
+  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Android-brightgreen?style=flat-square" alt="Platform" />
+</p>
+
+<p align="center">
+  <code>多模型群聊</code> · <code>身份角色系统</code> · <code>MCP 工具调用</code> · <code>文件解析</code> · <code>本地优先</code> · <code>Tauri 2 + React 19</code>
+</p>
+
+<p align="center">
+  中文 · <a href="README-en.md">English</a>
+</p>
+
+Talkio 不只是又一个 ChatGPT 客户端——你可以把多个 AI 模型拉进同一个群聊，让它们各自扮演不同角色，围绕同一个话题展开讨论、辩论、接龙。
+
+---
+
+## 截图
+
+### 桌面端
+
+<p align="center">
+  <img src="docs/screenshots/desktop-main.png" width="720" alt="桌面端主界面" />
+</p>
+
+### 移动端
+
+<p align="center">
+  <img src="docs/screenshots/mobile-conversations.jpg" width="180" alt="对话列表" />
+  <img src="docs/screenshots/mobile-chat.jpg" width="180" alt="单聊" />
+  <img src="docs/screenshots/mobile-group-chat.jpg" width="180" alt="群聊" />
+  <img src="docs/screenshots/mobile-auto-discuss.jpg" width="180" alt="托管讨论" />
+</p>
+
+<p align="center">
+  <em>对话列表 · AI 单聊 · 多模型群聊 · 托管讨论（成语接龙）</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/mobile-mermaid.jpg" width="180" alt="Mermaid 图表" />
+  <img src="docs/screenshots/mobile-html-preview.jpg" width="180" alt="HTML 预览" />
+  <img src="docs/screenshots/mobile-models.jpg" width="180" alt="模型列表" />
+  <img src="docs/screenshots/mobile-identities.jpg" width="180" alt="身份角色" />
+</p>
+
+<p align="center">
+  <em>Mermaid 图表渲染 · HTML/Three.js 预览 · 模型浏览 · 身份角色</em>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/mobile-settings.jpg" width="180" alt="设置" />
+  <img src="docs/screenshots/mobile-provider.jpg" width="180" alt="供应商配置" />
+</p>
+
+<p align="center">
+  <em>设置 · 供应商配置与模型管理</em>
+</p>
+
+---
+
+## 核心特色
+
+### 🎭 群聊 — 多 AI 同时对话
+
+不同于传统的一对一聊天，Talkio 支持**多模型群聊**：
+
+- 让不同的 AI 模型进入同一个对话——它们会有不同的思考方式和观点
+- 每个参与者可以绑定不同的**身份（Persona）**，拥有独立的系统提示词和参数
+- AI 之间能看到彼此的发言，独立思考，不会简单附和
+- 用 **@提及** 指定某个模型回答，或让所有人轮流发言
+- 支持**群组系统提示词**，引导 AI 角色行为和讨论方向
+
+### 🧠 身份系统
+
+为 AI 创建角色：翻译官、代码审查员、辩论对手、成语接龙玩家……
+
+- 自定义系统提示词
+- 独立调节温度（Temperature）和 Top-P
+- 推理力度控制（Reasoning Effort）
+- 一个模型可以在不同对话中扮演不同角色
+
+### 🔧 MCP 工具调用
+
+通过 [Model Context Protocol](https://modelcontextprotocol.io/) 连接外部工具服务器：
+
+- 支持 SSE（远程）和 Stdio（本地，桌面端）两种传输模式
+- 日历、位置、提醒等系统能力
+- 自定义工具服务器
+- AI 自动决定何时调用工具
+
+### 🔒 本地优先
+
+- 所有数据存储在本地（SQLite）
+- 不运行任何云端服务，不收集用户数据
+- **API Key 安全存储** — 桌面端存入系统凭据库（macOS Keychain / Windows 凭据管理器 / Linux Secret Service），不写入应用本地存储；Android 端存储在应用私有 WebView 存储中。密钥仅用于直连对应 AI Provider，不经过 Talkio 服务
+
+---
+
+## 更多功能
+
+- **多 Provider** — 内置 OpenAI、Anthropic、Google Gemini、Azure OpenAI、OpenRouter、DeepSeek、Groq、Ollama 等预设，支持 Responses、Chat Completions、Anthropic Messages 和 Gemini Generate Content 协议
+- **流式输出** — 实时渲染，支持 Markdown / 代码高亮 / Mermaid 图表 / HTML 预览
+- **深度推理** — 支持 DeepSeek、Qwen 等模型的 reasoning_content 和 `<think>` 标签
+- **工作区工具** — 绑定本地项目目录，AI 可读取、搜索、编辑文件，支持逐文件预览确认
+- **Git 工具** — 在对话中执行 git status / diff / log 等操作，Rust 层白名单 + 确认对话框保障安全
+- **文件解析** — 支持 PDF / Word / Excel / 多种文本格式，拖拽上传或 Ctrl+V 粘贴图片
+- **语音输入** — 接入 Whisper 兼容 STT 服务（Groq / OpenAI），按住录音自动转文字
+- **上下文压缩** — 长对话自动或手动压缩历史，节省 Token 开支
+- **对话置顶** — 重要对话置顶显示，桌面端右键菜单 / 移动端更多菜单快速操作
+- **Token 用量** — 每条回复显示输入/输出 Token 数
+- **消息编辑** — 编辑已发送的用户消息，AI 重新回答
+- **消息分支** — 重新生成回复，自动管理分支历史
+- **对话导出** — 导出为 Markdown、PDF 或 PNG 长截图，超长会话自动分片
+- **暗色模式** — 跟随系统主题，CSS 变量驱动
+- **数据备份与恢复** — 将配置和完整聊天记录导出为 JSON，并可在其他设备恢复；备份不包含供应商和语音 API 密钥
+- **双语** — 中文 / English
+- **响应式** — 桌面 / 窄屏自适应布局
+
+---
+
+## 技术栈
+
+| 层级 | 技术 |
+|------|------|
+| 桌面框架 | Tauri 2 (Rust) |
+| 前端框架 | React 19 · Vite |
+| 移动端导航 | Stackflow |
+| 状态管理 | Zustand |
+| 数据库 | tauri-plugin-sql (SQLite) |
+| 样式 | TailwindCSS v4 · shadcn/ui · Radix UI |
+| AI | AI SDK · 多协议 Provider Adapter · 统一流式 Runtime |
+| 工具协议 | @modelcontextprotocol/sdk |
+| 渲染 | react-markdown · Mermaid · KaTeX |
+| 动画 | Framer Motion |
+
+---
+
+## 快速开始
+
+### 前置条件
+
+- Node.js ≥ 18
+- Rust 工具链（[rustup.rs](https://rustup.rs/)）
+- 系统依赖：参考 [Tauri 环境搭建指南](https://v2.tauri.app/start/prerequisites/)
+
+### 安装与运行
+
+```bash
+npm install
+npm run tauri dev
+```
+
+### 生产构建
+
+```bash
+npm run tauri build
+```
+
+---
+
+## 项目结构
+
+```
+talkio/
+├── src/                        # 前端源码（React + Vite）
+│   ├── components/
+│   │   ├── desktop/            # 桌面端布局
+│   │   ├── mobile/             # 移动端响应式布局
+│   │   ├── shared/             # 共享组件（ChatView / ChatInput / Markdown 等）
+│   │   └── ui/                 # shadcn/ui 基础组件
+│   ├── services/               # 业务逻辑（AI API / MCP / 备份导出）
+│   │   ├── provider-adapters/   # Provider 协议适配
+│   │   ├── provider-profiles/   # Provider 预设与模型目录
+│   │   └── runtime/             # 统一模型运行时
+│   ├── stores/                 # Zustand 状态管理
+│   ├── storage/                # 持久化（SQLite · KV Store）
+│   ├── contexts/               # React Context
+│   ├── hooks/                  # React Hooks
+│   ├── i18n/                   # 国际化（中文 / English）
+│   ├── pages/                  # 页面组件
+│   ├── lib/                    # 工具函数
+│   └── types/                  # TypeScript 类型
+├── src-tauri/                  # Tauri 后端（Rust）
+│   ├── src/                    # Rust 源码
+│   ├── capabilities/           # 权限声明
+│   ├── icons/                  # 应用图标
+│   ├── Cargo.toml              # Rust 依赖
+│   └── tauri.conf.json         # Tauri 配置
+└── public/                     # 静态资源
+```
+
+---
+
+## 隐私
+
+- **本地优先** — 对话、设置全部存储在本地；API Key 在桌面端存入系统凭据库（macOS Keychain / Windows 凭据管理器 / Linux Secret Service），不会写入应用本地存储
+- **无服务器** — 不运行云端服务，不收集任何用户数据
+- **AI 请求** — 聊天消息发送到你配置的 AI Provider，这是 AI 功能运行的必要条件
+
+## 为什么从 React Native 迁移到 Tauri
+
+Talkio v1 基于 Expo + React Native 构建。v2 迁移到 Tauri 2，原因如下：
+
+1. **聊天渲染性能** — React Native 的桥接机制在长对话、流式渲染、大量消息列表场景下存在明显性能瓶颈。Tauri 使用原生 WebView，前端直接运行标准 Web 技术栈（React + DOM），流式输出和复杂 Markdown / Mermaid / KaTeX 渲染更加流畅。
+2. **全平台覆盖** — Tauri 2 支持 Windows / macOS / Linux 桌面端，同时通过 Android WebView 支持移动端。一套代码覆盖全平台，无需维护 React Native 和桌面端两套代码。
+3. **更轻量** — Tauri 打包体积远小于 Electron（约 20MB vs 100MB+），内存占用更低，启动更快。不捆绑 Chromium，直接使用系统 WebView。
+4. **Rust 生态** — 后端使用 Rust，原生支持 SQLite、文件系统、HTTP 等系统能力，插件生态完善（tauri-plugin-sql / tauri-plugin-http / tauri-plugin-dialog 等），安全性更高。
+
+## 许可证
+
+[MIT](LICENSE)

@@ -1,0 +1,227 @@
+# 兰亭（Folio）· 咨询/汇报材料生成引擎
+
+> ## 🚧 社区共建（Community help wanted）
+>
+> **当前欠缺（欢迎提供相关链接 / PR / 经验分享）**：
+> - **Excel 带格式表格处理与公式处理**
+> - **Linux 适配**
+> - **macOS 适配**
+>
+> **已完成**：Word 排版、图例与图形、叙事结构、长文本处理。
+>
+> 有相关链接或想贡献，欢迎提 Issue / PR / Discussion。
+
+> **English TL;DR** — Folio is a host-agnostic CLI material-generation engine for consultants (87 commands, 37 diagram types), with an optional DSH enhancement layer: 15 schema-validated `folio_*` tools, session-protocol auto-save, an L0 guard, and a swappable methodology-pack system. Zero API keys to start (L0); one embedding key unlocks semantic recall (L1). Requirements: Windows 10/11, PowerShell, Python ≥ 3.10 — **Node.js not required**. See the [English product brief](docs/product-brief_v4.0_en.md), or open the bilingual demo outputs in the [v2.0.0 release](https://github.com/nyantused-cpun/folio/releases/tag/v2.0.0). **Help wanted: Excel formatting/formulas, Linux/mac ports.**
+
+> **材料生成引擎 + 可组合方法论包——CLI 内核宿主无关，DSH 插件层深度增强。**
+> Folio = 对开本/作品集：把客户扔进来的材料，装订成能送达的汇报材料。
+
+> **DSH 兼容版本（本页 = 发布版 v2.0.0）**：插件实测锚定 **DSH 0.1.0-rc.8**（`verifiedAgainst` 与 peer 依赖均为 `^0.1.0-rc.8`，接口按 rc.8 源码逐行核实 + 插件自检/import 冒烟通过）。
+> **DSH 0.1.2-rc.1** 的代码级兼容（`folio-events` 事件读取三级回退）已在开发线就绪，随下一版同步发布。CLI 内核宿主无关——不装 DSH 也能用（L0）。详见[兼容性与生态取舍 §1 版本对齐](#1-版本对齐)。
+
+Folio 是给 AI 宿主（DeepSeek Harness / Trae / Kimi 等）外挂的**长程任务执行引擎**，特化于一件事：从客户材料到咨询/汇报交付物的全链路——接入材料 → 建立记忆 → 应用方法论 → 生成产出 → 守住质量。
+
+**引擎做机械的，AI 做判断的，云端模型做按需补位的。** 凡是「错了要重来、客户可见、可复现」的环节全部由确定性代码执行，模型只在判断、理解、生成语言处出手。
+
+---
+
+## 环境要求（Requirements）
+
+| 依赖 | 要求 | 说明 |
+|---|---|---|
+| 操作系统 | Windows 10/11 | 首发仅 Windows；macOS/Linux 安装脚本在后续版本规划（欢迎社区贡献） |
+| PowerShell | 5.1+ 或 7 | 安装脚本用 `powershell` / `pwsh` 均可 |
+| Python | **≥ 3.10** | 安装脚本自动探测 `py` / `python` / `python3`；未找到会失败并提示官网 |
+| Git | 需要 | `git clone` 获取仓库 |
+| 网络 | 首次安装需访问 PyPI | `install.ps1` 用 pip 安装 requirements.txt |
+| DSH | **仅插件层需要**：已安装且 `dsh` 在 PATH，**发布版锚定 0.1.0-rc.8**（0.1.2-rc.1 兼容层已就绪，见 [§1 版本对齐](#1-版本对齐)） | 不装 DSH 也能用 CLI 内核（L0）；装了才有 15 工具 / 守卫 / 会话协议 |
+| Node.js | **不需要** | PPT 转换用 python-pptx；JS 插件由 DSH 宿主加载 |
+| PowerPoint | **可选** | 仅 `pptd-build --shots` 截图目检需要（COM）；不装则跳过截图，PPTX 生成正常 |
+| API key | 零 key 可跑（L0） | 建议按 `docs/能力配置引导` 配 1 个 embedding key 升级语义召回 |
+
+## 快速开始（≤5 分钟）
+
+```powershell
+# 1. 获取
+git clone https://github.com/nyantused-cpun/folio.git folio
+cd folio
+
+# 2. 一条命令安装内核（建 venv + 装依赖 + 生成配置 + 自检）
+.\setup\install.ps1
+
+# 3. DSH 插件层（可选但推荐）——两种方式任选：
+
+#    方式 A：npm 一键安装（插件已发布 npm；安装 folio-dsh-tools 即含 15 工具 + L0 守卫）
+dsh plugin --profile web add @nyantused/folio-dsh-tools
+dsh plugin --profile web add @nyantused/folio-dsh-events
+
+#    方式 B：仓库脚本安装（额外做 pre-sales preset 作用域隔离，推荐完整使用）
+.\setup\install-folio-plugins.ps1 -Install
+
+# 4. 看自检结果
+#    输出示例：✅ Python 3.12  ✅ 依赖齐全  ✅ python-pptx（PPT 转换后端可用）
+#              当前能力等级 L0：零 key 可跑（DSH 下读图/搜索/审查走宿主原生）
+```
+
+装完后：重启 DSH → 开新会话 → 直接说「帮我做一份 XX 方案」。引擎的 skills 已由插件安装脚本自动同步到 `.agents/skills/`，DSH 会直接识别；若未走脚本安装，可手动补跑 `python _cli.py skills-sync`。
+
+**零配置起步**：不配任何 key 也能跑（L0）；配 1 个 embedding key 解锁语义召回（L1）；配读图/搜索 key 解锁独立 CLI 场景（L2）。每个能力槽位的取舍见 [docs/能力配置引导](docs/能力配置引导_v1_2026-08-15.md)。
+
+## 能力等级（装多少用多少）
+
+| 等级 | 配置 | 得到什么 |
+|---|---|---|
+| L0 | 无 | 切片 + BM25 + 生成渲染 + 质量门禁；DSH 下读图/搜索/独立审查走宿主原生 |
+| L1 | +1 个 embedding key | 语义召回（"那个做化工的客户"→ 找到对应档案）；不配自动降级纯 BM25 |
+| L2 | +读图/搜索 key | 独立 CLI 场景全量（非 DSH 宿主） |
+| L3 | +独立审查 chat key | review 的独立 LLM 会话（DSH 下可用子代理替代，零 key） |
+
+## PPT 转换（python-pptx 自研后端）
+
+HTML / DOCX / 报价三种格式零外部依赖，装完即用。**PPT 转换**由自研 python-pptx 后端完成（`PPTD_BACKEND=python_pptx`，随 requirements 安装），**不依赖 node 工具链**；`pptd-build --shots` 逐页截图目检需要本机 PowerPoint（COM），没有则跳过截图。PPT 工程由 `html-build` 同源生成 `.pptd`，再 `pptd-build` 转 PPTX。
+
+## 产品结构：五段价值链
+
+| # | 模块 | 做什么 |
+|---|---|---|
+| 1 | 接入材料（Intake） | 把客户扔进来的材料变成可检索的资产（建档·解析·切片·索引） |
+| 2 | 建立记忆（Chronicle） | 跨会话记住项目事实与决策（决策记录·世界书·语义召回） |
+| 3 | 应用方法论（Craft） | 按可替换的方法论框架把材料拆成事实（skill 路由·大纲·主题守卫） |
+| 4 | 生成产出（Press） | 从事实渲染成四格式交付物（HTML/PPTX/DOCX/报价，同源） |
+| 5 | 守住质量（Proof） | 机械检查 + 独立审查双层防幻觉（门禁·verify·review·引用审计） |
+
+## 三大卖点
+
+1. **深度适配 DSH**：skill 原生识别 + 守卫插件 + 15 个原生工具 + 会话协议事件插件 + agent preset，两条命令装齐；
+2. **方法论可换可组合**：换领域不换引擎——咨询/市场营销/投资分析的方法论以 Folio Packs 形式即插即换（楷书=轻包 / 行书=标准包 / 草书=重包），欢迎社区发布；
+3. **极致特化的长程任务**：20 页材料进，四格式带质量门自动出，会话结束自动存档审计。
+
+## 目录结构
+
+```
+folio/
+├── _cli.py        # 根级 CLI 转发入口（`python _cli.py <命令>`，实现见 src/）
+├── .env.example   # 环境配置模板（install.ps1 会自动复制为根 .env；留空即 L0）
+├── src/          # 内核（87 个 CLI 子命令 + 90 个模块：37 种 diagram/审查链/育种闭环/audit 观测面）
+├── skills/       # 11 个方法论 skill（含 packs-authoring 创作指南）
+├── plugins/      # DSH 插件层：folio-tools（15 个原生工具 + L0 守卫子入口）+ folio-events（会话协议，preset 挂载）
+├── preset/       # 兰亭 agent preset 模板（install-folio-plugins.ps1 安装时落盘/替换占位符）
+├── setup/        # 一键安装脚本（install.ps1 内核 + install-folio-plugins.ps1 插件层）
+├── docs/         # 定位 / 能力引导 / usage 快速上手教程
+└── tests/        # 测试套件（191 个文件，与内部生产线同源）
+```
+
+## 测试
+
+```powershell
+.venv\Scripts\python.exe -m pytest tests
+```
+
+> 说明：原始测试基线（golden specs）含真实客户材料，发布版已裁剪；渲染回归测试可自行用虚构材料重建基线（`tests/baseline_kit.py` 的思路，见仓库历史）。
+
+## 快速上手
+
+30 分钟跑通第一份方案：见 [docs/usage.md](docs/usage.md)（虚构客户全流程教程，零 key）。
+
+## 文档
+
+- [产品说明 v4.0（DSH 原生版）](docs/兰亭_产品说明_v4.0.md)：v4.0 历史快照——它是什么、怎么装、为什么选 DSH；最新技术状态见[技术白皮书 v5.0](docs/兰亭_技术白皮书_v5.0.md)
+- [Product Brief v4.0 (English)](docs/product-brief_v4.0_en.md)：same content in English
+- [技术白皮书 v5.0（DSH 原生版）](docs/兰亭_技术白皮书_v5.0.md)：工具管线、事件机制、记忆单轨、防线与生产线收敛现状、已知限制如实说
+- [产品定位与三卖点](docs/产品定位与三卖点_2026-08-15.md)：定位纲领、五段价值链、命名族
+- [能力配置引导](docs/能力配置引导_v1_2026-08-15.md)：6 个能力槽位怎么配、不配会怎样、外部怎么补位
+
+## 方法论包（Folio Packs）
+
+想给 Folio 换一套方法论（市场营销/投资分析/战略咨询）？`skills/packs-authoring` 就是教你创作的 skill——问答式生成包骨架，不需要写代码。欢迎发布你的方法论包。
+
+## 社区生态 / 友情链接（持续维护）
+
+Folio 聚焦「长程材料生成」，不重复造社区已经做好的轮子。以下社区项目可作为互补、对照或迁移入口；具体兼容性请以各仓库 README 与 [awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) 的 L0-L4 兼容报告为准。
+
+- **Awesome 目录**
+  - [AdamPlatin123/awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) — 全量雷达 + 每日兼容性追踪
+  - [dsh-external](https://github.com/dsh-external) — 社区插件 org
+- **已在兰亭路线中**
+  - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 右侧预览 / 迷你 IDE 工作台
+  - dsh-at-file — 输入框 `@文件` 快捷引用（见 awesome 目录）
+  - [dsh-vision-toolkit](https://raw.githubusercontent.com/Anionex/dsh-vision-toolkit/main/README.zh.md) — 社区读图全家桶，可作 vision-bridge 对照
+- **互补增强（优先补全）**
+  - [DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) — 右侧预览区 / 迷你 IDE 工作台（P0）
+    - dsh-github-connector — GitHub 集成（P0，见 awesome 目录）
+    - context-vista — Token 可视化（P0，见 awesome 目录）
+    - dsh-agent-teams — 团队可视化 / 多 Agent 面板（P0，见 awesome 目录）
+    - dsh-undo / dsh-record-replay / dsh-obsidian-export / dsh-share（P1 按需）
+- **参考 / 对照**
+  - ~~dsh-plugin-claude-bridge / dsh-claude-move~~（Claude 生态适配暂不考虑）
+  - dsh-memory-evolve（长期记忆设计参考）
+  - ModLens / dsh-qwen-mm（社区读图方案参考）
+
+P0 社区插件（右侧预览 / GitHub / Token / 团队）脚本已提供，但 **2026-08-15 起暂缓启用（装而未挂）**：peer 依赖在 profile node_modules 缺失或双副本会引发 `dsh-scope Symbol` 分裂，官方 plugin 通道稳定后再开启。当前不要直接跑 `-Install`，可先 `-DryRun` / `-Verify` 看计划：
+
+```powershell
+pwsh .\setup\install-community-plugins.ps1 -DryRun
+pwsh .\setup\install-community-plugins.ps1 -Verify
+```
+
+脚本会从 awesome-dsh-plugins 自动解析仓库、clone 到 `~/.dsh/community-plugins/`、建 Junction 并写 patch，最后重启 `dsh web` 生效。
+
+## 兼容性与生态取舍
+
+> 2026-08-20 对外口径：让使用者一眼知道 Folio 与 DSH 版本的绑定关系、社区插件为什么没直接引入、平台现状。
+
+### 1. 版本对齐
+
+| 线 | DSH 版本 | 状态 |
+|---|---|---|
+| **发布版 v2.0.0**（本页默认分支） | **0.1.0-rc.8** | 插件 `verifiedAgainst` / peer 依赖均为 `^0.1.0-rc.8`；接口按 rc.8 源码逐行核实，插件自检与 import 冒烟通过 |
+| 开发线（随下一版同步） | 0.1.2-rc.1 | `folio-events` 已加事件读取兼容层（`snapshotEvents()` → `ownEvents()` → 旧 `session.events` 三级回退，0.1.1/0.1.2 双兼容）；隔离 profile 全链验证通过，发布版锚定待同步后更新 |
+
+> **锚定纪律**：`verifiedAgainst` 只在对应 DSH 版本上实跑验证通过后才改——不提前标称「已适配」。本页顶部标注的版本即当前发布版可依赖的版本。
+
+### 2. 社区插件：看了什么、为什么没直接装
+
+我们调研过 DSH 社区约 200+ 插件，最终没有直接引入，原因分三类：
+
+| 类别 | 代表插件 | 结论 |
+|---|---|---|
+| 能力重叠 | dsh-memory-evolve、ModLens / dsh-vision-toolkit / dsh-qwen-mm、dsh-my-rsi | 兰亭已有自研实现（记忆/召回、vision-bridge、guard），只作参考，不替换 |
+| 兼容风险 | DSH-better-sidebar、dsh-github-connector、context-vista、dsh-agent-teams | P0 想用，但暂缓启用（装而未挂）：peer 依赖双副本/Symbol 分裂，官方 plugin 通道稳定前不启用 |
+| 方向排除 | dsh-plugin-claude-bridge / dsh-claude-move | Claude 生态适配暂不考虑 |
+
+- 我们**借鉴了社区 `defineTool` 封装模式**，但 15 个 `folio_*` 工具全部自研；
+- 分发基建（marisa / dsh-hub / dsh-plugin-radar）作为参考，官方无统一方案前不引入。
+
+### 3. 极简模式与平台
+
+- 兰亭 preset **最初设计**对齐 DSH 官方 **minimal 蓝本**（不挂 code 工具、无冗余，塑造专用平台体验）；
+- 实际基线采用 **standard 模板 + 精选工具**（禁用 codex/claude 等），原因是官方 minimal 在 Windows 上存在 PTY 兼容问题（`terminal inspection is unsupported on platform win32`）——这是对 Windows 的兼容性修正，不是偏离方向；
+- 当前 **首发 Windows**；macOS/Linux 安装脚本（install.sh）在后续版本规划中（欢迎社区贡献 install.sh / 环境适配）。
+
+### 4. Linux / macOS 适配
+
+目前 Folio 面向 Windows 首发。**欢迎其他开发者贡献 macOS/Linux 的安装脚本与环境适配**；如果官方 DSH 工具链在跨平台上更成熟，我们也乐意等官方完善后跟进。
+
+## 状态与路线
+
+- **v2.0.0（当前，2026-09-08）**：同源对齐大版本——37 种 diagram 整包、审查链升级（截图对抗/并行/增量）、育种闭环、交付门、主题体系并轨（迁移见 [docs/MIGRATION_v2.0.md](docs/MIGRATION_v2.0.md)）。变更见 [CHANGELOG.md](CHANGELOG.md)，示例见 [GitHub Release v2.0.0](https://github.com/nyantused-cpun/folio/releases/tag/v2.0.0)。
+- **v1.0.2（2026-08-16）**：CI 流水线 + 社区友好基建（Issue/PR 模板、dev 依赖、真实仓库地址）+ 运行时目录去宿主化（`.trae` → `.folio`）+ 中英双语示例产出（HTML/PPTX）。
+- **v1.0.1**：guard 作用域隔离 + 插件包名 @nyantused/folio-dsh-* + preset 入仓。
+- **v1.0.0**：首个正式发布——五段价值链全链路 + DSH 深度适配 + LLM host 模式（0 key 起步）+ 安装脚本/自检。
+- **下一版优先补全（v2.x，开源后第一波）**
+  1. 右侧预览区：接入 DSH-better-sidebar（或自研 folio-preview 兜底）
+  2. GitHub 集成：`dsh-github-connector` 或自研 `folio_github` 工具
+  3. Token 可视化：`context-vista` 或自研会话 Token 面板
+  4. 团队可视化：`dsh-agent-teams` 或基于 DSH subagent 事件的自研面板
+  > 注：P0 社区插件当前**暂缓启用**（peer 依赖双副本 / Symbol 分裂，见上文「社区插件」节）；自研兜底路线不受影响。
+- **后续版本规划**：DSH 0.1.2-rc.1 兼容层同步进发布版（见 [§1 版本对齐](#1-版本对齐)）+ `domain-pack.yml` 方法论包契约（机械校验）+ 市场营销冒烟包 + PPT 截图目检的跨平台支持（当前 `--shots` 依赖本机 PowerPoint）
+- **功能方向（欢迎共建）**：Excel 带格式表格与公式 · Linux / macOS 适配 · 丰富 UI 版式 · 社区插件接入（暂缓，见上文「社区插件」节）
+- 平台：Windows 首发（macOS/Linux 安装脚本待补，欢迎社区贡献 install.sh / 环境适配；或等待官方工具链更成熟后跟进）；PPT 转换的 PowerPoint 截图要求见安装脚本输出
+
+## 许可证
+
+MIT · 中文名「兰亭」取自《兰亭集序》——材料亦可成章。
+
+## 设计致谢
+
+记忆可信度设计理念（证据溯源 / 三态表达 / 冲突保留 / 检查点）受 [openTrinity/mycontext](https://github.com/openTrinity/mycontext)（Elastic License 2.0）启发；Folio 的实现为独立原创（标识符、数据结构、架构均无复制，零复制验证在内部维护）。

@@ -1,0 +1,209 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+MarpaX::Languages::C::AST - Translate a C source to an AST
+
+=head1 VERSION
+
+version 0.48
+
+=head1 SYNOPSIS
+
+    use strict;
+    use warnings FATAL => 'all';
+    use MarpaX::Languages::C::AST;
+    use Log::Log4perl qw/:easy/;
+    use Log::Any::Adapter;
+    use Log::Any qw/$log/;
+    use Data::Dumper;
+    #
+    # Init log
+    #
+    our $defaultLog4perlConf = '
+    log4perl.rootLogger              = WARN, Screen
+    log4perl.appender.Screen         = Log::Log4perl::Appender::Screen
+    log4perl.appender.Screen.stderr  = 0
+    log4perl.appender.Screen.layout  = PatternLayout
+    log4perl.appender.Screen.layout.ConversionPattern = %d %-5p %6P %m{chomp}%n
+    ';
+    Log::Log4perl::init(\$defaultLog4perlConf);
+    Log::Any::Adapter->set('Log4perl');
+    #
+    # Parse C
+    #
+    my $cSourceCode = '
+    typedef struct s1_ {int i1;} x1, y1;
+    struct x1 {x1 i2;};
+    x1 x;
+    ';
+    my $cAstObject = MarpaX::Languages::C::AST->new();
+    $log->infof('%s', $cAstObject->parse(\$cSourceCode));
+
+=head1 DESCRIPTION
+
+This module translates C source into an AST tree. To assist further process of the AST tree, the nodes of the AST are blessed according to the C grammar you have selected. (The default is 'ISO-ANSI-C-2011'.) If you want to enable logging, be aware that this module is a Log::Any thingy.
+
+This module implements the full syntax, as well as those specification constraints which are syntactic in nature: Associativity of nested if-then-else statements is according to the C standards, as is the treatment of names as typedefs, enums, or variable identifiers.
+
+The C standards contain many constraints that are non-syntactic. MarpaX::Languages::C::AST does not implement these, leaving them for AST post-process. One example of a non-syntactic constraint is the requirement that labeled statements within a function be unique. Another is the requirement that declarations include at most one storage class specifier.
+
+It is recommended to start with L<MarpaX::Languages::C::Scan> when starting with this package.
+
+=head1 SUBROUTINES/METHODS
+
+=head2 new($class, %options)
+
+Instantiate a new object. Takes as parameter an optional hash of options that can be:
+
+=over
+
+=item grammarName
+
+Name of a grammar. Default is 'ISO-ANSI-C-2011'.
+
+=item typedef
+
+An array reference to a list of known typedefs, injected at top scope before parsing start. This option should I<not> be used unless you pass a C source that is incomplete. Typically something that has not gone through a preprocessor. Default is [] i.e. empty list.
+
+=item enum
+
+An array reference to a list of known enums, injected at top scope before parsing start. Alike for typedef, this option should I<not> be used unless you pass a C source that is incomplete. Typically something that has not gone through a preprocessor. Default is [] i.e. empty list.
+
+=item lazy
+
+A flag saying the parser to inject automatically all allowed alternatives when the grammar reaches a TYPEDEF_NAME/ENUMERATION_CONSTANT/IDENTIFIER ambiguity. This option should be used in practice only when you are parsing a source code not pre-processed. Please note that I<if> lazy mode is on, there might be several parse tree values. In such a case, unless the option $optionalArrayOfValuesb of the value() method is true, the first of the parse tree values will be returned. If more than one alternative is accepted, the lexemeCallback (see below) will be, in order of preference, either TYPEDEF_NAME, ENUMERATION_CONSTANT or IDENTIFIER. The lazy mode can produce more than one parse tree value. The options typedef and enum (see upper) can be used to help lazy mode choose between TYPEDEF_NAME and ENUMERATION_CONSTANT, while IDENTIFIER will always be pushed as an alternative. Default is a false value.
+
+=item start
+
+A string giving the starting point of the grammar. This should be used when you know that the source code to parse is not a full valid source, but a portion of if. This requires knowledge of the grammar rules. Default is empty string: '', i.e. let the grammar apply its default start rule.
+
+Please note that giving another value but 'translationUnit' will emit warnings from the grammar, saying that some rules are not reachable.
+
+=item actionObject
+
+Grammar specific action object.
+
+=item nonTerminalSemantic
+
+Grammar specific non-terminal semantic action.
+
+=item terminalSemantic
+
+Grammar specific terminal semantic action.
+
+=item logInfo
+
+Reference to an array of lexemes for which a log of level INFO will be issued.
+
+=item lexemeCallback
+
+Array reference containing a CODE ref and optional arguments. This callback will be trigerred like this: &$CODE(@arguments, $lexemeHashp), where $lexemeHashp is a reference to a hash describing current lexeme:
+
+=over
+
+=item name
+
+Name of the lexeme. You have to refer to the grammar used to get its definition, although this is usually self-explanatory.
+
+=item start
+
+G1 (Marpa term) start location.
+
+=item length
+
+Length of the lexeme
+
+=item line
+
+Line number in the source being parsed.
+
+=item column
+
+Column number in the source being parsed.
+
+=item value
+
+String containing lexeme value.
+
+=back
+
+=back
+
+=head2 parse($self, $sourcep)
+
+Do the parsing. Takes as parameter the reference to a C source code. Returns $self, so that chaining with value method will be natural, i.e. parse()->value().
+
+=head2 scope($self)
+
+Returns the MarpaX::Languages::C::AST::Scope object.
+
+=head2 value($self, $optionalArrayOfValuesb)
+
+Return the blessed value. Takes as optional parameter a flag saying if the return value should be an array of all values or not. If this flag is false, the module will croak if there more than one parse tree value. If this flag is true, a reference to an array of values will be returned, even if there is a single parse tree value.
+
+=head1 INCOMPATIBILITIES
+
+Since version 0.30, the c2ast.pl script is named c2ast (i.e. without extension).
+
+=head1 NOTES
+
+C code can have inline ASM code. The GCC Inline Assembly is fully supported, any other is falling into a heuristic that should catch everything needed. CL inline assemblies have been targeted in particular.
+
+=head1 SEE ALSO
+
+L<Log::Any>, L<Marpa::R2>
+
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
+
+=head1 SUPPORT
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests through the issue tracker
+at L<https://rt.cpan.org/Public/Dist/Display.html?Name=MarpaX-Languages-C-AST>.
+You will be notified automatically of any progress on your issue.
+
+=head2 Source Code
+
+This is open source software.  The code repository is available for
+public review and contribution under the terms of the license.
+
+L<https://github.com/jddurand/marpax-languages-c-ast>
+
+  git clone git://github.com/jddurand/marpax-languages-c-ast.git
+
+=head1 AUTHOR
+
+Jean-Damien Durand <jeandamiendurand@free.fr>
+
+=head1 CONTRIBUTORS
+
+=for stopwords Ben Bullock Ivan Baidakou Jeffrey Kegler
+
+=over 4
+
+=item *
+
+Ben Bullock <benkasminbullock@gmail.com>
+
+=item *
+
+Ivan Baidakou <basiliscos@openmailbox.com>
+
+=item *
+
+Jeffrey Kegler <JKEGL@cpan.org>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Jean-Damien Durand.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut

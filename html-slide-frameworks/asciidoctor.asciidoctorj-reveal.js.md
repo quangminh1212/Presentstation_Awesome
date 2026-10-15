@@ -1,0 +1,118 @@
+= AsciidoctorJ Reveal.js: Asciidoctor
+Robert Panzer <https://github.com/robertpanzer[@robertpanzer]>; Dan Allen <https://github.com/mojavelinux[@mojavelinux]>
+// Settings:
+:compat-mode!:
+:page-layout: base
+:toc: macro
+:toclevels: 2
+ifdef::awestruct[:toclevels: 1]
+:experimental:
+//:table-caption!:
+:source-language: java
+:language: {source-language}
+ifdef::env-github[:badges:]
+// Aliases:
+:dagger: &#8224;
+// URIs:
+ifdef::awestruct[:uri-docs: link:/docs]
+ifndef::awestruct[:uri-docs: http://asciidoctor.org/docs]
+:uri-asciidoctor: {uri-docs}/what-is-asciidoctor
+:uri-asciidoctorj: https://github.com/asciidoctor/asciidoctorj
+:uri-repo: https://github.com/asciidoctor/asciidoctorj-reveal.js
+:uri-issues: {uri-repo}/issues
+:uri-discuss: http://discuss.asciidoctor.org
+:artifact-version: 4.0.1
+
+{uri-repo}[AsciidoctorJ Reveal.js] is a convenient repackaging of Asciidoctor Reveal.js for use with {uri-asciidoctorj}[AsciidoctorJ], which brings the Asciidoctor ecosystem to the JVM.
+
+// TODO: Fix URLs for badges once CI is configured
+ifdef::badges[]
+// image:https://github.com/asciidoctor/asciidoctorj-reveal/workflows/Build%20Master/badge.svg?event=push[Build Status (Github Actions)]
+endif::[]
+
+ifdef::awestruct,env-browser[]
+toc::[]
+endif::[]
+
+
+== Creating slides using the AsciidoctorJ API
+
+To create slides programmatically using the AsciidoctorJ API use the following code:
+
+[source,java,indent="0"]
+----
+        Asciidoctor asciidoctor = Asciidoctor.Factory.create();
+        asciidoctor.requireLibrary("asciidoctor-revealjs");
+        asciidoctor.convertFile(new File("document.adoc"),
+            options()
+                .backend("revealjs")
+                .safe(SafeMode.UNSAFE)
+                .attributes(
+                    AttributesBuilder.attributes()
+                        .attribute("revealjsdir", "https://cdn.jsdelivr.net/npm/reveal.js@5.2.0")
+                )
+                .get()
+        );
+----
+
+== Creating slides using the AsciidoctorJ CLI
+
+Using the CLI you can create slides with this call:
+
+[source,console]
+----
+asciidoctorj --classpath ..asciidoctor-revealjs.jar \
+             -b revealjs \
+             -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@5.2.0 \
+             document.adoc
+----
+
+== Creating slides with the AsciidoctorJ JBang App
+
+Using JBang you can create slides with this call:
+
+[source,console]
+----
+jbang run asciidoctorj@asciidoctor \
+             -r asciidoctor-revealjs \
+             -b revealjs \
+             -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@5.2.0 \
+             document.adoc
+----
+
+== Creating slides with the Asciidoctor Maven Plugin
+
+To create slides using the Asciidoctor Maven Plugin you can use the following plugin configuration:
+
+[subs="+attributes"]
+[source,xml,indent="0"]
+----
+      <plugin>
+        <groupId>org.asciidoctor</groupId>
+        <artifactId>asciidoctor-maven-plugin</artifactId>
+        <version>2.0.0-RC.1</version>
+        <configuration>
+          <backend>revealjs</backend>
+          <requires>
+            <require>asciidoctor-revealjs</require>
+          </requires>
+          <attributes>
+            <revealjsdir>
+              https://cdn.jsdelivr.net/npm/reveal.js@5.2.0
+            </revealjsdir>
+          </attributes>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj</artifactId>
+            <version>2.4.3</version>
+          </dependency>
+          <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctorj-revealjs</artifactId>
+            <version>{artifact-version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+----

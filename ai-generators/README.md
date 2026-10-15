@@ -1,0 +1,508 @@
+# AI Presentation Generators (end-to-end)
+
+Turn a topic, document or prompt into a full deck automatically (HTML, PPTX or hosted slides).
+
+- [fighting41love](https://github.com/fighting41love/funNLP) — ★ 83,911 — 中英文敏感词、语言检测、中外手机/电话归属地/运营商查询、名字推断性别、手机号抽取、身份证抽取、邮箱抽取、中日文人名库、中文缩写库、拆字词典、词汇情感值、停用词、反动词表、暴恐词表、繁简体转换、英文模拟中文发音、汪峰歌词生成器、职业名称词库、同义词库、反义词库、否定词库、汽车品牌词库、汽车零件词库、连续英文切割、...
+- [Anionex](https://github.com/Anionex/banana-slides) — ★ 15,753 — 一站式原生AI PPT生成应用，几分钟内生成一套幻灯片; 支持上传任意模板图片，上传任意素材&智能解析，一句话/大纲/页面描述自动生成PPT，口头修改指定区域、一键导出可编辑ppt、视频等 - An AI-native slides generator based on nano banana pro🍌
+- [presenton](https://github.com/presenton/presenton) — ★ 11,116 — Open-Source AI Presentation Generator and API (Gamma, Canva, Beautiful AI, Decktopus, Presentations AI Alternative)
+- [nexu-io](https://github.com/nexu-io/html-anything) — ★ 9,127 — ✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · ...
+- [ningzimu](https://github.com/ningzimu/codex-ppt-skill) — ★ 6,877 — GPT-Image-2 PPT Generator Skill for Creating Image-Based PowerPoint Presentations in Codex and Other Skill-Compatible Agents
+- [icip-cas](https://github.com/icip-cas/PPTAgent) — ★ 5,115 — An Agentic Framework for Reflective PowerPoint Generation
+- [HugoBlox](https://github.com/HugoBlox/hugo-theme-academic-cv) — ★ 5,077 — 🎓 Academic portfolio that boosts citations. AI generates pages, you own as Markdown. BibTeX auto-import, Jupyter, LaTeX, slides, visual block editor — free t...
+- [zLanqing](https://github.com/zLanqing/codex-claude-academic-skills) — ★ 4,903 — 本仓库包含三个面向学术科研人员的Skills，覆盖从文献阅读、论文写作到科学计算的完整研究工作流。office-academic-skill 负责论文阅读报告与学术 PPT/Word 文档生成；research-writing-skill 提供论文写作、润色与审稿回复辅助；scientific-toolkit-s...
+- [sligter](https://github.com/sligter/LandPPT) — ★ 3,618 — 一个基于LLM的演示文稿生成平台，能够自动将文档内容转换为专业的PPT演示文稿。平台支持多种AI模型，提供丰富的模板和样式选择，让用户能够创建高质量的演示文稿。
+- [adamcohenhillel](https://github.com/adamcohenhillel/ADeus) — ★ 3,433 — An open source AI wearable device that captures what you say and hear in the real world and then transcribes and stores it on your own server. You can then c...
+- [op7418](https://github.com/op7418/NanoBanana-PPT-Skills) — ★ 3,296 — NanoBanana PPT Skills 基于 AI 自动生成高质量 PPT 图片和视频的强大工具，支持智能转场和交互式播放
+- [allweonedev](https://github.com/allweonedev/presentation-ai) — ★ 3,039 — ALLWEONE Open source AI presentation generator Gamma Alternative. Create professional slides with customizable themes and AI-generated content in minutes.
+- [GordenSun](https://github.com/GordenSun/GordenSuperPPTSkills) — ★ 2,091 — AI PPT赛道终结者，史上最最最强 PPT Skill！！！  使用GPT生成豪华的图片格式PPT，然后转换为完全可编辑的PPTX文件。
+- [veasion](https://github.com/veasion/AiPPT) — ★ 1,912 — AI 智能生成 PPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画，可在线体验。AI generates PowerPoint Presentation, Supports parsing and rendering of co...
+- [Binaryify](https://github.com/Binaryify/open-kimi-ppt-skill) — ★ 1,594 — 非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browse...
+- [Unclecheng-li](https://github.com/Unclecheng-li/AI_Animation) — ★ 1,529 — 本项目整理了用于生成[炫酷 HTML 动画网页]的 AI Prompts，涵盖动画效果、3D 可视化、PPT 风格演示、UI 美化等多个类别。
+- [helloianneo](https://github.com/helloianneo/ian-handdrawn-ppt) — ★ 1,466 — 中文手绘技术 PPT 整页图像生成 Skill | 21:9 封面 + 16:9 正文配图 | PNG 输出
+- [SmartSchoolAI](https://github.com/SmartSchoolAI/ai-to-pptx) — ★ 1,462 — 前端后端同时开源。 Ai-to-pptx是一个使用AI技术(DeepSeek)制作PPTX的助手，支持在线生成和导出PPTX。 主要功能: 1 使用DeepSeek等大语言模型来生成大纲 2 生成PPTX的时候可以选择不同的模板 3 支持导出PPTX
+- [Devin-AXIS](https://github.com/Devin-AXIS/deepseek-design) — ★ 1,461 — DeepSeek Harness 可编辑设计系统：AI 生成、可视化编辑、模板市场与 PPT｜Native Design & PPT Studio for DeepSeek Harness.
+- [tonyqinatcmu](https://github.com/tonyqinatcmu/SlideBot-AI) — ★ 1,215 — 🎨 SlideBot AI - AI-Powered Presentation Generator
+- [YOOTeam](https://github.com/YOOTeam/OpenPPT) — ★ 1,098 — AIPPT Online editor，Base On ChatPPT， supports document editing services throughout the entire process, including import, export, layout beautification, onlin...
+- [LearnPrompt](https://github.com/LearnPrompt/humanize-ppt) — ★ 977 — AST-based outline director for human-centered AI presentation workflows.
+- [nexu-io](https://github.com/nexu-io/codex-slides) — ★ 938 — 🎨 Open-source AI slide studio inside Codex: image-native decks, every slide a full visual canvas. ⚡ 10+ high-quality slides in ~4–5 minutes — Fast mode rende...
+- [sunbigfly](https://github.com/sunbigfly/ppt-agent-skills) — ★ 911 — A code-driven presentation generation framework. 像构建软件工程一样生成演示文稿。
+- [hantang](https://github.com/hantang/latex-templates) — ★ 842 — A collection of awesome LaTeX Thesis/Dissertation templates and beyond! //（LaTeX / Word / Typst / Markdown 格式的学位论文、演示文稿、报告、项目申请书、简历、书籍等模板收藏）
+- [huohua325](https://github.com/huohua325/Memslides) — ★ 840 — A hierarchical memory framework for personalized presentation agents. Try it at memslides.com.
+- [ai-ppt-template](https://github.com/ai-ppt-template/free-ppt-template) — ★ 770 — Free AI PPT Templates — 4,000+ AI-generated presentation templates for any deck. Works with PowerPoint, Google Slides, Keynote, LibreOffice Impress, WPS Offi...
+- [limaoyi1](https://github.com/limaoyi1/Auto-PPT) — ★ 756 — Auto generate pptx using gpt-3.5, Free to use online / 通过gpt-3.5生成PPT,免费在线使用
+- [mucsbr](https://github.com/mucsbr/ppt-agent-workflow-san) — ★ 649 — 渐进交互式ppt生成skill
+- [Unclecheng-li](https://github.com/Unclecheng-li/AI-Animation-Skill) — ★ 576 — 使用 AI 生成 HTML 演示动画的工具集，让视频创作者能够快速将科普文本转换为炫酷的演示动画。
+- [elliottzheng](https://github.com/elliottzheng/NotebookLM2PPT) — ★ 495 — 🚀从 PDF 到全可编辑 PPT 的智能转换工具，让 NotebookLM 的演示文稿真正为你所用。
+- [Licoy](https://github.com/Licoy/GoAmzAI) — ★ 481 — 🤖️ 基于 Golang + Vue3 + NaiveUI 的全新的个人、团队、企业私有化AIGC平台 ｜ 支持AI对话、AI绘画、AI视频、AI音乐、AI无限画布工作流、AI PPT、思维导图、应用广场、同时支持多用户多模型聚合平台管理使用等等，具有非常强大的运营能力以及企业内部使用能力，欢迎体验～
+- [qrpcode](https://github.com/qrpcode/pptshow) — ★ 394 — Java generates PPT documents and supports the new features of PPTX version 2010 / Java生成PPT文档，支持2010版PPTX新特性
+- [irenerachel](https://github.com/irenerachel/visual-style-ppt-skill) — ★ 392 — 【Skill】视觉风格 PPT 生成工作流
+- [shengjidaguai-china](https://github.com/shengjidaguai-china/personal-homepage-skill) — ★ 346 — 用于生成高质量个人主页与 HTML PPT 的 AI Skill：参考优先、19 个模板、Hero 视频主页、便携 HTML 与质量检查
+- [zhouwei713](https://github.com/zhouwei713/luobo-ppt) — ★ 340 — 生成和美化可编辑原生 PPT 的 Agent Skill
+- [ElemeFE](https://github.com/ElemeFE/keynote) — ★ 330 — 大前端分享会公开演示文稿
+- [sunchaokun](https://github.com/sunchaokun/PPT-Design-Skill) — ★ 329 — Precision PPT design skill for OpenCode/Claude Code/Codex, with 40,000+ styles, pixel-perfect Build Mode control, AI image generation, and fully editable PPT...
+- [q1uki](https://github.com/q1uki/MoneyPrinterAICreate) — ★ 328 — 基于MoneyPrinterTurbo，AI生成分镜大纲与视频（动态，不是念ppt），接入万相通义wan2.1 ai文生视频、图生视频功能，灵活把控视频生成。Based on MoneyPrinterTurbo, AI generates image outline and video (dynamic, not...
+- [Faust-Donf](https://github.com/Faust-Donf/beamer-academic) — ★ 313 — 一键从论文生成高质量学术答辩PPT | AI-powered thesis defense slides generator | Claude Code & Codex Skill
+- [CyberTimon](https://github.com/CyberTimon/Powerpointer-For-Local-LLMs) — ★ 308 — Local Powerpointer - A beautiful powerpoint generator which uses the power of local running large language models to generate the powerpoint slides.
+- [51yuese](https://github.com/51yuese/GoMaxAI-ChatGPT-Midjourney-Pro) — ★ 293 — 基于Node.js、Vue3、uniapp的ChatGPT+智能体+Midjourney绘画+PPT生成+Suno音乐+Pika/Runway/Sora视频 网页服务 | 个人、团队、企业私有化AIGC平台
+- [annProg](https://github.com/annProg/PanBook) — ★ 291 — Pandoc LaTeX，Epub模板，用于生成书籍，幻灯片(beamer)，简历，论文等（cv, thesis, ebook,beamer)
+- [dream-rec](https://github.com/dream-rec/dreampaper) — ★ 262 — 高质量科研论文插图与演示文稿制作Agent
+- [qrpcode](https://github.com/qrpcode/letsPPT) — ★ 245 — 一个标题AI自动生成PPT文档模板，并转换为图片和视频。带标注系统、C端页面、审核系统、小程序登录端。
+- [LangChat](https://github.com/LangChat/langchat-slides) — ★ 218 — 基于Vue3的AI PPT产品，LangChat Slides - Next-Gen AI Slide Generator
+- [SkyworkAI](https://github.com/SkyworkAI/Skywork-Skills) — ★ 203 — Skywork Agent Skills for AI office suites, including AI PPT, AI Document, AI Excel, AI Image, AI Search/DeepResearch and AI Music.  These skills can be used ...
+- [wwe-dog](https://github.com/wwe-dog/ppt-image2-editable-rebuild) — ★ 200 — 一个基于截图/参考图重建可编辑 PPT 的 Codex skill。先用 image2/imagegen 生成单页视觉参考图，再以局部截图保留复杂插图、图标、地图等视觉资产，同时用 PPT 文本框和形状重建标题、正文、卡片、箭头、标签、结论条等可编辑元素。
+- [reimertz](https://github.com/reimertz/lagom) — ★ 199 — 🖼 simplistic presentation generator
+- [snowmanzhuang](https://github.com/snowmanzhuang/yixueAIganhuo-PPT) — ★ 198 — AI workflow (base on gpt-image-2 and paddleocr vl1.6) for generating PPT decks from papers, PDFs, figures, screenshots, and prepared materials, then rebuildi...
+- [acnlie](https://github.com/acnlie/open-kimi-ppt-skill) — ★ 198 — 非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browse...
+- [cxq0517](https://github.com/cxq0517/htmltool2) — ★ 197 — 最简洁的html文字编辑器，可以直接修改html上的文字，并保证原渲染效果不变。现在可以随时微调你用AI生成的html格式的ppt、简历、信息图等各种html文件。The simplest HTML text editor. Edit text directly on an HTML page while pre...
+- [yyy-OPS](https://github.com/yyy-OPS/slidedeconstruct-ai) — ★ 180 — 针对当前 AI 生成 PPT 多为静态位图、难以二次编辑的痛点，本项目采用“识别+生成”双模型架构，实现了对静态演示文稿的深度重构与编辑。 SlideDeconstruct-AI 旨在让 AI 演示文稿从“一张死图”进化为真正可编辑、可交互的生产力工具。
+- [shower](https://github.com/shower/jekyller) — ★ 179 — Shower presentation generator with Jekyll underneath
+- [CyberTimon](https://github.com/CyberTimon/Powerpointer) — ★ 178 — Powerpointer - A beautiful powerpoint generator which uses GPT 3.5 to generate the slides.
+- [DjangoPeng](https://github.com/DjangoPeng/ChatPPT) — ★ 178 — ChatPPT 是一个基于多模态 AI 技术的智能助手，旨在提升企业办公自动化流程的效率。它能够处理语音、图像和文本等多种输入形式，通过精确的提示工程和强大的自然语言处理能力，为用户生成高质量的 PowerPoint 演示文稿。ChatPPT 不仅简化了信息收集和内容创作过程，还通过自动化的报告生成和分析功能，帮...
+- [owenthereal](https://github.com/owenthereal/jekyll_and_hyde) — ★ 171 — A HTML presentation generator that generates a basic Jekyll scaffold with Slippy hooking up.
+- [yuyuanweb](https://github.com/yuyuanweb/ai-ppt-generator) — ★ 165 — 2026 ????? AI ???????,?? Python FastAPI + LangChain + LangGraph + React ? AI PPT ???,???? / ??? / ???????????????????????????????????????? PPTX ????? LangCha...
+- [jinwyp](https://github.com/jinwyp/open-ppt-skill) — ★ 165 — Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Slides skill for AI agents — generate editable PPTD + PPTX with a local browser editor
+- [Akxan](https://github.com/Akxan/ppt-agent-skill) — ★ 162 — ?? World-class AI presentation generator  26 styles  18 charts  benchmarked against Linear/Anthropic/Stripe/Apple/NYT  a Claude Code Skill that turns one sen...
+- [ningzimu](https://github.com/ningzimu/awesome-ai-ppt) — ★ 162 — A curated list of AI PPT, PowerPoint automation, PPTX editing, and slide workflow tools.
+- [siddhesh-desai](https://github.com/siddhesh-desai/SlideAI) — ★ 158 — SlideAI is an automatic powerpoint presentation maker for projects built using OpenAI and Bing API
+- [composio-community](https://github.com/composio-community/open-gamma) — ★ 147 — An open source implementation of an AI agent that generates slides in google slides
+- [trikita](https://github.com/trikita/slide-html) — ★ 145 — Text presentation maker for a simplified markup language
+- [YOYZHANG](https://github.com/YOYZHANG/ai-ppt) — ★ 144 — Generated ppt by AI based on RevealJS synax
+- [ClosureTalk](https://github.com/ClosureTalk/closure-talk) — ★ 144 — Stylized talk generator
+- [asanzdiego](https://github.com/asanzdiego/markdownslides) — ★ 142 — MarkdownSlides is a Reveal.js and PDF slides generator from MARKDOWN files, that also generate HTML, EPUB and DOCX documents. The idea is that from a same MA...
+- [jaguarliuu](https://github.com/jaguarliuu/xunlong) — ★ 135 — 多模态内容创作系统 - 报告、小说、演示文稿
+- [wycmochi](https://github.com/wycmochi/cn-academic-spark) — ★ 129 — 专为中国宝宝设计的可编辑学术 PPT 生成skill。可根据学术汇报场景（论文答辩、组会汇报、课程报告、开题报告、文献综述等），依据上传的论文、报告等材料分析研究框架并输出带讲稿、带技术路线图、可编辑的pptx文件。
+- [andyhuo520](https://github.com/andyhuo520/html-ppt-designer) — ★ 120 — HTML PPT Designer v5.2 - 智能演示文稿设计器，将任何内容转化为精致的 HTML 演示文稿
+- [oil-oil](https://github.com/oil-oil/oil-ppt) — ★ 114 — 创建、修改和检查 16:9 HTML 演示文稿，支持逐页编辑、离线演示和混合可编辑 PPTX 导出。
+- [fangyuanopus](https://github.com/fangyuanopus/literature-report-ppt-builder) — ★ 111 — Open-source Codex skill for academic literature-report PPT generation
+- [metaimagine](https://github.com/metaimagine/ai-pptx) — ★ 105 — 😆 Generate PPT by LLM follow your template.  📢 Not only use llm to generate ppt, but also according to your favorite ppt template. Just you need to simply ch...
+- [het2333](https://github.com/het2333/OrgMesh) — ★ 103 — 企业私有 AI 知识工作台：中文搜索、飞书接入、Agent 与演示文稿
+- [henryhyw](https://github.com/henryhyw/slidepoise) — ★ 102 — Open-source agentic slide generation with free-form visual design and editable PowerPoint output.
+- [StarryKit](https://github.com/StarryKit/starrykit-plugin) — ★ 95 — Free AI presentation maker & free AI poster maker for Codex, Claude Code, Cursor, and more—create editable slides, decks, posters, and social graphics with S...
+- [gongxings](https://github.com/gongxings/ai-creator) — ★ 93 — A powerful AI content creation platform with AI writing, image generation, video generation, PPT generation tools, and one-click multi-platform publishing.AI...
+- [chongliujia](https://github.com/chongliujia/AI_doc_platform) — ★ 87 — 智能文档处理平台项目。一个基于 Deepseek大模型 的文档生成系统，可以根据用户提供的主题自动生成 PPT 和 Word 文档。
+- [usernamepangdun](https://github.com/usernamepangdun/PPT-AGENT) — ★ 82 — 一个基于 AI 的 PPT 自动生成工具，输入主题即可自动生成大纲、页面内容与视觉稿，并输出 .pptx 文件，支持 SVG 和 HTML 两种渲染链路。
+- [helloo1568](https://github.com/helloo1568/slidemuse) — ★ 76 — 视觉优先的 AI PPT Skill｜适用于挑战杯（大挑/小挑）、中国国际大学生创新大赛、全国大学生交通运输科技大赛（交科赛）、三创赛、正大杯、大创等竞赛，也适合学术汇报、论文答辩、项目路演与课程展示｜4 套风格 → 高质量幻灯片 → 可编辑 PPTX
+- [wiltonesten-web](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v2-1) — ★ 75 — 能将基于图片的 PPT/PPTX 幻灯片，精准还原为忠于原版的可编辑演示文稿。该技能支持语义化元素分离，生成可编辑的文本与原生形状，具备裁切与背景审查、渲染幻灯片质检，以及‘遇错即止’的交付验证功能。属于v2高精度版，搭配GPT6 Astra 轻度，效果足以。
+- [NetsecExplained](https://github.com/NetsecExplained/Attacking-and-Defending-Generative-AI) — ★ 74 — Reference notes for Attacking and Defending Generative AI presentation
+- [moneyinto](https://github.com/moneyinto/canvas-ppt) — ★ 74 — 基于Vue3.x + Typescript + canvas实现的在线演示文稿。
+- [flyer-Li](https://github.com/flyer-Li/paper-analyst) — ★ 73 — A Claude Code skill for academic paper analysis. Supports 5 analysis modes (quick/standard/extended/presentation/presentation_with_figures), anti-hallucinati...
+- [ChenShuo2004](https://github.com/ChenShuo2004/cs-xiaohuang-skill) — ★ 72 — 小黄（有温度）统一 Skill：品牌 IP 延展、中文轻手绘 PPT、文章封面与正文配图；先规划，再生成可交付 PNG。
+- [xhh678876](https://github.com/xhh678876/openclaw-sjtu) — ★ 72 — 🎓 上海交通大学全能 AI 助手 — 基于 OpenClaw 的交大校园 Skill 包 | 19项功能覆盖 DDL/选课/邮箱/食堂/图书馆/PPT生成
+- [MYZY-AI](https://github.com/MYZY-AI/dokie-ai-ppt) — ★ 70 — —
+- [stevenjinlong](https://github.com/stevenjinlong/awesome-ppt-skills) — ★ 70 — Turn a prompt into polished, full-slide PPT decks with gpt-image-2. 把一句提示词转换成由 gpt-image-2 生成的、精美完整的整页式 PPT 演示文稿。
+- [OfficeAIWork](https://github.com/OfficeAIWork/WordGPT) — ★ 62 — OfficeAI.Chat (原WordGPT)是一款一站式 AI 智能内容创作与文稿处理插件。 1. 多元内容智能生成：支持接入自定义私有知识库或联网检索权威素材，一键快速产出论文、简历、博文、新闻稿件、产品文案、短篇故事、商务邮件、影视剧本、诗词、工作总结等各类文稿；同步自动生成思维导图、配图、数据图表，依托...
+- [WayneZhon](https://github.com/WayneZhon/KingDee-PPT-Skill) — ★ 59 — 将你的内容快速生成金蝶风格 PPT
+- [google](https://github.com/google/pagespeed-inslides) — ★ 58 — HTML5 Slide Deck Generator Tool Based on the PageSpeed Insights API
+- [wilingna](https://github.com/wilingna/ai-ppt-toolkit) — ★ 57 — NotebookLM + Gemini + Gamma 三件套做PPT完整工作流
+- [blacksamuraiiii](https://github.com/blacksamuraiiii/pdf2ppt) — ★ 54 — PDF2PPT 是一个开源工具，致力于将 AI 生成的 PDF 文稿（如 Google NotebookLM 导出的内容）或其他标准 PDF 文档，通过智能解析转换为可编辑的 PowerPoint (PPTX) 演示文稿。
+- [brycewang-stanford](https://github.com/brycewang-stanford/many-ppt-skills) — ★ 53 — Every AI slide-deck skill worth knowing, on one page — both the HTML and native-PPTX routes, compared on what actually decides the choice rather than on star...
+- [wangcham](https://github.com/wangcham/ppt_killer) — ★ 52 — 使用chatgpt总结你的pptx文件，支持依据ppt内容生成问题和保存AI回答   |   Use chatgpt to summarize your pptx files and generate questions about ppt , supports saving answers and docker...
+- [wiltonesten-web](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v1) — ★ 52 — 将基于图片的 PPT/PPTX 幻灯片重建为可编辑的 PPT演示文稿，分v1节省token版和v2高精度版。本skill属于v1节省token版
+- [docmee](https://github.com/docmee/aippt-vue) — ★ 51 — Vue3 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of comp...
+- [llmlearning-x](https://github.com/llmlearning-x/aippt_PresentationGen) — ★ 50 — PresentationGen是一个通过大语言模型生成PPT文件的SpringBoot Web应用。A SpringBoot web application that generates PPT files using a llm.
+- [CCLMSY](https://github.com/CCLMSY/nonebot-plugin-sparkapi) — ★ 48 — 调用科大讯飞星火大语言模型官方API的Nonebot2机器人插件，适用于所有模型版本（默认当前最新（v4.0）），具有自定义预设、AI绘图、PPT生成等功能
+- [xiao634zhang](https://github.com/xiao634zhang/paper-ppt-skill) — ★ 48 — 科研论文汇报PPT生成工具 - 从PDF论文自动生成简洁清晰的学术汇报幻灯片，支持模板定制、演讲稿导入和图片提取，适用于组会汇报、课程展示和学术交流。
+- [goeasyway](https://github.com/goeasyway/my_notebooklm_with_ppteditable) — ★ 47 — 基于 AI 的演示文档生成器 —— 粘贴文字，自动生成专业信息图 PDF / 可编辑 PPT。
+- [touying-typ](https://github.com/touying-typ/seaslides) — ★ 47 — AI skills for presentation slides generation with Typst and Touying
+- [BJSS-China](https://github.com/BJSS-China/ppt_assistant) — ★ 45 — 这是一个通过多模态大模型+LangGraph实现的PPT生成系统，包含前端、后端以及Core核心三部分构成。
+- [1624899](https://github.com/1624899/ai-ppt-maker) — ★ 43 — AI-driven PPT generation system with editable layered PPTX export.
+- [syt2](https://github.com/syt2/paper-chat-for-zotero) — ★ 43 — AI 论文助手：论文问答、划词翻译、文献检索、笔记与 PPT 生成 ｜ AI research assistant: chat with papers, translate selections, find literature, and generate notes and slides
+- [mehdimo](https://github.com/mehdimo/GenSlide) — ★ 42 — Agentic AI PowerPoint Slide Generation using LangGraph and GPT-4o
+- [proyecto26](https://github.com/proyecto26/slides-ai-plugin) — ★ 41 — Slides AI Plugin for Claude, OpenClaw, etc that turns any idea into a full presentation — animated HTML or editable PowerPoint — from a single prompt
+- [oxidecomputer](https://github.com/oxidecomputer/fable) — ★ 39 — TOML deck generator with custom templates and schema validation
+- [vincenzo-afk](https://github.com/vincenzo-afk/SlideForge) — ★ 39 — AI-Powered Presentation Generator — pure HTML+CSS+vanilla JS, zero frameworks
+- [lkuczborski](https://github.com/lkuczborski/Codeck) — ★ 39 — Native macOS Markdown presentation maker for teaching and running live Codex prompting workflows.
+- [Git008](https://github.com/Git008/py-pptx) — ★ 39 — 利用python自动生成数据分析PPT报告
+- [msmahdinejad](https://github.com/msmahdinejad/SourceLens) — ★ 39 — Multilingual source-grounded research workspace with agentic RAG, cited chat, podcasts, PowerPoint, and video.
+- [ansuelele](https://github.com/ansuelele/KK-Chinese-Style-PPT-Song-Aesthetics) — ★ 38 — KK中国风PPT生成系统：宋代美学版 三件套交付
+- [YesIamGodt](https://github.com/YesIamGodt/knowledge-pipline) — ★ 38 — 🧠 Claude Code 技能 — 把文档（PDF/图片/视频/Office）编译成结构化知识维基，再用一句 /pipeline-ppt 生成有深度的分析报告。知识图谱 · 矛盾检测 · LivePPT 演示文稿。
+- [AIPMAndy](https://github.com/AIPMAndy/PPTskill) — ★ 38 — 🎨 AI 生成原生可编辑 PPTX — 无需设计技能 | AI-powered native editable PowerPoint generation
+- [AIAnytime](https://github.com/AIAnytime/Text-to-PPT-Generation-Streamlit-App) — ★ 37 — This is an official repo for "Text to PPT Streamlit App". It generates PPT from your text using GPT-X Model and Python PPTX Library.
+- [co-r-e](https://github.com/co-r-e/amaroad) — ★ 36 — AI Slide Creation Environment for Developers
+- [maquedexiju](https://github.com/maquedexiju/PPtYoda) — ★ 36 — 一个强大的、由 AI 驱动的演示文稿（PPt）自动化生成工具，真正生产化的工具，全流程可控，帮助用户快速制作出符合需求的 PPt。
+- [joeseesun](https://github.com/joeseesun/qiaomu-ppt) — ★ 36 — 中文优先的 PPT 生成工作流：URL/PDF/NotebookLM/HTML Deck 到可编辑、可验证演示文稿 | Chinese-first source-to-slide workflow.
+- [HugoBlox](https://github.com/HugoBlox/hugo-theme-markdown-slides) — ★ 34 — ?? Presentation slides from Markdown  LaTeX math, code highlighting, speaker notes, Git version control. AI generates pages, you own them forever. ????,Markd...
+- [Rudra-Sankha-Sinhamahapatra](https://github.com/Rudra-Sankha-Sinhamahapatra/Encorp-AI) — ★ 34 — Your AI Powered Presentation Generator.                 https://encorp.rudrasankha.com
+- [docmee](https://github.com/docmee/aippt-api-python-demo) — ★ 32 — Python 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of co...
+- [OrangeViolin](https://github.com/OrangeViolin/presentation-skill) — ★ 31 — 演讲脚本 + PPT 一键生成器。支持62种品牌级设计风格，基于 awesome-design-md。输入主题即可生成可播放的HTML幻灯片。
+- [hzsci](https://github.com/hzsci/ace-sci-origin) — ★ 31 — 研理科研线开源的 Codex Skill：生成可编辑 Origin 工程与 Origin OLE PowerPoint 科研图。
+- [670027822](https://github.com/670027822/songshuAI-chatgpt-midjourneyplus--ppt-) — ★ 30 — 一款结合了chatgpt、midjourney plus，ppt生成，思维导图生成、涂鸦绘画、dalle 3绘画的商业源码
+- [SlideSpeak](https://github.com/SlideSpeak/slide-design-skill) — ★ 29 — AI presentation engine. Describe your deck and the look, it derives a bespoke style and renders polished 1920x1080 HTML slides with real charts, tables and i...
+- [sharptoolbox](https://github.com/sharptoolbox/consulting-html-ppt) — ★ 29 — 咨询公司风格 HTML + SVG 演示页生成技能（Agent Skill）· McKinsey/BCG 风格 PPT · 三形态判定 + 双模板库 + ECharts
+- [E1nzbern](https://github.com/E1nzbern/open-kimi-ppt-skill) — ★ 29 — 非官方 Kimi Slides Skill：让 AI Agent 生成可编辑 PPTD + PPTX，并附带本地浏览器编辑器 Unofficial Kimi Slides skill for AI agents — generate editable PPTD + PPTX with a local browse...
+- [Allenpandas](https://github.com/Allenpandas/BJTU-Beamer-Theme) — ★ 28 — 🎆 北京交通大学 LaTeX 生成 PDF 的主题模板 | BJTU-Beamer-Theme
+- [comeonzhj](https://github.com/comeonzhj/DataAnalysis_ClaudeCode) — ★ 27 — 使用 Claude Code 做数据分析并生成一个可视化 PPT。示例页面为 K2 生成的报告
+- [liwenka1](https://github.com/liwenka1/video-to-ppt) — ★ 27 — 基于 WebAV 和 FFmpeg 的现代化视频分析与 PPT 生成工具，支持屏幕录制、本地视频处理和在线视频分析
+- [georgeOsdDev](https://github.com/georgeOsdDev/slidepad) — ★ 26 — HTML Slide Generator.
+- [be-a-guptaji](https://github.com/be-a-guptaji/AI-PPT-Builder) — ★ 26 — AI Presentation SaaS Platform is a modern web application built with Next.js, OpenAI, Clerk, Prisma, and Lemon Squeezy. It enables users to generate, edit, a...
+- [LearnAIHubC](https://github.com/LearnAIHubC/LearnDeck) — ★ 26 — LearnDeck: AI PPT generator for Codex that turns topics, notes, course material, and outlines into polished, editable PowerPoint decks.
+- [Weijie-Zhou](https://github.com/Weijie-Zhou/ppt_generation) — ★ 26 — 基于chatglm3-6b生成ppt大纲以及ppt详情
+- [nooqta](https://github.com/nooqta/ai-presentation) — ★ 25 — An OpenAI Slide Deck Generator with Reveal.js
+- [Yu-0312](https://github.com/Yu-0312/ppt-creator-skills) — ★ 25 — PPT creator skill for Claude Code
+- [ken-hu](https://github.com/ken-hu/ppt-autoreport-core) — ★ 25 — 【core】自动化数据替换生成动态样式模板的PPT
+- [CallStorm](https://github.com/CallStorm/ppt-web) — ★ 25 — 基于 Claude Code agent 的 PPT 生成 Web 服务，每个生成任务跑在独立 Docker 容器里，跑完自毁，产物可下载
+- [aa2246740](https://github.com/aa2246740/dsh-slidestudio) — ★ 24 — DSH SlideStudio — AI presentations for DeepSeek Harness: one-line brief → editable deck → editable PPTX
+- [Mr-Q526](https://github.com/Mr-Q526/PPTMaker-skill) — ★ 24 — 根据一句话主题、Markdown 或已有文稿生成结构化 PPT，并支持自然语言修改页面与组件后导出为可编辑 PPT。适用于需要生成大纲、创建逐页布局、维护 deck.json、渲染 HTML 预览和导出 .pptx 的场景。
+- [admithuman](https://github.com/admithuman/gzr-nsfc-ppt-skill) — ★ 24 — # GZR-NSFC-PPT-Skill：国自然风格学术答辩PPT生成器  > 专为国家自然科学基金（NSFC）答辩以及其他多个学术场景打造的专业PPT自动生成技能
+- [mshen6666](https://github.com/mshen6666/HTML-PPT-Editor) — ★ 24 — HTML PPT Editor 是一个基于 React 和 Node.js 的 HTML 演示稿编辑器。项目以可编辑 HTML deck 作为核心数据源，提供可视化编辑、预览、导出，以及可选的 AI Agent 生成工作流。
+- [docmee](https://github.com/docmee/aippt-react) — ★ 23 — React 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of com...
+- [ziqihe10-droid](https://github.com/ziqihe10-droid/shuike-pptskill) — ★ 23 — 水课PPT——大学生的救命稻草。给个课题，直接出双稿。明天要上台？忘了准备？小组甩锅？打开Claude Code说一句"帮我做个XX的PPT"，分分钟后桌面躺着presentation.pptx和speech.docx。图表自动生成，每页排版不重样，五种风格自动匹配，水课可以水 PPT不能水。
+- [LRriver](https://github.com/LRriver/AIPPT) — ★ 22 — Open-source AI PPT workbench featuring controllable end-to-end generation, per-slide editing, and editable PPTX export.
+- [weibiaoyi](https://github.com/weibiaoyi/SlideTalk) — ★ 22 — SlideTalk 是一款功能强大的桌面应用，能够将 PowerPoint 演示文稿自动转换为有声视频讲解。通过集成 AI 语音合成和视频编辑功能，让您的演示文稿动起来！
+- [liumengniu](https://github.com/liumengniu/markdown-to-pptx) — ★ 22 — 在线编辑markdown生成pptx
+- [parthgupta1208](https://github.com/parthgupta1208/PDF2PPTGenerator) — ★ 22 — PDF2PPT Generator is a Python tool that creates Powerpoint presentations from PDF files by using smart summarization techniques assisted by GPT-3.5-Turbo
+- [stone-yu](https://github.com/stone-yu/ai-draw-skill) — ★ 21 — AI画图Skill，无需额外提示词，直接描述文字、文章全文、链接地址、图片、pdf等任意需求格式，即可生成html格式渲染图或PPT，多种主题可选择，效果惊艳，且HTML方便修改和调整Type one prompt, get a polished HTML deck or architecture diagram...
+- [lgwanai](https://github.com/lgwanai/ppt-skill) — ★ 20 — AI PPT skill技能，支持克隆样式，内置PPT专家经验，内置大量SVG可商用素材，提供PPT高质量生成
+- [Heron4gf](https://github.com/Heron4gf/ai-slides) — ★ 20 — Create slides with AI
+- [mertbozkir](https://github.com/mertbozkir/PresentX) — ★ 20 — GPT-3 Based Latex Code Presentation Maker.
+- [WarriorXu0302](https://github.com/WarriorXu0302/SlideGen) — ★ 20 — AI 驱动的 HTML 演示文稿编辑器 · 支持 AI 生成 PPT、可视化编辑、PPTX 导入导出
+- [slzcn](https://github.com/slzcn/CyberPPT-Pro) — ★ 20 — 咨询风格 PPT 生成 Skill：core 共享逻辑 + Claude/Codex 双平台适配，默认全原生可编辑，HTML 样张零图像依赖，12 视觉风格 + 10 场景框架
+- [far422194](https://github.com/far422194/huaxushuo) — ★ 20 — 一句话生成可点击、有动效、能发布的演示网站，轻量实现PPT、思维导图、产品介绍等场景演示说明工作。
+- [registor](https://github.com/registor/nwafuBeamerTheme) — ★ 20 — 一组西北农林科技大学LaTeX Beamer演示文稿主题。
+- [ysskrishna](https://github.com/ysskrishna/ai-ppt-slide-generator) — ★ 19 — AI-powered FastAPI backend to generate and customize PowerPoint (PPTX) presentations using Google Gemini. Supports custom layouts, fonts, colors and programm...
+- [docmee](https://github.com/docmee/aippt-api-java-demo) — ★ 19 — Java 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of comp...
+- [yangjian102621](https://github.com/yangjian102621/geekai-ppt) — ★ 19 — 基于 AI Nano-Banana Pro 生图模型的 PPT 生成平台，通过自然语言描述或上传文档，快速生成具有现代科技美学的演示文稿。
+- [CHENJIAMIAN](https://github.com/CHENJIAMIAN/html_to_ppt) — ★ 19 — 将 HTML 转换为 PowerPoint 的工具，当前适配 ChatGLM 生成的网页幻灯片 | An HTML-to-PowerPoint converter currently tailored to web slides generated by ChatGLM
+- [AIGeeksGroup](https://github.com/AIGeeksGroup/PresentAgent-2) — ★ 18 — PresentAgent-2: Towards Generalist Multimodal Presentation Agents
+- [Mijiang111](https://github.com/Mijiang111/SylvaDeck) — ★ 18 — SylvaDeck is an agent-native presentation workbench for turning structured thinking into editable decks. A local-first, HTML-based AI presentation Creator
+- [Joe-AI-Aggregation](https://github.com/Joe-AI-Aggregation/ai-tools-aggregation) — ★ 18 — 8个国内 AI PPT 生成工具（免费）
+- [ishandutta2007](https://github.com/ishandutta2007/Awesome-Powerpoint-AI-Agents) — ★ 18 — AI Slide / PowerPoint Agents Ecosystem 🌟 Star if you like it!  🌟
+- [Govind-S-B](https://github.com/Govind-S-B/ppt_generator) — ★ 18 — A local LLM assisted ppt generation tool
+- [leehomyc](https://github.com/leehomyc/SlidesAI) — ★ 18 — Generate presentation slides automatically using AI from text, PDFs, or structured content.
+- [OfficeAIWork](https://github.com/OfficeAIWork/PptGPT) — ★ 18 — OfficeAI.Chat (原PptGPT) 是一款 AI 智能幻灯片生成插件，让制作 PPT 变得简单高效。输入主题即可自动生成演示方案与结构化提纲，一键输出带排版内容的完整演讲稿，同时提供文案润色改写、思维导图、原创配图生成、多语种翻译等能力，搭载OfficeAI智能体，从构思到成品全流程自动完成PPT创作。
+- [Y4tacker](https://github.com/Y4tacker/codex-ai-ppt) — ★ 17 — Review-gated image-based PPT generation for Codex
+- [woniuniuniu](https://github.com/woniuniuniu/four-up-ppt-generator) — ★ 17 — Four-up PPT generator based on op7418/guizang-ppt-skill
+- [ColorsOutofSpace](https://github.com/ColorsOutofSpace/code-to-ppt) — ★ 17 — Cognitively-enhanced PPT generation skill with interrogation, memory, and adversarial review
+- [pyzw618](https://github.com/pyzw618/uestc-create) — ★ 17 — 电子科技大学（UESTC/成电）课程交付物生成技能包：汇报PPT / 实验报告 / 课程论文与课程设计报告 / 开题-中期-结题规划
+- [YuxiangChai](https://github.com/YuxiangChai/OpenSlides) — ★ 17 — AI-powered slide workspace for creating, editing, versioning, and presenting beautiful reveal.js decks from prompts and source files.
+- [prodigeproject](https://github.com/prodigeproject/pradaslides) — ★ 16 — Capability-aware, audience-ready presentation agent skill for PPTX, HTML slides, PDF, and deck planning.
+- [Deepnar](https://github.com/Deepnar/presentation-forge) — ★ 16 — Self-hosted AI presentation generator: topic or sources in, researched themed editable PPTX and report out. Docker, BYOK or Ollama; 74 slide types, 34 themes.
+- [lvy010](https://github.com/lvy010/Next-AI-Slide) — ★ 16 — 🤖 Generate Slidev presentations with AI
+- [Jinjiang](https://github.com/Jinjiang/mark2slides) — ★ 16 — A markdown-to-slides generator.
+- [BigSweetPotatoStudio](https://github.com/BigSweetPotatoStudio/ai-ppt-tutorial) — ★ 15 — claude code   ai-ppt-tutorial
+- [robertwhiffin](https://github.com/robertwhiffin/ai-slide-generator) — ★ 15 — —
+- [techtalkjp](https://github.com/techtalkjp/slidecraft) — ★ 15 — AI Slide Editor
+- [chenwr727](https://github.com/chenwr727/TextToTalk) — ★ 15 — 🎬 一段文案或一个链接 → 一集 PPT 式科普讲解视频。AI 规划可编辑大纲、逐页展开分镜，TTS 配音 + 字幕 + 纯代码生成的配乐，Remotion 无头渲染导出 MP4。支持图表 / 地图 / SmartArt，不满意可逐页重做。
+- [JZCreative](https://github.com/JZCreative/Fudan-University-PPT-skill) — ★ 15 — 复旦大学学术演示文稿 Skill，支持生成原生 PPTX、离线单文件 HTML 幻灯片和可控 AI 辅助视觉素材，内置复旦校徽与校名视觉资产、蓝/红/绿高纯度学术色系、跨格式一致性规则、Base64 图片内嵌和品牌安全约束，适用于课程汇报、科研展示、论文答辩与学院报告。
+- [danb-neo4j](https://github.com/danb-neo4j/NODES2023_GDS_GenAI) — ★ 14 — Notebook and additional resources for Road to Nodes 2023 GenAI + LLM Presentation
+- [misbahsy](https://github.com/misbahsy/zentable) — ★ 14 — Generate presentation using AI. A Cursor x Gamma presentation maker.
+- [mateclaw](https://github.com/mateclaw/MatePPT) — ★ 14 — 面向 AI 演示文稿场景的 Web PPT 生成与编辑项目，支持大纲生成、模板化生成幻灯片、可视化编辑，以及 PPTX / PDF 导出
+- [2750527986liu-maker](https://github.com/2750527986liu-maker/competition-ppt-skill) — ★ 14 — 中国国际大学生创新大赛路演PPT制作Skill - 基于python-pptx + PIL的竞赛PPT自动生成方法论
+- [Zero-stargazer](https://github.com/Zero-stargazer/group-meeting-ppt-skill) — ★ 14 — group-meeting-ppt-skill 是一个面向中文科研组会和文献汇报场景的 Codex Skill。它可以根据结构化论文信息，自动生成 10 页组会 PPT 草稿、每页讲解要点、图表使用建议、老师可能追问清单和学术诚信自查清单，帮助研一、硕博和本科毕设学生从“论文读完但 PPT 空白”快速进入可修改的...
+- [likaku](https://github.com/likaku/mck-html-design-skill) — ★ 14 — Generate McKinsey-style HTML presentations with Python — 68 layouts, zero dependencies / 用 Python 一键生成麦肯锡风格 HTML 演示文稿
+- [wilingna](https://github.com/wilingna/ai-ppt-web) — ★ 13 — Web upgrade of ai-ppt-toolkit. Claude replaces 2 tools — one page, one paste, deck-ready.
+- [Mrkk1](https://github.com/Mrkk1/viaimcode) — ★ 13 — A open AI ppt Agent
+- [xj-bear](https://github.com/xj-bear/NanoBanana-PPT-Skills) — ★ 13 — NanoBanana PPT Skills - AI-powered PPT generator with Veo support
+- [brightbear2026](https://github.com/brightbear2026/PPTagent) — ★ 13 — 专业级PPT生成Agent — 6层流水线架构，多格式输入，4次人工审核，多国产LLM协同(GLM-4/DeepSeek-R1/Qwen-Max)，真实数据驱动图表，生成咨询公司级演示文稿。React+FastAPI。
+- [izhan0102](https://github.com/izhan0102/exdeck) — ★ 12 — EXdeck is an AI presentation builder. You write a short prompt, pick a theme, and get an editable deck in seconds. Drag the text boxes around, edit them inli...
+- [awsdataarchitect](https://github.com/awsdataarchitect/ai-ppt-generator) — ★ 12 — Transform any document into professional presentations instantly using AWS Bedrock AI. Upload PDFs, get context-aware slides with RAG-powered intelligence. L...
+- [andyqiu847-ai](https://github.com/andyqiu847-ai/high-quality-slides) — ★ 12 — A Claude Code skill that produces presentations worth sending — research-first, narrative-driven 5-phase workflow inspired by Genspark AI Slides.
+- [Basedonsearch-Dindayal](https://github.com/Basedonsearch-Dindayal/AutoPPT-generator) — ★ 12 — AutoPPT Generator is an open-source tool that uses Google Gemini AI to generate presentation outlines and content automatically. Designed for speed and ease ...
+- [tanakh](https://github.com/tanakh/pandoc-html5slide) — ★ 12 — Google HTML5 Slide generator
+- [houzhijun](https://github.com/houzhijun/application) — ★ 12 — iPhone应用程序是由主函数main启动，它负责调用UIApplicationMain函数，该函数的形式如下所示：  int UIApplicationMain (  int argc,  char *argv[],  NSString *principalClassName,  NSString *deleg...
+- [ChengchengDu](https://github.com/ChengchengDu/PPT-Generation) — ★ 12 — 自动PPT生成
+- [chongliujia](https://github.com/chongliujia/AI_Doc_platform_langgraph) — ★ 12 — 基于LangGraph和DeepSeek API构建的智能文档生成平台，支持自动生成PPT或Word文档，具有生成标题和大纲的优势
+- [ziguishian](https://github.com/ziguishian/better-ppt-html-deck) — ★ 12 — 一个为 Codex 设计的 PPT 生成 Skill：先确认审美方向，再生成可编辑、可预览、可播放、可导出的 HTML 版 PPT，帮助用户更快创作更好看的演示文稿。  |  Description  A Codex Skill for creating better-looking presentations:...
+- [RuiqiWang-LGD](https://github.com/RuiqiWang-LGD/TalkTrack--) — ★ 12 — 一个面向方案汇报场景的 Codex Skill。  你把 PDF、PPT 或图片型方案册交给它，它会生成一份和原文件页码同步伴读 PPT：左侧保留原页缩略图和关键词，右侧生成可以直接照读的中文汇报正文，底部提示停顿、翻页、连续讲和需要人工补充的位置。  它适合设计、品牌、产品、策划、公共汇报等多种场景以及临时要讲...
+- [HalfAI1102](https://github.com/HalfAI1102/HalfAI-gufappt) — ★ 12 — 古法 PPT 是一个本地 AI Skill，用来生成可在 PowerPoint / WPS 里继续编辑的传统风格 .pptx。它的目标不是做一份很像网页的 HTML 幻灯片，而是回到学校、职场、答辩、汇报里真正会被打开、修改、交付的那种 PPT。  Agent 负责理解资料、写大纲和选择素材；本 Skill 负责...
+- [hosiet](https://github.com/hosiet/talk-debian-2020) — ★ 12 — Debian 及自由软件社区简介（演示文稿，2020年）
+- [lainshao](https://github.com/lainshao/modern-ppt) — ★ 12 — Agent Skill for polished single-file HTML presentations / 现代投屏网页 PPT：12 layouts, 3 themes, interactive charts and motion; works with Claude Code, Codex CLI, ...
+- [gammaremover](https://github.com/gammaremover/gamma-watermark-remover-skill) — ★ 12 — Agent skill for Claude Code & OpenClaw 🦞 — remove the "Made with Gamma" watermark from   PDF & PPTX exports. Free web version: gammaremover.com
+- [ymrl](https://github.com/ymrl/mdslide) — ★ 11 — Markdown Slide Generator
+- [ontology-of-everything](https://github.com/ontology-of-everything/concept-skills) — ★ 11 — Ontology, semantic-layer, concept-design, and presentation Agent Skills.
+- [SurgePix](https://github.com/SurgePix/ai-ppt-prompts) — ★ 11 — Curated AI presentation prompt library — 120+ copy-ready PPT & slide prompts with real slide previews, 1-click copy and direct generate. Filter by use case (...
+- [suge168](https://github.com/suge168/kdocs-skill) — ★ 11 — 金山文档（WPS云文档/kdocs.cn）龙虾原生接入.你可以在龙虾OpenClaw 提到金山文档、Kdocs、云文档、在线文档、协作文档、智能文档、云表格、在线表格、在线 Excel、智能表格、多维表格、在线 PDF、演示文稿、PPT、知识库、个人知识库等意图时，调用本 skill。 支持：新建多种文档（Wor...
+- [christianwarmuth](https://github.com/christianwarmuth/openhpi-generative-ai-slides) — ★ 11 — Materialien zum openHPI Online-Kurs "ChatGPT: Was bedeutet generative KI für unsere Gesellschaft?"
+- [raphaeltony](https://github.com/raphaeltony/SlidesGenie) — ★ 11 — AI-powered Visual Learning Tool and Presentation Generator
+- [EdwardJXLi](https://github.com/EdwardJXLi/QuikSlide) — ★ 11 — An AI powered presentation generator that helps you create visual aids. Quikly. Hackathon Submission for Hack The North 2020++
+- [trabe](https://github.com/trabe/slide-pack) — ★ 11 — A really simple slides generator & viewer
+- [veigap](https://github.com/veigap/talksmith) — ★ 11 — Talksmith is a Presenter Agent that helps a human presenter turn raw exploration — articles, papers, LLM chat sessions, screenshots, notes — into a well-stru...
+- [louisazhou](https://github.com/louisazhou/slidegenerator) — ★ 11 — You write simple, readable Markdown with a few extras, and Slide Generator produces well-formatted PowerPoint and Google Slides. This is like LaTeX Beamer fo...
+- [alingowangxr](https://github.com/alingowangxr/guizang-ppt-skill) — ★ 11 — 歸藏 PPT Skill：網頁 PPT / 配圖 / 常用社群平台封面生成（支援繁簡中文）
+- [shynloc](https://github.com/shynloc/ACKS-Office-Suite-Simplify) — ★ 11 — 面向 AI Agent 的 Python 办公工具：生成、读取 Word / Excel / PPT / PDF，提供 CLI、doctor 和技能包；格式转换需 LibreOffice。
+- [pedrohcgs](https://github.com/pedrohcgs/Claude-Mini) — ★ 11 — 4-hour Notre Dame faculty seminar on agentic AI for academic research — Quarto slides + curated demo bundle. Companion to claude-code-my-workflow.
+- [Watermelon4000](https://github.com/Watermelon4000/sketch-note-ppt) — ★ 11 — AI skill that turns 'make a PPT about X' into a Sketch Notes–style deck: one self-contained HTML file, no build step.
+- [xiaohua-der](https://github.com/xiaohua-der/auto-ppt) — ★ 10 — Auto PPT Studio is a local-first AI presentation builder that turns long-form documents into chapter-aware slide outlines, generates per-slide visuals with o...
+- [domonic18](https://github.com/domonic18/ai-pptist-system) — ★ 10 — 这是一个基于PPTist开发的自动生成PPT的系统
+- [thatIAmStd](https://github.com/thatIAmStd/AiPPT) — ★ 10 — 基于多模态 AI 技术的智能助手，旨在提升企业办公自动化流程的效率。它能够处理语音、图像和文本等多种输入形式，通过精确的提示工程和强大的自然语言处理能力，为用户生成高质量的 PowerPoint 演示文稿。ChatPPT 不仅简化了信息收集和内容创作过程，还通过自动化的报告生成和分析功能，帮助企业快速、准确地完成...
+- [Aham-AIAPP](https://github.com/Aham-AIAPP/aham-ppt) — ★ 10 — 克制的 AI PPT 制作技能——参数化版式库，让 AI 产出规范、可编辑的 .pptx
+- [aryankumawat](https://github.com/aryankumawat/SlideSmith-Multi-Agent-AI-Slide-Maker-) — ★ 10 — A distributed multi-agent system for automated slide deck generation with advanced quality assurance, semantic validation, and multi-format export capabiliti...
+- [y-coder18](https://github.com/y-coder18/ppt-themes-ai) — ★ 10 — PPT主题工坊·AI — Marp PPT主题集合 + AI智能辅助，人人都能轻松制作专业幻灯片。 ppt | marp | theme | ai | slides | markdown | presentation
+- [bitcraze](https://github.com/bitcraze/aideck-esp-firmware) — ★ 10 — AI Deck ESP32 firmware
+- [thomasneff](https://github.com/thomasneff/YGOLOTDPatchDraft) — ★ 10 — Patching Tool for Yu-Gi-Oh: Legacy of the Duelist to automatically change the Battle Pack 1 draft pool and AI decks.
+- [dariusk](https://github.com/dariusk/outslide) — ★ 10 — A random slide generator. I'm sorry.
+- [cyrus2281](https://github.com/cyrus2281/MAC-SlideGenerator) — ★ 10 — Multi-Agent Collaboration: Voice-overed video slide generator
+- [bitovi](https://github.com/bitovi/jira-timeline-report) — ★ 10 — An open source jira to power point slide generator for high-level status reporting.
+- [ThunderOne18](https://github.com/ThunderOne18/ppt-expert-team) — ★ 10 — PPT 专家团：AI 做 PPT 不是生成问题，是工作流问题。八步流程 Claude/Codex skill——从文章、口播稿到可编辑 HTML PPT / 图片版 / PPTX，六套原创风格+风格选择器+12套免费商用字体。
+- [Ocean-kang](https://github.com/Ocean-kang/AI-Workflow-Prompts) — ★ 10 — 一个用于整理不同任务场景下 ChatGPT / AI 助手工作流 Prompt 模板的仓库，包括论文阅读、代码审计、科研分析、PPT 生成等。
+- [kaleidoscope257-git](https://github.com/kaleidoscope257-git/SHUbeamer) — ★ 10 — SHUbeamer是为了帮助上海大学师生撰写演示文稿而编写的LaTex Beamer模版文件
+- [woyeyao](https://github.com/woyeyao/md2pre) — ★ 10 — A lightweight Python tool that converts Markdown files into Material Design HTML presentations. Each slide is an independent HTML file — edit freely, present...
+- [wenbopeng](https://github.com/wenbopeng/Obsidian-markdeep-slides) — ★ 10 — 一个为 Obsidian 设计的插件，它利用 Markdeep 的强大功能，将您的 Markdown 笔记转换为功能丰富的 HTML 幻灯片。您可以在 Obsidian 中直接编辑笔记，并分栏实时预览生成的幻灯片效果。依赖的资源：请前往wenbopeng/markdeep-slides-project 中获取解释...
+- [CY202227](https://github.com/CY202227/PPT_Generate) — ★ 9 — ?? AI-powered PowerPoint generator that creates presentations using templates. Features smart content mapping, chart & SmartArt support. Built with Python an...
+- [Liyilin66](https://github.com/Liyilin66/ppt-agent) — ★ 9 — AI Presentation Agent with validated Slide IR, editable PPTX rendering, QA, and structured patch editing.
+- [cogine-ai](https://github.com/cogine-ai/ai-slide-templates) — ★ 9 — Self-contained HTML slide templates with metadata and AGENTS.md instructions for AI agents to create finished presentation decks.
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-ai-slides-deck-builder-skill) — ★ 9 — AI-powered presentation deck outline and slide structure
+- [danny0926](https://github.com/danny0926/ppt-skills) — ★ 9 — AI slide generator with hand-drawn style (rough.js) — text-to-PPTX pipeline with visual-first layouts, Claude Code skill, Playwright rendering, and editable ...
+- [lk19940215](https://github.com/lk19940215/ai-teaching-ppt) — ★ 9 — AI Teaching PPT Generator — Upload textbook content, AI generates interactive .pptx slides.  / 用 AI 自动化制作教学课件。快速、智能、更懂老师
+- [ggarnier](https://github.com/ggarnier/reveal.rb) — ★ 9 — Presentation generator using reveal.js
+- [wordflowlab](https://github.com/wordflowlab/pptify) — ★ 9 — ppt AI 生成工具
+- [yizhengyuan](https://github.com/yizhengyuan/shenbippt) — ★ 9 — 输入主题，一键生成精美 PPT
+- [cqzyys](https://github.com/cqzyys/ppt-maker) — ★ 9 — 输入一句简单的提示语，AI根据提示语自动规划PPT大纲，然后根据大纲自动生成PPT。
+- [23J1633](https://github.com/23J1633/RWB-HTMLtoPPT) — ★ 9 — 可由AI自动生成的基于HTML的演示文稿的VScode插件                                                   A VS Code extension that uses AI to generate HTML-based presentations.
+- [MinmusLin](https://github.com/MinmusLin/Tongji_University_Beamer_Template) — ★ 9 — Tongji university Beamer template. 同济大学演示文稿模板.
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-venture-pitch-deck-narrative-synthesizer-skill) — ★ 8 — Venture pitch deck narrative synthesizer & TAM market modeler (AI Pitch Deck)
+- [mindlesseye](https://github.com/mindlesseye/Gamma-Desktop---Gamma-AI-Presentation-2026) — ★ 8 — Gamma-Desktop - AI presentation creator with one-click slides, custom themes, and analytics.
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-ai-presentation-slide-narrative-generator-skill) — ★ 8 — AI presentation architect converting raw data into structured slide decks with speaker notes (G2 Presentation AI)
+- [TianHengZhuang](https://github.com/TianHengZhuang/One-click-AI-PPT-creation) — ★ 8 — Turn any topic into a complete business presentation deck.
+- [itarutomy97](https://github.com/itarutomy97/marp-ai-slide-generator) — ★ 8 — AI-powered slide generator using Marp - Create beautiful presentations from JSON with AI assistance
+- [lucas-tulio](https://github.com/lucas-tulio/autopresentr) — ★ 8 — Procedural presentation generator
+- [d3lio](https://github.com/d3lio/mrend) — ★ 8 — A markdown presentation generator
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-responsive-interactive-web-card-presentation-skill) — ★ 8 — Responsive web card presentation generator (Gamma Web style)
+- [kairess](https://github.com/kairess/ChatGPT-PowerPoint) — ★ 8 — PowerPoint slides generator using ChatGPT 챗GPT를 활용한 파워포인트 슬라이드 생성기
+- [andrewytliu](https://github.com/andrewytliu/vebdew) — ★ 8 — HTML5 slide generator
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-generative-deck-slide-storyboard-layout-compiler-skill) — ★ 8 — Generative presentation deck and interactive card layout compiler (Gamma style)
+- [Robertcell](https://github.com/Robertcell/ppt-ai-free) — ★ 8 — PPT AI生成免费工具汇总【2026年4月更新】
+- [proto-commons](https://github.com/proto-commons/ZhiYan-Legacy) — ★ 8 — Competition-stage AI-assisted PPT generation project; archived historical reference.
+- [docmee](https://github.com/docmee/aippt-ui-iframe-v2) — ★ 8 — UI iframe 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of...
+- [xiaohuihui202504](https://github.com/xiaohuihui202504/jimeng-slides) — ★ 8 — 一个基于DeepSeek-V3.2和即梦4.5的AI智能PPT生成工具，让PPT制作变得前所未有的简单！
+- [monkbird](https://github.com/monkbird/QCmaker) — ★ 8 — 款基于大语言模型 (LLM) 和多智能体协作 (Multi-Agent) 技术的企业级应用，旨在辅助 QC 小组高效完成质量控制活动。该系统通过 AI 驱动的选题咨询、自动数据清洗、多模型研讨、智能可视化推荐以及 PPT 终稿生成，全流程赋能 QC 活动，显著降低参与门槛，提升成果质量。
+- [torns](https://github.com/torns/Word-Cusror) — ★ 8 — Word-Cursor 是一款革新性的 AI 驱动办公文档编辑器，把 Cursor 式“对话 + 工具执行 + 可审阅变更”的生产力范式带入 Word/Excel/PPT 场景。用户只需用自然语言描述目标，系统即可在真实文件与工作区上下文中完成写作、润色、格式统一、批量替换等操作，并以 diff 形式呈现修改，支...
+- [HYY-yu](https://github.com/HYY-yu/ppt-dsl-generator) — ★ 8 — 标记好任意 PPTX ，就可以让 Codex 帮你根据模板生成无数同样风格 PPT。
+- [axuanyaa](https://github.com/axuanyaa/fangban-ppt) — ★ 8 — 方班论文汇报PPT制作技能：论文精读+科学批判分析 → 指定页数逐页规划 → 生成可上台的PPT
+- [hacker4257](https://github.com/hacker4257/weekly-report-ppt) — ★ 8 — 基于 Git 仓库变更，自动生成「程序员周报 / 迭代汇报 / PPT 汇报大纲」的 Claude Skill。
+- [BetaStreetOmnis](https://github.com/BetaStreetOmnis/teamclaw) — ★ 8 — TeamClaw：自托管的企业级 OpenClaw 团队工作台。对话驱动执行 + 需求/项目治理，一键生成 PPT/报价/巡检单/原型；内置 OpenClaw Ops（网关探测/同步/频道插件技能管理）。
+- [chenyangji666](https://github.com/chenyangji666/html-ppt-skill) — ★ 8 — 纯 HTML/CSS/JS 演示文稿引擎 + AI 生成协议
+- [nju-lug](https://github.com/nju-lug/NJUBeamer) — ★ 8 — 南京大学演示文稿模板
+- [starry-source](https://github.com/starry-source/meteor) — ★ 8 — 基于 Html 的演示文稿制作器，跨平台无软件无依赖播放
+- [v0id-byte](https://github.com/v0id-byte/peg-design-system) — ★ 8 — Minimal, type-led HTML/CSS/React design system for slide decks and data-driven presentations. 极简演示文稿设计系统，含7种幻灯片模板与React组件。
+- [LLMxPM](https://github.com/LLMxPM/web-presentation) — ★ 8 — 一个面向 AI 演示文稿创作的平台，支持页面代码化、资源管理、组件复用、主题样式配置、实时预览与PPTX导出。web-presentation is an AI-powered presentation authoring platform that supports code-based pages, asse...
+- [microsoft](https://github.com/microsoft/IF-PowerPoint-Generator) — ★ 7 — A dynamic PowerPoint generator that will create a branded PowerPoint deck from dynamic data
+- [cosen1024](https://github.com/cosen1024/awesome-presentation-skills) — ★ 7 — A curated catalog of verified Presentation Agent Skills for editable PPTX, HTML slides, and image-first decks.
+- [xlisp](https://github.com/xlisp/aippt-agent) — ★ 7 — AI generates ppt, realized by autogen
+- [TrippyEngineer](https://github.com/TrippyEngineer/ai-presentation-orchestrator) — ★ 7 — Fully automated AI presentation system — pre-generates narration, fires live n8n demo workflows, and answers audience questions via voice Q&A. Zero manual in...
+- [learner-shx](https://github.com/learner-shx/PPT-generator) — ★ 7 — PPT一键生成器（小程序），包含PPT悬赏功能
+- [Alpha-Park](https://github.com/Alpha-Park/genpark-agent-presentation-slide-deck-synthesizer-skill) — ★ 7 — Post-trained consultant-grade presentation generator structuring business topics into cohesive slide decks with golden pyramid layouts
+- [alphaparkinc](https://github.com/alphaparkinc/genpark-agent-presentation-slide-deck-synthesizer-skill) — ★ 7 — Post-trained consultant-grade presentation generator structuring business topics into cohesive slide decks with golden pyramid layouts
+- [rsensui2](https://github.com/rsensui2/tekion-slide-generator) — ★ 7 — TEKION Slide Generator v4 — AI-driven presentation slide generator (OpenAI GPT-image-2 / Gemini 3.1 Flash). Markdown → 16:9 2K slides → PPTX/PDF. Provider ab...
+- [SlideSpeak](https://github.com/SlideSpeak/pdf-to-slides-ai-generator-tutorial) — ★ 7 — 🤖 A tutorial for an AI PDF to slide generator using OpenAI
+- [aresplus](https://github.com/aresplus/tech-slides-generator) — ★ 7 — Generate professional, cyberpunk-style .pptx slides with natural language. 一键生成科技感赛博朋克风格的原生幻灯片。
+- [docmee](https://github.com/docmee/aippt-js) — ★ 7 — js/html 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of c...
+- [docmee](https://github.com/docmee/aippt-vue-all) — ★ 7 — Vue 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of compl...
+- [Haimbeau1o](https://github.com/Haimbeau1o/leo-skill) — ★ 7 — 学术论文全生命周期智能 Agent 工具箱：支持初步撰写、查重降重优化与最终答辩 PPT 生成 | Academic AI Agent toolbox for the full lifecycle of thesis writing, optimization, and presentation generation
+- [wenfenggithub](https://github.com/wenfenggithub/ClaudeCodeClass) — ★ 7 — Claude Code 实战课程 · 教学材料（spec、PPT 生成脚本、课后作业）
+- [comeonzhj](https://github.com/comeonzhj/DAMNCOOL-slides-skill) — ★ 7 — 一个让 Agent 生成演示效果更酷网页PPT的 Skills | A Skill that let agent makes slides cool
+- [astro-koko](https://github.com/astro-koko/ppt-lai) — ★ 7 — 让传统 PPT 制作技艺在 AI 时代继续发光：一个生成与翻新千禧年风格演示稿的 AI Skill。
+- [ficooooo](https://github.com/ficooooo/Paper2ScholarSlides) — ★ 7 — 面向学术综述的高质量 PPT 生成 Skill，可将综述初稿、论文资料与模板转化为结构严谨、引用清晰、图表公式可解释、并经过导出校验的学术汇报稿。
+- [citywill](https://github.com/citywill/pocket-slide) — ★ 7 — AI友好的演示文稿生成工具。不同于 slidev、reveal.js 等工具，该项目以AI友好为原则，非常适合以 Vibe Coding 的方式开发演示文稿项目。
+- [Minecodex](https://github.com/Minecodex/vibe-design) — ★ 7 — 一个 Agent 原生的 AI 创作工作台：从想法出发生成网站、演示文稿、文档、图片与视频，再到无限画布中继续编辑和协作。
+- [registor](https://github.com/registor/shortintronwafuthesis) — ★ 7 — 为毕业论文模板使用撰写的演示文稿
+- [micooz](https://github.com/micooz/keynote-ppt-to-markdown) — ★ 7 — 一个将 Keynote/PPT 演示文稿转换为 Markdown 格式的命令行工具，支持导出演讲者注释和幻灯片图片。
+- [kyleabeauchamp](https://github.com/kyleabeauchamp/copied-io-2013-slides) — ★ 6 — Personal modifications to Google IO 2013 HTML slide generator
+- [trayburn](https://github.com/trayburn/presentation-wiki) — ★ 6 — Surviving the AI Deluge: Architecting an Agentic Memory with OKF and Obsidian  Presentation assets and reference materials
+- [eldstal](https://github.com/eldstal/cardcinogen) — ★ 6 — A deck generator for Tabletop Simulator, allowing users to create expansions for word-card-type games.
+- [ayan471](https://github.com/ayan471/Vivid) — ★ 6 — AI presentation Builder
+- [maneo](https://github.com/maneo/letsplay) — ★ 6 — Source code and samples for "Let's play! - The only AI presentation you will ever need!" - use them responsibly.
+- [erickittelson](https://github.com/erickittelson/slidemason) — ★ 6 — Open-source AI presentation builder — turn documents into polished decks in minutes using Cursor, Windsurf, Claude Code, or any AI coding agent. No API keys....
+- [Michelin-3-star-tires](https://github.com/Michelin-3-star-tires/ai-ppt-poster-prompt) — ★ 6 — AI 生成 PPT 和海报的提示词仓库，优先适配 GPT-image-2，支持模板分析和图表占位
+- [WeHomeBot](https://github.com/WeHomeBot/slidev-agent) — ★ 6 — 用 slidev 创作 ai ppt
+- [jiangzhubo](https://github.com/jiangzhubo/-AI-PPT--Local-Attention-Network) — ★ 6 — 随波竺流AI知识分享活动第六期PPT- 细粒度识别之Local Attention Network
+- [apsdehal](https://github.com/apsdehal/Zap) — ★ 6 — Minimalistic python based Wikipedia article's PPT generator
+- [lucassabreu](https://github.com/lucassabreu/mk2slide) — ★ 6 — Dead simple markdown to slides generator
+- [joeyparrish](https://github.com/joeyparrish/sega-slides) — ★ 6 — Sega Genesis Slide Generator and Viewer
+- [engchina](https://github.com/engchina/llm-ppt-translator) — ★ 6 — LLM PPT Translator
+- [MANRENYIBU](https://github.com/MANRENYIBU/ppt-creator) — ★ 6 — PPT生成工具
+- [ken861222](https://github.com/ken861222/PPT-Skill) — ★ 6 — 🎯 多阶段智能 PPT 生成 Skill — 基于 Sandun PPT Agent 方法论，从需求调研到 PPTX 导出的完整流水线。Codex Agent Skill。
+- [zeeklog](https://github.com/zeeklog/pptking) — ★ 6 — PPTKING 是一个功能强大的在线PPT(演示文稿)制作平台，结合了现代 Web 技术和人工智能能力。用户可以通过直观的界面创建专业级的PPT演示文稿，支持多种元素类型、动画效果、AI辅助创作等功能。
+- [CoderZzxy](https://github.com/CoderZzxy/PowerPointCopilot) — ★ 6 — 一个面向 PowerPoint 的本地智能助手：支持通过 AI 一键生成 PPT 大纲、自动排版并生成演示文稿。内置现代化 WebView2 界面，支持多模型配置、PPT 模板管理、Markdown 实时预览。完全本地运行，默认不留存隐私数据；项目将以 MIT 协议开放，免费、无商业限制。
+- [0a00](https://github.com/0a00/ChaosGPT) — ★ 6 — 全球最全面的AI模型聚合网站！我们汇集了全球最新的人工智能模型，包括 GPT-4、CLAUDE、Llama、Gemini、Mistral、Flus、BERT、DALL、Transformer、ResNet、YOLO、VGG、T5、XLNet、StyleGAN 等，功能包括视频生成、文本生成、图像生成、PPT生成等...
+- [mingjiepan058-lab](https://github.com/mingjiepan058-lab/adaptive-english-teaching-studio) — ★ 6 — Adaptive English Teaching Studio 是一款面向英语教师的智能备课 Skill。教师输入教材、题目、学生学段和学习情况后，可按需生成教师逐字稿、课堂教学 PPT、课堂练习及课后作业与答案。  它适用于小学、初中、高中、四六级、雅思和托福教学，能够自动分析文章主题、核心词汇、固定搭配、语...
+- [xlgwr](https://github.com/xlgwr/WpsToPdf) — ★ 6 — WpsToPdf 主要是引用WPS 对应Dll com,生成 xls,word,ppt 生成pdf的功能
+- [Wang05904](https://github.com/Wang05904/p2v-1220) — ★ 6 — 基于AI的上传教学PPT生成教学视频的自动化工具
+- [pj-000](https://github.com/pj-000/DirectionAI-Agent) — ★ 6 — 基于 DeerFlow v2 的教育 AI Agent 系统，集成 PPT 生成、教案生成、试题生成等教育技能
+- [billLiao](https://github.com/billLiao/PPT-Design-Skill) — ★ 6 — 融合多种PPT设计风格，直接生成PPT文件而不是HTML
+- [archlizheng](https://github.com/archlizheng/presentation-report-preflight) — ★ 6 — 汇报型演示前置策划 Skill：在生成 PPT/HTML 之前，把主题/源文档/旧 deck 转成一份可交接的 Presentation Strategy Brief。
+- [nchmz](https://github.com/nchmz/AHU-lab-report-skill) — ★ 6 — 一个基于 Claude Code 的实验报告自动生成Skill，专为安徽大学（AHU）学生设计。只需提供实验代码、结果图片和 PPT，即可一键生成符合学校模板要求的 LaTeX 实验报告。
+- [w1ndys](https://github.com/w1ndys/html-ppt-academic-skill) — ★ 6 — 一个面向大学生、研究生和高校教师的 HTML PPT Skill，用于生成论文答辩、开题报告、中期答辩、预答辩、组会汇报和学术演讲风格的静态 HTML 幻灯片。
+- [YHSome](https://github.com/YHSome/claude-final-exam-review) — ★ 6 — 一个期末复习Skill，能够让Claude识别ppt,pdf,docx等文件并生成可视化讲义的Claude Code skill。An end-of-term review Skill that enables Claude to recognize files such as ppt, pdf, and doc...
+- [lirouroud](https://github.com/lirouroud/research-group-ppt-skill) — ★ 6 — 一个模板优先、科研内容保真的 Codex 组会网页 PPT Skill：自动读取研究进展素材，先输出逐页大纲，确认后生成可翻页 HTML 汇报，并完成图片路径、公式单位与视觉一致性检查。
+- [mire403](https://github.com/mire403/repo2slides) — ★ 6 — Repo2Slides是一个命令行工具，可将GitHub仓库自动转换为学术风格的PPT大纲，面向学生、研究者和开发者。核心功能：自动分析仓库结构，识别代码目录、实验脚本、结果文件；解析 README，提取背景、方法、实验、结果；检测 ML 框架（PyTorch、TensorFlow 等）；分析 metrics 文...
+- [YiHarvest](https://github.com/YiHarvest/ppt-design) — ★ 6 — ppt-design 是一个 Codex 插件，它内部有三个 skill：  frontend-slides：负责演示文稿工程、固定画布 HTML、导航、编辑能力与动效规范。 baoyu-design：负责内容分析、商业叙事、视觉方向、设计系统与可编辑 PPTX 导出。 html-ppt：提供可复用的主题、整套模...
+- [HyphenK](https://github.com/HyphenK/mltdkei_v3) — ★ 5 — MLTD Deck Analyzer - Score Simulator / Deck Generator of Million Live Theater Days (MLTD)
+- [Aaditya-Nanda](https://github.com/Aaditya-Nanda/ai-ppt-generator) — ★ 5 — AI-powered PowerPoint Generator using Google Gemini API and Pexels API. Built with Streamlit.
+- [JAICHANGPARK](https://github.com/JAICHANGPARK/workshop-harness) — ★ 5 — AI agent harness, 15 specialized skills, Google Colab & Open Codelabs integrations, presentation slide deck generator, and CLI toolkit for technical workshops.
+- [zhangshi0512](https://github.com/zhangshi0512/SlideSpeak) — ★ 5 — Text to PPT & Speech Generator
+- [busto-dev](https://github.com/busto-dev/PepeteX) — ★ 5 — Self-hosted AI presentation generator  chat to a full PPTX deck, using your own AI keys.
+- [jc7k](https://github.com/jc7k/llm_pptx_deck_builder) — ★ 5 — AI-powered PowerPoint presentation generator using LangChain, LlamaIndex, and Brave Search API. Creates research-backed presentations with proper citations a...
+- [DipanNama](https://github.com/DipanNama/presentrinity) — ★ 5 — AI Presentation maker using slidev and free gemini
+- [spark798](https://github.com/spark798/iamspeaker) — ★ 5 — Local-first, open-source AI presentation coach — the AI demos your talk first, then coaches your delivery: pace, fillers, pronunciation, intonation, word cho...
+- [dongyz-code](https://github.com/dongyz-code/ai-pptx) — ★ 5 — 使用大模型，自动生成PPT
+- [bitcraze](https://github.com/bitcraze/aideck-gap8-bootloader) — ★ 5 — AI deck GAP8 second stage bootloader
+- [Gayatri8-sys](https://github.com/Gayatri8-sys/PPT-Generator-using-AI-Agent) — ★ 5 — This project is an AI-driven presentation generator that creates professional PowerPoint slides automatically from user-provided topics and content. Instead ...
+- [thnhmai06](https://github.com/thnhmai06/SlideGenerator) — ★ 5 — 🎞️ An automated, template-based presentation generator.
+- [mdmurphy822](https://github.com/mdmurphy822/Slideforge) — ★ 5 — AI-powered presentation generator that transforms structured content into professional PowerPoint presentations
+- [mmul-it](https://github.com/mmul-it/kpa_generator) — ★ 5 — KPA slides generator Ansible role
+- [ShogunPanda](https://github.com/ShogunPanda/freya) — ★ 5 — Opinionated JSX based slides generator.
+- [Wievondii](https://github.com/Wievondii/ppt-master-pro) — ★ 5 — PPT Master Pro - AI-driven PPT generation with draw.io diagram integration. Forked from hugohe3/ppt-master.
+- [Spark-Relics](https://github.com/Spark-Relics/Otter-PPT) — ★ 5 — Otter-PPT is a native editable PPT generation engine that constructs text, charts, shapes, and images directly into genuine Office elements, rather than asse...
+- [docmee](https://github.com/docmee/aippt-ui-iframe) — ★ 5 — UI iframe 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of...
+- [docmee](https://github.com/docmee/aippt-api-go-demo) — ★ 5 — GoLang 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of co...
+- [johnson7788](https://github.com/johnson7788/skill-ppt-agents) — ★ 5 — Skill版本的PPT生成
+- [gtoxlili](https://github.com/gtoxlili/deckforge) — ★ 5 — deckforge — agent 可自行安装调用的 PPT 生成 CLI
+- [RFYoung](https://github.com/RFYoung/slideweaver) — ★ 5 — 和大模型搏斗多次形成的学术汇报ppt生成skill，可以端到端半无脑生成
+- [YeeKuson](https://github.com/YeeKuson/html-exhibition) — ★ 5 — 用 HTML 网页演示替代 PPT 的 skill：先读懂项目，再组织成叙事，套暗色终端风设计系统生成自包含演示页
+- [chenyu896235554-boop](https://github.com/chenyu896235554-boop/lapian-storyboard) — ★ 5 — Codex skill：视频拉片、分镜抽帧和横版故事板 PPT 生成
+- [MURMURE11118586](https://github.com/MURMURE11118586/codex-xkppt-skill) — ★ 5 — codex-ppt-skill 是一个面向 Codex 的 PPT 制作 Skill，支持从主题、文档、PDF、Markdown 或已有 PPT 生成可编辑演示文稿，并提供参考风格、单页修改、模板套用、PDF/PNG 导出和 QA 检查流程。
+- [hapince-code](https://github.com/hapince-code/AI-EduForge) — ★ 5 — AI辅助教学平台 EduForge 是一个面向中小学教师的 AI 教学资源生成平台，支持教学 PPT、React 交互课件、PDF 试卷、课本资源库和开发者 API。
+- [csssun](https://github.com/csssun/LandPPT) — ★ 5 — 一个基于LLM的演示文稿生成平台，能够自动将文档内容转换为专业的PPT演示文稿。平台支持多种AI模型，提供丰富的模板和样式选择，让用户能够创建高质量的演示文稿。
+- [xiongwenhao112](https://github.com/xiongwenhao112/ppt-template-fill) — ★ 5 — Agent skill: 基于你自己的 PPTX 模板生成演示文稿 | Fill YOUR PowerPoint template with AI — layout-preserving, placeholder-free templates supported
+- [perper999](https://github.com/perper999/xidian-slides-skill) — ★ 5 — 🎓 西电 Slides 技能包 - 基于西电视觉规范的零依赖 HTML 演示文稿生成Skill | 支持西电官方 Logo、配色方案和专业排版，适用于毕业答辩、课程汇报、学术会议等场景
+- [jiec827](https://github.com/jiec827/slideTemplate) — ★ 5 — 基于\LaTeX{}和Beamer的演示文稿模版
+- [wenbopeng](https://github.com/wenbopeng/markdeep-slides-project) — ★ 5 — 一个基于 Markdeep 和 markdeep-slides 的高度定制化幻灯片制作工具。旨在通过简单的 Markdown 语法，帮助您快速创建功能丰富、样式精美的演示文稿。  本项目在原有基础上进行了大量优化和功能增强，尤其侧重于提升实用性和视觉表现力。新增了包括但不限于自动导航栏、自动目录、自定义比例双栏、...
+- [simonlisiyu](https://github.com/simonlisiyu/pptgenius) — ★ 5 — PPTGenius 是一个基于大语言模型的智能幻灯片生成系统。项目名称中的 "Genius" 代表智慧与创造力，突出了项目的技术深度和自动化能力。通过简单的输入，即可快速生成专业的幻灯片内容。
+- [sima1723](https://github.com/sima1723/llm-kb) — ★ 5 — 卡帕西LLM知识库构建方法论（Agent可调用版） 核心步骤： 数据摄入：原始资料存入raw目录，用Obsidian Web Clipper转网页为Markdown 自动编译：LLM生成摘要分类反向链接，输出结构化Wiki 查询输出：支持Markdown报告 Marp幻灯片 Matplotlib图表 健康检查：定...
+- [daniel-carreon](https://github.com/daniel-carreon/sf-slides) — ★ 5 — SF-Slides — The Agentic Presentation Editor. Tauri v2 + React + Fabric.js
+- [knight6669](https://github.com/knight6669/knight-html-ppt-skill) — ★ 5 — HTML PPT Agent Skill for professional Chinese reporting decks with data animation and modern navigation.
+- [FrozenAssassine](https://github.com/FrozenAssassine/Powerpoint-AI) — ★ 5 — Generate Powerpoint presentations using ChatGPT
+- [Revanth-432](https://github.com/Revanth-432/Pitchforge-ai) — ★ 4 — AI-powered pitch deck generator that transforms project documentation into audience-specific presentations, with intelligent follow-up questions and Algorand...
+- [Crosery](https://github.com/Crosery/ppt-anything) — ★ 4 — AI story-deck generator  give it a topic, get back a coherent illustrated PPT with recurring characters and visual taste
+- [VanHackathon2017HueBR](https://github.com/VanHackathon2017HueBR/presentation-builder) — ★ 4 — An awesome presentation maker
+- [daoodaba975](https://github.com/daoodaba975/agentic.coding.meetup) — ★ 4 — Slides de la prsentation "Agentic Coding : quand ton terminal devient ton co-dveloppeur" lors du Live Koor 2026.
+- [supremejohnny](https://github.com/supremejohnny/powergen) — ★ 4 — The powerpoint generator powered by GPT4 and python-pptx
+- [uddugarg](https://github.com/uddugarg/Vivid) — ★ 4 — AI Presentation Builder
+- [sleipner42](https://github.com/sleipner42/Deckium) — ★ 4 — Open-source, local-first AI presentation software with human control.
+- [samhuangai](https://github.com/samhuangai/Ai-pptx) — ★ 4 — Ai-pptx
+- [Freyaaa001](https://github.com/Freyaaa001/ai-ppt-generator) — ★ 4 — feat: 初始化PPT自动生成工具  - 搭建基于Vite + TypeScript的前端框架 - 配置Gemini API服务接口 - 建立项目基本类型定义和主题系统 - 添加基础配置文件（package.json, tsconfig, vite.config）
+- [ChatGPT3a01](https://github.com/ChatGPT3a01/ai-ppt-generator) — ★ 4 — 亮言 · 一鍵成仙 - AI 原生 PPT 生成器
+- [liuklabc-png](https://github.com/liuklabc-png/nanobanana-ai-ppt-plus) — ★ 4 — 蕉幻ppt助手改良版，可以选择三套模型：国外nanobanana，国内豆包与千问
+- [certaindragon3](https://github.com/certaindragon3/slideshot-chatzai) — ★ 4 — CLI tool optimized for chat.z.ai’s AI PPT pages to precisely crop HTML slides into high‑resolution PNG/JPEG and combine them into PDF
+- [RaghavSingh1212](https://github.com/RaghavSingh1212/AI-Slide-Generator) — ★ 4 — —
+- [AmirHossein-84](https://github.com/AmirHossein-84/AI-Slide-Puzzle) — ★ 4 — —
+- [bertovmill](https://github.com/bertovmill/slideo-ai) — ★ 4 — AI slide builder: generate, research and edit decks, with PPTX import. Live at slideo.live
+- [bitdeckai](https://github.com/bitdeckai/esp32s3_ai_deck) — ★ 4 — esp32s3 ai deck for crazyflie platform
+- [aifactory-team](https://github.com/aifactory-team/discover) — ★ 4 — Catalog of Claude Code skills by domain. First entries: KIST (brand guidelines · personnel finder · PPT generator).
+- [Nithinr-17](https://github.com/Nithinr-17/AI-Hub) — ★ 4 — AI-Hub is a skill development project featuring AI tools like Summarizer, PPT Generator, Code Generator, Paraphraser, and Generative AI for education.  Leadi...
+- [Jayden-Cho](https://github.com/Jayden-Cho/ChatPPT) — ★ 4 — AI-driven Presentation Generator with ChatGPT, Dall-E, and Stable Diffusion
+- [trevinwisaksana](https://github.com/trevinwisaksana/Livenode) — ★ 4 — Livenode is an Augmented Reality presentation maker for the iPad.
+- [Mr-vero](https://github.com/Mr-vero/Codelonger-Live-Text-Editor) — ★ 4 — A live text editor to do a quick test for HTML5/CSS3/JavaScript and also a HTML5 based presentation maker
+- [LitMoose](https://github.com/LitMoose/LitWeather) — ★ 4 — Small-talk generator based on degrees and locale.
+- [longyaoyoudu](https://github.com/longyaoyoudu/ppt_maker) — ★ 4 — 可以自定义选择不同的大模型来构建大纲和生成ppt智能体Agent
+- [ZGentleman](https://github.com/ZGentleman/DocMind) — ★ 4 — AI 智能办公助手前端 | 基于 LLM + RAG + SSE 的下一代办公生产力工具。支持 AI Agent 对话、智能 PPT 生成、演讲稿撰写、RAG 知识库管理、文件向量化检索。React + TypeScript + Tailwind CSS 构建，中英双语。
+- [docmee](https://github.com/docmee/aippt-api-dotnet-demo) — ★ 4 — .NET / C# 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of...
+- [cloudinfer](https://github.com/cloudinfer/pubmed-retrieve) — ★ 4 — 适用于生物医药专业科研人员，可根据用户输入语句自动生成pubmed查询语句并进行查询，智能体会对查询结果进行汇总梳理并形成综述论文及汇报PPT
+- [xiao634zhang](https://github.com/xiao634zhang/paper-reading-agent) — ★ 4 — Paper Reading Agent Team 是一个基于多Agent协作架构的智能论文研读系统。它能够自动完成论文搜索、PDF下载解析、摘要生成、批判性分析、PPT生成等全流程任务，帮助研究人员快速理解和呈现学术论文内容。 系统采用模块化Agent设计，各Agent分工明确、协同工作：Scraper Agen...
+- [pioupiou493](https://github.com/pioupiou493/smart-meeting-assistant) — ★ 4 — “拼好会”是一款基于RAG的智能会议辅助系统，支持实时语音识别、英文会议翻译、会议纪要生成与 AI 辅助发言。系统可同时捕获电脑音频与麦克风输入，对会议内容进行低延迟流式识别，并结合RAG技术检索导入的 PDF、PPT、Word 等会议资料，为用户提供上下文相关的发言建议与内容总结。  项目支持 OpenAI、D...
+- [Quirt-studio](https://github.com/Quirt-studio/Qurit-PPT) — ★ 4 — 使用AI制作PPT时不再使用模板，创建由AI自主生成PPT的agent(When using AI to create PPT, templates are no longer used, and an agent is created to generate PPT independently)
+- [panhongwei](https://github.com/panhongwei/html-report) — ★ 4 — 专门做ppt的SKILL,一句话触发，自动生成精美的 PPT 风格 HTML 页面,并且可以通过AI html-to-one-pptx SKILL转化为PPT，实现PPT自由
+- [670027822](https://github.com/670027822/-AI-) — ★ 4 — 松鼠AI系统ChatGPT源码+详细搭建部署教程+支持GPT4.0+支持ai绘画（Midjourney)/支持OpenAI GPT全模型+思维导图生成+ppt生成+商业源码
+- [zhytest123](https://github.com/zhytest123/ppt-narration-agent) — ★ 4 — 口播 PPT Agent 工作台：根据自然语言和参考资料生成可编辑 PPT、逐页口播稿、声纹和口播视频。AI-powered PPT narration workspace: generate editable slides, speaker scripts, voiceprints, and narrated ...
+- [includewudi](https://github.com/includewudi/web-ppt) — ★ 4 — Web PPT — 生成精美 HTML 演示文稿的 AI Skill。零依赖、浏览器直接打开、支持视频录制。
+- [Lain-k](https://github.com/Lain-k/exam-review-generator) — ★ 4 — 一个把课程 PPT、PDF、Word 等资料整理成期末复习资料的 AI Skill，可生成结构化笔记、救命小抄、练习题和零基础突击版自学讲义。
+- [Ian-QM](https://github.com/Ian-QM/business-analysis-charts-skill) — ★ 4 — 咨询风数据分析图表：10种中文经营分析图表、4套咨询风主题，支持JSON/CSV一键生成PPT级PNG与SVG。
+- [jialiruo-png](https://github.com/jialiruo-png/economics-empirical-ppt-skill) — ★ 4 — 经管/金融/实证论文 PPT 生成 Claude Code Skill：基于 PptxGenJS，支持有讲稿/无讲稿两种路径，交互式选页数 / 字数 / 风格
+- [Jum4Link](https://github.com/Jum4Link/universal_watermark) — ★ 4 — 一个支持 Word、PDF、PPT、Excel、图片和 GIF 的多格式水印生成 Skill / CLI 工具。A multi-format watermarking skill and CLI for Word, PDF, PowerPoint, Excel, images, and GIFs.
+- [nmww](https://github.com/nmww/courseforge) — ★ 4 — 离线单文件网页课件编辑器：把 PPT 升级成「基础层 + AI 互动层」的可互动网页课件。离线、零安装、零服务器，配合本地 WorkBuddy 生成互动 H5。
+- [niqinggood](https://github.com/niqinggood/openkitty-skills) — ★ 4 — penKitty 社区技能仓库 — 21个类目173个技能，涵盖投资量化、学术研究、文档处理、PPT生成、DevOps等, — 开箱即用173 AI skills across 21 categories — quantitative finance, academic research, document to...
+- [fakerqwq](https://github.com/fakerqwq/defense-ppt-outline-writer) — ★ 4 — defense-ppt-outline-writer 是一个用于学术论文答辩/展示准备的 Codex skill。它可以读取完整的论文、开题报告、研究计划等文档，按照原文结构拆解内容，精简为适合答辩 PPT 的页级大纲，并进一步生成对应的答辩/展示讲稿。
+- [joeseesun](https://github.com/joeseesun/qiaomu-course-designer) — ★ 4 — 通过多轮、依赖感知的课程设计访谈，与用户逐分支共创并锁定课程蓝图。用于用户有课程、培训、workshop、教学项目或知识产品的初步想法，希望被持续访谈、每个问题获得推荐答案、解决决策依赖，并在整体共识后再转为课程稿、教案、学员手册或 PPT。不用于已定稿课程的直接排版、PPT 美化、单次大纲生成或无
+- [learnljs](https://github.com/learnljs/papers-reading) — ★ 4 — 该skill可将中英文论文整理为标准化的中文论文阅读材料，默认输出适配周汇报PPT的精炼提纲版（涵盖摘要与引言、创新点、整体框架与方法、实验结果、结合局限性的全文总结等核心模块），仅在用户明确要求时，额外生成讲稿详版、3-5分钟口头汇报稿或8-12个贴合论文的术语拓展学习内容；处理过程严格遵循固定的版式、标题顺序...
+- [docmee](https://github.com/docmee/docmee-pptxproperty-structural-protocol) — ★ 4 — 用于维护 pptxProperty JSON 结构协议，帮助第三方开发者理解、读取、生成和校验 PPTX 结构数据。  描述一个演示文稿的页面尺寸、页面内容、幻灯片母版、版式、主题、背景和页面对象。它不是 PPTX 文件本身，而是 Docmee 系统在编辑、解析和生成 PPTX 时使用的结构化数据格式。
+- [anbulang](https://github.com/anbulang/notebooklm-ppt) — ★ 4 — 将notebooklm的演示文稿转换为可以编辑的PPT
+- [luosir1123-ai](https://github.com/luosir1123-ai/waimao-outreach-agent) — ★ 4 — 面向外贸团队的证据约束客户研究、产品推荐、市场对比、开发材料与可编辑演示文稿 Agent，保留人工审核与独立审批。
+- [aruis](https://github.com/aruis/ReelFlow) — ★ 4 — 一个为摄影师朋友打造，行在 macOS 上生成图片幻灯片视频的小工具
+- [vividitytech](https://github.com/vividitytech/pptAgent) — ★ 4 — ppt Agent to generate powerpoint slides from user conversation
+- [atharvaphadnis-ai](https://github.com/atharvaphadnis-ai/AI-pptx) — ★ 3 — AI PowerPoint Generator creates presentations from a topic using AI. It generates slide content, adds images, shows a live preview, and lets users download a...
+- [MohamedBIqbal](https://github.com/MohamedBIqbal/demo-prep-skill) — ★ 3 — Claude Code skill for product demos: McKinsey-style HTML presentations, PowerPoint generator, built-in timer
+- [romanchaa997](https://github.com/romanchaa997/IPD-Generator) — ★ 3 — Interactive Pitch Deck Generator
+- [fasrc](https://github.com/fasrc/stdg) — ★ 3 — Slurm Test Deck Generator
+- [Mor223](https://github.com/Mor223/Silvaco-simulation-by-agent) — ★ 3 — Natural language to Silvaco TCAD DevEdit/ATHENA + ATLAS deck generator and Codex skill.??????TCAD????silvaco?deckbuild?
+- [SidU](https://github.com/SidU/leancanvasai) — ★ 3 — AI Powered Lean Canvas Deck Generator
+- [tonyli99](https://github.com/tonyli99/aiPresentations) — ★ 3 — Short AI presentations for Baltimore Indie Game Devs
+- [Kaungmyatkyaw2](https://github.com/Kaungmyatkyaw2/ai-presentation-builder) — ★ 3 — AI presentation Builder
+- [AtaUlMohsin900](https://github.com/AtaUlMohsin900/Cloud-Native-AI-Presentation) — ★ 3 — Cloud Native AI Presentation
+- [jasehackman](https://github.com/jasehackman/PyNashAI) — ★ 3 — From May 2023 PyNash AI Presentation
+- [wilingna](https://github.com/wilingna/PPTFlux) — ★ 3 — End-to-end AI presentation system: turn raw input into interactive, fully editable HTML slides.
+- [lwf225-source](https://github.com/lwf225-source/610PPT) — ★ 3 — Local-first AI presentation workbench for source-grounded slide planning, Image2 generation, review, and PPTX export.｜本地 AI PPT 工作台：文档拆页、整页图生成、审阅与导出。
+- [LuxUmbra697](https://github.com/LuxUmbra697/AI-PPT-Slides) — ★ 3 — 面向中文场景的 AI PPT 演示文稿生成与编辑平台 | A Python full-stack AI presentation platform for outline generation, in-browser editing, and editable PPTX export.
+- [yashoda-krishna](https://github.com/yashoda-krishna/AI-ppt) — ★ 3 — —
+- [skychentian](https://github.com/skychentian/ai-ppt-skill) — ★ 3 — AI演示文稿全流程制作 skill - 17种视觉风格，HTML到PPTX导出
+- [svendotdev](https://github.com/svendotdev/AI-ppt-generator) — ★ 3 — This is a PowerPoint-generating product. As you can see in the README, usually we have key points to present, but sometimes we don’t have the time or the PPT...
+- [Xutsuku](https://github.com/Xutsuku/ai-ppt-editable) — ★ 3 — Generate editable PowerPoint with AI - native shapes, not flat images. Built for professional work reporting.
+- [466852675](https://github.com/466852675/YH-AI-PPT) — ★ 3 — 基于混合 AI 引擎的智能演示文稿生成平台。支持风格参考图复刻、全局视觉配置与智能大纲生成，让小白也能零门槛产出高颜值、专业级的 PPT。
+- [ShreyaJaiswal1604](https://github.com/ShreyaJaiswal1604/Generative-AI-PPT-Geneartor) — ★ 3 — Welcome to Generative AI PPT Generator—your go-to tool for effortless presentation creation. 🚀 Powered by Streamlit and OpenAI, our AI-driven app makes craft...
+- [AaronSosaRamos](https://github.com/AaronSosaRamos/ai-ppt-builder-frontend) — ★ 3 — —
+- [lesopio](https://github.com/lesopio/aptdom) — ★ 3 — ai ppt to docx or markdown
+- [LuxUmbra697](https://github.com/LuxUmbra697/AI-PPT-Report-Slides-Studio-v2) — ★ 3 — AI PPT 演示文稿生产与动态 HTML 报告生成的AI工作台｜AI workspace for editable PPTX decks and dynamic HTML reports.
+- [jing1312](https://github.com/jing1312/baidu-ai-batch) — ★ 3 — 百度网盘视频 AI PPT/笔记/讲稿自动导出
+- [Jokerealm](https://github.com/Jokerealm/ai_slides) — ★ 3 — This repo is used for machine learning coursework. This code is developed entirely using AI, without writing a single line of code, and implements an AI PPT ...
+- [WangJunqing-coder](https://github.com/WangJunqing-coder/AIOC) — ★ 3 — 本项目是一个基于Spring Boot 3 + Vue3的AI综合服务平台，集成了AI聊天、图片生成、视频生成和AI PPT制作功能。
+- [tangkun1313](https://github.com/tangkun1313/VibeChat-Android) — ★ 3 — VibeChat Android：GPT-5.5人设聊天App，内置童锦程skill、张雪峰skill、毛选skill、丁元英skill、DBS skill、金融研报skill，支持AI PPT导出APK密码Null666
+- [xuhuizhan5](https://github.com/xuhuizhan5/StreamSlide) — ★ 3 — Streamlit-powered AI slide generator, create slides seamlessly for your customized materials, perfect for paper presentation.
+- [Syndicats](https://github.com/Syndicats/estradeck) — ★ 3 — Open-source presentation studio for reveal.js — a Google-Slides-like editor with themes, AI slide generation, and PDF/MP4 export.
+- [grunion-ai](https://github.com/grunion-ai/decklet) — ★ 3 — AI slide generator for coding agents: a Claude Code and Codex skill plus CLI that turns any content into one self-contained, editable HTML slide deck (single...
+- [rocsgh](https://github.com/rocsgh/ppt-zen) — ★ 3 — A judgment layer for AI-made slides — not another PPT generator.
+- [Mishima-syk](https://github.com/Mishima-syk/markdown2pptx) — ★ 3 — PowerPoint presentation generator from markdown style text file.
+- [rioryugen](https://github.com/rioryugen/DeckCraft) — ★ 3 — DeckCraft - AI-powered presentation generator. Transform any idea into professional slide decks in seconds using GPT. Free, open source, JavaScript.
+- [tvanmaren](https://github.com/tvanmaren/mock-me) — ★ 3 — an ipsum presentation generator for all your presentation mockup needs. TIMELINE: 1 week
+- [rnutt13](https://github.com/rnutt13/claude-brand-studio) — ★ 3 — Branded HTML presentation generator for Claude Code — set up any company brand from a URL, build polished customer decks
+- [shibinsp](https://github.com/shibinsp/pptxfactory) — ★ 3 — 🎯 AI-Powered Presentation Generator - Create stunning PowerPoint presentations in seconds with Mistral AI. Features a Canva-like visual editor with futuristi...
+- [Dileep01712](https://github.com/Dileep01712/PromptSlide) — ★ 3 — ''PromptSlide: Automated AI-Powered Presentation Generator'' PromptSlide is an innovative tool designed to transform your text prompts into professional Powe...
+- [reyoung](https://github.com/reyoung/SlideGen) — ★ 3 — HTML5 Slide generator
+- [glepretre](https://github.com/glepretre/slimdes) — ★ 3 — Opinionated markdown slides generator
+- [mizchi](https://github.com/mizchi/mz-slide) — ★ 3 — static slide generator by markdown
+- [haomaaax](https://github.com/haomaaax/smartslide-webapp) — ★ 3 — Slide generator in 1 click
+- [fdsf53451001](https://github.com/fdsf53451001/slide-maker) — ★ 3 — Local-first image-based slide generator — Express server + React editor + pluggable image providers
+- [mochueloxie-sudo](https://github.com/mochueloxie-sudo/SlideForge) — ★ 3 — SlideForge is a production-grade content-to-presentation pipeline, not just a slide generator. Get started and try everything on it now
+- [Isha-upadhyay](https://github.com/Isha-upadhyay/ChillDeck) — ★ 3 — ChillDeck is an AI-powered slide generator that creates complete presentations from just a topic or even your uploaded notes while you chill.
+- [sjkncs](https://github.com/sjkncs/Ding-AI) — ★ 3 — AI-powered PPT generation tool / AI 驱动的 PPT 自动生成工具
+- [iamnigellee](https://github.com/iamnigellee/PPT-style-wow) — ★ 3 — Brand-aware PPT generation skill — extract design DNA from websites, generate native-editable PPTX, evolve a template library
+- [alexcolls](https://github.com/alexcolls/onelove) — ★ 3 — ❤️ onelove.ai | Find your love with verified people and video profiles with no filters. Based on your video presentation AI will recommend you 4 profiles eve...
+- [Raamzeez](https://github.com/Raamzeez/IntelliSlides) — ★ 3 — A presentation maker that uses gpt3 to create slides with rich information
+- [frhoyde](https://github.com/frhoyde/SlideIt) — ★ 3 — An Online Presentation Maker
+- [Polysolene](https://github.com/Polysolene/ppt-speaker-notes-generator) — ★ 3 — 专为 “全图片格式 PPT” 设计的智能备注生成工具，利用豆包视觉 API 自动生成专业、连贯的演讲备注。AI-powered speaker notes generator for image-only PPTs, using Doubao vision API to generate professional...
+- [docmee](https://github.com/docmee/aippt-vue2) — ★ 3 — Vue2 接入文多多AiPPT，通过主题/文件/网址等方式生成PPT，支持原生图表、动画、3D特效等复杂PPT的解析和渲染，支持用户自定义模板，支持智能添加动画。AI generates PowerPoint Presentation, Supports parsing and rendering of comp...
+- [zhh293](https://github.com/zhh293/PPT-AGENT) — ★ 3 — 一款用于生成ppt的agent
+- [RayTingTop](https://github.com/RayTingTop/PPT) — ★ 3 — 使用python根据网页内容生成ppt
+- [AIzzj](https://github.com/AIzzj/PPt-for-company) — ★ 3 — 一个强大的PPT模板解析和生成系统，可以动态生成PowerPoint演示文稿。  ## 功能特点  - **模板上传**：上传PowerPoint模板文件 - **模板解析**：解析PPT模板，提取幻灯片、元素和样式信息 - **内容生成**：为幻灯片元素生成内容，如标题、副标题等 - **PPT生成**：使用模...
+- [skycommon](https://github.com/skycommon/exam-cram) — ★ 3 — 期末速成助手 —— 一键生成复习讲义 PPT 与模拟卷的桌面应用
+- [ablikimeli](https://github.com/ablikimeli/paper2ppt-skill) — ★ 3 — Generate academic literature review PPT from paper URL/DOI/PMID. A Claude Code Skill. 从论文链接/DOI/PMID 自动生成文献汇报PPT。
+- [rain-lei](https://github.com/rain-lei/ppt_name_replacer) — ★ 3 — 从 Excel 批量生成个性化 PPT 奖状，支持命令行与 Web 界面
+- [GingerYang19](https://github.com/GingerYang19/courseware-to-lecture-script) — ★ 3 — 从PPT/PDF课件自动生成口语化讲课稿（逐字稿）的 Agent Skill
+- [KyrieWong7](https://github.com/KyrieWong7/graduate-ppt-rescuer) — ★ 3 — 研究生PPT汇报解救器 | Cursor 内一键生成中英双语学术汇报 slides.pdf + script.pdf
+- [shuhari04](https://github.com/shuhari04/open-book-index-skill) — ★ 3 — 开卷索引 Skill：从课程 PPT/PDF/DOCX/压缩包生成开卷考试索引材料
+- [Farway22](https://github.com/Farway22/P2PPT) — ★ 3 — 一个证据驱动、低幻觉、支持图表人工占位的论文转 PPT Skill,帮助用户通过Skill一键生成固定格式,内容详实的PPT生成prompt,并且可以生成图表,图片占位符,防止llm出现幻觉生成错误信息,最后加入审计步骤,进行纠错。
+- [Yang9547472171](https://github.com/Yang9547472171/D-PPT-skill) — ★ 3 — 中文商业汇报图片版 PPT/PDF 生成工作流：大纲确认、脚本 QA、质量探测、生图与交付验证
+- [jdlhr-lab](https://github.com/jdlhr-lab/OpenManus-23) — ★ 3 — 由AI驱动的对话式PPT生成工具，用户通过自然语言直接操控microsoft PowerPoint，实时生成和编辑幻灯片，支持折线图、雷达图、甘特图等复杂元素，实现“用对话完成PPT制作，所见即所得”。
+- [yushi-javatoai](https://github.com/yushi-javatoai/ai-web-ppt-maker) — ★ 3 — AI 网页 PPT 生成器：粘贴长文案，AI 流式拆解为多页网页 PPT，支持全屏演示、键盘翻页、多套主题与独立 HTML 导出。
+- [lessone1](https://github.com/lessone1/PPT-auto-nav) — ★ 3 — 自动为PPT生成动态导航栏，支持自动标题提取、超链接跳转、多段导航栏等功能
+- [AngChow](https://github.com/AngChow/ang-ppt-skill) — ★ 3 — 三套风格的网页 PPT 生成 skill — 电子杂志风(Style A) / 瑞士国际主义(Style B) / 企家有道企业风 qjyd-corp(Style C)。Fork of op7418/guizang-ppt-skill (AGPL-3.0)
+- [kirchhoff114514](https://github.com/kirchhoff114514/ppt_deduplicator) — ★ 3 — 基于感知哈希（pHash）的智云课堂 PPT 截图去重与 PDF 生成工具。高效移除录像截图中的连续重复幻灯片，确保最终生成的课件 PDF 干净、按序且无冗余。
+- [kaliwuang](https://github.com/kaliwuang/goofish-ppt-automation) — ★ 3 — 闲管家开放平台全自动发货系统 - 闲鱼订单自动分配兑换码 + Kimi PPT 生成 (RPA/中转双方案)
+- [Chaomu19](https://github.com/Chaomu19/econ-lit-review-seminar-skills1.0) — ★ 3 — 经济学文献综述组会 Skills：论文筛选、PDF 转 Markdown、PPT 完整内容生成、PptxGenJS 自动化与兜底精读工作流。
+- [CBRR38](https://github.com/CBRR38/learningskill-ppt-html) — ★ 3 — 这是一款skill，当用户说"生成数学课件"、"帮我做数学PPT"、"数学幻灯片"、"带我学习XXX"（数学相关）或类似表达时触发。直接生成纯 HTML/CSS/JS 数学幻灯片演示文稿，具备PPT式分页浏览、KaTeX公式渲染、交互式2D/3D可视化。不依赖任何 Python、Node.js 等运行时，生成的课...
+- [bulijiang](https://github.com/bulijiang/PPT-design-skill) — ★ 3 — 是一个帮你逐页生成咨询解决方案类 PPT 详细设计方案的 Claude Skill——它结合品牌配置、项目约束与受控词汇表，把每页大纲细化成包含完整文案、视觉结构和可直接用于 AI 图像生成（image2）的中文视觉提示词的独立文档，并自动管理版本与修订日志。A Claude Code skill that tu...
+- [nyantused-cpun](https://github.com/nyantused-cpun/folio) — ★ 3 — 兰亭 (Folio) · 咨询/汇报材料生成引擎：宿主无关 CLI（87 命令 / 37 种图形 / HTML·PPT·DOCX·报价同源）+ DeepSeek Harness 增强层（15 原生工具 / 会话协议 / L0 守卫 / 可换方法论包），零 key 起步。DSH verified 0.1.0-rc....
+- [piaomiaoguying](https://github.com/piaomiaoguying/ppt-video-maker) — ★ 3 — 一个全自动 AI 内容生产流水线：一份投入三种产出：📄 AI 联网调研自动生成结构化 Markdown 文档 → 🖥️  36 套主题 HTML 交互式 PPT，配备演讲者模式和提词器，真人可以直接上台讲 → 🎥 TTS 自动配音 + Remotion   毫秒级音画同步，导出标准 MP4 直接发视频平台。全程一...
+- [guochongjun](https://github.com/guochongjun/RAIN-agent) — ★ 3 — RAIN Desktop 将 Hermes Agent 强大的 AI 对话能力封装为 Windows 桌面应用，内置 20 个技能，涵盖 PPT 生成、前端设计、Web 测试、开发调试、代码审查、视频制作等场景。本版本基于Hermes深度优化，带来安全与性能的双重飞跃：安全升级：创新引入“工作目录”机制，实现运行...
+- [CoolBanHub](https://github.com/CoolBanHub/genppt) — ★ 3 — 纯Go语言实现的PowerPoint演示文稿生成库，支持创建符合OOXML (ECMA-376)标准的.pptx文件。
+- [jyjin](https://github.com/jyjin/awesome-online-ppt) — ★ 3 — 在线自定义实时演示文稿
+- [Babykiller1005](https://github.com/Babykiller1005/PPT_Architect_Pro) — ★ 3 — PPT Architect Pro：高质量演示文稿自动规划 Skill
+- [i2cy](https://github.com/i2cy/BatPPT) — ★ 3 — BatPPT 幻灯片项目，用批处理窗口的演示文稿
+- [Yvestiny-aipm](https://github.com/Yvestiny-aipm/doc2ppt) — ★ 3 — 把任意文档、文章或网页 URL 自动转换成精美的 PDF 或可编辑 PowerPoint (.pptx)演示文稿
+- [liuxingqitd](https://github.com/liuxingqitd/screencast-slides-skill) — ★ 3 — 把教程类逐字稿自动转换为「录屏+右下角圆形头像口播」专用的单文件HTML演示文稿，自带联动提词器。AI Agent Skill for screencast-style presentation slides.
+- [RaffeYang](https://github.com/RaffeYang/HiLaTex) — ★ 3 — HiLaTex是一个用于中文和英文排版的 LaTeX 模板项目，旨在提供一个灵活且易于使用的文档结构，适用于各种文档类型，如论文、报告和演示文稿。该项目包含多个示例文件，演示了如何使用不同的 LaTeX 功能，包括自定义字体、TikZ 绘图和模板设置。
+- [z953218350](https://github.com/z953218350/dsh-np-ppt) — ★ 3 — 原生 DSH (DeepSeek Harness) 插件：PPT 演示文稿专家，内置 PPTD DSL 引擎、55173 所见即所得可视化编辑器、Python-PPTX 高保真离线编译内核与一键导出 PPTX。 | Native DSH plugin: PPT presentation expert with P...
+- [beyalee](https://github.com/beyalee/cobo-html-skill) — ★ 3 — Cobo 品牌 HTML 演示技能 — 适用于 Claude Code，一行命令生成符合 cobo.com 配色的产品演示幻灯片
+- [taomin15201212](https://github.com/taomin15201212/createhub) — ★ 3 — CreateHub 是一个基于人工智能的内容创作平台，提供多种AI驱动的创作工具，帮助用户快速生成专业级的多媒体内容。该平台支持视频制作、幻灯片生成、播客创作和语音合成等功能。
+- [Zewang0217](https://github.com/Zewang0217/slidev-skill) — ★ 3 — 一个生成slidev项目的agent skill，可以生成优雅的slide
+- [yoshifujidesign](https://github.com/yoshifujidesign/3d-html-slide-skill) — ★ 3 — 3DワイヤーフレームデザインのHTMLプレゼンスライドを生成するClaude Skill。Three.js × 横スクロール × テーマカラー自動切替
+- [rv198-star](https://github.com/rv198-star/Slidethus) — ★ 3 — Provider-neutral agentic presentation engineering skill with an evidence-backed, recoverable artifact runtime.
+- [Dishant22-ml](https://github.com/Dishant22-ml/PPT-Agent-) — ★ 3 — The ppt agent is uses langchain framework powered by Groq (llama 3 model) to iteratively select the best slide theme and layout from the company's entire ppt...
+- [YossiSassi](https://github.com/YossiSassi/HackCon_2026_PowerShell_AI) — ★ 3 — Presentation & tools from HackCon 26' talk - 'Automating Securely with AI - Tips & Insights for PowerShell Professionals'
+- [bradwood](https://github.com/bradwood/yappt) — ★ 3 — Yet Another PowerPoint Tool / YAPPT ain't PowerPoint
+- [gokumaomao-sketch](https://github.com/gokumaomao-sketch/AI-Video-Research-Pipeline) — ★ 3 — 本地优先的 AI 多模态知识萃取平台：支持公开视频、本地视频/音频、PPTX、DOCX，生成结构化 Markdown 知识资产。
+- [vivekbopaliya](https://github.com/vivekbopaliya/text-to-ppt) — ★ 2 — Text-to-PPT is a full-stack application that lets users generate professional PowerPoint presentations from descriptive topics using AI.
+- [dappatamuno](https://github.com/dappatamuno/Investor-Pitch-Generator) — ★ 2 — AI Pitch Deck Generator: Input your startup idea and get a polished investor pitch deck instantly! Powered by GPT-4/3.5, D3.js, and Streamlit, this free tool...
+
+_Showing top 500 of 4323 repos in this category — the full list with all 4323 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)

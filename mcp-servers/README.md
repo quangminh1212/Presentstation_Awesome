@@ -1,0 +1,508 @@
+# MCP Servers for Presentations
+
+Model Context Protocol servers that let AI agents create / edit PowerPoint, Google Slides or web decks.
+
+- [grab](https://github.com/grab/cursor-talk-to-figma-mcp) — ★ 7,054 — TalkToFigma: MCP integration between AI Agent (Cursor, Claude Code, Codex) and Figma, allowing Agentic AI to communicate with Figma for reading designs and m...
+- [taylorwilsdon](https://github.com/taylorwilsdon/google_workspace_mcp) — ★ 3,339 — Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace MCP Server & CLI Tool
+- [GongRzhe](https://github.com/GongRzhe/Office-PowerPoint-MCP-Server) — ★ 1,856 — A MCP (Model Context Protocol) server for PowerPoint manipulation using python-pptx. This server provides tools for creating, editing, and manipulating Power...
+- [dineug](https://github.com/dineug/erd-editor) — ★ 1,724 — ERD Editor: design database schemas visually, import SQL DDL, GraphQL, DBML and AML, export DDL and code for 22 languages. Web app, Google Drive, VS Code, In...
+- [johnson7788](https://github.com/johnson7788/MultiAgentPPT) — ★ 1,643 — MultiAgentPPT 是一个集成了 A2A（Agent2Agent）+ MCP（Model Context Protocol）+ ADK（Agent Development Kit） 架构的智能化演示文稿生成系统，支持通过多智能体协作和流式并发机制
+- [SylphxAI](https://github.com/SylphxAI/anymd) — ★ 1,041 — Any file → clean Markdown for AI agents: PDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OCR), audio and video (metadata, subtitles, transcri...
+- [CopilotKit](https://github.com/CopilotKit/aimock) — ★ 975 — Mock everything your AI app talks to — LLM APIs, MCP, A2A, AG-UI, vector DBs, search. One package, one port, zero dependencies.
+- [icebird1998](https://github.com/icebird1998/scientific-illustrator) — ★ 929 — Editable scientific figures in PowerPoint and draw.io via Codex/MCP with Designer-Drawer-Reviewer-Corrector quality gates.
+- [kgoedecke](https://github.com/kgoedecke/doop) — ★ 859 — The open-source alternative to Paper.design. A multiplayer design canvas where humans and AI agents design together, live. MCP built in.
+- [jacksteamdev](https://github.com/jacksteamdev/obsidian-mcp-tools) — ★ 829 — Add Obsidian integrations like semantic search and custom Templater prompts to Claude or any MCP client.
+- [cyanheads](https://github.com/cyanheads/obsidian-mcp-server) — ★ 695 — Read, write, search, and surgically edit Obsidian vault notes, tags, and frontmatter via MCP. STDIO or Streamable HTTP.
+- [arinspunk](https://github.com/arinspunk/claude-talk-to-figma-mcp) — ★ 671 — A Model Context Protocol (MCP) that allows Claude Desktop and other AI tools (Claude Code, Cursor, Antigravity, etc.) to read, analyze, and modify Figma designs
+- [iusztinpaul](https://github.com/iusztinpaul/designing-real-world-ai-agents-workshop) — ★ 514 — Hands-on workshop: Build a multi-agent AI system from scratch — Deep Research Agent + Writing Workflow served as MCP servers. Includes code, slides, and video
+- [aaronsb](https://github.com/aaronsb/obsidian-mcp-plugin) — ★ 466 — High-performance Model Context Protocol (MCP) server for Obsidian that provides AI tools with direct vault access through semantic operations and HTTP transp...
+- [RafalWilinski](https://github.com/RafalWilinski/mcp-apple-notes) — ★ 416 — Talk with your notes in Claude. RAG over your Apple Notes using Model Context Protocol.
+- [cisco-open](https://github.com/cisco-open/network-sketcher) — ★ 408 — Network Sketcher is an AI-ready network design tool with Local MCP, Online, and Offline editions for creating network designs and exporting PowerPoint diagra...
+- [Dominic789654](https://github.com/Dominic789654/awesome-deepseek-harness) — ★ 377 — A curated list of plugins, skills, MCP servers, patch/profile layers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents ·...
+- [RafalWilinski](https://github.com/RafalWilinski/aws-mcp) — ★ 296 — Talk with your AWS using Claude. Model Context Protocol (MCP) server for AWS. Better Amazon Q alternative.
+- [breakstageaxe61](https://github.com/breakstageaxe61/genspark-claw) — ★ 289 — 🦀⚡ Community skill pack & CLI for Genspark Claw, OpenClaw & Hermes agents — 5 production-ready SKILL.md skills (deep research, reports, slides, browser autom...
+- [piotr-agier](https://github.com/piotr-agier/google-drive-mcp) — ★ 226 — A Model Context Protocol (MCP) server that provides secure integration with Google Drive, Docs, Sheets, Slides and Calendar. It allows Claude Desktop and oth...
+- [matteoantoci](https://github.com/matteoantoci/google-slides-mcp) — ★ 189 — MCP Server for Google Slides
+- [willynikes2](https://github.com/willynikes2/knowledge-base-server) — ★ 189 — Make every AI agent you use smarter. Persistent memory with SQLite FTS5, MCP server, Obsidian sync, and self-learning intelligence pipeline.
+- [devwhodevs](https://github.com/devwhodevs/engraph) — ★ 170 — Local knowledge graph for AI agents. Hybrid search + MCP server for Obsidian vaults.
+- [Aimino-Tech](https://github.com/Aimino-Tech/opendocswork-mcp) — ★ 164 — Rust-native MCP server for Office document processing (Excel, Word, PowerPoint). Sub-millisecond, local-first, open source.
+- [qiaojoin586-droid](https://github.com/qiaojoin586-droid/RAG_LearnLittleCode) — ★ 158 — 基于 RAG 的 AI 智能笔记助手「云尚」：FastAPI + LangGraph + ChromaDB + Redis 构建。ReAct / Plan-and-Execute 双 Agent 模式、深度思考、图片/视频多模态、MCP 联网搜索与网页抓取、DeepL 翻译 / Wolfram 计算 / Edge...
+- [YOOTeam](https://github.com/YOOTeam/ChatPPT-MCP) — ★ 149 — The AI-powered PPT generation service based on ChatPPT can create presentations based on themes, requirements, or uploaded documents, supporting online editi...
+- [supercurses](https://github.com/supercurses/powerpoint) — ★ 144 — A MCP Server for creating Powerpoint Presentations
+- [abcamus](https://github.com/abcamus/obsidian-sync-vault-ce) — ★ 137 — A cloud-first Obsidian vault: zero-space VFS keeps files in your cloud drive, local storage near zero, and 4K video streams on demand. Encrypted multi-device...
+- [OfficeMCP](https://github.com/OfficeMCP/OfficeMCP) — ★ 122 — The MCP server for AI like to automate Microsoft office applications like Word, Excel, Outlook, PowerPoint, Access, OneNote, Publisher, Visio, Project and al...
+- [Ayushmaniar](https://github.com/Ayushmaniar/powerpoint-mcp) — ★ 121 — Open Source Model Context Protocol server for PowerPoint automation on Windows via pywin32
+- [flowing-abyss](https://github.com/flowing-abyss/obsidian-hybrid-search) — ★ 111 — Hybrid search for Obsidian vaults via plugin, CLI, and MCP server
+- [ykuwai](https://github.com/ykuwai/ppt-mcp) — ★ 98 — The world's best PowerPoint MCP server. Real-time control of a live PowerPoint on Windows and macOS, 156 tools for AI agents
+- [capitalparser](https://github.com/capitalparser/notebooklm-wiki-pipeline) — ★ 95 — Turn Google Drive PDFs into Obsidian wiki notes via NotebookLM MCP without loading full PDFs into Claude context
+- [theWDY](https://github.com/theWDY/office-editor-mcp) — ★ 93 — 基于MCP(Model Context Protocol)的Office文档处理助手，支持在MCP Client中创建和编辑Word、Excel、Powerpoint文档。
+- [LSTM-Kirigaya](https://github.com/LSTM-Kirigaya/slidev-mcp) — ★ 91 — mcp server for slidev to make web ppt quickly and elegantly
+- [southleft](https://github.com/southleft/figma-console-mcp-skills) — ★ 91 — The most powerful Figma Console MCP capabilities, repackaged as Markdown skills for the native Figma MCP server — design tokens, variables, component analysi...
+- [Baronco](https://github.com/Baronco/GenFilesMCP) — ★ 84 — GenFilesMCP: Minimal MCP Server for Open Web UI. Generates PPTX, XLSX, DOCX or MD files using user requests and full chat context.   *Pull Requests are welco...
+- [lpaiu-cs](https://github.com/lpaiu-cs/osk-system) — ★ 76 — Source-grounded MCP memory runtime and Obsidian-compatible vault template for LLM agents.
+- [daekeun-ml](https://github.com/daekeun-ml/ppt-translator) — ★ 72 — A powerful PowerPoint translation tool that leverages Amazon Bedrock models for high-quality translation. This service can be used both as a standalone comma...
+- [NeekChaw](https://github.com/NeekChaw/mcp-server-okppt) — ★ 68 — 这个项目是一个基于MCP (Model Context Protocol) 的服务器工具，名为 "MCP OKPPT Server"。它的核心功能是允许大型语言模型（如Claude、GPT等）通过生成SVG图像来间接设计和创建PowerPoint演示文稿。工具负责将这些SVG图像高质量地插入到PPTX幻灯片中，并...
+- [ltc6539](https://github.com/ltc6539/mcp-ppt) — ★ 66 — A mcp server supporting you to generate powerpoint using LLM and natural language automatically.
+- [WenyuChiou](https://github.com/WenyuChiou/research-hub) — ★ 64 — AI-operable research workspace for Zotero, Obsidian, and NotebookLM. Use any two, or all three, through CLI, MCP, REST, and dashboard.
+- [bepitulaz](https://github.com/bepitulaz/obsidian-multivault-mcp) — ★ 62 — Multi-vault and multiuser Obsidian MCP
+- [es617](https://github.com/es617/obsidian-sync-mcp) — ★ 60 — MCP server for Obsidian — access your vault from any AI agent, even when your machine is off. Powered by Self-hosted LiveSync.
+- [BatterWorks](https://github.com/BatterWorks/Hatchdoor) — ★ 58 — Self-host your Obsidian vaults: a web UI for you, MCP for your AI agents. No Obsidian, no plugins required.
+- [msdanyg](https://github.com/msdanyg/smart-connections-mcp) — ★ 58 — Give Claude semantic memory of your Obsidian vault — local semantic search over Smart Connections embeddings via MCP. Multi-vault, block-level, 100% private.
+- [Ichigo3766](https://github.com/Ichigo3766/powerpoint-mcp) — ★ 55 — A MCP server project that creates PowerPoint presentations, forked from supercurses/powerpoint with additional features
+- [398894496-arch](https://github.com/398894496-arch/KRouter) — ★ 45 — Your coding agents remember what you decided — and what you changed. Plain-Markdown memory in Obsidian, shared by Claude Code, Codex and Cursor over MCP. Eve...
+- [moonlin1213](https://github.com/moonlin1213/cove-book-forge-mcp) — ★ 43 — Turn PDF and EPUB books into cached AI analysis, Obsidian notes, and installable Codex/Claude Agent Skills through an open MCP server.
+- [ForLegalAI](https://github.com/ForLegalAI/mcp-ms-office-documents) — ★ 42 — MCP server providing tools to create Ms Office documents like presentations, emails, spreadsheets and word docs (pptx, docx, eml, xlsx)
+- [ebullient](https://github.com/ebullient/obsidian-vault-mcp) — ★ 42 — MCP tool allowing Open WebUI or Claude Desktop to retrieve files from your vault
+- [Garrus800-stack](https://github.com/Garrus800-stack/genesis-agent) — ★ 41 — Self-aware cognitive AI agent with a persistent soul: reads, modifies & verifies its own code, plans autonomously, dreams in idle time, remembers across sess...
+- [dguido](https://github.com/dguido/google-workspace-mcp) — ★ 38 — MCP server for Google Drive, Docs, Sheets, Slides, Calendar, Gmail, and Contacts
+- [reichenbach](https://github.com/reichenbach/iwork_mcp) — ★ 37 — MCP server for Apple iWork automation — 117 tools for Numbers, Pages, and Keynote. Template discovery, Creator Studio AI tools, compound batch operations. On...
+- [lstpsche](https://github.com/lstpsche/obsidian-mcp) — ★ 37 — Fast MCP server for local Obsidian vault usage by AI Agents
+- [samos123](https://github.com/samos123/pptx-mcp) — ★ 35 — Create Slides with a simple MCP server using Python PPTX library
+- [2slides](https://github.com/2slides/mcp-2slides) — ★ 34 — The MCP Server for 2slides. AI agent for PPT/Presentation/Slides generation.
+- [sbroenne](https://github.com/sbroenne/mcp-server-powerpoint) — ★ 33 — Automate real Microsoft PowerPoint with AI via MCP Server or CLI - slides, shapes, tables, charts, SmartArt, animations, and 141 operations with export-to-ve...
+- [JazerJu](https://github.com/JazerJu/video-miner) — ★ 32 — Local-first long-video understanding for AI agents. GPU transcription at 540x real time, chapter summaries with code and slides, and MCP tools to search and ...
+- [thomas-villani](https://github.com/thomas-villani/all2md) — ★ 32 — Convert PDF, Word, PowerPoint, HTML, email & 40+ formats to clean Markdown — and back. Built for LLMs, RAG & Python pipelines, with a built-in MCP server.
+- [jenstangen1](https://github.com/jenstangen1/pptx-xlsx-mcp) — ★ 29 — Antrophics Model context protocol to edit powerpoint files
+- [epicweb-dev](https://github.com/epicweb-dev/slides-mcp) — ★ 27 — An MCP server for generating Slides.com presentations.
+- [ilia-sokolov](https://github.com/ilia-sokolov/OfficeAgent.NET) — ★ 27 — Structured Word, PowerPoint, and Excel automation for .NET and coding agents, with validated plans, MCP, tracked changes, and SharePoint
+- [Fantasality](https://github.com/Fantasality/dsh-origin-plugin) — ★ 22 — Drive OriginLab Origin scientific plotting from AI chat via MCP. 74 tools: modal-dialog watchdog, LabTalk safety gate, FigureSpec declarative YAML, fit param...
+- [southleft](https://github.com/southleft/skills-for-figma) — ★ 20 — Open-source agent skills for the native Figma MCP server — design tokens, components, accessibility, Slides, and FigJam.
+- [Godzilla675](https://github.com/Godzilla675/agentic-ai-tool-suite) — ★ 20 — A suite of Model Context Protocol (MCP) servers designed to enhance AI agent capabilities. Provides tools for media search/understanding (images, video), web...
+- [Xiao-rx](https://github.com/Xiao-rx/wps-mcp-server) — ★ 19 — MCP Server for WPS Office - 1 billion daily active users in China. Create Word documents, Excel spreadsheets, and PowerPoint presentations via AI.
+- [iwamot](https://github.com/iwamot/marp-agent-mcp) — ★ 19 — パワポ作るマンを実験的にMCP Apps化したやつ
+- [xjustloveux](https://github.com/xjustloveux/aspose-mcp-server) — ★ 18 — Aspose MCP Server - MCP 辦公文檔處理服務器  為 AI 助手提供辦公文檔處理工具。支援 Word、Excel、PowerPoint、PDF 及跨格式轉換。按需啟用、跨平台（Windows/Linux/macOS）、開箱即用。從 Releases 下載預編譯版本，配置授權檔案即可使用。
+- [buckylee2019](https://github.com/buckylee2019/powerpoint-automation-mcp) — ★ 17 — MCP server for PowerPoint
+- [neosun100](https://github.com/neosun100/notebookLM2PPT) — ★ 17 — Convert NotebookLM PDF exports to PowerPoint with watermark removal and vector graphics. CLI + Web UI + API + MCP.
+- [harryleemedia](https://github.com/harryleemedia/second-brain) — ★ 16 — A collection of Claude Code skills for building a second brain — slides, SOPs, brand voice, MCP clients, Remotion videos, and more.
+- [SlideSpeak](https://github.com/SlideSpeak/slidespeak-mcp) — ★ 14 — MCP Server for the Slidespeak API. Create PowerPoint Presentations using MCP.
+- [felimet](https://github.com/felimet/mathtype-for-word) — ★ 14 — MathType 7 AI Agent skill, Codex and Claude plugin, and MCP server for editable equations, native Word numbering, references, and PowerPoint.
+- [vAirpower](https://github.com/vAirpower/macos-office365-mcp-server) — ★ 14 — A Model Context Protocol (MCP) server for automating Microsoft Office 365 applications (PowerPoint and Word) on macOS through AI agents like Claude and Cline.
+- [masaki39](https://github.com/masaki39/marp-mcp) — ★ 13 — MCP server that lets AI agents build and edit Marp slide decks via structured tools.
+- [Duds](https://github.com/Duds/md-converter) — ★ 13 — Convert Markdown to DOCX, XLSX, and PPTX formats with Excel formula support. Includes MCP server and CLI interfaces.
+- [luan007](https://github.com/luan007/figma-slides-mcp) — ★ 12 — Figma Slides MCP - let your agent cook slides for you (hopefully), (some) battery included (d3 for graphics)
+- [hackathonweekly](https://github.com/hackathonweekly/mcp-ppt) — ★ 12 — MCP 共学 PPT
+- [orca-studio](https://github.com/orca-studio/orca-ppt) — ★ 12 — Orca PPT — agent-native 演示稿工作台:做同款 + 电影级转场。桌面应用，提供 MCP 和 PPT Skill
+- [onecer](https://github.com/onecer/AIOffice) — ★ 12 — Give your agent an Office engine — an AI-native CLI + MCP server that creates, edits, renders & validates real .docx / .xlsx / .pptx. One self-contained C#/....
+- [quinnjr](https://github.com/quinnjr/google-mcp) — ★ 11 — Model Context Protocol (MCP) server for Google Workspace - Calendar, Gmail, Drive, Docs, Sheets, Slides, Meet, Chat, Forms, YouTube, Tasks, and Contacts with...
+- [ITSpecialist111](https://github.com/ITSpecialist111/Agent365-Bridge) — ★ 11 — Connect Claude Code to Microsoft Agent 365 MCP servers — giving Claude direct access to Outlook Mail, Calendar, Word, Excel, PowerPoint, Teams, SharePoint, O...
+- [dev-ithitchhiker](https://github.com/dev-ithitchhiker/mcp-google-docs) — ★ 10 — A lightweight MCP Server for integrating Google Docs, Sheets, and Slides with custom applications. Enables seamless document management, real-time collaborat...
+- [renatogroffe](https://github.com/renatogroffe/produtividade-ias-mcps_mvpconf-sorocaba-2026-06) — ★ 10 — Slides e conteúdos da apresentação "Produtividade no Desenvolvimento com IAs: descomplicando tarefas do dia a dia com GitHub Copilot + MCP Servers".
+- [renatogroffe](https://github.com/renatogroffe/produtividade-mcps_sqlsaturday-piracicaba-2026) — ★ 10 — Slides e conteúdos da apresentação "Produtividade no uso de Bancos de Dados com IAs: descomplicando tarefas do dia a dia com MCP Servers". Palestra realizada...
+- [dmytro-ustynov](https://github.com/dmytro-ustynov/pptx-generator-mcp) — ★ 9 — MCP server to generate PPTX presentations from MD file
+- [renatogroffe](https://github.com/renatogroffe/produtividade-ias-mcps_ai-weekend-2026-01) — ★ 9 — Slides e conteúdos da apresentação "Produtividade no Desenvolvimento com IAs: descomplicando tarefas do dia a dia com MCP Servers". Inteligência Artificial, ...
+- [jongalloway](https://github.com/jongalloway/pptx-tools) — ★ 9 — A unified MCP server + CLI toolkit for automating PowerPoint: read slides, update content, insert images, and generate presentations from code or AI agents.
+- [karthikcsq](https://github.com/karthikcsq/google-tools-mcp) — ★ 9 — MCP server unifying 169 Google Workspace tools across Drive, Docs, Sheets, Slides, Gmail, Calendar, and Forms behind a single OAuth 2.0 flow. Read-before-edi...
+- [Travor278](https://github.com/Travor278/OmniMCP) — ★ 9 — 54-tool MCP server for multimodal automation  the only open-source MCP with full PPTX/DOCX/PDF lifecycle, plus FFmpeg, GIMP, Inkscape, Blender, FreeCAD, MATL...
+- [iguangyu](https://github.com/iguangyu/aippt-mcp) — ★ 8 — 讯飞智能PPT生成 MCPServer
+- [IBM](https://github.com/IBM/chuk-mcp-pptx) — ★ 8 — —
+- [charleslukowski](https://github.com/charleslukowski/ppt_mcp) — ★ 8 — —
+- [renatogroffe](https://github.com/renatogroffe/mcp-dotnetsp-xp_2025-08) — ★ 8 — Slides e conteúdos de apresentação sobre uso de .NET + MCP. Palestra realizada no dia 20/08/2025, durante o evento Potencializando Aplicações .NET com Inteli...
+- [renatogroffe](https://github.com/renatogroffe/produtividade-mcps_sqlsaturday-sp-2026) — ★ 8 — Slides e conteúdos da apresentação "Produtividade no uso de Bancos de Dados com IAs: descomplicando tarefas do dia a dia com MCP Servers". Palestra realizada...
+- [kzarzycki](https://github.com/kzarzycki/powerpoint-mcp) — ★ 8 — —
+- [juanocampo400](https://github.com/juanocampo400/powerpoint-mcp) — ★ 8 — MCP server for creating and editing PowerPoint presentations
+- [miku1130](https://github.com/miku1130/wps-editor-mcp) — ★ 8 — MCP server for AI to edit Word/Excel/PowerPoint documents
+- [dosev-ai](https://github.com/dosev-ai/mcp-office) — ★ 8 — MCP servers for Microsoft Office — Excel, Outlook, PowerPoint, Word. Local-first, governed, developer-controlled.
+- [Whatsonyourmind](https://github.com/Whatsonyourmind/deckforge) — ★ 7 — Executive-ready slides, one API call away. API-first AI presentation engine with 32 slide types, 24 chart types, 15 themes, finance vertical. PPTX + Google S...
+- [haandol](https://github.com/haandol/ppt-generator) — ★ 7 — ppt generation mcp server
+- [maekawataiki](https://github.com/maekawataiki/mcp-pandoc-md2pptx) — ★ 7 — MCP server for creating power point from markdown
+- [dream-num](https://github.com/dream-num/workbuddy-univer-office) — ★ 7 — Local Univer Office for WorkBuddy: spreadsheets, documents, slides, Base and Board with MCP previews and draft review. Development preview.
+- [nguyenm7](https://github.com/nguyenm7/html-flides) — ★ 7 — Import HTML slide decks into Figma Design as editable 1920x1080 frames via Figma MCP
+- [teknologika](https://github.com/teknologika/Deckbuilder) — ★ 7 — MCP Server for building powerpoint presentations
+- [ecator](https://github.com/ecator/cs-office-mcp-server) — ★ 7 — The MCP Server for operating Office files such as Excel,World,PowerPoint,Outlook
+- [Xiangdong-415](https://github.com/Xiangdong-415/codex-wps-office-mcp-skills) — ★ 7 — Codex workflow skills and a WPS-friendly Word MCP stdio wrapper for Word, Excel, PowerPoint, and Office document automation.
+- [guangxiangdebizi](https://github.com/guangxiangdebizi/PPT-MCP) — ★ 6 — Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
+- [tmustier](https://github.com/tmustier/powerpoint-cli) — ★ 6 — CLI for creating and editing PowerPoint files, wrapping office-powerpoint-mcp-server via mcporter
+- [amcchord](https://github.com/amcchord/slideMCP) — ★ 6 — MCP Server for the Slide API
+- [chakrikaguttameedi](https://github.com/chakrikaguttameedi/agentic-rag-chatbot) — ★ 6 — Agentic RAG Chatbot using Model Context Protocol (MCP) to answer queries from PDFs, Word, and PPT files.
+- [bsmnyk](https://github.com/bsmnyk/mdslides-mcp-server) — ★ 6 — MCP (Model Context Protocol) server for generating HTML slides from Markdown content
+- [carboneio](https://github.com/carboneio/carbone-mcp) — ★ 6 — Official MCP for Carbone — Document Generation, Document Conversion, and Universal Templating. Generate PDF,DOCX,XLSX,PPTX,CSV,MD,HTML and XML documents from...
+- [payals](https://github.com/payals/pg_rag_slide_generator) — ★ 5 — Automatic slide deck generator using the power of Postgres as an AI control plane for RAG and MCP
+- [sankettank66](https://github.com/sankettank66/MCP-Presentation) — ★ 5 — This Repo, walks you through setting up a Model Context Protocol (MCP) server using the Javascript SDK.
+- [ihatesea69](https://github.com/ihatesea69/office-powerpoint-mcp-server) — ★ 5 — Enterprise-Grade PowerPoint Automation Protocol   for AI Assistants
+- [joelbarmettlerUZH](https://github.com/joelbarmettlerUZH/slidev-mcp) — ★ 5 — MCP server for generating, rendering, and hosting Slidev presentations
+- [islem-zaraa](https://github.com/islem-zaraa/mcp-powerpoint) — ★ 5 — Model Context Protocol (MCP) plugin for PowerPoint operations, allowing AI assistants to create and manipulate PowerPoint presentations programmatically.
+- [forwardexplorer](https://github.com/forwardexplorer/PPT_skill_langgraph) — ★ 5 — 把一份 PDF（论文 / 报告 / 白皮书）自动变成可直接演示、可继续编辑的 .pptx。 底层由 LangGraph 状态机驱动，通过 MCP 协议暴露给 Claude Code 等各种智能体调用来制作PPT。如需虚拟环境可按照requirements.txt配置
+- [shanggqm](https://github.com/shanggqm/data-insight-agent) — ★ 5 — 借助claude code和数据库（mysql等）mcp server 和claude skills技术，实现的高可靠、效果出众的数据分析和报告PPT生成的Agent。A highly reliable and high-performing data analytics agent that utilizes ...
+- [pamelafox](https://github.com/pamelafox/py-ai-mcp-tool-schemas) — ★ 5 — "Improving MCP tool schemas for agent reliability" talk resources: MCP server, agents, evaluation code, and slides
+- [thangchung](https://github.com/thangchung/agentcon-Sep2025) — ★ 5 — Slides for MCP & A2A: Powering the Agentic AI Stack for Enterprise-Grade Apps topic
+- [gausoft](https://github.com/gausoft/markpdf-skill) — ★ 5 — Claude Skill — convert Markdown to premium PDFs, slides, HTML via the MarkPDF MCP server
+- [devsolux](https://github.com/devsolux/storytold) — ★ 5 — Claude Code & Codex plugin for the open-source ArtCraft Craft App Suite: one craft Skill drives 13 local, headless Craft MCP apps (photo, vector, video, RAW,...
+- [KiKi-Builds](https://github.com/KiKi-Builds/AI-Briefing-Skill) — ★ 5 — Claude skill for automated AI content briefings. Sources: Twitter/X · RSS · YouTube · Podcasts · GitHub · arXiv · Reddit · HN ·  Rednote · Tiktok· WeChat · B...
+- [choipureum](https://github.com/choipureum/mcp-file-contents-reader) — ★ 5 — A Model Context Protocol (MCP) server for reading and analyzing various file formats including PDF, Excel, Word, and PowerPoint documents.
+- [JulianPoleszczuk](https://github.com/JulianPoleszczuk/office-mcp) — ★ 5 — MCP server that lets Claude control open PowerPoint, Excel and Word on Windows through COM automation
+- [hamzabellouch](https://github.com/hamzabellouch/mcp) — ★ 5 — Production-ready Model Context Protocol (MCP) servers for Office automation (Word, Excel, PowerPoint), 3D graphics (Blender), and CAD engineering (FreeCAD) w...
+- [luozhiming931123-ops](https://github.com/luozhiming931123-ops/amazon-market-ppt-report) — ★ 5 — Amazon marketplace analysis PPTX skill for SellerSprite/SIF MCP data, covering keyword demand, competitor ASIN sampling, price bands, brand sales share, revi...
+- [moritalous](https://github.com/moritalous/slidev-mcp-apps) — ★ 4 — —
+- [bohachu](https://github.com/bohachu/botrun-google-slides-mcp) — ★ 4 — MCP server for Google Slides integration with service account authentication
+- [dovstern](https://github.com/dovstern/google-slides-llm-tools) — ★ 4 — MCP Server & Langchain Tools for Google Slides API
+- [DuongNAD](https://github.com/DuongNAD/aurora-slides-mcp) — ★ 4 — MCP server: Apple-keynote-style animated HTML lessons for self-study, with memory anchors, notebook pages and agent-made pictures
+- [lingfan36](https://github.com/lingfan36/ai-office-mcp) — ★ 4 — AI Office MCP suite: PPT generation skill + Excel MCP + Word MCP servers
+- [ykarapazar](https://github.com/ykarapazar/pptx-mcp-live) — ★ 4 — MCP server for Microsoft PowerPoint with live COM automation - 58 tools
+- [ma-nucho-pro](https://github.com/ma-nucho-pro/ARKEA-AI-AGENTE) — ★ 4 — ARKEA AI — agente de escritorio open source con voz, visión, memoria local, Ollama, OpenRouter, OpenAI, ElevenLabs, MCP, creación de Word, Excel, PPT, HTML, ...
+- [davidvonthenen](https://github.com/davidvonthenen/2025-kubecon-na) — ★ 4 — About About All resources (slides, code, etc) for 2025 KubeCon NA: Your Kubernetes Playbook at Your Fingertips: Advanced Troubleshooting With MCP, RAG, and K...
+- [smartdatabrokers](https://github.com/smartdatabrokers/slideforge-mcp) — ★ 4 — MCP server for consulting-quality PowerPoint slides. Remote — no install required.
+- [DuongNAD](https://github.com/DuongNAD/polaris-mcp) — ★ 4 — MCP server that builds a personal course: learner profile, keyless research with sources, evidence-based roadmap, schedule, and export to Aurora Slides
+- [PABannier](https://github.com/PABannier/PathView) — ★ 4 — PathView is a high-performance whole-slide image viewer for digital pathology. PathView combines GPU-accelerated tiled rendering with polygon overlays for ce...
+- [davidvonthenen](https://github.com/davidvonthenen/2025-odsc-west-workshop) — ★ 4 — About All resources (slides, code, etc) for 2025 ODSC West Workshop: Rethinking RAG: How MCP and Agent2Agent Will Transform the Future of Intelligent Search
+- [ojavadli](https://github.com/ojavadli/megadeck) — ★ 4 — AI-driven PowerPoint generation with built-in MCP server for Claude Code and any MCP-compatible client. Pydantic DSL + multi-provider LLM + visual critic loop.
+- [yang-kun-long](https://github.com/yang-kun-long/bit-ppt-template) — ★ 4 — LaTeX-free Beijing Institute of Technology style PPTX generator with YAML, CLI, Web UI, and MCP entrypoints
+- [NikiforovAll](https://github.com/NikiforovAll/mcp-landscape) — ★ 4 — Presentation on MCP Landscape, Sep 2025
+- [eiceblue](https://github.com/eiceblue/spire-presentation-mcp-server) — ★ 3 — —
+- [vuhai2002](https://github.com/vuhai2002/ai-slides-mcp) — ★ 3 — —
+- [hai-group](https://github.com/hai-group/core3-mcp-presentation) — ★ 3 — —
+- [CloakGloom](https://github.com/CloakGloom/WoLiu-AI-Agent) — ★ 3 — 我流 AI 智能体 — 桌面端全栈 AI 助手，30+ 工具插件 + MCP 可插拔工具体系，支持 ComfyUI、PPT 生成、语音合成等多模态服务
+- [h4ck4life](https://github.com/h4ck4life/mcp-pptx-server) — ★ 3 — —
+- [pansin](https://github.com/pansin/PPTMCP) — ★ 3 — PPT MCP Server
+- [ngs](https://github.com/ngs/google-mcp-server) — ★ 3 — MCP server for Google Workspace APIs - Calendar, Drive, Gmail, Sheets, Docs, and Slides integration
+- [antoniomachuca](https://github.com/antoniomachuca/MCP-Manim-Slides) — ★ 3 — MCP server (Python SDK v2) that gives AI agents the power to build interactive Manim presentations - render slides, preview single slides, and export Reveal....
+- [t-kalinowski](https://github.com/t-kalinowski/useR-2026-mcp-repl) — ★ 3 — Slides for the useR! 2026 lightning talk about mcp-repl.
+- [ZatesloFL](https://github.com/ZatesloFL/google_workspace_mcp) — ★ 3 — Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - Comprehensive Google Workspace / G Suite MCP Server
+- [renatogroffe](https://github.com/renatogroffe/mcp-dotnetsp-xp_2025-10) — ★ 3 — Slides e conteúdos de apresentação sobre uso de .NET + MCP. Palestra realizada no dia 10/10/2025, em evento para profissionais da XP Inc.
+- [rishapgandhi](https://github.com/rishapgandhi/google_mcp) — ★ 3 — Minimal, secure Google Workspace MCP server — 43 tools across 10 services (Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks, Chat, Meet). Only offi...
+- [PeterKalmstrom](https://github.com/PeterKalmstrom/claude-powerpoint-skill) — ★ 3 — Claude Code skill for building production-quality PowerPoint decks on Windows via MCP + COM automation
+- [jakeyShakey](https://github.com/jakeyShakey/model_context_protocol_training) — ★ 3 — A Slidev presentation and developer guide to the Model Context Protocol (MCP) by Anthropic, covering AI integration, LLM tool use, core concepts, and impleme...
+- [dd-Splunk](https://github.com/dd-Splunk/splunk-mcp) — ★ 3 — PoC: Splunk Enterprise + Splunk MCP Server in Docker. Splunk4Rookies (SA-S4R) sample data, multi-agent demo, Marp presenter deck. Cursor, Claude Desktop, or ...
+- [ArioMoniri](https://github.com/ArioMoniri/changex) — ★ 3 — Provenance-first change tracking for AI document edits — native Word track-changes + a portable, hash-chained .changex journal. Works with any model (MCP + C...
+- [gammaremover](https://github.com/gammaremover/gamma-watermark-remover-mcp) — ★ 3 — MCP server — let Claude & AI agents remove the "Made with Gamma" watermark     from PDF/PPTX, locally or via hosted endpoint
+- [nitaiaharoni1](https://github.com/nitaiaharoni1/google-slides-mcp) — ★ 2 — —
+- [moneyfactory-co](https://github.com/moneyfactory-co/slidev-builder-mcp) — ★ 2 — Professional Slidev MCP Server for creating presentations with auto-generated starter slides, modular architecture, and Hatch corporate branding. Built for V...
+- [knorq-ai](https://github.com/knorq-ai/pptx-mcp-server) — ★ 2 — MCP server for generating professional PowerPoint presentations with McKinsey/Deloitte/Neutral themes
+- [senthiljack2808](https://github.com/senthiljack2808/google-slides-mcp) — ★ 2 — oogle-slides-mcp
+- [jemmanuele](https://github.com/jemmanuele/gslide-mcp) — ★ 2 — Google Slide MCP solution tailored for usage with Claude Code
+- [lijunliu-gh](https://github.com/lijunliu-gh/auto-ppt-engine) — ★ 2 — Open-source PowerPoint generation engine — embeddable by AI agents, enterprises, and developers. MCP + CLI + HTTP. Self-hostable backend for agent workflows,...
+- [TANGZHUO12](https://github.com/TANGZHUO12/PPT-Master) — ★ 2 — 把 DeepSeek 开源智能体框架 DSH 装进一个原生 macOS App：内嵌无头 LibreOffice + 9 个幻灯片 MCP 工具 + matplotlib 图表内核，一句话生成带动画的成品 PPT，多轮修改不失忆。克隆后需自装 vendor 三件套（LibreOffice / Node / Pyt...
+- [djvosper](https://github.com/djvosper/MCP-PPTX) — ★ 2 — —
+- [zavora-ai](https://github.com/zavora-ai/mcp_slides) — ★ 2 — MCP server with tool routing for presentation authoring.
+- [PrincessGray](https://github.com/PrincessGray/ppt-mcp-ori) — ★ 2 — —
+- [Weichenleeeee123](https://github.com/Weichenleeeee123/ppt-mcp-server) — ★ 2 — A PowerPoint editing server based on MCP (Model Context Protocol) provides the complete functionality of creating and editing PowerPoint presentations, inclu...
+- [oylx666](https://github.com/oylx666/paper-reader-mcp) — ★ 2 — Local, token-efficient MCP server for evidence-first reading of PDF, DOCX, PPT, and PPTX research documents.
+- [QiYunlong-GitHub](https://github.com/QiYunlong-GitHub/NoPPT) — ★ 2 — NoPPT : PPT = NoSQL : SQL. AI-native, Web-first HTML slide generation and editing platform with MCP support. Built-in LLM/VLM review engine, closed-loop feed...
+- [datatorag](https://github.com/datatorag/gws-mcp) — ★ 2 — Google Workspace MCP extension for Claude — Gmail, Drive, Sheets, Docs, Slides, Calendar, Contacts
+- [fryorcraken](https://github.com/fryorcraken/google-docs-mcp) — ★ 2 — MCP server for Google Docs, Slides, Sheets, Drive, Gmail, and Calendar (fork of a-bonus/google-docs-mcp)
+- [mashley](https://github.com/mashley/be-the-answer) — ★ 2 — Materials for the Be the Answer workshop — slides, handouts, prompts, skills & MCP references.
+- [tomohiro-owada](https://github.com/tomohiro-owada/google-workspace-mcp) — ★ 2 — MCP server for Google Workspace APIs (Calendar, Gmail, Drive, Docs, Sheets, Slides, Chat)
+- [hosioobo](https://github.com/hosioobo/Genspark-google-mcp-public) — ★ 2 — GenSpark-focused remote Streamable HTTP MCP server for Google Drive/Docs/Sheets/Slides
+- [06ketan](https://github.com/06ketan/slideshot) — ★ 2 — Convert HTML slides to high-res PNG, WebP, and PDF — CLI, Web App, MCP Server
+- [xbill9](https://github.com/xbill9/workspace-mcp-claude) — ★ 2 — Connect Claude Code to the Google Workspace remote MCP servers (Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat, People)
+- [joe-broadhead](https://github.com/joe-broadhead/workspace-lite) — ★ 2 — MCP servers for Google Workspace via Apps Script proxies: Drive, Gmail, Calendar, Sheets, Slides, Docs, Tasks, and Forms
+- [olliemorgan685-glitch](https://github.com/olliemorgan685-glitch/chart-ocr-mcp) — ★ 2 — PaddleOCR-based chart/table extraction for images and PowerPoint slides, with CLI, FastAPI UI, and local MCP tools for agents.
+- [danmo-ai](https://github.com/danmo-ai/danmo-work) — ★ 2 — Open-source AI work agent (MIT, self-hosted). Coding-agent-grade loop for long-horizon work — code, docs, slides, sheets, multi-agent, MCP & WeChat/Feishu on...
+- [sanity-labs](https://github.com/sanity-labs/slides) — ★ 2 — Brand-locked PowerPoint generation for LLMs. Author your slide template in React; Claude writes the deck through MCP without drifting on fonts, colors, or la...
+- [shiosalt](https://github.com/shiosalt/powerpoint-analyzer-mcp) — ★ 2 — PowerPoint analyze MCP Server - Extract structured content from PowerPoint files using Model Context Protocol
+- [wangzian828](https://github.com/wangzian828/powerpoint-canvas-controller) — ★ 2 — Live MCP control of an editable Microsoft PowerPoint canvas through the native COM API.
+- [Hectirry](https://github.com/Hectirry/thinkcell-mcp) — ★ 2 — Servidor MCP que envuelve la automatización .ppttc de think-cell para crear gráficos y presentaciones de PowerPoint a partir de datos
+- [sanqiuyef](https://github.com/sanqiuyef/mcp-office-writer) — ★ 2 — MCP server for creating and editing Word/Excel/PowerPoint/PDF documents - scene-based Chinese typography, live COM editing, high-fidelity LibreOffice conversion
+- [B-C-Software](https://github.com/B-C-Software/doconda-examples) — ★ 2 — Make your AI agent deliver Word, PowerPoint, Excel and PDF files: examples for Amazon Bedrock, Vertex AI, Azure OpenAI, OpenAI, Claude, LangGraph, Strands, V...
+- [Integration-Automation](https://github.com/Integration-Automation/ThesisAgent) — ★ 2 — Keyword-driven academic paper search across 11 sources (arXiv, Semantic Scholar, OpenAlex, PubMed, IEEE, ACM, DBLP, Crossref, OpenAIRE, Springer, Scholar) → ...
+- [codeRATny](https://github.com/codeRATny/AnimatedDiagrams) — ★ 2 — Animated architecture diagram editor (C++23 / Qt 6): animate request flows — retries, timeouts, fallbacks — and export to GIF, WebM, MP4, PowerPoint (video, ...
+- [withevergrow](https://github.com/withevergrow/withicons) — ★ 2 — Free, open-source icon library: 500 icons in 20 styles (10,000 SVGs), every icon animated. React, Vue, Svelte, Angular, Solid, web component, CSS classes, CD...
+- [66666-design](https://github.com/66666-design/bidding-automation) — ★ 2 — Bidding & award materials automation workflow — auto-discover case files, extract fields, generate DOCX/PPTX deliverables via Web/CLI/MCP. Apache-2.0, Python...
+- [digitalchild](https://github.com/digitalchild/deckwright) — ★ 2 — Build on-brand presentations from any .pptx template: CLI, HTTP API and MCP server
+- [Bajahaw](https://github.com/Bajahaw/ooxml-mcp-server) — ★ 2 — MCP server for creating, inspecting, editing, and validating Office Open XML documents (.docx, .pptx, .xlsx)
+- [searaylee](https://github.com/searaylee/office-mcp-server) — ★ 2 — MCP server for Office document generation, editing, and email sending. Supports DOCX, PPTX, Excel, PDF, HTML formats.
+- [brightdeck](https://github.com/brightdeck/mcp) — ★ 2 — MCP server
+- [zerob13](https://github.com/zerob13/slidev-mcp) — ★ 1 — mcp server to create slidev like a pro
+- [raykuonz](https://github.com/raykuonz/slidev-mcp-server) — ★ 1 — —
+- [oconsl](https://github.com/oconsl/slidev-mcp) — ★ 1 — —
+- [jonathanscholtes](https://github.com/jonathanscholtes/Fabric-Foundry-Insight-Presentation-Agents) — ★ 1 — End-to-end implementation that combines Microsoft Fabric, Foundry agents, and Model Context Protocol (MCP) to transform enterprise data into natural-language...
+- [Themetralla3000](https://github.com/Themetralla3000/pptx-mcp-server) — ★ 1 — —
+- [shjanjua](https://github.com/shjanjua/pptx-mcp-server) — ★ 1 — —
+- [mario03690](https://github.com/mario03690/ai-netcafe) — ★ 1 — Compare LLM cost & latency on one prompt, translate PDF keeping layout, cited research, make PPTX  MCP server + CLI
+- [photonn](https://github.com/photonn/dial-pptx-mcp) — ★ 1 — DIAL-aware remote MCP server for PowerPoint generation  extends GongRzhe/Office-PowerPoint-MCP-Server with streamable-http transport, per-session state, and ...
+- [superbereza](https://github.com/superbereza/mac-native-pptx-mcp) — ★ 1 — Full-featured PowerPoint MCP server for macOS  drives PowerPoint for Mac via AppleScript (21 tools, full deck/slide/shape lifecycle); standalone, no upstream...
+- [alirazapoonja](https://github.com/alirazapoonja/mcp_presentation-) — ★ 1 — mcp_presentation
+- [kacase](https://github.com/kacase/mcp-powerpoint) — ★ 1 — —
+- [EiriniOr](https://github.com/EiriniOr/mcp-powerpoint-server) — ★ 1 — ?? PowerPoint MCP Server - Model Context Protocol server with 36 tools for AI-assisted PowerPoint generation. Create beautiful presentations programmatically...
+- [softchris](https://github.com/softchris/go-mcp-presentation) — ★ 1 — —
+- [rcarvalo](https://github.com/rcarvalo/powerpoint-mcp-server) — ★ 1 — —
+- [vancealexander](https://github.com/vancealexander/Powerpoint_MCP_CrossPlatform) — ★ 1 — Cross-platform PowerPoint MCP Server for Claude Desktop - Works on Windows, macOS, and Linux
+- [sruan2](https://github.com/sruan2/neurips-mcp-presentation) — ★ 1 — —
+- [Strand-AI](https://github.com/Strand-AI/figma-slides-mcp) — ★ 1 — —
+- [lysong9907](https://github.com/lysong9907/bento-ppt-skill) — ★ 1 — Bento Slides MCP Server + bento-slides skill:??? LLM ?????? .bento.html ????(Cherry Studio / Claude Desktop ??)
+- [jaderfeijo](https://github.com/jaderfeijo/google-slides-mcp) — ★ 1 — A Google Slides MCP extension for Claude Desktop
+- [Pylogmon](https://github.com/Pylogmon/powerpoint-generator-mcp) — ★ 1 — A PowerPoint generator for Model Context Protocol (MCP) using Bun (Note: Unable to read/edit existing presentation)
+- [ryanvo162](https://github.com/ryanvo162/google-slides-mcp) — ★ 1 — MCP server for Google Slides - 39 tools for creating, editing, and managing presentations
+- [forayconsulting](https://github.com/forayconsulting/google-slides-mcp) — ★ 1 — An MCP server allowing LLMs to create and manipulate Google Slides at a deeply customized level.
+- [gavanduffy](https://github.com/gavanduffy/slides-mcp) — ★ 1 — —
+- [yanjiaqi1024](https://github.com/yanjiaqi1024/PrsAi_PPT_Translation_MCP) — ★ 1 — PPT
+- [Alexy-Lin](https://github.com/Alexy-Lin/office-ai) — ★ 1 — Office AI - PPT/Excel/Word automation tools using MCP and PptxGenJS
+- [slidecraft-in](https://github.com/slidecraft-in/presentations-ai-mcp-server) — ★ 1 — Official MCP server for Presentations.AI - create designed slide decks from a topic, text, or document via any MCP-compatible client.
+- [loonghao](https://github.com/loonghao/ppt-kit) — ★ 1 — 智能 PPT 生成工具 - 支持 Markdown 转换、代码高亮、Mermaid 图表渲染和 MCP AI 集成的 Office Add-in 插件
+- [shu-muling](https://github.com/shu-muling/Mochi) — ★ 1 — 🎐 麻糬 AI | 蹲在桌面上的 AI 助手 🐾 桌宠悬浮球 · 🎨 多主题 · 💬 多轮对话 · 🧠 双层记忆 · 📚 知识库 RAG · 📄 一键生成 PPT/Word/流程图 · 🔌 MCP 扩展
+- [1154663626ga-ux](https://github.com/1154663626ga-ux/codex_blender_GA) — ★ 1 — 本项目基于参考图片，使用 Blender Python 自动生成一个科研设备外观模型。  项目提供可直接运行的建模脚本、已生成的 .blend 文件、渲染预览图，以及 Codex 连接 Blender MCP 的中文教程。适合用于论文配图、PPT 展示、方案沟通和 AI 辅助三维建模流程演示。This proje...
+- [lgwanai](https://github.com/lgwanai/mypoint-mcp) — ★ 1 — 基于 PptxGenJS 的 MCP (Model Context Protocol) 服务器，提供 PowerPoint 演示文稿创建和编辑功能。
+- [alexh-scrt](https://github.com/alexh-scrt/mcp-pptx) — ★ 1 — MCP Server to generate PowerPoint presentations
+- [A1-x-Tech](https://github.com/A1-x-Tech/mcp-google-slides) — ★ 1 — MCP server for the Google Slides API — create and edit presentations, slides, text, shapes, tables and images, manage speaker notes, comments, thumbnails and...
+- [AndreaGriffiths11](https://github.com/AndreaGriffiths11/presentation-mcp-deck) — ★ 1 — HTML presentation: presentation-mcp-a-github-copilot-cli-project-presentation
+- [Hrithik-s-Raj](https://github.com/Hrithik-s-Raj/PptxGenJS-mcp-server) — ★ 1 — Node.js–based Model Context Protocol (MCP) server for programmatically generating and managing PowerPoint decks using PptxGenJS — ideal for LLMs, automation ...
+- [NgoSon3868-Quas](https://github.com/NgoSon3868-Quas/PPT-MCP) — ★ 1 — Cau hinh MCP Server PowerPoint de su dung tren nhieu may
+- [cloneorcopy](https://github.com/cloneorcopy/ppt-master-mcp) — ★ 1 — PPT-Master MCP server.
+- [MaximusBayu](https://github.com/MaximusBayu/pptx-mcp) — ★ 1 — —
+- [HADDADSOHAIB](https://github.com/HADDADSOHAIB/ppt-mcp-server) — ★ 1 — —
+- [lgh112](https://github.com/lgh112/ppt-design-mcp) — ★ 1 — —
+- [PsychQuant](https://github.com/PsychQuant/che-pptx-mcp) — ★ 1 — Swift-native MCP server for PowerPoint (.pptx) manipulation
+- [socamalo](https://github.com/socamalo/PPT_MCP_Server) — ★ 1 — —
+- [lilitong7](https://github.com/lilitong7/PPT-Refiner-MCP) — ★ 1 — This tool polishes draft PPTs for Code Agents like Openclaw,Claude Code,CodeX.It has two functions:full PPT beautification,precise local slide editing.Powere...
+- [FE-Berserker](https://github.com/FE-Berserker/Pen2ppt) — ★ 1 — Transfer pencil mcp to PPT
+- [zhengjie9510](https://github.com/zhengjie9510/mineru-docparse-mcp) — ★ 1 — MCP Server that converts Word / PDF / PPT / Excel to Markdown, powered by the MinerU
+- [open-yi](https://github.com/open-yi/mcp-bento-server) — ★ 1 — Local-first MCP server & CLI for authoring Bento decks (single-file PPT) with AI agents and live browser preview.
+- [dariusgm](https://github.com/dariusgm/quick-deck-mcp) — ★ 1 — an MCP Server for generating decks / slides.
+- [mondragon-developer](https://github.com/mondragon-developer/MCP-googleDocs) — ★ 1 — MCP server for google workspace (Docs, Sheets, Slides)
+- [Nicopradas](https://github.com/Nicopradas/slideshow-studio-mcp) — ★ 1 — Conector MCP de Slideshow Studio: replica slideshows virales de TikTok en tu nicho desde el chat
+- [toddamerrill](https://github.com/toddamerrill/presentation-mcp-platform) — ★ 1 — MCP server platform for generating slides with infographics in one
+- [cativo23](https://github.com/cativo23/curso-claude-code) — ★ 1 — Mini-curso introductorio de Claude Code: skills, plugins, statuslines, hooks, MCPs, subagents. Slides en terminal con slides CLI.
+- [pablozamudio](https://github.com/pablozamudio/it-builders-2025-meli-mcp-masterclass) — ★ 1 — Slides from MCP Masterclass in IT Builders 2025 - "¿Conversar o Codear? ¡MCPs en Acción en Mercado Libre!"
+- [Mirantis-PS](https://github.com/Mirantis-PS/mcp101-training-public) — ★ 1 — Intro to the Model Context Protocol (MCP): webinar slides + a runnable weather MCP server demo in Python.
+- [2slides](https://github.com/2slides/zed-mcp-server-2slides) — ★ 1 — The Zed MCP server extension for https://2slides.com
+- [paoloricciuti](https://github.com/paoloricciuti/tmcp-slides) — ★ 1 — Slides for "TMCP: a new way of building MCP servers with TS"
+- [telekom](https://github.com/telekom/mcp-security) — ★ 1 — Interactive demos and slide deck covering MCP security
+- [Kimmahone](https://github.com/Kimmahone/edu-workspace-mcp) — ★ 1 — Google Workspace for Education MCP server for Docs, Sheets, Slides, Forms, Drive, and Classroom
+- [n24q02m](https://github.com/n24q02m/workspace) — ★ 1 — Google Workspace MCP server (Docs/Drive/Calendar/Gmail/Sheets/Slides/Tasks/Chat/People + multi-account) — vendored gemini-cli workspace-server + mcp-core auth
+- [svesh87](https://github.com/svesh87/mcp-gdocs) — ★ 1 — MCP server for Google Docs, Sheets and Slides: template-aware editing that keeps the layout intact
+- [TriasJ](https://github.com/TriasJ/notebooklm-studio-skill) — ★ 1 — Claude Code skill for creating NotebookLM studio artifacts (podcasts, videos, slides, infographics, reports, quizzes) via MCP
+- [taashim-eng](https://github.com/taashim-eng/Google-Slides) — ★ 1 — MCP type skill for LLMs to creat Google Slide presentations
+- [CommonNinja](https://github.com/CommonNinja/vidocu-mcp-server) — ★ 1 — The AI Knowledge Platform as MCP tools. Turn videos, PDFs, and slides into subtitles, voiceovers, translations, and docs from any MCP client. Free plan works.
+- [gilsonfiho](https://github.com/gilsonfiho/forja) — ★ 1 — Forja — companion do Claude Code: agents (Jira, repos, commit/PR, relatórios, slides, RAG) orquestrados e expostos via MCP.
+- [tako0614](https://github.com/tako0614/takos-office) — ★ 1 — Unified self-hostable docs/slide/sheet worker (agent-native via MCP)
+- [Jason-Vaughan](https://github.com/Jason-Vaughan/openclaw-google-oauth) — ★ 1 — OpenClaw plugin for Google Workspace — Gmail (send/read/label/trash), Calendar (events + delete), Drive (list/share/trash), Docs (create/read/append), Sheets...
+- [arihealthbird](https://github.com/arihealthbird/opencharts-mcp) — ★ 1 — Docs for the OpenCharts MCP server — build flowcharts, notes, slides, sheets, boards, sites, agents & songs from your AI client
+- [Rotvie](https://github.com/Rotvie/decksmith) — ★ 1 — Markdown → reviewed slide plan → on-brand slide visuals. MCP server for Claude Code with approval gates and pluggable visual systems
+- [superdwayne](https://github.com/superdwayne/keynoteMP) — ★ 1 — MCP server for Apple Keynote — 67 tools for slides, text, images, shapes, exports + Design Engine with 20+ layouts, brand system, and typography
+- [fabiendupont](https://github.com/fabiendupont/mcp-google-workspace) — ★ 1 — MCP server for Google Workspace — 53 tools for Drive, Docs, Sheets, Slides, Gmail. JSON policy engine, label-scoped access, lazy discovery. Rust.
+- [us-all](https://github.com/us-all/google-drive-mcp-server) — ★ 1 — Google Drive MCP server — 96 tools for Drive, Docs, Sheets, Slides with Google Workspace awareness (Shared Drives, Labels, Approvals, domain-wide delegation).
+- [tertiarycourses](https://github.com/tertiarycourses/TGS-2024042309-Develop-AI-Agents-with-OpenAI-Agent-Development-Kit) — ★ 1 — WSQ OpenAI Agents SDK courseware with 227 visual slides and 10 self-contained Python activities covering tools, RAG, orchestration, MCP, guardrails, tracing,...
+- [R09722akaBennett](https://github.com/R09722akaBennett/nano-pdf-mcp) — ★ 1 — NanoPDF MCP Server: An AI-powered PDF editor. Visually edit and generate PDF slides locally using Gemini 3 Pro and the Model Context Protocol.
+- [jjoej15](https://github.com/jjoej15/personal-school-mcp) — ★ 1 — RAG + MCP project that connects AI agents to my Canvas, Google Calendar, and a diy KV store RPC service that holds vector embeddings for lecture slides
+- [kushaln02](https://github.com/kushaln02/acd26-vadodara) — ★ 1 — Slides, architecture diagrams, and a live-demo guide for "The Future of Data Pipelines on AWS" — AWS Community Day Vadodara 2026, on building intelligent Glu...
+- [block-town](https://github.com/block-town/google-doors) — ★ 1 — Claude Code in your Google Workspace: Gmail, Drive, Calendar, Docs, Sheets, Slides, Forms, Tasks, Contacts, Apps Script and Analytics through MCP servers on ...
+- [hejun789](https://github.com/hejun789/polymath) — ★ 1 — Multi-agent research studio: give it a topic, get a sourced markdown report + auto-generated slide deck. LangGraph orchestration, MCP tools, Chroma memory.
+- [apexlogicfocus](https://github.com/apexlogicfocus/google-workspace-mcp-cli) — ★ 1 — Google Workspace MCP server and CLI for Claude Code, Codex and AI agents. 38 tools for Gmail, Drive, Sheets, Docs, Slides, Calendar, Tasks, Forms and Contact...
+- [rare](https://github.com/rare/slidesfly-integrations) — ★ 1 — Slidesfly turns AI-generated HTML slide decks into shareable URLs with one command—no sign-up required. Integrations for GitHub Actions, MCP, Gemini CLI, Mar...
+- [chris1928a](https://github.com/chris1928a/chris-ai-stack) — ★ 1 — Chris Erler's AI brain stack: Claude Code + 31 MCP servers + 19 skills + 125 memory files + Telegram bot. ~150 EUR/mo, 23h/wk saved. Forkable templates + 8 u...
+- [mariolpantunes](https://github.com/mariolpantunes/crepe-mcp) — ★ 1 — CREPE — Compile, Research, Export, Presentation Engine. An MCP server for AI Agents that drafts slide decks in Pandoc Markdown, compiles them to Beamer PDF o...
+- [TANGZHUO12](https://github.com/TANGZHUO12/ppt-expert) — ★ 1 — One sentence in, an expert deck out. This DSH plugin adds a slide-expert persona, a LibreOffice Impress MCP server (7 tools + table reading + 18 matplotlib c...
+- [phxdev1](https://github.com/phxdev1/powerpoint-mcp) — ★ 1 — —
+- [ouns-ous](https://github.com/ouns-ous/powerpoint-live-mcp) — ★ 1 — Real-time PowerPoint Automation MCP Server for Windows with Live Visuals & Product Databases
+- [adner](https://github.com/adner/PowerPointMcpVBA) — ★ 1 — —
+- [karlll](https://github.com/karlll/kslide) — ★ 1 — Create powerpoint slideshows using MCP or CLI
+- [goya4140](https://github.com/goya4140/powerpoint-canvas-controller-macos) — ★ 1 — Editable PowerPoint canvas control on macOS through Office.js and MCP
+- [lucasgfsvd](https://github.com/lucasgfsvd/microsoft365-mcp-server) — ★ 1 — MCP server for Microsoft 365 — Mail, Calendar, Files, Teams, OneNote, Excel, Word, PowerPoint via Microsoft Graph. Alpha.
+- [B-C-Software](https://github.com/B-C-Software/doconda-mcp) — ★ 1 — Doconda MCP server: give your AI agent tools to create, review and edit Word, Excel, PowerPoint and PDF documents. Remote or local (npx @doconda/mcp).
+- [Sahith59](https://github.com/Sahith59/WordEX-MCP) — ★ 1 — MCP server that lets AI assistants read and write Word, Excel, PDF, and PowerPoint files — fully local, no cloud
+- [gauravvvvvvvvvv](https://github.com/gauravvvvvvvvvv/office-mcp) — ★ 1 — Local-first MCP server for creating, editing, analyzing, and reviewing Word, Excel, and PowerPoint files, with native Windows Office automation.
+- [groupdocs-comparison](https://github.com/groupdocs-comparison/GroupDocs.Comparison.Mcp) — ★ 1 — GroupDocs.Comparison for .NET MCP server — compare PDF, Word, Excel, PowerPoint, and text documents and produce diff reports via AI agents.
+- [paulturek](https://github.com/paulturek/m365-mcp-server) — ★ 1 — MCP Server for Microsoft 365 - Access Outlook, Calendar, OneDrive, SharePoint, Excel, Word, PowerPoint, Teams, and Power BI with automatic OAuth token refresh
+- [thomas-villani](https://github.com/thomas-villani/pptlive) — ★ 1 — Drive a running Microsoft PowerPoint from Python, CLI, or MCP — live COM automation for LLM agents, with one-click Claude Desktop install (Windows)
+- [vikisingh23](https://github.com/vikisingh23/office-mcp) — ★ 1 — MCP server for PowerPoint, Word, Excel & CSV — 32 tools to create, read, and edit Office documents from any AI coding assistant. Works with Claude Code, Curs...
+- [xjustloveux](https://github.com/xjustloveux/aspose-mcp-preview) — ★ 1 — aspose-mcp-server 的即時文件預覽擴充套件，支援 Word、Excel、PowerPoint、PDF 在瀏覽器中即時預覽
+- [changhaozhang663-shaxia](https://github.com/changhaozhang663-shaxia/codex-science-figure-mcp) — ★ 1 — 通过本地 MCP 连接 Illustrator 与 PowerPoint，制作可编辑科研图。Windows 安装包、源码与中文使用说明。
+- [mike-anderson](https://github.com/mike-anderson/doc-index-mcp) — ★ 1 — A local-first semantic search server for your documents. Index PDFs, Word docs, PowerPoints, Excel files, and text/markdown, then search them using natural l...
+- [zorost](https://github.com/zorost/alchemylake-apex) — ★ 1 — Truth, made visible. AlchemyLake turns governed lakehouse data (Databricks Unity Catalog, Genie, or your own uploads) into verified, provenance-sealed delive...
+- [kodepapa](https://github.com/kodepapa/marp-mcp) — ★ 1 — MCP server to expose Marp markdown presentation framework to agents
+- [oddysey-ai](https://github.com/oddysey-ai/oddysey) — ★ 1 — Agentic RWA command deck — Next.js on Cloudflare Workers, with x402-metered MCP access and a self-hosted facilitator.
+- [gavanduffy](https://github.com/gavanduffy/marp-mcp) — ★ 1 — —
+- [Nurkic4](https://github.com/Nurkic4/artifacts-local) — ★ 1 — Agent-first local Markdown presentation adapters for MCP and VS Code; original renderer assets excluded
+- [leedonwoo2827-ship-it](https://github.com/leedonwoo2827-ship-it/gemma-docu-writer) — ★ 1 — 로컬 PC에서 돌아가는 결과보고서 작성툴 (HWPX · PPTX 출력). React + FastAPI + Ollama(Gemma4n) / Gemini 토글 + 템플릿 주입 MCP (python-hwpx, python-pptx).
+- [launchapp-dev](https://github.com/launchapp-dev/animus-document-engine) — ★ 1 — Animus Document Engine — MCP service that renders/parses/converts Office documents (xlsx/pptx/docx) from a structured spec (pptxgenjs/docx/exceljs + LibreOff...
+- [ExaDev](https://github.com/ExaDev/documents.js) — ★ 1 — A family of independent, MIT-licensed TypeScript packages for lossless, type-safe document conversion — OOXML (docx/pptx/xlsx), OpenDocument (odt/ods/odp), M...
+- [tobias-bettinger](https://github.com/tobias-bettinger/ppt-agent) — ★ 1 — AI-powered McKinsey-level PowerPoint generation using pydantic_ai agents + FastMCP
+- [blazar-source](https://github.com/blazar-source/dsh-r7-office) — ★ 1 — R7-Office document processing plugin and MCP server for DeepSeek Harness (DOCX, XLSX, PPTX, PDF)
+- [s-b-repo](https://github.com/s-b-repo/onlyoffice-mcp-server) — ★ 1 — MCP server for creating, reading, editing and converting Office documents (docx, xlsx, pptx) — 77 async tools with version history, charts, spell-check, find...
+- [wanquanY](https://github.com/wanquanY/MusterOffice) — ★ 1 — Office engine for AI agents: editable presentations powered by Rust, with native/WASM, SDK, CLI and MCP interfaces.
+- [JaimeJunr](https://github.com/JaimeJunr/keyless-studio) — ★ 1 — Keyless visual generation for Claude Code — images, pixel-art sprites & sheets, PPTX decks, social creatives, site visuals. No OPENAI_API_KEY: routes through...
+- [Asno-dev](https://github.com/Asno-dev/Helx) — ★ 1 — Helx — the universal artifact runtime for AI agents. Create, read, edit, validate, diff, render and convert DOCX, XLSX, PPTX, PDF, Markdown, HTML and CSV — p...
+- [Troy-Lai](https://github.com/Troy-Lai/mcp-presentation) — ★ 0 — MCP classroom presentation
+- [Manu-Krish](https://github.com/Manu-Krish/MCP-Presentation-New) — ★ 0 — MCP Presentation New
+- [rijul-procdna](https://github.com/rijul-procdna/MCP-Presentation-Generator) — ★ 0 — —
+- [emrum01](https://github.com/emrum01/mcp-presentation-demo) — ★ 0 — —
+- [danielplawgo](https://github.com/danielplawgo/dotnet-mcp-presentation) — ★ 0 — MCP w .NET: prezentacja (Slidev) i demo ASP.NET Core pokazujace, jak udostepnic aplikacje agentom AI
+- [momodeveluk2024](https://github.com/momodeveluk2024/mcp-presentation-web) — ★ 0 — Recap presentation for MCP
+- [maratkand21](https://github.com/maratkand21/presentation-mcp-server) — ★ 0 — —
+- [EiceblueCloud](https://github.com/EiceblueCloud/spire.presentation-mcp-server) — ★ 0 — Spire.Presentaition for MCP server
+- [konojunya](https://github.com/konojunya/html2pptx-mcp) — ★ 0 — html to pptx mcp server
+- [arbazpathan91](https://github.com/arbazpathan91/pptx-mcp-server) — ★ 0 — —
+- [loveRyujin](https://github.com/loveRyujin/slidev-mcp) — ★ 0 — —
+- [gavanduffy](https://github.com/gavanduffy/slidev-mcp) — ★ 0 — —
+- [feirate](https://github.com/feirate/slidev-mcp-server) — ★ 0 — —
+- [biancasivero](https://github.com/biancasivero/BIANCA-SANITY) — ★ 0 — Sistema Integrado de Gesto de Contedo e Apresentaes - Sanity CMS + Slidev + MCP Tools
+- [kennyg](https://github.com/kennyg/slidev-mcp-app) — ★ 0 — —
+- [RAFAEL-SILVASOUZA](https://github.com/RAFAEL-SILVASOUZA/pptx-mcp-server) — ★ 0 — —
+- [smorand](https://github.com/smorand/google-slides-mcp) — ★ 0 — HTTP streamable MCP server for Google Slides API integration
+- [FarukDelic](https://github.com/FarukDelic/Google-Slides-MCP) — ★ 0 — —
+- [SolonaBot](https://github.com/SolonaBot/google-slides-mcp) — ★ 0 — MCP server for Google Slides integration
+- [artemu78](https://github.com/artemu78/google-slides-mcp) — ★ 0 — —
+- [schuang](https://github.com/schuang/google-slides-mcp) — ★ 0 — —
+- [Stephenjhayes](https://github.com/Stephenjhayes/google-slides-mcp) — ★ 0 — MCP Server for my Slide Maker project
+- [dvanderelst](https://github.com/dvanderelst/GoogleSlidesMCP) — ★ 0 — —
+- [JustParent](https://github.com/JustParent/google-slides-mcp) — ★ 0 — Low-level MCP for Google Slides
+- [eliamazzon](https://github.com/eliamazzon/google-slides-mcp) — ★ 0 — —
+- [vamsikiran353-gif](https://github.com/vamsikiran353-gif/google-slides-mcp) — ★ 0 — —
+- [tedpecoulas](https://github.com/tedpecoulas/pptx-mcp-server) — ★ 0 — Serveur MCP pour skills python pour ppt
+- [leoou331](https://github.com/leoou331/pptx-mcp-server) — ★ 0 — MCP server for creating and editing PowerPoint presentations
+- [kunalhemnani1](https://github.com/kunalhemnani1/google-slides-mcp-server) — ★ 0 — —
+- [illumination-k](https://github.com/illumination-k/google-slides-mcp) — ★ 0 — —
+- [Dinpo](https://github.com/Dinpo/google-slides-mcp) — ★ 0 — MCP for Google Slides with advanced functionality
+- [kriskumar](https://github.com/kriskumar/google-slides-mcp) — ★ 0 — —
+- [micahyee415](https://github.com/micahyee415/google-slides-mcp-server) — ★ 0 — Model Context Protocol (MCP) server for Google Slides: read, template-fill, and edit presentations on Cloud Run with Google OAuth.
+- [mcembalest](https://github.com/mcembalest/google-slides-mcp) — ★ 0 — —
+- [dcc-mcp](https://github.com/dcc-mcp/dcc-mcp-powerpoint) — ★ 0 — Microsoft PowerPoint MCP adapter for AI agents to generate and modify editable decks, compose slides, build render review decks and validate PDF/PNG previews...
+- [jose-rodriguez-mck](https://github.com/jose-rodriguez-mck/mcp-presentation) — ★ 0 — MCP Presentation
+- [taranovoleg](https://github.com/taranovoleg/Data_Out_Calculator_MCP_PowerPoint-VCc02) — ★ 0 — Task-zerocoderVcc02
+- [conda-forge](https://github.com/conda-forge/mcp-powerpoint-feedstock) — ★ 0 — A conda-smithy repository for mcp-powerpoint.
+- [jordanbaucke](https://github.com/jordanbaucke/mcp-powerpoint-server) — ★ 0 — Model Context Protocol server for creating PowerPoint presentations using Azure Container Apps
+- [Yans14](https://github.com/Yans14/powerpoint_mcp) — ★ 0 — PowerPoint MCP server with dual COM/OOXML engines for template-aware slide automation and visual validation.
+- [omaro7](https://github.com/omaro7/Office-PowerPoint-MCP-Server) — ★ 0 — Office-PowerPoint-MCP-Server
+- [amitk-codes](https://github.com/amitk-codes/ai-presentation-generator) — ★ 0 — AI presentation generator  turn a topic into a downloadable PDF & editable PowerPoint. One n8n workflow, reachable from a React web app and an MCP server (Ch...
+- [MisunK](https://github.com/MisunK/powerpoint-mcp-server) — ★ 0 — MCP server allows interaction with PPT slide
+- [rmhman](https://github.com/rmhman/pp_mcp) — ★ 0 — PowerPoint MCP server
+- [cool-man-vk](https://github.com/cool-man-vk/Powerpoint-MCP-Server) — ★ 0 — —
+- [brijeshshetty](https://github.com/brijeshshetty/pptx-mcp) — ★ 0 — Local PowerPoint MCP Server for Claude -- 24 tools, SAP corporate template support
+- [adilmaqsood1](https://github.com/adilmaqsood1/office-powerpoint-mcp-server) — ★ 0 — Data science and AI
+- [kangkang0218](https://github.com/kangkang0218/powerpoint-mcp) — ★ 0 — Native Windows PowerPoint MCP Server for OpenCode, Claude Desktop, Cursor, and AI Agents
+- [sriram-1997](https://github.com/sriram-1997/PPTMCP) — ★ 0 — Pure Node.js PowerPoint MCP Server - Create, analyze, and manage PowerPoint presentations with AI assistance
+- [hwwang06](https://github.com/hwwang06/powerpoint-mcp-server) — ★ 0 — —
+- [hurtener](https://github.com/hurtener/pengui-slides) — ★ 0 — Pengui Slides MCP Server - HTML-first presentation generation with Design Soul constraint system
+- [prixieroxanbooc](https://github.com/prixieroxanbooc/google-slides-mcp-server) — ★ 0 — Multi-tenant Google Slides MCP server for AI clients. Create and manage presentations via MCP. Node.js + Cloud Run.
+- [waiteddegree608-ship-it](https://github.com/waiteddegree608-ship-it/paperfect) — ★ 0 — Local paper workspace: bilingual reading, evidence-grounded notes, editable academic slides, MCP and skills.
+- [7tg](https://github.com/7tg/mcp_presentation) — ★ 0 — —
+- [dboconsultingllc](https://github.com/dboconsultingllc/mcp-presentations) — ★ 0 — —
+- [xxradar](https://github.com/xxradar/mcp-presentation) — ★ 0 — —
+- [nlarif](https://github.com/nlarif/mcp-presentation) — ★ 0 — Opinionated presentation about MCP, agentic AI, and interoperability
+- [dverc](https://github.com/dverc/omni-mcp-presentation) — ★ 0 — —
+- [omasan0430](https://github.com/omasan0430/mcp-presentation2) — ★ 0 — —
+- [matnoon](https://github.com/matnoon/MCP-Presentation) — ★ 0 — Project to help new people to insert into MCP areas
+- [CompSciGuyIT](https://github.com/CompSciGuyIT/PresentationMcpServer) — ★ 0 — LLM teaching-deck generator (TypeScript): Zod IR trust boundary, zero-dollar free-tier routing, misconception-grounded quizzes, converging TTS rehearsal. 97 ...
+- [arturowczarek](https://github.com/arturowczarek/mcp-presentation) — ★ 0 — Repository hosting the files for MCP presentation
+- [dianamohirta](https://github.com/dianamohirta/mcp-presentation) — ★ 0 — —
+- [hewimetall](https://github.com/hewimetall/mcp-presentation) — ★ 0 — mcp tools presentation pdf web
+- [muguliebe](https://github.com/muguliebe/mcp-presentation) — ★ 0 — Real-time Error Monitoring & AI Analysis System with Model Context Protocol
+- [alenaist](https://github.com/alenaist/mcp-presentation) — ★ 0 — —
+- [romainf28](https://github.com/romainf28/mcp-presentation) — ★ 0 — A presentation about MCP
+- [biaggiorizzo](https://github.com/biaggiorizzo/mcp-presentation) — ★ 0 — —
+- [mcp-security-project](https://github.com/mcp-security-project/mcp_presentations) — ★ 0 — Presentations
+- [kevinten-ai](https://github.com/kevinten-ai/mcp-presentation) — ★ 0 — MCP server for AI-assisted presentation generation. Create PowerPoint slides from structured content with templates.
+- [ernesthenry](https://github.com/ernesthenry/mcp_presentation) — ★ 0 — —
+- [omasan0430](https://github.com/omasan0430/mcp-presentation) — ★ 0 — —
+- [Yazhodha](https://github.com/Yazhodha/mcp-presentation) — ★ 0 — A react + vite presentation for MCP
+- [satyampsoni](https://github.com/satyampsoni/mcp-presentation) — ★ 0 — —
+- [suarez9093](https://github.com/suarez9093/model-context-protocol-presentation) — ★ 0 — MCP presentation
+- [anddtran](https://github.com/anddtran/MCP-Presentation) — ★ 0 — —
+- [dmykolen](https://github.com/dmykolen/mcp-presentation) — ★ 0 — MCP presentation (slidev)
+- [DavidSchaferEC](https://github.com/DavidSchaferEC/MCP-Presentation) — ★ 0 — HTML pages for MCP illustration purposes
+- [Blue-0](https://github.com/Blue-0/mcp-powerpoint-mistral) — ★ 0 — —
+- [corey-coders](https://github.com/corey-coders/mcp-powerpoint) — ★ 0 — PowerPoint MCP Server  generate board decks, pitch decks, presentations via natural language. Free.
+- [CannonJunior](https://github.com/CannonJunior/mcp-powerpoint) — ★ 0 — mcp-powerpoint
+- [aryeht](https://github.com/aryeht/MCP) — ★ 0 — MCP presentation
+- [narasimhatejav](https://github.com/narasimhatejav/mcp-powerpoint) — ★ 0 — —
+- [Alain-script](https://github.com/Alain-script/mcp-powerpoint) — ★ 0 — —
+- [zingbretsen](https://github.com/zingbretsen/mcp-presentation) — ★ 0 — —
+- [mnmuniz](https://github.com/mnmuniz/MCP-Presentation) — ★ 0 — Proyecto pblico de presentacin con Playwright MCP para pruebas automatizadas.
+- [KeeTraxx](https://github.com/KeeTraxx/mcp-presentation) — ★ 0 — —
+- [react-grids](https://github.com/react-grids/ai-presentation) — ★ 0 — Slides from VS Live / MS Build AI + MCP
+- [Surya2709](https://github.com/Surya2709/presentation-ai) — ★ 0 — mcps for ai ppt generations
+- [lsmman](https://github.com/lsmman/ai-slide-pipeline) — ★ 0 — Claude Code slide-deck pipelines — outline to validated PDF/PPTX with design-gate reviewers, reusable skill, and slides-grab MCP server
+- [dynknight](https://github.com/dynknight/aibgl-slide-host) — ★ 0 — Public host for slide HTML/assets so Canva's import-design-from-url MCP can fetch them.
+- [dwinter3](https://github.com/dwinter3/slidecraft-mcp) — ★ 0 — SlideCraft MCP App — Create AI slide decks from Claude Desktop
+- [dunsan2000](https://github.com/dunsan2000/ppt-generator-mcp) — ★ 0 — Excel/Word/PDF → 템플릿 디자인 보존 PPTX 자동 생성 Claude Code MCP 플러그인
+- [ralungei](https://github.com/ralungei/ppt-generator-mcp) — ★ 0 — —
+- [cryptonicsurfer](https://github.com/cryptonicsurfer/presentation-generator) — ★ 0 — Next.js presentation generator with Gemini 2.5 Flash and Claude Sonnet 4.5, using MCP tools for database access
+- [makannrojelvwp1et](https://github.com/makannrojelvwp1et/slidespeak-mcp-server) — ★ 0 — PowerPoint presentation generator, API-driven
+- [Himasri2706](https://github.com/Himasri2706/Presentation_llm) — ★ 0 — AI-powered PowerPoint presentation generator using Mistral LLM + MCP Tools + python-pptx
+- [gkdivya](https://github.com/gkdivya/mini-gamma-slides) — ★ 0 — Mini Gamma-like presentation generator with MCP server and AI integration for automated Google Slides creation
+- [frdeange](https://github.com/frdeange/powerpointagent) — ★ 0 — Multi-Agent PowerPoint Presentation Generator using Azure AI Foundry V2, FastMCP servers on ACA, and M365 Agents SDK
+- [crawde](https://github.com/crawde/ai-pitch-deck-mcp) — ★ 0 — MCP server for AI pitch deck generation — create investor-ready decks, generate slides, and get fundraising metrics
+- [SunTianTian2333](https://github.com/SunTianTian2333/mode-a-ppt-officecli) — ★ 0 — LangChain Agent + OfficeCLI MCP for PPT generation (A-PPT demo)
+- [Ryeliu](https://github.com/Ryeliu/worklab-tools) — ★ 0 — MCP Server for personal knowledge management — semantic search, audio transcription, PPT generation
+- [Varshini-rupa](https://github.com/Varshini-rupa/AutoPPT-Agent) — ★ 0 — An autonomous AI agent powered by Gemini 3.1 and MCP Architecture that researches, plans, and generates premium PowerPoint presentations with a modern split-...
+- [Arunika7](https://github.com/Arunika7/The-Auto-PPT-Agent) — ★ 0 — AI agent that turns a single prompt into a fully designed PowerPoint - dual MCP servers handle research & design, powered by Qwen2.5-7B + Streamlit.
+- [2300032166](https://github.com/2300032166/auto-ppt-agent-mcp) — ★ 0 — Auto-PPT Agent using MCP that generates themed PowerPoint presentations from real-time web data.
+- [mallampati-sumanth](https://github.com/mallampati-sumanth/calibo-ppt-agent) — ★ 0 — 🪄 Auto-PPT Agent An Enterprise-Grade, Autonomous Model Context Protocol (MCP) Ecosystem
+- [somasekharchakka](https://github.com/somasekharchakka/ppt_agent) — ★ 0 — An AI-powered Auto-PPT Agent built using MCP architecture that generates PowerPoint presentations from a single prompt using multiple tools like web search, ...
+- [gyasaswini10](https://github.com/gyasaswini10/Building_Python_Ppt-agent) — ★ 0 — Auto-PPT Agent creates PowerPoint presentations from single sentence prompts without mouse interaction. Built with MCP architecture for agentic planning and ...
+- [anicka-net](https://github.com/anicka-net/mcp-server-slide-generator) — ★ 0 — MCP server for generating PowerPoint presentations with auto-generated charts
+- [koldovsky](https://github.com/koldovsky/is-05-slidev-frontend) — ★ 0 — Day 5 workshop slides — AI Frontend Workflow 2026 (Cursor / Claude Code, Figma MCP, Next.js 16, Tailwind v4, shadcn, caveman)
+- [DaiShuaishuai](https://github.com/DaiShuaishuai/pptx-minio-mcp) — ★ 0 — 基于Office-PowerPoint-MCP-Server 扩展对接minio工具，实现PPT生成后自动上传到minio，并返回可下载链接地址
+- [modstart-lib](https://github.com/modstart-lib/focusany-plugin-Bento) — ★ 0 — FocusAny 插件「Bento」：自包含的单文件演示文稿编辑器。新建、打开并就地编辑 .bento.html 演示文稿，支持 morph 转场、图表、演讲者视图与 MCP 工具（AI 生成演示文稿）。
+- [NothingnessVOID](https://github.com/NothingnessVOID/learning-review-workbench) — ★ 0 — 本地中文学习与复盘工作台：SQLite、来源追溯、草稿审核、MCP、备份恢复。仅包含代码与独立演示。
+- [kids0cn](https://github.com/kids0cn/ai-agent-zhihu-skill) — ★ 0 — 知乎开放平台官方 API 的 AI Agent Skill：全部 18 个端点（搜索/热榜/直答/额度/问题/创作/收藏/PDF 解析/PPT 生成），stdlib-only 脚本 + 20 篇 reference + 统一 MCP
+- [nicenemo](https://github.com/nicenemo/vibe_coding_mcp_presentation) — ★ 0 — Vibe coding MCP presentation
+- [haas-labs](https://github.com/haas-labs/core3-mcp-presentation) — ★ 0 — —
+- [domainellipticlanguage](https://github.com/domainellipticlanguage/command-tower-mcp-presentation) — ★ 0 — The making of the command-tower-mcp server
+- [vbkristof](https://github.com/vbkristof/IAI_2026S_MCP_Presentation) — ★ 0 — —
+- [Ryan-PG](https://github.com/Ryan-PG/ai-flow-ai-agents-mcp-presentation) — ★ 0 — A presentation on AI Flows, the MCP (Model-Context-Protocol) and AI agents, shared at Keyhan Qom. Includes slides and a project that is hands on n8n showcasi...
+- [Michael-Zzq](https://github.com/Michael-Zzq/composio-demo) — ★ 0 — Demo repo for Composio MCP presentation
+- [Summerbey](https://github.com/Summerbey/GroupM-MCP-Website) — ★ 0 — Model Context Protocl {MCP} Presentation_Group M.
+- [Ahmed-aleryani](https://github.com/Ahmed-aleryani/pixelforge-slides) — ★ 0 — PixelForge MCP — presentation slides (Vibe Code Atelier #4)
+- [shubinjAA](https://github.com/shubinjAA/github-presentation) — ★ 0 — Testing with Azure ADO MCP & Playwright MCP - Presentation
+- [RingoTC](https://github.com/RingoTC/MCP-pptr) — ★ 0 — A pptr mcp server for better cursor
+- [jorgeOps](https://github.com/jorgeOps/mcp_ppt) — ★ 0 — MCP to create PowerPoints on your local PC by connecting to an LLM
+- [RainyNode](https://github.com/RainyNode/mcptox_ppt) — ★ 0 — MCPTox paper presentation materials and Persona-theme version
+- [lhs6395-hslee](https://github.com/lhs6395-hslee/mcp-pptx) — ★ 0 — —
+- [y1yy8](https://github.com/y1yy8/mcp-ppt) — ★ 0 — ppt
+- [stsang8](https://github.com/stsang8/MCP-PPT) — ★ 0 — A PowerPoint presentation about the Model Context Protocol (MCP)
+- [Loki-33](https://github.com/Loki-33/mcp-pptx) — ★ 0 — —
+- [811568209](https://github.com/811568209/yunfan-mcp-ppt) — ★ 0 — 云帆低代码设计器 MCP Server 技术架构与深度实践 PPT (19页, 浅蓝科技风)
+- [sujitojha1](https://github.com/sujitojha1/mcp-ppt-controller) — ★ 0 — A desktop application implementing Model Control Protocol (MCP) to remotely control PowerPoint presentations. Seamlessly manage slides, navigation, and prese...
+- [lhs6395-hslee](https://github.com/lhs6395-hslee/claude-mcp-pptx) — ★ 0 — —
+- [z9905080](https://github.com/z9905080/mcp-pptx-generator) — ★ 0 — —
+- [tianzai111](https://github.com/tianzai111/pg-mcp-ppt) — ★ 0 — pg-mcp product intro: 23-slide PPTX + copy outline + rebuildable project
+- [hirokisakabe](https://github.com/hirokisakabe/mcp-pptx-preview) — ★ 0 — PPTXファイルをSVGプレビューできるMCPサーバ
+- [fromk0326-boop](https://github.com/fromk0326-boop/hk-freee-mcp-p8v2k3) — ★ 0 — freee MCP slides
+- [denysmilimonko](https://github.com/denysmilimonko/mcp_slides) — ★ 0 — —
+- [D3f0](https://github.com/D3f0/mcp-slides) — ★ 0 — —
+- [night2tl](https://github.com/night2tl/mcp-slides) — ★ 0 — —
+- [corentinleberre](https://github.com/corentinleberre/mcp-slides) — ★ 0 — —
+- [hongoctrung1120](https://github.com/hongoctrung1120/autocad-mcp-slides) — ★ 0 — —
+- [hanx-hep](https://github.com/hanx-hep/ihep-mcp-slides) — ★ 0 — IHEP MCP 系统介绍
+- [benoitvx](https://github.com/benoitvx/atelier-mcp-slides) — ★ 0 — Slides de présentation pour un atelier de 45 minutes sur les MCP (Model Context Protocol)
+- [shanewwarren](https://github.com/shanewwarren/mcp-google-slides) — ★ 0 — MCP server that enables LLMs to create and manage Google Slides presentations with zero-config browser OAuth authentication.
+- [nexusai-kr](https://github.com/nexusai-kr/pylon-mcp-google-slides) — ★ 0 — Google Slides MCP server for Pylon Grid — calls the Google Slides REST API with the caller's own Google token (Apache-2.0)
+- [theodorebeaupre-prog](https://github.com/theodorebeaupre-prog/mcp-deck) — ★ 0 — Native macOS menu bar dashboard for MCP servers — health checks, per-client enable/disable, live logs
+- [pipeworx-io](https://github.com/pipeworx-io/mcp-deckofcards) — ★ 0 — MCP server for drawing and shuffling playing cards via Deck of Cards API
+- [cola-sk](https://github.com/cola-sk/mcp-deck) — ★ 0 — —
+- [Klien-m](https://github.com/Klien-m/mcp-deck) — ★ 0 — 基于 Tauri、React 和 Rust 的本地 MCP 配置管理器，统一管理主流 AI Agent 的 MCP 配置。
+- [phillzee](https://github.com/phillzee/mcp_deck) — ★ 0 — —
+- [yiweny](https://github.com/yiweny/mcp-deck) — ★ 0 — —
+- [DCode-v05](https://github.com/DCode-v05/MCP-Deck) — ★ 0 — A persistent, autonomous agent that works across your real SaaS accounts (GitHub, Notion, Linear, Slack) and authors live, self-updating UI as it goes.
+- [shain1912](https://github.com/shain1912/wineschool-mcp-deck) — ★ 0 — —
+- [jhchein](https://github.com/jhchein/mcp-deck-server) — ★ 0 — —
+- [ivankristianto](https://github.com/ivankristianto/belajar-mcp-deck) — ★ 0 — Slidev deck for Kelas Tanya DomaiNesia: Otomasi AI Agent. Source on main, built output on the deploy branch.
+- [crawde](https://github.com/crawde/mcp-deckforge-financial) — ★ 0 — —
+- [theodorebeaupre-prog](https://github.com/theodorebeaupre-prog/homebrew-tap) — ★ 0 — Homebrew tap for MCP Deck and other projects
+- [yansfil](https://github.com/yansfil/presentation-king) — ★ 0 — Agents draft, you finish — a local slide editor for decks your coding agent writes over MCP. deck.json scene graph, blast-radius-guarded agent edits, dual un...
+- [hzy5000](https://github.com/hzy5000/PPT_MCP_Server) — ★ 0 — —
+- [ildunari](https://github.com/ildunari/PPT-MCP) — ★ 0 — —
+- [NishthaSharma-22](https://github.com/NishthaSharma-22/ppt-mcp) — ★ 0 — an mcp to save me hours by turning student ptm data into polished ppts
+- [3588044667HZ](https://github.com/3588044667HZ/PptMcpServer) — ★ 0 — 一个以插件形式实现的ppt mcp 服务器
+- [moisesbritez92](https://github.com/moisesbritez92/ppt-mcp) — ★ 0 — MCP para power point
+- [iPycc](https://github.com/iPycc/pptx2xmind-mcp) — ★ 0 — 基于Python编写 将PPT转换为Xmind思维导图
+- [iPycc](https://github.com/iPycc/ppt2xmind-mcp) — ★ 0 — 将PPT大纲内容转换成Xmind思维导图格式
+- [tomrobin33](https://github.com/tomrobin33/ppt-mcp) — ★ 0 — —
+- [fubsi](https://github.com/fubsi/ppt-mcp) — ★ 0 — Model Context Protocol server for creating, editing, and managing PowerPoint presentations with Python, using a provided template as the basis for new files.
+- [Bestjuke](https://github.com/Bestjuke/ppt-mcp) — ★ 0 — —
+- [xintian-lab](https://github.com/xintian-lab/ppt-mcp) — ★ 0 — Cross-platform MCP server for Microsoft PowerPoint automation (Windows COM + macOS)
+- [nicksinx](https://github.com/nicksinx/ppt-mcp) — ★ 0 — —
+- [ZiChuanLan](https://github.com/ZiChuanLan/ppt-mcp) — ★ 0 — —
+- [gavanduffy](https://github.com/gavanduffy/pptxgenjs-mcp) — ★ 0 — —
+- [nahisaho](https://github.com/nahisaho/pptxgejs-mcp) — ★ 0 — —
+- [Data-Advantage](https://github.com/Data-Advantage/pptx-mcp) — ★ 0 — Stdio MCP server for pptx.dev — proxies to mcp.pptx.dev
+- [suprim-corp](https://github.com/suprim-corp/pptx-mcp) — ★ 0 — —
+- [matthewmiglio](https://github.com/matthewmiglio/pptx-mcp) — ★ 0 — MCP server for creating and editing PowerPoint presentations programmatically via Claude and other LLMs.
+- [bmateusz](https://github.com/bmateusz/pptx-mcp) — ★ 0 — Weekend project to try out generating PPTX presentations with an MCP server
+- [guanweiqiang](https://github.com/guanweiqiang/pptx-mcp) — ★ 0 — —
+- [isoittech](https://github.com/isoittech/pptx-mcp) — ★ 0 — —
+- [phoenixwu0229](https://github.com/phoenixwu0229/pptxx-mcp) — ★ 0 — —
+- [iatsiuk](https://github.com/iatsiuk/pptr-mcp) — ★ 0 — —
+- [diego-laguna](https://github.com/diego-laguna/pptr-mcp) — ★ 0 — —
+- [riverliu8](https://github.com/riverliu8/pptogo-mcp) — ★ 0 — PPToGo MCP server — AI-agent commerce: browse campaigns/products, mint tracking links, publish posts, earn commission. Hosted at https://pptogo.com/api/mcp
+- [tech-ritme](https://github.com/tech-ritme/Ppt_MCP) — ★ 0 — —
+- [gtonic](https://github.com/gtonic/pptx-mcp) — ★ 0 — MCP server to create and edit powerpoint presentations via pptx
+- [flevy-com](https://github.com/flevy-com/pptdepot-mcp) — ★ 0 — Remote MCP server for PPT Depot: professional PowerPoint templates and slides for AI assistants.
+- [engchina](https://github.com/engchina/No.1-pptx2pdf-mcp) — ★ 0 — —
+- [clauxel](https://github.com/clauxel/ppt-master-deck-mcp-mcp) — ★ 0 — PPT Master Deck MCP public documentation modeled after the MiroFish docs pattern.
+- [PavanRam](https://github.com/PavanRam/mcp-automation-1) — ★ 0 — mcp automation ppt and gmail
+- [onah](https://github.com/onah/ppt_mcp_server) — ★ 0 — —
+
+_Showing top 500 of 831 repos in this category — the full list with all 831 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)

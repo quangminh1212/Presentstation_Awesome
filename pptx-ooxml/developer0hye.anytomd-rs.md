@@ -1,0 +1,559 @@
+# anytomd
+
+A pure Rust tool and library that converts various document formats into Markdown — designed for LLM consumption.
+
+[![CI](https://github.com/developer0hye/anytomd-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/developer0hye/anytomd-rs/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/anytomd.svg)](https://crates.io/crates/anytomd)
+[![License](https://img.shields.io/crates/l/anytomd.svg)](LICENSE)
+
+## Why?
+
+[MarkItDown](https://github.com/microsoft/markitdown) is a great Python library for converting documents to Markdown. But integrating Python into Rust applications means bundling a Python runtime (~50 MB), dealing with cross-platform compatibility issues, and managing dependency hell.
+
+**anytomd** solves this with a single `cargo add anytomd` — zero external runtime, no C bindings, no subprocess calls. Just pure Rust.
+
+## Supported Formats
+
+| Format | Extensions | Notes |
+|--------|-----------|-------|
+| DOCX | `.docx` | Headings, tables (incl. merged/layout tables), lists, bold/italic, hyperlinks, images, text boxes |
+| PPTX | `.pptx` | Slides, tables (incl. merged cells), speaker notes, images, group shapes |
+| XLSX | `.xlsx` | Multi-sheet, date/time handling, images, single-pass table rendering |
+| XLS | `.xls` | Legacy Excel (via calamine), single-pass table rendering |
+| HTML | `.html`, `.htm` | Full DOM: headings, tables (incl. `colspan`/`rowspan`), lists, links, blockquotes, code blocks |
+| CSV | `.csv` | Converted to Markdown tables |
+| Jupyter Notebook | `.ipynb` | Markdown cells preserved, code cells in fenced blocks with language detection |
+| JSON | `.json` | Pretty-printed in fenced code blocks |
+| XML | `.xml` | Pretty-printed in fenced code blocks |
+| Images | `.png`, `.jpg`, `.gif`, `.webp`, `.bmp`, `.tiff`, `.svg`, `.heic`, `.avif` | Optional LLM-based alt text via `ImageDescriber` |
+| Code | `.py`, `.rs`, `.js`, `.ts`, `.c`, `.cpp`, `.go`, `.java`, `.rb`, `.swift`, `.sh`, ... | Fenced code blocks with language identifier |
+| Plain Text | `.txt`, `.md`, `.rst`, `.log`, `.toml`, `.yaml`, `.ini`, etc. | Passthrough with encoding detection (UTF-8, UTF-16, Windows-1252) |
+
+**Note on PDF:** PDF conversion is intentionally out of scope. Gemini, ChatGPT, and Claude already provide native PDF support (with plan/model-specific limits), so anytomd focuses on formats that still benefit from dedicated Markdown conversion. Attempting to convert a PDF will return a descriptive `FormatNotSupported` error.
+
+Format is auto-detected from magic bytes and file extension. ZIP-based formats (DOCX/PPTX/XLSX) are distinguished by inspecting internal archive structure.
+
+Large XLSX/XLS sheets render Markdown and plain text together in one row pass. Workbook parsing still uses memory proportional to the worksheet, but conversion does not build a second full cell matrix before producing output.
+
+## Conversion Examples
+
+### CSV
+
+A CSV file with multilingual data:
+
+```
+Name,Age,City
+Alice,30,Seoul
+Bob,25,東京
+Charlie,35,New York
+다영,28,서울
+```
+
+**Output:**
+
+```markdown
+| Name | Age | City |
+|---|---|---|
+| Alice | 30 | Seoul |
+| Bob | 25 | 東京 |
+| Charlie | 35 | New York |
+| 다영 | 28 | 서울 |
+```
+
+### DOCX
+
+A Word document with headings, links, Korean text, and emoji:
+
+**Output:**
+
+```markdown
+# Sample Document
+
+This is a simple paragraph.
+
+## Section One
+
+Visit [Example](https://example.com) for more info.
+
+Korean: 한국어 테스트
+
+Emoji: 🚀✨🌍
+
+### Subsection
+
+Final paragraph with mixed content.
+```
+
+### PPTX
+
+A PowerPoint presentation with slides, tables, speaker notes, and multilingual content:
+
+**Output:**
+
+```markdown
+## Slide 1: Sample Presentation
+
+Welcome to the presentation.
+
+---
+
+## Slide 2
+
+Data Overview
+
+| Name | Value | Status |
+|---|---|---|
+| Alpha | 100 | Active |
+| Beta | 200 | Inactive |
+| Gamma | 300 | Active |
+
+> Note: Remember to explain the data table.
+
+---
+
+## Slide 3: Multilingual
+
+한국어 테스트
+🚀✨🌍
+
+> Note: Test multilingual rendering.
+```
+
+### Tables and merged cells
+
+Every table — plain, merged, or used for page layout — becomes a single
+pipe-delimited Markdown table of the table's true column count. Merged cells
+(`gridSpan`/`vMerge` in DOCX, `colspan`/`rowspan` in HTML) are handled so no
+content is lost:
+
+- a horizontally spanned cell puts its text in the first column it covers and
+  leaves the spanned-over columns empty (empty-fill);
+- a vertically merged (continuation) cell is left blank;
+- a full-width row (a single cell spanning every column) is kept as a normal
+  grid row, empty-filled to the table width — it is **not** turned into a heading
+  or a `**Label:** value` line.
+
+This is deliberately uniform: keeping a merged/layout table as one table (rather
+than splitting it into headings and field lines) gives downstream consumers,
+especially LLMs, a consistent structure. The one exception is a table that
+contains a **nested table** — a nested table cannot live inside a single Markdown
+cell, so such a table is linearized and each cell's text and nested table are
+emitted as standalone blocks.
+
+PPTX tables are likewise rendered as Markdown tables; merged cells keep the
+correct column count and the spanning cell's text is not duplicated.
+
+## Installation
+
+### Rust (Cargo)
+
+```sh
+cargo add anytomd
+```
+
+### npm (WASM)
+
+```sh
+npm install anytomd
+```
+
+```js
+import init, { convertBytes } from 'anytomd';
+
+await init();
+
+const response = await fetch('document.docx');
+const bytes = new Uint8Array(await response.arrayBuffer());
+
+const result = convertBytes(bytes, 'docx');
+console.log(result.markdown);
+```
+
+### Feature Flags
+
+| Feature | Dependencies | Description |
+|---------|-------------|-------------|
+| *(default)* | `async-gemini` | Async API + `AsyncGeminiDescriber` — all async features enabled out of the box |
+| `async` | `futures-util` | Async API (`convert_file_async`, `convert_bytes_async`, `AsyncImageDescriber` trait) |
+| `async-gemini` | `async` + `reqwest` | `AsyncGeminiDescriber` for concurrent image descriptions via Gemini |
+| `wasm` | `wasm-bindgen`, `js-sys`, `wasm-bindgen-futures` | WebAssembly bindings (`convertBytes`, `convertBytesWithOptions`) for browser/edge use |
+| `wasm` + `async-gemini` | *(combined)* | Adds `convertBytesWithGemini` for async Gemini-powered conversion in WASM |
+
+Async features are included by default. To opt out:
+
+```toml
+anytomd = { version = "1", default-features = false }
+```
+
+## WebAssembly (WASM)
+
+anytomd compiles to `wasm32-unknown-unknown`, enabling client-side document conversion in browsers, Cloudflare Workers, Deno Deploy, and other edge runtimes. Documents never leave the user's device.
+
+### Build
+
+```sh
+# Basic WASM build (sync conversion only)
+wasm-pack build --target web --no-default-features --features wasm
+
+# With Gemini async image descriptions
+wasm-pack build --target web --no-default-features --features wasm,async-gemini
+```
+
+### Usage from JavaScript
+
+```js
+import init, { convertBytes } from './pkg/anytomd.js';
+
+await init();
+
+const response = await fetch('document.docx');
+const bytes = new Uint8Array(await response.arrayBuffer());
+
+const result = convertBytes(bytes, 'docx');
+console.log(result.markdown);
+console.log(result.plainText);
+console.log(result.title);       // string or null
+console.log(result.warnings);    // string[]
+```
+
+#### With Gemini Image Descriptions (requires `wasm` + `async-gemini` features)
+
+```js
+import init, { convertBytesWithGemini } from './pkg/anytomd.js';
+
+await init();
+
+const response = await fetch('presentation.pptx');
+const bytes = new Uint8Array(await response.arrayBuffer());
+
+// Images are described concurrently via the Gemini API
+const result = await convertBytesWithGemini(bytes, 'pptx', 'your-gemini-api-key');
+console.log(result.markdown);  // images have LLM-generated alt text
+```
+
+### WASM API Availability
+
+| API | Native | WASM |
+|-----|--------|------|
+| `convert_bytes` / `convertBytes` | Yes | Yes |
+| `convert_bytes_async` | Yes | Yes |
+| `convert_file` / `convert_file_async` | Yes | No (no filesystem) |
+| `GeminiDescriber` (sync) | Yes | No (uses `ureq`) |
+| `AsyncGeminiDescriber` / `convertBytesWithGemini` | Yes | Yes (`wasm` + `async-gemini`) |
+
+All 12 format converters work on WASM via `convert_bytes`.
+
+## CLI
+
+### Install
+
+```sh
+cargo install anytomd
+```
+
+### Usage
+
+```sh
+# Convert a single file
+anytomd document.docx > output.md
+
+# Convert multiple files (separated by <!-- source: path --> comments)
+anytomd report.docx data.csv slides.pptx > combined.md
+
+# Write output to a file
+anytomd document.docx -o output.md
+
+# Read from stdin (--format is required)
+cat data.csv | anytomd --format csv
+
+# Override format detection
+anytomd --format html page.dat
+
+# Strict mode: treat recoverable errors as hard errors
+anytomd --strict document.docx
+
+# Plain text output (Markdown formatting stripped)
+anytomd --plain-text document.docx
+
+# Plain text from stdin
+echo "Name,Age" | anytomd --format csv --plain-text
+
+# Extract comments (DOCX/PPTX) into an appended Comments section
+anytomd --extract-comments document.docx
+
+# Image descriptions via Gemini (requires GEMINI_API_KEY env var)
+export GEMINI_API_KEY=your-key
+anytomd --gemini presentation.pptx
+
+# Use a specific Gemini model
+anytomd --gemini --gemini-model gemini-2.5-flash-lite presentation.pptx
+
+# Resource limits (defaults: 8GiB input, 4GiB images, 16GiB zip)
+anytomd --max-input-size 500MB document.docx
+anytomd --max-zip-size 2GiB archive.xlsx
+```
+
+### Exit Codes
+
+| Code | Meaning |
+|------|---------|
+| 0 | Success |
+| 1 | Conversion failure |
+| 2 | Invalid arguments |
+
+## Quick Start (Library)
+
+```rust
+use anytomd::{convert_file, convert_bytes, ConversionOptions};
+
+// Convert a file (format auto-detected from extension and magic bytes)
+let options = ConversionOptions::default();
+let result = convert_file("document.docx", &options).unwrap();
+println!("{}", result.markdown);
+
+// Convert raw bytes with an explicit format
+let csv_data = b"Name,Age\nAlice,30\nBob,25";
+let result = convert_bytes(csv_data, "csv", &options).unwrap();
+println!("{}", result.markdown);
+```
+
+### Plain Text Output
+
+Every conversion produces both Markdown and plain text output. The plain text is extracted directly from the source document — no post-processing or markdown stripping — so source characters like `**kwargs` or `# comment` are preserved exactly.
+
+```rust
+use anytomd::{convert_file, ConversionOptions};
+
+let result = convert_file("document.docx", &ConversionOptions::default()).unwrap();
+
+// Markdown output
+println!("{}", result.markdown);
+
+// Plain text output (no headings, bold, tables, code fences, etc.)
+println!("{}", result.plain_text);
+```
+
+### Extracting Embedded Images
+
+```rust
+use anytomd::{convert_file, ConversionOptions};
+
+let options = ConversionOptions {
+    extract_images: true,
+    ..Default::default()
+};
+let result = convert_file("presentation.pptx", &options).unwrap();
+
+for (filename, bytes) in &result.images {
+    std::fs::write(filename, bytes).unwrap();
+}
+```
+
+### Extracting Comments (DOCX / PPTX)
+
+Setting `extract_comments` appends a `# Comments` section to the end of the
+output (both Markdown and plain text). Each comment records the commenter, the
+comment body, and the source — the commented-on text for DOCX, or the slide
+label for PPTX (whose comments are anchored to a point, not a text span).
+Replies are flattened and marked `(reply)`; the flag is a no-op for other
+formats.
+
+```rust
+use anytomd::{convert_file, ConversionOptions};
+
+let options = ConversionOptions {
+    extract_comments: true,
+    ..Default::default()
+};
+let result = convert_file("document.docx", &options).unwrap();
+println!("{}", result.markdown);
+```
+
+Example appended section:
+
+```markdown
+# Comments
+
+## 1
+- **author**: Jane Smith (2024-01-15T09:30:00Z)
+- **comment**: Please revise this paragraph.
+- **source**: the quick brown fox
+```
+
+Notes:
+
+- **DOCX:** commenter identity comes from the comment author and date; the
+  source is the commented-on text (collapsed to one line, capped at 200
+  characters). Ranges in the body, headers, footers, footnotes, and endnotes
+  are all scanned. Threaded replies are detected via `commentsExtended.xml`.
+- **PPTX:** both the legacy (`commentAuthors.xml`) and modern
+  (`authors.xml` / threaded) comment schemes are supported. The source is the
+  slide label (e.g. `Slide 2: Quarterly Results`).
+
+### LLM-Based Image Descriptions
+
+anytomd can generate alt text for images using any LLM backend via the `ImageDescriber` trait. A built-in Google Gemini implementation is included.
+
+```rust
+use std::sync::Arc;
+use anytomd::{convert_file, ConversionOptions, ImageDescriber, ConvertError};
+use anytomd::gemini::GeminiDescriber;
+
+// Option 1: Use the built-in Gemini describer
+let describer = GeminiDescriber::from_env()  // reads GEMINI_API_KEY
+    .unwrap()
+    .with_model("gemini-3-flash-preview".to_string());
+
+let options = ConversionOptions {
+    image_describer: Some(Arc::new(describer)),
+    ..Default::default()
+};
+let result = convert_file("document.docx", &options).unwrap();
+// Images now have LLM-generated alt text: ![A chart showing quarterly revenue](chart.png)
+
+// Option 2: Implement your own describer for any backend
+struct MyDescriber;
+
+impl ImageDescriber for MyDescriber {
+    fn describe(
+        &self,
+        image_bytes: &[u8],
+        mime_type: &str,
+        prompt: &str,
+    ) -> Result<String, ConvertError> {
+        // Call your preferred LLM API here
+        Ok("description of the image".to_string())
+    }
+}
+```
+
+### Async Image Descriptions
+
+For documents with many images, the async API resolves all descriptions concurrently. Included by default since v0.11.0.
+
+```rust
+use std::sync::Arc;
+use anytomd::{convert_file_async, AsyncConversionOptions, AsyncImageDescriber, ConvertError};
+use anytomd::gemini::AsyncGeminiDescriber;
+
+#[tokio::main]
+async fn main() {
+    let describer = AsyncGeminiDescriber::from_env().unwrap();
+
+    let options = AsyncConversionOptions {
+        async_image_describer: Some(Arc::new(describer)),
+        ..Default::default()
+    };
+
+    let result = convert_file_async("presentation.pptx", &options).await.unwrap();
+    println!("{}", result.markdown);
+    // All images described concurrently — significant speedup for multi-image documents
+}
+```
+
+The library has no `tokio` dependency — the caller provides the async runtime. Any runtime (`tokio`, `async-std`, etc.) works.
+
+## API
+
+### `convert_file`
+
+```rust
+/// Convert a file at the given path to Markdown.
+/// Format is auto-detected from magic bytes and file extension.
+pub fn convert_file(
+    path: impl AsRef<Path>,
+    options: &ConversionOptions,
+) -> Result<ConversionResult, ConvertError>
+```
+
+### `convert_bytes`
+
+```rust
+/// Convert raw bytes to Markdown with an explicit format extension.
+pub fn convert_bytes(
+    data: &[u8],
+    extension: &str,
+    options: &ConversionOptions,
+) -> Result<ConversionResult, ConvertError>
+```
+
+### `convert_file_async`
+
+Included by default (requires the `async` feature if default features are disabled).
+
+```rust
+/// Convert a file at the given path to Markdown with async image description.
+/// If an async_image_describer is set, all image descriptions are resolved concurrently.
+pub async fn convert_file_async(
+    path: impl AsRef<Path>,
+    options: &AsyncConversionOptions,
+) -> Result<ConversionResult, ConvertError>
+```
+
+### `convert_bytes_async`
+
+Included by default (requires the `async` feature if default features are disabled).
+
+```rust
+/// Convert raw bytes to Markdown with async image description.
+pub async fn convert_bytes_async(
+    data: &[u8],
+    extension: &str,
+    options: &AsyncConversionOptions,
+) -> Result<ConversionResult, ConvertError>
+```
+
+### `ConversionOptions`
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `extract_images` | `bool` | `false` | Extract embedded images into `result.images` |
+| `extract_comments` | `bool` | `false` | Append a `# Comments` section (DOCX/PPTX only) |
+| `max_total_image_bytes` | `usize` | 50 MB | Hard cap for total extracted image bytes |
+| `max_input_bytes` | `usize` | 100 MB | Maximum input file size |
+| `max_uncompressed_zip_bytes` | `usize` | 500 MB | ZIP bomb guard |
+| `strict` | `bool` | `false` | Error on recoverable failures instead of warnings |
+| `image_describer` | `Option<Arc<dyn ImageDescriber>>` | `None` | LLM backend for image alt text generation |
+
+### `ConversionResult`
+
+```rust
+pub struct ConversionResult {
+    pub markdown: String,                  // The converted Markdown
+    pub plain_text: String,                // Plain text (extracted directly, no markdown syntax)
+    pub title: Option<String>,             // Document title, if detected
+    pub images: Vec<(String, Vec<u8>)>,    // Extracted images (filename, bytes)
+    pub warnings: Vec<ConversionWarning>,  // Recoverable issues encountered
+}
+```
+
+### Error Handling
+
+Conversion is **best-effort** by default. If a single element fails to parse (e.g., a corrupted table), it is skipped and a warning is added to `result.warnings`. The rest of the document is still converted.
+
+Set `strict: true` in `ConversionOptions` to turn recoverable failures into errors instead.
+
+Warning codes: `SkippedElement`, `UnsupportedFeature`, `ResourceLimitReached`, `MalformedSegment`.
+
+## Development
+
+### Build and Test
+
+```sh
+cargo build && cargo test && cargo clippy -- -D warnings
+```
+
+### Docker
+
+A Docker environment is available for reproducible Linux builds:
+
+```sh
+docker compose run --rm verify    # Full loop: fmt + clippy + test + release build
+docker compose run --rm test      # Run all tests
+docker compose run --rm lint      # clippy + fmt check
+docker compose run --rm shell     # Interactive bash
+```
+
+## License
+
+Apache-2.0

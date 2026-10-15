@@ -1,0 +1,129 @@
+# Strut
+
+[<img width="3024" height="1656" alt="CleanShot 2026-07-06 at 10 09 49@2x" src="https://github.com/user-attachments/assets/0da40e11-d44d-42fd-ad76-cdfe43749b12" />](https://strut.io/)
+
+An HTML5 GUI authoring tool for **spatial presentations** — build a deck of slides, place rich
+content on each, arrange the slides in 3-D space, and play the deck as a camera flight through that
+world (the impress.js model, made visual and editable).
+
+## Stack
+
+- **React 19** + **[TanStack Start](https://tanstack.com/start)** (file-based routing, SSR) on **Vite**.
+- **[Rindle](https://rindle.sh)** for the data layer (wired): SQL migrations as source of truth →
+  generated TypeScript schema → optimistic local store + live windowed queries + named mutators, with
+  a `rindled` daemon behind the app's own server routes. See `RINDLE_NOTES.md` for the write-up.
+- Plain CSS for the editor chrome (`src/strut.css`); Tailwind is available for one-offs.
+
+## Architecture
+
+- **Rindle fleet** — a `rindle-replicator` write-master + one `rindled` follower (which owns the
+  live-query WebSocket), fronted by a `rindle-dev-edge` ingress that serves control, reads and ws on a
+  single port. Shape comes from `rindle.ncl`; `rindle up`/`dev` render and supervise it. Local ports are
+  allocated per checkout (`~/.rindle/ports.json`) and rendered into `rindle.json`.
+- **API** — TanStack Start server routes (`src/routes/api.rindle.*`) host the stateless Rindle API
+  (`server/rindle-api.ts`): they validate args, run authoritative SQL mutators, and register the named
+  queries. Same-origin, no separate process. Image uploads (`server/upload.ts`) go to Cloudflare R2 —
+  a native bucket binding on Workers, the S3 API on other hosts, else a local dev fallback. Mirrors the
+  predicted client mutators in `shared/app-def.ts`.
+- **Browser client** (`src/rindle/*`) — the optimistic store (`@rindle/optimistic` + WASM), `useQuery`
+  live reads, and `app.mutate.*` writes, posting to `/api/rindle/*`. The live-query WebSocket connects
+  directly to the fleet ingress.
+
+Schema lives in `migrations/`; `shared/` holds the generated schema, query builder, named queries, and
+client mutators (imported by both browser and server). App code is in `src/` (`routes/`, `editor/`,
+`rindle/`).
+
+## Getting started
+
+The normal local run path is a single command:
+
+```bash
+pnpm install
+
+pnpm dev
+```
+
+Then open http://localhost:3000.
+
+`pnpm dev` is `rindle dev … -- pnpm dev:web`: the CLI owns the fleet for the lifetime of the web
+command, then hands it the connection bindings as env vars.
+
+- `rindle dev --migrate --gen shared/schema.ts --watch` — renders `rindle.ncl`, supervises the fleet,
+  applies migrations, regenerates `shared/schema.ts`, and keeps watching `migrations/`.
+- `vite dev --port 3000` — starts the TanStack Start app on http://localhost:3000. The Rindle API and
+  image upload endpoints are served by this same web process under `/api/rindle/*`; there is no
+  separate API server to start.
+
+Local state lives in `master.db` (the replicator's write-master), `follower-0.db`, and `.uploads/`. Image uploads work with no config by using the local
+fallback; copy `.env.example` to `.env` only if you want uploads stored in Cloudflare R2. `vite.config.ts`
+loads `.env` for server-side values during `vite dev`.
+
+If you need to run the processes separately:
+
+```bash
+pnpm daemon   # fleet + migration/schema watcher
+pnpm dev:web  # web app + same-origin API routes; expects the fleet to already be running
+```
+
+Both legs go through the fleet ingress, whose port is allocated per checkout. `rindle dev`/`exec`
+inject it (`RINDLE_URL`, and under `exec` also `RINDLE_DAEMON_URL`/`RINDLE_FLEET_WS`); run on its own,
+`pnpm dev:web` reads it from the `rindle.json` that `pnpm daemon` renders, the same way the `rindle` CLI
+finds a local target. There is no hardcoded localhost default. Override with `RINDLE_DAEMON_URL` for the
+server/API side, `RINDLE_DAEMON_WS` for the WS URL the server hands the browser (`/api/rindle/config`),
+or `VITE_RINDLE_WS` as a build-time client fallback. See `server/rindleEnv.ts`.
+
+Other scripts:
+
+```bash
+pnpm build            # production build (client + SSR + API routes); does not start the daemon
+pnpm preview          # preview the built app; expects a reachable daemon
+pnpm generate-routes  # regenerate src/routeTree.gen.ts
+pnpm setup            # one-shot migrate + schema regen against a running daemon
+pnpm test             # vitest
+pnpm lint             # eslint
+pnpm check            # prettier check
+```
+
+## Deploying to Cloudflare
+
+The web app (SSR + `/api/rindle/*` routes) deploys to **Cloudflare Workers**, with image uploads in
+**R2** via a native bucket binding. The `rindled` daemon can't run on Workers and must be hosted
+separately. `pnpm deploy` builds the Worker (`CF=1 vite build`) and ships it with `wrangler`. Local
+`pnpm dev`/`pnpm build` stay on Node and are unaffected. See **[`docs/DEPLOY_CLOUDFLARE.md`](docs/DEPLOY_CLOUDFLARE.md)**
+for the full guide (daemon hosting, R2 setup, secrets, deploy steps).
+
+## AI: who pays
+
+The ✨ features (Chat and everything it can do — author slides, arrange, restyle, edit) run on a model
+**the user supplies**: connect an [OpenRouter](https://openrouter.ai/keys) key once and AI turns on
+across the editor, on their credits, with no account required.
+
+That is the only inference path. Without a connected key, every ✨ route answers `402` and the editor
+shows a connect-a-model gate. Strut has no deployment-funded provider keys, AI quota ledger, generated-
+image backend, or speech-to-text backend to monitor. Image uploads and openly licensed image search remain.
+
+## Commercial / hosted (optional)
+
+Strut is fully open source and self-hostable for free. The **official hosted** Strut (marketing page +
+paid **Pro** accounts via Stripe) is a **private overlay** kept out of this repo and merged in only at
+deploy time — so a clone has **no billing, no marketing, and no paywall**, and behaves exactly as it does
+today. This follows the same opt-in posture as the analytics above.
+
+The repo ships the open-core **seam** (`#commercial`) that an overlay plugs into: the app _reads_ an
+entitlement (`server/entitlements.ts`) for hosted storage, private-deck, and white-label features, and
+_renders_ an optional Upgrade affordance — all inert without an overlay. `pnpm deploy` builds the free app on a single
+host; `pnpm deploy:pro` builds the app **plus** the overlay as one Worker (marketing on `strut.io`, the
+app on `strut.io/app`). See **[`docs/COMMERCIAL_OVERLAY.md`](docs/COMMERCIAL_OVERLAY.md)**.
+
+## Analytics
+
+Strut ships with **optional**, privacy-first product analytics via [Umami](https://umami.is) —
+cookieless, no personal data, no consent banner. It records only which features get used (slides
+generated, AI arrange applied, present started, exports, sign-ins) — never your deck content, prompts,
+or any PII.
+
+It is **off by default and off in every clone.** Nothing is collected and no script loads unless the
+build sets `VITE_UMAMI_SRC` (+ `VITE_UMAMI_ID`) — so cloning this repo phones home to no one. To enable
+it on your own deployment, set those two build-time vars (see [`.env.example`](.env.example)); point
+`VITE_UMAMI_SRC` at Umami Cloud or your own self-hosted instance. Implementation lives in
+[`src/lib/analytics.ts`](src/lib/analytics.ts).

@@ -1,0 +1,121 @@
+<h1 align="center">
+  React Presentation Maker
+</h1>
+
+---
+
+## Included Slide Components
+
+- `<Cover />` - A cover slide component with the title and subtitle
+- `<QuoteBlock />` - A component to show quote with author name
+- `<CodeBlock />` - A component to show some code
+- `<Points />` - A slide component for bullet points
+- `<Profile />` - A slide component for showing profiles of people
+- `<SingleImage />` - A slide component for showing single large image
+- `<MultiImage />` - A slide component for showing multiple images
+- `<About />` - A slide component to tell about yourself
+- `<End />` - An outro slide component with social links (pass `links` to customise, `{username}` is replaced)
+
+## Other Included Components
+
+- `<Wrapper></Wrapper>` - A wrapper components with appropriate spacing to wrap your slide/regular components
+
+## Controls
+
+| Key                    | Action              |
+| ---------------------- | ------------------- |
+| `→` / `D` / `PageDown` | Next slide          |
+| `←` / `A` / `PageUp`   | Previous slide      |
+| `Shift` + `F`          | Toggle fullscreen   |
+| `F`                    | Toggle footer       |
+| `C`                    | Toggle controls     |
+| `P`                    | Toggle page numbers |
+| `S`                    | Open presenter view |
+
+Swipe left/right to navigate on touch screens. The current slide is kept in the URL (`?slide=3`), so refreshing or sharing a link opens the same slide.
+
+## Adding Slides
+
+Slides are defined in `app/page.tsx`:
+
+```tsx
+const slides: Slide[] = [
+  {
+    id: "cover",
+    content: <Cover title="Welcome" />,
+    notes: "Speaker notes, shown in the presenter view",
+  },
+]
+```
+
+## Presenter View
+
+Press `S` to open the presenter view in a new window: a timer (`R` to reset), the current and next slide, and the speaker notes. Navigating in either window moves both.
+
+## Export to PDF
+
+Print the page (`Cmd`/`Ctrl` + `P`) and save as PDF. Each slide becomes its own 16:9 page.
+
+## Additional Packages Used
+
+- **Tailwind CSS** - for styling
+- **Motion(prev Framer Motion)** - for animations
+- **Akar Icons** - for icons
+
+## Available Scripts
+
+**Install Dependencies**
+
+```bash
+bun install
+```
+
+**Setup Pre-commit**
+
+```bash
+bun run prepare
+```
+
+**Start Development Server**
+
+```bash
+bun run dev
+```
+
+**Lint all the files**
+
+```bash
+bun run lint
+```
+
+**Format all files with oxfmt**
+
+```bash
+bun run format
+```
+
+**Run tests**
+
+```bash
+bun run test
+```
+
+**Check TypeScript issues**
+
+```bash
+bun run type-check
+```
+
+**Build for Production**
+
+```bash
+bun run build
+```
+
+**Start Production Server**
+
+```bash
+bun start
+```
+
+---

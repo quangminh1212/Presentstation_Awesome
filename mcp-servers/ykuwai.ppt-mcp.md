@@ -1,0 +1,377 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ykuwai/ppt-mcp/main/assets/ppt-mcp-logo-letter.png" alt="PowerPoint MCP" width="480">
+</p>
+
+<p align="center">
+  <a href="README_ja.md">日本語版はこちら</a>
+</p>
+
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg" alt="Python"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS-0078d4.svg" alt="Platform">
+  <a href="https://pepy.tech/projects/ppt-mcp"><img src="https://static.pepy.tech/personalized-badge/ppt-mcp?period=total&units=ABBREVIATION&left_color=BLACK&right_color=GREEN&left_text=downloads" alt="Downloads"></a>
+</p>
+
+<p align="center">
+  <strong>Real-time PowerPoint control on Windows and macOS —<br>an MCP server with 156 tools for AI agents and developers.</strong>
+</p>
+
+---
+
+An MCP (Model Context Protocol) server that gives AI agents full control over a live Microsoft PowerPoint instance, over COM on Windows and Apple Events on macOS. Unlike file-based libraries like python-pptx, this server interacts directly with a running PowerPoint application.
+
+## 🎬 Demo
+
+An agent building a deck in a live PowerPoint window (15x speed):
+
+https://github.com/user-attachments/assets/178b9b5b-624d-4de0-a1dd-619dc13d4bd7
+
+## ✨ Key Features
+
+- **Real-time control** — Directly manipulates a running PowerPoint instance; changes appear instantly on screen
+- **156 tools across 26 categories** — Slides, shapes, text, tables, charts, animations, SmartArt, media, freeform paths, and more
+- **Safe for AI agents** — `ppt_activate_presentation` locks all tools to a specific file, preventing accidental edits to the wrong presentation
+- **[Google Material Symbols](https://fonts.google.com/icons) icons** — Search 2,500+ icons by keyword and insert as SVG with theme colors
+- **Theme color awareness** — Use `accent1`, `accent2`, etc. instead of hardcoded RGB values
+- **Windows and macOS** — The same tools, arguments and return values on both; where PowerPoint for Mac cannot do something, the tool says so rather than quietly doing nothing
+
+## 📋 Requirements
+
+- Windows 11, or macOS with Apple Silicon or Intel
+- Microsoft PowerPoint
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+On macOS the server drives PowerPoint over Apple Events instead of COM. The
+first tool call raises the system's automation prompt, and PowerPoint has to be
+allowed there once. See [macOS support](#-macos-support) for what differs.
+
+## 🚀 Getting Started
+
+Standard config — works in Claude Desktop, Cursor, `.mcp.json`, and most other MCP clients:
+
+```json
+{
+  "mcpServers": {
+    "powerpoint": {
+      "command": "uvx",
+      "args": ["ppt-mcp"]
+    }
+  }
+}
+```
+
+### Claude Code
+
+**User-scoped** (available in all projects)
+```bash
+claude mcp add powerpoint uvx ppt-mcp
+```
+
+**Project-scoped** (stored in `.mcp.json`, shared with your team)
+```bash
+claude mcp add --scope project powerpoint uvx ppt-mcp
+```
+
+### Cursor
+
+[![Install in Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=ppt-mcp&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJwcHQtbWNwIl19)
+
+Or add manually to `~/.cursor/mcp.json` using the standard config above.
+
+### Claude Desktop
+
+Edit `%APPDATA%\Claude\claude_desktop_config.json` using the standard config above.
+
+### Codex
+
+Edit `~/.codex/config.toml`:
+
+```toml
+[mcp_servers.ppt-mcp]
+command = "uvx"
+args = ["ppt-mcp"]
+```
+
+Or use the standard JSON config above in `.codex/config.json`.
+
+### VS Code
+
+```bash
+code --add-mcp '{"name":"powerpoint","command":"uvx","args":["ppt-mcp"]}'
+```
+
+### From source
+
+```bash
+git clone https://github.com/ykuwai/ppt-mcp.git
+cd ppt-mcp
+uv sync
+```
+
+```json
+{
+  "mcpServers": {
+    "powerpoint": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "C:\\path\\to\\ppt-mcp",
+        "run",
+        "mcp",
+        "run",
+        "src/server.py"
+      ]
+    }
+  }
+}
+```
+
+## 🛠️ Tool Categories
+
+| Category | Tools | Description |
+|----------|------:|-------------|
+| **App** | 5 | Connect to PowerPoint, app info, active window, window state, list presentations |
+| **Presentation** | 8 | Create (with templates), open (a local file, or on Windows a SharePoint or OneDrive URL), save, close, info, activate target, list templates |
+| **Slides** | 10 | Add, delete (bulk), duplicate (positional/multi), move (bulk), copy (cross-presentation), list, info, notes, navigation |
+| **Shapes** | 10 | Add shapes/textboxes/pictures/lines (with z-order placement, including behind the text), list, info (position, fill, line, text frame), update (one shape, a set, or the whole slide, absolute or by offset), delete, z-order |
+| **Text** | 10 | Set text (whole frame, one span keeping its formatting, or as runs), get text (with measurement and overflow), format one span or many in a batch, paragraph format, bullets, find/replace (optionally inside groups), textframe, extract all text as Markdown, typography check |
+| **Placeholders** | 6 | List, get, set placeholder content |
+| **Formatting** | 3 | Fill, line, shadow (on the shape or on its text) |
+| **Tables** | 13 | Add tables, get/set cells, batch set data, merge/split cells, add/delete rows/columns, styles, layout, borders |
+| **Export** | 4 | PDF, images, slide preview, clipboard copy |
+| **Slideshow** | 6 | Start, stop, next, previous, go to slide, status |
+| **Charts** | 7 | Add charts, set/get data, format, format axis, series, change type |
+| **Animation** | 6 | Transitions, add/list/update/remove/clear animations (entrance, exit, emphasis, motion path, interactive sequences) |
+| **Themes** | 4 | Apply themes, get/set theme colors, headers/footers |
+| **Groups** | 3 | Group, ungroup, get group items |
+| **Connectors** | 2 | Add, format |
+| **Hyperlinks** | 3 | Add, get, remove |
+| **Sections** | 3 | Add, list, manage |
+| **Properties** | 2 | Set/get presentation metadata |
+| **Media** | 3 | Video, audio, media settings |
+| **SmartArt** | 3 | Add, modify, list layouts |
+| **Edit Operations** | 6 | Undo and redo (on the target presentation), copy shapes/formatting between slides |
+| **Layout** | 7 | Align, distribute, slide size, background, flip, merge shapes |
+| **Effects** | 3 | Glow and reflection (on the shape or on its text), soft edge |
+| **Comments** | 3 | Add, list, delete |
+| **Advanced** | 19 | Tags, fonts (set defaults + bulk replace), crop, picture format, shape export, visibility, selection, view, animation copy, picture from URL, SVG icons, icon search, aspect ratio lock, batch apply, default shape style |
+| **Freeform** | 7 | Build freeform paths, get/set node positions, insert/delete nodes, node editing type, segment type |
+| | **156** | |
+
+## 💡 Example Prompts
+
+Just describe what you want in plain language — no code required.
+
+---
+
+**Simple** — topic only
+
+> *"Create a 3-slide intro deck for a productivity app called Flowly."*
+
+<details>
+<summary>View slides</summary>
+<br>
+<img src="assets/examples/example1/Slide1.png" width="640">
+<img src="assets/examples/example1/Slide2.png" width="640">
+<img src="assets/examples/example1/Slide3.png" width="640">
+</details>
+
+---
+
+**With style direction** — topic + visual style
+
+> *"Make a 4-slide presentation on the benefits of async work. Dark navy style, add icons for each benefit."*
+
+<details>
+<summary>View slides</summary>
+<br>
+<img src="assets/examples/example2/Slide1.png" width="640">
+<img src="assets/examples/example2/Slide2.png" width="640">
+<img src="assets/examples/example2/Slide3.png" width="640">
+<img src="assets/examples/example2/Slide4.png" width="640">
+</details>
+
+---
+
+**Detailed** — topic + design intent + slide structure
+
+> *"Build a 5-slide pitch for an AI note-taking app called NoteAI. White background, teal accent. Slides: title, problem, solution, features with icons, closing."*
+
+<details>
+<summary>View slides</summary>
+<br>
+<img src="assets/examples/example3/Slide1.png" width="640">
+<img src="assets/examples/example3/Slide2.png" width="640">
+<img src="assets/examples/example3/Slide3.png" width="640">
+<img src="assets/examples/example3/Slide4.png" width="640">
+<img src="assets/examples/example3/Slide5.png" width="640">
+</details>
+
+---
+
+**Design keywords that elevate results:**
+
+| Aspect | Keywords / Phrases | What it does |
+|---|---|---|
+| **Icons** | `add icons` · `icon for each point` · `use icons throughout` | Searches Google Material Symbols and places crisp SVG icons automatically |
+| **Color scheme** | `dark navy` · `white background` · `monochrome` · `light gray` | Sets the overall color palette and mood |
+| **Accent color** | `teal accent` · `blue accent` · `brand color #2563EB` | Applies a specific highlight color to headings, icons, and shapes |
+| **Style tone** | `modern minimal` · `bold and vibrant` · `clean and professional` · `playful` | Signals the overall visual personality |
+| **Deck type** | `pitch deck` · `investor presentation` · `workshop slides` · `status report` | Guides layout and content density toward the intended purpose |
+| **Slide structure** | `Slides: title, problem, solution, features, CTA` · `4 slides` | Defines the narrative arc and slide count up front |
+| **Layout** | `card layout` · `two-column` · `centered` · `full-bleed background` | Shapes how content is arranged on each slide |
+| **Text density** | `minimal text` · `one message per slide` · `bullet points` | Controls how much text appears and how it's formatted |
+| **Backgrounds** | `gradient background` · `solid dark background` · `soft light background` | Specifies the background treatment across slides |
+| **Emphasis** | `highlight key numbers` · `bold headings` · `accent bar on each slide` | Draws attention to the most important information |
+
+## 🔍 Features in Detail
+
+### 🎯 Presentation Targeting
+
+`ppt_activate_presentation` sets a session-level target so every subsequent tool call operates on that specific file — regardless of which window is active in PowerPoint. Switch targets anytime by calling it again.
+
+```python
+ppt_activate_presentation(presentation_name="report.pptx")
+# All tools now operate on report.pptx
+ppt_activate_presentation(presentation_name="demo.pptx")
+# Switched — all tools now operate on demo.pptx
+```
+
+The activated presentation is one value for the whole server, and a client such as Claude Desktop routes every conversation through one server. When several conversations work on different files at once, pass `presentation` on each call. It applies to that call only, leaves the activated presentation alone, and accepts a full path, a file name, or a file name without extension. A file that is not open is an error, never a fallback to another one.
+
+```python
+ppt_add_textbox(params={...}, presentation="report.pptx")
+# Lands in report.pptx whatever another conversation has activated
+```
+
+### 📁 Template Support
+
+Auto-detects your personal PowerPoint templates folder (registry, OneDrive, or default paths). Use `ppt_list_templates` to discover available templates, then `ppt_create_presentation(template_path=...)` to create a new presentation from any template.
+
+### 🎨 Google Material Symbols Icons
+
+Search 2,500+ [Google Material Symbols](https://fonts.google.com/icons) icons with `ppt_search_icons(query="...")` and insert them as SVG with `ppt_add_svg_icon`:
+- **3 styles**: outlined, rounded, sharp
+- **Filled variants**: set `filled=True`
+- **Theme colors**: `color="accent1"` uses the presentation's accent color
+- **Auto-fit**: preserves aspect ratio within the specified area
+
+### ⚡ Real-Time Navigation
+
+Every write operation automatically navigates PowerPoint to the target slide. You see changes happening in real-time — no need to manually switch slides.
+
+### ✍️ Text Formatting
+
+- `\n` — Paragraph break (Enter). Each paragraph gets its own bullet/indent level.
+- `\v` — Line break (Shift+Enter). Stays in the same paragraph, preserving formatting.
+- Per-character formatting with `ppt_format_text_range`
+- Auto-fit control: shrink text to fit, resize shape, or overflow
+
+### 🎨 Theme Color Presets & Auto-Generation
+
+`ppt_set_theme_colors` supports three modes:
+- **17 curated presets** — WCAG AA accessible palettes across 5 categories: Classic (`corporate_blue`, `executive`, `consulting`), Design Systems (`tailwind`, `chakra`, `open_color`, `radix`), Nature (`ocean`, `forest`, `sunset`, `sage`), Modern (`nord_light`, `pastel_deep`, `swiss`), Vibrant (`vivid`, `rainbow`, `neon_safe`)
+- **Primary color generation** — provide a single brand color (`primary="#2B579A"`) to auto-generate a full harmonious palette using color harmony (split-complementary + analogous)
+- **Manual** — set individual color slots (`accent1`, `accent2`, etc.)
+
+Modes can be combined: use a preset as a base and override specific slots. All accents are guaranteed 3:1+ contrast on white.
+
+### 🔍 Typography Check
+
+`ppt_check_typography` detects and optionally auto-fixes common typography issues:
+- **Widow lines** — isolated 1-3 character lines caused by word wrapping
+- **Short lines after soft returns** — side effects of manual line breaks (`\v`)
+- **Auto-shrunk text** — text silently compressed by PowerPoint's shrink-to-fit feature
+
+Auto-fix strategies include widening text boxes and inserting soft returns.
+
+## ⚙️ Advanced Configuration
+
+### Handling PowerPoint Modal Dialogs
+
+When PowerPoint has a modal dialog open (e.g., SmartArt layout picker, Save dialog, Insert dialog), COM calls return `RPC_E_CALL_REJECTED`. The MCP server **automatically retries for up to 15 seconds** (5 retries × 3 s), so the server stays connected and responsive even when a dialog is blocking PowerPoint.
+
+**Auto-dismiss (opt-in):** By default, the server waits for you to close the dialog manually. To have the server automatically send ESC on the first retry — dismissing the dialog without user interaction — set `PPT_AUTO_DISMISS_DIALOG=true`:
+
+```json
+{
+  "mcpServers": {
+    "powerpoint": {
+      "command": "uvx",
+      "args": ["ppt-mcp"],
+      "env": {
+        "PPT_AUTO_DISMISS_DIALOG": "true"
+      }
+    }
+  }
+}
+```
+
+ESC cancels without committing, so there are no destructive side effects. This is particularly useful in automated workflows where no human is present to close dialogs.
+
+## 🍎 macOS support
+
+**12 tools refuse on macOS. The rest work.** The 12 are listed by name in
+[MACOS_PORT.md](MACOS_PORT.md) section 6.1, and a test keeps that list honest.
+
+The same tools, the same arguments, the same answers. What differs is what
+PowerPoint for Mac's scripting dictionary can reach, and where it cannot reach
+something the tool says so rather than doing something unexpected.
+
+Not available on macOS:
+
+- **SmartArt.** The dictionary has no class and no command for it, so it
+  cannot be created or edited from a script. An existing graphic is still an
+  ordinary shape and can be moved, resized, read and deleted.
+- **A freeform node's editing type.** Corner, smooth and symmetric are not
+  stored anywhere a script can reach; move the node's handles instead.
+- **Removing one animation.** Clearing a slide's animations works.
+- **Tags, `ppt_select_shapes`, `ppt_set_table_style` and `ppt_execute_mso`.**
+  Nothing in the dictionary reaches any of them.
+
+Smaller differences:
+
+- **Call the tools one after another, not several in the same turn.** Only one
+  request at a time reaches PowerPoint, so the rest queue behind it and come
+  out in whatever order they arrived. A call left waiting too long is taken
+  back and says so, having changed nothing.
+- A few tools accept an argument that has no counterpart, a screen tip on a
+  hyperlink for instance. Those refuse with a message naming the argument, so
+  dropping it and retrying works.
+- **Video and audio go in embedded, never linked**, and of the eight playback
+  settings only looping and hiding the frame exist. Hiding the frame is refused
+  on a slide that already has animations, because writing it rewrites them.
+- Exports are staged through PowerPoint's own container and moved out, because
+  the application is sandboxed and cannot write to arbitrary folders.
+- Slide images come from a PDF render rather than PNG export, which is sharper
+  than the Windows route.
+- Automation consent belongs to whichever application launched the server, so
+  running it from a different terminal or editor raises the prompt again.
+- Save the deck early and at each break. It costs nothing, and PowerPoint has
+  been seen to close every open document and then exit when a sandbox prompt
+  went up behind a script ([#191](https://github.com/ykuwai/ppt-mcp/issues/191)).
+- **Charts, freeform paths and grouping go through the clipboard**, which
+  means the operation takes it for a moment and puts back what was there. This
+  is how those three reach a dictionary that has no words for them.
+- **Editing an existing chart or path recreates the shape.** The chart data,
+  type, title, legend, axis and series tools, and the node tools, copy the
+  shape, rewrite it and paste it back, then delete the original. The name,
+  position and z order are kept; animations on the shape are not, and the
+  result says how many were lost. A few formatting arguments that depend on
+  the chart's rendered size (`chart_style`, legend and title coordinates,
+  the 8-direction legend presets, `tick_label_font_size`) are refused by name.
+- Icons are rasterised with `sips` before they are inserted, because
+  PowerPoint for Mac cannot read an SVG. That needs macOS 13 or newer; older
+  systems get a refusal naming the reason rather than a blank box.
+
+## 📄 License
+
+MIT
+
+## 🙏 Credits
+
+- [FastMCP](https://github.com/jlowin/fastmcp) — Pythonic MCP server framework
+- [pywin32](https://github.com/mhammond/pywin32) — Windows COM automation
+- [appscript](https://github.com/hhas/appscript) — macOS Apple Event bridge
+- [Model Context Protocol](https://modelcontextprotocol.io/) — by Anthropic

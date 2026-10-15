@@ -1,0 +1,468 @@
+# PyxTxt
+
+[![PyPI](https://img.shields.io/pypi/v/pyxtxt?label=PyPI&logo=pypi&logoColor=white)](https://pypi.org/project/pyxtxt/)
+[![Python](https://img.shields.io/pypi/pyversions/pyxtxt?label=Python&logo=python&logoColor=white)](https://pypi.org/project/pyxtxt/)
+[![CI](https://github.com/GiuseppeLeviBo/pyxtxt/actions/workflows/ci.yml/badge.svg)](https://github.com/GiuseppeLeviBo/pyxtxt/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**PyxTxt** is a small Python library that extracts plain text from many file formats through a single function, `xtxt()`.
+It detects the file type automatically (via `libmagic`) and dispatches to the right extractor. Extractors are optional:
+install only the ones you need.
+
+```python
+from pyxtxt import xtxt
+
+text = xtxt("report.pdf")
+```
+
+---
+
+## ✨ Features
+
+- **One function for everything**: `xtxt()` accepts a file path, a binary file object, an `io.BytesIO` buffer, raw `bytes` or a `requests.Response`
+- **Automatic type detection** with `python-magic`, refined by the file extension when libmagic is not specific enough (e.g. Markdown)
+- **Modular dependencies**: each format is an optional extra, the core only needs `python-magic`
+- **Office, web and document formats**: PDF, DOCX, PPTX, XLSX, XLS, ODT, HTML, XML, SVG, Markdown, EPUB, RTF, EML, MSG, LaTeX, DOC, TXT
+- **Audio and video transcription** with OpenAI Whisper
+- **OCR from images** with EasyOCR or with a local multimodal LLM through Ollama
+- **EXIF metadata** extraction from photos
+
+---
+
+## 📄 Supported formats
+
+| Format | Install extra | Notes |
+|---|---|---|
+| PDF | `pdf` | PyMuPDF |
+| DOCX | `docx` | Paragraphs and tables in document order, headers and footers |
+| PPTX | `presentation` | Text boxes, grouped shapes, tables and speaker notes |
+| XLSX, XLS | `spreadsheet` | Every row of every visible sheet, cells joined with ` \| ` |
+| ODT | `odf` | |
+| HTML | `html` | |
+| XML, SVG | `html` | Both use `lxml`, installed by the `html` extra |
+| Markdown | `markdown` | Detected by the `.md` / `.markdown` extension |
+| EPUB | `epub` | |
+| RTF | `rtf` | |
+| EML | `email` | Plain-text body, or the HTML body when there is no plain text; attachments are skipped |
+| MSG (Outlook) | `outlook` | Plain-text body, or the HTML body when there is no plain text |
+| LaTeX | `latex` | |
+| DOC (legacy Word) | — | Needs the `antiword` system tool |
+| TXT and other `text/*` | — | Always available, decoded as UTF-8 |
+| Audio and video | `audio` | Whisper, needs `ffmpeg`; heavy download. MP3, WAV, M4A, AAC, FLAC, OGG/Opus, AIFF, WMA, MP4, MOV, AVI, MKV, WebM |
+| Images (OCR) | `ocr` or `ocr-ollama` | See [OCR from images](#-ocr-from-images) |
+
+To list what is available in your installation:
+
+```python
+from pyxtxt import xtxt_available_formats
+
+print(xtxt_available_formats())             # MIME types
+print(xtxt_available_formats(pretty=True))  # Short names
+```
+
+The former name `extxt_available_formats()` still works.
+
+---
+
+## 📦 Installation
+
+PyxTxt requires Python 3.10 or newer.
+
+Install every extractor (this includes the heavy audio and OCR dependencies):
+
+```bash
+pip install "pyxtxt[all]"
+```
+
+or only the formats you need:
+
+```bash
+pip install "pyxtxt[pdf,docx,presentation,spreadsheet,html,markdown,epub,email]"
+```
+
+Heavy optional extras:
+
+```bash
+pip install "pyxtxt[audio]"       # Whisper transcription (~2 GB with models, pulls in PyTorch)
+pip install "pyxtxt[ocr]"         # EasyOCR (~1 GB with models, pulls in PyTorch)
+pip install "pyxtxt[ocr-ollama]"  # OCR through a local Ollama server
+```
+
+### System dependencies
+
+**libmagic** (required by `python-magic`):
+
+```bash
+sudo apt install libmagic1      # Ubuntu / Debian
+brew install libmagic           # macOS
+```
+
+On Windows the `python-magic-bin` package, which bundles libmagic, is installed automatically.
+
+**antiword** (only for legacy `.doc` files):
+
+```bash
+sudo apt install antiword       # Ubuntu / Debian
+brew install antiword           # macOS
+```
+
+**ffmpeg** (only for audio/video transcription):
+
+```bash
+sudo apt install ffmpeg         # Ubuntu / Debian
+brew install ffmpeg             # macOS
+# Windows: https://ffmpeg.org/download.html
+```
+
+---
+
+## 📚 Usage
+
+### Basic usage
+
+```python
+import io
+from pyxtxt import xtxt
+
+# From a file path
+text = xtxt("document.pdf")
+
+# From a file object opened in binary mode
+with open("document.docx", "rb") as f:
+    text = xtxt(f)
+
+# From an in-memory buffer
+buffer = io.BytesIO(docx_bytes)
+text = xtxt(buffer)
+
+# Give the buffer a name to help type detection (useful for Markdown, LaTeX, RTF)
+buffer = io.BytesIO(markdown_bytes)
+buffer.name = "notes.md"
+text = xtxt(buffer)
+```
+
+### Results and errors
+
+`xtxt()` returns the extracted text as a `str`, an empty string when the file contains no text, or `None` when the
+text cannot be extracted (unreadable or corrupted file, unsupported type, missing optional library, ...).
+
+To know *why* an extraction failed, ask for an exception instead of `None`:
+
+```python
+from pyxtxt import xtxt, ExtractionError, UnsupportedFormatError
+
+try:
+    text = xtxt("document.pdf", raise_errors=True)
+except UnsupportedFormatError as e:
+    print("Format not supported or extra not installed:", e)
+except ExtractionError as e:
+    print("Extraction failed:", e, "- caused by:", repr(e.__cause__))
+```
+
+`UnsupportedFormatError` is a subclass of `ExtractionError`; the original exception, when there is one, is available
+as `__cause__`. `xtxt_from_url()` accepts `raise_errors=True` as well.
+
+### Logging
+
+PyxTxt does not print anything while extracting: it reports what it does through the standard `logging` module,
+under the `pyxtxt` logger, and by default nothing is shown. (The only exception is a Python warning at import time if an
+installed extractor module is broken.) To see the messages:
+
+```python
+import logging
+
+logging.basicConfig(level=logging.INFO)                  # everything, INFO and above
+logging.getLogger("pyxtxt").setLevel(logging.WARNING)    # or only PyxTxt warnings and errors
+```
+
+Use `logging.DEBUG` for details such as the image preprocessing steps of the Ollama OCR.
+
+### Web content
+
+`xtxt_from_url()` and `requests.Response` support need the `requests` package (`pip install requests`).
+
+```python
+import requests
+from pyxtxt import xtxt, xtxt_from_url
+
+response = requests.get("https://example.com/document.pdf")
+text = xtxt(response.content)   # from bytes
+text = xtxt(response)           # from the Response object
+
+text = xtxt_from_url("https://example.com/document.pdf", timeout=10)
+```
+
+Extra keyword arguments of `xtxt_from_url()` are passed to `requests.get()`.
+
+Typical uses:
+
+```python
+# File uploads (Flask / Django)
+text = xtxt(request.files["document"].read())
+
+# Email attachments
+text = xtxt(attachment.get_payload(decode=True))
+```
+
+### Audio and video transcription
+
+```python
+from pyxtxt import xtxt
+
+text = xtxt("meeting_recording.mp3")
+text = xtxt("interview.wav")
+text = xtxt("presentation.mp4")   # the audio track is extracted automatically
+```
+
+The Whisper `base` model is downloaded on first use and cached for the following calls.
+
+### 🖼 OCR from images
+
+Two OCR back-ends are available. If both are installed, **Ollama takes precedence** for `xtxt()` on images.
+
+**EasyOCR** (`pip install "pyxtxt[ocr]"`) runs locally on CPU, recognising Italian and English:
+
+```python
+text = xtxt("scanned_document.png")
+```
+
+**Ollama** (`pip install "pyxtxt[ocr-ollama]"`) uses a multimodal LLM served by a local
+[Ollama](https://ollama.com) instance. Start the server and pull a model first (`ollama pull gemma3:4b`).
+
+```python
+from pyxtxt import (
+    xtxt, xtxt_image_describe,
+    set_ollama_model, set_ollama_config, get_ollama_config, reset_ollama_config,
+)
+
+set_ollama_model("gemma3:12b")   # default: gemma3:4b; also llava:7b, llava:13b, gemma3:27b
+
+set_ollama_config(
+    language="italian",       # language hint
+    caption_length="long",    # short, medium, long
+    style="detailed",         # descriptive, technical, simple, detailed
+    context="document",       # general, document, handwriting, technical, cookbook, ...
+    temperature=0.2,
+    max_tokens=2000,
+    auto_fallback=False,      # by default other models are tried when the result looks poor
+)
+
+text = xtxt("complex_document.png")                   # text only
+analysis = xtxt_image_describe("scientific_diagram.png")
+# TEXT: ...
+# DESCRIPTION: ...
+
+print(get_ollama_config())
+reset_ollama_config()
+```
+
+#### Confidence score
+
+```python
+from pyxtxt import xtxt_image_with_confidence, set_ollama_config
+
+set_ollama_config(confidence_threshold=0.8)
+text, confidence = xtxt_image_with_confidence("document.png", mode="ocr")
+```
+
+The score is a **heuristic** computed on the model's answer: it rewards structured text (numbers, punctuation) and
+penalises vague language and typical hallucination keywords (e.g. "ancient", "papyrus", "painting", "dragon").
+It is not a calibrated probability. In OCR mode, results below `confidence_threshold` (default 0.7) are discarded
+and an empty string is returned.
+
+#### Medical documents and X-ray images
+
+Two presets tune the Ollama OCR for the **text printed on medical documents and radiological images**: patient and
+exam identifiers, dates and times, L/R and positioning markers (AP, LAT, ...), measurement scales, hospital and
+equipment labels. Typical uses are cataloguing and indexing archives, or checking which personal data an image carries.
+
+```python
+from pyxtxt import xtxt, configure_for_xray_images, xtxt_xray_describe, reset_ollama_config
+
+configure_for_xray_images()        # or configure_for_medical_images() for reports, forms, scans
+text = xtxt("chest_xray.png")      # visible text only
+reset_ollama_config()
+
+# One call: X-ray preset + gemma3:27b, text and a generic description, then the previous settings are restored
+print(xtxt_xray_describe("chest_xray.png"))
+```
+
+The presets select dedicated prompts (`context="medical"` / `"xray"`), stronger contrast and sharpening, a higher
+resolution and stricter confidence thresholds. `xtxt_xray_describe()` was called `quick_xray_analysis()` in earlier
+versions; the old name still works.
+
+**Scope**: these functions *read text* and, in describe mode, give a *generic visual description*. They are based on
+a general-purpose language model, not on a medical device: they do **not** provide diagnoses or clinical
+interpretations (the prompts ask the model explicitly not to), and every result must be checked against the image.
+Medical images usually contain personal health data: Ollama runs locally, so images are not sent to external
+services, but the data protection rules that apply to your use case still apply.
+
+### EXIF metadata
+
+Requires Pillow (installed by the `ocr` or `ocr-ollama` extras, or `pip install pillow`).
+
+```python
+from pyxtxt import xtxt_exif
+
+print(xtxt_exif("vacation_photo.jpg"))
+# Camera make/model, shooting settings, date/time, GPS coordinates, image size...
+```
+
+### More examples
+
+An examples script is installed with the package:
+
+```bash
+python -m pyxtxt.examples
+```
+
+or, to read its source:
+
+```python
+from importlib.resources import files
+print((files("pyxtxt") / "examples.py").read_text())
+```
+
+---
+
+## ⚠️ Known limitations
+
+- **Supported inputs**: file paths, binary file objects, `io.BytesIO`, `bytes` and `requests.Response`.
+  File objects opened in text mode are rejected: open them with `"rb"`.
+- **Type detection without a file name**: libmagic cannot tell apart some formats from raw bytes (legacy Office files
+  share the same signature; Markdown looks like plain text). Pass a file path, or set `buffer.name`, when possible.
+- **Legacy PowerPoint (`.ppt`)** is not supported.
+- **DOCX**: text boxes, footnotes and comments are not extracted. **PPTX**: text inside charts is not extracted.
+
+### 🤖 AI-powered features
+
+OCR through Ollama and Whisper transcription rely on machine-learning models and can produce **hallucinations**
+(text or content that is not there), misinterpretations and language errors. Results vary between models and versions.
+
+**Do not use them for critical applications** — medical diagnosis or medical image interpretation, legal or financial
+documents where errors matter, safety systems — without human verification. Validate the results against the source,
+use the confidence score as a hint only, and keep a traditional OCR (EasyOCR) as a cross-check when accuracy matters.
+
+---
+
+## 🛠 Development
+
+```bash
+git clone https://github.com/GiuseppeLeviBo/pyxtxt
+cd pyxtxt
+python -m venv .venv && source .venv/bin/activate
+pip install -e ".[pdf,docx,presentation,spreadsheet,odf,html,markdown,epub,rtf,email,latex]" pytest
+pytest
+```
+
+Tests for formats whose libraries are not installed are skipped. CI runs the test suite on Python 3.10–3.14.
+
+### Releasing
+
+Releases are published to PyPI by GitHub Actions (`.github/workflows/publish.yml`) through
+[Trusted Publishing](https://docs.pypi.org/trusted-publishers/), so no API token is needed:
+
+1. Update `version` in `pyproject.toml` and the changelog below; merge to `main`.
+2. Tag and push: `git tag v0.3.6 && git push origin v0.3.6`.
+
+The workflow checks that the tag matches the version, builds sdist and wheel, and uploads them.
+
+One-time setup: on PyPI, open the project's *Settings → Publishing* and add a
+GitHub publisher with owner `GiuseppeLeviBo`, repository `pyxtxt`, workflow `publish.yml` and environment `pypi`.
+
+---
+
+## 🔒 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE).
+
+## 🤝 Contributing
+
+Pull requests, issues and feedback are welcome.
+
+- **Bug reports**: include a sample file (or how to create one) and the full error message
+- **Feature requests**: describe your use case and the expected behaviour
+- **Code**: follow the existing patterns and add a test in `tests/`
+
+---
+
+## 📊 Changelog
+
+### v0.3.10
+- **DOCS**: scope of the medical and X-ray presets clarified in docstrings and README (text reading, not diagnosis)
+- **NEW**: `xtxt_xray_describe()`, the clearer name of `quick_xray_analysis()`, which is kept as an alias
+- **CHANGED**: in describe mode, the `medical` and `xray` prompts ask the model not to give diagnoses or clinical
+  interpretations
+- **CHANGED**: new badge URLs, so that cached images of old versions are not shown
+
+### v0.3.9
+- **NEW**: `xtxt(..., raise_errors=True)` raises `ExtractionError` (or `UnsupportedFormatError`) instead of returning
+  `None`, with the original exception as `__cause__`; also available in `xtxt_from_url()`
+- **CHANGED**: messages go through the `logging` module (`pyxtxt` logger) instead of being printed; nothing is shown
+  unless the application configures logging
+- **CHANGED**: `xtxt()` returns `None` for every failure and `""` only when the file has no text (some extractors used
+  to return `""` on errors, e.g. corrupted DOCX/XLSX, or an unreachable Ollama server)
+- **NEW**: `xtxt_available_formats()`, the former `extxt_available_formats()` is kept as an alias
+- **FIXED**: EML messages with both a plain-text and an HTML version returned the text twice; attachments are no
+  longer mixed into the body; `.eml` files are recognised even when libmagic sees them as plain text
+
+### v0.3.8
+- **NEW**: `xtxt()` accepts binary file objects, e.g. `xtxt(open("file.pdf", "rb"))`
+- **FIXED**: XLSX passed as `bytes` or `BytesIO` was detected as a ZIP archive and rejected
+- **FIXED**: WAV, M4A, AAC, AIFF, WMA and MKV files were never transcribed (libmagic reports them as `audio/x-wav`,
+  `audio/x-m4a`, `video/x-matroska`, ... which were not registered)
+- **FIXED**: MSG extraction always failed (`extract_msg.Message` has no `extract()` method)
+- **FIXED**: SVG extraction failed on `<text>` elements containing `<tspan>`
+- **IMPROVED**: DOCX now includes tables (in document order), headers and footers
+- **IMPROVED**: PPTX now includes grouped shapes, tables and speaker notes
+- **IMPROVED**: ODT now includes headings and text inside spans, links and lists
+- **IMPROVED**: EXIF output formats aperture, shutter speed and focal length as intended and reads PNG/WebP metadata
+  through Pillow's public API; the fake `image/*+exif` MIME types are gone from `extxt_available_formats()`
+- **IMPROVED**: Whisper temporary files are always deleted, also when transcription fails
+- **IMPROVED**: Ollama OCR stops trying fallback models when the server is not reachable;
+  `xtxt_image_with_confidence()` now uses the same context-aware prompts as `xtxt()`;
+  hallucination keywords match whole words (e.g. "roman" no longer fires on "romance")
+
+### v0.3.7
+- Python 3.10 or newer is now required; metadata no longer lists the end-of-life versions 3.7–3.9, which were never tested
+- Python 3.14 is tested in CI and declared as supported
+
+### v0.3.6
+- **FIXED**: `import pyxtxt` crashed with `AttributeError` unless both `ollama` and Pillow were installed (regression in 0.3.4.2 and 0.3.5)
+- **FIXED**: Markdown, RTF and LaTeX files were returned as raw source instead of being converted to text
+- **FIXED**: a failed extraction (e.g. a corrupted PDF) returned the string `"None"` instead of `None`
+- **FIXED**: XLSX and XLS files were silently truncated to 200 and 100 rows per sheet; all rows are now extracted
+  (`max_rows_per_sheet` is still available when calling the extractors directly)
+- **FIXED**: when both EasyOCR and Ollama were installed, the OCR back-end used for images was random; Ollama now always takes precedence
+- **FIXED**: a single extractor failing to load no longer prevents the whole package from importing
+- **FIXED**: `BytesIO` buffers keep their `name`, which is now used to refine type detection
+- PyMuPDF is imported as `pymupdf`, removing the deprecation warning printed at every import
+- Added the missing `LICENSE` file, SPDX license metadata and project URLs
+- Removed the obsolete `pyxtxt/pyxtxt.py` module
+- Added a test suite and GitHub Actions workflows for CI and PyPI publishing
+
+### v0.3.0 – v0.3.5
+- **NEW**: OCR through Ollama multimodal models (`set_ollama_model`, `xtxt_image_describe`) — 0.3.0
+- **NEW**: `set_ollama_config()`, `get_ollama_config()`, `reset_ollama_config()` — 0.3.2
+- **NEW**: confidence score and hallucination detection (`xtxt_image_with_confidence`) — 0.3.4
+- **NEW**: image enhancement before OCR, automatic model fallback, context presets — 0.3.4.2
+- **NEW**: EXIF metadata extraction (`xtxt_exif`) — 0.3.5
+
+### v0.2.4
+- **NEW**: video transcription support (MP4, MOV, AVI, WebM, MKV) via Whisper
+
+### v0.2.3
+- **NEW**: audio transcription (MP3, WAV, M4A, FLAC, ...) with Whisper
+- **NEW**: OCR from images (JPEG, PNG, TIFF, BMP, WebP) with EasyOCR
+- **NEW**: `audio`, `ocr` and `all` installation extras
+
+### v0.2.0 – v0.2.2
+- **NEW**: automatic extractor registration
+- **NEW**: Markdown, EPUB, RTF, EML, MSG and LaTeX extractors
+
+### v0.1.24
+- **NEW**: support for `bytes` and `requests.Response` inputs, `xtxt_from_url()` helper
+
+### v0.1.0 – v0.1.23
+- Initial releases: modular extractors for PDF, DOCX, PPTX, XLSX, ODT, HTML, XML, TXT and legacy Office files,
+  MIME detection with python-magic, `BytesIO` support

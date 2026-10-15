@@ -1,0 +1,275 @@
+= README
+:toc:
+:toclevels: 2
+:sectnums:
+
+This is a live documentation generation stack, used for some Zenika training material. It is based on Asciidoc and/or Markdown. It is a mono-repository including both framework and documents.
+
+0% knownledge in HTML/CSS/JS is required to produce/update a document, and still being able to include advanced capabilities. Guides are provided, see hosted content above.
+
+== What
+
+=== Preview
+
+link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/syntax-quick-reference.htm#/[Basic Asciidoc syntax] and link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/[Advanced Reveal.js capabilities] generated examples are hosted on GitLab pages.
+
+[cols="a,a", frame=none, grid=none]
+|===
+| Light theme slides
+| Dark theme slides
+| image::preview-light.jpg[link="https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/syntax-quick-reference.htm#/"]
+| image::preview-dark.jpg[link="https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/"]
+| Plain HTML
+| PDF
+| image::preview-html.jpg[link="https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.html"]
+| image::preview-pdf.jpg[link="https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.pdf"]
+|===
+
+=== Features
+
+==== Documentation features
+
+* Generate link:https://revealjs.com/[reveal.js], HTML and PDF documents from the same source without much care of the output type as a writer
+* All link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[features of Asciidoc] implemented by Asciidoctor and transposed to hosted link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/syntax-quick-reference.htm#/[Reveal.js presentations] containing associated HTML and PDF links
+* All link:https://docs.asciidoctor.org/reveal.js-converter/latest/converter/features/[features of Asciidoctor-reveal] which implements most features of link:https://revealjs.com/[reveal.js], especially link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/step-by-step-full-page-default-behavior[step-by-step code highlighting]
+* Basic link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/#markdown-compatibility[Markdown features]
+* All link:https://docs.asciidoctor.org/pdf-converter/latest/[features of Asciidoctor-pdf]
+* All useful link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/reveal-js-plugins[reveal.js plugins] known to date (please contribute or advise if a key plugin is missing)
+* Some C3JS (D3JS) link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.html#chart-as-code[chart-as-code] addons (for Reveal.js & HTML only) for dynamic and interactive charts
+* PlantUML diagrams with link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/use-case-diagram[custom colors]
+* Other link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/table-of-contents["as-code" addons] oriented toward Reveal.js presentations
+* Reveal.js themes are designed to be able to display any content (when reasonable sections size)
+* There are link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/syntax-quick-reference.htm[light] and link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm[dark] Reveal.js themes switchable in-presentation with no awareness needed while writing documentation. All colors are designed to fit both, especially link:https://bcouetil.gitlab.io/asciidoc-stack/main/guides/guides/reveal-my-asciidoc.htm#/use-case-diagram[PlantUML colors]
+
+==== Generation features
+
+* Support for Linux, MacOS and Windows
+* There is a single link:./generate.sh[generate.sh script] to generate everything
+* Generation uses Docker and is based on link:https://hub.docker.com/r/asciidoctor/docker-asciidoctor/dockerfile[docker-asciidoctor image]. A link:https://hub.docker.com/r/bcouetil/docker-asciidoctor[slightly modified version], to have an edge version of link:https://github.com/asciidoctor/asciidoctor-reveal.js[asciidoctor-reveal]
+* The script provides a way to live-reload generated content on modifications
+* Using GitLab pipelines, result is generated and hosted on GitLab pages per branch using the GitLab cache mechanism
+
+==== Organisation features
+
+* Documents and framework are united in a mono-repo
+* Documents are in folders under a category for better segregation of subjects
+
+== How
+
+=== How do I generate documents ?
+
+You can use `generate.sh` on Linux & MacOS (M1 supported). It also works on Windows link:README.adoc[using specific instructions for Git bash].
+
+[source,shell]
+----
+./generate.sh [all|<category/subject>] [all|html|reveal|pdf|zip] [live]
+----
+
+* Optional parameter 1 is the documents scope of the generation
+** `all` to generate all documents
+** `<category/subject>` is a 2 folders deep path to documents (all documents must match this layout)
+* Optional parameter 2 is the type of document
+** `reveal`, `html`, `pdf`, `zip` or `all`
+* Optional parameter 3 is `live` for link:[live-reload] in your favorite web browser
+
+.Examples
+[source,shell]
+----
+# generate html version of devops/kubernetes-user documents
+./generate.sh devops/kubernetes-user html
+
+# generate everything for every documents
+./generate.sh
+# equivalent to
+./generate.sh all all
+----
+
+Slides, HTML and PDF are generated in `build-docs` folder. Target folder is cleaned each time to ensure update of generated content.
+
+NOTE: This script is also used by CI
+
+==== Live reload
+
+===== Debian/Ubuntu
+
+`generate.sh` provides a live reload solution based on `inotifywait` on Unix environment:
+
+* Install `inotify-tools`
+
+[source,shell]
+sudo apt-get install inotify-tools
+
+* Generate at least once for the server to have files to serve
+
+[source,shell]
+----
+./generate.sh devops/kubernetes-user reveal
+----
+
+* Start a http server
+
+[source,shell]
+cd build-docs
+python3 -m http.server
+
+* In another terminal, launch live reload mode
+
+[source,shell]
+----
+./generate.sh devops/kubernetes-user reveal live
+----
+
+You can now browse files from local server, for example http://localhost:8000/kubernetes-user.htm. Files are automatically refreshed in your browser, thanks to a JS script included in generated HTML.
+
+NOTE: No Asciidoc built-in live reload for now, link:https://asciidoctor.org/docs/editing-asciidoc-with-live-preview/[documentation present some alternatives] but not for Reveal.js.  Some other solutions involve VS Code extensions or Ruby in an link:https://github.com/asciidoctor/asciidoctor-reveal.js/issues/248[open issue].
+
+===== MS Windows
+
+You can simulate a basic continuous regeneration every 5 seconds with this code running under any windows console (Windows or Windows+R and then type “cmd” and validate)
+
+[source,shell]
+----
+for /l %g in () do @(<ANY COMMAND> & timeout /t 5)
+
+# In our case : 
+for /l %g in () do @(generate agile\kanban-1j reveal & timeout /t 5)
+----
+
+===== MacOS
+
+Not yet supported, MR are welcome 🤓
+
+=== How do I migrate from existing Markdown documents ?
+
+This stack is more for new documents for people preferring Asciidoc. But an actual Markdown document can be migrated pretty fast.
+
+TIP: For small text blocks there are online translation tools such as https://markdown2asciidoc.com/
+
+==== Pre-requisite
+
+Careful with `|` often not handled correctly if not in tables. Modify them first.
+
+Ex: `Pull|Merge` changed to `Pull/Merge`
+
+==== .md to .adoc automatically
+
+Use preferably Kramdoc.
+
+Although `pandoc` can link:https://matthewsetter.com/convert-markdown-to-asciidoc-withpandoc/[also be used], `kramdoc` gives link:https://matthewsetter.com/convert-markdown-to-asciidoc-with-kramdown-asciidoc/[better results].
+
+.Install Ruby and Kramdoc
+[source, shell]
+sudo apt-get install ruby-full rename
+sudo gem install kramdown-asciidoc
+
+.Launch on a file
+[source, shell]
+kramdoc --output=getting-started.adoc --imagesdir=ressources --lazy-ids --heading-offset=1 --wrap=ventilate getting-started.md
+
+.Launch on a folder
+[source, shell]
+find ./ -name "*.md" -type f -exec sh -c 'kramdoc --imagesdir=ressources --lazy-ids --heading-offset=1 --wrap=ventilate --output=_includes/{}.adoc {}' \;
+
+.Rename files
+[source, shell]
+find _includes -type f -name "*.adoc" -exec rename s/".md"/""/g {} \;
+
+==== Post-processing for Zenika trainings migration
+
+* Delete agenda if any (use Table of Content, see examples)
+
+* Replace in every .adoc files (VS Code regex style)
+
+[cols="^,<3,<3",options="header"]
+|===
+
+| regex | from | to
+
+| yes | `// .slide: class=".*"\n` | <delete>
+
+| no | `{plus}{plus}{plus}</figure>{plus}{plus}{plus}` | <delete>
+
+| no | `{plus}{plus}{plus}<div class="pb">{plus}{plus}{plus}{plus}{plus}{plus}</div>{plus}{plus}{plus}` | <delete>
+
+| yes | `+\{blank\}( \+ )*( \+)( )*+` | <delete>
+
+| yes | `^( )*\.\.\.$` | <delete>
+
+| yes | `,[0-9]+%` | <delete>
+
+| yes | `+Notes :\r?\n((\r?\n(?!=).*)*)+` | `+ifdef::backend-revealjs[]\n[.notes]\n****$1\n****\nendif::backend-revealjs[]\n+`
+
+| yes | `+^(=== .*)\n\n// .slide: id="(.*)"+` | `[#$2]\n$1`
+
+| yes | `+\+\+\+<figure>\+\+\++` | `+\n\n+`
+
+| yes | `<</([a-z])` | `<<$1`
+
+| no | `{nbsp}{nbsp}{plus}{nbsp}{nbsp}{plus}` | `.`
+
+| no | `__` | `➡`
+
+| no | `➡➡` | `+____+`
+
+| no | `[.fa.fa-info-circle]##` | `NOTE:`
+
+// TODO : say only in _slides/*
+| no | `=== TP` | `[.lab]\n=== TP`
+
+|===
+
+* Update links to chapters from numbers to cross references
+
+== Why
+
+=== Why Asciidoc over Markdown ?
+
+TLDR; standard Markdown is too poor as a lightweight markup language, and needs too many addons and custom development to fit HTML, Reveal.js and PDF.
+
+Some elaborated articles :
+
+* link:https://docs.asciidoctor.org/asciidoc/latest/asciidoc-vs-markdown/[Compare AsciiDoc to Markdown]
+* link:https://docs-as-co.de/news/why-asciidoc/[Why you should use AsciiDoc to document your Software Solution]
+* link:https://opensource.com/article/22/8/drop-markdown-asciidoc[Try AsciiDoc instead of Markdown]
+* link:https://blog.miguelcoba.com/asciidoc-is-the-better-markdown[AsciiDoc is the better Markdown]
+* link:https://www.makeuseof.com/tag/compare-markup-language-asciidoc-markdown/[Lightweight Markup Languages: This Is Why You Should Use AsciiDoc Over Regular Markdown]
+
+The current stack has been gathered and maintained by a single person in his spare time. Almost no development needed. this is hardly possible on markdown stacks with the same features coverage.
+
+=== Why a Mono-repo ?
+
+* Simplicity : To ease core modifications and generation in a single MR
+* Modularity : To allow include in documents from one to another
+
+=== Why do Reveal.js themes all look pretty much the same ?
+
+There is no particular reason.
+
+You don't like the result ? It's perfectly fine. You can change basic things like slide transition and background in-presentation. But, most important, you can contribute with any Reveal.js CSS you find/produce that fits your presentation style, just add it in the appropriate folder and import it at the beginning of your presentation.
+
+Here is a list of nice Asciidoc-based Reveal.js slide decks, for inspiration :
+
+* https://slides.codefx.org (monorepo : https://github.com/CodeFX-org/slides)
+
+== License
+This project is licensed under the MIT License. See the link:LICENSE.adoc[LICENSE.adoc] file for details.
+
+////
+
+Pour remplacer partout des blocs shells par des blocs monospace sous vscode
+
+ifdef::solutions\[\]\n*
+\[(source)?,shell\]
+----
+(((\n?)(?!^----).*)*)
+----
+
+par
+
+ifdef::solutions[]
+.solutions
+....
+$2
+....
+
+////

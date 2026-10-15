@@ -1,0 +1,897 @@
+<div align="center">
+
+# Microsoft 365 MCP Server
+
+**Bring your Microsoft 365 life into any AI assistant.**
+
+Mail · Calendar · Contacts · OneDrive · SharePoint · Teams · To Do · Planner · OneNote · Excel · Word · PowerPoint — all behind a single [Model Context Protocol](https://modelcontextprotocol.io) server.
+
+[![Status: alpha](https://img.shields.io/badge/status-alpha-orange?style=flat-square)](#status--whats-tested)
+[![CI](https://img.shields.io/github/actions/workflow/status/lucasgfsvd/microsoft365-mcp-server/ci.yml?branch=main&style=flat-square)](https://github.com/lucasgfsvd/microsoft365-mcp-server/actions)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
+[![MCP](https://img.shields.io/badge/MCP-compatible-7B3FE4?style=flat-square)](https://modelcontextprotocol.io)
+[![Maintenance: none](https://img.shields.io/badge/maintenance-none-lightgrey?style=flat-square)](#maintenance-status)
+
+</div>
+
+> ### Maintenance status
+>
+> **Published once, then left as-is.** The last planned features are in (see the [roadmap](./docs/roadmap.md)); `0.1.0` is published to npm next, and after that the project is **not actively maintained**: no planned releases, no support, no promise of security fixes, and issues or pull requests may go unanswered. It holds access to your Microsoft 365 account, so read the code before relying on it, pin the version, and fork freely: it is MIT-licensed.
+
+---
+
+## Why this exists
+
+- **One M365 surface for every MCP client.** Works out of the box with Claude Desktop, Cursor, Continue, Cline, Zed — anything that speaks MCP.
+- **Safe by default.** All mutating tools (send mail, delete files, post to Teams) are **disabled** until you explicitly opt in. No surprise emails.
+- **Individuals _and_ tenants.** Personal Microsoft accounts use a zero-config **device code** login. Companies can run it unattended with **client credentials** and admin consent.
+- **Deep Office editing.** Not just Graph wrappers — edit real `.docx` and `.pptx` files in-place via OOXML, not just upload/download.
+
+---
+
+## Features
+
+| Surface | Read | Write | Highlights |
+|---|:---:|:---:|---|
+| 📧 **Mail** (Outlook) | ✅ | ✅ | List and search, read attachments (documents and PDFs as text, images as images), send with attachments, reply, forward, drafts, file and flag, out-of-office |
+| 📅 **Calendar** | ✅ | ✅ | Accept/decline invitations, cancel meetings, recurring events, rooms, `findMeetingTimes`, free/busy, online meetings |
+| 👥 **Contacts & People** | ✅ | ✅ | Personal contacts, directory search, managers and reports, profiles, presence |
+| 📁 **Files** (OneDrive + SharePoint) | ✅ | ✅ | Navigation, search, recent files, up/download, move/rename, PDF export, sharing and access, SharePoint lists |
+| 💬 **Teams** | ✅ | ✅ | Channels, chats, posts and replies with @mentions, direct messages, editing your messages |
+| ✅ **Tasks** (To Do + Planner) | ✅ | ✅ | Tasks, updates, steps and checklists, buckets, assignments by email |
+| 📓 **OneNote** | ✅ | ✅ | Notebooks, sections, pages, appending to a page |
+| 📊 **Excel** | ✅ | ✅ | Create workbooks (from scratch or **from templates**), add/rename/delete sheets, tables, ranges, formulas, recalculation |
+| 📝 **Word** | ✅ | ✅ | Create documents (from scratch or **from templates** with placeholder fill-in), append headings/bullets/paragraphs, insert at index, find-and-replace |
+| 🎞️ **PowerPoint** | ✅ | ✅ | Create decks (from scratch or **from templates** with placeholder fill-in + extra slides), append/delete slides, find-and-replace across slides |
+
+139 tools total. The full reference is in [docs/tools.md](./docs/tools.md).
+
+---
+
+## Status — what's tested
+
+This is an **early alpha**. Please calibrate expectations before depending on it:
+
+- **Exercised against a real Microsoft 365 business tenant: all 102 tools of the first round, and most of the newer ones; the roadmap lists the few still pending.** Each call's result was checked, not just accepted, and Word, PowerPoint and Excel files edited in place were also opened with independent parsers (python-docx, python-pptx, openpyxl). The live scripts are in [`scripts/live/`](./scripts/live/). Teams channel posts and Planner tasks were tested in a private sandbox team with no other members.
+- **Unit tested:** 182 tests, including the SDK's real retry middleware under nock. CI runs lint, typecheck, tests with coverage, a production `npm audit`, a secret scan, and builds *and starts* the Docker image.
+- **Not published yet.** `0.1.0` goes to npm as `@microsoft365-mcp/server` once the [roadmap](./docs/roadmap.md)'s remaining features are in; it will be the only planned release, built in CI with npm provenance. No Docker image is published; build it from the `Dockerfile`.
+
+No further releases are planned (see [Maintenance status](#maintenance-status)). Documents with layouts the tests did not cover can still trip the OOXML editing; if a file comes out wrong, the cause is usually visible by unzipping it and reading the XML the tool wrote.
+
+---
+
+## Quickstart — from a local build
+
+Until `0.1.0` is on npm, this is how to run it: clone and build, which takes about 90 seconds. Once it is published, the [`npx` quickstart](#quickstart--via-npx) below needs neither.
+
+```bash
+git clone https://github.com/lucasgfsvd/microsoft365-mcp-server
+cd microsoft365-mcp-server
+npm install
+npm run build          # produces dist/index.js
+```
+
+Then add this to your MCP client config (Claude Desktop example — see [per-OS paths](#operating-system-config-paths) further down):
+
+```json
+{
+  "mcpServers": {
+    "microsoft365": {
+      "command": "node",
+      "args": ["/absolute/path/to/microsoft365-mcp-server/dist/index.js"],
+      "env": {
+        "MCP_AUTH_MODE": "device-code"
+      }
+    }
+  }
+}
+```
+
+On **Windows**, give the full path to `node.exe` and escape backslashes (`\\`) — Claude Desktop inherits the system PATH, not your shell's, and doesn't parse `~`/`$HOME`:
+
+```json
+{
+  "mcpServers": {
+    "microsoft365": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": ["C:\\path\\to\\microsoft365-mcp-server\\dist\\index.js"],
+      "env": {
+        "MCP_AUTH_MODE": "device-code"
+      }
+    }
+  }
+}
+```
+
+Fully quit and reopen Claude Desktop (tray icon → *Quit* — closing the window alone does not reload the config).
+
+The server starts **signed out and silent** — it will not prompt you on launch. When you're ready, call the **`auth_sign_in`** tool: it returns a URL and device code immediately. Enter them in a browser, then call **`auth_status`** to confirm. Any Graph tool called while signed out fails fast with the same instruction rather than hanging.
+
+Tokens are cached under `~/.microsoft365-mcp/` (OS keychain where available, `chmod 600` file otherwise) alongside an `authrecord.json` identifying the account, so later starts authenticate silently and you only sign in once.
+
+> **Writes are disabled by default.** To allow sending mail, creating events, posting to Teams, etc. add `"MCP_ENABLE_WRITES": "true"` to the `env` block above — or scope it: `"MCP_ENABLE_MAIL_WRITE": "true"`.
+
+---
+
+## Quickstart — via `npx`
+
+> 🚧 **Not published yet.** This works once `0.1.0` is on npm, after the [roadmap](./docs/roadmap.md)'s remaining features. Until then, use the local build above.
+
+No clone, no build. The version is pinned on purpose: `0.1.0` will be the only release and will not be updated (see [Maintenance status](#maintenance-status)), so this runs exactly what was tested.
+
+```json
+{
+  "mcpServers": {
+    "microsoft365": {
+      "command": "npx",
+      "args": ["-y", "@microsoft365-mcp/server@0.1.0"],
+      "env": {
+        "MCP_AUTH_MODE": "device-code"
+      }
+    }
+  }
+}
+```
+
+---
+
+## Operating-system config paths
+
+The Quickstart above shows Claude Desktop; other MCP clients (Cursor, Continue, Cline, Zed) have their own config files but all accept the same `mcpServers` block. For Claude Desktop specifically, the config file lives at:
+
+| OS | Path |
+|---|---|
+| **Windows** | `%APPDATA%\Claude\claude_desktop_config.json` (i.e. `C:\Users\<you>\AppData\Roaming\Claude\claude_desktop_config.json`) |
+| **macOS** | `~/Library/Application Support/Claude/claude_desktop_config.json` |
+| **Linux** | `~/.config/Claude/claude_desktop_config.json` |
+
+After editing, **fully quit Claude Desktop** (tray icon → *Quit*, not just close the window) and reopen. Verify the server loaded under **Settings → Developer** and inside the in-chat tools picker. If it's missing, the startup error is in `%APPDATA%\Claude\logs\mcp-server-microsoft365.log` on Windows, `~/Library/Logs/Claude/mcp-server-microsoft365.log` on macOS.
+
+> Local MCP servers appear under **Settings → Developer** and the in-chat tools picker — **not** under **Settings → Connectors**. That section is for Anthropic-hosted remote connectors only.
+
+---
+
+## Quickstart — for teams / tenants (Docker + client credentials)
+
+No image is published; build it from the repository's `Dockerfile`. CI builds and starts it on every push, so it is known to run.
+
+```bash
+docker build -t microsoft365-mcp-server .
+```
+
+1. **Register an app** in your Azure tenant: Entra ID → App registrations → New registration.
+2. **Add API permissions** (Application type, not Delegated) from Microsoft Graph. See [docs/permissions.md](./docs/permissions.md) for the full list.
+3. **Grant admin consent** for your tenant.
+4. **Create a client secret** under Certificates & secrets.
+5. **Run the image.** An example MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "microsoft365": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "-e", "MCP_AUTH_MODE=client-credentials",
+        "-e", "MCP_TENANT_ID",
+        "-e", "MCP_CLIENT_ID",
+        "-e", "MCP_CLIENT_SECRET",
+        "-e", "MCP_USER",
+        "-e", "MCP_ENABLE_WRITES=true",
+        "microsoft365-mcp-server"
+      ],
+      "env": {
+        "MCP_TENANT_ID": "<your-tenant-guid>",
+        "MCP_CLIENT_ID": "<your-app-id>",
+        "MCP_CLIENT_SECRET": "<your-secret>",
+        "MCP_USER": "<the-mailbox-it-works-for@contoso.com>"
+      }
+    }
+  }
+}
+```
+
+The image is distroless Node 24 and runs as nonroot. Client-credentials mode needs no token cache. For device-code sign-in, keep the cache on a volume and give it a key: the image has no OS keyring, so without `MCP_TOKEN_CACHE_KEY` tokens are held in memory and a sign-in lasts only until the container stops.
+
+```bash
+docker run -i --rm -v m365-mcp:/data -e MCP_TOKEN_CACHE_KEY microsoft365-mcp-server
+```
+
+The key encrypts `/data/tokencache.json` (AES-256-GCM); generate one with `openssl rand -base64 32` and keep it out of the image. Sign in once with `auth_sign_in`; later containers on the same volume and key start signed in.
+
+---
+
+## Register your own Azure AD app
+
+The default `MCP_CLIENT_ID` baked into the server is the public "Microsoft Graph Command Line Tools" client — it's fine for **trying the server out**, but for anything beyond that (production use, personal-brand audit logs, custom scope sets) you should register your own app. It's free and takes ~3 minutes.
+
+### 1. Open the Entra admin center
+
+Go to **[entra.microsoft.com](https://entra.microsoft.com)** (or [portal.azure.com](https://portal.azure.com) → search *App registrations*). Sign in with any Microsoft account — if you don't already have a work/school tenant, Microsoft will auto-create a free one for you.
+
+### 2. Create the registration
+
+Left sidebar → **Applications → App registrations** → **+ New registration**. Then:
+
+| Field | Value |
+|---|---|
+| **Name** | `microsoft365-mcp-server` (or anything you like) |
+| **Supported account types** | *Accounts in any organizational directory (Any Microsoft Entra ID tenant — Multitenant) and personal Microsoft accounts* |
+| **Redirect URI** | Leave blank for now |
+
+Click **Register**.
+
+### 3. Copy the Application (client) ID
+
+On the app's **Overview** page you'll see three GUIDs near the top:
+
+```
+Application (client) ID   →  xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx   ← this is what you want
+Directory (tenant) ID     →  …
+Object ID                 →  …
+```
+
+Copy the **Application (client) ID** — this becomes your `MCP_CLIENT_ID`.
+
+### 4. Enable device-code / public-client flows
+
+**Authentication** tab → **+ Add a platform** → **Mobile and desktop applications** → tick `https://login.microsoftonline.com/common/oauth2/nativeclient` → **Configure**. Then scroll down and set **Allow public client flows** = **Yes** → **Save**.
+
+(Skip this step if you'll only ever use `client-credentials` — see step 6 for that instead.)
+
+### 5. Add API permissions
+
+**API permissions** → **+ Add a permission** → **Microsoft Graph** → **Delegated permissions**. Tick each scope listed in [docs/permissions.md](./docs/permissions.md) that matches the surfaces you want to expose — at minimum `User.Read`, `offline_access`, then whichever of `Mail.ReadWrite`, `Calendars.ReadWrite`, `Files.ReadWrite.All`, `Sites.ReadWrite.All`, `ChannelMessage.Send`, `Chat.Read`, `Tasks.ReadWrite`, `Notes.ReadWrite`, `People.Read`, etc. you need.
+
+For **individual users**: no admin consent required — each user self-consents on first login.
+
+### 6. (Tenant automation only) Add a client secret and admin consent
+
+If you're running unattended with `MCP_AUTH_MODE=client-credentials`:
+
+1. **Certificates & secrets** → **Certificates** → upload the public half of a certificate, and point `MCP_CLIENT_CERTIFICATE_PATH` at a PEM file holding the certificate and its private key (`MCP_CLIENT_CERTIFICATE_PASSWORD` if the key is encrypted). Many tenants forbid client secrets for unattended apps; if yours allows them, **+ New client secret** gives a value for `MCP_CLIENT_SECRET` instead (shown once).
+2. **API permissions** → add the same permissions as step 5 but pick **Application permissions** instead of Delegated.
+3. Click **Grant admin consent for \<tenant\>**. A Global Administrator must approve.
+4. Copy the **Directory (tenant) ID** from the Overview page — that's your `MCP_TENANT_ID`.
+5. Set `MCP_USER` to the user (or shared mailbox) the server works for. An app-only token has no signed-in user, so every "my mail / my calendar / my files" tool acts on this one. Limit the app to that mailbox with an [application access policy](https://learn.microsoft.com/graph/auth-limit-mailbox-access); otherwise application permissions reach every mailbox in the tenant.
+
+In this mode the tools Graph allows only for a signed-in user are hidden: OneNote, posting to Teams, and `graph_search`.
+
+### 7. Use it
+
+Set `MCP_CLIENT_ID` (and for tenant use, `MCP_TENANT_ID` + `MCP_CLIENT_SECRET`) in your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "microsoft365": {
+      "command": "npx",
+      "args": ["-y", "@microsoft365-mcp/server@0.1.0"],
+      "env": {
+        "MCP_AUTH_MODE": "device-code",
+        "MCP_CLIENT_ID": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+      }
+    }
+  }
+}
+```
+
+Run `microsoft365-mcp-server --logout` so the next start forgets the old sign-in, then call `auth_sign_in` once with your new app, and you're done.
+
+---
+
+## Rolling out to a company / team
+
+**Common misconception:** IT admins do **not** need to copy per-user client IDs. You register **one** app; everyone uses it.
+
+There are two deployment models — pick based on *who* the tool acts as:
+
+### Model A — Delegated (per-user sign-in) — **most teams want this**
+
+One app registration shared by the whole org. Each user signs in **as themselves** and only sees their own mail / files / calendar. Alice sees Alice's mail, Bob sees Bob's — even though they share the same `MCP_CLIENT_ID`.
+
+**IT admin does — once:**
+
+1. Follow steps 1–5 of [Register your own Azure AD app](#register-your-own-azure-ad-app) in the company tenant.
+2. On the API permissions page, click **"Grant admin consent for \<tenant\>"**. This pre-approves the scopes for the whole org so users never see a consent popup.
+3. Distribute `MCP_CLIENT_ID` and `MCP_TENANT_ID` via whatever channel you already use: Intune policy, MDM, internal wiki, a shared Claude Desktop config template, a pre-baked dev image. Those two values are not secrets.
+
+**Each user does — once:**
+
+1. Add the config block to their MCP client with the two values IT provided.
+2. Call `auth_sign_in` and complete the device-code sign-in **as themselves**. Their personal refresh token is cached in their own home directory.
+
+That's it — no per-user Entra config, no IDs to collect, no IT ticket per person. Add a new hire by onboarding them to the MCP client config; they sign in and they're live.
+
+```json
+{
+  "mcpServers": {
+    "microsoft365": {
+      "command": "npx",
+      "args": ["-y", "@microsoft365-mcp/server@0.1.0"],
+      "env": {
+        "MCP_AUTH_MODE": "device-code",
+        "MCP_TENANT_ID": "<company-tenant-guid>",
+        "MCP_CLIENT_ID": "<company-app-id>",
+        "MCP_ENABLE_WRITES": "true"
+      }
+    }
+  }
+}
+```
+
+### Model B — Application (unattended automation)
+
+Used when the server runs on a server, cron job, or bot with **no human** behind it. The app acts as itself, not any user, and has tenant-wide reach (can read any mailbox, any file — by default).
+
+- One app registration with **Application** permissions (not Delegated) + admin consent + a client secret.
+- **Always narrow the blast radius.** Scope the app to a subset of mailboxes / sites so a compromise or prompt-injection attack can't exfiltrate the whole tenant:
+  - Mail: [Application Access Policies](https://learn.microsoft.com/graph/auth-limit-mailbox-access)
+  - Exchange Online more broadly: [RBAC for Applications](https://learn.microsoft.com/exchange/permissions-exo/application-rbac)
+  - SharePoint: [Sites.Selected](https://learn.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs) instead of `Sites.ReadWrite.All`
+- Deploy the secret via your existing secret manager (Key Vault, GitHub secrets, Vault, etc.) — never into per-user configs.
+- Prefer [Workload Identity Federation](https://learn.microsoft.com/entra/workload-id/workload-identity-federation) over a static client secret when the workload runs on GitHub Actions, AKS, or another federated platform.
+
+### Which to pick?
+
+| Question | Model A (delegated) | Model B (application) |
+|---|:---:|:---:|
+| Employees use this interactively from their AI client? | ✅ | |
+| Runs unattended on a server / bot? | | ✅ |
+| Each user should only see their own data? | ✅ | |
+| Needs tenant-wide reach (e.g. compliance bot)? | | ✅ |
+| Requires client secret management? | ❌ | ✅ |
+| Works for personal Microsoft accounts? | ✅ | ❌ |
+
+Most companies run **Model A for humans** and, if needed, **a separate Model B app** for automation — never the same app for both.
+
+---
+
+## Example prompts
+
+Once connected, try these in your MCP client. Everything in the **Read-only** columns works with the default config. Examples marked ✏️ require `MCP_ENABLE_WRITES=true` (or the matching per-surface flag) plus the write scopes.
+
+### Mail (Outlook)
+
+**Read-only**
+- *"Summarize my unread emails from the last 48 hours and tell me which ones look urgent."*
+- *"Find every message from Alice at Acme in the last month that mentions 'contract' and list the subjects."*
+- *"Open the latest email from finance and extract any attachments to a summary."*
+- *"What's the oldest unanswered email in my inbox from an external sender?"*
+- *"Group my unread mail by sender domain and show me the top 10."*
+
+**✏️ Write**
+- *"Draft a reply to the last email from Bob saying I'll have the numbers by Friday — don't send yet."*
+- *"Send a polite chase-up to everyone who hasn't replied to the 'Q3 kickoff' thread."*
+- *"Delete every promotional email from the last 30 days in the Promotions folder."*
+
+### Calendar
+
+**Read-only**
+- *"What's on my calendar tomorrow and where are the conflicts?"*
+- *"Find a 30-minute slot next Tuesday afternoon that works for alice@acme.com and bob@acme.com."*
+- *"Show me the free/busy for the whole team (alice@, bob@, carol@) on Thursday between 9am and 5pm."*
+- *"How many hours of meetings am I in this week, and how much is back-to-back?"*
+
+**✏️ Write**
+- *"Book that Tuesday slot as 'Q3 kickoff', 30 min, invite alice@ and bob@, add a Teams link."*
+- *"Move my 3pm today with Dave to the same time tomorrow."*
+- *"Cancel every internal meeting on Friday and send a note saying I'm out sick."*
+
+### Contacts & People
+
+- *"Find the best email for 'Priya at Acme' — check my contacts first, then the directory."*
+- *"List everyone in my contacts I haven't emailed in the last 6 months."*
+- ✏️ *"Add a contact for John Smith, john@example.com, tagged 'vendor'."*
+
+### Files (OneDrive + SharePoint)
+
+**Read-only**
+- *"Search SharePoint for docs called 'architecture' edited this month and list them with owners."*
+- *"What are the 20 largest files in my OneDrive?"*
+- *"Find every `.docx` in the `/Proposals` folder shared externally."*
+- *"Download `research-notes.pdf` from the team site and give me a summary."*
+
+**✏️ Write**
+- *"Create a folder `2026-Q2` under `/Projects/Acme` and upload the attached `kickoff.md` into it."*
+- *"Generate a read-only share link for `pricing-v3.xlsx` that expires in 7 days and copy it to my clipboard."*
+- *"Delete every file in `/tmp-uploads` older than 30 days."*
+
+### Teams
+
+**Read-only**
+- *"What have I missed in #engineering over the last 24 hours? Summarize by thread."*
+- *"List every 1:1 chat I have with someone outside my team."*
+- *"Find the message in #incidents where Carol posted the runbook link last week."*
+
+**✏️ Write**
+- *"Post today's deploy summary to #engineering on the Platform team."*
+- *"Reply to the top thread in #standup with my update: shipped X, blocked on Y."*
+- *"DM Alice the calendar slot we just booked."*
+
+### Tasks (To Do + Planner)
+
+- *"List my overdue To Do tasks and mark the three from the 'Inbox' list that mention 'demo' as complete."*
+- *"Show every Planner task assigned to me across all plans, sorted by due date."*
+- ✏️ *"Create a To Do task 'Review PR #482' due Thursday, high importance, in the 'Work' list."*
+- ✏️ *"In the Planner plan 'Launch Q3', create a task 'Draft press release' assigned to me, due next Monday."*
+
+### OneNote
+
+- *"List my notebooks and show the 5 most recently edited pages across all of them."*
+- *"Get the full text of the page 'Customer conversations — April' in the 'Weekly reviews' section."*
+- ✏️ *"Create a new page in the 'Weekly reviews' section summarizing this week's top 5 customer conversations."*
+
+### Working with templates — what "template" means here
+
+The `*_create_from_template` tools (and `files_copy`) work on **files that exist in your OneDrive or SharePoint** — your org's templates, your own `.pptx` / `.docx` / `.xlsx` in a `/Templates/` folder, a shared Teams files tab, anything you can reach via Graph.
+
+They do **not** have access to Microsoft's built-in "File → New" gallery (*Ion Boardroom*, *Berlin*, *Modern proposal*, etc.). That gallery is served by a separate Office service (`templates.office.com`) that isn't exposed through Microsoft Graph. If you want to use one of those stock templates, the one-time workaround is: open PowerPoint/Word → *File → New* → pick the template → **Save a copy to OneDrive** (e.g. `/Templates/Ion-Boardroom.pptx`). After that it's just a file in your drive — reference it by path or by name like any other template.
+
+Agents can also resolve a template by **name** without knowing the exact path: chain `files_search` ("find a .pptx with 'proposal' in the name") with `powerpoint_create_from_template` using the returned `id`. That's how most of the template prompts below are phrased.
+
+### Excel (create workbooks + live editing)
+
+- *"Open `sales-2026.xlsx` in OneDrive, read `Pipeline!A1:F50`, and tell me which deals have slipped."*
+- *"List every worksheet and table in `budget.xlsx`."*
+- ✏️ *"Create a new workbook `lead-tracker.xlsx` in `/Spreadsheets/` with a sheet 'Leads' seeded with headers: Name, Company, Stage, ARR, Owner."*
+- ✏️ *"From template `/Templates/quarterly-report.xlsx`, create `Q2-2026-report.xlsx` in `/Reports/`, then fill `Summary!B2:B5` with [120000, 145000, 98000, 162000]."*
+- ✏️ *"Search my OneDrive for a workbook with 'budget' in the name, use it as a template to create `budget-2026-Q2.xlsx` in `/Reports/`, and tell me which file you used."* (chains `files_search` + `excel_create_from_template`)
+- ✏️ *"Add a 'Forecast' worksheet to `lead-tracker.xlsx`, write `=SUMIF(Leads!C:C,"Won",Leads!D:D)` into A1, then recalc."*
+- ✏️ *"In `lead-tracker.xlsx` convert the range `Leads!A1:E100` into a table named `Leads` with headers."*
+- ✏️ *"In `forecast.xlsx`, add a row to the `Leads` table: name='Globex', stage='Qualified', arr=24000."*
+- ✏️ *"In `model.xlsx`, write 1.07 into `Assumptions!B12`, set `Summary!B2` to formula `=Assumptions!B12 * Inputs!C4`, then recalc and read `Summary!A1:D20`."*
+- ✏️ *"In `stale.xlsx`, clear the contents (keep formatting) of `Sheet1!A1:Z100`, then rename 'Sheet1' to 'Archive-2025'."*
+
+### Word (create + structured editing)
+
+- *"Extract the full text of `proposal-v2.docx` and tell me the outline."*
+- *"List every paragraph in `policy.docx` that mentions 'Section 4'."*
+- ✏️ *"Create a new document `weekly-report-2026-04-16.docx` in `/Reports/` with a title 'Weekly Report', heading1 'Highlights', three bullets summarising my top accomplishments, heading1 'Blockers', two bullets, and a closing paragraph."*
+- ✏️ *"From template `/Templates/proposal.docx`, create `Acme-proposal-2026-04.docx` in `/Proposals/Acme/`, replacing `{{CLIENT_NAME}}` with 'Acme Corp', `{{EFFECTIVE_DATE}}` with '2026-05-01', `{{PRICE}}` with '€24,000', and append a heading2 'Appendix A — References' followed by 3 bullets of past work."*
+- ✏️ *"Find a `.docx` in my OneDrive whose name contains 'proposal', use it as a template to create `Globex-proposal.docx` in `/Proposals/Globex/`, replacing `{{CLIENT_NAME}}` with 'Globex Inc', and tell me which template file you picked."* (chains `files_search` + `word_create_from_template`)
+- ✏️ *"In `changelog.docx`, append a heading2 'Release 2026-04-16' followed by a bullet list of the 5 commits I made this week."*
+- ✏️ *"In `contract-template.docx`, replace every `{{CLIENT_NAME}}` with 'Acme Corp' and `{{EFFECTIVE_DATE}}` with '2026-05-01'."*
+- ✏️ *"Insert a paragraph after paragraph 3 in `onboarding.docx` with the new policy text, and delete paragraph 12 (the outdated section)."*
+- ✏️ *"Append a new paragraph to `changelog.docx` with today's date and the text of my last commit."*
+
+### PowerPoint (create decks + in-place editing)
+
+- *"List the slide titles in `Q3-review.pptx` and give me the text of slide 7."*
+- *"Extract every bullet from `all-hands-april.pptx` and turn it into meeting notes."*
+- ✏️ *"Create a new deck `kickoff-acme.pptx` in `/Decks/` with 4 slides: (1) title 'Acme Kickoff' with presenter notes; (2) title 'Agenda' with bullets 'Introductions, Timeline, Risks, Q&A'; (3) title 'Timeline' with bullets for each phase; (4) title 'Questions?'."*
+- ✏️ *"From template `/Templates/client-kickoff.pptx`, create `kickoff-acme.pptx` in `/Decks/Acme/`, replacing `{{CLIENT}}` with 'Acme Corp', `{{DATE}}` with '2026-04-16', `{{OWNER}}` with 'Dana', and append one extra slide titled 'Our team' with bullets for each teammate."*
+- ✏️ *"Find a PowerPoint template in my OneDrive whose name contains 'kickoff'. Use it to create `kickoff-globex.pptx` in `/Decks/Globex/`, replacing any `{{CLIENT}}` with 'Globex Inc' and `{{DATE}}` with today. Tell me which file you ended up using."* (chains `files_search` + `powerpoint_create_from_template`)
+- ✏️ *"Append a slide titled 'Next steps' with 3 bullets to the existing deck `Q3-review.pptx`."*
+- ✏️ *"Delete slide 12 from `board-deck.pptx` (it's outdated)."*
+- ✏️ *"In `Q3-review.pptx`, replace every `FY24` with `FY25` and list which slides changed."*
+- ✏️ *"Find the slide titled 'Risks' in `board-deck.pptx` and replace the body text with the three risks I just listed."*
+
+### Cross-surface workflows — where an MCP actually shines
+
+These stitch multiple tools together in a single prompt, which is the real pay-off over using Outlook/Teams/SharePoint individually:
+
+- 🧵 **Triage & respond.** *"Read my unread mail from the last 24h, flag anything from a customer, file the rest into the right folder, and draft replies to the customer ones in my voice."*
+- 📣 **Meeting prep.** *"For my 2pm with Acme: pull the last 5 emails from anyone @acme.com, summarize the Teams chat with their account team, fetch the latest version of `Acme-proposal.docx` from SharePoint, and put it all in a new OneNote page under 'Prep'."*
+- 📊 **Weekly report.** *"Read `sales-2026.xlsx!Pipeline`, list the deals that moved stage this week, post the summary to #sales on Teams, and create a Planner task for me to follow up on each 'Stalled' one."*
+- 🚨 **Incident follow-up.** *"From the #incidents channel, find the last 'sev2' thread, extract timeline and action items, create a OneNote page with the post-mortem template filled in, and assign each action item as a Planner task to the person who owns it."*
+- 📝 **Proposal automation.** *"Take `contract-template.docx`, replace the client placeholders with 'Globex Inc', save a copy as `Globex-contract-2026-04.docx` in `/Proposals/Globex`, share it read-only with their procurement contact, and email them the link."*
+- 📅 **Travel day builder.** *"Find a 90-minute gap next Wednesday, block it as 'Focus — board deck', and create a To Do list 'Board prep' with one task per slide in `board-deck.pptx`."*
+- 🔍 **Cross-mailbox research.** *"Search my mail, Teams DMs, and OneNote for anything mentioning 'Project Condor' in the last 90 days, and summarize what's happening."*
+- 🧹 **Cleanup.** *"Find every SharePoint file I 'own' that hasn't been opened in 12 months, list them, and for the ones under 1MB create a shared `Archive-2026` folder and move them there."*
+
+> Many of the write-heavy prompts above will trigger multiple tool calls in sequence. If writes are disabled, the assistant will tell you exactly which scope or which `MCP_ENABLE_*` flag is missing — no silent failures.
+
+---
+
+### Built-in prompt templates
+
+The server also ships MCP **prompts**: ready-made workflows your client offers as commands (in Claude Code, `/mcp__microsoft365__daily-brief` and so on).
+
+| Prompt | Arguments | What it does |
+|---|---|---|
+| `daily-brief` | `date` (YYYY-MM-DD, default today) | Agenda with free blocks, unread and flagged mail, and open To Do tasks, gathered in one batched round trip |
+| `inbox-triage` | `since` (`24h` default, `3d`, or a date), `folder` | Sorts recent mail into act now / reply / read later / ignore, and drafts the replies (drafts only) |
+| `meeting-prep` | `meeting` (event id or subject words; default the next meeting) | One-page brief: attendees, recent related mail, documents, earlier meetings, and questions to raise |
+
+The prompts never send, reply, delete or move anything: replies are left in Drafts. A prompt is listed only when the tools it needs are enabled, and each adapts to what is. With writes off, triage writes suggested replies instead of drafting them. Dates are computed in the server's time zone.
+
+### Attaching mail, files and notes (MCP resources)
+
+The server exposes mail messages, OneDrive/SharePoint files and OneNote pages as MCP **resources**: things *you* attach as context, as opposed to tools the model decides to call. In Claude Code, `@`-mention them. The list offers your 20 most recent inbox messages, recent files and recent OneNote pages, and any item can be read by URI:
+
+| Resource | URI | Comes back as |
+|---|---|---|
+| Mail message | `m365://mail/{messageId}` | Headers and the plain-text body, with invisible padding stripped |
+| File | `m365://drive/{driveId}/{itemId}` | Word and PowerPoint as their text; Excel as CSV, one block per sheet, formulas by their saved value (up to 1,000,000 characters); other text files as text; anything else as a blob. Up to 5 MB, beyond which use `files_download` with `saveToDisk` |
+| OneNote page | `m365://onenote/{pageId}` | The page as plain text |
+
+A resource type is offered only while its read tool (`mail_get_message`, `files_download`, `onenote_get_page_content`) is enabled, so `MCP_DISABLED_TOOLS` covers resources too. Signed out, the list is empty and reading one points you to `auth_sign_in`.
+
+## Tool reference
+
+<details>
+<summary><strong>🔐 Auth</strong> — 2 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `auth_status` | — | |
+| `auth_sign_in` | — | |
+</details>
+
+<details>
+<summary><strong>⚡ Graph (cross-surface)</strong> — 3 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `graph_search` | Mail.Read, Files.Read.All, Sites.Read.All | |
+| `graph_batch_get` | whatever the sub-requests need | |
+| `graph_delta` | Mail.Read, Calendars.Read, Files.Read, Contacts.Read, Tasks.Read (per resource) | |
+</details>
+
+<details>
+<summary><strong>📧 Mail</strong> — 17 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `mail_list_messages` | Mail.Read | |
+| `mail_search_messages` | Mail.Read | |
+| `mail_get_message` | Mail.Read | |
+| `mail_list_folders` | Mail.Read | |
+| `mail_list_attachments` | Mail.Read | |
+| `mail_send_message` | Mail.Send | ✏️ |
+| `mail_create_draft` | Mail.ReadWrite | ✏️ |
+| `mail_send_draft` | Mail.Send | ✏️ |
+| `mail_reply_message` | Mail.Send | ✏️ |
+| `mail_forward_message` | Mail.Send | ✏️ |
+| `mail_delete_message` | Mail.ReadWrite | ✏️ |
+| `mail_create_reply_draft` | Mail.ReadWrite | ✏️ |
+| `mail_move_message` | Mail.ReadWrite | ✏️ |
+| `mail_update_message` | Mail.ReadWrite | ✏️ |
+| `mail_get_attachment` | Mail.Read | |
+| `mail_get_automatic_replies` | MailboxSettings.Read | |
+| `mail_set_automatic_replies` | MailboxSettings.ReadWrite | ✏️ |
+</details>
+
+<details>
+<summary><strong>📅 Calendar</strong> — 11 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `calendar_list_events` | Calendars.Read | |
+| `calendar_get_event` | Calendars.Read | |
+| `calendar_list_calendars` | Calendars.Read | |
+| `calendar_find_meeting_times` | Calendars.Read.Shared, Calendars.Read | |
+| `calendar_get_free_busy` | Calendars.Read.Shared | |
+| `calendar_create_event` | Calendars.ReadWrite | ✏️ |
+| `calendar_update_event` | Calendars.ReadWrite | ✏️ |
+| `calendar_delete_event` | Calendars.ReadWrite | ✏️ |
+| `calendar_respond_to_event` | Calendars.ReadWrite | ✏️ |
+| `calendar_cancel_event` | Calendars.ReadWrite | ✏️ |
+| `calendar_list_rooms` | Place.Read.All | |
+</details>
+
+<details>
+<summary><strong>👥 Contacts & People</strong> — 10 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `contacts_list` | Contacts.Read | |
+| `contacts_search` | Contacts.Read | |
+| `contacts_people_search` | People.Read | |
+| `contacts_create` | Contacts.ReadWrite | ✏️ |
+| `contacts_update` | Contacts.ReadWrite | ✏️ |
+| `contacts_delete` | Contacts.ReadWrite | ✏️ |
+| `people_get_manager` | User.Read | |
+| `people_list_direct_reports` | User.ReadBasic.All | |
+| `people_get_profile` | User.ReadBasic.All | |
+| `people_get_presence` | Presence.Read.All, User.ReadBasic.All | |
+</details>
+
+<details>
+<summary><strong>📁 Files (OneDrive + SharePoint)</strong> — 21 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `files_list_children` | Files.Read.All, Sites.Read.All | |
+| `files_get_item` | Files.Read.All, Sites.Read.All | |
+| `files_search` | Files.Read.All, Sites.Read.All | |
+| `sites_search` | Sites.Read.All | |
+| `files_list_drives` | Files.Read.All | |
+| `files_upload` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_create_folder` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_delete` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_copy` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_share` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_download` | Files.Read.All, Sites.Read.All | |
+| `files_move` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_export_pdf` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_list_permissions` | Files.Read.All, Sites.Read.All | |
+| `files_invite` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_remove_permission` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `files_list_recent` | Files.Read.All, Sites.Read.All | |
+| `sites_list_lists` | Sites.Read.All | |
+| `sites_get_list_items` | Sites.Read.All | |
+| `sites_create_list_item` | Sites.ReadWrite.All | ✏️ |
+| `sites_update_list_item` | Sites.ReadWrite.All | ✏️ |
+</details>
+
+<details>
+<summary><strong>💬 Teams</strong> — 12 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `teams_list_joined` | Team.ReadBasic.All | |
+| `teams_list_channels` | Channel.ReadBasic.All | |
+| `teams_list_channel_messages` | ChannelMessage.Read.All | |
+| `teams_get_message_replies` | ChannelMessage.Read.All | |
+| `teams_list_chats` | Chat.Read | |
+| `teams_list_chat_messages` | Chat.Read | |
+| `teams_post_channel_message` | ChannelMessage.Send, User.ReadBasic.All | ✏️ |
+| `teams_reply_channel_message` | ChannelMessage.Send, User.ReadBasic.All | ✏️ |
+| `teams_post_chat_message` | ChatMessage.Send, User.ReadBasic.All | ✏️ |
+| `teams_send_direct_message` | Chat.ReadWrite, ChatMessage.Send | ✏️ |
+| `teams_update_chat_message` | Chat.ReadWrite | ✏️ |
+| `teams_delete_chat_message` | Chat.ReadWrite | ✏️ |
+</details>
+
+<details>
+<summary><strong>✅ Tasks (To Do + Planner)</strong> — 17 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `todo_list_lists` | Tasks.Read | |
+| `todo_list_tasks` | Tasks.Read | |
+| `todo_create_task` | Tasks.ReadWrite | ✏️ |
+| `todo_complete_task` | Tasks.ReadWrite | ✏️ |
+| `todo_update_task` | Tasks.ReadWrite | ✏️ |
+| `todo_add_checklist_item` | Tasks.ReadWrite | ✏️ |
+| `todo_delete_task` | Tasks.ReadWrite | ✏️ |
+| `planner_list_plans` | Tasks.Read | |
+| `planner_list_tasks` | Tasks.Read | |
+| `planner_create_task` | Tasks.ReadWrite | ✏️ |
+| `planner_complete_task` | Tasks.ReadWrite | ✏️ |
+| `planner_delete_task` | Tasks.ReadWrite | ✏️ |
+| `planner_update_task` | Tasks.ReadWrite, User.ReadBasic.All | ✏️ |
+| `planner_list_buckets` | Tasks.Read | |
+| `planner_create_bucket` | Tasks.ReadWrite | ✏️ |
+| `planner_get_task_details` | Tasks.Read | |
+| `planner_update_task_details` | Tasks.ReadWrite | ✏️ |
+</details>
+
+<details>
+<summary><strong>📓 OneNote</strong> — 9 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `onenote_list_notebooks` | Notes.Read | |
+| `onenote_list_sections` | Notes.Read | |
+| `onenote_list_pages` | Notes.Read | |
+| `onenote_get_page_content` | Notes.Read | |
+| `onenote_create_notebook` | Notes.ReadWrite | ✏️ |
+| `onenote_create_section` | Notes.ReadWrite | ✏️ |
+| `onenote_create_page` | Notes.ReadWrite | ✏️ |
+| `onenote_append_to_page` | Notes.ReadWrite | ✏️ |
+| `onenote_delete_page` | Notes.ReadWrite | ✏️ |
+</details>
+
+<details>
+<summary><strong>📊 Excel</strong> — 19 tools</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `excel_create_session` | Files.ReadWrite.All | |
+| `excel_close_session` | Files.ReadWrite.All | |
+| `excel_run_workbook_calculation` | Files.ReadWrite.All | ✏️ |
+| `excel_list_worksheets` | Files.Read.All | |
+| `excel_add_worksheet` | Files.ReadWrite.All | ✏️ |
+| `excel_delete_worksheet` | Files.ReadWrite.All | ✏️ |
+| `excel_rename_worksheet` | Files.ReadWrite.All | ✏️ |
+| `excel_get_range` | Files.Read.All | |
+| `excel_update_range` | Files.ReadWrite.All | ✏️ |
+| `excel_set_formula` | Files.ReadWrite.All | ✏️ |
+| `excel_clear_range` | Files.ReadWrite.All | ✏️ |
+| `excel_list_tables` | Files.Read.All | |
+| `excel_get_table_rows` | Files.Read.All | |
+| `excel_add_table_rows` | Files.ReadWrite.All | ✏️ |
+| `excel_create_table` | Files.ReadWrite.All | ✏️ |
+| `excel_create_workbook` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `excel_create_from_template` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `excel_add_chart` | Files.ReadWrite.All | ✏️ |
+| `excel_format_range` | Files.ReadWrite.All | ✏️ |
+</details>
+
+<details>
+<summary><strong>📝 Word</strong> — 10 tools (create from scratch or from templates + OOXML in-place editing)</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `word_read_text` | Files.Read.All, Sites.Read.All | |
+| `word_list_paragraphs` | Files.Read.All, Sites.Read.All | |
+| `word_replace_text` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_append_paragraph` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_create_document` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_create_from_template` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_append_heading` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_append_bullets` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_insert_paragraph_at` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `word_delete_paragraph` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+</details>
+
+<details>
+<summary><strong>🎞️ PowerPoint</strong> — 8 tools (create from scratch or from templates + OOXML in-place editing)</summary>
+
+| Tool | Scopes | Writes |
+|---|---|:---:|
+| `powerpoint_list_slides` | Files.Read.All, Sites.Read.All | |
+| `powerpoint_get_slide_text` | Files.Read.All, Sites.Read.All | |
+| `powerpoint_extract_all_text` | Files.Read.All, Sites.Read.All | |
+| `powerpoint_replace_text` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `powerpoint_create_deck` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `powerpoint_add_slide` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `powerpoint_create_from_template` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+| `powerpoint_delete_slide` | Files.ReadWrite.All, Sites.ReadWrite.All | ✏️ |
+</details>
+
+---
+
+## Configuration
+
+All settings can be passed as CLI flags **or** environment variables.
+
+| Variable | Flag | Default | Notes |
+|---|---|---|---|
+| `MCP_AUTH_MODE` | `--auth` | `device-code` | `device-code` \| `client-credentials` \| `interactive` |
+| `MCP_TENANT_ID` | `--tenant` | `common` | Tenant id, or `common` / `organizations` / `consumers` |
+| `MCP_CLIENT_ID` | `--client-id` | Public Graph client | Use your own app for production |
+| `MCP_CLIENT_SECRET` | `--client-secret` | – | `client-credentials` without a certificate |
+| `MCP_CLIENT_CERTIFICATE_PATH` | `--client-certificate` | – | `client-credentials`: PEM with the certificate and private key. Preferred over a secret |
+| `MCP_CLIENT_CERTIFICATE_PASSWORD` | – | – | For an encrypted private key |
+| `MCP_USER` | `--user` | – | Required for `client-credentials`: the user or shared mailbox the server works for |
+| `MCP_ENABLE_ADMIN_SCOPES` | – | `false` | Signed-in modes: also request the scopes only an admin can grant (rooms, colleagues' full profiles), and offer the tools that need them. Set only once an admin has consented, or sign-in fails |
+| `MCP_ENABLE_SHARED_MAILBOXES` | – | `false` | Signed-in modes: add a `mailbox` argument to mail and calendar tools, for shared mailboxes and calendars you are a delegate of. Adds the `.Shared` scopes, so sign in again once |
+| `MCP_REDIRECT_URI` | `--redirect-uri` | `http://localhost:3000` | `interactive` only |
+| `MCP_SCOPES` | `--scopes` | Full set | Comma-separated Graph scopes |
+| `MCP_ENABLE_WRITES` | `--enable-writes` | `false` | Unlock all mutating tools |
+| `MCP_ENABLE_<SURFACE>_WRITE` | – | `false` | e.g. `MCP_ENABLE_MAIL_WRITE`, `MCP_ENABLE_FILES_WRITE` |
+| `MCP_DISABLED_TOOLS` | `--disabled-tools` | – | CSV of tool names to hide entirely |
+| `MCP_TOKEN_CACHE_PATH` | `--token-cache` | `~/.microsoft365-mcp/tokencache.json` | Its directory holds `authrecord.json`; a non-default path also gets its own token store. With `MCP_TOKEN_CACHE_KEY`, the tokens themselves live in this file |
+| `MCP_TOKEN_CACHE_KEY` | – | *(unset)* | Keep tokens in `MCP_TOKEN_CACHE_PATH`, encrypted with this key (16+ characters), instead of the OS store. For hosts with no keyring, such as the Docker image. Environment only, never a flag |
+| `MCP_LOG_LEVEL` | – | `info` | Pino log level (stderr) |
+| `MCP_DOWNLOAD_DIR` | – | *(unset)* | Folder `files_download` may stream files into with `saveToDisk: true`. Unset, saving to disk is refused. The server never overwrites a file there |
+| `MCP_UPLOAD_DIR` | – | *(unset)* | The one folder `files_upload` may read a `localPath` from, streamed to OneDrive at any size. Unset, uploading from disk is refused. Paths, and links, leading outside it are refused |
+| `MCP_MAX_MESSAGE_MB` | – | `64` | Largest MCP message accepted, in MiB. Caps a `contentBase64` upload at roughly ¾ of this, since content arrives base64-encoded |
+
+---
+
+## Known limitations
+
+Most "this doesn't work" reports on business tenants aren't bugs in this server — they're tenant policy, auth-flow constraints, or current implementation scope. Read this before filing an issue.
+
+### Tenant policy (your IT admin controls these — not a bug)
+
+- **App registration blocked.** Many orgs disable end-user app registration. You'll see *"You do not have permission to create app registrations"* in Entra. → Ask IT to register one app and share the `MCP_CLIENT_ID` / `MCP_TENANT_ID`.
+- **User consent blocked.** Some tenants require admin consent for *all* Graph scopes. Device-code sign-in will fail with `AADSTS65001` or `AADSTS90094`. → A Global Admin must click **"Grant admin consent for \<tenant\>"** on the app's API permissions page.
+- **Device-code flow disabled.** Tenants can block device-code entirely via Conditional Access (`AADSTS50199` / `AADSTS530032`). → Use `MCP_AUTH_MODE=interactive` (local browser) or `client-credentials` (unattended) instead.
+- **Conditional Access / MFA / compliant-device requirements.** CA policies can reject the sign-in even when everything else is configured correctly (unmanaged device, missing MFA, non-corporate network). The error comes from Entra, not this server. → Work with IT on an exemption or sign in from a compliant device.
+- **"Allow public client flows" = No.** Required for device-code and interactive. If IT leaves this off, both user flows fail. → Enable it in **Authentication → Advanced settings**, or use `client-credentials`.
+- **Guest / B2B accounts.** Guests in a tenant often have reduced Graph reach (e.g. can't read the directory). Expect some tools to return empty results even when they "should" work.
+- **Personal Microsoft accounts + `client-credentials`.** Not supported by Microsoft — `client-credentials` is tenant-only. Personal accounts must use `device-code` or `interactive`.
+
+### Scope & data access
+
+- **Ungranted scopes fail silently per-tool.** If you didn't grant `Mail.Read`, `mail_list_messages` returns a Graph `Authorization_RequestDenied` error but the server stays up and other tools keep working. This is intentional — check the error payload, don't assume the server is broken.
+- **Application permissions have tenant-wide reach by default.** `Mail.Read` (Application) reads *every* mailbox in the tenant. Always narrow with [Application Access Policies](https://learn.microsoft.com/graph/auth-limit-mailbox-access) (Mail), [RBAC for Applications](https://learn.microsoft.com/exchange/permissions-exo/application-rbac) (Exchange), or [`Sites.Selected`](https://learn.microsoft.com/sharepoint/dev/solution-guidance/security-apponly-azureacs) (SharePoint).
+- **Shared / delegated mailboxes.** `Mail.Read.Shared` is required to read another user's mailbox you've been delegated; it's not granted by default.
+- **Planner vs. Project.** Only Microsoft Planner is supported via Graph. Microsoft Project / Project for the Web is a different API surface and not covered.
+- **Microsoft's built-in template gallery is not reachable.** The stock templates that appear in Office apps under *File → New* (*Ion Boardroom*, *Berlin*, *Modern proposal*, etc.) are served by `templates.office.com`, not Microsoft Graph — so `powerpoint_create_from_template` / `word_create_from_template` / `excel_create_from_template` cannot pull from that gallery. The one-time workaround: open the app → *File → New* → pick the template → save it to OneDrive, e.g. `/Templates/Ion-Boardroom.pptx`. After that it's addressable like any other file (`templatePath` or `templateItemId`, or resolved by `files_search`).
+
+### Auth & token cache
+
+- **Where tokens live.** Two things are kept. `authrecord.json`, next to `MCP_TOKEN_CACHE_PATH`, names which account to use. With `MCP_TOKEN_CACHE_KEY` set, the tokens are in `MCP_TOKEN_CACHE_PATH` itself, encrypted with that key (AES-256-GCM, key stretched with scrypt); a wrong key reads as signed out and leaves the file as it is. Otherwise they are in the identity library's store: a DPAPI-encrypted file under `%LOCALAPPDATA%\.IdentityService\` on Windows, the keychain on macOS, the keyring (or a file under `~/.IdentityService/`) on Linux. On Windows and with the Linux file fallback, a non-default `MCP_TOKEN_CACHE_PATH` gets a store of its own. The macOS keychain and Linux keyring hold one shared item for every app using the same identity library, so there the path separates only the auth record.
+- **Switching accounts or signing out:** run `--logout`, then `auth_sign_in`. It removes `authrecord.json` and this app's tokens from the store. Other apps' tokens in a shared store are left alone. There is no in-product account switcher, and revoking the app's access outright is done at https://myapps.microsoft.com.
+- **Refresh tokens expire.** After ~90 days of inactivity (or on password change / revocation) the next call will prompt for re-auth via device code. Not a bug.
+- **`keytar` is optional.** Where it is present but no keyring is running, the cache is written to an unencrypted file instead — acceptable for a personal machine, not for shared hosts. Where it cannot load at all (headless Linux without `libsecret`, the distroless container image), the server still starts but holds tokens in memory only: sign-in works, and does not survive a restart, unless `MCP_TOKEN_CACHE_KEY` is set. The startup log says so with `persistent token cache unavailable`. Client-credentials mode never needs the cache.
+- **Several servers, one sign-in.** Servers sharing a token store see each other's sign-in: one that was already running when another signed in picks it up on its next call, without a restart.
+- **Sign-in is lazy and explicit.** Starting the server performs no interactive authentication. Credentials are built with `disableAutomaticAuthentication`, so acquiring a token can only ever spend one already cached — it can never raise a prompt on its own. A device code is issued *only* when you call `auth_sign_in`.
+
+  This matters because the server is launched every time your MCP client starts. An earlier version warmed the credential up at startup so the code would be ready before you invoked anything; in practice that minted a fresh device code on every single launch, nobody entered it, and it expired unused ~15 minutes later. One unwanted prompt per launch, and a server that never actually held a token.
+
+  The current flow:
+  1. **At startup:** one silent probe. If a cached token exists it is used and the server logs `using cached Microsoft 365 credentials`. If not, it logs `signed out` and waits. Nothing is displayed to you.
+  2. **`auth_sign_in`** returns the URL + code straight away as the tool result, rather than blocking for the minutes the browser step takes. The flow completes in the background.
+  3. **`auth_status`** reports whether it worked. Graph tools called while signed out return an `isError` telling you to run `auth_sign_in`, instead of hanging on a prompt you cannot see.
+
+  The code is also emitted as an MCP `notifications/message` and written to stderr for CLI users and log-tailers (`%APPDATA%\Claude\logs\mcp-server-microsoft365.log` on Windows), since most clients — Claude Desktop included — don't render a server's stderr in the chat.
+
+  Because neither `auth_sign_in` nor `auth_status` is marked mutating, both stay available when writes are disabled — otherwise a read-only deployment could never authenticate.
+
+### Current implementation scope
+
+These are real gaps in *this* server, tracked in [Roadmap](#roadmap):
+
+- **Upload size.** Anything over 4 MB goes through a Graph upload session automatically, including Office files the server generates and `files_copy`. `files_upload` with `contentBase64` carries the file inside the tool call, so it is bounded by `MCP_MAX_MESSAGE_MB` (default 64 MiB, so files up to about 47 MB). For bigger files, set `MCP_UPLOAD_DIR`, put the file there and pass `localPath`: it streams from disk at any size, and the bytes never enter the conversation.
+- **Downloads.** Whatever `files_download` returns inline lands in the conversation, so it returns text files as text, anything else as base64, and nothing over 5 MB. For larger or binary files, set `MCP_DOWNLOAD_DIR` and pass `saveToDisk: true`: the file is streamed to that folder in constant memory and the result is only its path, size and SHA-256. Existing files are never overwritten.
+- **No webhook / change-notification tools.** Use `graph_delta` to ask what changed since last time, deletions included. Why real-time notifications are not built, and what it would take, is in [docs/webhooks.md](./docs/webhooks.md).
+- **Retry is bounded, and never repeats a send.** The Graph SDK retries 429/503/504 up to 3 times with a 3-second base delay, honouring `Retry-After`. The exception is a `POST` from a tool that sends or creates something (`mail_send_message`, `mail_reply_message`, `teams_post_*`, the `*_create_*` tools): those are retried only on 429. Graph turns a throttled request away before acting on it, whereas a 503 or 504 can arrive after the mail was already sent, and retrying would send it twice. If a request still fails, the error reaches the caller. For a failed send, check Sent Items before trying again.
+- **OOXML edits (Word / PowerPoint) download → mutate → re-upload.** No partial updates. Large decks mean large round-trips; concurrent edits by a human in the web app can be overwritten.
+- **Excel requires a workbook session for writes.** You must call `excel_create_session` first — this is a Graph requirement, not something we can abstract away.
+
+---
+
+## Security
+
+- **Read-only default.** Every mutating tool is hidden from `tools/list` until writes are enabled. Defense in depth: the handler re-checks at call time.
+- **No pre-authenticated links in results.** Graph attaches a temporary, unauthenticated download link (`@microsoft.graph.downloadUrl`) to every file it lists. The server strips these from all tool results, so they never reach the model or its transcripts.
+- **Token storage.** Cached locally with `chmod 600` (POSIX). On platforms with `keytar`, the cache is encrypted by the OS keychain. No tokens are logged — logger redacts common token fields.
+- **Least-privilege scopes.** The default scope set is read-only; write scopes are added automatically when `MCP_ENABLE_WRITES` (or any `MCP_ENABLE_<SURFACE>_WRITE` flag) is set. Override `MCP_SCOPES` to request a custom subset; tools whose scopes aren't granted simply won't succeed — the server stays up.
+- **Bring-your-own app registration.** The default public `MCP_CLIENT_ID` is convenient for trying things out; **don't use it in production**. Register your own app and set `MCP_CLIENT_ID` / `MCP_TENANT_ID`. The server logs a warning at startup when the default is in use.
+- **Responsible disclosure:** see [SECURITY.md](./SECURITY.md).
+
+### Data flow — what leaves your machine
+
+This server runs locally on your computer. The data flow is:
+
+1. **Your MCP client → this server (stdio)** — local IPC, never leaves your machine.
+2. **This server → Microsoft Graph (HTTPS)** — over the internet, authenticated as you (or your tenant app), to retrieve mail, files, calendar, etc.
+3. **This server → your MCP client (stdio)** — Graph responses returned to the client.
+4. **Your MCP client → wherever the client sends LLM context** — out of this server's hands.
+
+Step 4 is the privacy-significant one: when you ask an AI assistant to "summarize my unread emails," the email bodies returned by Graph flow through your MCP client to whichever model provider it talks to (Anthropic, OpenAI, a self-hosted model, etc.). What that provider does with the data is governed by *their* terms, not ours. If you're handling regulated data, check your MCP client's data policy and consider scoping reads narrowly with `MCP_SCOPES` and `MCP_DISABLED_TOOLS`.
+
+This server itself sends nothing to anyone but Microsoft Graph and your MCP client. No telemetry, no analytics, no remote logging.
+
+---
+
+## Compatibility
+
+Tested with:
+
+- ✅ Claude Desktop (macOS, Windows)
+
+
+Any MCP-compliant client should work — open an issue if yours doesn't.
+
+---
+
+## Development
+
+```bash
+git clone https://github.com/lucasgfsvd/microsoft365-mcp-server
+cd microsoft365-mcp-server
+npm install
+npm run dev   # builds + starts on stdio
+
+# Verify tool shapes
+npx @modelcontextprotocol/inspector node dist/index.js
+```
+
+Run tests: `npm test` · Typecheck: `npm run typecheck` · Lint: `npm run lint`.
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) — contributions welcome, especially new surface coverage and integration test fixtures.
+
+---
+
+## Handover
+
+Picking this up cold? [docs/handover.md](./docs/handover.md) has the current state, the one open defect (with what has been ruled out), and the next feature written up in enough detail to start on.
+
+## Roadmap
+
+The full list, with reasons and sizes, is in [docs/roadmap.md](./docs/roadmap.md). In short, everything planned for `0.1.0` is in, and publishing it is next. Webhooks are designed ([docs/webhooks.md](./docs/webhooks.md)) but wait on a decision.
+
+Done for `0.1.0`: device-code sign-in that survives restarts without an OS keyring (the Docker image included), a sign-in picked up by servers already running, uploads from a local folder at any size, reply drafts kept in the thread, mail date filters, task deletion, OneNote notebook and section creation, Excel files as CSV in resources, large-file uploads, streaming downloads, MCP resources, prompt templates, the per-tool retry policy, and live tests of every tool.
+
+---
+
+## License
+
+[MIT](./LICENSE)
+
+## Acknowledgments
+
+Built on [Microsoft Graph](https://learn.microsoft.com/graph/), [`@azure/identity`](https://github.com/Azure/azure-sdk-for-js), and the [Model Context Protocol SDK](https://github.com/modelcontextprotocol). Inspired by the growing MCP ecosystem and the many community servers that paved the way.
+
+---
+
+> Microsoft, Microsoft 365, Outlook, OneDrive, SharePoint, Teams, OneNote, Excel, Word, and PowerPoint are trademarks of Microsoft Corporation. This is an independent open-source project; it is not affiliated with, endorsed by, or sponsored by Microsoft.

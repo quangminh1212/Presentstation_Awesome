@@ -1,0 +1,318 @@
+# Codeck
+
+**Markdown presentations for macOS and Codex.**
+
+![The Codeck Mac app with a Markdown editor, floating slide preview, and selectable Deck Assistant proposals](docs/assets/codeck-screenshot.png)
+
+Write plain-text `.mdeck` presentations, preview slides as you edit, and present fullscreen. Use the native Mac app or the Codeck workspace inside Codex. Run live Codex prompts from slides, and review proposed Markdown edits with the Mac app's Deck Assistant.
+
+## Why Codeck
+
+Most presentation tools separate the script, the source material, the live demo, and the AI assistant into different windows. Codeck brings those pieces into one native Mac loop:
+
+- **Write in Markdown:** Decks are plain-text `.mdeck` files with YAML front matter and `---` slide separators.
+- **Preview as you work:** The editor, slide list, and rendered presentation view stay together.
+- **Run Codex from a slide:** Fenced `codex` blocks become live prompt cards with model, reasoning, and sandbox settings.
+- **Improve a deck with Codex:** The Deck Assistant can review one slide or the whole deck and return selectable insertions and replacements.
+- **Present without exporting:** Start full-screen presentation mode from the selected slide.
+- **Let agents edit decks:** Use the file-based MCP server or live app bridge to create, inspect, and mutate decks programmatically.
+
+## What You Can Build
+
+- **AI training decks:** Teach prompting, evaluation, code review, or agent workflows with runnable examples on the slide.
+- **Live demo talks:** Keep the prompt, context, expected behavior, and streamed Codex response in the same artifact.
+- **Executive briefings:** Draft a rough narrative, ask the Deck Assistant to sharpen it, add evidence, and apply only the changes you trust.
+- **Research and product narratives:** Use Markdown, tables, links, images, citations, and web-backed assistant passes to keep claims grounded.
+- **Workshops and exercises:** Build decks where each slide can ask Codex to inspect, explain, test, or transform something live.
+- **Agent-editable documentation:** Give another MCP-capable agent a `.mdeck` file or an open Codeck window and let it insert slides, update settings, or validate the deck.
+
+## Core Features
+
+- Native macOS document app for `.mdeck` files.
+- Codex plugin with its own sidebar workspace, split Markdown editor and preview, native Codex composer, and fullscreen presentation.
+- Markdown slides with headings, lists, blockquotes, tables, links, images, GIFs, and fenced code blocks.
+- Syntax highlighting for common code fence languages.
+- Theme picker with Studio, Midnight, Chalk, Solar, and Atelier presentation themes.
+- Sidebar for scanning, selecting, adding, duplicating, deleting, and organizing slides.
+- Live preview beside the editor, plus compact modes for smaller windows.
+- Insert tools for common Markdown blocks, images, tables, and Codex cards.
+- Deck-level Codex defaults for model, reasoning effort, and sandbox.
+- Per-slide live Codex cards, per-card overrides, streaming Markdown output, and run-all on slides with multiple sessions.
+- Deck Assistant with Slide and Deck scopes, quick actions for Find Gaps, Shorten, Polish, Research, and Add Data, optional web use, selectable changes, and one-click apply.
+- Full-screen presentation mode with keyboard navigation.
+- File-based MCP server for deck automation outside the app.
+- Live localhost MCP bridge for agents that need to work with currently open Codeck windows.
+
+## Install the Mac app
+
+Download the universal Mac ZIP from [GitHub Releases](https://github.com/lkuczborski/Codeck/releases/latest), unzip it, and move `Codeck.app` into Applications. The app supports Apple silicon and Intel Macs running macOS 14 or later. The current release is Developer ID signed and notarized by Apple.
+
+Live Codex cards and the Deck Assistant use your existing Codex login. Codeck can use the executable bundled with Codex desktop, or a separately installed Codex CLI.
+
+## Use Codeck inside Codex
+
+The plugin provides a dedicated Codeck workspace in Codex desktop: edit highlighted Markdown beside a live preview, iterate through the native Codex composer, open and save decks, and present fullscreen. Codex CLI can use the same plugin's deck skills and MCP tools.
+
+![The Codeck workspace inside Codex with slide thumbnails, a highlighted Markdown editor, live slide preview, and the native Codex composer](docs/assets/codeck-workspace-screenshot.png)
+
+[Watch the Codeck workspace demo](docs/assets/codeck-workspace-demo.mp4).
+
+The prebuilt plugin supports Apple silicon Macs running macOS 14 or later. It includes its native helper and UI; the Codeck Mac app, Swift, Node, npm, and an OpenAI API key are not required. Live cards use the installed Codex executable and your existing login.
+
+After the first notarized plugin publication from `main`, install from the repository marketplace:
+
+```sh
+codex plugin marketplace add lkuczborski/Codeck
+codex plugin add codeck@codeck-plugins
+```
+
+Start a new CLI session, or restart Codex desktop and open **Codeck** in the sidebar. With the default Codex profile on the same Mac, the CLI and desktop share this installation. Desktop users can also run only the marketplace command, restart Codex, and install **Codeck** from **Plugins → Codeck Plugins**.
+
+To update an installed plugin:
+
+```sh
+codex plugin marketplace upgrade codeck-plugins
+codex plugin add codeck@codeck-plugins
+```
+
+Restart Codex desktop or start a new CLI session after updating. These commands explicitly refresh the source and install its current package; this guide does not assume automatic updates for personal repository marketplaces. This repository marketplace is separate from OpenAI's public Plugins Directory. See the [plugin guide](plugins/codeck/README.md) for prerequisites, editing, file access, local development, troubleshooting, and publishing.
+
+## Build the Mac app from source
+
+Codeck is a Swift Package Manager project for macOS 14+.
+
+Install local tools:
+
+```bash
+brew bundle
+```
+
+Build the package:
+
+```bash
+swift build
+```
+
+Build and launch the app bundle:
+
+```bash
+./script/build_and_run.sh
+```
+
+Run the tests:
+
+```bash
+swift test
+```
+
+Live Codex features need an active Codex login and either Codex desktop’s bundled executable or a Codex CLI available on `PATH`. Codeck runs live sessions through `codex app-server --listen stdio://`.
+
+## Examples
+
+The [`Examples`](Examples) folder contains sample `.mdeck` decks:
+
+- [`CodeckFeatureCarnival.mdeck`](Examples/CodeckFeatureCarnival.mdeck) is a short tour of Codeck's core workflow: Markdown slides, themes, live preview, presentation mode, web images and GIFs, and runnable Codex cards.
+- [`SyntaxHighlighting.mdeck`](Examples/SyntaxHighlighting.mdeck) shows fenced code highlighting across supported language labels and aliases.
+
+## Document Format
+
+Documents use the `.mdeck` extension so macOS can associate them with Codeck instead of the system Markdown editor. The body remains Markdown. Slides are separated by a line containing only:
+
+```markdown
+---
+```
+
+Deck-level settings live in YAML front matter:
+
+```markdown
+---
+format: codeck.mdeck
+version: 1
+theme: studio
+codex:
+  sandbox: read-only
+  model: "gpt-6.1-sol"
+  reasoning: low
+---
+
+# First Slide
+```
+
+Supported deck metadata:
+
+- `format`: should be `codeck.mdeck`.
+- `version`: current document version is `1`.
+- `theme`: presentation theme. Supported values are `studio`, `midnight`, `chalk`, `solar`, and `atelier`.
+- `codex.sandbox`: default sandbox for live Codex sessions. Defaults to `read-only`.
+- `codex.model`: default model for live Codex sessions. New decks default to `gpt-6.1-sol`. The model picker fetches the current backend catalog from `codex app-server` and caches successful responses. Failed refreshes retain that cache and expose Retry; there is no hardcoded fallback catalog. Saved model overrides and supported reasoning choices stay intact. After a successful refresh, reasoning values no longer supported by the selected model are normalized to a supported value.
+- `codex.reasoning` or `codex.reasoning_effort`: default reasoning effort. New decks default to Light (`low`). The picker uses reasoning levels from the backend catalog. Fence and saved deck overrides are preserved, including future reasoning values.
+
+## Live Codex Sessions
+
+Add a fenced `codex` block to a slide:
+
+````markdown
+```codex id=refactor-demo
+title: Explain the refactor goal
+model: gpt-6.1-sol
+reasoning: xhigh
+sandbox: read-only
+
+Explain how to refactor this SwiftUI view into smaller subviews.
+```
+````
+
+Deck defaults for model, reasoning, and sandbox are applied to every Codex block. Any block can override those values with its own metadata.
+
+Supported block metadata:
+
+- `id`: stable session id used for output tracking and slide buttons. It can be written on the opening fence, as shown above, or as a metadata line.
+- `title`: display title for the live Codex card. This should describe what the prompt is meant to demonstrate.
+- `model`: per-block model override.
+- `reasoning` or `reasoning_effort`: per-block reasoning override. Supported values come from the selected Codex model.
+- `sandbox`: per-block sandbox override. Common values are `read-only`, `workspace-write`, and `danger-full-access`.
+
+The prompt starts after the first blank line following the metadata. Codeck always shows the Markdown response from Codex. While a session is running and before the first response token arrives, the output area shows `Thinking...`.
+
+Each live Codex card has its own run button on the slide. When a slide contains multiple Codex sessions, a slide-level run-all button appears in the top-right corner. Codex responses stream into the slide live and are rendered as Markdown, so lists, headings, tables, code, links, and images in the response use the same renderer as the rest of the deck.
+
+Fenced code blocks support syntax highlighting when the opening fence includes a language, such as ```` ```swift ```` or ```` ```json ````.
+
+## Deck Assistant
+
+The Deck Assistant is built for editing the presentation itself, not just chatting about it. It can work on the selected slide or the whole deck, then return concrete change proposals that you can review before applying.
+
+Useful assistant passes include:
+
+- **Find Gaps:** Identify missing, unclear, unsupported, or weak parts of the deck.
+- **Shorten:** Reduce filler and make slides easier to present.
+- **Polish:** Make the deck more professional, precise, and executive-ready.
+- **Research:** Add current context and cite trustworthy sources when external facts are used.
+- **Add Data:** Strengthen an argument with useful data, benchmarks, comparisons, or evidence.
+
+The assistant can optionally use web research for passes where current facts or citations matter. Proposed changes remain selectable, so you can apply the edits that fit and ignore the rest.
+
+## MCP Server
+
+Codeck includes a file-based MCP server so other agents can create and edit `.mdeck` decks without driving the macOS UI. Build or run the `codeck-mcp` executable from the repository root:
+
+```bash
+swift run codeck-mcp
+```
+
+By default, the server can read and write only inside its current working directory. Set `CODECK_MCP_ALLOWED_ROOTS` to a colon-separated list when an MCP client should work elsewhere:
+
+```bash
+CODECK_MCP_ALLOWED_ROOTS="$HOME/Documents:/tmp" swift run codeck-mcp
+```
+
+The server speaks MCP over stdio and exposes tools for deck and slide mutation:
+
+- `create_deck`
+- `read_deck`
+- `list_slides`
+- `get_slide`
+- `set_slide_markdown`
+- `insert_slide`
+- `delete_slide`
+- `move_slide`
+- `duplicate_slide`
+- `set_deck_settings`
+- `insert_codex_block`
+- `validate_deck`
+
+It also exposes a resource template for read-only deck context:
+
+```text
+codeck://file/deck{?path,view,index}
+```
+
+Use `view=document` for the full Markdown document, `view=outline` for a JSON outline, or `view=slide&index=0` for a specific slide. Slide indexes are zero-based; slide UUIDs are runtime-only and are not persisted in `.mdeck` files.
+
+## Live MCP Bridge
+
+Codeck can also expose the currently open app windows through a localhost MCP bridge. This is disabled by default.
+
+To enable it in the app:
+
+1. Open Codeck settings.
+2. Enable **MCP > Live Bridge**.
+3. Keep Codeck running with the deck window open.
+
+When enabled, Codeck listens on:
+
+```text
+http://127.0.0.1:49747/mcp
+```
+
+The live bridge uses MCP Streamable HTTP with JSON responses. Configure an agent or MCP client with a Streamable HTTP server named `codeck` pointing to that URL. For clients that use the common JSON MCP manifest shape, the entry looks like:
+
+```json
+{
+  "mcpServers": {
+    "codeck": {
+      "transport": "streamable-http",
+      "url": "http://127.0.0.1:49747/mcp"
+    }
+  }
+}
+```
+
+Some clients use `type: "http"` or `type: "streamable-http"` instead of `transport`; use the field name expected by that agent, but keep the same URL. After adding the server to the agent, ask it to call `list_open_decks` first so it can get the live `document_id` for the Codeck window it should edit.
+
+Live bridge tools:
+
+- `list_open_decks`
+- `read_deck`
+- `list_slides`
+- `get_slide`
+- `set_slide_markdown`
+- `insert_slide`
+- `delete_slide`
+- `move_slide`
+- `duplicate_slide`
+- `set_deck_settings`
+- `insert_codex_block`
+- `select_slide`
+- `get_selection`
+- `start_presentation`
+- `stop_presentation`
+- `validate_deck`
+
+Live bridge resources use:
+
+```text
+codeck://live/deck/{document_id}{?view,index}
+```
+
+Use `view=document` for full Markdown, `view=outline` for a JSON outline, or `view=slide&index=0` for a specific slide. The shared `codeck://` scheme uses `file` and `live` host segments so agents can distinguish file-backed deck resources from open app-window resources.
+
+## Presenting
+
+Press the toolbar play button to start a full-screen presentation from the selected slide. Use the left and right arrow keys to navigate and Escape to exit.
+
+## Development
+
+Useful checks:
+
+```bash
+swift test
+script/format.sh
+script/lint.sh
+```
+
+The Codex app Run button is wired to `./script/build_and_run.sh` through `.codex/environments/environment.toml`.
+
+## Release packaging
+
+Write app-facing changes and fixes since the previous release in `release-notes.md`.
+
+`script/release.sh` builds universal Apple silicon and Intel binaries, signs the app and MCP executable with Developer ID and hardened runtime, submits the archive to Apple, staples the app, then verifies the extracted archive with Gatekeeper. Signing and notarization run locally; the finished ZIP and SHA-256 file can be uploaded as GitHub release assets. Signing credentials stay in your Keychain.
+
+```sh
+export CODECK_SIGNING_IDENTITY="Developer ID Application: Your Name (TEAMID)"
+export CODECK_NOTARY_PROFILE="your-keychain-profile"
+script/release.sh v0.8 --notes-file release-notes.md
+```
+
+Add `--publish` to tag the current committed revision and publish the verified assets. `--prepare-only` produces a signed candidate while notarization is unavailable and cannot publish a release. `--allow-dirty` is only for local candidate checks. The [Codex plugin](plugins/codeck/README.md) has its own automatic build and test workflow. Run `script/release_plugin.sh --publish` on your Mac to build, test, sign, notarize, and publish the plugin; merging alone does not publish an ad hoc signed package.

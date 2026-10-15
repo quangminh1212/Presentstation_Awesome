@@ -1,0 +1,356 @@
+# 🍌 Awesome Nano Banana PPT Prompts
+
+A curated collection of Nano Banana Pro prompts for PPT, infographics with images, multilingual support, and instant gallery preview. Open-source prompt engineering library.
+
+## 📚 Table of Contents
+
+- [About](#about)
+- [Prompts Gallery](#prompts-gallery)
+- [How to Use](#how-to-use)
+- [Contributing](#contributing)
+- [License](#license)
+
+## About
+
+This repository contains curated prompts for generating high-quality PPT slides. Each prompt includes:
+- Detailed prompt text (if the prompt text is not available, you can use [CREATE LIKE THIS](https://2slides.com/features/create-slides-like-this) feature to generate from the reference image)
+- Preview images
+- Tags for categorization
+- Contributor information
+- Usage instructions
+
+## Prompts Gallery
+
+Total: **38** prompts
+
+- ### [3D Impasto Micro-Landscape Poster: Oil Painting Pen Stroke on Xuan Paper](prompts/3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper/prompt.md)
+
+  ![Preview](prompts/3d-impasto-micro-landscape-poster-oil-painting-pen-stroke-on-xuan-paper/preview-1.webp)
+
+  **Tags:** `3D Impasto`, `Micro-landscape`, `Neon Purple`, `Academic Typography`, `Minimalist Top-down`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [A flat lay infographic depicting the water cycle](prompts/a-flat-lay-infographic-depicting-the-water-cycle/prompt.md)
+
+  ![Preview](prompts/a-flat-lay-infographic-depicting-the-water-cycle/preview-1.webp)
+
+  **Tags:** `Flat`, `infographic`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Analog film photography aesthetic](prompts/analog-film-photography-aesthetic/prompt.md)
+
+  ![Preview](prompts/analog-film-photography-aesthetic/preview-1.webp)
+
+  **Tags:** `analog photography`, `35mm film`, `kodak portra`, `hiking life`, `film grain`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Black information cards and a snow-capped mountain background in monochrome style](prompts/black-information-cards-and-a-snow-capped-mountain-background-in-monochrome-style/prompt.md)
+
+  ![Preview](prompts/black-information-cards-and-a-snow-capped-mountain-background-in-monochrome-style/preview-1.webp)
+
+  **Tags:** `Monochrome infographic`, `Mountain background`, `Clean design`, `Dark cards`, `Minimalist tech`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Blueprint Style](prompts/blueprint-style/prompt.md)
+
+  ![Preview](prompts/blueprint-style/preview-1.webp)
+
+  **Tags:** `blueprint`, `engineering`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Christmas classic color theme and elements](prompts/christmas-classic-color-theme-and-elements/prompt.md)
+
+  ![Preview](prompts/christmas-classic-color-theme-and-elements/preview-1.webp)
+
+  **Tags:** `classic chrismas`, `3d`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Climate crisis style data visualization breakdown infographics](prompts/climate-crisis-style-data-visualization-breakdown-infographics/prompt.md)
+
+  ![Preview](prompts/climate-crisis-style-data-visualization-breakdown-infographics/preview-1.webp)
+
+  **Tags:** `Climate crisis style`, `grey`, `breakdown pie chart`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [COLOR PALETTE - BLUEPRINT & POP LOGIC](prompts/color-palette-blueprint-pop-logic/prompt.md)
+
+  ![Preview](prompts/color-palette-blueprint-pop-logic/preview-1.jpg)
+
+  **Tags:** `Blueprint`, `pop logic`, `grid`, `technique`, `system`, `architecture`, ``
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Color relief style](prompts/color-relief-style/prompt.md)
+
+  ![Preview](prompts/color-relief-style/preview-1.jpg)
+
+  **Tags:** `Color`, `Relief`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Cute educational game map vector illustration](prompts/cute-educational-game-map-vector-illustration/prompt.md)
+
+  ![Preview](prompts/cute-educational-game-map-vector-illustration/preview-1.png)
+
+  **Tags:** `Cute educational`, `game map`, `kids`, `playful`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Dark data visualization dashboard style](prompts/dark-data-visualization-dashboard-style/prompt.md)
+
+  ![Preview](prompts/dark-data-visualization-dashboard-style/preview-1.webp)
+
+  **Tags:** `dark`, `data visualization`, `dashboard`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Data visualization chart key metrics style](prompts/data-visualization-chart-key-metrics-style/prompt.md)
+
+  ![Preview](prompts/data-visualization-chart-key-metrics-style/preview-1.webp)
+
+  **Tags:** `data visualization`, `charts`, `key metrics`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Egyptian theme for junior graders students](prompts/egyptian-theme-for-junior-graders-students/prompt.md)
+
+  ![Preview](prompts/egyptian-theme-for-junior-graders-students/preview-1.webp)
+
+  **Tags:** `Egyptian`, `education`, `student`, `junior graders`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [IBM style with the modern "IBM Carbon" style](prompts/ibm-style-with-the-modern-ibm-carbon-style/prompt.md)
+
+  ![Preview](prompts/ibm-style-with-the-modern-ibm-carbon-style/preview-1.webp)
+
+  **Tags:** `IBM style`, `IBM Carbon design`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [IBM style with the "Paul Rand" heritage look](prompts/ibm-style-with-the-paul-rand-heritage-look/prompt.md)
+
+  ![Preview](prompts/ibm-style-with-the-paul-rand-heritage-look/preview-1.webp)
+
+  **Tags:** `ibm style`, `Paul Rand`, `heritage`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Leonardo da Vinci–Inspired Vintage Manuscript Sketches](prompts/leonardo-da-vinci-inspired-vintage-manuscript-sketches/prompt.md)
+
+  ![Preview](prompts/leonardo-da-vinci-inspired-vintage-manuscript-sketches/preview-1.webp)
+
+  **Tags:** `Renaissance style`, `Sepia ink drawings`, `Scientific sketches`, `Handwritten annotations`, `Classical anatomy studies`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Luxury Vintage Christmas](prompts/luxury-vintage-christmas/prompt.md)
+
+  ![Preview](prompts/luxury-vintage-christmas/preview-1.webp)
+
+  **Tags:** `Luxury`, `Vintage`, `Christmas`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [McKinsey & Company presentation style](prompts/mckinsey-company-presentation-style/prompt.md)
+
+  ![Preview](prompts/mckinsey-company-presentation-style/preview-1.webp)
+
+  **Tags:** `McKinsey`, `consultant`, `business`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [McKinsey data visualization infographic deep blue](prompts/mckinsey-data-visualization-infographic-deep-blue/prompt.md)
+
+  ![Preview](prompts/mckinsey-data-visualization-infographic-deep-blue/preview-1.png)
+
+  **Tags:** `mckinsey`, `infographic`, `data`, `visualization`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [McKinsey data visualization infographics light blue](prompts/mckinsey-data-visualization-infographics-light-blue/prompt.md)
+
+  ![Preview](prompts/mckinsey-data-visualization-infographics-light-blue/preview-1.png)
+
+  **Tags:** `McKinsey`, `infographic`, `data`, `visualization`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Modern Minimalist Christmas](prompts/modern-minimalist-christmas/prompt.md)
+
+  ![Preview](prompts/modern-minimalist-christmas/preview-1.webp)
+
+  **Tags:** `Christmas`, `Modern`, `Minimalist`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Moody outdoor photography](prompts/moody-outdoor-photography/prompt.md)
+
+  ![Preview](prompts/moody-outdoor-photography/preview-1.webp)
+
+  **Tags:** `moody photography`, `foggy forest`, `silhouette`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [New Chinese-style minimalist illustration](prompts/new-chinese-style-minimalist-illustration/prompt.md)
+
+  ![Preview](prompts/new-chinese-style-minimalist-illustration/preview-1.webp)
+
+  **Tags:** `New Chinese-style`, `Ancient`, `zen-like atmosphere`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Orthographic blueprint with plan, elevation and section](prompts/orthographic-blueprint-with-plan-elevation-and-section/prompt.md)
+
+  ![Preview](prompts/orthographic-blueprint-with-plan-elevation-and-section/preview-1.jpeg)
+
+  **Tags:** `orthographic blueprint`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Product detailed internal components](prompts/product-detailed-internal-components/prompt.md)
+
+  ![Preview](prompts/product-detailed-internal-components/preview-1.png)
+
+  **Tags:** `Internal components`, `product design`, `3D`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Product launch deck in Apple-style minimalism](prompts/product-launch-deck-in-apple-style-minimalism/prompt.md)
+
+  ![Preview](prompts/product-launch-deck-in-apple-style-minimalism/preview-1.jpg)
+
+  **Tags:** `apple`, `product launch`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Retro Pop Grid High-Density Information Poster](prompts/retro-pop-grid-high-density-information-poster/prompt.md)
+
+  ![Preview](prompts/retro-pop-grid-high-density-information-poster/preview-1.jpg)
+
+  **Tags:** `retro`, `pop art`, `grid layout`, `high-density information`, `infographic`, `data visualization`, `vintage style`, `bold colors`, `graphic design`, `poster design`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [SaaS dashboard style](prompts/saas-dashboard-style/prompt.md)
+
+  ![Preview](prompts/saas-dashboard-style/preview-1.webp)
+
+  **Tags:** `dashboard`, `key metrics`, `visual graph`, `charts`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Saul Bass style with the classic "Anatomy of a Murder" Look](prompts/saul-bass-style-with-the-classic-anatomy-of-a-murder-look/prompt.md)
+
+  ![Preview](prompts/saul-bass-style-with-the-classic-anatomy-of-a-murder-look/preview-1.webp)
+
+  **Tags:** `Saul Bass`, `Anatomy of a Murder`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Saul Bass style with the "corporate/network" geometric look](prompts/saul-bass-style-with-the-corporate-network-geometric-look/prompt.md)
+
+  ![Preview](prompts/saul-bass-style-with-the-corporate-network-geometric-look/preview-1.webp)
+
+  **Tags:** `Saul Bass`, `corporate`, `geometric`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Saul Bass style with "title sequence" narrative style](prompts/saul-bass-style-with-title-sequence-narrative-style/prompt.md)
+
+  ![Preview](prompts/saul-bass-style-with-title-sequence-narrative-style/preview-1.webp)
+
+  **Tags:** `Saul Bass`, `title sequence`, `narrative`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Stylized architectural blueprint concept art](prompts/stylized-architectural-blueprint-concept-art/prompt.md)
+
+  ![Preview](prompts/stylized-architectural-blueprint-concept-art/preview-1.png)
+
+  **Tags:** `Blue-Line Concept`, `Blueprint`, `Pixar-style Storyboard`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Travel journal collage](prompts/travel-journal-collage/prompt.md)
+
+  ![Preview](prompts/travel-journal-collage/preview-1.webp)
+
+  **Tags:** `travel journal`, `mixed media`, `collage art`, `polaroid`, `road trip`, `hand written`, `scrapbooking`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Triptych infographic comparing cloud types](prompts/triptych-infographic-comparing-cloud-types/prompt.md)
+
+  ![Preview](prompts/triptych-infographic-comparing-cloud-types/preview-1.webp)
+
+  **Tags:** `triptych`, `infographic`, `comic`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Vintage architectural cross-section watercolor illustration](prompts/vintage-architectural-cross-section-watercolor-illustration/prompt.md)
+
+  ![Preview](prompts/vintage-architectural-cross-section-watercolor-illustration/preview-1.png)
+
+  **Tags:** `Vintage architectural`, `cross-section`, `watercolor illustration`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Whimsical 3D isometric Christmas](prompts/whimsical-3d-isometric-christmas/prompt.md)
+
+  ![Preview](prompts/whimsical-3d-isometric-christmas/preview-1.webp)
+
+  **Tags:** `Whimsical`, `3D`, `Christmas`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [Whiteboard data analysis sketch style](prompts/whiteboard-data-analysis-sketch-style/prompt.md)
+
+  ![Preview](prompts/whiteboard-data-analysis-sketch-style/preview-1.webp)
+
+  **Tags:** `whiteboard`, `data analysis`, `sketch`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+- ### [WPA National Park poster style](prompts/wpa-national-park-poster-style/prompt.md)
+
+  ![Preview](prompts/wpa-national-park-poster-style/preview-1.webp)
+
+  **Tags:** `WPA poster`, `national park poster`, `vintage travel`, `mountain landscape`, `flat design`, `retro poster`
+
+  **Contributor:** [2slides](https://github.com/2slides)
+
+## How to Use
+
+1. Browse the prompts gallery above
+2. Click on a prompt to view details
+3. Copy the prompt text
+4. Use it in [2Slides](https://2slides.com)
+
+## Contributing
+
+We welcome community contributions! Please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md) for guidelines.
+
+### Contribution Process
+
+1. Fork this repository
+2. Create a new prompt directory and files
+3. Submit a Pull Request
+4. Wait for review and merge
+
+## License
+
+This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+⭐ If this project helps you, please give us a Star!
+
+<!-- This README is auto-generated. Run `node scripts/generate-readme-from-github.js` to regenerate. -->

@@ -1,0 +1,416 @@
+# kslides Template
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/kslides/kslides-template)](https://github.com/kslides/kslides-template/releases)
+[![kslides version](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkslides%2Fkslides-template%2Fmaster%2Fgradle%2Flibs.versions.toml&query=%24.versions.kslides&label=kslides&color=2A9EEE)](https://github.com/kslides/kslides)
+[![Kotlin version](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkslides%2Fkslides-template%2Fmaster%2Fgradle%2Flibs.versions.toml&query=%24.versions.kotlin&label=kotlin&color=red&logo=kotlin)](https://kotlinlang.org)
+[![JVM](https://img.shields.io/badge/dynamic/toml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkslides%2Fkslides-template%2Fmaster%2Fgradle%2Flibs.versions.toml&query=%24.versions.jvm&label=JVM&color=007396&logo=openjdk&logoColor=white)](https://adoptium.net/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed16ddd9-ab47-4e9d-8e37-807edded7a6e/deploy-status)](https://app.netlify.com/sites/kslides-template/deploys)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
+A template repo for authoring [kslides](https://github.com/kslides/kslides) presentation.
+
+## Prerequisites
+
+- **JDK 17.** The Gradle toolchain auto-provisions one if you don't have it locally.
+- **[IntelliJ IDEA](https://www.jetbrains.com/idea/download/)** — recommended; the primary author workflow is the green-arrow run on `fun main()` in `Slides.kt`.
+- **Git.**
+
+## Getting Started
+
+[![Template](https://img.shields.io/endpoint?color=%232A9EEE&logo=github&style=flat&url=https%3A%2F%2Fraw.githubusercontent.com%2Fkslides%2Fkslides%2Fmaster%2Fdocs%2Fshields%2Ftemplate.json)](https://github.com/kslides/kslides-template/generate)
+
+To create a kslides presentation, generate a new repository using this
+repo as a [template](https://github.com/kslides/kslides-template/generate).
+
+All changes to this template are documented in
+[CHANGELOG.md](https://github.com/kslides/kslides-template/blob/master/CHANGELOG.md)
+(structured per-version diff) and
+[RELEASE_NOTES.md](https://github.com/kslides/kslides-template/blob/master/RELEASE_NOTES.md)
+(narrative highlights). Check back occasionally for any changes that should be incorporated into your kslides repo.
+
+## Creating Slide Content
+
+Open your newly created kslides repo with [IntelliJ](https://www.jetbrains.com/idea/download/) and edit
+the `src/main/kotlin/Slides.kt` file. The [kslides](https://github.com/kslides/kslides) repo
+[README.md](https://github.com/kslides/kslides/blob/master/README.md)
+describes the various _kslides_ blocks.
+
+### What the Sample Deck Demonstrates
+
+`Slides.kt` is a tour of the kslides DSL. Each feature gets a demo slide plus a "Slide
+Definition" slide that shows its own source, so you can read the code beside the result and
+delete whatever you don't want.
+
+| Slide | API |
+| --- | --- |
+| Markdown / HTML / DSL slides | `markdownSlide`, `htmlSlide`, `dslSlide` |
+| Code with highlighting and animation | `codeSnippet`, `include()`, `toLinePatterns()` |
+| Fragments | `fragment(Effect.…)` |
+| Speaker notes | a `Notes:` line in markdown content |
+| Slide backgrounds | `slideBackground()`, `slideConfig { backgroundImage … }` |
+| Font sizes | `slideConfig { fontSize / codeFontSize / codeWrap }` |
+| Lists and tables | `unorderedList`, `orderedList`, `listHref`, `headRow`, `bodyRow` |
+| Mermaid diagrams | `mermaid()` |
+| Kotlin Playground | `playground()`, `playgroundConfig { fontSize }` |
+| Lets-Plot figures | `letsPlot { }` |
+| Kroki diagrams | `diagram("graphviz")` |
+| Custom themes | `customTheme { }` — on `greattalk2.html`, not the main deck |
+
+Two of these cost something, so remove them if you don't need them:
+
+- **Lets-Plot** requires the `kslides-letsplot` dependency, which adds roughly 17 MB to
+  `build/libs/kslides.jar` (~35 MB total). Drop the dependency and the slide together.
+- **Kroki** calls `kroki.io` while the slides are generated and caches the result under
+  `docs/kroki/`, so a clean build needs network access. `mermaid()` has no such requirement —
+  it renders in the browser from a runtime bundled with kslides.
+
+One constraint on `markdownSlide` content is worth knowing before you edit it: keep a
+`fragment()` line plain text. The reveal.js comment that `fragment()` emits attaches to the last
+element on the line, so a trailing backtick span takes the fragment class and only the code
+animates. Em dashes, a bare `<`, and `&` are fine in Markdown as of kslides 1.5.0; earlier
+releases failed the whole build on them.
+
+### Project Structure
+
+- `src/main/kotlin/Slides.kt` — your deck (the only file most users touch).
+- `src/main/kotlin/playground/HelloWorld.kt` — source loaded by the Kotlin Playground slide.
+- `src/export/kotlin/Export.kt` — PDF-export entry point (see _Exporting to PDF_ below).
+- `src/export/kotlin/Docs.kt` — `make docs` entry point: writes the decks to `docs/` without the HTTP server.
+- `src/main/resources/public/` — static assets when serving over HTTP.
+- `docs/` — generated HTML and static assets when publishing to GitHub Pages or Netlify.
+- `gradle/libs.versions.toml` — kslides, Kotlin, plugin, and JVM versions. The Gradle version is in
+  `gradle/wrapper/gradle-wrapper.properties`.
+- `.github/dependabot.yml` — weekly dependency-update pull requests (see _Updating kslides_).
+- `gradle.properties` — `group` and `version` (see _Customizing Your Fork_ below).
+- `build.gradle.kts` — `mainName` (see _Customizing Your Fork_ below).
+
+### Output Modes
+
+Configured per-presentation in `Slides.kt` via the `output {}` block:
+
+- `enableFileSystem = true` — write static HTML into `/docs` for GitHub Pages or Netlify.
+- `enableHttp = true` — run an embedded HTTP server (used by Heroku and for local preview).
+
+Both can be enabled at the same time.
+
+### Follow-Along Presenting
+
+`followAlong = true` in the `output {}` block (HTTP mode only) lets an audience track the
+presenter live: open the deck with `?present=<token>` and every other browser viewing it follows
+your slide and fragment position. A viewer who navigates on their own breaks away and gets a
+one-click rejoin; late joiners land on the current position.
+
+The presenter URLs, token included, are logged at server startup. Add `presenterToken = "…"`
+next to `followAlong` for a stable URL instead of a random per-launch one — but note the token
+travels in the URL, so it is demo-grade access control, not a secret.
+
+This has no effect on filesystem output; nothing is injected into the static HTML in `/docs`.
+
+### Publishing Under a Subpath
+
+On GitHub Pages your fork is served from `https://username.github.io/repo_name/`, not from a
+domain root. Any path beginning with `/` therefore resolves against your **account** root and
+misses — the single most common way a deck that works locally breaks once published.
+
+As of kslides 1.4.0 the library resolves these for you, against the output root, from a deck at
+any depth — write them relative to `/docs`, not to the deck:
+
+- `customTheme { logo(...) }`, `topLeftSvgSrc`, `topRightSvgSrc`
+- `slideConfig`'s `backgroundImage`, `backgroundIframe`, `backgroundVideo`
+- `presentationConfig { favicon = ... }`
+- `playground { }`, `letsPlot { }`, and `diagram { }` iframes and images
+
+You still write these yourself, relative to the **deck**:
+
+- Corner **links** — `topLeftHref`, `topRightHref`, and `logo(href = ...)` — which are navigation
+  targets rather than assets, so kslides emits them verbatim
+- Image and link paths inside Markdown or HTML slide content, which are handed to reveal.js unparsed
+- `menuConfig { themesPath }`, passed straight to the menu plugin
+
+That means a deck below the output root needs its own `../`. The sample deck's 🔙 link shows both
+cases:
+
+```kotlin
+presentation {
+  path = "greattalk1"                                        // a directory one level down
+  presentationConfig { topRightHref = "../#/otherslides" }
+}
+
+presentation {
+  path = "greattalk2.html"                                   // sits at the output root
+  presentationConfig { topRightHref = "./#/otherslides" }
+}
+```
+
+Use `"./"` rather than `"/"` for a link meant to reach the deck's own root; it behaves identically
+in HTTP mode, where the deck is already served from the root.
+
+If your fork hand-compensated an *asset* path with a `../` before kslides 1.4.0, remove it — the
+library now adds the prefix itself and the two would compound.
+
+### Favicon
+
+`presentationConfig { favicon = ... }` sets the browser tab icon. A relative value resolves against
+the output root, so one path works from a deck at any depth:
+
+```kotlin
+presentationConfig {
+  favicon = "images/icon.png"   // default is "favicon.ico"; "" omits the <link> entirely
+}
+```
+
+kslides ships no icon of its own. For filesystem output, put the file at the root of `/docs`; for
+HTTP output, put it in `src/main/resources/public/`. This template supplies `favicon.ico` in both
+places.
+
+### Font Sizes
+
+Don't hand-write CSS for this. `slideConfig { }` carries three font properties that cascade
+global → presentation → slide:
+
+| Property | Effect |
+| --- | --- |
+| `fontSize` | Inline `font-size` on the slide's `<section>` — any CSS length |
+| `codeFontSize` | Font size for `<pre>` code blocks on the slide |
+| `codeWrap` | Wrap long code lines instead of letting them overflow |
+
+The sample deck sets a deck-wide default and overrides it on the slides whose code is wider:
+
+```kotlin
+presentation {
+  presentationConfig {
+    slideConfig {
+      codeFontSize = "0.60em"   // reveal.js' own default is 0.55em
+      codeWrap = true
+    }
+  }
+
+  markdownSlide {
+    slideConfig {
+      codeFontSize = "0.45em"   // codeWrap is inherited
+    }
+    ...
+  }
+}
+```
+
+kslides generates a class per distinct `(codeFontSize, codeWrap)` pair and emits the matching
+rules into the head, so slides sharing a size share a class. It also pins the highlight plugin's
+line-number gutter to `white-space: nowrap` whenever wrapping is on — without that, `break-word`
+inherits into the gutter and breaks two-digit line numbers across two lines. Hand-rolled CSS
+misses that pairing, which is the main reason to prefer the config.
+
+One caveat: the font properties resolve per-slide, so setting them in a
+`verticalSlides { slideConfig { } }` block has no effect. Set them on each child slide, or
+deck-wide in the presentation-level `slideConfig { }`.
+
+`fontSize` and `codeFontSize` compound. `fontSize` is an inline `font-size` on the slide's
+`<section>`, so an `em` `codeFontSize` resolves against the already-scaled slide: `fontSize =
+"0.65em"` with the deck's `codeFontSize = "0.60em"` renders code at `0.60 × 0.65` of the theme's
+base size. To size code independently of `fontSize`, use an absolute unit such as
+`codeFontSize = "23px"`.
+
+### Styling Slides
+
+For anything the config blocks don't cover, deck CSS is accumulated with `css += """…"""`. Adding
+it inside the `kslides { }` block styles every presentation; adding it inside a `presentation { }`
+block styles just that one.
+
+An individual slide opts into a rule with `classes += "name"`, which becomes a class on the
+generated `<section>`:
+
+```kotlin
+presentation {
+  css += """
+  .reveal .callout { border-left: 4px solid #258BD2; padding-left: 0.5em; }
+  """
+
+  markdownSlide {
+    classes += "callout"
+    ...
+  }
+}
+```
+
+Reach for this when there is no config property for what you want — reserve it for genuinely
+custom styling rather than font sizes.
+
+### Copy-Code Button
+
+`copyCodeConfig { }` goes inside a `presentationConfig { }` block — either the one in
+`kslides { }` (defaults for every presentation) or the one inside a `presentation { }`:
+
+```kotlin
+copyCodeConfig {
+  button = CopyCodeButton.ALWAYS   // ALWAYS, HOVER, or FALSE
+  display = CopyCodeDisplay.ICONS  // TEXT, ICONS, or BOTH
+  copy = "Copy"
+  copied = "Copied!"
+  timeout = 2000
+}
+```
+
+Both enums are imported from `com.kslides.config`.
+
+### Static Content
+
+Presentations served by HTTP load static content from `/src/main/resources/public`, whereas
+filesystem presentations load static content from `/docs`.
+
+Make sure to run `./gradlew clean build` after making changes to `/src/main/resources/public`.
+
+### Images (`docs/images`)
+
+`docs/images/` is the **single source of truth** for image assets. It is committed to git so
+GitHub Pages and Netlify can serve the images directly alongside the generated HTML in `/docs`.
+
+To avoid duplicating the same files under `src/main/resources/public/images/`, the Gradle
+`processResources` task (in `build.gradle.kts`) copies `docs/images/` into the resources jar
+at `public/images/` at build time. HTTP-served decks therefore load the same images without
+a second committed copy.
+
+To add or update an image:
+
+1) Drop (or replace) the file in `docs/images/`.
+2) Run `./gradlew clean build` so HTTP-served decks pick up the change via `processResources`.
+3) Commit the file in `docs/images/` — do **not** add a parallel copy under `src/main/resources/public/images/`.
+
+### reveal.js Assets (`docs/revealjs`)
+
+The reveal.js distribution lives inside the `kslides-core` JAR (at classpath `revealjs/**`)
+and that JAR is the single source of truth. The `syncRevealJs` Gradle task unpacks those
+assets onto disk at `docs/revealjs/` so the static HTML in `/docs` has working JS/CSS
+references when published to GitHub Pages or Netlify.
+
+Run it whenever you bump `kslides-core` in `gradle/libs.versions.toml`:
+
+```
+make sync-revealjs        # or: ./gradlew syncRevealJs
+```
+
+Commit the refreshed `docs/revealjs/` along with the version bump so deployed decks load
+matching reveal.js assets.
+
+### Exporting to PDF
+
+Every presentation can be printed to PDF via headless Chromium:
+
+```
+make pdf                     # all decks -> build/pdf
+make pdf DECK=greattalk1     # just one deck
+make clean-pdf               # remove build/pdf
+```
+
+`make pdf` wraps `./gradlew exportPdf` (`-Pdeck=<name>` for the single-deck form). The decks are
+served from a temporary HTTP server on an ephemeral port and loaded with reveal.js'
+`?print-pdf` mode, so this works whether or not your `output {}` block enables HTTP.
+
+Settings live in a `pdf {}` block inside `output {}` in `Slides.kt` — all optional:
+
+```kotlin
+output {
+  enableFileSystem = true
+  enableHttp = true
+
+  pdf {
+    outputDir = "build/pdf"      // where the PDFs are written
+    previewPng = true            // also save a PNG of each deck's first slide
+    browserChannel = "chrome"    // use an installed browser instead of downloading Chromium
+    exclude("greattalk2.html")   // skip a deck (an explicit DECK=<name> overrides this)
+  }
+}
+```
+
+The first run downloads Playwright's bundled Chromium (cached per user, so it happens once).
+Setting `browserChannel` to `"chrome"` or `"msedge"` skips that download entirely.
+
+The entry point is `src/export/kotlin/Export.kt`, which calls `exportPdf(deck, templateSlides())`.
+It sits in its own `export` source set on purpose: that keeps the Playwright dependency out of
+`build/libs/kslides.jar`, which would otherwise grow by tens of megabytes for a feature Heroku
+never runs. This is also why `Slides.kt` exposes its deck as `fun templateSlides(): KSlides.() -> Unit`
+rather than building it inline in `main()` — both entry points run the same block.
+
+### Customizing Your Fork
+
+In `gradle.properties`:
+
+- `group=com.github.username` — change to your name or org.
+- `version=...` — your template version, independent of the kslides library version (which lives in `gradle/libs.versions.toml`).
+
+In `build.gradle.kts`:
+
+- `mainName = "SlidesKt"` — only change if you rename `Slides.kt`. Required for HTTP-served decks.
+- The `shadowJar` block builds `build/libs/kslides.jar`. If you add to it, leave the two
+  `duplicatesStrategy` lines in place — see _The Uberjar_ below.
+
+### The Uberjar
+
+`make uberjar` (or `./gradlew shadowJar`) packs your deck and all of its dependencies into
+`build/libs/kslides.jar`, which is what Heroku runs. `make uber` builds and runs it locally on
+`$PORT`, defaulting to 8080.
+
+The task's duplicate handling is worth understanding before you edit it:
+
+```kotlin
+duplicatesStrategy = DuplicatesStrategy.INCLUDE
+filesMatching(listOf("public/**", "META-INF/LICENSE*", "META-INF/NOTICE*")) {
+  duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+mergeServiceFiles()
+```
+
+Gradle applies the duplicate strategy *before* Shadow's resource transformers run, so the
+default `EXCLUDE` would drop the extra copies of `META-INF/services/*` and `*.kotlin_module`
+that `mergeServiceFiles()` is supposed to merge — Shadow 9.6.1 warns about this at length.
+`INCLUDE` lets the transformers do their job; the `filesMatching` block keeps first-copy-wins
+for the ordinary resources that have no transformer, so they aren't duplicated in the jar.
+Your own `src/main/resources/public/` files are packed ahead of kslides-core's, which is why
+replacing `favicon.ico` there overrides the stock one.
+
+## Deployment Options
+
+### Deploy to GitHub Pages
+
+1) Go to your kslides content repo on GitHub 
+2) Click on _Settings_ -> _Pages_ 
+3) Under **Source**, choose the _master_ branch and the _/docs_ folder and click on _Save_
+4) Open the _src/main/kotlin/Slides.kt_ file
+5) Ensure the _output{}_ block contains: `enableFileSystem = true` 
+6) Click on the green arrow next to the `fun main()` declaration to run the program and generate the html content in the _/docs_ folder (or run `make docs`, which writes the same files without starting the HTTP server)
+7) Add the newly generated html files in the `/docs` folder to git 
+8) Commit and push the changes to GitHub  
+9) Wait a minute or so and your slides will be available at _https://username.github.io/repo_name/_
+
+### Deploy to Netlify
+
+1) Create an account on [Netlify](https://www.netlify.com/)
+2) Click on _Add a new site_ -> _Import and existing project_
+3) Click on the **GitHub** button and select your slides repo
+4) Go to your Netlify dashboard and click on the newly added repo.
+5) To edit your Netlify subdomain name, click on the **Domain settings** button and then click on the **Options** button 
+6) Your repo already has a _netlify.toml_ file that will instruct Netlify to use your `/docs` folder as an html source
+7) Open the _src/main/kotlin/Slides.kt_ file
+8) Insure `enableFileSystem = true` is set in the _output{}_ block
+9) Click on the green arrow next to the `fun main()` declaration to run the program and generate the html content in the _/docs_ folder (or run `make docs`)
+10) Add the newly generated html files in the `/docs` folder to git
+11) Commit and push the changes to GitHub
+12) Wait a minute or so and your slides will be available at _https://site-name.netlify.app/_
+
+
+### Deploy to Heroku
+
+1) Create an account on [Heroku](https://www.heroku.com/)
+2) Install the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)
+3) Open the _src/main/kotlin/Slides.kt_ file
+4) Ensure the _output{}_ block contains: `enableHttp = true`
+5) Create a new Heroku app with: `heroku create slideshow_name`
+6) Commit and push the changes to Heroku with: `git push heroku master`
+7) Open the app in a browser with: `heroku open`
+
+## Updating kslides
+
+- Bump library, plugin, and JVM versions in `gradle/libs.versions.toml` (not in `build.gradle.kts` or the `Makefile`).
+- Upgrade Gradle with `make upgrade-wrapper GRADLE_VERSION=x.y.z`. The version lives only in `gradle/wrapper/gradle-wrapper.properties`.
+- After bumping `kslides-core`, run `make sync-revealjs` (or `./gradlew syncRevealJs`) to refresh `docs/revealjs/` from the new core JAR — otherwise statically-published decks will load stale reveal.js assets. A core bump can add entire plugin directories (kslides 1.2.0 added `docs/revealjs/plugin/mermaid/`), so check `git status` for new files and commit them too.
+- `make versions` lists only the out-of-date dependencies (and a newer Gradle release, if there is one); `make versions-all` prints the plugin's full report, up-to-date dependencies included.
+- Dependabot (`.github/dependabot.yml`) opens weekly pull requests for the same updates, including the Gradle wrapper, each held back until the release is a week old. A kslides update arrives as one PR for all three `com.kslides` artifacts. Before or right after merging it, run `make sync-revealjs`, regenerate your decks, and commit both, since Dependabot can do neither. Delete the file if you don't want the PRs.

@@ -1,0 +1,178 @@
+# marp-pptx
+
+Marp Markdown を **編集可能な PowerPoint (.pptx)** に変換する Python ツール。
+52 種のセマンティックなスライド型・OMML 数式（PowerPoint でそのまま編集可）・
+洗練ミニマルなデザインを、`pip install` 一発で。
+
+> v0.2 で全面リニューアル: 上下中央バランス配置・細いアクセント線・small-caps ラベルに刷新。
+> 新デフォルトは `claude`（Anthropic ブランド: 温かいクリーム地＋クレイ accent）。
+> 白基調が好みなら `minimal`。タイトル/区切り/数式/カード/表を作り直しました。
+
+## Quick Start
+
+```bash
+pip install -e .
+
+# 変換（無指定で claude テーマ = Anthropic cream + clay）
+marp-pptx convert deck.md -o deck.pptx
+
+# 出す前に検査（実フォント計測。LibreOffice も API キーも不要）
+marp-pptx doctor deck.md
+
+# 白基調の minimal / その他パレット
+marp-pptx convert deck.md -p minimal
+marp-pptx convert deck.md -p navy
+
+# LibreOffice / Keynote で開く想定なら数式を画像で焼き込む
+marp-pptx convert deck.md --math png
+
+# テーマ／型の一覧
+marp-pptx themes
+marp-pptx types
+
+# ブラウザ編集 UI（要 marp-pptx[web]）
+marp-pptx serve
+```
+
+## Web UI（ブラウザで作る）
+
+`pip install -e ".[web]"` のうえで `marp-pptx serve` → ブラウザで **http://127.0.0.1:8080**。
+Markdown を覚えなくても、**型を選んでフォームに入力するだけ**でスライドが組めます。
+
+### 1. 型ギャラリーから選ぶ — `/types-page`
+
+![型ギャラリーの操作](docs/demo-gallery.gif)
+
+- 52 種の型を**サムネ付き**で一覧。検索ボックスで「比較」「KPI」「□」などから絞り込み
+- カードをクリックすると、その型のフォームを開いた状態で**エディタが起動**
+
+### 2. プリセットから作って即プレビュー — `/editor`
+
+![エディタとライブプレビュー](docs/demo-editor.gif)
+
+1. 右の「**プリセットから開始**」で雛形を選ぶ（最小雛形 / 学術発表 / プロダクト紹介 / 講義・勉強会）
+2. 「**＋スライドを追加**」で型を選び、フォームに入力 → Markdown が自動生成される
+3. 「**更新**」で各スライドを実レンダリング（LibreOffice、数秒）。数式は互換性のため画像表示
+4. 「**→ PPTX を生成してダウンロード**」で**完全編集可能**な `.pptx` を取得
+
+その他の機能: 画像のドラッグ&ドロップ埋め込み・MD の保存／読込＆オートセーブ・既存 PPTX の読み込み（PPTX→MD）・パレット切替・フォント倍率。
+
+> 型ギャラリーのサムネは `marp-pptx render-gallery` で再生成できます。
+
+## Preview
+
+| | |
+|---|---|
+| ![Title](docs/preview-title.png) | ![Divider](docs/preview-divider.png) |
+| ![Equation](docs/preview-equation.png) | ![KPI](docs/preview-kpi.png) |
+| ![Timeline](docs/preview-timeline.png) | ![History](docs/preview-history.png) |
+
+## 入力フォーマット
+
+Marp Markdown。スライドは `---` 区切り、型は HTML コメントで指定します。
+
+```markdown
+---
+marp: true
+---
+
+<!-- _class: title -->
+# 研究タイトル
+## サブタイトルがキッカーになる
+山田太郎 / 福井大学 / 2026
+
+---
+
+# 本文スライド
+<!-- note: ここは発表者ノート。PPTX のノート欄に入る -->
+- 内容は本文領域の上下中央にバランス配置される
+- **太字** / `コード` / $x^2$ のインライン記法に対応
+```
+
+各型ごとの HTML 構造（`kpi` / `zone-flow` / `equation` など）は
+`marp-pptx types` と各テンプレート（`src/marp_pptx/data/templates/`）、[USAGE.md](USAGE.md) を参照。
+
+## 精度チェック（`marp-pptx doctor`）
+
+資料の品質を落とすのは、たいてい**文字がボックスに入っていない**こと。
+その一点を推測でなく**実測**で潰すためのコマンド。
+
+```bash
+marp-pptx doctor deck.md            # .md ならビルドしてから検査（.pptx も可）
+marp-pptx doctor deck.pptx --json   # 機械可読
+marp-pptx doctor deck.md --strict   # warn 以上で exit 1（CI 向け）
+```
+
+各テキストボックスを、そのボックスが指定している**書体の実際の字送り**（`hmtx`/FreeType）で
+測り、PowerPoint と同じ折り返し（Latin は語境界、日本語は**禁則処理**）を再現して比較する。
+
+| 検査 | 内容 |
+|---|---|
+| `overflow` | 折り返し後の高さがボックスを超える／`word_wrap` 無効で横にはみ出す。**超過 pt と収まるサイズ**を提示 |
+| `overlap` | テキスト同士の重なり・近接（0.12in 未満）。伸びるボックス（spAutoFit）の実効高も考慮 |
+| `offslide` | スライド外／安全余白（0.35in）内。テーマの帯・フッターバーは自動除外 |
+| `contrast` | 実際に背後にある面（カード塗り or スライド背景）との WCAG AA 比 |
+| `font` | 未インストール／LibreOffice プレビューで幅が変わる書体 |
+| `package` | 関係参照切れ・content-type 欠落・拡張子と中身の不一致など、**PowerPoint が「修復」と言う破損** |
+| `deck` | 同一レイアウトの連続、図表の無いスライド |
+
+レンダラ不要・数十 ms。同じ計測エンジンをビルダー自身も使うので、
+**予約したボックスと実際に必要な高さが常に同じ物差し**で測られる。
+
+## デザイン
+
+- **テーマ**: `claude`（デフォルト, Anthropic cream `#faf9f5` + clay `#d97757`, ダーク sandwich＋カードシャドウ）/ `midnight`・`terracotta`・`teal`・`cherry`（題材別の蒸留テーマ, いずれも sandwich 構成）/ `minimal`（白基調）/ `beamer`（LaTeX Madrid）/ `tmu-cs`（TMU グリーン学術, [marp-theme-tmu-cs](https://github.com/taishi-n/marp-theme-tmu-cs) 移植）/ `research`（PowerPoint マスタ灰・研究審査, [marp-theme-dev](https://github.com/katsuzakitomohiro/marp-theme-dev) 移植）/ `academic` 系 10 パレット
+- **配色 (claude)**: ink `#141413` / accent `#d97757` / hairline `#e8e6dc` / cards `#ffffff` on cream
+- **数式**: OMML（PowerPoint で編集可能, デフォルト）/ matplotlib PNG（`--math png`）
+- **編集可能性**: すべて実テキストボックス + 実テーブル + OMML。一枚絵の画像化はしない
+
+## AI から使う
+
+### Claude スキル
+`skills/marp-pptx/` は Claude にデッキの作り方（型選択フロー・正確な HTML 骨組み・落とし穴）を教える
+[Claude Code スキル](skills/README.md)。どのプロジェクトからでも使えるよう導入:
+
+```bash
+ln -s "$(pwd)/skills/marp-pptx" ~/.claude/skills/marp-pptx
+```
+
+### MCP サーバー
+`marp-pptx[mcp]` でエージェントが会話から**編集可能 PPTX を生成し、画像で自己確認**できる。
+
+```bash
+pip install -e ".[mcp]"
+```
+
+MCP クライアント設定（例: Claude Desktop / Claude Code）:
+
+```json
+{ "mcpServers": { "marp-pptx": { "command": "marp-pptx-mcp" } } }
+```
+
+公開ツール:
+- **取り込み**: `read_paper`（PDF/arXiv → title/節/図/**数値**を構造抽出）/ `read_repo`（README/構造/言語）
+- **グラウンディング**: **`check_deck_against_source`**（デッキの数値がソース論文に実在するか照合＝ハルシネ検出）
+- **生成**: `slide_types`（52型カタログ）/ `slide_template`（型の骨組み）/ `list_presets`・`get_preset` /
+  `build_pptx`（MD→編集可能.pptx ＋ lint ＋ 実測欠陥）
+- **検証**: **`check_deck`**（溢れ・重なり・コントラスト・破損を実測。**レンダラ不要**で数十 ms）/
+  **`preview_png`**（各スライドを画像で返す＝AI が下書きを見て直せる）
+
+これで「論文＋リポを渡す → 抽出 → ソースから下書き → 数値照合 → 生成 → **実測検証** → 画像で自己確認」のループが回る。
+PDF 取り込みは `pip install "marp-pptx[ingest]"`（PyMuPDF）。
+
+### ワンコマンド（ターンキー）
+論文を渡すだけで、ソースに基づいた編集可能デッキを 1 コマンドで:
+
+```bash
+pip install "marp-pptx[ai]"      # + export ANTHROPIC_API_KEY=...
+marp-pptx from-paper paper.pdf --repo . -o deck.pptx
+# arXiv URL も可: marp-pptx from-paper https://arxiv.org/abs/1706.03762
+```
+
+取り込み → ソース基準で LLM 下書き → **数値がソースに無ければ自動修正**（fidelity ループ）→
+意味的忠実性レビュー → ビルド。出力に `fidelity N/100` と未裏取り数値の警告が付く。
+
+## ドキュメント
+
+- 全機能・全 52 型の詳細は [USAGE.md](USAGE.md)
+- 今後の計画は [ROADMAP.md](ROADMAP.md)

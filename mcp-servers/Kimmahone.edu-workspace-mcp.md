@@ -1,0 +1,428 @@
+# 🎓 edu-workspace-mcp
+
+> **Workspace 읽기 전용 Agent 1.1.2**: 패키지 설치와 사용자 브라우저 동의로 Google Docs·Forms·Sheets·Slides 읽기 권한 5개를 연결합니다. Google Cloud 프로젝트나 OAuth JSON을 따로 준비하지 않습니다. 실제 두 계정의 로그인·문서 읽기·Google/MCP 갱신·계정 분리·연결 해제, 무료 한도 차단과 만료 인증 정리를 검증했습니다. 기존 `latest` 1.1.1은 유지하며 새 Agent는 별도 `agent` 태그와 정확한 버전 번호로 설치합니다. [공개 설치 절차](docs/PUBLIC_MCP_INSTALL.md)의 npm 게시 여부를 먼저 확인하세요. 고정24시간 시험 종료 없이 무료 한도 안에서 운영하며 공식 요금 조건을 자동 확인합니다. 조건 변경·48시간 확인 실패·사용량 초과 시 요청을 중단하고 유료 전환·별도 모델 API 호출은 하지 않습니다. **1.1.1 이하에 `--workspace-readonly`를 전달하지 마세요.**
+
+AI에 요청할 문장:
+
+> 이 GitHub의 MCP를 현재 사용하는 앱에 설치해 주세요. OS·Node.js 22+와 게시된 버전을 확인하고, 승인된 읽기 권한 5개의 Agent만 등록해 주세요. Google 로그인과 동의는 제가 직접 하겠습니다.
+
+루트 [AGENTS.md](AGENTS.md)에 AI 설치 순서가 있습니다. 등록과 Google 인증은 별도 단계이며 GitHub 주소만으로 계정 연결이 완료되지 않습니다.
+
+
+자연어로 Google Docs, Sheets, Slides, Forms, Drive와 Classroom을 사용하는 교육 특화 Model Context Protocol(MCP) 서버입니다. Apps Script 없이 Google 공식 API를 직접 호출합니다.
+
+[공식 홈페이지](https://edu.jeld.kr/) · [복사 가능한 예시 프롬프트](https://edu.jeld.kr/#prompts) · [개인정보처리방침](https://edu.jeld.kr/privacy.html) · [이용약관](https://edu.jeld.kr/terms.html)
+
+> `1.1.1`은 로컬 stdio MCP 정식 안정 버전입니다. 공용 Google 데스크톱 OAuth 클라이언트가 포함되어 있어 최종 사용자가 Google Cloud 프로젝트를 만들 필요가 없습니다. 기본 모드는 앱이 다루는 파일에 한정된 `drive.file`을 사용하며, 기존 자료 읽기는 사용자가 `--read`로 선택합니다.
+
+## 할 수 있는 일
+
+### 교직원용 웹앱
+
+**v1.1.1 웹앱 바로 실행** (Node.js 22 이상):
+
+```sh
+npx -y edu-workspace-mcp@1.1.1 web
+```
+
+현재 폴더의 `.env`에 키를 설정할 수 있으며 GPT 기본 모델은 `gpt-6-luna`입니다. OpenAI API의 학습 공유 비활성 설정을 확인한 운영자만 `OPENAI_NO_TRAINING_CONFIRMED=true`를 설정합니다. Gemini는 학습에 사용하지 않는 Paid Service를 확인한 경우에만 `GEMINI_NO_TRAINING_CONFIRMED=true`로 이용합니다. 확인 전에는 AI 전송을 차단하며 예시 편집과 한글 변환은 계속 사용할 수 있습니다. 기존 Google 연결과 생성 파일은 유지됩니다.
+
+단계별 API 연결·공개 배포 안내: [직접 해야 할 설정](docs/WORKSPACE_LAB_START.md).
+
+MCP와 별도로 브라우저에서 바로 쓰는 **Workspace Lab — Google 도구 활용 스튜디오**을 추가했습니다. 같은 코드로 개인 로컬 앱과 누구나 이용하는 배포용 웹앱을 운영합니다.
+
+```sh
+npm ci
+cp .env.example .env
+# .env에 AI API 키와 학습 공유 비활성 확인 설정 입력 (예시·한글 변환은 키 없이 가능)
+npm run web:dev
+```
+
+`http://127.0.0.1:3210`에서 수업·업무 예시, Gemini/GPT 초안, Google 저장, Classroom 과제와 kordoc 문서실을 사용합니다. **배포용 웹앱도 HWP/HWPX 읽기·수정·비교, Google Docs 변환, HWPX 내보내기를 지원합니다.** 웹 배포에는 사용자별 Web OAuth·PostgreSQL·HTTPS 설정이 필요합니다.
+
+[실행·배포·운영 안내](docs/WEB_APP_OPERATIONS.md) · [환경변수 예시](.env.example) · [Dockerfile](Dockerfile)
+
+### 기존 MCP 도구
+
+- 학교 서식 같은 교수·학습 과정안(기본 정보표·단계별 과정표·평가 계획표), 교과서 활동 쪽 같은 학생용 학습지(이름 칸·줄 있는 답 칸·빈 표·자기 점검표), 표·글머리·참고 상자가 있는 A4 Google Docs 문서 생성
+- 학생 명단·평가계획·평가기록·제출현황·관찰기록·대시보드가 연결된 Google Sheets 생성
+- 셀 값과 수식 본문을 노출하지 않는 기존 Sheets 구조·수식 오류 진단
+- Classroom 명단·제출 상태를 개인정보 최소화 시트로 변환
+- 차시별 Google Slides 프레젠테이션 생성
+- 정답·배점이 포함된 Google Forms 퀴즈 생성
+- 기존 Docs·Sheets·Slides·Forms 내용과 Forms 응답 읽기
+- Google Drive 파일 검색, 폴더 생성, 승인 후 공유
+- 교사가 담당하는 Classroom 수업·과제·학생 명단·제출 현황 조회
+- Classroom 과제 초안 생성, 사용자 승인 후 게시
+- 초등 2022 개정 교육과정 성취기준 620개 찾기(인터넷·Google 로그인 불필요), 수업안·퀴즈·과제·평가계획에 원문과 출처 넣기
+
+예시 요청:
+
+> “`소화와 순환` 단원의 5문항 퀴즈와 학습지, 6장짜리 수업 슬라이드를 만들고 `2학년 과학` 클래스룸에 금요일 오후 6시 마감 과제 초안으로 등록해줘.”
+
+## 한글·Google 문서 변환 도우미 (kordoc)
+
+[kordoc](https://github.com/chrisryugj/kordoc) 4.15.4를 앱 의존성으로 포함합니다. 별도 kordoc MCP를 설치하지 않아도 두 도구를 쓸 수 있습니다.
+
+| 요청 | MCP 도구 | 결과 |
+| --- | --- | --- |
+| “Drive의 계획안.hwpx를 Google 문서로 만들어줘” | `docs_import_hwp` | 편집 가능한 Google Docs 링크 |
+| “이 Google 문서를 한글 파일로 저장해줘” | `docs_export_hwpx` | Drive에 새 HWPX 파일과 링크 |
+
+MCP 프롬프트 `google_document_helper`를 선택하면 파일 찾기부터 변환까지 안내합니다. 원본 파일은 수정하지 않고 새 파일을 만듭니다. 입력은 Drive 파일 ID 또는 URL이며 HWP/HWPX 가져오기와 Google Docs 내보내기를 지원합니다. 각 도구의 `parentFolderId`로 결과 폴더를 지정할 수 있습니다. 앱이 만든 파일이나 앱에 접근을 허용한 파일을 `drive.file` 권한으로 다루므로, 기존 Drive 파일이 검색되지 않으면 해당 파일을 앱에 허용해야 합니다.
+
+HWP/HWPX 가져오기는 본문과 표를 Google Docs 형식으로 다시 만듭니다. Google Docs 내보내기는 Google에서 DOCX로 추출한 뒤 kordoc으로 HWPX를 생성합니다. 두 방향 모두 원본의 세밀한 서식, 이미지 배치, 페이지 나눔, Google Docs 고유 요소는 달라질 수 있으므로 결과를 확인하세요. 입력 문서 크기는 최대 20MB입니다. 공개 배포 전에는 실제 Google 계정으로 양방향 변환을 점검해야 합니다.
+
+## 실제 교육 활용 데모
+
+한 번의 자연어 요청으로 여러 Google 교육 도구를 연결할 수 있습니다.
+
+```text
+교사 요청
+  → Drive 수업 폴더 생성
+  → Docs 교사용 수업안·학생용 학습지 생성
+  → Slides 수업 자료 생성
+  → Forms 정답·배점 포함 퀴즈 생성
+  → Classroom 과제 초안 생성
+  → 교사가 대상·마감·첨부를 확인한 뒤 게시
+```
+
+대표 데모 프롬프트:
+
+> 5학년 과학 ‘소화와 순환’ 40분 수업 패키지를 만들어줘. Drive에 전용 폴더를 만들고, 교사용 수업안과 학생용 학습지는 제목·소제목·본문의 위계와 충분한 답안 공간이 보이게 Docs로 만들어줘. Slides는 한 장에 핵심 메시지 하나씩 7장으로, Forms는 정답·배점을 포함한 5문항으로 구성해줘. 모든 자료에서 학습 목표와 용어를 동일하게 쓰고 정보량을 점검해줘. ‘5학년 3반 과학’ Classroom에는 학생용 자료만 과제 초안으로 연결하고 수업·마감·배점·첨부를 보여준 뒤 게시 전에 확인받아줘.
+
+| 교육 업무 | 만들어지는 결과 | 사용하는 도구 |
+| --- | --- | --- |
+| 한 차시 수업 패키지 | 수업안, 학습지, 슬라이드, 퀴즈, Classroom 초안 | Drive + Docs + Slides + Forms + Classroom |
+| 과정중심평가 관리 | 9개 연결 탭, 드롭다운, 체크박스, 조건부 서식, 차트 | Sheets |
+| Classroom 제출 관리 | 명단·제출 상태·점수·대시보드 스냅샷 | Classroom + Sheets |
+| 복잡한 업무 시트 점검 | 탭·수식 함수·의존성·오류·차트 구조 진단 | Sheets |
+| 수행평가 설계 | 4수준 루브릭 문서와 학생 자기평가지 | Docs + Forms |
+| 형성평가 배포 | 정답·배점이 있는 퀴즈와 과제 초안 | Forms + Classroom |
+| 학기 자료 정리 | 검색 결과와 교과·단원별 Drive 폴더 | Drive |
+| 동료 교사 협업 | 확인 절차를 거친 댓글·읽기·편집 권한 | Drive 공유 |
+
+- [서비스별로 복사 가능한 예시 프롬프트](https://edu.jeld.kr/#prompts)
+- [교육자를 위한 실제 활용 예시와 도구 흐름](docs/EDUCATOR_USE_CASES.md)
+- [예제 모음과 추천 첫 데모](examples/README.md)
+- [실제로 실행되는 수업 패키지 통합 테스트](src/tests/education-demo.test.ts)
+
+> 읽기 확장 모드에서는 기존 자료를 조회·분석할 수 있습니다. 교육용 평가·제출 템플릿에는 차트·드롭다운·조건부 서식이 포함됩니다. 기존 문서나 임의 범위의 범용 부분 편집은 아직 지원하지 않습니다. 자세한 지원 범위는 [활용 예시 문서](docs/EDUCATOR_USE_CASES.md#현재-버전에서-가능한-범위)를 확인하세요.
+
+## 보기 좋은 문서 양식
+
+글자만 이어 붙인 문서가 아니라, 학교에서 쓰는 한글 문서처럼 표와 서식이 잡힌 A4 문서를 만듭니다.
+
+- **교수·학습 과정안** (`docs_create_lesson_plan`): 제목 상자 → 기본 정보표(교과·단원·차시·교과서·성취기준·학습 목표·학습 자료) → 핵심 용어 → 차시별 흐름표 → 차시마다 학습 문제와 단계별 과정표(단계·학습 과정·교수·학습 활동·시간·자료·유의점) → 평가 계획표(상·중·하) → 지도상 유의점. 같은 단계(도입·전개·정리)는 한 칸으로 합치고 시간을 더해 적습니다. 차시가 여럿이면 차시마다 새 쪽에서 시작합니다.
+- **학생용 학습지** (`docs_create_worksheet`): 제목 상자 → 학년·반·번호·이름 칸 → 학습 목표 상자 → 활동마다 이름표(예: 의견 마련하기)와 번호 붙은 물음, 그리고 답을 쓰는 자리. 답 자리는 다섯 가지 중에서 고릅니다.
+
+  | `kind` | 모양 | 예 |
+  | --- | --- | --- |
+  | `write` | 이름표가 왼쪽에 붙은 줄 있는 칸 | `[{label:"의견", lines:2}, {label:"그 이유", lines:4}]` |
+  | `table` | 머리행 있는 빈 표, `rows`를 주면 첫 열이 행 이름 | 장점·단점 표, 검토 기준 × 의견 평가표 |
+  | `checklist` | ○ 로 표시하는 자기 점검표 | 기본 척도: 매우 잘함·잘함·보통 |
+  | `box` | 그리기·마인드맵용 큰 칸 | `lines: 10` |
+  | `text` | 안내 글(일반 문서와 같은 서식) | |
+
+  물음 아래 `hint`로 도움말 상자를 붙일 수 있습니다. 학생용이라 성취기준 원문은 넣지 않습니다.
+- **일반 문서** (`docs_create_document`): 제목 상자와 절 제목에, 본문(`text`)에서 간단한 서식을 씁니다.
+
+  | 쓰는 법 | 결과 |
+  | --- | --- |
+  | `## 도입(5분)` | 소제목 |
+  | `- 항목`, 두 칸 들여쓴 `- 하위 항목` | 진짜 글머리 목록(둘째 줄도 들여쓰기) |
+  | `1. 항목` | 번호 목록 |
+  | `\| 칸 \| 칸 \|` 다음 줄 `\|---\|---\|` | 머리행이 있는 표 |
+  | `> 내용` | 회색 참고 상자 |
+  | `**굵게**` | 굵은 글씨 |
+
+- **인쇄 설정:** A4·여백, 한글 글꼴(Noto Sans KR, 굵게가 한글에도 적용), 표 머리행은 쪽마다 반복, 표의 한 행이 두 쪽으로 쪼개지지 않게, 제목은 다음 내용과 같은 쪽에.
+- **만드는 방법:** 서식을 HTML로 그린 뒤 Drive가 Google Docs로 변환하고, 변환이 살리지 못하는 글꼴·쪽 나눔·머리행 반복은 만든 문서에 Docs API로 한 번 더 입힙니다. 새 OAuth 범위는 필요 없습니다(`drive.file`, 이 앱이 만든 파일만). 인쇄 설정만 실패하면 문서는 그대로 두고 경고를 돌려줘 같은 문서가 두 번 만들어지지 않게 합니다.
+
+## 초등 교육과정 성취기준 연결
+
+AI가 성취기준을 기억으로 적으면 코드와 문장이 조금씩 틀리기 쉽습니다. 이 서버는 성취기준을 **코드로만 받고**, 원문과 출처는 서버가 붙입니다.
+
+```text
+curriculum_search_standards  →  교사가 성취기준 고르기  →  생성 도구에 standardCodes 전달
+                                                          ├ docs_create_lesson_plan               과정안 기본 정보표의 성취기준 칸
+                                                          ├ docs_create_document                  제목 아래 성취기준 표
+                                                          ├ education_create_assessment_tracker   평가계획 탭에 교과·영역·원문
+                                                          ├ forms_create_quiz                     퀴즈 설명 끝에 관련 성취기준
+                                                          └ classroom_create_assignment_draft     과제 설명 끝에 관련 성취기준
+```
+
+- **한 번에 시작하기:** MCP 프롬프트 `lesson_package_with_standards`(학년·교과·주제 입력)를 고르면 성취기준 선택 → 폴더 → 교사용 수업안 → 학생용 학습지 → 슬라이드 → 형성평가 → Classroom 초안 순서로 진행합니다. 게시는 교사 확인 뒤에만 합니다.
+- **모르는 코드는 만들기 전에 멈춥니다.** 비슷한 코드를 제안하고 Google 파일은 만들지 않습니다.
+- **데이터:** [korean-elementary-learning-map-mcp](https://github.com/taehyeonglim/korean-elementary-learning-map-mcp) 0.5.1(MIT)의 11개 교과 성취기준 620개. 원문은 NCIC 공개 PDF에서 자동 추출된 것이라 이 저장소에서 한 번 더 정리했습니다.
+
+  | 상태 | 수 | 뜻 |
+  | --- | ---: | --- |
+  | `extracted` | 494 | 추출된 문장을 그대로 씀 |
+  | `cleaned` | 113 | 뒤에 붙은 다음 단원 제목·쪽 번호·탐구 활동을 자르거나, 줄바꿈으로 깨진 띄어쓰기 36곳을 고침 |
+  | `unavailable` | 13 | 표 내용이 섞였거나 해설 문단이 들어가 싣지 않음. 문서에는 「원문 확인 필요」와 요지만 들어갑니다 |
+
+  자동 추출 문장이므로 공식 문서로 쓰기 전에는 NCIC 원문과 대조하세요. 정리 규칙은 [scripts/build-curriculum-data.mjs](scripts/build-curriculum-data.mjs), 원천 라이선스는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)에 있습니다.
+- **선수관계·세부 학습 주제까지 보려면** 원본 교육과정 MCP를 함께 등록하세요. 두 서버는 도구 이름이 겹치지 않습니다.
+
+  ```bash
+  claude mcp add curriculum-kr -- npx -y korean-elementary-learning-map-mcp
+  ```
+
+```
+curriculum_search_standards { "subject": "사회", "grade": 5, "query": "유적 유물" }
+docs_create_lesson_plan { "subject": "사회", "grade": 5, "unit": "…", "standardCodes": ["[6사04-01]"], "objectives": ["…"], "sessions": [{ "title": "…", "steps": [{ "stage": "도입", "process": "…", "activities": ["…"], "minutes": 5 }] }] }
+docs_create_document { "title": "고조선 사람들의 생활", "standardCodes": ["[6사04-01]"], "blocks": [{ "heading": "학습 목표", "text": "- …" }] }
+education_create_assessment_tracker { "title": "2학기 평가", "className": "5학년 3반", "schoolYear": 2026, "semester": "2학기", "standardCodes": ["[6사04-01]", "[6사04-02]", "[6실03-04]"] }
+```
+
+## MCP 도구
+
+| 도구 | 동작 | 성격 |
+| --- | --- | --- |
+| `workspace_get_auth_status` | Google 연결 상태와 범위 확인 | 읽기 |
+| `curriculum_search_standards` | 초등 성취기준을 교과·학년·낱말로 찾기 (로그인·인터넷 불필요) | 읽기 (로컬) |
+| `curriculum_get_standards` | 성취기준 코드로 원문·영역·출처·정리 내역 확인 | 읽기 (로컬) |
+| `classroom_list_courses` | 교사가 담당하는 활성 수업 조회 | 읽기 |
+| `classroom_list_coursework` | 수업의 과제·자료·마감·배점 조회 | 읽기 |
+| `classroom_list_students` | 수업 학생 명단 조회 | 읽기 |
+| `classroom_list_student_submissions` | 과제별 제출 상태·점수·답변 조회 | 읽기 |
+| `drive_search_files` | 앱이 접근 가능한 파일을 이름·유형·폴더로 검색 | 읽기 |
+| `drive_get_file_metadata` | Drive 파일 정보와 권한 상태 조회 | 읽기 |
+| `drive_create_folder` | Drive 폴더 생성 | 생성 |
+| `docs_create_document` | 제목 상자·절 제목·글머리·표·참고 상자가 있는 A4 Docs 문서 생성 | 생성 |
+| `docs_create_lesson_plan` | 교수·학습 과정안(기본 정보표·차시별 흐름·단계별 과정표·평가 계획표) 생성 | 생성 |
+| `docs_create_worksheet` | 학생용 학습지(이름 칸·이름표 달린 답 칸·빈 표·○ 자기 점검표) 생성 | 생성 |
+| `docs_read_document` | Docs 본문·표·모든 문서 탭 읽기 | 읽기 |
+| `sheets_create_workbook` | 여러 탭과 초기 데이터가 있는 Sheets 생성 | 생성 |
+| `sheets_list_sheets` | 스프레드시트의 탭 목록과 크기 확인 | 읽기 |
+| `sheets_read_values` | 스프레드시트 값 읽기 (범위 지정, 행 수 제한) | 읽기 |
+| `sheets_inspect_workbook` | 셀 값을 반환하지 않고 구조·수식·오류·의존성 진단 | 읽기 |
+| `education_create_assessment_tracker` | 9개 탭이 연결된 과정중심평가 시스템 생성 | 생성 |
+| `education_create_classroom_submission_tracker` | Classroom 과제 제출 현황 대시보드 시트 생성 | 생성 |
+| `slides_create_presentation` | 제목·본문 슬라이드 생성 | 생성 |
+| `slides_read_presentation` | 슬라이드별 텍스트·표·발표자 노트 읽기 | 읽기 |
+| `forms_create_quiz` | 문항·정답·배점이 있는 퀴즈 생성 | 생성 |
+| `forms_read_form` | 설문 구조·문항·선택지·정답 읽기 | 읽기 |
+| `forms_list_responses` | 제출된 설문 응답·점수 읽기 | 읽기 |
+| `classroom_create_assignment_draft` | 학생에게 보이지 않는 과제 초안 생성 | 생성 |
+| `classroom_publish_assignment` | 승인된 과제 초안을 학생에게 게시 | 외부 변경 |
+| `drive_prepare_share` | 공유 대상·권한 승인 준비 | 승인 준비 |
+| `drive_share_file` | 승인된 Drive 권한 변경 | 외부 변경 |
+
+게시와 공유 도구에는 MCP 안전 메타데이터가 포함되어 있습니다. 승인 ID는 15분 동안 유효하고 한 번만 사용할 수 있습니다.
+
+### 기존 Google 자료를 읽으려면 (선택)
+
+기본 범위인 `drive.file` 은 **이 앱이 만들었거나 사용자가 이 앱으로 연 파일만** 다룹니다.
+그래서 예전부터 쓰던 Docs·Sheets·Slides·Forms는 기본 설정으로는 읽히지 않을 수 있습니다.
+
+기존 자료와 Classroom 학생 정보를 읽으려면 설치와 로그인에 `--read`를 붙이세요. 추가 읽기 범위에는 Google 민감 권한이 포함되어 있어 기본으로 요청하지 않습니다.
+
+2026년 10월 11일, 공용 OAuth 프로젝트 `edu-workspace-mcp`의 Docs·Sheets·Slides·Forms 문항·Forms 응답 읽기 민감 권한 5개가 Google 검수를 통과했습니다. 현재 총 9개 권한 구성은 유지합니다. 학교 계정은 기관 관리자의 제3자 앱 허용이 필요할 수 있으며, 새 권한이나 다른 OAuth 프로젝트에는 이번 승인이 자동으로 적용되지 않습니다.
+
+Google 원본·집계·파생 자료는 범용 AI 모델 학습에 사용하면 안 됩니다. MCP를 연결할 AI 서비스에서 학습 데이터 공유를 끄거나 오프라인 클라이언트를 사용하세요.
+
+```bash
+npx -y edu-workspace-mcp@1.1.1 install claude --read
+npx -y edu-workspace-mcp@1.1.1 login --read
+```
+
+MCP 클라이언트 설정에 넣을 때는 `env` 에 적습니다.
+
+```json
+{
+  "mcpServers": {
+    "edu-workspace": {
+      "command": "npx",
+      "args": ["-y", "edu-workspace-mcp"],
+      "env": { "EDU_WORKSPACE_READ_ACCESS": "1" }
+    }
+  }
+}
+```
+
+껐다 켰다 하면 요청 범위가 달라지므로, 바꾼 뒤에는 **반드시 다시 로그인**해야 합니다.
+`workspace_get_auth_status` 로 지금 허용된 범위를 확인할 수 있습니다.
+
+`claude`는 Claude Code의 사용자 범위에 등록되어 모든 프로젝트에서 동작합니다. Claude Desktop은 `install claude-desktop --read`를 사용하세요. 사용 예:
+
+```
+sheets_list_sheets  { "spreadsheet": "https://docs.google.com/spreadsheets/d/<ID>/edit" }
+sheets_read_values  { "spreadsheet": "<ID>", "range": "'AI 피드백'!A1:J40", "maxRows": 40 }
+sheets_inspect_workbook { "spreadsheet": "<ID>", "includeHidden": true }
+education_create_assessment_tracker { "title": "5학년 평가 관리", "className": "5학년 3반", "schoolYear": 2026, "semester": "2학기", "students": [{ "number": 1, "name": "학생01" }] }
+docs_read_document  { "document": "https://docs.google.com/document/d/<ID>/edit" }
+forms_list_responses { "form": "https://docs.google.com/forms/d/<ID>/edit", "maxResponses": 100 }
+```
+
+- `spreadsheet` 는 ID 와 전체 URL 을 모두 받습니다.
+- `range` 를 비우면 첫 시트를 읽습니다.
+- 값은 화면에 보이는 대로 읽으므로 수식과 `IMPORTRANGE` 결과도 그대로 들어옵니다. 원본 값이 필요하면 `raw: true`.
+- 기본 200행까지만 돌려주고(`maxRows` 로 최대 2,000), 잘렸으면 `truncated: true` 로 알려 줍니다.
+- 개인정보가 있는 복잡한 시트의 설계만 점검할 때는 `sheets_inspect_workbook`을 사용하세요. 셀 값과 수식 본문은 반환하지 않고 함수명 통계·시트 의존성·오류 위치만 알려 줍니다.
+
+## 요구 사항
+
+- Node.js 20 이상
+- MCP를 지원하는 데스크톱 클라이언트
+- Google 계정
+
+## 빠른 설치 — 최종 사용자
+
+macOS, Windows, Linux에서 사용할 AI 클라이언트를 한 번만 전체 프로젝트 설정에 등록합니다. Google Cloud Console 설정은 필요하지 않습니다.
+
+```bash
+# 하나만 선택
+npx -y edu-workspace-mcp@1.1.1 install codex
+npx -y edu-workspace-mcp@1.1.1 install claude          # Claude Code, 사용자 범위
+npx -y edu-workspace-mcp@1.1.1 install claude-desktop
+npx -y edu-workspace-mcp@1.1.1 install cursor
+
+# 사용자별·컴퓨터별 최초 1회 Google 연결
+npx -y edu-workspace-mcp@1.1.1 login
+```
+
+기존 Google 자료까지 읽을 사용자는 두 명령 모두에 `--read`를 붙입니다.
+
+AI 클라이언트를 재시작한 뒤 새 프로젝트에서도 같은 MCP를 사용할 수 있습니다. 브라우저에서 Google 로그인과 권한 승인을 마치면 됩니다. 학교 계정에서 기관 관리자가 제3자 앱을 차단한 경우에는 관리자에게 앱 허용을 요청해야 합니다.
+
+- [학교 Google Workspace 관리자 허용 안내](docs/ADMIN_GUIDE.md)
+
+```bash
+npx -y edu-workspace-mcp@1.1.1 doctor
+```
+
+Google 토큰은 `~/.edu-workspace-mcp/token.json`에 사용자 전용 권한으로 저장됩니다. 연결을 해제하면 Google 측 권한 철회와 로컬 토큰 삭제를 함께 수행합니다.
+
+```bash
+npx -y edu-workspace-mcp@1.1.1 disconnect
+```
+
+## MCP 클라이언트 연결
+
+Claude Desktop과 Cursor 계열 JSON 설정:
+
+```json
+{
+  "mcpServers": {
+    "edu-workspace": {
+      "command": "npx",
+      "args": ["-y", "edu-workspace-mcp@1.1.1"]
+    }
+  }
+}
+```
+
+Codex·ChatGPT Desktop 계열 TOML 설정:
+
+```toml
+[mcp_servers.edu-workspace]
+command = "npx"
+args = ["-y", "edu-workspace-mcp@1.1.1"]
+default_tools_approval_mode = "writes"
+```
+
+ChatGPT 웹은 사용자 컴퓨터의 stdio 프로세스를 실행하지 않습니다. 웹 지원은 향후 호스팅형 Streamable HTTP 서버로 제공할 계획입니다.
+
+## 소스에서 실행
+
+공개 저장소에는 설치형 앱용 공용 OAuth client ID가 포함되어 있습니다. 최종 사용자는 별도 Google Cloud 프로젝트나 `credentials.json` 없이 `login`만 실행합니다.
+
+```bash
+npm install
+npm run check
+npm test
+npm run test:mcp
+node dist/cli.js setup
+node dist/cli.js login
+```
+
+개발 중 MCP 설정에서는 `command`에 `node`, `args`에 프로젝트의 절대 경로인 `dist/cli.js`를 지정할 수 있습니다.
+
+## 보안 모델
+
+- 필요한 Google OAuth 범위만 요청합니다.
+- OAuth 로그인에 PKCE(S256), 무작위 `state`, 5분 만료와 loopback 콜백 검증을 적용합니다.
+- 원격 Agent는 Google refresh token을 서버에 암호화 저장하고 컴퓨터에는 별도 MCP token만 저장하는 구조입니다. 별도 제한 시험 서버에서 실제 Google 연결을 검증했으며 공개 운영 준비 상태는 인증·운영 문서에서 확인합니다. 기존 local/private 경로는 로컬 Google token을 사용합니다.
+- Agent package에는 Google client secret을 포함하지 않습니다. 기존 1.1.1 이하의 bundled OAuth 사용자는 자동으로 Agent에 전환하지 않습니다.
+- 기본 Agent는 승인된 읽기 5개만 요청합니다. 기존 `--read` 확장은 명시적 `--legacy`에서만 사용합니다.
+- 검색·조회 도구에는 `readOnlyHint`를 표시합니다.
+- 교육과정 도구는 패키지에 들어 있는 정리본만 읽고 네트워크를 쓰지 않습니다(`openWorldHint: false`).
+- Classroom 게시와 Drive 공유에는 `destructiveHint`를 표시합니다.
+- Classroom 과제는 먼저 `DRAFT`로 만들고 별도 게시 도구에서 일회성 승인을 검증합니다.
+- Drive 공유도 준비와 확정 단계를 분리합니다.
+- 실제 학생 데이터가 아닌 별도 테스트 수업에서 먼저 검증하세요.
+- Google API 할당량 오류에는 제한적 지수 백오프를 적용하고, 중복 생성 위험이 있는 모호한 오류는 자동 재시도하지 않습니다.
+
+### 이 서버가 하는 일과 하지 않는 일
+
+| 구분 | 내용 |
+| --- | --- |
+| 읽기 | 앱이 만든 파일, 그리고 `--read`를 켠 경우 교사가 주소나 ID로 지정한 Docs·Sheets·Slides·Forms와 Classroom 수업·과제·명단·제출 현황 |
+| 만들기 | 새 폴더·문서·시트·슬라이드·퀴즈, Classroom **초안** 과제. 만든 직후 그 파일에만 서식·인쇄 설정을 입히고 지정한 폴더로 옮김 |
+| 확인 후에만 | Classroom 과제 게시, Drive 공유. 15분 동안 한 번만 쓰는 승인 ID가 있어야 함. 이메일 주소로 공유하면 Google이 공유 알림 메일을 보냄 |
+| 하지 않음 | 파일·폴더 삭제나 휴지통 이동, 이 앱이 만들지 않은 기존 파일의 내용 수정, Classroom 점수 입력·반환, 인터넷 전체 편집 공유 |
+| 네트워크 | 기존 private/legacy 경로는 Google API와 로그인용 로컬 주소를 사용합니다. Agent는 원격 운영자 MCP를 거쳐 Google 자료를 읽습니다. 교육과정 도구는 네트워크를 쓰지 않습니다 |
+
+### Google이 멈추거나 느릴 때
+
+- 할당량 초과(429)와 일시 오류는 정해진 횟수만 간격을 늘려 다시 시도합니다.
+- 만들기 요청은 결과가 모호한 오류에서 **다시 시도하지 않습니다**. 같은 자료가 두 개 생기지 않게 하려는 것이니, 실패하면 Drive에서 먼저 확인한 뒤 다시 요청하세요.
+- 문서는 만들어졌는데 A4·글꼴 같은 인쇄 설정만 실패하면 문서를 남기고 `warning`을 돌려줍니다.
+- 교육과정 도구(`curriculum_*`)는 Google과 인터넷 없이도 계속 동작합니다.
+
+### 자동 보안 검사에서 보일 수 있는 것
+
+- Agent에는 실제 Google secret을 포함하지 않습니다. 운영자 Web secret은 서버에, 명시적 private 경로의 자격증명은 사용자가 직접 지정한 비공개 파일에만 둡니다.
+- 브라우저 열기와 앱 탐지는 고정된 실행 프로그램·인수 및 `shell:false`를 사용합니다. OAuth callback 주소·인증 code·token을 로그에 출력하지 않습니다.
+
+Google OAuth 브랜딩과 개인정보처리방침을 공개해야 하며, Google Workspace for Education 관리자가 제3자 앱을 허용해야 할 수 있습니다.
+
+요청 범위의 상세 설명은 [OAuth 범위 문서](docs/OAUTH_SCOPES.md), 공개 데이터 처리 방침은 [개인정보처리방침](https://edu.jeld.kr/privacy.html)을 참고하세요. 공개 배포를 위한 범위별 사용 사유와 데모 영상 시나리오는 [OAuth 검수 제출 가이드](docs/OAUTH_VERIFICATION_GUIDE.md)에 정리되어 있습니다.
+
+## 테스트
+
+```bash
+npm run check       # TypeScript 정적 검사
+npm test            # 단위·MCP 인메모리 통합 테스트
+npm run test:mcp    # 실제 stdio 프로세스 연결 테스트
+npm audit --omit=dev
+```
+
+Google API 실계정 테스트에는 별도 테스트 계정을 사용하세요. CI에서는 외부 계정을 사용하지 않고 Google API 어댑터를 주입한 계약 테스트를 실행합니다.
+
+## 개발 현황
+
+- [x] OAuth 로그인·토큰 저장·연결 해제
+- [x] Drive 검색·폴더 생성·승인 공유
+- [x] Docs·Sheets·Slides·Forms 생성 및 내용 읽기
+- [x] 과정중심평가·Classroom 제출 대시보드 교육 템플릿
+- [x] 개인정보 비노출 Sheets 구조·수식 오류 진단
+- [x] Classroom 수업 조회·과제 초안·승인 게시
+- [x] macOS·Windows·Linux 공통 npm 실행 구조
+- [x] 단위·MCP 통합·stdio 스모크 테스트
+- [x] 실계정 OAuth·Classroom 조회·Sheets 생성 E2E 테스트
+- [x] Google OAuth 브랜딩 검증·프로덕션 게시·민감 읽기 권한 5개 검수 승인(2026-10-11)
+- [x] PKCE·state·토큰 파일 보호·할당량 재시도 정책
+- [x] Codex·Claude Code·Claude Desktop·Cursor 전역 자동 설치
+- [x] 초등 2022 개정 교육과정 성취기준 연결(정리본·`standardCodes`·수업 패키지 프롬프트)
+- [ ] 호스팅형 Streamable HTTP MCP
+- [ ] Calendar·Gmail·Tasks 확장
+
+전체 제품 계획은 [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md)를 참고하세요.
+정식판 출시 기준과 운영 정책은 [정식 배포 운영 기준](docs/PRODUCTION_READINESS.md), 버전별 변경 사항은 [CHANGELOG](CHANGELOG.md)를 참고하세요.
+
+## 라이선스
+
+[MIT](LICENSE). 포함된 교육과정 데이터의 원천과 라이선스는 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)를 참고하세요.
+
+## 개인용 무료 웹앱 (Cloudflare)
+
+맥을 끄고도 윈도우·맥의 브라우저에서 사용하려면 [Cloudflare 개인용 배포 안내](docs/CLOUDFLARE_PERSONAL.md)를 참고하세요. Kordoc은 브라우저 Web Worker에서, 로그인·API 중계는 Workers Free와 D1 Free에서 실행합니다. Cloud Run과 PostgreSQL이 필요하지 않습니다. 기존 MCP와 로컬 앱은 유지됩니다.
+
+## Google 데이터와 AI 모델 학습 금지
+
+Google Workspace 원본·집계·익명화·파생 데이터는 범용 AI/ML 모델을 생성·학습·개선하는 용도로 사용하거나 전송할 수 없습니다. 데스크톱 MCP는 특정 AI 모델·요금제·중개 API를 내장하지 않고 사용자가 선택한 stdio 호스트에 결과를 반환하는 도구 통합 플랫폼입니다. 호스트의 학습 데이터 공유를 비활성화하고 서비스·요금제·정책을 확인한 후에만 Google 자료를 읽으세요. 호스트가 학습에 데이터를 사용하면 해당 호스트와 Google 데이터의 연결을 중단해야 합니다. 오프라인 클라이언트는 외부 전송이 없어야 합니다.
+
+Workspace Lab의 무료 Gemini 경로는 서버에서 차단합니다. OpenAI API는 학습 공유 비활성 확인 후 `OPENAI_NO_TRAINING_CONFIRMED=true`, Gemini는 학습에 사용하지 않는 Paid Service 확인 후 `GEMINI_NO_TRAINING_CONFIRMED=true`를 명시적으로 설정해야 합니다. 자동 결제 전환이나 모델 대체는 하지 않습니다. 사용자가 AI 전송에 별도로 동의해야 하며 `store=false`는 응답 저장 설정으로 학습 금지·Zero Data Retention을 보장하지 않습니다. [MCP 정책](https://edu.jeld.kr/privacy.html) · [웹앱 정책](https://workspace-lab-personal.kimjj0709.workers.dev/privacy)

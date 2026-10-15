@@ -1,0 +1,868 @@
+= {project-name}
+Dan Allen <https://github.com/mojavelinux>
+v1.0.0-alpha.2, 2023-10-28
+// Settings:
+:idprefix:
+:idseparator: -
+ifndef::env-github[]
+:icons: font
+endif::[]
+ifdef::env-github,env-browser[]
+:toc: preamble
+:toclevels: 2
+endif::[]
+ifdef::env-github[]
+:status:
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+// Aliases:
+:latest-release: 1.0.0.alpha.1
+:project-name: asciidoctor-bespoke
+:conum-guard-js: //
+ifndef::icons[:conum-guard-js: // //]
+// URIs:
+:uri-asciidoctor: http://asciidoctor.org
+:uri-bespoke: http://markdalgleish.com/projects/bespoke.js/
+:uri-bespoke-multimedia: https://github.com/opendevise/bespoke-multimedia
+:uri-bundler: http://bundler.io
+:uri-gulp: http://gulpjs.com
+:uri-nodejs: https://nodejs.org
+:uri-nvm: https://github.com/creationix/nvm
+:uri-repo: https://github.com/asciidoctor/asciidoctor-bespoke
+:uri-repo-file-prefix: {uri-repo}/blob/master/
+:uri-repo-tree-prefix: {uri-repo}/tree/master/
+ifdef::env-github[]
+:uri-repo-file-prefix: link:
+:uri-repo-tree-prefix: link:
+endif::[]
+:uri-ruby: https://www.ruby-lang.org
+:uri-rvm: http://rvm.io
+:uri-slim-docs: http://www.rubydoc.info/gems/slim/
+:uri-svgo: https://github.com/svg/svgo
+:uri-yo-bespoke: https://github.com/bespokejs/generator-bespoke
+
+ifdef::status[]
+image:https://img.shields.io/gem/v/asciidoctor-bespoke.svg?label=gem[gem badge, link=https://rubygems.org/gems/asciidoctor-bespoke]
+endif::[]
+
+An {uri-asciidoctor}[Asciidoctor] converter that generates the HTML component of a {uri-bespoke}[Bespoke.js] presentation from AsciiDoc.
+
+== Overview
+
+The goal of {project-name} is to enable you to craft HTML-based presentations from reusable content while avoiding the tedium of writing HTML.
+This library satisfies that goal by providing a converter that generates the HTML component of a Bespoke.js presentation from an AsciiDoc document.
+In other words, it allows you to use AsciiDoc in place of HTML (or an HTML template language like Jade) in your Bespoke.js project.
+(You still need to add an ample amount of CSS in order to achieve the presentation style you want).
+
+The converter works in tandem with a typical JavaScript project structure based on npm and Gulp.
+npm is used to manage dependencies.
+A Gulp build is used to combine and "`browserify`" the JavaScript, compile the CSS, execute this converter (to convert AsciiDoc to HTML), launch the preview server and publish the presentation files.
+
+The converter is implemented as a collection of Slim templates, which are packaged for your convenience as an Asciidoctor converter.
+The templates come into play when you want to customize the HTML the converter generates.
+
+This guide explains how to integrate the {project-name} converter into an existing Bespoke.js presentation project and how to write slides in AsciiDoc.
+
+== Prerequisites
+
+In order to use {project-name}, you must satisfy the prerequisites of both Bespoke.js and Asciidoctor.
+You also need a Bespoke.js project.
+
+=== For Bespoke.js
+
+. {uri-nodejs}[Node.js] >= 0.12 footnote:[We strongly recommend using {uri-nvm}[nvm] to manage Node.]
+. {uri-gulp}[Gulp] (command line interface only)
+
+ $ npm install -g gulp-cli
+
+=== For Asciidoctor
+
+. {uri-ruby}[Ruby] >= 2 footnote:[We strongly recommend using {uri-rvm}[RVM] to manage Ruby.]
+. {uri-bundler}[Bundler]
+
+ $ rvm use 2.3.0 --install # (optional)
+ $ gem install bundler
+
+=== Bespoke.js Project
+
+Naturally, you'll also need a Bespoke.js project, just as you would for any Bespoke.js presentation.
+If you don't yet have a Bespoke.js project, you can clone the provided https://github.com/opendevise/presentation-bespoke-starter[starter project]:
+
+ $ git clone https://github.com/opendevise/presentation-bespoke-starter
+
+Alternatively, you can use the {uri-yo-bespoke}[Yeoman generator for Bespoke.js] to initialize your project.
+As a word of warning, that generator has become substantially out of date.
+In the future, we plan to provide an updated Yeoman generator that incorporates {project-name} into a new Bespoke.js project for you.
+
+== Integrating AsciiDoc into a Bespoke.js Project
+
+Once you've initialized your Bespoke.js project, the next task is to replace Jade with AsciiDoc.
+
+TIP: If you're creating a new project using the starter project previously mentioned, you can switch to the https://github.com/opendevise/presentation-bespoke-starter/tree/asciidoc[asciidoc branch] in that repository to skip past the steps in this section and jump ahead to <<Creating Slides in AsciiDoc>>.
+If you're curious, you can review https://github.com/opendevise/presentation-bespoke-starter/compare/asciidoc?diff=split[a diff] that contains the changes this section goes on to cover.
+
+The first step is to configure Bundler to fetch and install the required gems.
+Create a file named [.path]_Gemfile_ at the root of the project and populate it with the following content:
+
+.Gemfile
+[source,ruby,subs=attributes+]
+----
+source 'https://rubygems.org'
+
+gem 'asciidoctor-bespoke', '{latest-release}'
+# To use the latest version from git, use the following line instead:
+#gem 'asciidoctor-bespoke', github: 'asciidoctor/asciidoctor-bespoke'
+----
+
+Next, run `bundle` from the root of the project to install the gems and any dependencies they have:
+
+ $ bundle
+
+[TIP]
+====
+If you want to install the gems inside the project, you can pass the `--path` argument to `.bundle/gems`.
+
+ $ bundle --path=.bundle/gems
+
+The `bundle` command will remember this setting for all successive invocations.
+====
+
+The next step is to get the converter to generate the HTML from AsciiDoc when the presentation build runs.
+We'll repurpose the task that currently generates HTML from Jade for this purpose.
+
+Open [.path]_package.json_ and add the following entries to the `devDependencies` section:
+
+.package.json (snippet)
+[source,js]
+    "gulp-chmod": "^1.3.0",
+    "gulp-exec": "^2.1.2",
+
+Save the file and run `npm i` to install the new packages into your project:
+
+ $ npm i
+
+Open [.path]_gulpfile.js_ and add the following entries to the list of `require` calls at the top of the file:
+
+.gulpfile.js (snippet)
+[source,js]
+  chmod = require('gulp-chmod'),
+  exec = require('gulp-exec'),
+
+Also in [.path]_gulpfile.js_, replace the existing `html` task with the one below:
+
+.gulpfile.js (snippet)
+[source,js]
+gulp.task('html', ['clean:html'], function() {
+  return gulp.src('src/index.adoc')
+    .pipe(isDist ? through() : plumber())
+    .pipe(exec('bundle exec asciidoctor-bespoke -o - src/index.adoc', { pipeStdout: true }))
+    .pipe(exec.reporter({ stdout: false }))
+    .pipe(rename('index.html'))
+    .pipe(chmod(644))
+    .pipe(gulp.dest('public'))
+    .pipe(connect.reload());
+});
+
+//<1> Add `bundle exec` in front of the `asciidoctor-bespoke` command if you're using the development version from git.
+
+Finally, to get the build to watch the AsciiDoc file(s) for changes, look for the following line in the watch task in [.path]_gulpfile.js_:
+
+.gulpfile.js (snippet)
+[source,js]
+  gulp.watch('src/**/*.pug', ['html']);
+
+and replace it with:
+
+.gulpfile.js (snippet)
+[source,js]
+  gulp.watch('src/**/*.adoc', ['html']);
+
+The build is now ready!
+Before we can use our new task, we need to create slide content in AsciiDoc.
+
+== Creating Slides in AsciiDoc
+
+Writing AsciiDoc to create slides is pretty much the same as writing AsciiDoc for any another purpose.
+There are two key differences.
+You'll be writing _a lot_ less content and you only need to use a single level of section headings (plus an optional document title).
+
+=== Hello, Bespoke.js!
+
+Below is a basic presentation that is comprised of two slides, the title slide and one content slide.
+To add this presentation to your project, create the file [.path]_src/index.adoc_ and populate it with the following content:
+
+.src/index.adoc
+[source,asciidoc]
+----
+= My Awesome Presentation
+:!sectids:
+
+== First Topic
+----
+
+Believe it or not, that's all it takes to make a presentation!
+
+Here's a close approximation of the HTML the converter generates from the example shown above (formatted for clarity).
+
+[source,html]
+----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Awesome Presentation</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="build/build.css">
+  </head>
+  <body>
+    <article class="deck">
+      <section class="title">
+        <h1>My Awesome Presentation</h1>
+      </section>
+      <section>
+        <h2>First Topic</h2>
+      </section>
+    </article>
+    <script src="build/build.js"></script>
+  </body>
+</html>
+----
+
+There are a few things you should notice:
+
+* Each slide is represented as a `<section>`, which is generated per section title.
+  - At runtime, Bespoke.js adds additional classes to each `<section>`, including `bespoke-slide`.
+* The title slide has the class `title` and uses an `<h1>` heading.
+* The section title for each content slide gets put in an `<h2>` heading.
+* The presentation is wrapped in an `<article>` element with the class `deck`.
+  - At runtime, Bespoke.js adds additional classes to `<article>`, including `bespoke-parent`.
+* CSS is used to accomplish most of the styling and layout, so you'll need to spend some time on it.
+* The JavaScript and CSS to power the Bespoke.js presentation are loaded from the [.path]_build/_ folder.
+
+Of course, this is not a very interesting presentation, so let's dig a bit deeper.
+
+TIP: To see a complete example of a corporate-style presentation, check out the https://raw.githubusercontent.com/opendevise/bespoke-emulating-shower/master/src/index.adoc[AsciiDoc source] of the https://github.com/opendevise/bespoke-emulating-shower[Bespoke.js Emulating Shower] demo.
+
+=== The Title Slide
+
+By default, the converter automatically creates a title slide from the document header and, if present, the preamble.
+The document title (i.e., doctitle) becomes an `<h1>` heading.
+The slide then incorporates additional information from the following attributes and nodes (subject to change):
+
+* firstname (derived from the author attribute)
+* lastname (derived from the author attribute)
+* email (can be a URL)
+* position
+* organization
+* twitter
+* avatar (an image path relative to imagesdir)
+* preamble content
+
+NOTE: The title slide is a built-in transform mapped to the {uri-repo-file-prefix}templates/slim/slide_title.html.slim[slide_title.html.slim] template, which you can override.
+See <<Custom Transforms>> for information about where to put this file and how to load it.
+You'll need to incorporate CSS (optionally using the Stylus syntax) to arrange and style the title page.
+
+Here's an example of an AsciiDoc document that generates a title slide that is fully populated:
+
+[source,asciidoc]
+----
+= My Awesome Presentation
+Author Name <http://example.com>
+:organization: ACME Inc.
+:position: Developer Advocate
+:twitter: @asciidoctor
+:avatar: author-avatar.png
+:!sectids:
+
+Additional content for the title slide.
+
+== First Topic
+----
+
+If you don't want the title slide to be created, add the `noheader` attribute to the document header.
+
+.A presentation without a title slide
+[source,asciidoc]
+----
+= My Awesome Presentation
+:!sectids:
+:noheader:
+
+== First Topic
+----
+
+Another option is to simply leave out the document header altogether.
+
+=== Content Slides
+
+Each content slide is created from a level-1 section title.
+The section title becomes an `<h2>` heading.
+The remainder of the content in the section is placed below this heading.
+
+NOTE: Any section levels below level-1 will simply be used as content in the slide.
+
+Here's an example of a typical content slide with a heading:
+
+.A slide with a heading and content
+[source,asciidoc]
+----
+== Agenda
+* Lesson
+* Demo
+* Discussion
+----
+
+While many of your slides may have a primary heading--perhaps as the only content on the slide--there are many slide types that don't require a heading.
+You can mark a slide without a heading by using `!` as the section title.
+Here's an example:
+
+.A slide with only content (i.e., an anonymous slide)
+[source,asciidoc]
+----
+== !
+image::chart.svg[]
+----
+
+If you still want to assign a title to a slide, but not show it, you can add the option named `conceal`.
+
+.A slide with a concealed heading
+[source,asciidoc]
+----
+[%conceal]
+= An Amazing Chart
+image::chart.svg[]
+----
+
+A shorthand for the conceal option is to prefix the section title with a `!`.
+
+.A shorthand for concealing the heading of a slide
+[source,asciidoc]
+----
+= !An Amazing Chart
+image::chart.svg[]
+----
+
+You can also add a named hash to a slide so you get a URL like `/#intro` instead of `/#3`.
+
+.A slide with a named hash (aka named route)
+[source,asciidoc]
+----
+[#intro]
+= Intro
+----
+
+Notice how we're keeping the concerns of content and presentation cleanly separated.
+Using very little AsciiDoc, you're able to describe a lot of different functionality.
+There doesn't even have to be a direct, literal mapping between the AsciiDoc and the HTML.
+Instead, you should think of the AsciiDoc as a DSL for content.
+
+=== The Speaker Slide
+
+The converter includes an _experimental_ speaker slide, which you can place anywhere in the presentation.
+To activate the speaker slide, create a section with an optional title and add the `transform=speaker` attribute.
+
+[source,asciidoc]
+----
+[transform=speaker]
+== Speaker
+----
+
+The speaker slide currently incorporates the following attributes:
+
+* author
+* position
+* avatar (resolved relative to `imagesdir`)
+* twitter
+* email
+* section content (if any)
+
+NOTE: The speaker slide is a built-in transform mapped to the {uri-repo-file-prefix}templates/slim/slide_speaker.html.slim[slide_speaker.html.slim] template, which you can override.
+See <<Custom Transforms>> for information about where to put this file and how to load it.
+
+Here's a rough approximation of the HTML generated for the speaker slide:
+
+[source,html]
+----
+<section class="speaker">
+  <header>
+    <h2>Speaker Name</h2>
+    <h3>Title</h3>
+  </header>
+  <figure class="image headshot">
+    <img src="images/speaker-name.jpg" alt="Speaker Name">
+  </figure>
+  <p class="contact">@speaker | speaker@example.org</p>
+</section>
+----
+
+CAUTION: The speaker slide is labeled as "`experimental`" because the HTML (content and layout) is likely to change as we learn the best way to organize the information.
+
+=== Builds
+
+One of the most common ways to control the rate at which content is shown in a presentation is to use builds.
+A [.term]_build_ is a presentation technique in which fragments of content are revealed incrementally (usually triggered by an event such as a button press or time delay).
+The AsciiDoc converter supports a variety of ways to add builds to your presentation.
+
+The build mechanism itself is handled by a Bespoke.js plugin (e.g., bespoke-bullets) with the help of some CSS.
+You'll then use metadata in the AsciiDoc file to indicate which content should participate in a build.
+
+The two ways to enlist content in a build are the build option and the build attribute.
+The first should handle most situations, while the latter enables you to fine-tune the behavior.
+
+Before diving into that metadata, we first need to do a bit of configuration.
+
+==== Build Configuration
+
+Here's the JavaScript you'll need to add to your Bespoke.js configuration to activate the bespoke-bullets plugin to implement the behavior described in this section.
+
+.src/scripts/main.js
+[source,js,subs=attributes+]
+----
+var bespoke = require('bespoke'),
+  bullets = require('bespoke-bullets'), {conum-guard-js} <1>
+  ...
+
+bespoke.from('article', [
+  ...
+  bullets('.build,.build-items>*:not(.build-items)'), {conum-guard-js} <2>
+  ...
+]);
+----
+<1> Load the bespoke-bullets plugin, assigning it to the `bullets` variable.
+<2> Activate the bespoke-bullets plugin, using a CSS selector to query for buildable content.
+
+Here's the CSS necessary to handle the visibility of build items and introduce several build effects.
+You can customize the styles to your liking.
+
+// FIXME explain how to write these styles in Stylus
+[source,css]
+----
+.bespoke-bullet:not(.bespoke-bullet-active) {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.fade .bespoke-bullet-active:not(.bespoke-bullet-current) {
+  opacity: 0.1;
+}
+
+.vanish .bespoke-bullet-active:not(.bespoke-bullet-current) {
+  visibility: hidden;
+}
+----
+
+==== The build Option
+
+Let's assume you have an unordered list on one of your slides and you want to reveal the items one-by-one.
+Simply declare the build option on the list.
+
+[source,asciidoc]
+----
+[%build]
+* one
+* two
+* three
+----
+
+When the slide is first loaded, none of the items will be visible.
+(The list container itself is the active build item).
+Each time you press the button or key mapped to the "`next`" action, another item in the list will be revealed.
+Past items will remain visible.
+
+For content that doesn't have a container, such as a paragraph, you'll need to also add the build option to the section.
+
+[source,asciidoc]
+----
+[%build]
+== Another Topic
+[%build]
+A point about this topic.
+----
+
+The first build is automatically activated on slide entry.
+Therefore, in order for the build on the paragraph to be deferred, the section title needs to be marked as the first build item.
+
+At some point, you're likely to encounter a build permutation that can't be described using the option alone.
+That's where the build attribute comes in.
+
+==== The build Attribute
+
+The build attribute is used to describe more complex build scenarios.
+Right now, it supports the following values (though more may be added in the futrue):
+
+self:: The block itself should be enlisted in the build, but not its children.
+items:: The block's children should be enlisted in the build, but not the block itself.
+self+items (equivalent to the build option):: The block and its children should be enlisted in the build.
+
+Using the build attribute, we can tackle the following two cases:
+
+* Show the list all at once.
+* Show the first item in the list on slide entry.
+
+Let's first look at how to show the list all at once on the first "`next`" action.
+
+[source,asciidoc]
+----
+[%build]
+== Another Topic
+[build=self]
+* one
+* two
+* three
+----
+
+The section title is the first build step, which is automatically activated on slide entry.
+The next build step is the list as a whole.
+
+Now, instead, let's reveal the items in the list one-by-one, but show the first item on slide entry.
+
+[source,asciidoc]
+----
+== Another Topic
+[build=items]
+* one
+* two
+* three
+----
+
+In this case, the first item in the list is the auto-activated build step.
+The next build step is the second item in the list.
+
+As you can see, the build attribute gives you more fine-grained control over the build behavior.
+
+=== Build Roles
+
+You can use CSS to introduce additional build effects.
+The effects supported out of the box are as follows:
+
+* fade
+* vanish
+* spotlight (planned)
+* replace (planned)
+
+The CSS in the <<Build Configuration>> section implements these effects.
+
+=== Canvas Image
+
+The converter supports adding a background image to a slide while still preserving the semantics of the document.
+If the first content in a slide is a block image, and that image has the role `canvas`, the converter will pluck that image block out of the content and promote it to the background image of the slide.
+
+[source,asciidoc]
+----
+== !
+[.canvas]
+image::background-image.png[]
+----
+
+This feature makes it really easy to create image-only slides that take up the full screen.
+
+By default, the image is configured to cover the slide surface.
+If you want to force the image to be contained within the dimensions of the slide (while preserving the aspect ratio), you can add the role `contain`.
+
+[source,asciidoc]
+----
+== !
+[.contain.canvas]
+image::background-image.png[]
+----
+
+// QUESTION should we allow the role to be specified on the slide instead of the image block?
+
+=== Inserting SVGs
+
+Just like for other image types, you use the block and inline image macros to add SVGs to your presentation (via AsciiDoc).
+The difference comes in the fact that you can configure how the SVG is inserted into the HTML output.
+
+The converter supports three ways of inserting an SVG into the HTML of a slide.
+Each method is labeled below by the HTML element that is used:
+
+`<img>`:: The SVG is linked as a rasterized image.
+`<object>`:: The SVG is embedded as a live, interactive object (aka "`content document`").
+`<svg>`:: The SVG is embedded directly into the HTML itself.
+
+There are pros and cons of using each method (which is why the converter supports all three).
+You can read more about the differences between these methods and their tradeoffs by studying the article https://www.smashingmagazine.com/2014/11/styling-and-animating-svgs-with-css/#embedding-svgs[Styling And Animating SVGs with CSS].
+
+You declare an option on the image macro to control which method is used.
+The option values are documented in the table below alongside the HTML element they emit.
+
+.Options for controlling how the SVG is inserted into the HTML output
+[cols="1,1m,2a"]
+|===
+|Option Name |HTML Element |AsciiDoc Example
+
+|_none_ (default)
+|<img>
+|
+----
+image::sample.svg[]
+----
+
+|interactive
+|<object>
+|
+----
+[%interactive]
+image::sample.svg[]
+----
+
+|inline
+|<svg>
+|
+----
+[%inline]
+image::sample.svg[]
+----
+|===
+
+When using inline or interactive, the `viewBox` attribute must be defined on the root `<svg>` element in order for scaling to work properly.
+When using the inline option, if you specify a width or height on the image macro in AsciiDoc, the `width`, `height` and `style` attributes on the `<svg>` element will be removed.
+If you're inserting an SVG using the inline method, we strongly recommend you optimize your SVG using a tool like {uri-svgo}[svgo].
+
+TIP: The {uri-bespoke-multimedia}[bespoke-multimedia plugin] automatically adds the CSS class `active` to the root element of all "`interactive`" SVGs on the current slide, so long as the SVG is loaded from the same domain.
+
+So which method should you choose?
+It depends on how you're using the SVG.
+Here are some rules of thumb to follow.
+
+* Does the SVG have builds (aka bullets)? +
+=> Use *inline*.
+* Do you want the SVG content to be reachable by JavaScript from the main DOM? +
+=> Use *inline*.
+* Do you want the SVG content to inherit styles from the main DOM? +
+=> Use *inline*.
+* Does the SVG have CSS animations? +
+=> Use *inline* or *interactive*.
+  - If using interactive, you must use the {uri-bespoke-multimedia}[bespoke-multimedia plugin] to control the animations on slide entry and exit.
+* Does the SVG reference custom fonts (i.e., webfonts)? +
+=> Use *inline* or *interactive*.
+  - If using interactive, you must link to the CSS that declares the fonts in the SVG file using an XML stylesheet declaration.
+* Are you simply using the SVG as a static image (and it doesn't use custom fonts)? +
+=> Use the *default*.
+
+As you work with SVGs in your presentations, you'll become more comfortable making the decision about which method to employ given the circumstances.
+It's only confusing the first couple of times.
+
+=== Speaker Notes
+
+The converter recognizes designated blocks containing speaker notes and incorporates them into the presentation as hidden elements.
+The speaker notes are then displayed adjacent to the current slide in a presentation console.
+
+You add speaker notes to a slide by nesting them in a sidebar (or admonition) block and adding the role `cue` to that block.
+That block must then be placed at the end of the section for that slide.
+
+[source,asciidoc]
+----
+== Topic
+Slide content.
+
+[.cue]
+****
+Topic is all around us.
+
+Topic has the following benefits:
+
+* Easy to use
+* Easy to scale
+* It's free!
+****
+----
+
+To learn more about how to setup a presentation console, see the https://github.com/opendevise/bespoke-onstage[bespoke-onstage plugin].
+
+=== Supplemental Content
+
+It's possible to inject supplemental content into the output document using http://asciidoctor.org/docs/user-manual/#docinfo-file[docinfo files].
+This core feature of AsciiDoc has been adapted to work with the Bespoke converter.
+
+Currently, there are three insertion locations for docinfo content in a Bespoke document:
+
+head:: content is inserted after the last child of the `<head>` element
+header:: content is inserted before the first child of the `<article>` element (before the slides)
+footer:: content is inserted after the last child of the `<article>` element (after the slides)
+
+The content you want to insert goes into a sibling file of the slide deck document with the following filename pattern:
+
+ docinfo-<location>-bespoke.html 
+
+For example, let's say you want to embed a tweet into your slide deck.
+You might inject the shared embedding JavaScript using a footer docinfo file:
+
+.src/docinfo-footer-bespoke.html
+[source,html]
+----
+<script src="https://platform.twitter.com/widgets.js"></script>
+----
+
+You then need to set the following document attribute in the AsciiDoc header:
+
+----
+:docinfo: shared
+----
+
+When this attribute is defined, the converter will automatically read the docinfo file(s) and insert the contents into the specified location in the output document.
+
+If you want to include content in every slide, we recommend using a http://asciidoctor.org/docs/user-manual/#extension-points[tree processor extension].
+The tree processor would first query for all the level-1 sections in the document (which get transformed into slides), then append one or more blocks to each of the matched sections.
+The tree processor could even read this content from a shared file.
+In the future, the converter may support docinfo insertions per slide.
+
+=== Custom Transforms
+
+While conversion from AsciiDoc is meant to save you time producing common slide types, there are cases when you find yourself going against the grain or exceeding the limits of what CSS can handle.
+This situation is normal.
+The truth is, certain slides require an HTML layout that is tailored to the content.
+In these cases, you can use a custom transform.
+
+You can delegate the conversion of a slide to a custom template by specifying the `transform` attribute.
+The converter will then look for a template file that follows the pattern `slide_<transform>.html.slim`, where `<transform>` is the value of this attribute, inside the directory (or directories) specified by the `template_dir(s)` option.
+
+Let's assume you want to create a custom presenter slide.
+First, create a placeholder slide in the AsciiDoc and specify a custom transform.
+
+[source,asciidoc]
+----
+[transform=presenter]
+== Presenter
+----
+
+Next, create a file named [.path]_slide_presenter.html.slim_ in the directory that holds your templates.
+The template is responsible for creating the `<section>` element for the slide.
+(In fact, there's nothing stopping you from creating multiple slides).
+
+.slide_presenter.html.slim
+[source,slim]
+----
+section.presenter id=id class=role
+  header
+    h2=document.attr :author
+    h3=document.attr :position
+  figure.image.headshot
+    img src=(image_uri document.attr :avatar) alt=(document.attr :author)
+  - unless (_content = content).empty?
+    =_content
+----
+
+Finally, when you invoke the converter, you must specify the location of the template file using the `-T` option:
+
+ $ asciidoctor-bespoke -D public -T src/templates src/index.adoc
+
+// TODO explain how to integrate into Gulp build
+
+Since you can access the entire document model of the parsed AsciiDoc in the template, you are free to pick and choose the content you want to add to the slide and in what order.
+
+Let's look at an example that draws from the document model selectively.
+Assume you want to create one slide per item in a list.
+
+[source,asciidoc]
+----
+[transform=step_by_slide]
+== !
+* one
+* two
+* three
+----
+
+Here's a template that implements this behavior:
+
+.slide_step_by_slide.html.slim
+[source,slim]
+----
+- blocks.first.items.each do |_item|
+  section
+    p=_item.text
+----
+
+This template applied to the previous slide content will generate the following HTML:
+
+[source,html]
+----
+<section>
+  <p>one</p>
+</section>
+<section>
+  <p>two</p>
+</section>
+<section>
+  <p>three</p>
+</section>
+----
+
+As you can see, there's no reason you have to stick to a 1-to-1 mapping between what is in the AsciiDoc file and the slide(s) you're generating.
+The custom transform gives you the flexibility to layout the content on the slide exactly how you want.
+
+You can go deeper and customize the template used for any node (without having to add any hints in the AsciiDoc).
+This converter is based on a {uri-repo-tree-prefix}templates/slim[collection of Slim templates].
+You can copy any one of these templates into your custom templates directory and make modifications to it.
+Asciidoctor will use your copy instead of the matching template provided by the converter.
+To learn more about how to write Slim templates, refer to the {uri-slim-docs}[Slim documentation].
+
+////
+any global options specific to the Bespoke.js converter
+
+=== General HTML Customization (a custom template can be used for any node)
+
+=== Enclose Option
+
+=== Slice and Fit
+
+=== Fit Image
+
+=== Image Credit
+////
+
+== Building the Presentation
+
+=== Building the Static Version
+
+You can build a static version of the slides using the following command:
+
+ $ gulp
+
+The files are built into the _public_ directory.
+You can then view the slides by navigating to _public/index.html_ in your browser.
+
+=== Running the Preview Server
+
+If you use the preview server, the build will monitor the project files for changes and automatically refresh the presentation in the browser when a change is detected.
+You can launch the preview server using:
+
+ $ gulp serve
+
+Once the server is running, you can view the slides by navigating to \http://localhost:8000 in your browser.
+
+////
+== Publishing
+
+TODO
+////
+
+== Sample Presentations
+
+* https://github.com/opendevise/presentation-bespoke-starter[Bespoke.js Starter Presentation]
+* https://github.com/opendevise/bespoke-emulating-shower[Bespoke.js Emulating Shower]
+* https://github.com/opendevise/bespoke-emulating-ioslides[Bespoke.js Emulating ioslides]
+* https://github.com/opendevise/presentation-service-workers[Service Workers], a presentation by Hubert Sablonnière (ported from DZSlides)
+* https://github.com/opendevise/neo4j-slide-types[Neo4j Slide Types]
+
+== About the Project
+
+=== Authors
+
+{project-name} was created by {email}[{author}].
+
+Bespoke.js was created by https://github.com/markdalgleish[Mark Dalgleish] and has received contributions, mostly in the form of plugins, from many other individuals in the Bespoke.js ecosystem.
+
+=== Copyright
+
+Copyright (C) 2015-present Dan Allen and the Asciidoctor Project.
+Use of this software is granted under the terms of the MIT License.
+
+See the link:LICENCE[LICENSE] file for the full license text.

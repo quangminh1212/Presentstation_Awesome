@@ -1,0 +1,110 @@
+# dcc-mcp-PowerPoint
+
+PowerPoint adapter for the DCC-MCP ecosystem — the **application layer** over
+[dcc-mcp-office](https://github.com/dcc-mcp/dcc-mcp-office): deck generation
+from structured content, slide composition, review decks from DCC renders,
+batch PDF conversion and text replacement (via the shared core), previews and
+visual validation.
+
+**Status:** M1 + M2 authoring live. The designed pipeline runs end-to-end:
+Deck IR (`office-ir/1.0`) → Open XML compile (python-pptx) → desktop COM
+render (PowerPoint `DispatchEx`, dedicated instance) → PDF + per-slide PNG
+previews → structural validation. On top of generation, M2 adds structured
+deck modification (ppt-patch/1.0), smart semantic layers and a plugin
+registry — see the skill packs below. Skill scripts are executable through
+the dcc-mcp gateway (`DCC_MCP_POWERPOINT_SKILL_PATHS`). The shared C# host
+in `dcc-mcp-office` remains the production COM path (M1 there).
+
+<!-- dcc-mcp-coverage-pointer:start -->
+<!-- Generated from dcc-mcp-catalog.yml by scripts/generate_adapter_pointer.py in dcc-mcp/dcc-mcp-core. Do not edit by hand. -->
+## Part of the DCC-MCP host matrix
+
+**dcc-mcp-PowerPoint** — PowerPoint adapter for DCC-MCP — deck generation (Deck IR →
+Open XML compile → COM render), slide composition and review decks.
+
+It is one of **47 host adapters** in the DCC-MCP catalog. Every adapter speaks the same
+MCP protocol and builds on the same core runtime contract; each one exposes the tools
+its own host needs on top of that.
+
+- [All host adapters and install metadata](https://dcc-mcp.github.io/ecosystem)
+- [Host matrix on the core README](https://github.com/dcc-mcp/dcc-mcp-core#readme)
+- [Showcase](https://dcc-mcp.github.io/showcase)
+
+This block is generated from the catalog entry in
+[`dcc-mcp-catalog.yml`](https://github.com/dcc-mcp/dcc-mcp-core/blob/main/dcc-mcp-catalog.yml).
+Re-run the generator after changing the catalog.
+<!-- dcc-mcp-coverage-pointer:end -->
+
+## Design (two-layer sidecar)
+
+```text
+Agent → dcc-mcp-gateway (Rust, dcc-mcp-core)
+          → dcc-mcp-server sidecar  (lifecycle: RFC #998)
+              → office-host.exe --app=powerpoint  (C#, dcc-mcp-office)
+                  → POWERPNT.EXE (COM, interactive user session)
+```
+
+- Gateway + sidecar lifecycle: existing `dcc-mcp-core` machinery.
+- `office-host`: shared C# runtime from `dcc-mcp-office`
+  (download/verify/launch via `dcc-mcp-release-artifacts`).
+- This repo owns: PowerPoint IR semantics, `powerpoint.deck.generate` /
+  `powerpoint.slide.compose` / `powerpoint.slide.render`, template
+  registry entries, and the PowerPoint skill packs.
+
+## Skill packs
+
+- `powerpoint-deck` — generate an editable deck from structured content
+  (template → semantic layouts → IR → Open XML → COM finalize → previews →
+  validation loop; proposal §15.3/§15.4). Generated decks are tagged with
+  six semantic layers (background/decoration/header/content/accent/footer).
+- `powerpoint-edit` — modify existing decks with a structured patch
+  document (ppt-patch/1.0): text, notes, pictures, fills/lines, visibility,
+  shape deletion, slide add/delete/move (new slides compile from Deck IR
+  layouts) and layer assignment. All-or-nothing saves.
+- `powerpoint-layers` — smart semantic layers over shapes (native
+  `::layer=<name>` name tags): list, show/hide, restack z-order
+  (front/back/above/below) and recolor per layer.
+- `powerpoint-plugins` — discover and invoke user-installed plugins
+  (plugin.json manifest + stdin-JSON script contract, subprocess isolation,
+  timeout caps).
+- `powerpoint-review` — `dcc.review-deck-from-renders`: build review decks
+  from Maya/Houdini/Blender/Unreal renders + shot/asset metadata
+  (proposal §15.7).
+
+## Capability-boundary showcase
+
+`examples/capability_boundary_showcase.json` is a 17-slide deck that walks
+every semantic layout and the M2 capability surfaces: generation (IR → Open
+XML → COM render → validation), smart layers (list / visibility / recolor /
+reorder / assign), the patch engine (7-operation ppt-patch/1.0 with
+all-or-nothing saves) and the plugin registry (deck-stats demo plugin in
+`examples/plugins/`). See
+`examples/output/capability-boundary/README.md` for the full runbook and
+artifact map.
+
+## Agent usage (via dcc-mcp-cli / gateway)
+
+1. Start the registered adapter (the launcher binds the bundled skill packs
+   and script runtime to the official `dcc-mcp-server`):
+   `dcc-mcp-powerpoint serve`
+2. Run a skill script directly (gateway `execute_script` contract —
+   stdin JSON or CLI flags):
+   ```bash
+   python src/dcc_mcp_powerpoint/skills/powerpoint-deck/scripts/generate_deck.py \
+     --input examples/dcc_mcp_framework_intro.json --out out
+   ```
+3. Validate the packs with the official linter:
+   ```bash
+   dcc-mcp-cli lint src/dcc_mcp_powerpoint/skills --warnings-as-errors --non-interactive
+   ```
+
+## Development
+
+```bash
+pip install -e .[dev,sidecar]
+pytest
+```
+
+## License
+
+MIT

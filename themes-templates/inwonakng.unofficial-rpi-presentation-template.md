@@ -1,0 +1,55 @@
+# Unofficial Beamer Presentation Template for RPI
+
+Refer to `main.tex` for example usage.
+Please feel free to suggest any changes (even better) implement your own.
+
+[Preview the full template here](./main.pdf)
+
+<p align="center">
+  <img src="./assets/slide-01.png" alt="Slide 1" width="49%" />
+  <img src="./assets/slide-07.png" alt="Slide 2" width="49%" />
+  <img src="./assets/slide-09.png" alt="Slide 3" width="49%" />
+  <img src="./assets/slide-18.png" alt="Slide 4" width="49%" />
+  <img src="./assets/slide-25.png" alt="Slide 5" width="49%" />
+  <img src="./assets/slide-32.png" alt="Slide 6" width="49%" />
+</p>
+
+---
+
+## Setting up
+
+- You need the `beamerthemerpi.sty` file and `logos` and `fonts` directory to use this template.
+  - The logos and fonts can also be directly downloaded from [the RPI brand website](https://brand.rpi.edu). For the fonts, just download the desktop variant (`*.otf` files).
+- You also need to use `lualatex` compiler instead of `pdflatex` because of the font. (Arial doesn't work on pdflatex?)
+
+**Local**
+
+1. Clone the repository.
+
+   ```bash
+   git clone https://github.com/inwonakng/unofficial-rpi-presentation-template
+   ```
+
+2. Set xelatex or lualatex as the default compiler for latexmk.
+   - I use the following `.latexmkrc` file to change the compiler to `xelatex` (latexmk to compile my documents locally.). You can also keep one in `~/.latexmkrc` to make it global (local will override global).
+   - The logos are also from the website, but I converted them to PDF for convenience (there's probably ways to use SVG in latex, but I don't want to deal with that).
+   - The bar is _not_ directly from the brand website. I had to rip it out of the pptx template file because the SVG they provide is too short and it is not nicely designed to extend.
+
+   ```latexmkrc
+   # $pdf_mode = 4; # sets lualatex to default engine.
+   $pdf_mode = 5; # sets xelatex to default engine.
+   $dvi_mode = 0;
+   ```
+
+3. Copy over the `fonts` and `logos` directories to the root of your latex project.
+
+**Overleaf**
+
+- Start by cloning [this project](https://www.overleaf.com/read/tfmtktkymgrj#41a6a0). (we can't upload unofficial templates to overleaf anymore).
+- double check the compiler checking this option in the menu:
+  ![](./figures/overleaf-compiler.png)
+  ![](./figures/overleaf-menu.png)
+  - if not already selected, select either `LuaLaTeX` or `XeLaTeX` as the compiler.
+
+- This is what the new screen looks like (the setting button is on the bottom left corner), and you can get to the compiler menu (second from top on left side)
+  ![](./figures/overleaf-compiler-new.png)

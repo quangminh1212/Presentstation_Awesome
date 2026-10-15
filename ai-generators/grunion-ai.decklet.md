@@ -1,0 +1,198 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="brand/assets/decklet-loader-dark.gif">
+    <img src="brand/assets/decklet-loader-light.gif" width="96" height="96" alt="">
+  </picture>
+</p>
+
+# decklet
+
+**Editable slide decks from any content, as one self-contained HTML file. A Claude Code and Codex skill with a plain-Node CLI: the deck is a JSON model, the file is the editor, and a verifier checks the layout before a human ever sees it.**
+
+Open-source alternative to PowerPoint, Keynote, Gamma and the PPTX-generator skills for coding agents. Next to [frontend-slides](https://github.com/zarazhangrui/frontend-slides)-style HTML skills it adds in-place editing, an enforced brand type scale, an in-file PDF writer and a layout gate. Zero dependencies, zero network, MIT.
+
+![decklet demo: drag a row, page through slides that animate in, the inlined editor clips, the four anims, contact-sheet reorder, write a PDF](docs/demo.gif)
+
+**Try it live:** https://grunion-ai.github.io/decklet/deck.html (drag, retype, ⊞ contact sheet, ⤓ PDF, F fullscreen). **The template pack:** https://grunion-ai.github.io/decklet/library.html — every template and layout the engine ships (115 + 32), one per slide, grouped by the kind of slide it is, then six of them under the eleven style kits in `examples/styles`. Two cuts of the same pack open faster: [library-speaker.html](https://grunion-ai.github.io/decklet/library-speaker.html) and [library-reading.html](https://grunion-ai.github.io/decklet/library-reading.html) carry only the slides of one density, under three orthogonal kits. If decklet builds you a deck, star the repo: stars are how agents and people find it.
+
+**What's next:** [ROADMAP.md](ROADMAP.md) covers speaker notes, mobile, document formats and export targets, with the sequencing and the rejected options.
+
+## Quickstart
+
+Node ≥ 22, nothing to `npm install`. Install it as a skill, or clone it anywhere and call the CLI.
+
+```bash
+# Claude Code plugin (marketplace + plugin live in this repo)
+claude plugin marketplace add grunion-ai/decklet
+claude plugin install decklet@grunion
+
+# Any skills-aware agent (Claude Code, Codex, Cursor, Amp, and the rest)
+npx skills add grunion-ai/decklet
+
+# Or by hand: SKILL.md is picked up on the next session
+git clone https://github.com/grunion-ai/decklet ~/.claude/skills/decklet
+```
+
+Then, in any session: "make a deck from these notes".
+
+```bash
+# As a CLI
+git clone https://github.com/grunion-ai/decklet && cd decklet
+node bin/validate.mjs examples/explainer/model.json
+node bin/create.mjs --model examples/explainer/model.json --out deck.html --title decklet
+open deck.html
+node bin/bug.mjs deck.html --category looks --desc "chips wrap" --log verify.log   # a prefilled bug mail: [ISSUE] subject, engine, format, size, node + OS; never the deck's words
+```
+
+Works with Claude Code, Codex, Cursor and any agent that can run Node: the skill is [`SKILL.md`](SKILL.md), the toolchain is four Node scripts.
+
+## How decklet compares
+
+| | **decklet** | HTML slide skills (frontend-slides and kin) | PPTX skills (python-pptx, html2pptx) | Slidev, Marp | Gamma and hosted generators |
+| --- | --- | --- | --- | --- | --- |
+| Output | One `.html`, editable in place | HTML page(s) | `.pptx` | Markdown source plus a build | Hosted app |
+| Edit after generation | Drag, retype, resize, reorder, undo, all inside the file | Regenerate (a fork adds drag editing) | PowerPoint | Edit the markdown, rebuild | In the app |
+| Brand type scale enforced | Eight roles, no per-element size overrides, gate-checked | Theme CSS | Template | Theme | Themes |
+| Layout checked before hand-off | `verify`: parity, collisions, pixel diff against references | No | No automated gate | No | No |
+| Runtime dependencies | None | None | Python and libraries | Node toolchain | Docker or cloud |
+| Network when opened | None | Webfonts, usually | n/a | Dev server for Slidev | Yes |
+| PDF | Written inside the file, no dependencies | Browser print | Export | Playwright or Chrome export | Export |
+
+*As of September 2026; check each project for current terms.* Pick decklet when an agent drafts the deck and a person finishes it by hand. Pick a PPTX skill when the deliverable has to be a `.pptx`, and Slidev or Marp when the author writes markdown by hand.
+
+## What it is
+
+A slide engine where the deck is a JSON model and the renderer is the editor. `create` turns `model.json` into one self-contained `deck.html`: open it from disk, drag and retype in place, present fullscreen, print to PDF. No install, no server, no network request, ever.
+
+**Who it is for.** Agents (Claude Code, Codex, Cursor, any tool-using model) that must turn content into a deck a human will then edit. Humans get a file they can open and change; agents get a contract they can validate before a browser is involved.
+
+**Inputs → outputs.**
+- in: any content (outline, notes, markdown, transcript, data) + a format (`slides`, `carousel`, `document-letter`, `document-a4`, and the 4:3 / story / landscape / A3 presets) + a style (brand tokens + eight text roles, or the neutral default)
+- out: `deck.html` — one file, ~40 KB (this repo's explainer carries three inlined screen clips, so it weighs ~270 KB), editable, printable, verifiable
+
+**Zero dependencies.** The engine is plain HTML/CSS/JS in a single file. The CLI is plain Node ≥ 22. Playwright is an *optional* devDependency used only by `verify`, `pdf` and `import-html`; nspell + dictionary-en are *optional* devDependencies used only by `create` to flag misspellings and bake their suggestions into the file (absent, create says so and the editor falls back to the browser's own checker).
+
+**One file.** The model, the styles, the renderer and the editor ship inside the deck. Copy it, email it, commit it.
+
+## For agents
+
+Read [`SKILL.md`](SKILL.md) — it is the product. It is the authoring path only; the build loop it recommends — a coverage manifest, then a second pass over the rendered slides — is [`docs/building.md`](docs/building.md), the editor (HUD, persistence, PDF, versions, the bug door) is [`docs/editor.md`](docs/editor.md), and the chart row, the connector shapes, the nine figures and the worked examples sit beside it in [`docs/`](docs/). Its `## START HERE` block routes the first read — the commands in order, the two catalogues, and which page answers which question. Below it: the inputs, the process, the model and style contracts, verification thresholds and anti-patterns. The whole loop:
+
+```
+node bin/new.mjs --out model.json --slides 8 --density reading      # a starter model + MANIFEST.md, both already clean
+node bin/validate.mjs model.json                                   # contract check, no browser
+node bin/create.mjs --model model.json --style style.json --out deck.html --format slides
+node bin/verify.mjs deck.html [--refs shots/]                     # layout parity always; AE diff when refs exist
+node bin/pdf.mjs deck.html [out.pdf]                              # vector PDF, one slide per page at slide size; self-gating
+node bin/edits.mjs deck.html                                       # what the human changed in the editor (read before revising)
+node bin/create.mjs --model model.json --out deck.html --from deck.html   # revise: keep ids, replay human edits (human wins)
+node bin/import-html.mjs --w 1600 --h 900 --out model.json 'pages/*.html'   # finished HTML → model
+node bin/assets.mjs logo "Xometry" --out assets/                    # a logo file + manifest.json (aspect, plate) for deck.assets
+```
+
+[`llms.txt`](llms.txt) is the machine summary and file map. [`deck.html`](deck.html) is the engine explaining itself — eighteen slides built from [`examples/explainer/model.json`](examples/explainer/model.json) by the same CLI, including the motion vocabulary and three GIF clips of the editor filmed from the deck itself.
+
+## Guarantees
+
+- **Single file.** Model + renderer + editor in one `.html`; nothing is fetched at runtime.
+- **Zero network.** No webfonts, CDNs or remote images; images are data: URIs. The gate greps for it.
+- **Editable.** Drag, ⌘-multi-select, marquee select (drag a window on empty canvas), double-click to retype, corner-nib resize, point nibs on connectors, floating role/mark/colour toolbar (B/I/U/S, sub/sup, the deck's own swatches; ⌘B/⌘I/⌘U), undo that survives reload, contact sheet with grab-and-drag reordering.
+- **Human edits are never lost.** Every edit autosaves in the browser — localStorage, IndexedDB where that is refused, memory as the last resort — on a desktop, a phone or inside an iframe, and every window of the same browser showing the deck picks it up live. Every edit lands in the in-file log and, once the deck file is linked (⌘S or the dot, Chrome/Edge, asked once), is written into the file by itself. `create --from` replays the log onto the next version, human wins, conflicts flagged. `bin/edits.mjs` prints the log for an agent. Version history is not decklet's job: it moved to weave (0.9.0).
+- **Motion, honestly.** Four entrance anims — `rise`, `fade`, `pop`, `wipe` — staggered 120 ms on slide *entry* only. `prefers-reduced-motion` turns them off, and print, the contact sheet, the PDF and `verify` all draw the settled frame, so motion can never change what is measured or exported.
+- **Brand-true.** Eight text roles (Title, Supertitle, H1, H2, Body, Caption, Label, Stat) are the only source of font/size/leading; rows cannot override them. Chrome is one deck-wide master layer on a `margin` token. Tokens re-theme every deck.
+- **PDF.** `⤓` writes a true slide-sized PDF inside the file (foreignObject → canvas → JPEG → PDF, zero dependencies); `⌘P` is the paper path with named Letter/A4 pages (Safari-safe), one page per slide. Safari's in-file raster path is unconfirmed — it falls back to print.
+- **Verified.** `validate` (pure Node) + `verify` (layout parity in a real browser, AE pixel diff against references). A deck that fails parity is not done.
+
+## Model snippet
+
+```json
+{
+  "w": 960, "h": 540,
+  "layouts": { "content": { "supertitle": { "x": 60, "y": 52, "w": 840, "role": "Supertitle" },
+                            "title":      { "x": 60, "y": 76, "w": 840, "role": "H1" } } },
+  "master": [ { "id": "foot", "footer": 1, "x": 660, "y": 500, "w": 240, "align": "right", "role": "Label", "text": "decklet" } ],
+  "slides": [ { "layout": "content", "els": [
+    { "slot": "supertitle", "text": "THE MODEL" },
+    { "slot": "title", "text": "Every slide is rows in a JSON array." },
+    { "x": 60, "y": 170, "w": 195, "h": 110, "tile": 1, "role": "Stat", "text": "1,240" },
+    { "x": 120, "y": 340, "w": 70, "h": 60, "bg": "#2F4E7A", "bar": 1 },
+    { "x": 730, "y": 200, "w": 150, "donut": 72 }
+  ] } ]
+}
+```
+
+A row is text by default; `box`, `tile`, `bar`, `line`, `donut`, `svg`, `img` are props on the same row. Roles come from `styles.roles` (or `style.json`); a row may set weight/colour/case, never size. Full reference: SKILL.md → MODEL CONTRACT.
+
+## Feature matrix
+
+| capability | status | notes |
+|---|---|---|
+| `slides` 16:9 (960×540, 1600×900) | supported | editing, contact sheet, present, PDF, verify |
+| `carousel` 1:1 / `carousel-4x5` | experimental | sizing, editing, PDF work; per-card PNG export via `bin/export.mjs --png` |
+| `document-letter` / `document-a4` | experimental | page = canvas, print zoom 1; text does not flow across pages |
+| `slides-4x3` · `story` 9:16 · `document-letter-landscape` · `document-a4-landscape` · `poster-a3` | experimental | sizing, editing, PDF work; **library layouts and templates are cut for 16:9 and stretch here** — `validate` warns per slide; draw free rows until aspect-aware composition (ROADMAP D2) |
+| drag / multi-select / resize / undo | supported | undo history persisted per deck; connectors get point nibs |
+| save button (state at a glance) | supported | one Lucide save glyph: calm saved · amber + count not in the file yet · red + ! nothing persists · pulse while writing; a click writes the file, or downloads a copy where the browser blocks storage |
+| autosave · edit log · write-back | supported | localStorage → IndexedDB → memory; live across windows of one browser; in-file `/*LOG*/`; the linked file rewrites itself (Chrome/Edge), `create --from` migrates. No version history in the file since 0.9.0 (weave) |
+| inline text editing + B/I/U/S + colour runs | supported | stored as `html` on the row |
+| roles · slots · master layer · footer counter | supported | see SKILL.md |
+| bars, lines, donuts, tiles, boxes | supported | one row each, no SVG layer |
+| SVG / raster images | supported | inline `svg`, data: `img`, `contain` by default |
+| logos | supported | `logo` row: fixed column, contain fit, light/dark plate, aligned name, monogram fallback ([docs/logo.md](docs/logo.md)); a logo per template item (`m1…mn`) and per chart datum |
+| asset table | supported | `deck.assets` embeds each image once, rows name it `'#id'` |
+| logo and screenshot gathering | supported | `decklet-assets logo / shot / monogram` writes files plus `manifest.json` with aspect and plate ([docs/assets.md](docs/assets.md)) |
+| icons | supported | every Lucide name (2,147), inlined at create |
+| ranked bars | supported | `chart` `mark:'hbar'`: label column, sort, highlight, a logo per row |
+| row placement after a row | supported | `after:'<rowId>'` puts x at the named row's rendered right edge plus a gap |
+| entrance motion | supported | `anim`: `rise`\|`fade`\|`pop`\|`wipe`, 120 ms stagger on slide entry, respects reduced-motion, never in print/PDF/parity |
+| animated GIF clips | supported | `img` data: URI plays as-is; `docs/record-clips.mjs` films them from the deck and writes them back into the model |
+| contact sheet (select, reorder, dup, delete) | supported | 3-across live thumbnails; pointer-drag reorder (mouse + touch), also in present mode |
+| fullscreen presentation | supported | F / ⛶, hover-peek HUD (pinned while a menu or the sheet is open) |
+| PDF | supported | ⤓ → vector, slide-sized PDF through the deck's own print pipeline in Chromium (text stays text, fonts embed, every link kept); Safari keeps the in-file raster path; `bin/pdf.mjs deck.html` writes it headless; ⌘P → paper, Letter/A4 named sizes |
+| HTML pages → model | supported | `bin/import-html.mjs` (Playwright) |
+| spellcheck · suggestions | supported | the build's dictionary flags the words (optional peer); the editor washes and underlines them on every slide in every engine, the badge opens a panel of them with the build's suggestions, a pick rewrites the row, `spell.ignore` silences a name |
+| validate / verify | supported | parity mandatory, AE optional |
+| PPTX / Google Slides export | no | out of scope |
+| presenter view, notes | roadmap | |
+
+## Repo map
+
+```
+deck.html            the engine + the explainer deck (built from examples/explainer)
+template.html        the engine with an empty model — create.mjs fills it
+bin/new.mjs          a starter model + MANIFEST.md — validate/verify clean before you edit it
+bin/validate.mjs     model contract, pure Node
+bin/create.mjs       model (+style) → deck.html; format presets
+bin/verify.mjs       parity + AE + contract proof (Playwright optional)
+bin/import-html.mjs  finished HTML pages → model.json (Playwright)
+bin/bug.mjs          a prefilled bug report (mailto) — the deck's bug button and dialog use the same builder
+bin/assets.mjs       decklet-assets: a company name to a logo file, a URL to a screenshot, a monogram; writes manifest.json
+SKILL.md             the agent authoring skill
+docs/                the references it links: building.md, editor.md, verify.md, charts.md, connectors.md, figures.md, examples.md, import-html.md, assets.md, logo.md
+llms.txt             machine summary
+examples/            explainer, quarterly-update, launch-carousel, one-pager (brief → model + style)
+test/gate.test.mjs   engine + validator + create + import + live proofs
+```
+
+## Test
+
+```
+npm test            # node --test; live browser tests skip when Playwright is absent (CI installs Chromium, so they run there)
+npm run test:live   # same, after: npm i -D playwright && npx playwright install chromium
+```
+
+## Bugs
+
+In a deck: the **bug button** (last in the HUD) opens a small dialog — pick one of four kinds (Looks wrong · Won't respond · Save or PDF · Crashed), write a line, **Open mail app**. The mail arrives with `[ISSUE]` at the head of the subject and the engine version, format, slide size and count, current slide, mode, browser and a few counts for that kind of bug filled in — never a word, image or token from the deck, and nothing is sent until you press send. From a terminal: `node bin/bug.mjs deck.html --category looks --desc "what happened" --log verify.log` prints the same mail with a scrubbed tool snippet (quoted text, JSON and directories stripped). Both go to **decklet@grunion.ai**, a receive-only address read by a person; a reply comes from their own mailbox. Security problems go through GitHub's private vulnerability reporting instead — see [SECURITY.md](SECURITY.md).
+
+## Roadmap
+
+Full plan, with sequencing, sizes and rejected options: **[ROADMAP.md](ROADMAP.md)**.
+
+Now: contract hygiene, the `slide.notes` and `row.alt` model fields, notes as data, phone reading, new format presets, a PNG export CLI.
+Next: presenter view, searchable PDF, aspect-aware layouts, phone presenting.
+Later: document text flow, PPTX export, touch editing, a slide revision store.
+
+## License
+
+MIT © Grunion

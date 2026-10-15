@@ -1,0 +1,176 @@
+<p align="center">
+  <img src="assets/logo.png" alt="ida-slides — Marp / Slidev decks docked inside IDA" width="760">
+</p>
+
+English | [한국어](README_ko.md)
+
+# ida-slides
+
+Real **Marp** or **Slidev** slide decks inside a dockable IDA Pro tab — with
+`@name` tokens rendered as clickable links that jump the disassembly view.
+
+Present your analysis with the slides docked on the right and the code on the
+left. Write `@sub_401000`, `@main`, or `@0x401000` anywhere in the deck and it
+becomes a highlighted link; clicking it navigates IDA to that function or
+address.
+
+<p align="center">
+  <img src="assets/image1.png" alt="The bundled sample deck docked on the right of IDA, its @main / @sub_401000 / @0x401000 tokens rendered as clickable links" width="960">
+</p>
+
+## Usage
+
+1. `Ctrl+Shift+M` (or View → Open subviews → ida-slides: Open Slides…)
+2. Pick your Markdown deck (`.md`)
+
+The deck renders in a native webview embedded in the IDA tab — WKWebView on
+macOS, WebView2 on Windows; no QtWebEngine required. The engine is picked
+per deck:
+
+- **Marp** (default): the `marp` CLI converts to HTML on every save and the
+  view reloads in place, keeping the current slide. Full Marp themes,
+  backgrounds, pagination.
+- **Slidev**: chosen when the front matter has Slidev-specific keys
+  (`transition:`, `mdc:`, `drawings:` …). ida-slides starts a local `slidev`
+  dev server and shows it in the tab; Vite HMR applies saves instantly.
+
+Force an engine by putting `ida-slides-engine: marp` or `ida-slides-engine: slidev`
+in the front matter. Navigate with each tool's usual keys (←/→, `f`
+fullscreen, Slidev's `o` overview, …).
+
+Requirements:
+
+- Marp: `npm i -g @marp-team/marp-cli`
+- Slidev: `npm i -g @slidev/cli` (+ the theme your deck uses, e.g.
+  `@slidev/theme-default`)
+- macOS: pyobjc-framework-WebKit (installed automatically by the Plugin
+  Manager; manual: `pip install --user pyobjc-framework-WebKit`)
+- Windows: the WebView2 Runtime (preinstalled on Windows 10/11; the plugin
+  ships the loader in `win/WebView2Loader.dll` — **x64 only**. On an ARM64
+  IDA, or to update an outdated loader, replace it with the matching
+  binary from the Microsoft.Web.WebView2 NuGet package; see
+  `win/PROVENANCE.txt` for the exact path and recorded version)
+
+CLIs are found via PATH, nvm/nvm-windows, npm's global bin, Homebrew,
+pnpm, or scoop. `.html` files exported by marp-cli can also be opened
+directly.
+
+### Platform support
+
+**macOS and Windows** — the deck is rendered by the platform's native
+webview (WKWebView via PyObjC on macOS, WebView2 via COM on Windows), and
+rendering requires the deck engine's CLI to be installed. There is no
+fallback viewer: on other platforms, or without marp/slidev, the plugin
+loads but decks don't render.
+
+## `@` reference syntax
+
+| Syntax | In a slide it becomes… |
+|--------|------------------------|
+| `@sub_401000` / `@main` / `@0x401000` | a link that jumps the disassembly view |
+| `@main:12` | a link that opens the pseudocode at line 12 |
+| `@main[1:8]` | the decompiled lines 1–8, embedded as a code block |
+| `@main[7]` | just pseudocode line 7 |
+| `@main[]` | the whole decompiled function |
+| `@main[1:8@5]` | lines 1–8 with line 5 marked `►` |
+
+Hover any `@` link to preview its decompiled code in a tooltip (a few lines,
+with `►` on the `:line` target) without leaving the slide — handy for
+checking "which function was that again?" mid-talk.
+
+Line jumps (`:N`) and embeds (`[a:b]`) both read live from the IDB, so a
+rename or re-analysis is reflected the next time you save. Unknown names are
+reported in IDA's output window when clicked.
+
+Going the other way: right-click in the disassembly, pseudocode, or hex view
+and pick **Copy @reference** — the token for that spot lands on the
+clipboard, ready to paste into your deck. Select several pseudocode lines
+first and it captures the range as an embed token `@name[lo:hi]`; otherwise
+it copies `@name:line` (pseudocode) or `@name`. Unnamed addresses — and
+names the `@` token grammar can't express, like Objective-C selectors —
+are copied as `@0xADDR` so the token always works when pasted.
+
+Jumps never take keyboard focus away from the deck, so you keep driving
+slides with the arrow keys without clicking back in.
+
+## Writing decks
+
+Each engine's standard conventions apply (front matter, `---` separators,
+themes, layouts). `@name` linkification runs on the rendered DOM — a
+MutationObserver keeps Slidev's dynamically mounted slides covered — so it
+works in body text and inline code alike. See `examples/sample-marp.md` and
+`examples/sample-slidev.md`.
+
+Before a deck reaches the engine, ida-slides preprocesses it into a hidden
+`.<name>.ida-slides.md` sibling (expanding `[a:b]` embeds); Marp additionally
+renders a `.<name>.ida-slides.html`. Both sit next to your `.md` so relative
+image paths keep working, and both are removed when the deck is closed. The
+Slidev dev server is stopped when the deck is closed or swapped.
+
+## Install
+
+Symlink or copy this directory into your IDA plugins folder, e.g.:
+
+```sh
+# macOS
+ln -s "$(pwd)" ~/.idapro/plugins/ida-slides
+```
+
+```powershell
+# Windows
+New-Item -ItemType Junction -Path "$env:APPDATA\Hex-Rays\IDA Pro\plugins\ida-slides" -Target (Get-Location)
+```
+
+Requires IDA 9.2+ (GUI).
+
+## Tests
+
+The plugin is tied to IDA/Qt/the native webview, so tests run inside IDA
+rather than under a bare `pytest`. Open any IDB, then in the IDA Python console:
+
+```python
+exec(open("<repo>/tests/test_in_ida.py", encoding="utf-8").read())
+```
+
+Pure-logic checks (token grammar, front-matter parsing, embed handling)
+always run; database-dependent checks (name resolution, decompilation,
+live embeds) pick a function from whatever IDB is open and skip cleanly
+if none is loaded.
+
+On Windows the renderer itself can additionally be tested **outside** IDA
+(the COM layer and the marp pipeline don't need an IDB):
+
+```powershell
+python tests\test_webview2_standalone.py
+```
+
+Run this before touching any vtable/COM code in `webview2_com.py` — a
+wrong slot index shows up here as a clean failure instead of a crash
+inside IDA. It is safe to run while an IDA with ida-slides is open.
+
+The macOS renderer has the same kind of harness (attach, marp watcher,
+@token linkify, save/rapid-save cycles, the JS→Python click bridge,
+cleanup — no IDB needed):
+
+```sh
+python3 tests/test_webkit_standalone.py   # needs 3.10+, PySide6, pyobjc
+```
+
+## Implementation notes (IDA 9.3)
+
+- `PluginForm.FormToPySideWidget` requires `QtGui` in `__main__` and fails
+  with a *silently swallowed* AttributeError otherwise; this plugin uses
+  `FormToPyQtWidget` (shiboken `wrapInstance`) which works in any context.
+- WebKit completion-handler blocks are not callable from PyObjC delegate
+  methods here ("cannot call block without a signature"), and WebKit aborts
+  the host process when a decision handler is dropped — so click routing uses
+  a `WKScriptMessageHandler` + `WKUserScript` click interceptor instead of
+  `decidePolicyForNavigationAction`. No delegate method that receives a block
+  is implemented.
+- All IDA API work triggered from ObjC callbacks is deferred via
+  `QTimer.singleShot(0, …)`.
+- On Windows, WebView2 is driven directly over COM with stdlib ctypes
+  (`webview2_com.py`) — no pip dependency and no contact with IDA's
+  bundled Qt ABI. Interface IIDs and vtable slot indices are taken from
+  the official SDK header and are frozen ABI. The same defer-everything
+  rule applies to COM callbacks.

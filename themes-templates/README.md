@@ -1,0 +1,508 @@
+# Themes, Templates & Curated Lists
+
+Visual themes, starter templates and awesome-lists for presentations and slides.
+
+- [owainlewis](https://github.com/owainlewis/awesome-artificial-intelligence) — ★ 16,668 — A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers.
+- [matze](https://github.com/matze/mtheme) — ★ 6,904 — A modern LaTeX Beamer theme
+- [serenakeyitan](https://github.com/serenakeyitan/awesome-notebookLM-prompts) — ★ 4,684 — A curated collection of the strongest NotebookLM slide prompts sourced from the real creative underground . Your go-to resource for AI powerpoint :P
+- [martinbjeldbak](https://github.com/martinbjeldbak/ultimate-beamer-theme-list) — ★ 1,823 — A collection of Beamer themes from the community
+- [obsidianmd](https://github.com/obsidianmd/knap) — ★ 637 — A simple template language that turns data into Markdown.
+- [pcafrica](https://github.com/pcafrica/focus-beamertheme) — ★ 546 — Focus: a minimalist presentation theme for LaTeX Beamer.
+- [gossip-ink](https://github.com/gossip-ink/gossip) — ★ 525 — Give awesome and informative presentation efficiently.
+- [tuna](https://github.com/tuna/THU-Beamer-Theme) — ★ 469 — A LaTeX beamer theme template for Tsinghua students.
+- [Urinx](https://github.com/Urinx/LaTeX-PPT-Template) — ★ 420 — Seven awesome latex ppt templates for researchers or students.
+- [anishathalye](https://github.com/anishathalye/auriga) — ★ 405 — Auriga is a minimalist LaTeX beamer presentation theme 📽
+- [sanographix](https://github.com/sanographix/azusa-colors) — ★ 374 — Keynote template
+- [pmichaillat](https://github.com/pmichaillat/latex-presentation) — ★ 299 — Minimalist LaTeX template for academic presentations
+- [hamaluik](https://github.com/hamaluik/Beamer-Theme-Execushares) — ★ 298 — A minimalist and modern Beamer theme
+- [piazzai](https://github.com/piazzai/arguelles) — ★ 282 — Simple, typographic beamer theme
+- [pm25](https://github.com/pm25/SimplePlus-BeamerTheme) — ★ 279 — 🍃 SimplePlus - A minimalist and clean LaTeX Beamer theme
+- [XiangyunHuang](https://github.com/XiangyunHuang/awesome-beamers) — ★ 271 — beamer template collection
+- [benjamin-weiss](https://github.com/benjamin-weiss/hsrmbeamertheme) — ★ 231 — Beamer theme that complies with the corporate design of the RheinMain University of Applied Sciences.
+- [RatulSaha](https://github.com/RatulSaha/presento) — ★ 216 — A clean, simple and extensible template for presentations. Supports XeTeX and Beamer.
+- [FvNCCR228](https://github.com/FvNCCR228/SCU-Beamer-Theme) — ★ 199 — 四川大学非官方Beamer模板 | Unofficial Beamer Template for Sichuan University
+- [inFaaa](https://github.com/inFaaa/PKU-Beamer-Theme) — ★ 197 — A Beamer Theme of PKU for academic report, thesis and talk.
+- [tisho](https://github.com/tisho/framer-templates) — ★ 190 — Presentation templates for your Framer.js prototypes.
+- [mholson](https://github.com/mholson/sthlmNordBeamerTheme) — ★ 169 — sthlmNord is a LaTeX Beamer slide deck theme inspired by the arctic north blueish colour palette of Nord. The code base is HEAVILY influenced by hsrmbeamer a...
+- [ambropo](https://github.com/ambropo/JambroBeamerTheme) — ★ 166 — JambroBeamerTheme
+- [LukasPietzschmann](https://github.com/LukasPietzschmann/awesome-beamer) — ★ 165 — Kinda awesome beamer theme
+- [kai-tub](https://github.com/kai-tub/latex-beamer-pure-minimalistic) — ★ 165 — A true minimalistic LaTeX beamer template
+- [BolajiAyodeji](https://github.com/BolajiAyodeji/awesome-jamstack) — ★ 147 — :notebook_with_decorative_cover: Curated list of resources: books, videos, articles, speaker decks, tools about using the Jamstack.
+- [mozilla](https://github.com/mozilla/mozilla-presentation-templates) — ★ 144 — DEPRECATED
+- [jacklenox](https://github.com/jacklenox/picard-present) — ★ 143 — A presentation theme that uses the REST API
+- [sanographix](https://github.com/sanographix/azusa3) — ★ 137 — Google Slides & Keynote template
+- [deuslirio](https://github.com/deuslirio/UFGTeX-Presentation) — ★ 115 — A Modern LaTeX Template to presentations, with different layouts and support to AI assistants
+- [juliocesar](https://github.com/juliocesar/shining) — ★ 108 — Awesome presentations in HTML + JS + CSS
+- [YangLaTeX](https://github.com/YangLaTeX/thubeamer) — ★ 106 — A Beamer Theme for Tsinghua University (THU).
+- [junwei-wang](https://github.com/junwei-wang/beamerthemeNord) — ★ 105 — Nord beamer theme
+- [zbowang](https://github.com/zbowang/BeamerTheme) — ★ 102 — Define a simple beamer theme
+- [pm25](https://github.com/pm25/SimpleDarkBlue-BeamerTheme) — ★ 100 — 🫐 SimpleDarkBlue - A simple and clear LaTeX Beamer theme
+- [ivan-cukic](https://github.com/ivan-cukic/latex-beamer-theme-elegance) — ★ 100 — Beamer theme based on HSRM with some nice configuration options
+- [robbie-cao](https://github.com/robbie-cao/awesome-slides) — ★ 93 — Awesome Slides for Presentation
+- [gongnyang](https://github.com/gongnyang/awesome-html-scrolline-deck) — ★ 93 — Scroll-driven presentation decks: one continuous timeline, beats that turn into the next, six concept packs and 80 moves.
+- [Anthony0630](https://github.com/Anthony0630/Defense-PPT-Template) — ★ 92 — 各类答辩PPT汇报模板
+- [martinbjeldbak](https://github.com/martinbjeldbak/beamertheme-bjeldbak) — ★ 91 — A simple, minimalistic Beamer theme to keep eyes on the content
+- [gix](https://github.com/gix/PresentationTheme.Aero) — ★ 82 — A highly polished Windows Aero theme for WPF
+- [Allenpandas](https://github.com/Allenpandas/BJTU-Slides-Template) — ★ 81 — 🏫 北京交通大学PPT模板 | Beijing Jiaotong University slides template
+- [hsuantien](https://github.com/hsuantien/beamerTaiwan) — ★ 80 — a beamer theme based on the beautiful green color of Taiwan
+- [sonnyhcl](https://github.com/sonnyhcl/beamerthemefdu) — ★ 78 — Unofficial latex beamer theme for Fudan
+- [nschloe](https://github.com/nschloe/ua-beamer) — ★ 76 — A LaTeX beamer theme for the University of Antwerp
+- [nacos-group](https://github.com/nacos-group/nacos-template) — ★ 73 — nacos-template include PPT template and knote
+- [sanhacheong](https://github.com/sanhacheong/stanford-beamer-presentation) — ★ 72 — This is an unofficial LaTeX Beamer presentation template for Stanford University.
+- [sano-jin](https://github.com/sano-jin/express-beamer) — ★ 72 — A modern LaTeX Beamer theme
+- [catppuccin](https://github.com/catppuccin/powerpoint-slides) — ★ 72 — 📽️ Soothing pastel theme for your PowerPoint slides
+- [nomie7](https://github.com/nomie7/nano-banana-slides-prompter) — ★ 70 — Generate optimized AI prompts for Nano Banana Pro Slides with dynamic character generation, 50+ content-aware slide templates, and cinematic visual styles
+- [kailashbuki](https://github.com/kailashbuki/beamerthemesaarland) — ★ 70 — Saarland Beamer Theme
+- [odoo](https://github.com/odoo/odoodays-2014) — ★ 68 — Presentations & templates for 2014 R&D
+- [Piotr1215](https://github.com/Piotr1215/terminal-slides-template) — ★ 67 — Quickly setup terminal based presentation slides
+- [quxiaofeng](https://github.com/quxiaofeng/PolyU_beamer_theme) — ★ 65 — An Unofficial Beamer Theme For PolyU and COMP
+- [JinnyWong](https://github.com/JinnyWong/FudanPPT) — ★ 64 — 🗄️ Fudan University PowerPoint presentation templates. 复旦大学PPT模板
+- [ntnu-tex](https://github.com/ntnu-tex/beamerthementnu) — ★ 61 — A LaTeX beamer theme for presentations in the NTNU corporate design
+- [famuvie](https://github.com/famuvie/beamerthemesimple) — ★ 61 — A minimalist Beamer theme with a watermark in the background
+- [fliptanedo](https://github.com/fliptanedo/FlipBeamerTheme) — ★ 57 — Flip's Beamer Template (for presentations in LaTeX)
+- [Irubataru](https://github.com/Irubataru/beamer-themes) — ★ 56 — Some beamer themes
+- [UweZiegenhagen](https://github.com/UweZiegenhagen/LaTeX-Beamer-Theme-Overview) — ★ 56 — An overview of Beamer themes
+- [YenalyLiew](https://github.com/YenalyLiew/CircularRevealSwitch) — ★ 56 — Just one line of code to achieve the Circular Reveal Theme Switch Animation in Telegram
+- [seifreed](https://github.com/seifreed/awesome-sandbox-evasion) — ★ 56 — A summary about different projects/presentations/tools to test how to evade malware sandbox systems
+- [fperez](https://github.com/fperez/nb-slideshow-template) — ★ 55 — A template for a notebook-based slideshow (talk), with setup instructions.
+- [klb2](https://github.com/klb2/beamer-presentation-template) — ★ 53 — LaTeX beamer template for presentations with a clean and simple style
+- [sybila](https://github.com/sybila/presentation-template) — ★ 52 — Simple presentation template.
+- [makokal](https://github.com/makokal/beamer-themes) — ★ 50 — Latex beamer themes for presentations
+- [aviel08](https://github.com/aviel08/unity_presentation_template) — ★ 49 — Unity 3D presentation template
+- [vipowueb](https://github.com/vipowueb/minflat-beamer) — ★ 49 — Minimal beamer theme in flat design
+- [Witiko](https://github.com/Witiko/fibeamer) — ★ 49 — A former repository of the beamer theme for the typesetting of thesis defense presentations at the Masaryk University in Brno. Now migrated to the URL below.
+- [shoya140](https://github.com/shoya140/zebra2) — ★ 48 — Keynote template designed for research/technical presentations
+- [StickCui](https://github.com/StickCui/XDUstyle-Beamer-Theme) — ★ 48 — 西安电子科技大学 Beamer 主题
+- [2slides](https://github.com/2slides/awesome-nano-banana-ppt-prompts) — ★ 48 — 🍌 selected Nano Banana Pro prompts for PPT, infographics with images, multilingual support, and instant gallery preview. Open-source prompt engineering library.
+- [ppletscher](https://github.com/ppletscher/beamerthemezurich) — ★ 47 — A blue beamer theme
+- [michaelroland](https://github.com/michaelroland/jku-templates-presentation-latex) — ★ 46 — LaTeX Beamer Theme for Johannes Kepler University Linz
+- [Adarsh-Barik](https://github.com/Adarsh-Barik/SimpleBeamerTheme) — ★ 46 — A minimal, clean and simple theme for beamer presentation.
+- [hplgit](https://github.com/hplgit/MAlley-slide-templates) — ★ 45 — Templates for Michael Alley's assertion-evidence design of slides.
+- [malramsay64](https://github.com/malramsay64/usyd-beamer-theme) — ★ 45 — A Beamer theme that adheres to the University of Sydney Branding
+- [GohUnTsuan](https://github.com/GohUnTsuan/RUC-Beamer-Theme) — ★ 45 — A LaTeX beamer theme template for Renmin University of China students. 中国人民大学beamer模板.
+- [sierxue](https://github.com/sierxue/beamer-theme-collection) — ★ 45 — LaTeX 幻灯片 (PPT) Beamer 模板集 --- 中文、中英混排、英文
+- [pcafrica](https://github.com/pcafrica/beamerthemepolimi) — ★ 43 — Beamer port of the official PoliMi presentation theme.
+- [Liam0205](https://github.com/Liam0205/easy_slides) — ★ 43 — Easy slides template for LaTeX users, based on the article class.
+- [slideshow-s9](https://github.com/slideshow-s9/awesome-slideshows) — ★ 41 — Awesome Slide Shows / Presentations / Talks - Tools, Themes & Templates, Articles, etc.
+- [Coreoz](https://github.com/Coreoz/PPT-Templates) — ★ 40 — PPT Template is a small templating library to generate PowerPoint presentations.
+- [YangLaTeX](https://github.com/YangLaTeX/hitszbeamer) — ★ 40 — A beamer theme for Harbin Institute of Technology, ShenZhen
+- [maxnoe](https://github.com/maxnoe/TUDoBeamerTheme) — ★ 40 — —
+- [hithesis](https://github.com/hithesis/HITBeamer) — ★ 39 — 基于 THU-Beamer-Theme (https://github.com/Trinkle23897/THU-Beamer-Theme) 删删改改而成的 :bug:
+- [matafokka](https://github.com/matafokka/PowerPointDarkThemeFix) — ★ 39 — When a custom (especially dark) theme is applied, default PowerPoint's color picker messes grey colors for fill, borders, shadow and glow. PowerPointDarkThem...
+- [aspose-slides](https://github.com/aspose-slides/Awesome-Presentations) — ★ 38 — Awesome Presentations - A Curated List of Free Tools for Creating Beautiful Presentations. This list contains free tools and resources for creating, designin...
+- [jtriley](https://github.com/jtriley/mit-beamer) — ★ 38 — Latex-beamer presentation template for MIT (derived from Andreas Kloeckner's brown-beamer)
+- [Thysrael](https://github.com/Thysrael/GreenParkBeamerTheme) — ★ 38 — 北京航空航天大学 BUAA LaTeX Beamer 非官方主题
+- [cocodrips](https://github.com/cocodrips/keynote-themes) — ★ 37 — Free Keynote templates.
+- [mattblackwell](https://github.com/mattblackwell/cousteau) — ★ 37 — A beamer theme
+- [mzyy94](https://github.com/mzyy94/Slidoon) — ★ 36 — SplatoonっぽいKeynote theme
+- [EagleoutIce](https://github.com/EagleoutIce/beamer-themes) — ★ 35 — A hopefully growing collection of (latex) beamer-themes that i have created over the years. All themes supplied are standalone versions.
+- [htlin222](https://github.com/htlin222/lizard-gslide-module) — ★ 34 — Google Apps Script toolkit for automating Google Slides formatting, batch styling, badges, watermarks, and theme application with a custom sidebar menu.
+- [eshoyuan](https://github.com/eshoyuan/SEU_Beamer_Template_Latex) — ★ 34 — Southeast University(SEU) beamer template 东南大学PPT模板 (已更新PowerPoint版本)
+- [runablehq](https://github.com/runablehq/Awesome-presentation-tools) — ★ 33 — Awesome presentation tools
+- [jeromebelleman](https://github.com/jeromebelleman/beamer-cern) — ★ 33 — A CERN LaTeX Beamer theme mimicking the official one
+- [luistar](https://github.com/luistar/unina-beamer) — ★ 33 — A modern beamer theme for people at the University of Naples "Federico II" (UniNA)
+- [iamjarryfeng](https://github.com/iamjarryfeng/Waseda-Beamer-Slide) — ★ 32 — A LaTeX beamer theme template for Waseda Univ. students.
+- [mpetroff](https://github.com/mpetroff/beamer-theme-matrix) — ★ 32 — Shows variations of the Beamer LaTeX package's themes and color themes
+- [JuanRdBO](https://github.com/JuanRdBO/expo-circular-reveal) — ★ 31 — Telegram-style circular reveal theme transitions for React Native (Expo Module). iOS: CAShapeLayer mask animation. Android: PixelCopy + Path clipping.
+- [martinhelso](https://github.com/martinhelso/UiB) — ★ 30 — Beamer theme for the University of Bergen
+- [schliflo](https://github.com/schliflo/OnePageR) — ★ 29 — A minimalistic single page slides template based on jQuery
+- [thwfhk](https://github.com/thwfhk/PKU-Beamer-Theme) — ★ 29 — 基于Metropolis修改的北大风格Beamer主题
+- [madlifer](https://github.com/madlifer/BentoGrid-Html-Slide) — ★ 27 — A Bento Grid Style Slide template.
+- [gbif](https://github.com/gbif/ppt-template) — ★ 27 — GBIF PowerPoint template repository
+- [dawbarton](https://github.com/dawbarton/UoB-beamer-theme) — ★ 27 — A LaTeX Beamer theme for the University of Bristol
+- [corybrunson](https://github.com/corybrunson/beamerthemeuconn) — ★ 27 — LaTeX Beamer themes for the University of Connecticut
+- [IQSS](https://github.com/IQSS/iqss-beamer-theme) — ★ 27 — A Beamer theme featuring IQSS orange.
+- [aecio](https://github.com/aecio/beamer-theme) — ★ 27 — A super simple and clean  latex beamer theme for slide presentations.
+- [vidonne](https://github.com/vidonne/unhcrdown) — ★ 26 — UNHCR branded R Markdown templates for reports, presentations, and web documents
+- [gatsbyjs](https://github.com/gatsbyjs/mdx-deck-theme) — ★ 26 — The theme we use for Gatsby-related slide decks powered by `mdx-deck`
+- [spbu-se](https://github.com/spbu-se/report_presentation_template) — ★ 26 — Шаблон презентации для квалификационных работ
+- [fedoradesign](https://github.com/fedoradesign/fedora-presentation-template) — ★ 26 — Presentation templates with Fedora branding for slide decks / presentations
+- [owickstrom](https://github.com/owickstrom/automating-the-build-of-your-technical-presentation-template) — ★ 26 — The full template for "Automating the Build of your Technical Presentation"
+- [zlliang](https://github.com/zlliang/beamer-fudan) — ★ 26 — An unofficial beamer theme for Fudan University
+- [transientlunatic](https://github.com/transientlunatic/glasgow-theme) — ★ 26 — A beamer theme conforming approximately to the University of Glasgow branding guidelines.
+- [lvjr](https://github.com/lvjr/concrete) — ★ 26 — A collection of flat beamer themes for LaTeX presentations
+- [nuaa803](https://github.com/nuaa803/nuaa-slides) — ★ 25 — Slide templates for NUAA (including LaTeX Beamer & PowerPoint formats)
+- [KodeinKoders](https://github.com/KodeinKoders/CuP-Presentation-Template) — ★ 25 — Create your CuP speaker deck in a glimpse
+- [tanaikech](https://github.com/tanaikech/TemplateApp) — ★ 25 — This is a Google Apps Script library for easily managing the template of Google Documents and Google Slides using Google Spreadsheet as a database using Goog...
+- [unindented](https://github.com/unindented/webpack-presentation) — ★ 24 — "Webpack is Awesome" presentation.
+- [MiladJoodi](https://github.com/MiladJoodi/Photography_Website) — ★ 24 — In this project, I employed a range of cutting-edge technologies, including Next.js, Tailwind CSS, ShadCN UI, Framer Motion, React Count Up, React Awesome Re...
+- [fghaas](https://github.com/fghaas/presentation-template) — ★ 24 — This repo is deprecated. Please use the Cookiecutter-based template instead!
+- [auth0-ambassadors](https://github.com/auth0-ambassadors/presentations) — ★ 24 — Repository of presentation templates, past talks, etc.
+- [eatingli](https://github.com/eatingli/ppt-template) — ★ 23 — On NPM
+- [dustincys](https://github.com/dustincys/progressbar) — ★ 23 — Beamer theme
+- [103yiran](https://github.com/103yiran/XDUtheme) — ★ 23 — an unofficial LaTeX beamer theme for Xidian University
+- [chefkitchenjoy](https://github.com/chefkitchenjoy/presentation-tool) — ★ 22 — The secret weapon for MS PowerPoint. Access 3,000+ pro presentation templates, infographics, and pitch decks directly inside PowerPoint.
+- [cedricmauclair](https://github.com/cedricmauclair/beamer-themes) — ★ 22 — —
+- [gc3-uzh-ch](https://github.com/gc3-uzh-ch/beamer-theme-gc3) — ★ 22 — The GC3 theme for LaTeX/Beamer slides.
+- [zinccat](https://github.com/zinccat/PKU-beamer-theme) — ★ 22 — 从某清华模版魔改的beamer主题x
+- [gdgistanbul](https://github.com/gdgistanbul/awesome-presentations) — ★ 21 — A community-curated list of selective conferences around the world for developers
+- [yhbcode000](https://github.com/yhbcode000/sustech-slides-template) — ★ 21 — 📊 学术报告 · 论文分享 · 课题答辩一站式中英文 LaTeX Beamer 模板 | SUSTech Beamer Slide Template — paper share, region survey, proposal, progress record, finalisation
+- [maltmannx](https://github.com/maltmannx/slides-templates-and-copywriting) — ★ 21 — 视频中出现的幻灯片模版，效果和文案
+- [SizheWei](https://github.com/SizheWei/SJTU-LaTeX-Template) — ★ 21 — This is slides template using LaTeX beamer. It may be convenient for students from Shanghai Jiao Tong University.
+- [doitian](https://github.com/doitian/intridea-beamer-theme) — ★ 21 — Beamer theme for Intridea
+- [mundya](https://github.com/mundya/unofficial-university-of-manchester-beamer) — ★ 21 — Unofficial University of Manchester Beamer Theme
+- [smanchajm](https://github.com/smanchajm/Jacquenetta-beamer-theme) — ★ 21 — Modern, minimalist LaTeX Beamer theme for scientific presentations.
+- [HFUTTUG](https://github.com/HFUTTUG/HFUT-Beamer) — ★ 21 — Collection of Beamer themes for Hefei University of Technology
+- [jgable](https://github.com/jgable/MVC-3-HTML5-Slideshow-Presentation-Template) — ★ 20 — A .Net MVC 3 Site template for creating HTML5 Slideshow presenations.  Based on @robflaherty 's html5-slideshow project.
+- [chili-epfl](https://github.com/chili-epfl/paper-poster-presentation-template) — ★ 20 — A LaTeX template pack for ieeetran, sigchi, acm-sig-alternate, llncs2e, baposter, nccr-poster and beamer
+- [cabify](https://github.com/cabify/deckset-slides-theme) — ★ 20 — A custom, on brand Cabify theme for Deckset, the app to create super nice presentations with just Markdown
+- [qznc](https://github.com/qznc/nakedbeamer) — ★ 20 — A minimalistic LaTeX-beamer theme
+- [FMuro](https://github.com/FMuro/seville) — ★ 20 — A gorgeous LaTeX beamer theme
+- [liantze](https://github.com/liantze/beamerthemeMirage) — ★ 20 — A beamer theme inspired by the "Mirage" song poster
+- [corenel](https://github.com/corenel/zju-beamer-theme) — ★ 20 — Beamer theme for oral defense in  Zhejiang University.
+- [xinchen13](https://github.com/xinchen13/WHU-Beamer-Theme) — ★ 20 — WHU-style beamer theme
+- [XD111ds](https://github.com/XD111ds/sii-beamer-theme) — ★ 20 — An unofficial LaTeX Beamer theme for Shanghai Innovation Institute (SII).
+- [AshishMK](https://github.com/AshishMK/indian_meesenger) — ★ 19 — India's first social network with chat messaging app.Switch from Foreign App to Indian Messenger to send and receive messages, calls, photos, videos, and Voi...
+- [owickstrom](https://github.com/owickstrom/minimal-beamer-slides-template) — ★ 19 — A minimal template for LaTeX Beamer slideshows
+- [cbourjau](https://github.com/cbourjau/frederiksberg_beamer) — ★ 19 — LaTex beamer theme for the University of Copenhagen
+- [aarondwolf](https://github.com/aarondwolf/wildcat) — ★ 19 — A beamer theme for Northwestern University
+- [haechi](https://github.com/haechi/beamer-erlangen) — ★ 19 — A pdfTeX beamer theme for the Technical Faculty of the FAU Erlangen
+- [peng-yq](https://github.com/peng-yq/UCAS-Beamer-Theme) — ★ 19 — A Beamer Theme of UCAS for academic report, thesis and talk.
+- [pomber](https://github.com/pomber/gatsby-theme-deck-n-blog) — ★ 18 — Create a deck (with mdx-deck) and a blog post from the same MDX
+- [craftzdog](https://github.com/craftzdog/presentation-themes) — ★ 18 — Presentation themes based on popular syntax themes
+- [mnm-team](https://github.com/mnm-team/latex-beamer) — ★ 18 — Latex Beamer Theme
+- [pblottiere](https://github.com/pblottiere/dark-beamer-theme) — ★ 18 — A beautiful dark beamer theme
+- [fritzw](https://github.com/fritzw/beamerthemeLUH) — ★ 18 — An unofficial LaTeX Beamer theme that is trying to follow the Coprorate Design Guidelines of Leibniz Universität Hannover.
+- [GohUnTsuan](https://github.com/GohUnTsuan/JLU-Beamer-Theme) — ★ 18 — A LaTeX beamer theme template for Jilin University students. 吉林大学beamer模板.
+- [yistLin](https://github.com/yistLin/beamertheme-yeast) — ★ 18 — Yeast, a lite and light beamer theme
+- [Tang1705](https://github.com/Tang1705/BJTU-Beamer) — ★ 18 — 北京交通大学 Beamer 主题（非官方）｜Beamer Theme for Beijing Jiaotong University (unofficial)
+- [Spacebody](https://github.com/Spacebody/SUSTech-Defense-Slides) — ★ 18 — Beamer theme for defense slide
+- [ost-fh](https://github.com/ost-fh/Latex-Beamer-Theme) — ★ 18 — Vorlage für Latex-Beamer im OST Corporate Design
+- [skeptrunedev](https://github.com/skeptrunedev/sherp) — ★ 17 — sherp is a CLI for building presentations from Markdown/MDX.   Instant dev server, multiple themes, keyboard navigation, and PDF export.
+- [jxnblk](https://github.com/jxnblk/mdx-deck-theme-example) — ★ 17 — Demo of `@mdx-deck/gatsby-theme` with `@jxnblk/gatsby-theme-mdx-blog`
+- [thomasjpfan](https://github.com/thomasjpfan/slides-template-hugo) — ★ 17 — —
+- [Bili-Sakura](https://github.com/Bili-Sakura/Latex-Slides-Template-GenAI) — ★ 17 — A modern, clean LaTeX Beamer presentation template with a sleek design inspired by keynote presentations.
+- [llancia](https://github.com/llancia/MaterialBeamer) — ★ 17 — A Material Design Beamer Theme
+- [jacksonllee](https://github.com/jacksonllee/uchicago-beamer) — ★ 17 — LaTeX beamer theme for University of Chicago-themed presentation slides
+- [gsarkis](https://github.com/gsarkis/McGill-Beamer-Theme) — ★ 17 — A Latex beamer theme with McGill University's logo.
+- [aaronbaggett](https://github.com/aaronbaggett/youngmetro) — ★ 17 — R Markdown Beamer Theme Based on sthlm, HSRM, and Metropolis themes
+- [neardws](https://github.com/neardws/Chongqing-University-Beamer-Theme) — ★ 17 — A LaTeX beamer theme template for CQU students.
+- [michaelkirker](https://github.com/michaelkirker/Unofficial-UChicago-Beamer-Theme) — ★ 17 — Files to theme your LaTeX Beamer presentation to match the University of Chicago colors.
+- [ShinoharaHaruna](https://github.com/ShinoharaHaruna/SDU-Beamer-Theme) — ★ 17 — 山东大学 (Shandong University, SDU) LaTeX Beamer 主题模板 — beamer theme for academic slides, thesis defense and presentations. Actively maintained.
+- [yumdocs](https://github.com/yumdocs/yumdocs) — ★ 16 — Yumdocs is a template engine to automate Word, PowerPoint and Excel documents.
+- [mvsoom](https://github.com/mvsoom/beamerthemeblei) — ★ 16 — A clean and minimal Beamer theme mimicking David Blei's presentation theme
+- [Tonanguyxiro](https://github.com/Tonanguyxiro/SUSTech-Slide-Template-LateX-EN) — ★ 16 — Slide template for SUSTech sutdent
+- [Y006](https://github.com/Y006/slide_template) — ★ 16 — 电子科技大学 Beamer 模版
+- [zhicongsun](https://github.com/zhicongsun/SUSTech-Beamer-Theme) — ★ 16 — This is LaTex PDF(PPT) template for SUSTech, you can use it to perform your presentations.
+- [andy123t](https://github.com/andy123t/Beamer-Themes) — ★ 16 — LaTeX Beamer themes for presentations
+- [menegola](https://github.com/menegola/inf-beamer) — ★ 16 — A beamer theme with the new Institute of Informatics (from UFRGS) visual identity style
+- [Helmholtz-AI-Energy](https://github.com/Helmholtz-AI-Energy/beamer-template) — ★ 15 — Latex beamer slide template for Helmholtz AI
+- [xamarin](https://github.com/xamarin/evolve-presentation-template) — ★ 15 — Evolve 2016 Presentation Templates
+- [bmondal94](https://github.com/bmondal94/Leipzig-Beamer-Template) — ★ 15 — Leipzig university beamer presentation template
+- [johanjvrens](https://github.com/johanjvrens/SUnORE-presentation) — ★ 15 — SUnORE (Stellenbosch Unit for Operations Research and Engineering) lab Latex presentation template
+- [tianxiaogu](https://github.com/tianxiaogu/beamertheme-njupurple) — ★ 15 — A beamer theme for NJU.
+- [NicklasXYZ](https://github.com/NicklasXYZ/NXYZBeamerTheme) — ★ 15 — A simple and minimalistic LaTeX beamer theme.
+- [christophergandrud](https://github.com/christophergandrud/LSE-Beamer-Theme) — ★ 15 — An Unofficial LSE LaTeX Beamer Theme
+- [martinhelso](https://github.com/martinhelso/OsloMet) — ★ 15 — Beamer theme for OsloMet - Oslo Metropolitan University
+- [samanthalclarke](https://github.com/samanthalclarke/USYD-Beamer-Theme) — ★ 15 — An Unofficial USYD LaTeX Beamer Template and Theme
+- [cpa2001](https://github.com/cpa2001/SLAI-Beamer-Template) — ★ 15 — A SINTEF-based LaTeX Beamer theme with CUHK/SLAI branding (colors, blocks, chapter/side-picture slides).
+- [MostafaAnter](https://github.com/MostafaAnter/CircularRevealThemesChanger) — ★ 15 — helper library for Android that enables you to dynamically change themes using a circular reveal animation.
+- [cbwang2016](https://github.com/cbwang2016/PresentationLaTexTemplate) — ★ 15 — My template for presentation in LaTeX
+- [cainmagi](https://github.com/cainmagi/UH-beamer-templates) — ★ 15 — A collection of beamer templates for presentations for University of Houston (UH).
+- [Cinofix](https://github.com/Cinofix/latex-scientific-templates) — ★ 15 — Collection of latex templates used for my master's thesis, presentations and assignment reports.
+- [Relaxkartikey](https://github.com/Relaxkartikey/prior-gsap-animation-portfolio-website-template) — ★ 14 — Free open-source GSAP ScrollTrigger website template with canvas frame-scrub, parallax video, clip-path reveals & cinematic scroll effects. Vanilla HTML/CSS/...
+- [girldevelopit](https://github.com/girldevelopit/gdi-slides-template) — ★ 14 — Template for GDI Slides
+- [jachoo](https://github.com/jachoo/pg-beamer) — ★ 14 — Gdańsk University of Technology - LaTeX Beamer presentation template
+- [lancelet](https://github.com/lancelet/beamer-trek) — ★ 14 — A Star Trek inspired slide theme for the Beamer LaTeX document class.
+- [satta](https://github.com/satta/zbh-beamer-theme) — ★ 14 — LaTeX-beamer theme for the ZBH
+- [classysoftware](https://github.com/classysoftware/classyslides) — ★ 14 — A LaTeX Beamer theme for classy slides
+- [kyawaway](https://github.com/kyawaway/kyasual) — ★ 14 — A smart-casual LaTeX Beamer theme
+- [LaneGong](https://github.com/LaneGong/SHU-Beamer-Theme) — ★ 14 — 上海大学Beamer主题PPT模版
+- [amirhakh](https://github.com/amirhakh/persian-beamer) — ★ 14 — Persian template for slide with beamer and xepersian (in LaTeX)
+- [GavinnnTann](https://github.com/GavinnnTann/Your-Valentines-Invite) — ★ 13 — A beautiful, interactive Valentine's Day website template with parallax scrolling, photo timeline, mini-game, and invitation reveal. Built with Next.js 14 an...
+- [estelle](https://github.com/estelle/slides) — ★ 13 — HTML5 Slide Template
+- [edouardfouche](https://github.com/edouardfouche/kit-jupyter-slides-theme) — ★ 13 — (un)official css theme for KIT presentations with jupyter notebook slideshow
+- [lsy3](https://github.com/lsy3/beamer-unsw-theme) — ★ 13 — A Latex Beamer Theme for the University of New South Wales
+- [solstice](https://github.com/solstice/uzk-theme) — ★ 13 — Beamer theme for the University of Cologne.
+- [aknierim](https://github.com/aknierim/tudobeamertheme_dark) — ★ 13 — LaTeX Beamer Theme for TU Dortmund with dark theme option
+- [scraperai](https://github.com/scraperai/awesome-presentations) — ★ 12 — A curated showcase of AI-generated slide decks  every deck built end-to-end from a single text prompt.
+- [SoftVarE-Group](https://github.com/SoftVarE-Group/SlideTemplate) — ★ 12 — A beamer latex template for slides and lectures at University of Ulm
+- [Mizera-Mondo](https://github.com/Mizera-Mondo/HHU-Slides-Template) — ★ 12 — 河海大学演示文档模板 / Unofficial PPT and Beamer Template for Hohai University
+- [thinkingserious](https://github.com/thinkingserious/interactive-presentation-template) — ★ 12 — —
+- [mbovel](https://github.com/mbovel/presentation-template) — ★ 12 — —
+- [hamid-m](https://github.com/hamid-m/UofMN-Beamer-Template) — ★ 12 — Beamer presentation template with University of MN colors
+- [JoeyEremondi](https://github.com/JoeyEremondi/UBC-Metropolis-Beamer) — ★ 12 — Metropolis Beamer theme with UBC Colors and Logo
+- [uio-latex](https://github.com/uio-latex/MathDept) — ★ 12 — Beamer theme for the Department of Mathematics, University of Oslo
+- [rispace](https://github.com/rispace/unofficial-FSU-beamer-theme-template) — ★ 12 — Florida State Beamer Theme and Template for poster and presentation (Unofficial)
+- [sbindel](https://github.com/sbindel/beamer-theme-uha) — ★ 12 — LaTeX beamer template of UHA university
+- [zondie17](https://github.com/zondie17/UCAS_Beamer) — ★ 12 — A LaTeX beamer theme template for UCAS students.
+- [jsh9](https://github.com/jsh9/Caltech-beamer-theme) — ★ 12 — Caltech LaTeX template for presentations, adopted by Overleaf
+- [AlexZabashta](https://github.com/AlexZabashta/ITMO-Beamer-theme) — ★ 12 — LaTex template for ITMO style presentations
+- [CQULeaf](https://github.com/CQULeaf/DIY_LaTeX_Template) — ★ 12 — 面向知识笔记、论文报告、日常汇报与个人简历的 LaTeX 模板集合，支持独立编译、场景复用与个人定制拓展。
+- [HuanPP](https://github.com/HuanPP/TeXDeck) — ★ 12 — Turn a PDF into a finished LaTeX Beamer deck. The template file is the prompt.
+- [abuyukcakir](https://github.com/abuyukcakir/bilkent-beamer-template) — ★ 12 — More simplistic Bilkent Beamer Template that uses exact color scheme of Bilkent University
+- [jaredwilli](https://github.com/jaredwilli/io-slides) — ★ 11 — Google I/O 2012 slide template
+- [ishugaepov](https://github.com/ishugaepov/vk_presentation_template) — ★ 11 — VK Beamer Presentation Template
+- [primer](https://github.com/primer/keynote-octicons) — ★ 11 — Keynote templates for using GitHub's octicons in presentations
+- [rjturner](https://github.com/rjturner/cmu-beamer) — ★ 11 — Beamer theme for Carnegie Mellon University
+- [maminian](https://github.com/maminian/uncmathbeamer) — ★ 11 — A minimal beamer theme for UNC Chapel Hill
+- [uwabami](https://github.com/uwabami/beamerthemeKansaiDebianMeeting) — ★ 11 — latex-beamer theme for KansaiDebianMeeting
+- [pbelmans](https://github.com/pbelmans/ugent-beamer) — ★ 11 — A LaTeX beamer theme for the University of Ghent
+- [mvonthron](https://github.com/mvonthron/beamer-polymtl) — ★ 11 — Beamer theme for Polytechnique Montréal (http://www.polymtl.ca/)
+- [igankevich](https://github.com/igankevich/SaintPetersburg) — ★ 11 — Saint-Petersburg: Beamer theme for SPbU
+- [alirezaafzalaghaei](https://github.com/alirezaafzalaghaei/latex-persian-slide) — ★ 10 — A Persian latex slide template using beamer package
+- [jsconf](https://github.com/jsconf/presentation-templates) — ★ 10 — —
+- [rob-p](https://github.com/rob-p/carlworld-beamer-slide-theme) — ★ 10 — Carl Compliant Beamer slide theme
+- [ibab](https://github.com/ibab/beamertheme-vertex) — ★ 10 — A clean, basic beamer theme
+- [abarbu](https://github.com/abarbu/purdue-beamer) — ★ 10 — Purdue LaTeX beamer themes for posters and talks
+- [alejogm0520](https://github.com/alejogm0520/latexEAFIT) — ★ 10 — A modern LATEX beamer theme for the Universidad EAFIT
+- [starryious](https://github.com/starryious/NWU-latex-template) — ★ 10 — A LaTeX beamer theme template for NWU students (Northwest University).
+- [electricant](https://github.com/electricant/beamerThemePadovaDEI) — ★ 10 — Beamer theme for the Department of Information Engineering at the Univeristy of Padova
+- [Daeinar](https://github.com/Daeinar/beamer-uni-passau) — ★ 10 — Inofficial Universität Passau LaTeX Beamer Theme
+- [AmmarMian](https://github.com/AmmarMian/Shibui-beamer) — ★ 10 — Yet another beamer theme
+- [ClConstantine](https://github.com/ClConstantine/CCNU-Beamer-Theme) — ★ 10 — —
+- [andrewboyd-811](https://github.com/andrewboyd-811/back-4-blood-hack-2026-cleaner-deck-toolkit) — ★ 10 — Back 4 Blood Hack 2026 themed PC companion for Cleaner builds, weapon loadouts, card decks, team planning, run tracking and combat analytics.
+- [vakahnke](https://github.com/vakahnke/seedcorn) — ★ 10 — Seedcorn (formerly Timeline). Plan it. Run it. Adjust as you go. Share the plan that worked. A self-hosted project planner with a canvas Gantt timeline you c...
+- [Dowwie](https://github.com/Dowwie/awesome-presentation-libs) — ★ 9 — Awesome libraries for creating presentations
+- [tyohan](https://github.com/tyohan/Polyslide) — ★ 9 — HTML5 Slide Presentation Template Using Polymer
+- [EricZQu](https://github.com/EricZQu/DKU-beamer-presentation) — ★ 9 — This is an unofficial latex beamer presentation theme for Duke Kunshan University, adapted from Stanford.
+- [UweZiegenhagen](https://github.com/UweZiegenhagen/MINT-Lecture-Slide-Template) — ★ 9 — A template for Lectures in math/programming based on LaTeX Beamer
+- [UMM-CSci](https://github.com/UMM-CSci/senior-seminar) — ★ 9 — Public materials for senior seminar, including assignments, past papers/slides, templates, etc.
+- [SteveHartzog](https://github.com/SteveHartzog/slides-template) — ★ 9 — A slides template for tech speakers.
+- [zhtluo](https://github.com/zhtluo/purdue-slide-template) — ★ 9 — A LaTeX Slide Template for Purdue University
+- [Gorcenski](https://github.com/Gorcenski/accessible-slides) — ★ 9 — A repository for some Accessible Slide templates incorporating best practices for accessibility
+- [Kairui-SHI](https://github.com/Kairui-SHI/WHU-PPT-Template) — ★ 9 — 武汉大学 PPT 模板 (Wuhan University PPT/ Slides Templates)
+- [sils](https://github.com/sils/guadec-presentation-templates) — ★ 9 — MOVED TO https://git.gnome.org/browse/presentation-templates/
+- [danrot](https://github.com/danrot/presentation-template) — ★ 9 — —
+- [ProofLabs](https://github.com/ProofLabs/StevensBeamerLatexTemplate) — ★ 9 — Unofficial Stevens Institute of Technology Latex(beamer) Presentation Template
+- [Guanyu-Li](https://github.com/Guanyu-Li/Defense-Reporting-ppt) — ★ 9 — 答辩ppt模板（吉林大学数学学院）Defence ppt Template
+- [dlunde](https://github.com/dlunde/kth-beamer) — ★ 9 — A (very) simple beamer theme for KTH presentations
+- [tvalimaki](https://github.com/tvalimaki/beamertheme-tuni) — ★ 9 — A beamer theme for Tampere Universities presentations
+- [ljleppan](https://github.com/ljleppan/beamer-uh) — ★ 9 — A Beamer theme styled after the University of Helsinki powerpoint theme
+- [aalfons](https://github.com/aalfons/beamerthemeESE) — ★ 9 — LaTeX Beamer theme for Erasmus School of Economics
+- [codeforthailand](https://github.com/codeforthailand/beamer-sanour) — ★ 9 — a Beamer theme that supports Thai and looks pleasant
+- [vskbellala](https://github.com/vskbellala/metropolis-brown) — ★ 9 — Brown University color scheme for Metropolis beamer theme.
+- [xianrui5891](https://github.com/xianrui5891/OUC_beamer_theme) — ★ 9 — A beamer theme designed for Ocean University of China
+- [cococo2000](https://github.com/cococo2000/ICT-Beamer) — ★ 9 — ICT Beamer Theme: A simple Beamer template for the Institute of Computing Technology, CAS.
+- [slidekit](https://github.com/slidekit/talks-starter) — ★ 9 — talks starter (s6 blank) - write your talks / presentations / slides in plain text w/ markdown formatting conventions ++ setup uses the jekyll talks theme (u...
+- [Viniciuscarvalho](https://github.com/Viniciuscarvalho/slidedown) — ★ 9 — Transform Markdown files into spectacular presentations with 6 themes and AI-powered design
+- [kannansuresh](https://github.com/kannansuresh/PowerPoint-Downsizer-Add-In) — ★ 9 — A PowerPoint add-in to remove unused layouts and master slides. This reduces size of our PowerPoint files created from heavy templates.
+- [EternallyAscend](https://github.com/EternallyAscend/PreLaTeX) — ★ 9 — Simple LaTeX Beamer Template
+- [Lalospidey](https://github.com/Lalospidey/awesome-csirt) — ★ 8 — A list of awesome CSIRT tools and presentations
+- [kunny](https://github.com/kunny/io-slides) — ★ 8 — HTML5 slide template for Google I/O
+- [Zoher15](https://github.com/Zoher15/IU-Metropolis-Beamer-Theme) — ★ 8 — A modern Beamer presentation theme combining Metropolis with Indiana University branding
+- [Solar-WU](https://github.com/Solar-WU/SWJTU_Slides_Template) — ★ 8 — An unofficial beamer slides template for SWJTUers / Latex版本的非官方西南交通大学幻灯片模板
+- [csoriano1618](https://github.com/csoriano1618/gnome-slides-template) — ★ 8 — A LibreOffice Impress template with Gnome branding for talks
+- [astomodynamics](https://github.com/astomodynamics/GT-presentation-template) — ★ 8 — Beamer Presentation Template for Georgia Tech Community
+- [nschloe](https://github.com/nschloe/matheon-html5-template) — ★ 8 — Matheon HTML5 presentation template
+- [atherosai](https://github.com/atherosai/latex-beamer-with-bibtex-presentation) — ★ 8 — Latex Beamer presentation template with Bibtex support
+- [deepmancer](https://github.com/deepmancer/latex-presentation-template) — ★ 8 — Effortlessly create professional presentation slides with Beamer and LaTeX.
+- [botprof](https://github.com/botprof/qu-slides) — ★ 8 — A LaTeX Beamer class and presentation template for Queen's University at Kingston, Ontario, Canada.
+- [ahmetuysal](https://github.com/ahmetuysal/KU-LaTeX-Beamer-Template) — ★ 8 — Unofficial Koç University LaTeX Beamer presentation template.
+- [lsy3](https://github.com/lsy3/hugo-academic-unsw-slides) — ★ 8 — UNSW Slide theme for Hugo Academic
+- [apreshill](https://github.com/apreshill/ppt-templates) — ★ 8 — —
+- [xnliang98](https://github.com/xnliang98/buaa-beamer) — ★ 8 — beihang beamer ppt template
+- [aanklewicz](https://github.com/aanklewicz/macOS9_keynote_template) — ★ 8 — —
+- [akrah](https://github.com/akrah/LatexThemeTelecomNancy) — ★ 8 — Personnal beamer theme used for Telecom Nancy slides.
+- [JonkopingAI](https://github.com/JonkopingAI/ju-beamer-theme) — ★ 8 — A LaTeX beamer theme with elements from Jönköping University branding
+- [fneum](https://github.com/fneum/beamerthemeKarlsruhe) — ★ 8 — Inofficial Karlsruhe Institute of Technology (KIT)-Style Latex Beamer Theme
+- [pm25](https://github.com/pm25/General-Beamer-Theme) — ★ 8 — A General Purpose Latex Beamer Theme.
+- [mbork](https://github.com/mbork/beamerorgtheme) — ★ 8 — An Org-mode inspired Beamer theme
+- [YanMing-lxb](https://github.com/YanMing-lxb/GUET_Beamer) — ★ 8 — Guet_Beamer_Theme
+- [yhzhu99](https://github.com/yhzhu99/buaa-beamer-theme) — ★ 8 — BUAA Beamer Theme
+- [mayhewsw](https://github.com/mayhewsw/uiuc-beamer-theme) — ★ 8 — Beamer theme for UIUC
+- [TeXhackse](https://github.com/TeXhackse/CCCamp19_beamer) — ★ 8 — LaTeX beamer theme for CCCamp19
+- [joszuijderwijk](https://github.com/joszuijderwijk/beamer-uu) — ★ 8 — An unofficial beamer theme for Utrecht University.
+- [arranger1044](https://github.com/arranger1044/spinaceto-beamer-theme) — ★ 8 — Spinaceto is a minimalistic beamer theme with a typographic accent
+- [lwDavid](https://github.com/lwDavid/ShanghaiTech-Beamer-Theme) — ★ 8 — An unofficial LaTeX beamer template for ShanghaiTech students.
+- [Submarinedriver](https://github.com/Submarinedriver/XiamenUniversity-Beamer-Theme) — ★ 8 — This project provides a great beamer template for XiamenUniversity
+- [aman29100](https://github.com/aman29100/GPT-Awesome-List-Generator) — ★ 7 — This is a Python program that automatically generates an "awesome list" for a specific keyword as a markdown file. An "awesome list" is a list of resources r...
+- [binout](https://github.com/binout/asciidoctor-slide-generator) — ★ 7 — A template projet to generate slide with asciidoctor
+- [warsawjs](https://github.com/warsawjs/meetup-slides-template) — ★ 7 — 📋 WarsawJS Meetup: Slides template
+- [canadalearningcode](https://github.com/canadalearningcode/llc-slidedeck-template) — ★ 7 — Slide presentation template
+- [chkwon](https://github.com/chkwon/UB_Beamer_Template) — ★ 7 — LaTeX Slide Template for University at Buffalo
+- [AhsanAyaz](https://github.com/AhsanAyaz/reveal-multi-slides-template) — ★ 7 — —
+- [gaspanik](https://github.com/gaspanik/SketchSlideHD) — ★ 7 — HD Slide Template for Sketch 3
+- [hust-latex](https://github.com/hust-latex/hustbeamer) — ★ 7 — :orange_book: An Unofficial Slide Template in LaTeX for Huazhong University of Science and Technology
+- [bjoseru](https://github.com/bjoseru/notability-ipad-pro-slide-templates) — ★ 7 — Slide templates for the Notability App on iPad Pro
+- [mevalid](https://github.com/mevalid/MTCircleChart) — ★ 7 — Circle chart with percentage slide template written in Swift 4. Can be used for diagram, graph, chart, report, data visualization, presentation.
+- [inwonakng](https://github.com/inwonakng/unofficial-rpi-presentation-template) — ★ 7 — —
+- [ubuconeurope](https://github.com/ubuconeurope/2019sintra-presentation-template) — ★ 7 — Presentation template in several formats used in Ubucon Europe 2019 Sintra.
+- [xamarin](https://github.com/xamarin/evolve-2014-presentation-template) — ★ 7 — Evolve 2014 Presentation Template
+- [el-bart](https://github.com/el-bart/beamer_cpp) — ★ 7 — beamer for C++ presentations template
+- [scifig-ai](https://github.com/scifig-ai/scientific-poster-and-presentation-templates) — ★ 7 — Free scientific poster & presentation PowerPoint templates from scifig.ai — 154 files: A0/A1/US-size posters, e-posters, and conference/journal-club/lab-meet...
+- [RickyXu99](https://github.com/RickyXu99/MUST-PPT-Template) — ★ 7 — 澳科大开题报告/毕业论文/汇报模板   M.U.S.T. Proposal/Graduation Thesis/Report Template
+- [mrislambd](https://github.com/mrislambd/unofficial-FSU-beamer-theme-template) — ★ 7 — Florida State Beamer Theme and Template for poster and presentation (Unofficial)
+- [godehardt](https://github.com/godehardt/beamerthemeFrankfurtUAS) — ★ 7 — LaTeX beamer theme according to the corporate design of Frankfurt University of Applied Sciences.
+- [fyqqyf](https://github.com/fyqqyf/WHU-Beamer-Theme) — ★ 7 — 武汉大学 Beamer Theme(非官方)
+- [ming-hao-xu](https://github.com/ming-hao-xu/Ritsumeikan-beamer) — ★ 7 — A LaTeX beamer theme template for Ritsumeikan students.
+- [fseiffarth](https://github.com/fseiffarth/LatexBeamerThemeUniBonnStyle) — ★ 7 — Latex beamer template in Uni Bonn style.
+- [AllenYolk](https://github.com/AllenYolk/metropolis-pku) — ★ 7 — A delicate beamer theme for PKU students, modified from Metropolis.
+- [rl-institut](https://github.com/rl-institut/beamer_theme) — ★ 7 — The RLI LaTeX Beamer theme for creating CI-proof slides with Latex
+- [shr2333](https://github.com/shr2333/UCASS-Beamer-Theme) — ★ 7 — LaTeX beamer template for UCASS students, based and modified most on Tsinghua Beamer Theme https://github.com/Trinkle23897/THU-Beamer-ThemeUpdated in January...
+- [display-design-studio](https://github.com/display-design-studio/sanity-starter) — ★ 7 — A Sanity Studio v6 starter template with built-in localization utilities, presentation tool, and automatic types generation.
+- [FLGMwt](https://github.com/FLGMwt/gatsby-theme-slidedeck) — ★ 7 — Gatsby theme for generating slide decks from markdown
+- [kslides](https://github.com/kslides/kslides-template) — ★ 7 — A template repo for building a kslides presentation
+- [uditkumar489](https://github.com/uditkumar489/PPT-selected_designs) — ★ 7 — Ready to use - handpicked powerpoint designer templates .
+- [wuhua2026](https://github.com/wuhua2026/ppt-templates) — ★ 6 — ??PPT?????,230??????,??Python/JS??
+- [mojavelinux](https://github.com/mojavelinux/presentation-power-tools-for-writers) — ★ 6 — This presentation provides an overview of the tools in the Asciidoctor ecosystem and how they make writers more awesome.
+- [linas-p](https://github.com/linas-p/VU-MIF-II-slides-template-1) — ★ 6 — VU MIF latex skaidrių šablonas
+- [fat](https://github.com/fat/slides) — ★ 6 — My keynote slide template
+- [OWASP](https://github.com/OWASP/HTML5SlideTemplates) — ★ 6 — HTML 5 slide templates for OWASP presentations (beta)
+- [dainachiba](https://github.com/dainachiba/MacauMetropolis) — ★ 6 — Unofficial LaTeX Beamer Metropolis presentation slide templates for the University of Macau
+- [benoitvx](https://github.com/benoitvx/dsfr-slides-template) — ★ 6 — Template de présentation web conforme au Design System de l'État (DSFR). Écrivez vos slides en Markdown, déployez sur GitHub Pages.
+- [neuroinformatics-unit](https://github.com/neuroinformatics-unit/slides-templates-atlases) — ★ 6 — On brain templates & atlases, and how to build them.
+- [hilinxinhui](https://github.com/hilinxinhui/NEU_Beamer_Slide) — ★ 6 — Northeastern University Beamer Slide Template
+- [canxin121](https://github.com/canxin121/xdu-beamer-template) — ★ 6 — XDU Beamer slide template for presentations
+- [mdaniyalk](https://github.com/mdaniyalk/latex-ugm-presentation-template) — ★ 6 — —
+- [liangchenn](https://github.com/liangchenn/ntu-beamer-template) — ★ 6 — A National Taiwan University beamer presentation template
+- [underovsky](https://github.com/underovsky/instant-presentation) — ★ 6 — A simple open source presentation template written in HTML/CSS/JS
+- [Nekoion](https://github.com/Nekoion/CUHK_PPT_Template) — ★ 6 — This is a PPT template made for CUHK
+- [MaxW322](https://github.com/MaxW322/GDUT-Beamer-Template) — ★ 6 — A LaTeX beamer  (ppt) template of Guangdong University of Technology. 广东工业大学 Latex beamer 模板
+- [kenchan0130](https://github.com/kenchan0130/keynote-template-deployment) — ★ 6 — Deploy a Keynote app template programmatically
+- [greene-giant](https://github.com/greene-giant/beamer-UCLA) — ★ 6 — An unofficial UCLA beamer theme
+- [dscroft](https://github.com/dscroft/coventry_beamer) — ★ 6 — LaTex beamer theme suitable for Coventry University lectures
+- [ibab](https://github.com/ibab/beamertheme-manc) — ★ 6 — A minimal beamer theme designed with legibility in mind
+- [jeffmxu](https://github.com/jeffmxu/beamer-theme-tutorial) — ★ 6 — A light modern LaTeX Beamer theme for academics
+- [mvonthron](https://github.com/mvonthron/beamer-utbm) — ★ 6 — A Beamer theme for UTBM (http://www.utbm.fr/)
+- [MartinHu1997](https://github.com/MartinHu1997/HHU-Beamer-Theme) — ★ 6 — The Latex codes of Beamer Theme for Hohai Univ., China
+- [SFr682k](https://github.com/SFr682k/beamerthemeMWG) — ★ 6 — A LaTeX beamer theme for every possible use. The theme uses the red color and the logo of the Markgräfin Wilhelmine Gymnasium in Bayreuth.
+- [alick](https://github.com/alick/beamerthemetamu) — ★ 6 — A beamer theme designed for use in Texas A&M University (TAMU).
+- [Poeschl](https://github.com/Poeschl/DarkConsole-Beamer-Theme) — ★ 6 — A Latex Beamer theme I often use for presentations around coding related topics
+- [liuguitics](https://github.com/liuguitics/BNU-Beamer-Theme) — ★ 6 — This template is adapted from THU Beamer Theme and DLUT Beamer Theme, the contents, fonts, navigation bar, color and logo were modified. Note that smoothbars...
+- [ZZUTUG](https://github.com/ZZUTUG/ZZU-Beamer) — ★ 6 — Collection of Beamer themes for Zhengzhou University
+- [VIP233333](https://github.com/VIP233333/UCAS-beamer) — ★ 6 — A Beamer Theme of UCAS for academic report, thesis and talk.
+- [horle](https://github.com/horle/beamer-uni-siegen) — ★ 6 — A LaTeX beamer theme for the new University of Siegen design
+- [egarpor](https://github.com/egarpor/picsec) — ★ 6 — A fresh and clean beamer theme, with pictures in the titles of the sections
+- [wuchlei](https://github.com/wuchlei/tsinghua-beamer-theme) — ★ 6 — Unofficial Tsinghua University Beamer Template, forked from https://github.com/basaldella/beamerthemeuniud
+- [zemarchezi](https://github.com/zemarchezi/CleanEasy_BeamerTheme) — ★ 6 — —
+- [ymliucs](https://github.com/ymliucs/SUDA-Beamer-Theme) — ★ 6 — 苏州大学 Beamer 主题模板
+- [MKupperman](https://github.com/MKupperman/uw-beamer-theme) — ★ 6 — A University of Washington Themed beamer presentation
+- [htlin222](https://github.com/htlin222/lumiterm) — ★ 6 — Light-themed web terminal (ttyd) for live presentations, demos & teaching with real-time audience comments (Cloudflare), AI command explanations (Groq), spot...
+- [timerring](https://github.com/timerring/SDU-beamer) — ★ 6 — An unofficial LaTeX Template of Beamer for Shandong University.  山东大学 Beamer 模板。
+- [carboneio](https://github.com/carboneio/carbone-sdk-java) — ★ 6 — Generate documents with Carbone, using templates and JSON data-set. Create invoices, reports, certificates, contracts, financial statements, documents like W...
+- [Helmholtz-AI-Energy](https://github.com/Helmholtz-AI-Energy/beamer-template-2024) — ★ 6 — Beamer template for the 2024 Helmholtz AI style
+- [Aermisty](https://github.com/Aermisty/beamer-sgp940) — ★ 6 — LaTeX beamer template based on Singapore theme
+- [nakajmg](https://github.com/nakajmg/talkie-generator) — ★ 5 — Templates generator for Talkie.js
+- [mozilla](https://github.com/mozilla/html-presentation-templates) — ★ 5 — INACTIVE - http://mzl.la/ghe-archive - HTML-only slide templates in the Mozilla style
+- [creazy231](https://github.com/creazy231/nuxt-reveal) — ★ 5 — Reveal Bootstrap Theme with Nuxt.js
+- [carmellolb](https://github.com/carmellolb/Simple-Fluent-Web-Template) — ★ 5 — A template made of pure HTML, JS, CSS, and Bootstrap code meant to bring Microsoft's Fluent Design effects, like Acrylic, Reveal, shadows, and more to the web.
+- [AhianZhang](https://github.com/AhianZhang/web-slides-template) — ★ 5 — 使用 reveal 制作网页版幻灯片模板及示例
+- [pinam45](https://github.com/pinam45/utbm-beamer-theme) — ★ 5 — A LaTeX beamer version of the UTBM presentation theme using TikZ
+- [eduardotlc](https://github.com/eduardotlc/IqUSPtex) — ★ 5 — LaTeX beamer presentation theme, created for the University of São Paulo institue of chemistry (IQ-USP)
+- [planetoftheweb](https://github.com/planetoftheweb/slides_template) — ★ 5 — —
+- [huxuan](https://github.com/huxuan/latex_buaasoft_bachelor_slide) — ★ 5 — The LaTeX Slide Template for Bachelor Thesis Defence of Software College in BUAA
+- [gongcastro](https://github.com/gongcastro/slides-template) — ★ 5 — A template repository for my slides.
+- [Sutto](https://github.com/Sutto/slidedown-template) — ★ 5 — a simple base project for a presentation built on slidedown
+- [adparadise](https://github.com/adparadise/jekyll-slides-template) — ★ 5 — This project is a starting point for an HTML-based slideshow system.
+- [ubucon-asia](https://github.com/ubucon-asia/2021-slide-template) — ★ 5 — Presentation templates for UbuCon Asia 2021
+- [hrs](https://github.com/hrs/latex-presentation-template) — ★ 5 — A template to create new presentation projects using LaTeX and Beamer
+- [Team-1207](https://github.com/Team-1207/Presentation-template) — ★ 5 — Presentation template for ETU "LETI" based on original brandbook
+- [olsn](https://github.com/olsn/presentr) — ★ 5 — html5 presentation template
+- [ceylon](https://github.com/ceylon/ceylon-presentations) — ★ 5 — Presentation template for Ceylon
+- [berlin-econ](https://github.com/berlin-econ/BSE-template) — ★ 5 — Poster and presentation templates for members of the Berlin School of Economics (BSE).
+- [mljar](https://github.com/mljar/mercury-slides-themes) — ★ 5 — Slides themes available in the Mercury framework
+- [ChasNelson1990](https://github.com/ChasNelson1990/durham-university-beamer-theme) — ★ 5 — A Latex Beamer Theme based on the Durham PPT Template. All rights belong to Durham University.
+- [kaimast](https://github.com/kaimast/cornell-beamer) — ★ 5 — A beamer theme for Cornell
+- [StickCui](https://github.com/StickCui/BeamerForXidian) — ★ 5 — Mainly package for Xidian University‘s Beamer. Beamer theme based on Berkeley.
+- [Eivysaur](https://github.com/Eivysaur/Beamer-NMBU) — ★ 5 — Beamer theme for NMBU
+- [kidzik](https://github.com/kidzik/stanford-beamer) — ★ 5 — Unofficial Stanford's beamer theme (template) LaTeX
+- [wolfsonliu](https://github.com/wolfsonliu/wolf_beamer) — ★ 5 — Beamer themes.
+- [doitian](https://github.com/doitian/beamer-themes) — ★ 5 — customized beamer themes
+- [Albert-Li-Sz](https://github.com/Albert-Li-Sz/NJXZU-Beamer-Theme-master) — ★ 5 — NJXZU-Beamer-Theme-master
+- [Kekkodf](https://github.com/Kekkodf/Unofficial-Beamer-Template-Unipd) — ★ 5 — Unofficial Beamer theme LaTeX
+- [TeXhackse](https://github.com/TeXhackse/37c3-beamer) — ★ 5 — unofficial beamer theme for 37c3
+- [tuw-cpsg](https://github.com/tuw-cpsg/tuw-latex-beamer-theme) — ★ 5 — TU Wien Latex beamer theme
+- [Miracle0565](https://github.com/Miracle0565/BUCT-Beamer-Theme) — ★ 5 — A beamer theme for BUCT
+- [cola4cube](https://github.com/cola4cube/beamer-theme-tub) — ★ 5 — Beamer theme for Technische Universität Berlin
+- [ScPoEcon](https://github.com/ScPoEcon/scpo-beamer) — ★ 5 — A beamer theme for Sciences Po
+- [D-viddddd](https://github.com/D-viddddd/TU-Dresden-Beamer-Template) — ★ 5 — Minimal unofficial TU Dresden blue Beamer theme
+- [Falkor](https://github.com/Falkor/beamerthemeFalkor) — ★ 5 — My personal LaTeX Beamer theme, provided in a working environment
+- [longr](https://github.com/longr/lancaster_theme) — ★ 5 — Lancaster University beamer theme based off of the metropolis theme
+- [MTCreator](https://github.com/MTCreator/UHBeamerTheme) — ★ 5 — An unofficial UHasselt Beamer theme, because they only provide a PowerPoint template :(
+- [chaeger](https://github.com/chaeger/chalmers-beamer) — ★ 5 — A LaTeX Beamer theme for students and researchers at Chalmers University of Technology
+- [wuenzhe](https://github.com/wuenzhe/HZAUBeamer) — ★ 5 — 华中农业大学Beamer模板(Unofficial latex beamer theme for HZAU)
+- [Hazegard](https://github.com/Hazegard/BeamerTheme) — ★ 5 — Theme for Beamer inspired by https://github.com/edasubert/beamerMaterialDesign
+- [latexstudio](https://github.com/latexstudio/HUST-Beamer-Theme) — ★ 5 — A LaTeX beamer theme template for Huazhong University of Science and Technology。华中科技大学beamer模板（简单更改自THUBeamer模板）
+- [uta-smile](https://github.com/uta-smile/beamer-theme) — ★ 5 — —
+- [tpanum](https://github.com/tpanum/aau-beamer-theme) — ★ 5 — A LaTeX Beamer template for Aalborg University.
+- [Xuezhenggdut](https://github.com/Xuezhenggdut/GDUT-Beamer-Theme) — ★ 5 — —
+- [JonnyS1226](https://github.com/JonnyS1226/hit-simple-beamer-theme) — ★ 5 — 源自College-Beamer-Template的哈工大beamer模版（非官方）
+- [Neo-Oli](https://github.com/Neo-Oli/browser-presentation-tool) — ★ 5 — A simple template for making a presentations in html/css
+- [KuntzeM](https://github.com/KuntzeM/LaTex-Beamer-Template) — ★ 5 — template for presentations with latex
+- [nguyengiabach1201](https://github.com/nguyengiabach1201/Prezen) — ★ 5 — A lightweight, zero‑dependency CLI for transforming GitHub‑flavored Markdown into full‑screen presentation slides. It bundles syntax highlighting, MathJax su...
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-s6-blank) — ★ 5 — S6 Blank - Slide Show (S9) Template Pack
+- [ufuk-cakir](https://github.com/ufuk-cakir/manim-deck) — ★ 5 — Template for animated research presentations with Manim & Manim Slides
+- [henrythemes](https://github.com/henrythemes/jekyll-talks-theme) — ★ 5 — jekyll talks theme (using the s6 slideshow templates / machinery / kit )
+- [Pondidum](https://github.com/Pondidum/awesome-talks) — ★ 4 — Awesome presentations and conference talks
+- [joescii](https://github.com/joescii/presentera.g8) — ★ 4 — g8 template for making awesome presentations with Presentera
+- [meonkeys](https://github.com/meonkeys/git-talk) — ★ 4 — Awesome presentation on some Git concepts
+- [zayennn](https://github.com/zayennn/let-it-draw) — ★ 4 — 🎨 Let It Draw — Christmas-themed interactive drawing animation. Watch SVG artwork (trees, deer, star) draw themselves automatically. Hover to reveal hidden i...
+- [josefaidt](https://github.com/josefaidt/mdx-deck-theme-garlic) — ★ 4 — garlic theme for mdx-deck
+- [rauchg](https://github.com/rauchg/mdx-deck-theme-berkshire) — ★ 4 — —
+- [ujhelyiz](https://github.com/ujhelyiz/Presentation-Theme) — ★ 4 — An Eclipse theme suited for demo presentations (e.g. larger font-size)
+- [iiasa](https://github.com/iiasa/beamer-theme-iiasa) — ★ 4 — A presentation theme for the LaTeX Beamer package
+- [bhood4](https://github.com/bhood4/SlideTemplate) — ★ 4 — Google Slide Add-on to templatize the slide, replacing ${} variables with values from a sidebar form.
+- [StephenGrider](https://github.com/StephenGrider/Famous-SlideTemplateApp) — ★ 4 — —
+- [bamboofox](https://github.com/bamboofox/slide-template) — ★ 4 — :book: Bamboofox slide template
+- [hist2](https://github.com/hist2/slide_template) — ★ 4 — 上海科技大学演示模板，两个文件类型：beamer和powerpoint
+- [Neiou8](https://github.com/Neiou8/Neepu-Slides-Template) — ★ 4 — Neepu Beamer Template
+- [proracer5576-create](https://github.com/proracer5576-create/notebooklm-slide-templates) — ★ 4 — 14 NotebookLM slide design templates for presentations
+- [jespercockx](https://github.com/jespercockx/lagda-slides-template) — ★ 4 — A template for creating Beamer slides with literate Agda code
+- [siraom15](https://github.com/siraom15/slide-share) — ★ 4 — Website for sharing slide template :)
+- [PoisotLab](https://github.com/PoisotLab/PLPT) — ★ 4 — Presentation template
+- [CampusHash](https://github.com/CampusHash/deck) — ★ 4 — CampusHash HTML5 Presentation Template.
+- [AlbertXiebnu](https://github.com/AlbertXiebnu/presentationTemplate) — ★ 4 — 自制北师大学术PPT模板
+- [KIOS-Research](https://github.com/KIOS-Research/KIOS-CoE-LaTeX-Presentation-Template) — ★ 4 — The KIOS CoE LaTeX Beamer Template for presentations.
+- [xuhangc](https://github.com/xuhangc/UMac-Beamer-Template) — ★ 4 — Beamer presentation template for University of Macau
+- [christian-nils](https://github.com/christian-nils/presentation_template) — ★ 4 — Presentation template using VueJS and EagleJS, with some custom components
+- [jefeish](https://github.com/jefeish/presentation-template) — ★ 4 — —
+- [hkilter](https://github.com/hkilter/presentation-template) — ★ 4 — Personal TeX template based on a custom Beamer theme
+- [JJLibra](https://github.com/JJLibra/Paper-presentation-template) — ★ 4 — 📑 A modern, responsive Next.js template for presenting research papers or projects. 一个基于 Next.js 的展示模板，用于展示科研论文或项目
+- [juliandunn](https://github.com/juliandunn/github-iapresenter-theme) — ★ 4 — iA Presenter theme to mimic GitHub's 2022 Presentation templates
+- [rocketman768](https://github.com/rocketman768/NUBeamer) — ★ 4 — A LaTeX Beamer presentation template with Northwestern University colors and logos.
+- [evanca](https://github.com/evanca/flutter_deck_gde_template) — ★ 4 — A vibe-codeable Google Developer Experts presentation template built with Flutter and flutter_deck.
+- [jonas-kell](https://github.com/jonas-kell/beamer-theme-unia-mntf) — ★ 4 — A theme for the Latex package beamer that replicates the look of the powerpoint-presentation-template published by and for the University of Augsburg.
+- [KevinGuo1007](https://github.com/KevinGuo1007/GDUE-Beamer-Slides-Theme) — ★ 4 — 广东第二师范学院 Beamer 模版 | Beamer template for Guangdong University of Education
+- [NEARLab-MedicalRobotics](https://github.com/NEARLab-MedicalRobotics/Templates) — ★ 4 — LaTeX, Word and PPT templates for writing MSc thesis
+- [Rasukarusan](https://github.com/Rasukarusan/keynote-template) — ★ 4 — Keynote's my-shape template
+- [mantzaris](https://github.com/mantzaris/PegasusBeamer) — ★ 4 — A beamer theme for the University Of Central Florida (UCF)
+- [jamie-lilly](https://github.com/jamie-lilly/osu-beamer-theme) — ★ 4 — A custom Beamer theme for Oregon State University.
+- [ssloxford](https://github.com/ssloxford/beamer-oxford) — ★ 4 — Customisable beamer theme for Oxford presentations
+- [tugi](https://github.com/tugi/ZAH_beamer) — ★ 4 — Beamer theme for ZAH
+- [vachan-potluri](https://github.com/vachan-potluri/beamer_themes) — ★ 4 — A repo for different beamer themes
+- [fgrelard](https://github.com/fgrelard/mtheme) — ★ 4 — Beamer theme inspired from modern theme
+- [lgienapp](https://github.com/lgienapp/leipzig-theme) — ★ 4 — A beamer theme that conforms to the corporate design of the University of Leipzig.
+- [Markus-de-Koster](https://github.com/Markus-de-Koster/LaTeX-beamer-TH-Koeln) — ★ 4 — LaTeX beamer theme in the design of cologne university of applied sciences - TH Köln
+- [hayamiz](https://github.com/hayamiz/beamerMoreBlue) — ★ 4 — LaTeX Beamer theme
+- [ethiy](https://github.com/ethiy/ign_beamer_theme) — ★ 4 — @IGNF beamer theme.
+- [jorgehatccrma](https://github.com/jorgehatccrma/ccrma-beam) — ★ 4 — LaTeX CCRMA Beamer Theme
+- [Mesabloo](https://github.com/Mesabloo/beamer-theme) — ★ 4 — A simple colorful beamer theme
+- [DeruiZhao](https://github.com/DeruiZhao/Aarhus-University-beamer-theme) — ★ 4 — Aarhus University LaTeX beamer theme, unofficial
+- [kittykat](https://github.com/kittykat/guadec-theme-2013) — ★ 4 — A beamer theme for GUADEC 2013 presentations
+- [raden](https://github.com/raden/beamer-ampang) — ★ 4 — Latex Beamer theme which uses Ubuntu font
+- [royaleconqueso](https://github.com/royaleconqueso/fsu-beamer-theme) — ★ 4 — Florida State University Beamer Theme for LaTeX
+- [xunyoyo](https://github.com/xunyoyo/SHZU-Beamer-Theme) — ★ 4 — 石河子大学(SHZU)-Beamer-Theme
+- [maxnoe](https://github.com/maxnoe/beamerthemectao) — ★ 4 — Unofficial LaTeX beamer theme using the new CTAO CD
+- [erictleung](https://github.com/erictleung/beamer-theme) — ★ 4 — :bar_chart: My custom LaTeX beamer theme for presentations
+- [haemka](https://github.com/haemka/beamerthemestralsund) — ★ 4 — LaTeX Beamer theme for University of Applied Sciences Stralsund
+- [nimpo](https://github.com/nimpo/GreyWolfsScoutsBeamerTheme) — ★ 4 — A Beamer theme for LaTeX presentations using the Scout Brand
+- [JulAgu](https://github.com/JulAgu/simpleMIA_beamer_theme) — ★ 4 — Minimalist unofficial beamer theme for MIA Paris-Saclay Unit Research.
+- [raysuzeyu-lgtm](https://github.com/raysuzeyu-lgtm/su-dsv-beamer) — ★ 4 — SU-Ray: An unofficial Beamer theme for Stockholm University DSV students.
+- [VIP233333](https://github.com/VIP233333/BUCEA-beamer) — ★ 4 — A Beamer Theme of BUCEA for academic report, thesis and talk.
+- [tobywf](https://github.com/tobywf/leeds-beamer) — ★ 4 — A beamer theme based loosely on the University of Leeds style guide (around 2010)
+- [wanglh03](https://github.com/wanglh03/SCUT-Beamer-Theme) — ★ 4 — A Beamer Theme of SCUT. 华南理工大学 Beamer 模板。
+- [sambuysse](https://github.com/sambuysse/inuits-latex-beamer-theme) — ★ 4 — Inuits themed latex beamer template.
+- [Giuseppe499](https://github.com/Giuseppe499/Metropolis-Uninsubria) — ★ 4 — An unofficial beamer theme for the University of Insubria (Università degli Studi dell'Insubria). This is an adaptation of the metropolis theme
+- [stealthemoon0331](https://github.com/stealthemoon0331/latex-beamer-theme-elegance) — ★ 4 — —
+- [xemadp](https://github.com/xemadp/kntu-beamer-presentation-modern) — ★ 4 — Beamer Presentation Modern Theme for KNTU
+- [bahremsd](https://github.com/bahremsd/itutextemplates) — ★ 4 — This repository contains LaTeX templates for Istanbul Technical University, including theses, assignments, emails, and slides. These templates are designed t...
+- [Ruinius](https://github.com/Ruinius/bluefin-ai-demo) — ★ 4 — Zero-dependency HTML demo of my new project. Sharing this as a template for others to create beautiful demo-presentations.
+- [arm-education](https://github.com/arm-education/PPT-branding-tool) — ★ 4 — Productivity tool for batch rebranding and template refactoring of PowerPoint presentations (internal, tools)
+- [brandonhimpfen](https://github.com/brandonhimpfen/awesome-powerpoint) — ★ 4 — A curated list of tools, templates, add-ins, design resources, automation tools, learning materials, and communities for Microsoft PowerPoint.
+- [mustaddon](https://github.com/mustaddon/PowerPointService) — ★ 4 — .NET PowerPoint presentation based on template and model
+- [ceplan](https://github.com/ceplan/template-slides) — ★ 4 — Modelos de apresentação
+- [moritzhoferer](https://github.com/moritzhoferer/beamer_template) — ★ 4 — Templates for the members of the MIP chair at ETH Zurich and everybody else.
+- [afnizarnur](https://github.com/afnizarnur/be-awesome-with-git) — ★ 4 — A slide how to be awesome with Git 😎
+- [borjapetit](https://github.com/borjapetit/tex_template_slides) — ★ 4 — A Beamer template for academic presentations
+- [swup](https://github.com/swup/slide-theme) — ★ 4 — A swup theme for slide and fade animations 🎨
+- [kakcura](https://github.com/kakcura/AwesomeSlides) — ★ 3 — Awesome presentations by just waving to a web-cam! A hand-gesture controlled fully client-side presentation platform.
+- [ilaborie](https://github.com/ilaborie/css-awesome) — ★ 3 — CSS is Awesome! presentation
+- [xadahiya](https://github.com/xadahiya/gcm-tensorflow-udacity) — ★ 3 — Tutorial to use Google cloud compute instances with tensorflow. Thanks John graves (https://github.com/jg1141) for such an awesome presentation!
+- [anhttra](https://github.com/anhttra/how-to-make-an-awesome-presentation) — ★ 3 — My keynotes about how to make a good presentation
+- [Arish-Shah](https://github.com/Arish-Shah/make-slides) — ★ 3 — HTML Framework for creating awesome presentations
+- [ameerthehacker](https://github.com/ameerthehacker/mdx-slides) — ★ 3 — Build awesome presentations using mdx
+
+_Showing top 500 of 2898 repos in this category — the full list with all 2898 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)

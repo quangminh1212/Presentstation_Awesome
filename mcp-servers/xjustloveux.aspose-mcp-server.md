@@ -1,0 +1,286 @@
+# Aspose MCP Server
+
+[![GitHub release](https://img.shields.io/github/v/release/xjustloveux/aspose-mcp-server?include_prereleases)](https://github.com/xjustloveux/aspose-mcp-server/releases)
+[![GitHub license](https://img.shields.io/github/license/xjustloveux/aspose-mcp-server?cacheSeconds=3600)](LICENSE)
+[![.NET Version](https://img.shields.io/badge/.NET-8.0-512BD4)](https://dotnet.microsoft.com/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/xjustloveux/aspose-mcp-server/build-multi-platform.yml?branch=master&label=build)](https://github.com/xjustloveux/aspose-mcp-server/actions/workflows/build-multi-platform.yml)
+[![Test Status](https://img.shields.io/github/actions/workflow/status/xjustloveux/aspose-mcp-server/test.yml?branch=master&label=tests)](https://github.com/xjustloveux/aspose-mcp-server/actions/workflows/test.yml)
+[![Test Coverage](https://codecov.io/gh/xjustloveux/aspose-mcp-server/branch/master/graph/badge.svg)](https://codecov.io/gh/xjustloveux/aspose-mcp-server)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=xjustloveux_aspose-mcp-server&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=xjustloveux_aspose-mcp-server)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=xjustloveux_aspose-mcp-server&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=xjustloveux_aspose-mcp-server)
+[![MCP Version](https://img.shields.io/badge/MCP-2026--07--28-blue)](https://modelcontextprotocol.io/)
+[![MCP SDK](https://img.shields.io/badge/MCP%20SDK-2.1.0-purple)](https://github.com/modelcontextprotocol/csharp-sdk)
+[![Desktop Extension](https://img.shields.io/badge/Desktop%20Extension-.mcpb-blue)](https://xjustloveux.github.io/aspose-mcp-server/getting-started.html#mcpb)
+[![Aspose Version](https://img.shields.io/badge/Aspose-23.10.0-orange)](https://products.aspose.com/total/net/)
+[![xUnit](https://img.shields.io/badge/xUnit-2.9.3-blue?logo=xunit)](https://xunit.net/)
+
+**格式支援：** ![Word](https://img.shields.io/badge/Word-DOC%2CDOCX-blue) ![Excel](https://img.shields.io/badge/Excel-XLS%2CXLSX-green) ![PowerPoint](https://img.shields.io/badge/PowerPoint-PPT%2CPPTX-orange) ![PDF](https://img.shields.io/badge/PDF-PDF-red) ![OCR](https://img.shields.io/badge/OCR-PNG%2CJPG%2CPDF-purple) ![Email](https://img.shields.io/badge/Email-EML%2CMSG-teal) ![BarCode](https://img.shields.io/badge/BarCode-QR%2CCode128-brown)
+
+基於 .NET 8.0 和 Aspose.Total 的 Model Context Protocol (MCP) 伺服器，為 MCP 客戶端提供強大的辦公文檔處理能力。
+
+## ✨ 特性
+
+### 核心功能
+- **118 個統一工具** - Word(28)、Excel(32)、PowerPoint(26)、PDF(19)、OCR(2)、Email(6)、BarCode(2)、轉換(1)、Session(1)、Extension(1) 已整合
+- **按需啟用** - 只啟用需要的文檔類型，減少資源佔用
+- **跨平台** - Windows、Linux、macOS (Intel + ARM)，單一可執行檔案
+- **開箱即用** - 預編譯版本無需安裝 .NET Runtime
+- **完整讀寫** - 支援從A文檔讀取格式應用到B文檔
+
+### 傳輸模式
+- **Stdio 模式** (預設) - 標準輸入輸出，適用於本地 MCP 客戶端
+- **HTTP 模式** - Streamable HTTP（MCP 2025-03-26+），適用於網頁應用
+- **WebSocket 模式** - 雙向通訊，適用於即時互動
+
+### 進階功能
+- **Session 管理** - 在記憶體中編輯文件，支援 open/save/close 操作，支援多租戶隔離
+- **擴充功能系統** - 外部程序訂閱 Session 變更，實現即時預覽、雲端同步、合規檢查等
+- **認證機制** - 可選的 API Key 和 JWT 認證（4 種驗證模式）
+- **追蹤系統** - 結構化日誌、Webhook 通知、Prometheus Metrics
+- **Origin 驗證** - 防止 DNS 重綁定攻擊（HTTP/WebSocket 模式）
+
+### 技術特性
+- **MCP SDK 2.1.0** - 使用官方 ModelContextProtocol NuGet 套件，支援 Tool Annotations 和 outputSchema
+- **Tool Annotations** - 所有工具標註 ReadOnly、Destructive、Idempotent、OpenWorld 行為特性
+- **結構化輸出** - Handler 返回強型別結果，SDK 自動生成 outputSchema（oneOf JSON Schema）
+- **統一字型設定** - 多個工具支援中英文字型分別設定（`fontNameAscii` 和 `fontNameFarEast` 參數）
+- **靈活的授權配置** - 支援總授權或單一組件授權，自動搜尋、環境變數或命令列參數配置
+- **安全加固** - 全面的路徑驗證、輸入驗證和錯誤處理
+
+## 🚀 快速開始
+
+### 1. 下載
+
+**方法 A：從 GitHub Releases 下載**
+
+從 [GitHub Releases](https://github.com/xjustloveux/aspose-mcp-server/releases) 下載對應平台版本：
+
+| 平台 | 檔案 |
+|------|------|
+| Windows | `aspose-mcp-server-windows-x64.zip` |
+| Linux | `aspose-mcp-server-linux-x64.tar.gz` |
+| macOS Intel | `aspose-mcp-server-macos-x64.tar.gz` |
+| macOS ARM | `aspose-mcp-server-macos-arm64.tar.gz` |
+
+**方法 B：macOS 使用 Homebrew 安裝（推薦）**
+
+```bash
+brew install xjustloveux/tap/aspose-mcp-server
+```
+
+### 2. 配置 MCP 客戶端
+
+```json
+{
+  "mcpServers": {
+    "aspose-word": {
+      "command": "C:/Tools/aspose-mcp-server/AsposeMcpServer.exe",
+      "args": ["--word"]
+    }
+  }
+}
+```
+
+**可用參數**（不帶任何工具參數時，預設啟用所有工具）:
+- `--word` - Word 工具（自動包含轉換功能）
+- `--excel` - Excel 工具（自動包含轉換功能）
+- `--powerpoint` / `--ppt` - PowerPoint 工具（自動包含轉換功能）
+- `--pdf` - PDF 工具
+- `--ocr` - OCR 文字辨識工具
+- `--email` - Email 工具
+- `--barcode` - BarCode 工具
+- `--all` - 所有工具（等同不帶工具參數）
+- `--session-enabled` - 啟用 Session 管理（`document_session` 工具）
+- `--extension-enabled` - 啟用擴充功能系統（需搭配 `--session-enabled`）
+- `--extension-config 路徑` - 指定擴充功能配置檔案路徑（`extension` 工具）
+- `--license 路徑` - 指定授權檔案路徑（可選）
+- `--allowed-path 路徑` - 限制檔案存取於指定基礎目錄下（可重複指定；未指定則不限制，建議在 HTTP/WebSocket 部署時啟用）
+- `--legacy-publish-journal-root 路徑` - 升級後一次性復原舊版中斷發布 journal 的目錄（可重複指定）；只掃描明確列出的目錄，不會從 `--allowed-path` 推測，確認已排空後應移除此參數
+- `--max-extract-all-bytes 位元組` - OLE 工具單次 `extract_all` 累計寫出上限（預設 10 GiB；≤ 0 表示不設上限；環境變數 `MAX_EXTRACT_ALL_BYTES`）
+- `--allow-external-resources` - 允許轉換時抓取文件未內含的資源（預設關閉；環境變數 `ASPOSE_ALLOW_EXTERNAL_RESOURCES`）。涵蓋 `.mht`／`.mhtml`、`.html`／`.htm`、`.md`、`.svg`、`.epub` 全部特殊格式：預設一律在開檔前拒絕指名遠端 URL 或 `file:` 位址的文件，指向 allowlist 內的本機路徑不受影響。開啟後伺服器會代替呼叫端對外發出請求，屬部署層決定，呼叫端無法自行開關
+
+> **工具過濾**：指定工具參數時，只有啟用的工具類別會出現在 MCP 工具列表中。例如使用 `--word` 時，只會顯示 `word_*` 相關工具。
+
+**轉換功能說明**：
+- 啟用任何文檔工具（`--word`、`--excel`、`--ppt`、`--pdf`）時，自動包含 `convert_document`（跨格式轉換，支援 Word/Excel/PDF 轉圖片、特殊格式轉 PDF）
+
+📋 **更多配置範例：** `config_example.json`（配置格式適用於所有 MCP 客戶端）
+
+### 3. 重啟 MCP 客戶端
+
+完成配置後，重啟您使用的 MCP 客戶端（如 Claude Desktop、Cursor 等）即可開始使用。
+
+## 🖥️ Claude Desktop Extension (.mcpb)
+
+Claude Desktop 使用者可將 Aspose MCP Server 以原生擴充功能安裝，繞過 Linux 沙箱限制，讓 Windows 路徑（`C:\Users\...`）直接可用。
+
+| 平台 | 檔案 |
+|------|------|
+| Windows x64 | `aspose-mcp-server-windows-x64.mcpb` |
+| macOS ARM64 | `aspose-mcp-server-macos-arm64.mcpb` |
+| macOS x64 | `aspose-mcp-server-macos-x64.mcpb` |
+| Linux x64 | `aspose-mcp-server-linux-x64.mcpb` |
+
+**三步驟安裝：**
+1. 從 [GitHub Releases](https://github.com/xjustloveux/aspose-mcp-server/releases) 下載對應平台的 `.mcpb` 檔案。
+2. 雙擊檔案 — Claude Desktop 會開啟安裝對話框。
+3. 依提示選擇 `Aspose.Total.lic` 授權檔；若跳過則以評估模式執行（輸出文件將帶有 Aspose 浮水印）。
+
+> macOS 使用者：Claude Desktop 會自動處理隔離標記，**無需**手動執行 `xattr` 指令。
+>
+> 非 Claude Desktop 客戶端（Cursor、Continue 等）請使用 `.zip` / `.tar.gz` 安裝方式，詳見 [快速開始](https://xjustloveux.github.io/aspose-mcp-server/getting-started.html)。
+
+## Codex 自訂外掛市集
+
+Codex 使用者可透過本專案的自訂市集安裝 **Aspose MCP Server** 外掛。
+先下載對應平台執行檔並將其資料夾加入 `PATH`；有 Aspose 授權時可將授權檔放在
+執行檔旁，然後完整重啟 Codex。
+
+在專案根目錄（或發行的 `aspose-mcp-server-codex-marketplace.zip` 解壓縮根目錄）執行：
+
+```text
+codex plugin marketplace add .
+```
+
+在 Codex 外掛目錄選擇 **Aspose Local Document Tools** 市集，安裝外掛後開啟新聊天。
+
+發行另提供 `aspose-mcp-server-codex-plugin.zip` 單一外掛封存，供「上傳外掛封存檔」
+入口使用；已驗證可匯入並辨識本機 stdio MCP，匯入後需在桌面應用程式使用。
+市集套件包含本機 stdio MCP 設定，執行檔與授權由使用者環境提供。
+詳細平台配置、工具選擇與更新方式請參閱 [Codex 安裝說明](plugins/aspose-mcp-server/README.md)。
+
+## 📦 功能概覽
+
+| 模組 | 工具數 | 主要功能 |
+|------|--------|---------|
+| **Word** | 28 | 檔案操作、文字/段落/表格/圖片/OLE編輯、格式/樣式/頁面設定、書籤/超連結/註釋/目錄/修訂/郵件合併/數位簽章/內容控制項/渲染 |
+| **Excel** | 32 | 檔案/工作表/行列/單元格操作、排序/篩選/驗證、圖表/公式/樞紐分析、表格/形狀/OLE/迷你圖/JSON匯入/渲染 |
+| **PowerPoint** | 26 | 檔案/投影片管理、文字/圖片/表格/圖表/形狀/SmartArt/OLE/媒體、動畫/轉場/備註/註解/加密/浮水印/字型管理 |
+| **PDF** | 19 | 檔案操作（含加密/解密）、文字/圖片/表格/水印/頁面（含裁切）、書籤/註釋/表單（含匯入匯出）、頁首頁尾/印章/目錄/PDF/A合規 |
+| **OCR** | 2 | 影像前處理（校正/降噪/對比/縮放）、文字辨識（圖片/PDF/收據/身分證/護照） |
+| **Email** | 6 | 郵件建立/讀取/轉換、內容編輯、附件管理、日曆事件、聯絡人、格式轉換（EML↔MSG↔HTML） |
+| **BarCode** | 2 | 條碼產生（QR/Code128/EAN13 等）、條碼辨識（自動偵測/指定類型） |
+| **轉換** | 1 | `convert_document`（跨格式轉換：Word/Excel/PDF→圖片、HTML/EPUB/Markdown/SVG→PDF） |
+| **Extension** | 1 | 擴充功能管理（list/bind/unbind/status/set_format/bindings/command），即時文檔快照推送 |
+
+> 📖 完整工具列表與操作說明請參閱 [工具列表](https://xjustloveux.github.io/aspose-mcp-server/tools.html)
+
+## 🔌 傳輸模式
+
+| 模式 | 命令 | 端點 | 適用場景 |
+|------|------|------|---------|
+| **Stdio**（預設） | `AsposeMcpServer.exe --word` | - | 本地 MCP 客戶端 |
+| **HTTP** | `AsposeMcpServer.exe --http --port 3000 --word` | `http://localhost:3000/mcp` | 網頁應用 |
+| **WebSocket** | `AsposeMcpServer.exe --ws --port 3000 --word` | `ws://localhost:3000/mcp` | 即時互動 |
+
+**環境變數：**
+
+| 變數 | 說明 | 預設值 |
+|------|------|--------|
+| `ASPOSE_TRANSPORT` | 傳輸模式 (stdio/http/ws) | stdio |
+| `ASPOSE_PORT` | 監聽埠號 | 3000 |
+| `ASPOSE_HOST` | 監聽位址（`localhost`、`0.0.0.0`、`*`） | localhost |
+| `ASPOSE_TOOLS` | 啟用的工具（all 或 word,excel,pdf,ppt,ocr,email,barcode） | 全部啟用 |
+
+> **注意**: Docker/Kubernetes 部署時需設定 `ASPOSE_HOST=0.0.0.0` 以便容器外部可以訪問。
+
+## 🔒 安全特性
+
+- **路徑驗證** - 所有檔案路徑經 `SecurityHelper.ValidateFilePath()` 驗證，防止路徑遍歷攻擊；額外拒絕控制字元、NTFS Alternate Data Stream 冒號語法、路徑段末尾點號/空白、及 Windows 保留裝置名稱（CON/NUL/COM1–9 等）；符號連結（symbolic link）在任何 I/O 操作前均會解析至最終目標，並再次比對白名單，確保符號連結無法繞過路徑限制
+- **路徑白名單**（可選強化）- 透過 `--allowed-path` 限制檔案存取於指定基礎目錄下（可重複指定）；未設定時不限制，建議 HTTP/WebSocket 部署時啟用。**未設定 `--allowed-path` 時，文件內指向本機路徑的資源引用（HTML／MHT／內容判定為這些格式的 Word 檔）同樣不受限制**——遠端 URL 與指向其他主機的 UNC／`file://host/...` 一律拒絕，但本機讀取只有在設定白名單後才會被收斂。白名單在所有工具的讀取路徑、輸出路徑與次要檔案參數（憑證、圖章圖片、佈景主題等）上一致生效；路徑的每一段都會解析符號連結與 NTFS junction，最終目標位於白名單之外即拒絕
+- **輸入驗證** - 並非全域套用，而是在個別操作入口呼叫：`ValidateArraySize()`（預設 1000 項，目前由 PDF 合併的 `inputPaths` 使用）、`ValidateStringLength()`（各呼叫端自行指定上限，如附件名稱 255、搜尋型樣 1000）、`ValidateNumericRange()`（列／欄／頁數、DPI、縮放、表格維度，依操作設定上下限）
+- **Gateway 身分標頭** - `gateway` 驗證模式僅在請求來自設定的受信任 proxy 時採信 `X-Group-Id`／`X-User-Id`（`--auth-apikey-trusted-proxies`／`--auth-jwt-trusted-proxies`，支援 IP 與 CIDR）；未設定時 gateway 模式會拒絕啟動，已由外層網路隔離的部署可明確填 `any`
+- **指標端點** - `/metrics` 預設與其他端點一樣需要通過驗證；僅 `/health` 與 `/ready` 無條件開放。受信任的抓取網路可用 `--metrics-allow-anonymous` 明確放行
+- **外部資源載入** - HTML／MHT 及以內容偵測為 HTML 的 Word 輸入不會抓取遠端 URI；本機引用同樣受白名單約束（MHT 仍受 Aspose.Pdf API 限制，見文件說明）
+- **錯誤處理** - 結構化錯誤翻譯器（per-family translator 模式）將 Aspose/BCL 例外對應為固定安全哨兵字串；移除路徑、堆疊追蹤等敏感資訊，確保原始例外訊息不傳遞給呼叫方
+- **Origin 驗證** - HTTP/WebSocket 模式預設啟用，防止 DNS 重綁定攻擊
+
+| 限制項目 | 上限值 | 套用範圍 |
+|---------|--------|---------|
+| 最大路徑長度 | Windows 260 字元，其他平台 4096 字元 | 所有路徑驗證 |
+| 最大檔案名稱長度 | 255 字元 | 檔名清理時截斷 |
+| 陣列大小預設上限 | 1000 項 | `ValidateArraySize()` 的預設值，僅在呼叫該方法的入口生效 |
+| 字串長度預設上限 | 10000 字元 | `ValidateStringLength()` 的預設值；現有呼叫端均自行傳入更小的上限 |
+
+> 📖 完整安全配置請參閱 [功能特性](https://xjustloveux.github.io/aspose-mcp-server/features.html)
+
+## 🌍 跨平台支援
+
+| 平台 | 文檔處理 | OCR | 備註 |
+|------|---------|-----|------|
+| Windows x64 | ✅ | ✅ | |
+| Linux x64 | ✅ | ✅ | 不需要 libgdiplus |
+| macOS Intel x64 | ✅ | ✅ | |
+| macOS ARM64 (M1/M2/M3) | ✅ | ✅ | PPT/OCR 需 Rosetta 2 |
+| Linux ARM64 | 未提供預編譯版本 | ❌ | 不在 build/publish 目標內；需自行以 .NET SDK 建置，OCR 受 ONNX Runtime 限制 |
+
+**跨平台方案：** PowerPoint 使用 `Aspose.Slides.NET6.CrossPlatform`、PDF 使用 `Aspose.PDF.Drawing`、Word/Excel 使用 `SkiaSharp`，全部無需外部圖形庫。
+
+**Linux 字型：** 建議安裝 `fonts-liberation`（英文）和 `fonts-noto-cjk`（中日韓文），Docker 映像已內建基本 CJK 字型。
+
+> 📖 詳細平台需求與字型配置請參閱 [部署指南](https://xjustloveux.github.io/aspose-mcp-server/deployment.html)
+
+## 📄 授權
+
+**本專案源代碼**採用 [MIT License](LICENSE) 授權。**運行時需要 Aspose 授權**，支援：
+
+- `Aspose.Total.lic` - 總授權（包含所有組件，推薦）
+- 單一組件授權：`Aspose.Words.lic`、`Aspose.Cells.lic`、`Aspose.Slides.lic`、`Aspose.Pdf.lic`、`Aspose.OCR.lic`、`Aspose.Email.lic`、`Aspose.BarCode.lic`
+
+**配置方式（按優先順序）：**
+1. **命令列參數**：`--license 路徑`
+2. **環境變數**：`ASPOSE_LICENSE_PATH`
+3. **自動搜尋**（預設）：在可執行檔案同一目錄搜尋
+
+找不到授權時以試用模式運行（文檔含評估版標記）。使用 `test.ps1 -SkipLicense` 可在評估模式下運行測試。
+
+## ⚠️ 重要說明
+
+### 索引行為說明
+
+**索引在刪除操作後會變化：**
+- 當執行刪除操作（如刪除段落、表格、圖片等）後，後續元素的索引會自動調整
+- **建議**：在執行刪除操作後，重新使用 `get` 操作獲取最新的索引列表
+
+```
+1. word_image(operation='get', path='doc.docx')  # 返回圖片索引: 0, 1, 2
+2. word_image(operation='delete', path='doc.docx', imageIndex=1)  # 刪除索引1的圖片
+3. word_image(operation='get', path='doc.docx')  # 現在返回: 0, 1 (原索引2變成1)
+```
+
+**Word 段落定址（paragraphIndex，僅 word_* 工具）：**
+- `paragraphIndex` 是**故事相對（story-relative）**索引：「該故事內」的 0-based 位置（預設 Body），不是全文件全域索引。範圍 `0`～「該故事段落數-1」，`-1` 表示最後一段。
+- 定址非 Body 故事時加 `storyType`（Body/Header/Footer/TextBox/Comment/Footnote/Endnote），必要時搭配 `sectionIndex`/`headerFooterType`/`containerIndex`。
+- `get`（及 `word_text` 的 `search`）會回報每段的 `storyType`＋`paragraphIndex`，原樣帶回即可定址同一段；session 模式另回傳穩定的 `handle`，索引位移後仍精準命中。
+- 某些操作會在指定段落**之後**創建新段落，而不是插入到段落內部。
+
+**參數命名一致性：** 為向後兼容，某些參數支援多種命名（如 `startColumn` / `startCol`、`columnIndex` / `colIndex`）。
+
+## 📝 使用範例
+
+### 從A文檔複製格式到B文檔
+
+**複製段落格式：**
+```
+1. word_paragraph(path="A.docx", operation="get_format", paragraphIndex=0)
+2. 使用返回的格式資訊
+3. word_paragraph(path="B.docx", operation="edit", paragraphIndex=0, ...)
+```
+
+**複製樣式：**
+```
+word_style(path="B.docx", operation="copy_styles", sourceDocument="A.docx")
+```
+
+## 🔗 相關資源
+
+| 類別 | 連結 |
+|------|------|
+| **完整文檔** | [GitHub Pages](https://xjustloveux.github.io/aspose-mcp-server/) — 功能特性、工具列表、快速開始、開發者指南、部署指南、FAQ |
+| **配置範例** | [config_example.json](config_example.json) · [extensions_example.json](extensions_example.json) |
+| **Aspose** | [Aspose.Total for .NET](https://products.aspose.com/total/net/) |
+| **MCP** | [MCP 官方網站](https://modelcontextprotocol.io/) · [.NET MCP SDK](https://github.com/modelcontextprotocol/csharp-sdk) |
+| **MCP 客戶端** | [Claude Desktop](https://claude.ai/download) · [Cursor](https://cursor.sh/) · [Continue](https://continue.dev/) |
+| **專案** | [GitHub Repository](https://github.com/xjustloveux/aspose-mcp-server) |
+
+> 📖 進階主題（Session 管理、認證機制、追蹤系統、部署指南、開發者指南、常見問答）請參閱 [完整文檔](https://xjustloveux.github.io/aspose-mcp-server/)。

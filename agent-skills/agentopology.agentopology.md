@@ -1,0 +1,685 @@
+<h1 align="center">AgenTopology</h1>
+
+<p align="center">
+  <strong>Harness as code.</strong> The Terraform for AI agents.<br/>
+  Define your agent team — and its memory — once. <strong>Run it now, or deploy it anywhere.</strong>
+</p>
+
+<p align="center">
+  <a href="https://agentopology.com"><img src="https://img.shields.io/badge/website-agentopology.com-purple" alt="website" /></a>
+  <a href="https://www.npmjs.com/package/agentopology"><img src="https://img.shields.io/npm/v/agentopology" alt="npm" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue" alt="license" /></a>
+</p>
+
+<p align="center">
+  <strong>Claude Code</strong> · <strong>Claude Workflow</strong> · <strong>OpenClaw</strong> · <strong>Codex</strong> · <strong>Cursor</strong> · <strong>Gemini CLI</strong> · <strong>Copilot</strong> · <strong>Kiro</strong>
+</p>
+
+<p align="center">
+  <em>New in 0.4:</em> <code>agentopology plan</code> — enact a topology with your coding agent's own
+  sub-agents.<br/><em>No files generated. Nothing to maintain.</em>
+</p>
+
+<p align="center">
+  <em>Ships with a Claude Code skill — just type <code>/agentopology</code> and describe your team.</em>
+</p>
+
+<br/>
+
+## The Problem
+
+Building one AI agent is easy. Building a **team** of agents that actually works together is brutal.
+
+You want a marketing team? A dev pipeline? A support squad? You spend hours wiring up AGENT.md files, soul.md configs, MCP servers, hooks, and scripts. You get it working in Claude Code. Then you need the same team in OpenClaw — and you start from scratch. Different config format. Different directory structure. Different conventions. Same agents, same logic, zero portability.
+
+**OpenClaw alone** needs soul.md, skill files, channel configs, gateway setup, and workspace definitions — for each agent. Multiply that by 5 agents and you're maintaining 20+ files that you can't visualize, validate, or hand off to anyone.
+
+And that's just the platform problem. The architecture problem is worse:
+
+- **How do you see the big picture?** Your topology is scattered across 15 files in nested directories. No diagram. No single source of truth.
+- **How do agents talk to each other?** You hack together file-based protocols or copy-paste context between prompts. There's no standard.
+- **How do you enforce quality?** You want a gate between stages but there's no standard way to define one.
+- **How do you move fast?** Every new agent means touching 5-12 files across multiple tools.
+
+**AgenTopology fixes all of this.**
+
+Write your agent team in one `.at` file. Marketing, development, support, copywriting — any team, any structure. Visualize it. Validate it. Scaffold it to any platform in one command.
+
+```
+topology code-review : [pipeline] {
+  agent researcher  { model: sonnet  tools: [Read, Grep, WebSearch] }
+  agent writer      { model: sonnet  tools: [Read, Write] }
+  agent reviewer    { model: opus    tools: [Read, Grep] }
+
+  flow {
+    researcher -> writer -> reviewer
+    reviewer -> writer  [when reviewer.verdict == revise, max 2]
+  }
+}
+```
+
+```bash
+agentopology scaffold my-team.at --target claude-code      # → .claude/agents/
+agentopology scaffold my-team.at --target claude-workflow  # → my-team.workflow.js (+ SEAM/README/LOSSY-REPORT)
+agentopology scaffold my-team.at --target openclaw         # → .openclaw/soul.md
+agentopology scaffold my-team.at --target codex            # → .codex/
+agentopology scaffold my-team.at --target cursor           # → .cursor/rules/
+```
+
+One file. Every platform. The topology IS the documentation.
+
+<p align="center">
+  <img src="docs/visualizer-preview.png" alt="AgenTopology Visualizer" width="900" />
+</p>
+
+### Hybrid: host + embedded workflow
+
+One `.at` topology can compile to **two coupled targets at once**. `claude-code` is the **host** — the event-driven layer that owns agents, hooks, the Blackboard, concurrent observability, and the human/gate/branching nodes. `claude-workflow` is the embedded **deterministic rung** — the parallel fan-out phases, compiled into a Claude Workflow tool script. The host launches the rung and observes its Blackboard writes live (via a `PostToolUse` hook), so you get concurrent observability the Workflow runtime can't do on its own.
+
+Mark a phase for the rung with `extensions { claude-workflow { execution: workflow } }`, then scaffold both:
+
+```bash
+agentopology scaffold my-team.at --target claude-code      # the host
+agentopology scaffold my-team.at --target claude-workflow  # the embedded rung
+```
+
+The hybrid is opt-in — a topology with no `execution: workflow` marker compiles to pure `claude-code`, unchanged. See [docs/AT_VS_WORKFLOW_STRATEGY.md](docs/AT_VS_WORKFLOW_STRATEGY.md) for why.
+
+---
+
+## What It Does
+
+AgenTopology is a **declarative language** (`.at` files) for describing a team of agents —
+who works, when they work, and what they know when they work. One file, two ways to use it.
+
+```
+                        ┌────────────┐
+      ┌──────────────┐  │  Parser &  │   scaffold ──▶ Platform configs
+      │   .at file   │─▶│  Validator │──┤                ├── .claude/agents/
+      │  (you write) │  │  95 rules  │  │                ├── <topology>.workflow.js
+      └──────────────┘  └────────────┘  │                ├── .codex/  .cursor/rules/
+                                        │                ├── .openclaw/  .github/agents/
+                                        │                └── .kiro/  …
+                                        │
+                                        └── plan ──────▶ Execution brief
+                                                          │
+                                                          ▼
+                                                  your coding agent runs it
+                                                  with its own sub-agents
+                                                  — nothing written to disk
+```
+
+**`scaffold`** generates platform-native config. You stop hand-maintaining files, and the
+topology becomes the single source of truth.
+
+**`plan`** skips generation entirely. The coding agent already in your session *is* the
+runtime — it plans, spawns sub-agents, runs them in parallel and re-plans. It does not need
+generated files to do that; it needs to know the shape of the work. `plan` validates the
+topology, resolves the execution order, and hands it a brief.
+
+Same declaration. A **lifetime** choice, not a strategy one.
+
+---
+
+## Quick Start
+
+```bash
+npm install -g agentopology
+```
+
+**Validate** — catch errors before you scaffold:
+```bash
+agentopology validate my-team.at
+```
+
+**Run it** — enact the topology now, with nothing written to disk:
+```bash
+agentopology plan my-team.at --task "Add rate limiting to the API"
+```
+Prints the flow, then a brief your coding agent follows to run the team with its
+own subagents. Nothing is scaffolded. See below.
+
+**Scaffold** — generate platform configs, when the team should outlive the session:
+```bash
+agentopology scaffold my-team.at --target claude-code
+```
+
+**Visualize** — see your topology as an interactive graph:
+```bash
+agentopology visualize my-team.at
+```
+
+**List targets** — see all supported platforms:
+```bash
+agentopology targets
+```
+
+---
+
+## Two Lifecycles: Compile It, or Just Run It
+
+A `.at` file has always compiled to a persisted harness. It can also be **enacted
+directly** by the coding agent already in your session.
+
+| | `scaffold` | `plan` |
+|---|---|---|
+| Who executes | the platform, later | this session's agent, now |
+| On disk | `.claude/`, `.codex/`, … | nothing |
+| Lifetime | outlives the session | dies with it |
+| Portable | 8 targets | wherever the host agent runs |
+| Gates | real hooks, mechanically enforced | evidence contract |
+| Cost to change | regenerate and reconcile | free |
+
+Not a strategy choice — a **lifetime** choice. A team that should exist next week
+scaffolds. A delegation plan for the task in front of you runs.
+
+**Why this works:** the host coding agent is already the runtime. It plans, spawns
+subagents, runs them in parallel and re-plans. It does not need generated agent
+files to do any of that — it needs to know *who works, when they work, and what
+they know when they work*. That is what a topology says.
+
+`plan` cannot spawn agents itself, so it does not pretend to. It **validates**
+(the agent that wrote the file can write an illegal one), applies the spec's
+defaults, resolves execution order, and emits a brief that resolves what the host
+would otherwise guess: what crosses each handoff, what each reader must **not**
+read, which roles are mutually blind, and every declaration that cannot be
+enforced at runtime.
+
+Five features are platform *registrations* rather than steps — `triggers`,
+`schedules`, `mcp-servers`, `hooks`, and per-agent `tools`/`permissions`. They
+cannot work fileless on any vendor, and `plan` names them instead of silently
+skipping them.
+
+```bash
+agentopology docs interpreted-mode
+```
+
+---
+
+## Claude Code Skill — The Fastest Way to Start
+
+**You don't need to learn `.at` syntax.** AgenTopology ships with an interactive skill that turns Claude Code into a topology designer. Describe the team you want in plain English — the skill generates everything.
+
+### Setup (one time)
+
+```bash
+# Install globally
+npm install -g agentopology
+
+# Link the skill into your project
+ln -s $(npm root -g)/agentopology/skill .claude/skills/agentopology
+```
+
+### Usage
+
+In Claude Code, type `/agentopology` — or just ask naturally:
+
+```
+> /agentopology
+
+┌─────────────────────────────────────┐
+│  AgenTopology                       │
+│  Build agent teams in minutes.      │
+├─────────────────────────────────────┤
+│                                     │
+│  build       Design a new topology  │
+│  templates   Pick a proven team     │
+│  validate    Check an .at file      │
+│  scaffold    Generate platform files│
+│  visualize   Open graph viewer      │
+│                                     │
+└─────────────────────────────────────┘
+```
+
+Say **"I want a code review team with an analyzer, security scanner, and reviewer"** — the skill:
+
+1. Generates the `.at` file with the right syntax
+2. Validates it against 95 rules
+3. Scaffolds it to Claude Code, OpenClaw, Cursor, or any target
+
+**Full agent team in under 2 minutes.** No docs to read. No syntax to memorize. You describe what you want, the skill handles the rest.
+
+---
+
+## Evolving Your Topology
+
+You have a working `.at` file and want to make it better? Just tell the skill what you need:
+
+- **"Add a security scanner agent before the reviewer"** — the skill adds the agent, wires it into the flow, and re-validates
+- **"Add a hook that formats code after every write"** — generates the hook block with the right lifecycle event
+- **"Add an MCP server for GitHub"** — adds the server config with environment variables
+- **"Add a quality gate between the builder and reviewer"** — inserts a gate with halt-on-fail
+- **"Switch the target to OpenClaw"** — re-scaffolds the entire topology for a different platform
+
+The workflow is always the same: **describe the change → the skill updates the `.at` file → validates → re-scaffolds.** You never touch config files manually.
+
+After any change, `agentopology visualize` updates the interactive graph so you can see exactly what changed — every agent, connection, tool, hook, and gate in one view.
+
+Full language reference and guides at **[agentopology.com/docs](https://agentopology.com/docs)**.
+
+---
+
+## The Language
+
+`.at` files are human-readable and version-controllable. Here's a real topology:
+
+```
+topology content-pipeline : [pipeline, human-gate] {
+
+  meta {
+    version: "1.0.0"
+    description: "Research, write, review — with quality gate"
+  }
+
+  agent researcher {
+    model: sonnet
+    description: "Gathers information and sources"
+    tools: [Read, Grep, WebSearch]
+    writes: ["workspace/research.md"]
+    prompt {
+      Search broadly for relevant sources.
+      Compile findings into structured research notes.
+      Include citations and source URLs.
+    }
+  }
+
+  agent writer {
+    model: sonnet
+    description: "Drafts content from research"
+    tools: [Read, Write]
+    reads: ["workspace/research.md"]
+    writes: ["workspace/draft.md"]
+  }
+
+  agent reviewer {
+    model: opus
+    description: "Reviews drafts for quality"
+    tools: [Read, Grep]
+    reads: ["workspace/draft.md"]
+    outputs: { verdict: approve | revise | reject }
+  }
+
+  gates {
+    gate quality-check {
+      after: reviewer
+      run: "scripts/check-quality.sh"
+      on-fail: halt
+    }
+  }
+
+  flow {
+    researcher -> writer -> reviewer
+    reviewer -> writer  [when reviewer.verdict == revise, max 2]
+  }
+}
+```
+
+This defines three agents, their tools and memory, a quality gate, and a flow with a conditional retry loop — all in 40 lines.
+
+---
+
+## Supported Platforms
+
+| Target | Command | What It Generates |
+|--------|---------|-------------------|
+| **Claude Code** | `--target claude-code` | `.claude/agents/`, `.claude/skills/`, `.mcp.json`, `.claude/settings.json` (the event-driven host) |
+| **Claude Workflow** | `--target claude-workflow` | `<topology>.workflow.js` (deterministic fan-out rung) + `-SEAM.md`, `-README.md`, `-LOSSY-REPORT.md` |
+| **OpenClaw** | `--target openclaw` | `.openclaw/soul.md`, `.openclaw/skills/`, `.openclaw/config.json` |
+| **Codex** | `--target codex` | `.codex/config.toml`, `AGENTS.md` |
+| **Cursor** | `--target cursor` | `.cursor/rules/*.mdc`, `.cursor/mcp.json`, `.cursor/hooks.json` |
+| **Gemini CLI** | `--target gemini-cli` | `.gemini/`, `AGENTS.md` |
+| **Copilot** | `--target copilot-cli` | `.github/agents/*.agent.md`, `.github/copilot-instructions.md` |
+| **Kiro** | `--target kiro` | `.kiro/agents/*.json`, `.kiro/steering/` |
+
+Every binding is ground-truth validated against real-world configs from production repos.
+
+---
+
+## Language Features
+
+<table>
+<tr>
+<td width="50%">
+
+**Agents & Models**
+```
+agent planner {
+  model: opus
+  tools: [Read, Write, Bash]
+  permissions: plan
+  thinking: high
+  thinking-budget: 4000
+  max-turns: 20
+}
+```
+
+</td>
+<td width="50%">
+
+**Flow Graphs**
+```
+flow {
+  intake -> researcher
+  researcher -> writer
+  writer -> reviewer
+  reviewer -> writer  [when verdict == revise, max 3]
+  reviewer -> done    [when verdict == approve]
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Group Chats**
+```
+group debate-arena {
+  members: [pro, con]
+  speaker-selection: "round-robin"
+  max-rounds: 5
+  termination: "judge declares winner"
+}
+```
+
+</td>
+<td>
+
+**Quality Gates**
+```
+gates {
+  gate security-scan {
+    after: builder
+    run: "scripts/security.sh"
+    checks: [vulnerabilities, secrets]
+    on-fail: halt
+  }
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Hooks & Events**
+```
+hooks {
+  hook format-on-save {
+    on: PostToolUse
+    matcher: "Write"
+    run: "scripts/format.sh"
+  }
+}
+```
+
+</td>
+<td>
+
+**MCP Servers**
+```
+mcp-servers {
+  github {
+    command: "npx"
+    args: ["-y", "@mcp/server-github"]
+    env { TOKEN: "${GITHUB_TOKEN}" }
+  }
+}
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Company Brain** — agent-maintained, Obsidian-portable
+```
+store brain {
+  type: brain          # markdown, no DB
+  path: "brain/"
+  format: obsidian     # ports both ways
+}
+agent librarian {
+  custodian-of: [brain]  # owns its upkeep
+}
+```
+
+</td>
+<td>
+
+**Provenance styling** — color the graph by source
+```
+store brain {
+  sources {
+    gmail { color: "#EA4335" icon: "./gmail.svg" }
+    slack { color: "#4A154B" }
+  }
+}
+```
+
+</td>
+</tr>
+</table>
+
+Plus: **memory stores** (semantic, graph, episodic — 11 backends), **retrieval strategies** (scoring weights, cache-hit routing), schemas, artifacts, metering, circuit breakers, scale configs, depth levels, environment overrides, prompt variants, composition via imports, and [more](spec/grammar.md).
+
+---
+
+## Interpreted Execution — Run It Without Building It
+
+```bash
+agentopology plan review.at --task "Review PR 412" --mode plan
+```
+
+```
+  review v1.0.0  ·  pipeline, fan-out
+
+  1  ▪ intake                          action
+     │
+  2  ▸ analyzer  ∥  security-scanner   agent ×2, parallel · sonnet
+     │
+  3  ▸ reviewer                        agent · opus
+     │
+  4  ◆ human-approval                  gate · blocking · on-fail: halt
+     │
+  5  ▸ reporter                        agent · haiku
+
+  ⚠  4 role(s) declare tool restrictions that cannot be set inline — running unrestricted
+  ⛔  2 triggers, 1 hook declared — these need `agentopology scaffold`
+```
+
+Then a brief your coding agent follows. It resolves what the agent would otherwise
+have to guess:
+
+| The brief answers | Because |
+|---|---|
+| What crosses each handoff | computed as `writes ∩ reads`, not left to interpretation |
+| What each reader must **not** read | a validator that reads the builder's self-review is not independent |
+| Which same-step roles are mutually blind | two researchers who see each other's work are one opinion, paid for twice |
+| Which declarations can't be enforced at runtime | a sub-agent's tool grant cannot be set inline on any platform — so it says so |
+
+Three autonomy notches — `plan` shows it and waits, `execute` runs and announces
+material changes, `auto` runs and reports at the end.
+
+Every guess the agent has to make is logged with a concrete `.at` edit that would
+remove it. The log is a patch queue for your topology, not a diary.
+
+---
+
+## Group Chats — Agents That Talk to Each Other
+
+Groups aren't fan-out. They're real conversations. Each agent reads what others wrote and responds:
+
+```
+group design-review {
+  members: [architect, security-lead, tech-lead]
+  speaker-selection: "round-robin"
+  max-rounds: 3
+  termination: "consensus reached"
+}
+```
+
+In Claude Code, this compiles to a **file-based protocol** — a shared transcript file that agents read and append to sequentially. No HTTP, no message bus. Just the filesystem as shared state.
+
+---
+
+## Company Brain — Knowledge That Builds Itself
+
+A **brain** is a folder of linked markdown that agents maintain, not you. It's the [Obsidian](https://obsidian.md) graph model — notes connected by `[[wikilinks]]` and `#tags` — but **agent-maintained instead of hand-curated**.
+
+```
+store brain {
+  type: brain          # file-native: markdown, no database, no embeddings
+  path: "brain/"
+  format: obsidian     # ports both ways — open it in Obsidian, the graph just works
+}
+
+agent librarian {
+  custodian-of: [brain] {       # OWNS the brain's upkeep, not just read access
+    does: [link, tag, index, dedupe]
+  }
+}
+```
+
+- **Custodian agents** own a memory layer. Drop a note in, the librarian wires it into the graph — resolving `[[links]]`, assigning `#tags`, updating hub notes. Humans drop; agents wire.
+- **Ingester agents** feed it from anywhere. One agent per source (Gmail, Slack, calendar) writes raw notes; the librarian links them. See [`examples/company-brain-team.at`](examples/company-brain-team.at).
+- **Pure markdown, zero infrastructure.** No vector DB, no MCP server. Coding agents retrieve with `grep`. The whole brain is a folder you can `git clone`.
+- **100% Obsidian-compatible.** The vault *is* an Obsidian vault — agents build it, you open it in Obsidian for the graph view. Or use our built-in graph viewer (below) and skip Obsidian entirely.
+
+**See it without Obsidian** — render any brain vault as an interactive graph in a single self-contained HTML file:
+
+```bash
+agentopology visualize-brain brain/
+```
+
+Nodes are colored by what they *are* (person / org / topic) and by where they *came from* (declare `sources { gmail { color, icon } }` and notes from Gmail render in Gmail red with the logo). When you `visualize` a topology that owns brains, the two graphs **cross-link** — jump from the team diagram to its brain and back.
+
+This is **brain as code**: you declare the brain's architecture — its layers, its custodians, its sources — the same way you declare the agent team. See [`docs/company-brain.md`](docs/company-brain.md) for the full walkthrough.
+
+---
+
+## Programmatic API
+
+```typescript
+import { parse, validate, bindings } from "agentopology";
+
+// Parse
+const ast = parse(atSource);
+
+// Validate (95 built-in rules, V1-V95)
+const issues = validate(ast);
+
+// Scaffold — generate platform files
+const files = bindings["claude-code"].scaffold(ast);
+
+// Plan — resolve for interpreted execution, generate nothing
+import { buildExecutionBrief, renderBriefMarkdown } from "agentopology/plan";
+const brief = buildExecutionBrief(ast, { task: "Add rate limiting", autonomy: "execute" });
+const markdown = renderBriefMarkdown(brief);
+
+// Render the flow as a terminal graph
+import { renderAscii } from "agentopology/render";
+console.log(renderAscii(ast));
+
+// Visualize
+import { generateVisualization } from "agentopology";
+const html = generateVisualization(ast);
+```
+
+---
+
+## Create Your Own Binding
+
+Implement the `BindingTarget` interface to add any platform:
+
+```typescript
+import type { BindingTarget } from "agentopology";
+
+export const myBinding: BindingTarget = {
+  name: "my-platform",
+  description: "My AI Platform",
+  scaffold(ast) {
+    return [
+      { path: "agents.json", content: JSON.stringify(ast.nodes) },
+    ];
+  },
+};
+```
+
+---
+
+## Focus on Structure, Not Config Files
+
+The `.at` file IS your architecture diagram. When you open it, you see:
+- Who the agents are
+- What tools they have
+- How work flows between them
+- Where the quality gates are
+- What happens when things fail
+
+You can `agentopology visualize` it into an interactive graph. You can hand it to a new team member and they understand the system in 30 seconds. Try doing that with 15 scattered AGENT.md files.
+
+| | Config files | AgenTopology |
+|---|---|---|
+| **Switch platforms** | Rewrite everything | Change `--target` |
+| **Add an agent** | Update 5-12 files across 3 tools | Add 4 lines to `.at` file |
+| **See the architecture** | Read YAML, JSON, TOML, Markdown across 6 dirs | One `.at` file. Or `visualize` it. |
+| **Validate** | Hope for the best | 95 built-in rules catch errors before deploy |
+| **Onboard someone** | "Read these 15 files and figure it out" | "Read this `.at` file" |
+| **Version control** | Diff 47 generated files | Diff one `.at` file |
+| **Move to a new tool** | Start over | `--target new-tool` |
+
+---
+
+## Examples
+
+- [`simple-pipeline.at`](examples/simple-pipeline.at) — Research → write → review with quality gate
+- [`code-review.at`](examples/code-review.at) — Multi-agent code review with security scanning
+- [`data-processing.at`](examples/data-processing.at) — ETL pipeline with batch processing and metering
+- [`scheduled-monitor.at`](examples/scheduled-monitor.at) — Monitoring system with scheduled health checks
+- [`openclaw-assistant.at`](examples/openclaw-assistant.at) — Customer support with routing and scheduling
+- [`company-brain.at`](examples/company-brain.at) — A plug-and-play company brain (librarian + researcher)
+- [`company-brain-team.at`](examples/company-brain-team.at) — A team that ingests (Gmail/Slack/calendar), wires, and audits a brain
+
+---
+
+## CLI Reference
+
+```
+agentopology validate <file>              Validate an .at file (95 rules)
+agentopology plan <file>                  Resolve for interpreted execution — no files written
+agentopology scaffold <file> --target <t> Generate platform configs
+agentopology sync <file> --target <t> --dir <d>  Sync platform files back to .at
+agentopology import --target <t> --dir <d>       Reverse-engineer platform files to .at
+agentopology visualize <file>             Interactive topology graph (+ cross-links any brains)
+agentopology visualize-brain <folder>     Render a brain vault as an Obsidian-style graph (no Obsidian)
+agentopology export <file> --format <fmt> Export as markdown, mermaid, json, ascii, or brief
+agentopology info <file>                  Topology analysis and suggestions
+agentopology targets                      List supported platforms
+agentopology docs [topic]                 Language reference (43 topics)
+```
+
+---
+
+## Contributing
+
+We welcome contributions. The easiest ways to start:
+
+- Add a new [example topology](examples/)
+- Improve a [binding](src/bindings/)
+- Add [tests](src/bindings/__tests__/)
+- Write [documentation](docs/)
+
+Grammar and AST changes require an RFC.
+
+---
+
+## License
+
+Apache 2.0 — see [LICENSE](LICENSE).
+
+---
+
+<p align="center">
+  <sub>Created by <a href="https://github.com/nadavnaveh">Nadav Naveh</a></sub>
+</p>

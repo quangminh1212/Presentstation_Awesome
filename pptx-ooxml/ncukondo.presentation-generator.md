@@ -1,0 +1,168 @@
+# Presentation Generator
+
+PptxGenJS (TypeScript/Bun) + Gemini TTS + ffmpeg によるプレゼンテーション動画自動生成ツール。
+
+`slides.yaml` にスライド内容とナレーション原稿を定義し、PPTX → PNG → 音声 → MP4 を一括生成する。
+**題材ごとに複製して使う汎用テンプレート**（GitHub Template repository）として設計されており、`slides.yaml`（内容）と
+`theme:`（配色）を差し替えるだけで、別テーマのプレゼンに流用できる。
+
+**データ駆動モード**：各スライドは `slides.yaml` で `layout`（レンダラ名）を宣言し、汎用レンダラ
+（`lib/render.ts`）がそれを描く。スライドの**追加・編集・並べ替え・複製は YAML 編集だけで完結**し、
+発表者がコードを触らずに内容を回せる。
+
+## 機能
+
+- **PPTX 生成** — `slides.yaml` に定義したスライド内容から PowerPoint ファイルを生成
+- **データ駆動レンダリング** — 各スライドの `layout` + `visual` を汎用レンダラ（`lib/render.ts`）が描画。追加・並べ替えは YAML 編集だけ
+- **テーマ（配色）の切替** — `slides.yaml` の `theme:` ブロックで配色を一元指定（preset / シード色 / 個別上書き）。`lib/render.ts` は役割名（`C.xxx`）参照なので無改修
+- **折り返しの自動修正** — ビルド時にテキストを禁則処理＋自然な区切りで自動バランス。直せないものは改修推奨を出力
+- **構造バリデーション** — `slides.yaml` の型・必須フィールドをビルド前に検査
+- **スクリーンショット** — PPTX を PNG 画像に変換（PowerPoint / LibreOffice 自動選択）
+- **デザイン QA** — 出力画像をローカルの Claude Code CLI で自動採点
+- **ナレーション生成** — Gemini Native Audio API による TTS 音声生成
+- **動画生成** — スライド画像 + ナレーション音声を ffmpeg で MP4 に合成
+
+## テンプレートとしての使い方
+
+このリポジトリは GitHub の **Template repository** として設定済み。題材ごとに履歴なしの
+新規リポジトリを作り、コンテンツと配色を差し替えて使う（`git clone` は元の履歴・リモートが
+ついてくるため非推奨）。
+
+```bash
+# GitHub 上に新規リポジトリを作る（Web UI の「Use this template」でも可）
+gh repo create my-presentation --template ncukondo/presentation-generator --private --clone
+cd my-presentation
+bun install
+```
+
+リポジトリを作らずローカルにファイルだけ欲しい場合は degit が手軽:
+
+```bash
+bunx degit ncukondo/presentation-generator my-presentation
+cd my-presentation && git init && bun install
+```
+
+テンプレート側の改良（layout 追加・`lib/` の改修など）を後から取り込みたい場合は、
+派生リポジトリでテンプレートをリモート登録して必要なファイルだけ上書きする:
+
+```bash
+git remote add template git@github.com:ncukondo/presentation-generator
+git fetch template
+git checkout template/main -- lib docs tools   # slides.yaml は上書きしない
+```
+
+1. `slides.yaml` の内容・ナレーション・各スライドの `layout` を差し替える（layout 語彙は `docs/layouts.md`）
+2. `theme:` ブロックで題材に合った配色を選ぶ（`docs/theme.md`）
+3. 既存 layout で足りない図版だけ `lib/render.ts` に新 layout を追加（通常は不要）
+4. `bun run build` → `output_images/*.png` を確認して修正ループ
+
+## セットアップ
+
+```bash
+bun install
+```
+
+### 環境変数
+
+```bash
+cp .env.example .env
+# .env に Gemini API キーを設定（TTS 利用時のみ必要）
+```
+
+### 外部ツール
+
+- **スクリーンショット** (`bun run screenshot`) は環境に応じてバックエンドを自動選択:
+  - **WSL + PowerPoint** — PowerShell COM 経由（自動検出）
+  - **LibreOffice + pdftoppm** — `apt install libreoffice poppler-utils`
+- **動画生成** には [ffmpeg](https://ffmpeg.org/) が必要
+- **引用解決** には [ref](https://github.com/ncukondo/reference-manager/) コマンドが PATH に必要（`slides.yaml` の `cites` / `cite` を APA 形式に解決。引用を使わない場合は不要）
+- **デザイン QA** (`bun run qa`) はログイン済みのローカル `claude` CLI を利用するため API キー不要
+
+## 使い方
+
+```bash
+bun run generate      # PPTX 生成のみ
+bun run screenshot    # PPTX → PNG 変換
+bun run build         # generate + screenshot
+bun run qa            # 出力画像のデザイン自動採点（claude CLI 使用、API キー不要）
+bun run tts           # ナレーション音声生成（要 .env）
+bun run video         # スライド画像+音声 → MP4 動画生成（要 ffmpeg）
+```
+
+## プロジェクト構成
+
+```
+├── slides.yaml              # 全スライドの内容定義 + ナレーション原稿（単一ソース）+ theme: ブロック
+├── generate.ts              # メインエントリ（PPTX 生成）
+├── screenshot.ts            # PPTX → PNG 変換（PowerPoint/LibreOffice 自動選択）
+├── tts.ts                   # Gemini TTS でナレーション生成
+├── video.ts                 # スライド画像+音声 → MP4 動画生成
+├── qa.ts                    # 出力画像のデザイン自動採点（claude CLI）
+├── lib/
+│   ├── deck.ts              # layout 対応ローダー（getDeck → 順序付き DeckSlide[]）
+│   ├── render.ts            # 汎用レンダラ群＋ディスパッチャ renderSlide（id 参照ゼロ）
+│   ├── slides-data.ts       # slides.yaml ローダー（getSlide / getAllSlides / getTheme）
+│   ├── theme.ts             # 解決済みカラー(C)・フォント・サイズ・レイアウト定数
+│   ├── themes.ts            # テーマ定義（preset / シード生成 / 解決ロジック）
+│   ├── color.ts             # 色ユーティリティ（HSL 変換・派生・コントラスト）
+│   ├── helpers.ts           # 再利用可能なスライドビルダー関数
+│   ├── text-metrics.ts      # 折り返し推定・禁則/自然改行・バランス（自動修正）
+│   ├── instrument.ts        # addText を自動バランス＆ジオメトリ収集
+│   ├── lint-wrap.ts         # 折り返し lint（残課題を改修推奨として出力）
+│   ├── validate.ts          # slides.yaml 構造バリデーション（layout 別スキーマ）
+│   ├── types.ts             # PptxGenJS 型定義
+│   ├── icons.ts             # Material Design Icons ローダー
+│   └── cite.ts              # 引用管理（pandoc citekey → APA形式）
+├── docs/                    # layout 語彙・テーマ・デザイン原則・QA プロンプトのガイド
+├── assets/                  # スライドに埋め込む画像
+├── screenshots/             # ステップ詳細スライド用スクリーンショット
+├── output_images/           # 生成されたスライド画像（PNG）
+└── voice_output/            # TTS 生成音声（WAV）
+```
+
+## カスタマイズ
+
+### スライド内容の変更
+
+スライドの内容・ナレーション原稿・`layout` は `slides.yaml` で一元管理。
+各スライドは `layout`（レンダラ名）と `visual`（パラメータ）を宣言し、`lib/render.ts` が描画する。
+layout 語彙と各 `visual` スキーマは `docs/layouts.md` を参照。
+
+```bash
+# yq でナレーション修正
+yq '(.slides[] | select(.id == "background")).narration = "新しいナレーション"' -i slides.yaml
+```
+
+### テーマ（配色）の変更
+
+配色は `slides.yaml` の `theme:` ブロックで選択する（`lib/themes.ts` が解決、詳細は `docs/theme.md`）。
+
+```yaml
+theme:
+  preset: blue          # blue / warm / forest / slate から選ぶ
+  # accent: "00C853"    # 任意の Palette キーを hex で個別上書き
+  # primary: "6A1B9A"   # preset を消し primary だけ指定 → 残りを自動生成
+```
+
+役割（Primary/Accent/Step…）でテーマを差し替えても、`lib/render.ts` は `C.xxx` 参照なので無改修。
+フォント・サイズの定数は `lib/theme.ts`、レイアウトは `lib/render.ts` に定義。
+
+## ワークフロー
+
+1. `slides.yaml` にスライド内容・`layout`・ナレーション原稿を記述（layout 語彙は `docs/layouts.md`）
+2. `theme:` ブロックで題材に合った配色を準備（`docs/theme.md`）
+3. 既存 layout で足りない図版だけ `lib/render.ts` に新 layout を追加（通常は不要）
+4. `bun run build` で PPTX + PNG を生成（折り返しは自動バランス。直せないものは `[wrap] RECOMMEND` で改修推奨を出力）
+5. `output_images/*.png` を確認し、レイアウト・文字・コントラストを検証して修正ループ（`bun run qa` で自動採点も可）
+6. `bun run tts` でナレーション音声を生成
+7. `bun run video` で最終動画を合成
+
+詳しい作成手順は `CLAUDE.md`、デザイン基準は `docs/design-principles.md` を参照。
+
+## デザインルール
+
+- 最小フォントサイズ: 22pt
+- 配色: `slides.yaml` の `theme:` で選択（preset / シード色 / 個別上書き、`docs/theme.md`）
+- フォント: メイリオ（日本語）、Arial（英語）— `theme.fonts` で上書き可
+- 折り返し: ビルド時に禁則処理＋自然な区切りで自動バランス（`lib/text-metrics.ts`）
+- 完全な基準は `docs/design-principles.md`、自動採点は `bun run qa`（`docs/qa-prompt.md`）

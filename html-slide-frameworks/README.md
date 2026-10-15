@@ -1,0 +1,508 @@
+# HTML Slide Frameworks
+
+Browser-based presentation frameworks and runtimes for building slide decks with web tech.
+
+- [hakimel](https://github.com/hakimel/reveal.js) — ★ 72,430 — The HTML Presentation Framework
+- [slidevjs](https://github.com/slidevjs/slidev) — ★ 49,055 — Presentation Slides for Developers
+- [impress](https://github.com/impress/impress.js) — ★ 38,154 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
+- [Dujltqzv](https://github.com/Dujltqzv/Some-Many-Books) — ★ 24,768 — 个人收藏书籍列表
+- [ksky521](https://github.com/ksky521/nodeppt) — ★ 10,330 — This is probably the best web presentation tool so far!
+- [webslides](https://github.com/webslides/WebSlides) — ★ 6,326 — Create HTML presentations in seconds —
+- [imakewebthings](https://github.com/imakewebthings/deck.js) — ★ 5,416 — Modern HTML Presentations
+- [shower](https://github.com/shower/shower) — ★ 4,876 — Shower HTML presentation engine
+- [joanrod](https://github.com/joanrod/star-vector) — ★ 4,622 — StarVector is a foundation model for SVG generation that transforms vectorization into a code generation task. Using a vision-language modeling architecture,...
+- [jonschlinkert](https://github.com/jonschlinkert/gray-matter) — ★ 4,492 — Smarter YAML front matter parser, used by metalsmith, Gatsby, Netlify, Assemble, mapbox-gl, phenomic, vuejs vitepress, TinaCMS, Shopify Polaris, Ant Design, ...
+- [webpro](https://github.com/webpro/reveal-md) — ★ 3,912 — reveal.js on steroids! Get beautiful reveal.js presentations from any Markdown file
+- [astefanutti](https://github.com/astefanutti/decktape) — ★ 2,431 — PDF exporter for HTML presentations
+- [arcsin1](https://github.com/arcsin1/oh-my-ppt) — ★ 2,133 — Describe what you need  a presentation, lesson, or story  and let the AI build clean, beautiful HTML slides for you. Local-first. Works offline. Works for you.
+- [enisn](https://github.com/enisn/UraniumUI) — ★ 1,472 — The presentation framework for .NET MAUI.
+- [yjwen](https://github.com/yjwen/org-reveal) — ★ 1,463 — Exports Org-mode contents to Reveal.js HTML presentation.
+- [marcolago](https://github.com/marcolago/flowtime.js) — ★ 1,343 — Flowtime.js HTML5/CSS3/JS Websites and Presentation Framework
+- [Seldaek](https://github.com/Seldaek/slippy) — ★ 809 — HTML Presentations
+- [datitran](https://github.com/datitran/jupyter2slides) — ★ 792 — Cloud Native Presentation Slides with Jupyter Notebook + Reveal.js
+- [sinedied](https://github.com/sinedied/backslide) — ★ 777 — :sweat_drops: CLI tool for making HTML presentations with Remark.js using Markdown
+- [joshed-io](https://github.com/joshed-io/reveal-hugo) — ★ 747 — ??? Create rich HTML-based presentations with Hugo and Reveal.js
+- [harish-io](https://github.com/harish-io/Impressionist) — ★ 706 — Visual tool to create impress.js presentations
+- [willy-vvu](https://github.com/willy-vvu/reveal.js) — ★ 690 — This is what I got when I combined webcam-based gesture recognition with Hakim El Hattab's reveal.js.
+- [andreypopp](https://github.com/andreypopp/react-css-components) — ★ 672 — Define React presentational components with CSS
+- [briancavalier](https://github.com/briancavalier/slides) — ★ 496 — A slide presentation framework in HTML, JS, and OOCSS
+- [MartenBE](https://github.com/MartenBE/mkslides) — ★ 481 — Use mkslides to easily turn markdown files into beautiful slides using the power of Reveal.js!
+- [facebookarchive](https://github.com/facebookarchive/exerslide) — ★ 434 — A framework to create React-based HTML presentations and tutorials.
+- [slara](https://github.com/slara/generator-reveal) — ★ 427 — Yeoman generator for Reveal.js
+- [grantmcdermott](https://github.com/grantmcdermott/quarto-revealjs-clean) — ★ 417 — A minimalist and elegant presentation theme for Quarto Reveal.js
+- [lucasrla](https://github.com/lucasrla/remarks) — ★ 399 — Extract annotations (highlights and scribbles) from PDF, EPUB, and notebooks marked with reMarkable tablets. Export to Markdown, PDF, PNG, SVG
+- [cytoscape](https://github.com/cytoscape/cytoscape-tutorials) — ★ 336 — Collection of modular Cytoscape tutorials for online presentation using reveal.js
+- [egonSchiele](https://github.com/egonSchiele/mdpress) — ★ 331 — [DEAD] Make impress.js presentations from markdown files.
+- [rstudio](https://github.com/rstudio/revealjs) — ★ 329 — R Markdown Format for reveal.js Presentations
+- [davidlyons](https://github.com/davidlyons/threejs-intro) — ★ 324 — Intro to WebGL with Three.js presentation
+- [zweix123](https://github.com/zweix123/jyyslide-md) — ★ 323 — ??Markdown????????????????Web?????(Base on Reveal.js)
+- [asciidoctor](https://github.com/asciidoctor/asciidoctor-reveal.js) — ★ 314 — :crystal_ball: A reveal.js converter for Asciidoctor and Asciidoctor.js. Write your slides in AsciiDoc!
+- [wshuyi](https://github.com/wshuyi/mindmap2slide) — ★ 296 — convert Mindnode Mindmap (textbundle format) to reveal.js slides
+- [partageit](https://github.com/partageit/markdown-to-slides) — ★ 293 — A command line interface to convert markdown documents to an HTML slideshow
+- [denehyg](https://github.com/denehyg/reveal.js-menu) — ★ 288 — Slide out menu for reveal.js
+- [datalorax](https://github.com/datalorax/slidex) — ★ 288 — Convert PowerPoint Slides to xaringan (remark.js) Slides
+- [LSTM-Kirigaya](https://github.com/LSTM-Kirigaya/slidev-ai) — ★ 284 — ai app for slidev
+- [neatsoftware](https://github.com/neatsoftware/term-sheets) — ★ 262 — Create animated terminal presentations. Export as SVG, animated GIF, or HTML+CSS
+- [nyergler](https://github.com/nyergler/hieroglyph) — ★ 261 — Generate HTML presentations from plain text sources with all the power of Sphinx.
+- [fsprojects](https://github.com/fsprojects/FsReveal) — ★ 261 — FsReveal parses markdown and F# script file and generates reveal.js slides.
+- [adityab](https://github.com/adityab/Awwation) — ★ 244 — Prezi clone in HTML5, Js, and SVG. Can use different animation backends, for example impress.js. [I NO LONGER OWN AWWATION.COM]
+- [bmcmurray](https://github.com/bmcmurray/hekyll) — ★ 243 — a Jekyll generator for Impress.js presentations
+- [nekomeowww](https://github.com/nekomeowww/talks) — ★ 235 — ????? Public talks I presented historically in VueConf, ViteConf, KubeCon, @DaoCloud, Demo Day, Demo Inn, all built with @slidevjs
+- [piatra](https://github.com/piatra/kreator.js) — ★ 232 — slide tool interface for reveal.js
+- [byteclubfr](https://github.com/byteclubfr/prez) — ★ 232 — Generate Reveal.js slideshows from a set of markdowns
+- [slidevjs](https://github.com/slidevjs/themes) — ★ 221 — Official themes for Slidev
+- [LittleSound](https://github.com/LittleSound/talks-template) — ★ 218 — Talks of Template, using Slidev
+- [alvarosabu](https://github.com/alvarosabu/slidev-theme-penguin) — ★ 217 — A Penguin ??   theme for Slidev
+- [JeremyLikness](https://github.com/JeremyLikness/vanillajs-deck) — ★ 200 — A Vanilla.js Single Page App (SPA) slide deck for a presentation about Vanilla.js written with no frameworks.
+- [PlatformRelay](https://github.com/PlatformRelay/Kubernetes-Workshop) — ★ 198 — Free, vendor-neutral, hands-on Kubernetes workshop with 28 modules, a three-day curriculum, standalone labs, Slidev decks and PDF releases.
+- [bespokejs](https://github.com/bespokejs/generator-bespoke) — ★ 196 — Create Bespoke.js presentations using Yeoman.
+- [whoisryosuke](https://github.com/whoisryosuke/next-mdx-deck) — ★ 192 — Presentation decks using MDX, React, and Next.JS
+- [1-2-3](https://github.com/1-2-3/remark-it) — ★ 188 — markdown -> slideshow ——Write PPT like a programmer
+- [Qualy-org](https://github.com/Qualy-org/qualy-presenter) — ★ 186 — A boilerplate to create presentations using Reveal.JS, Gulp, Stylus and more.
+- [jhrscom](https://github.com/jhrscom/JHRS) — ★ 177 — The JHRS WPF framework is used to demonstrate how to use wpf and xamarin to build a development framework. The presentation framework only provides an idea. ...
+- [marianoguerra](https://github.com/marianoguerra/rst2html5) — ★ 176 — transform restructuredtext documents to html5 + twitter's bootstrap css, deck.js or reveal.js
+- [8ARTEK](https://github.com/8ARTEK/projector) — ★ 176 — 📽 A simple HTML mockup presentation engine for projects
+- [mattmakai](https://github.com/mattmakai/choose-your-own-adventure-presentations) — ★ 174 — "Choose Your Own Adventure" live voting presentations with Reveal.js, Flask, WebSockets and SMS.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-editable) — ★ 172 — Repositioning and resizing of images and text directly in quarto revealjs slides
+- [leochiu-a](https://github.com/leochiu-a/slidev-workspace) — ★ 171 — Slidev Workspace is a specialized command-line tool designed to manage and showcase multiple Slidev presentations.
+- [alexanderdavide](https://github.com/alexanderdavide/slidev-theme-academic) — ★ 170 — Academic presentations with Slidev made simple ??
+- [MordragT](https://github.com/MordragT/nix-templates) — ★ 169 — ❄️ Nix flake templates for: 🦀 Rust, 🦖 Deno, 🐍 Python and 🗒️ reveal.js among others
+- [gureckis](https://github.com/gureckis/slidev-theme-neversink) — ★ 165 — Slidev Theme Neversink
+- [fand](https://github.com/fand/ratride) — ★ 164 — A tiny CLI presentation tool
+- [akira-cn](https://github.com/akira-cn/matrix) — ★ 156 — Open source slideshare lab for user to create slideshares by reveal.js.
+- [chunqiuyiyu](https://github.com/chunqiuyiyu/qov) — ★ 154 — The terminal presentation tool.
+- [gcalmettes](https://github.com/gcalmettes/reveal.js-d3) — ★ 151 — Full integration of animated javascript-based visualizations (D3, vega-lite, semiotic, etc ...) into Reveal.js presentations
+- [ryanj](https://github.com/ryanj/gist-reveal) — ★ 148 — Gist-powered reveal.js presentations
+- [zcag](https://github.com/zcag/tahta) — ★ 142 — A pristine, themeable design system for Slidev  switch the entire visual style (type, shape, texture, palette) with one line.
+- [rajasegar](https://github.com/rajasegar/svelte-slides) — ★ 141 — A Reveal.js boilerplate with Svelte,  TailwindCSS and Vite
+- [kt3k](https://github.com/kt3k/remarker) — ★ 141 — :arrow_forward: Remark cli
+- [regebro](https://github.com/regebro/impress-console) — ★ 133 — Speaker notes for impress.js
+- [attakei](https://github.com/attakei/sphinx-revealjs) — ★ 129 — HTML Presentation builder for Pythonista
+- [dploeger](https://github.com/dploeger/jekyll-revealjs) — ★ 126 — A Jekyll-based framework for creating presentations based on Reveal.js and markdown.
+- [reveal](https://github.com/reveal/revealjs.com) — ★ 124 — The official reveal.js website and documentation
+- [slidevjs](https://github.com/slidevjs/docs) — ★ 121 — [Mirrored] Documentation for Slidev
+- [TonyCrane](https://github.com/TonyCrane/slide-template) — ★ 120 — TonyCrane's slide template for reveal-md
+- [dijith-481](https://github.com/dijith-481/Markweavia) — ★ 117 — A no-nonsense tool that transforms your Markdown into elegant, professional, platform-independent HTML presentations, all  with familiar Vim motions.
+- [GeorgioWan](https://github.com/GeorgioWan/react-impressjs) — ★ 116 — Making an awesome presentations easy with React
+- [nico-bachner](https://github.com/nico-bachner/slidev-theme-geist) — ★ 116 — The Vercel theme for Slidev
+- [cubewebsites](https://github.com/cubewebsites/Impress.js-Tutorial) — ★ 114 — An online tutorial for Impress.js
+- [rei](https://github.com/rei/rei-cedar-vue-2) — ★ 114 — Welcome to the REI Digital Design System presentation framework. A home for modular components based on our evolving design patterns.
+- [Skarlso](https://github.com/Skarlso/adventure-voter) — ★ 113 — Choose your own adventure style Presentation framework.
+- [pranaygp](https://github.com/pranaygp/mdx-code) — ★ 110 — MDX deck layout for runnable code
+- [jtrussell](https://github.com/jtrussell/bedecked) — ★ 109 — Turn markdown files into html presentations you can share with dropbox (or S3, or...)
+- [nttmdlab-nlp](https://github.com/nttmdlab-nlp/SlideVQA) — ★ 107 — SlideVQA: A Dataset for Document Visual Question Answering on Multiple Images (AAAI2023)
+- [shower](https://github.com/shower/core) — ★ 101 — Core of Shower HTML presentation engine
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-impress.js) — ★ 100 — impress.js - Slide Show (S9) Template Pack
+- [frictionlessdata](https://github.com/frictionlessdata/livemark) — ★ 99 — Data presentation framework for Python that generates static sites from extended Markdown with interactive charts, tables, scripts, and other features
+- [wshuyi](https://github.com/wshuyi/markdown2slides) — ★ 98 — Tools for converting Markdown Source File to Reveal.js HTML5 slides
+- [kslides](https://github.com/kslides/kslides) — ★ 96 — kslides is a Kotlin DSL wrapper for reveal.js. It is meant for people who would prefer to build presentations with IntelliJ than Powerpoint.
+- [piever](https://github.com/piever/Remark.jl) — ★ 94 — Create markdown presentations from Julia
+- [slidekit](https://github.com/slidekit/s6) — ★ 91 — S6 Blank - Slideshow templates using HTML 5, CSS 3 'n' JavaScript 2017+ w/ Bespoke.js-compatible "microkernel"
+- [edjafarov](https://github.com/edjafarov/remote-impress) — ★ 88 — This is remote Impress.js and Deck.js presentation controller. Allows to use phone for switching slides.
+- [HugoGranstrom](https://github.com/HugoGranstrom/nimiSlides) — ★ 88 — A Reveal.js theme for nimib for making slideshow presentations in Nim
+- [emitanaka](https://github.com/emitanaka/ninja-theme) — ★ 88 — A xaringan / remark js ninja theme
+- [codepen](https://github.com/codepen/slideVars) — ★ 87 — UI for Updating CSS Custom Properties
+- [yoshiki](https://github.com/yoshiki/markdown2impress) — ★ 87 — markdown2impress is script to convert markdown into presentation using impress.js.
+- [bketelsen](https://github.com/bketelsen/slides) — ★ 86 — create, live-preview, edit, and publish reveal.js slide decks
+- [hrbrmstr](https://github.com/hrbrmstr/quarto-organization-template) — ★ 83 — A Quarto RevealJS Organization Boilerplate Template You Can Clone And Modify Quickly
+- [Chleba](https://github.com/Chleba/tui-slides) — ★ 83 — Terminal Presentation program with modern TUI
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-codewindow) — ★ 82 — Styled code block windows with file tabs for Quarto RevealJS presentations.
+- [amnotyoung](https://github.com/amnotyoung/slide-meme-inserter) — ★ 82 — Plan, source, and insert recognizable memes into HTML slide decks for Claude Code and Codex.
+- [rajgoel](https://github.com/rajgoel/reveal.js-demos) — ★ 82 — Demo presentations for reveal.js
+- [garthtarr](https://github.com/garthtarr/sydney_xaringan) — ★ 82 — University of Sydney theme for xaringan (remark.js)
+- [Dawntraoz](https://github.com/Dawntraoz/slidev-theme-unicorn) — ★ 80 — A Unicorn theme for Slidev slides based on dawntraoz.com design.
+- [ChristianKohler](https://github.com/ChristianKohler/web-presentation) — ★ 78 — Pure Web Components Presentation Framework
+- [tasmo](https://github.com/tasmo/reveal-jekyll) — ★ 78 — Online presentation for GitHub Pages and Jekyll in Markdown using reveal.js with a Solarized Color Theme
+- [argyleink](https://github.com/argyleink/slyd) — ★ 77 — Snappy, responsive, touch optimized, bi-directional presentation framework
+- [LinusBorg](https://github.com/LinusBorg/slidev-theme-vuetiful) — ★ 76 — A Slidev Theme for my talks about Vue.js
+- [gamell](https://github.com/gamell/markpress) — ★ 76 — A command line tool and node package to convert markdown files into self-contained impressjs html presentations
+- [bbucior](https://github.com/bbucior/drposter) — ★ 76 — Generate Academic Posters in R Markdown and CSS, inspired by 'reveal.js'
+- [twitter-archive](https://github.com/twitter-archive/cdk) — ★ 75 — CDK is a tool to quickly generate single-file html slide presentations from AsciiDoc
+- [manoelcampos](https://github.com/manoelcampos/asciidoctor-ghpages-action) — ★ 75 — 📄⚙️ GitHub Action to build AsciiDoc GitHub Pages: recursively converts every adoc file to html, renaming resulting README.html to index.html. It also enables...
+- [incompl](https://github.com/incompl/slide) — ★ 75 — JavaScript slides without pain
+- [iridite](https://github.com/iridite/slidev-templates) — ★ 74 — ??????? Slidev ????????
+- [MuTsunTsai](https://github.com/MuTsunTsai/slidev-theme-frankfurt) — ★ 74 — A theme for Slidev, inspired by the Frankfurt theme in Beamer.
+- [ex-makina](https://github.com/ex-makina/marklight) — ★ 74 — MarkLight is a presentation framework for Unity that allows you to create scene elements in a language similar to HTML.
+- [n2o](https://github.com/n2o/reveal-cljs) — ★ 73 — reveal.js + ClojureScript = Awesome presentations with joy
+- [antfu](https://github.com/antfu/slidev-new) — ★ 73 — Slidev Online, powered by StackBlitz ??
+- [emacsmirror](https://github.com/emacsmirror/org-re-reveal) — ★ 72 — Org export to reveal.js presentations
+- [joshed-io](https://github.com/joshed-io/revealjs-themes) — ★ 72 — 👨‍🎨 Free Reveal.js themes including robot-lung and sunblind
+- [humrochagf](https://github.com/humrochagf/revelation) — ★ 71 — Make awesome reveal.js presentations with revelation :sparkler:
+- [rsarver](https://github.com/rsarver/stella-decks) — ★ 69 — HTML slide deck system with design system, viewer, and PDF export. AI-native via Claude Code.
+- [estruyf](https://github.com/estruyf/slidev-theme-the-unnamed) — ★ 69 — Slidev Theme - The unnamed
+- [lorniu](https://github.com/lorniu/ox-spectacle) — ★ 68 — Slideshow tool on Emacs, that build HTML presentation with Spectacle.js from Org Mode.
+- [lightvue](https://github.com/lightvue/slidev-theme-light-icons) — ★ 67 — A light and Elegant theme for Slidev
+- [w0rm](https://github.com/w0rm/elm-slice-show) — ★ 66 — A simple presentation engine in Elm
+- [a-nau](https://github.com/a-nau/markdownslides) — ★ 65 — A "markdown-first" approach for generating beautiful browser-based slides easily. Based on Reveal.js and Reveal-Jekyll.
+- [berteh](https://github.com/berteh/mindslide) — ★ 64 — View Freeplane mindmap as an HTML presentation (aka freemind to powerpoint slideshow)
+- [hylarucoder](https://github.com/hylarucoder/slidev-react) — ★ 64 — —
+- [beatrizmilz](https://github.com/beatrizmilz/quarto-rladies-theme) — ★ 63 — R-Ladies template for Quarto presentations with reveal.js
+- [zanecole10](https://github.com/zanecole10/presentation-builder) — ★ 63 — AI-powered presentation creation system using Claude Code to transform scripts into beautiful HTML presentations
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-nes-theme) — ★ 60 — A Quarto reveal.js theme based on NES.css
+- [haschek](https://github.com/haschek/Foafpress) — ★ 59 — An open-source PHP web application and presentation engine for RDF data stored in files, e.g. your FOAF profile. It allows you to aggregate and publish data ...
+- [Gnepux](https://github.com/Gnepux/SlideView) — ★ 58 — —
+- [jimmyjacobson](https://github.com/jimmyjacobson/swot) — ★ 57 — Reveal.JS presentation for SWOT class
+- [wmh](https://github.com/wmh/circular-slides-generator) — ★ 56 — Generates circular slides for impress.js presentations.
+- [ventas319](https://github.com/ventas319/microsoft-ai-livestream-slidevault) — ★ 56 — Microsoft AI Trainer 2026 LiveStream Slides & Presentation Deck Guide
+- [imakewebthings](https://github.com/imakewebthings/deck2pdf) — ★ 55 — What it says on the tin. deck.js -> pdf
+- [tell-k](https://github.com/tell-k/sphinxjp.themes.revealjs) — ★ 55 — A sphinx theme for generate reveal.js presentation. #sphinxjp
+- [codesstar](https://github.com/codesstar/next-slide) — ★ 55 — 你的下个 slide，何必是 PPT — AI-powered HTML presentations. 26+ styles, zero dependencies, bilingual. Works with Claude Code & OpenClaw.
+- [oknozor](https://github.com/oknozor/unveil-rs) — ★ 55 — Unveil Rs is a tool to create presentations from markdown inspired by reveal.js, mdbook and zola.
+- [Smile-SA](https://github.com/Smile-SA/slidev-component-poll) — ★ 55 — Poll component for Slidev
+- [bouzidanas](https://github.com/bouzidanas/react-reveal-slides) — ★ 53 — Create and add reveal.js presentations in react
+- [xarvh](https://github.com/xarvh/elm-slides) — ★ 53 — Awesome presentation framework to create your slides in Elm.
+- [jirengu](https://github.com/jirengu/ppt-cli) — ★ 52 — a slides framework using makrdown
+- [gapple](https://github.com/gapple/myplanet-revealjs) — ★ 52 — Reveal.js with Myplanet Theme
+- [fabianabarca](https://github.com/fabianabarca/slidev-theme-kalouk) — ★ 52 — A theme for Slidev
+- [shameerc](https://github.com/shameerc/Revealer.js) — ★ 51 — Multi-user Reveal.js presentations.
+- [agentofuser](https://github.com/agentofuser/remark-oembed) — ★ 51 — Convert URLs in markdown for youtube, twitter, etc. surrounded by newlines into html embeds
+- [e-gor](https://github.com/e-gor/Reveal.js-Title-Footer) — ★ 50 — Footer showing title for Reveal.js HTML presentations
+- [e-gor](https://github.com/e-gor/Reveal.js-TOC-Progress) — ★ 50 — LaTeX Beamer-like progress indicator according to table of contents for Reveal.js HTML presentations
+- [AvencastF](https://github.com/AvencastF/slidev-theme-hep) — ★ 50 — Academic style Slidev theme for High Energy Physics
+- [asciidoctor](https://github.com/asciidoctor/asciidoctor-bespoke) — ★ 50 — :b: An Asciidoctor converter that generates the HTML component of a Bespoke.js presentation from AsciiDoc.
+- [seacen](https://github.com/seacen/deckify) — ★ 49 — URL to HTML slide design system that genuinely enables AI-native slides for real work environments
+- [SpringOne2GX-2014](https://github.com/SpringOne2GX-2014/microservice-security) — ★ 49 — Various code samples from the http://presos.dsyer.com/decks/microservice-security.html presentation by Dave Syer
+- [regisb](https://github.com/regisb/reveal.js-fullscreen-img) — ★ 48 — [DEPRECATED] Display gorgeous fullscreen images in reveal.js presentations
+- [felixrieseberg](https://github.com/felixrieseberg/Reveal-PikeStreet) — ★ 48 — "Pike Street" Theme for Reveal.js, intended for Microsoft's DX's Open Source Engineers
+- [ebow](https://github.com/ebow/bespoke-fx) — ★ 48 — CSS slide transitions for Bespoke.js
+- [Rokt33r](https://github.com/Rokt33r/remark-collapse) — ★ 48 — Make a section collapsible!
+- [jxpeng98](https://github.com/jxpeng98/slidev-theme-scholarly) — ★ 47 — A professional presentation theme for Slidev, designed specifically for academic presentations with LaTeX Beamer-inspired styling.
+- [hexmode](https://github.com/hexmode/ox-reveal) — ★ 46 — Reveal.js Presentation Back-End for Org Export Engine
+- [m42e](https://github.com/m42e/impress.js-progress) — ★ 46 — Progressbar and pagexounter for impress.js presentation
+- [TheoCUC](https://github.com/TheoCUC/slidev-theme-prussianblue) — ★ 46 — a nice slidev theme
+- [frederickf](https://github.com/frederickf/presentable) — ★ 45 — Adds a table of contents to HTML based presentations including reveal.js, html5slides, io-2012-slide, Shower and impress.js
+- [pheymann](https://github.com/pheymann/scala-reveal-js) — ★ 45 — Build reveal.js presentations in Scala
+- [superwf](https://github.com/superwf/vue-impress) — ★ 45 — vue component inspired by impress.js
+- [patrick-fu](https://github.com/patrick-fu/frontend-harness-slides) — ★ 44 — Build slide decks as a harness-guarded engineering project  robust, maintainable, and hard to break. A step up from single-file HTML slides.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-letterbox) — ★ 44 — A Quarto reveal.js theme based on xaringan letterbox
+- [ulf](https://github.com/ulf/markdown2deckjs) — ★ 44 — Create beautiful deck.js slides directly from markdown text
+- [slara](https://github.com/slara/generator-impress) — ★ 44 — A Yeoman generator for the breathtaking Impress.js presentation framework.
+- [Loewe1000](https://github.com/Loewe1000/typstage) — ★ 44 — Animated HTML presentations from a single Typst file, and a slide deck and handout as PDF from the same source. Typst typesets, the browser moves.
+- [arthurrump](https://github.com/arthurrump/tldreveal) — ★ 44 — A drawing tool for Reveal.js based on tldraw
+- [wuhaoyupku](https://github.com/wuhaoyupku/html-mender) — ★ 43 — HTML Slide Mender helps you visually edit HTML slide decks and AI-generated presentation pages.
+- [sergioramos](https://github.com/sergioramos/remark-hint) — ★ 43 — Sprinkle hints/tips/warnings on your documents
+- [RealOrangeOne](https://github.com/RealOrangeOne/hugo-theme-revealjs) — ★ 43 — Use Hugo to build a presentation, powered by RevealJS
+- [shower](https://github.com/shower/material) — ★ 42 — Material theme for Shower HTML presentation engine
+- [PerfectlySoft](https://github.com/PerfectlySoft/Perfect-Markdown) — ★ 42 — A solution to convert markdown text into html presentation in Swift, based on GerHobbelt's "upskirt" project.
+- [iiif-prezi](https://github.com/iiif-prezi/iiif-prezi3) — ★ 42 — IIIF Presentation API 3 Python Library
+- [BrendanEich](https://github.com/BrendanEich/Strange-Loop-2012) — ★ 41 — My Strange Loop 2012 slideshow (reveal.js-based HTML/JS/CSS)
+- [smallqiang](https://github.com/smallqiang/SlideView) — ★ 41 — 模仿网易新闻和搜狐新闻的首页效果，在内容页拖动的时候将不会加载数据
+- [RobinCK](https://github.com/RobinCK/vue-presentation) — ★ 41 — :books: A Vue.js presentation 🇺🇦
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-imagemover) — ★ 40 — repositioning and resizing of images directly in quarto revealjs slides
+- [triplecanopy](https://github.com/triplecanopy/alongslide) — ★ 40 — Alongslide is a responsive, horizontal presentation framework for long-form reading on the web, employing a lightweight templating syntax for Markdown.
+- [Zenika](https://github.com/Zenika/asciidoc-stack) — ★ 40 — SYNCHRONIZED FROM GITLAB. A full AsciiDoc extended example generating both HTML PDF and Reveal.js slides #asciidoctor #plantuml #reveal
+- [Multiomics-Analytics-Group](https://github.com/Multiomics-Analytics-Group/vuegen) — ★ 40 — VueGen automates the creation of reports from bioinformatics outputs, supporting formats like PDF, HTML, DOCX, ODT, PPTX, Reveal.js, Jupyter notebooks, and S...
+- [brenopolanski](https://github.com/brenopolanski/remark-boilerplate) — ★ 40 — A boilerplate to create presentations using remark, Gulp, Stylus and more.
+- [houqp](https://github.com/houqp/asciidoc-deckjs) — ★ 39 — A deck.js backend for asciidoc
+- [krasimir](https://github.com/krasimir/simpre) — ★ 39 — HTML presentation framework
+- [shower](https://github.com/shower/ribbon) — ★ 39 — Ribbon theme for Shower HTML presentation engine
+- [flowtricks](https://github.com/flowtricks/remarkable) — ★ 39 — Sanity + Next.js Presentation visual page builder — canvas editing, drag reorder, 3D logo
+- [alleyinteractive](https://github.com/alleyinteractive/revealjs-wp-theme) — ★ 38 — Power your reveal.js presentation with WordPress
+- [pacharanero](https://github.com/pacharanero/revealjs-submodule-template) — ★ 38 — Reveal.js template presentation in a GitHub repo template. Test it out at:
+- [justin-vanwinkle](https://github.com/justin-vanwinkle/presentation-builder) — ★ 38 — A simplistic way to create stunning presentations with speed using Reveal.js and Docker.
+- [SamanLan](https://github.com/SamanLan/SlideValidation) — ★ 38 — 滑动验证码
+- [leochiu-a](https://github.com/leochiu-a/slidev-workspace-starter) — ★ 38 — Slidev monorepo starter with pnpm workspace support.
+- [shinokada](https://github.com/shinokada/markdown-docs-as-pdf) — ★ 38 — A Bash Script to create PDF documents for React, Vue, Svelte, SvelteKit, Nuxt, Vitest, pnpm, Slidev, and more.
+- [swartzrock](https://github.com/swartzrock/reveal.js-to-pdf) — ★ 37 — Convert a Reveal.js slide deck to PDF
+- [cliffe](https://github.com/cliffe/AwesomeSlides) — ★ 36 — AwesomeSlides makes awesome HTML5/CSS slides (based on Reveal.js) by converting slides made with LibreOffice.
+- [danielsimons1](https://github.com/danielsimons1/impress-audio) — ★ 36 — Small addition to impress.js to allow for html5 audio in your presentation
+- [twitwi](https://github.com/twitwi/deck.js) — ★ 36 — Better Modern HTML Presentations
+- [slidevjs](https://github.com/slidevjs/container) — ★ 36 — Container building scripts for Slidev
+- [nikku](https://github.com/nikku/pfwr) — ★ 35 — Turns your Markdown file into a beautiful HTML slide deck. Batteries included.
+- [gcalmettes](https://github.com/gcalmettes/reveal.js-webpack-kit) — ★ 35 — The power of Reveal combined with the convenience and versatility of a build system
+- [lissy93](https://github.com/lissy93/cyber-defence-presentation) — ★ 35 — 🖥️ A reveal.js website for presenting the cyber security basics to humans
+- [tangramor](https://github.com/tangramor/slidev_docker) — ★ 35 — Docker image scripts for Slidev
+- [kokdemo](https://github.com/kokdemo/impress.js-tutorial-in-Chinese) — ★ 35 — impress.js的中文教程
+- [iiif-prezi](https://github.com/iiif-prezi/iiif-prezi) — ★ 35 — IIIF Presentation API implementation in Python
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-earth) — ★ 34 — Watercolor earth Quarto reveal.js theme
+- [bouzidanas](https://github.com/bouzidanas/streamlit-reveal-slides) — ★ 34 — Create and add reveal.js HTML presentations to your Streamlit app!
+- [slidevjs](https://github.com/slidevjs/slidev-covers) — ★ 34 — —
+- [naugtur](https://github.com/naugtur/builder4impress) — ★ 34 — A tool to build slides in impress.js in a WYSIWYG manner
+- [jeffgca](https://github.com/jeffgca/html5slides) — ★ 34 — Fork from google code of Google's html5 slides, to use for doing html-based online slide decks
+- [heycalmdown](https://github.com/heycalmdown/miniseminar) — ★ 33 — Confluence as a backend -> Express -> reveal.js as a presentation -> Profit!
+- [biqinglin](https://github.com/biqinglin/slideView) — ★ 33 — 三张卡片无限复用
+- [baptiste-genest](https://github.com/baptiste-genest/slope) — ★ 33 — A C++ 3D animated slide engine based on polyscope. Easily pluggable on top of your scientific code to bring it to life.
+- [zhangrongchuan](https://github.com/zhangrongchuan/slideleaf) — ★ 32 — AI-native HTML slide studio for generating, editing, and collaborating on presentation workspaces.
+- [hax](https://github.com/hax/Slides) — ★ 32 — Just a simple slides framework built on HTML5 techs
+- [sudodoki](https://github.com/sudodoki/reveal-cleaver-theme) — ★ 32 — Reveal.js theme for cleaver slides
+- [qti3e](https://github.com/qti3e/Impress-full) — ★ 32 — Impress.js with lots of new animation and etc, demo:
+- [Termina1](https://github.com/Termina1/react-shower) — ★ 32 — Shower presentation engine running on React
+- [azu](https://github.com/azu/slide-pdf.js) — ★ 32 — Presentation tools for pdf file in browser.
+- [melissavanbussel](https://github.com/melissavanbussel/theme-generator) — ★ 31 — A Quarto revealjs theme generator
+- [sylhare](https://github.com/sylhare/Reveal-Jekyll) — ★ 31 — ✨ Web presentation with Markdown, Reveal.js and Jekyll
+- [orapouso](https://github.com/orapouso/fox-angular-scrollReveal.js) — ★ 31 — Angular directive to allow the use of scrollReveal.js project
+- [anantshri](https://github.com/anantshri/present) — ★ 31 — revealjs workflow automation: reveal.js + external markdown mixed with some bash awesomeness to automate routine presentation tasks
+- [gawel](https://github.com/gawel/impress) — ★ 31 — generate slide with impress.js based on a rest file
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-timeline) — ★ 31 — Styled timeline layouts for Quarto HTML and RevealJS documents, with horizontal, vertical, and alternating modes.
+- [ThomasWeinert](https://github.com/ThomasWeinert/reveal-embed-video) — ★ 30 — Embed live local media (including video) into a reveal.js presentation
+- [lunarmoon26](https://github.com/lunarmoon26/UnityPresentationFramework) — ★ 30 — Archived Unity 5.5 3D presentation framework; continued by the independent PrismDeckJS project
+- [anthonywritescode](https://github.com/anthonywritescode/markdown-to-presentation) — ★ 30 — A build tool to turn markdown into an html presentation and then publish to gh-pages
+- [moudev](https://github.com/moudev/slidev-theme-purplin) — ★ 30 — Slidev theme
+- [leochiu-a](https://github.com/leochiu-a/slidev-theme-gemini) — ★ 30 — A Slidev theme inspired by cinematic cover layouts, dramatic typography, and staged motion.
+- [twitwi](https://github.com/twitwi/deck.browsercast.js) — ★ 30 — Synchronize an audio soundtrack with you deck.js slides.
+- [threefoldtecharchive](https://github.com/threefoldtecharchive/slides2html) — ★ 30 — convert google slides to revealjs website
+- [ThomasR](https://github.com/ThomasR/minislides) — ★ 29 — The minimal HTML slide presentation framework
+- [theno](https://github.com/theno/revealjs_template) — ★ 29 — reveal.js presentation written in markdown
+- [FormidableLabs](https://github.com/FormidableLabs/spectacle-cli) — ★ 29 — CLI for the Spectacle Presentation Framework
+- [ronalfy](https://github.com/ronalfy/wp-presenter) — ★ 29 — A WordPress theme based on Reveal.js
+- [Demons-Bee](https://github.com/Demons-Bee/SlideViewControllerDemo) — ★ 29 — Demo集侧滑,Nav,Tab,ViewPager,SideView,TapGesture于一身,可以高度自定义的容器
+- [rmackinnon](https://github.com/rmackinnon/impresto.js) — ★ 29 — Client-side control of an impress.js slide show. To be used with the Prestidigitation server.
+- [ysugimoto](https://github.com/ysugimoto/resumify) — ★ 28 — Capture screenshot and make PDF on your HTML presentation.
+- [dmitry-korolev](https://github.com/dmitry-korolev/remeal) — ★ 28 — Reveal.js remote control
+- [jens-na](https://github.com/jens-na/jekyll-reveal) — ★ 28 — Jekyll template for presentations with reveal.js
+- [filiphric](https://github.com/filiphric/slidev-theme-excali-slide) — ★ 28 — —
+- [klamping](https://github.com/klamping/deck.narrator.js) — ★ 28 — Module for deck.js to add audio narration to slides
+- [artpolikarpov](https://github.com/artpolikarpov/shower-meteor) — ★ 28 — Create, store and remotely control your Shower presentation
+- [benstigsen](https://github.com/benstigsen/RemarkPortable) — ★ 28 — Remark made simple and portable
+- [remarkjs](https://github.com/remarkjs/remark-jsx) — ★ 28 — A simple way to use React inside Markdown.
+- [iamskok](https://github.com/iamskok/jamstack.systems) — ★ 28 — Gatsby MDX Deck presentation about JAMstack 💛 ⚙️ 📝
+- [pomber](https://github.com/pomber/create-code-surfer-deck) — ★ 28 — Initialize a project with mdx deck and code surfer
+- [amouat](https://github.com/amouat/revealjs-docker) — ★ 27 — Reveal JS Presentation Software in a Docker Container
+- [Farewe1ll](https://github.com/Farewe1ll/quarto-revealjs-beamer) — ★ 27 — —
+- [silentbicycle](https://github.com/silentbicycle/markdown_to_reveal) — ★ 27 — minimal plumbing to convert slides in markdown to reveal.js presentations via pandoc
+- [bentolor](https://github.com/bentolor/java8-lightningtalk) — ★ 27 — What's new in Java 8? A developer focuses short presentation (20 min) created with the awesome reveal.js
+- [godkun](https://github.com/godkun/ppt-template) — ★ 27 — blazing ppt template with slidev
+- [houlucky](https://github.com/houlucky/SlideViewDemo) — ★ 27 — 仿钉钉头像动画
+- [skeeto](https://github.com/skeeto/jekyll-deck) — ★ 27 — Template for Jekyll / deck.js presentations
+- [harperreed](https://github.com/harperreed/bigpy) — ★ 27 — a quick python helper that generates a big.js presentation
+- [laysent](https://github.com/laysent/remark-ruby) — ★ 27 — Custom syntax for remarkjs, adding ruby (furigana) to markdown.
+- [vivaxy](https://github.com/vivaxy/node-reveal) — ★ 26 — 🎁A reveal.js cli
+- [tboerger](https://github.com/tboerger/slidev-theme-meetup) — ★ 26 — Meetup theme for Slidev
+- [tompro](https://github.com/tompro/impress-server) — ★ 26 — A node server that allows you to share an impress.js presentation with other browsers
+- [extrawurst](https://github.com/extrawurst/presentui) — ★ 26 — small and simple terminal presentation tool written in rust
+- [sukima](https://github.com/sukima/tiddlywiki-reveal-js) — ★ 25 — Embed Reveal.js presentations inside a TiddlyWiki
+- [mattdark](https://github.com/mattdark/reveal.js-gallery) — ★ 25 — A gallery for your reveal.js presentations
+- [nrennie](https://github.com/nrennie/learning-statistics-with-webR) — ★ 25 — Quarto revealjs slides to teach introductory statistics concepts using webR.
+- [kbariotis](https://github.com/kbariotis/presentador) — ★ 25 — 📽 An opinionated presentation framework. Just write what you want to present and it will do the rest.
+- [Brain-ai-biz](https://github.com/Brain-ai-biz/Brain-edit-slides) — ★ 25 — ✏️ Canva-style visual Edit Mode for any HTML presentation built with Claude Code - drag, edit text, paste screenshots, save. Zero dependencies.
+- [Martinomagnifico](https://github.com/Martinomagnifico/quarto-simplemenu) — ★ 25 — A simple menu for Reveal.js using Quarto
+- [anjandn](https://github.com/anjandn/manim_reveal) — ★ 25 — Combines the manim library with reveal.js to create animated slides.
+- [kecrily](https://github.com/kecrily/slidev-theme-takahashi) — ★ 25 — A takahashi style slidev theme.
+- [7449](https://github.com/7449/SlideView) — ★ 25 — Address Book Quick Index
+- [kvenux](https://github.com/kvenux/poddeck) — ★ 25 — Podcast → Slidev deck aggregator, generated by Claude Code
+- [ktym4a](https://github.com/ktym4a/slidev-theme-ktym4a) — ★ 25 — A pastel-colored Slidev theme built with Catppuccin palette, designed for developers who love soft and eye-friendly colors.
+- [dime-worldbank](https://github.com/dime-worldbank/quarto-dime-theme) — ★ 24 — DIME theme for Quarto Reveal.js Presentations
+- [Design-Arena](https://github.com/Design-Arena/html-to-pptx) — ★ 24 — Convert HTML slide decks to editable PowerPoint files using browser-based DOM measurement
+- [tavallaie](https://github.com/tavallaie/pyreveal) — ★ 24 — PyReveal is a Python library that allows users to generate Reveal.js presentations programmatically. With PyReveal, you can easily create slides, set themes,...
+- [ofkoru](https://github.com/ofkoru/quarto-leader-line) — ★ 24 — Draw a line between HTML elements in your Quarto-Revealjs presentation using leader-line.
+- [fdehau](https://github.com/fdehau/deck) — ★ 24 — CLI to make HTML presentations from Markdown documents
+- [Smile-SA](https://github.com/Smile-SA/slidev-component-progress) — ★ 24 — Progress component for Slidev
+- [johnpolacek](https://github.com/johnpolacek/WhatTheHeckIsResponsiveWebDesign-impressjs) — ★ 24 — An impress.js presentation on responsive web design.
+- [awgreenblatt](https://github.com/awgreenblatt/reveal-shaders) — ★ 23 — Reveal.js presentation using CSS Shaders for transitions
+- [grantmcdermott](https://github.com/grantmcdermott/quarto-revealjs-clean-demo) — ★ 23 — Demo slides for the clean Quarto revealjs theme
+- [octosteve](https://github.com/octosteve/slide_hero) — ★ 23 — Used to create slides backed by reveal.js
+- [Kat-Codes](https://github.com/Kat-Codes/building-talks-with-reveal.js) — ★ 23 — A talk about building talks with Reveal.js (with React)
+- [nicdaCosta](https://github.com/nicdaCosta/generator-revealjs) — ★ 23 — A Yeoman generator for creating a reveal.js slide show
+- [dermike](https://github.com/dermike/slide-beacon) — ★ 23 — Share URL's in presentational slides from a Physical Web Eddystone beacon, making the current Reveal.js slide link only a tap away for the audience.
+- [tycloud97](https://github.com/tycloud97/slidev-aws) — ★ 23 — —
+- [mizuirorivi](https://github.com/mizuirorivi/slidev-overflow-checker) — ★ 23 — A CLI tool that automatically cycles through each page (slide) and detects overflows.
+- [pjdoland](https://github.com/pjdoland/deck2video) — ★ 23 — Convert Marp or Slidev decks into narrated MP4 videos with local or cloud-based AI voice cloning.
+- [mikejholly](https://github.com/mikejholly/impressive-markdown) — ★ 23 — Generate fancy impress.js presentations using markdown.
+- [eueung](https://github.com/eueung/hugo-remark-twemoji) — ★ 23 — Writing remark slides with conversational (Tw)emoji within Hugo
+- [Jancat](https://github.com/Jancat/react-native-slide-verify) — ★ 23 — A pure JavaScript <SlideVerify> component for react-native
+- [jinnyjiinlee](https://github.com/jinnyjiinlee/presenter-mode) — ★ 22 — PowerPoint-grade presenter view for HTML slide decks  speaker notes, timer, ink, area zoom, break screen. One file, no install, works offline. (HTML ????? ??...
+- [martinring](https://github.com/martinring/cobra) — ★ 22 — Proof and Code Presentation Framework
+- [datopian](https://github.com/datopian/portal.js.bak) — ★ 22 — 🌀 The JS data presentation framework. For a single dataset to a full catalog.
+- [dhondta](https://github.com/dhondta/mkdocs-revealjs-template) — ★ 22 — Template of MkDocs + Reveal.js static documentation website
+- [int64ago](https://github.com/int64ago/node-reveal) — ★ 22 — :package: [npm] Node CLI for reveal.js
+- [jsulpis](https://github.com/jsulpis/slides-template) — ★ 22 — Minimalist template for creating slides with Reveal.js and Astro
+- [benfoxall](https://github.com/benfoxall/slide-builder) — ★ 22 — A dynamic slide builder for reveal.js
+- [alejandrogallo](https://github.com/alejandrogallo/reveal-template) — ★ 22 — Simple reveal.js template with mathjax support and no node or npm dependencies, just a good old Makefile
+- [StephanSchmidt](https://github.com/StephanSchmidt/loupe) — ★ 22 — Open-source CLI that measures AI coding-assistant impact (Claude Code, Copilot, Cursor, Aider) across Bitbucket+Jira, GitHub, GitLab, Azure DevOps, or Linear...
+- [maiermic](https://github.com/maiermic/reveal-md-mermaid-animation-example) — ★ 22 — Example of how to animate mermaid diagrams in reveal-md using fragments
+- [cedricdelpoux](https://github.com/cedricdelpoux/gatsby-remark-images-grid) — ★ 22 — Use css grid layouts in markdown
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quartomonothemer) — ★ 21 — Makes a Monotone Theme for Quarto Revealjs, {ggplot2}, and {gt}.
+- [carlosfrodrigues](https://github.com/carlosfrodrigues/silkscreen) — ★ 21 — Generate FullPage HTML slides with Markdown
+- [JuliusWiedemann](https://github.com/JuliusWiedemann/MarpThemeWave) — ★ 21 — Custom theme "wave" for the marp presentation framework
+- [rossb34](https://github.com/rossb34/PortfolioAnalyticsPresentation) — ★ 21 — Repository for exploring ways to develop html presentation for the PortfolioAnalytics package
+- [awesome-skills](https://github.com/awesome-skills/create-html-deck) — ★ 21 — Build and verify browser-native HTML presentations for laptops and projectors.
+- [gshmu](https://github.com/gshmu/regex_slide) — ★ 21 — 基于markdown和remarkjs的regex课件
+- [shkumagai](https://github.com/shkumagai/sphinxjp.themes.impressjs) — ★ 20 — HTML Slide Theme package for Sphinx documentation tool.
+- [popomore](https://github.com/popomore/liquidluck-theme-reveal) — ★ 20 — liquidluck theme for reveal.js
+- [13rac1](https://github.com/13rac1/rjsmake) — ★ 20 — Use Markdown to generate a Reveal.js presentation in minutes.
+- [thlorenz](https://github.com/thlorenz/talks) — ★ 20 — Numerous talks I gave at meetups and conferences some based on reveal.js.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/workshop-slidecrafting) — ★ 20 — A 2-hour hands-on workshop on making beautiful slides with reveal.js and Quarto
+- [sanjeed5](https://github.com/sanjeed5/cursor-slidev) — ★ 20 — Make slides using Cursor. Sample slides below:
+- [loftkun](https://github.com/loftkun/slidev-example) — ★ 20 — an example of using Slidev to generate presentation slides from Markdown.
+- [sylvainw](https://github.com/sylvainw/HTML5-Future) — ★ 20 — Quick presentation about HTML5 future based on Impress.JS
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-cinco-de-mayo) — ★ 19 — Cinco de Mayo Quarto reveal.js theme
+- [bahmutov](https://github.com/bahmutov/reveal-vite) — ★ 19 — Example HTML presentation with Reveal.js bundled with Vite.js
+- [jfonsecarivera](https://github.com/jfonsecarivera/imessage-wrapped) — ★ 19 — Generate Spotify Wrapped-style HTML presentations for your iMessage conversations
+- [MrOrz](https://github.com/MrOrz/webdev) — ★ 19 — 不囉唆學 HTML。以 reveal.js 製作的 HTML / CSS / JS 投影片。
+- [jschildgen](https://github.com/jschildgen/db-slides) — ★ 19 — Interactive SQL lecture slides based on reveal.js
+- [rhuss](https://github.com/rhuss/docker-reveal) — ★ 19 — Docker image for creating and serving reveal.js presentation ... special effects included
+- [julie-ng](https://github.com/julie-ng/tidy-revealjs) — ★ 19 — A custom theme and build system for reveal.js
+- [Esri](https://github.com/Esri/reveal.js) — ★ 19 — perennial location for Esri Reveal.js conference templates
+- [jlabusch](https://github.com/jlabusch/reveal-sync) — ★ 19 — Synchronized distributed Reveal.js presentations
+- [TheoCUC](https://github.com/TheoCUC/slidev-theme-vatis) — ★ 19 — A slide theme for vats
+- [LSTM-Kirigaya](https://github.com/LSTM-Kirigaya/slidev-theme-miracle) — ★ 19 — Academic slidev theme for USTC 🎓
+- [yhatt](https://github.com/yhatt/poc-marp-slidev) — ★ 19 — —
+- [chrisjaure](https://github.com/chrisjaure/deckjs-remote) — ★ 19 — Remote control for deck.js
+- [DamonOehlman](https://github.com/DamonOehlman/deckem) — ★ 19 — DEPRECATED: Jade + deck.js awesomeness
+- [camerond](https://github.com/camerond/remarkymark) — ★ 19 — A Middleman server for Remark.js presentations
+- [Wodsoft](https://github.com/Wodsoft/upf) — ★ 18 — Universal Presentation Framework
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-reveal.js) — ★ 18 — reveal.js - Slide Show (S9) Template Pack
+- [jctophefabre](https://github.com/jctophefabre/deveal) — ★ 18 — a reveal.js helper tool
+- [Data-Wise](https://github.com/Data-Wise/dtslides) — ★ 18 — Quarto reveal.js themes for academic presentations — academic (navy/slate) and UNM-branded (cherry/turquoise)
+- [Naereen](https://github.com/Naereen/slides) — ★ 18 — All the slides of my talks since 2016! Written in LaTeX or Markdown, compiled to pretty PDF with pandoc :sparkles:, and experiments with Marp, reveal.js, rem...
+- [danestves](https://github.com/danestves/slidev-theme-flayyer) — ★ 18 — —
+- [greyli](https://github.com/greyli/image-wall) — ★ 18 — Image wall generator made with impress.js and Flask.
+- [ryan-roemer](https://github.com/ryan-roemer/deck.js-starter) — ★ 18 — A deck.js presentation starter kit with Jade, CodeMirror, JavaScript / CoffeeScript and more goodness.
+- [defunctzombie](https://github.com/defunctzombie/node-presentation) — ★ 18 — c++ modules with node.js presentation and support material
+- [docker-training](https://github.com/docker-training/docker-present) — ★ 18 — Presentation engine for official Mirantis training
+- [nrennie](https://github.com/nrennie/rss-2023-teaching-webR) — ★ 17 — Quarto revealjs slides for RSS International Conference 2023 presentation on teaching with webR.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-spotlight) — ★ 17 — Quarto revealjs spotlight
+- [Granze](https://github.com/Granze/applause) — ★ 17 — HTML presentations powered by Angular JS
+- [yanping](https://github.com/yanping/reveal.js-with-pandoc) — ★ 17 — pandoc template of reveal.js slides
+- [iamvdo](https://github.com/iamvdo/Reveal-liveCoding) — ★ 17 — Live coding in Reveal.js
+- [dougmvieira](https://github.com/dougmvieira/presentations) — ★ 17 — My reveal.js presentations hosted at GitHub Pages
+- [fghaas](https://github.com/fghaas/cookiecutter-presentation) — ★ 17 — A cookiecutter template that generates an opinionated reveal.js presentation
+- [aaronr](https://github.com/aaronr/revealz) — ★ 17 — A simple adaptation of Reveal.js that assumes you want to have your whole presentation in one md file
+- [Martinomagnifico](https://github.com/Martinomagnifico/reveal.js-internation) — ★ 17 — Localization (i10n) or Internationalization (i18n) of Reveal.js presentations. Easy start for translation.
+- [nwinkler](https://github.com/nwinkler/reveal-highlight-themes) — ★ 17 — The Highlight.js syntax themes repackaged for easy usage with Reveal.js
+- [stevegrunwell](https://github.com/stevegrunwell/wordpress-git) — ★ 17 — Reveal.js version of my "Keeping WordPress Under [Version] Control with Git" blog post
+- [rohitshetty00](https://github.com/rohitshetty00/beethoven-melody) — ★ 17 — A gui for creating impress.js presentation!!!
+- [IIIF](https://github.com/IIIF/prezi-2-to-3) — ★ 17 — Libraries to upgrade Presentation API v2 to v3 automatically
+- [d28b](https://github.com/d28b/html-slides) — ★ 16 — HTML Presentation Slides
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-chat-bubbles) — ★ 16 — Add iOS-style chat bubbles to Quarto RevealJS presentations, with fragment support and auto-scroll.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-seasons) — ★ 16 — quarto revealjs seasons theme template
+- [andre-bergner](https://github.com/andre-bergner/qrezi) — ★ 16 — qrezi is a QML based presentation framework inspired by prezi
+- [neo-technologies](https://github.com/neo-technologies/meteor-reveal-js) — ★ 16 — Reveal.js package for Meteor
+- [mikemiles86](https://github.com/mikemiles86/reveal-line-numbers) — ★ 16 — Reveal.js library for displaying line numbers in code examples styled with highlight.js
+- [cologneintelligence](https://github.com/cologneintelligence/reveal.js-remote) — ★ 16 — Remote control your reveal.js presentation with your smartphone!
+- [leouieda](https://github.com/leouieda/talk-template) — ★ 16 — MOVED TO CODEBERG: Template for my reveal.js based slides
+- [hakimel](https://github.com/hakimel/CSS-3D-Slideshow) — ★ 16 — This project has moved to http://github.com/hakimel/reveal.js
+- [wanghao15536870732](https://github.com/wanghao15536870732/SlideView) — ★ 16 — 🔖   Card RecycleViewManager, to make your interface cool.Use recyclerView to add cool effects to the view.
+- [wnielson](https://github.com/wnielson/sencha-SlideView) — ★ 16 — An updated version of sencha-SlideNavigation that is more flexible and also supports containers docked to both sides simultaneously
+- [idbrii](https://github.com/idbrii/vim-remarkjs) — ★ 16 — Turn Markdown into self-contained html slideshows (using remark.js)
+- [javier-mora](https://github.com/javier-mora/pptx-to-html) — ★ 15 — Converts PPTX presentations into self-contained HTML slides using TypeScript.
+- [adamhollett](https://github.com/adamhollett/jekyll-and-slide) — ★ 15 — Markdown slides in Jekyll with reveal.js
+- [segdeha](https://github.com/segdeha/SlideKit) — ★ 15 — Slide deck presentation framework leveraging WebKit transitions
+- [wuyoujae](https://github.com/wuyoujae/matcha.js) — ★ 15 — A modular web presentation framework that transforms Markdown into stunning slides. With per-slide theming and smooth animations, matcha.js is fully extensib...
+- [jvcasillas](https://github.com/jvcasillas/ru_xaringan) — ★ 15 — RU style theme for xaringan html presentations
+- [lifesign](https://github.com/lifesign/laravel_slide) — ★ 15 — A html presentation about laravel
+- [DjebbZ](https://github.com/DjebbZ/revealjs-docpad) — ★ 15 — Create Reveal.js presentations easily with DocPad.
+- [abruzzi](https://github.com/abruzzi/reveal-tw-boilerplate) — ★ 15 — Reveal.js with ThoughtWorks new VI
+- [matbury](https://github.com/matbury/mod_revealjs) — ★ 15 — Moodle 2.5+ resource module for displaying reveal.js multimedia HTML/CSS/JS slide show presentations
+- [divshot](https://github.com/divshot/quick-deck) — ★ 15 — A fast, Markdown based boilerplate for putting together Reveal.js decks.
+- [fbxyz](https://github.com/fbxyz/respysive-slide) — ★ 15 — A Python package that allows you to create interactive presentations  using Python, Bootstrap and Reveal.js.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-diagrams) — ★ 15 — Reveal.js diagram layouts for Quarto slides — circle-flow, pie, process, pyramid, matrix, hierarchy, venn, funnel, and cycle.
+- [cdaringe](https://github.com/cdaringe/revealer) — ★ 15 — develop reveal.js presentations happily, without redundant source or boilerplate
+- [addcnos](https://github.com/addcnos/slidev.ai) — ★ 15 — ai for slidev
+- [Oluwasetemi](https://github.com/Oluwasetemi/school_of_engineering_v4) — ★ 15 — A modern HTML education platform built with Slidev and Vue.js for engineering students. Delivers interactive presentations with custom components, smooth ani...
+- [amra](https://github.com/amra/reveal-md-scripts) — ★ 15 — reveal-md is great project. Improve your presentation even more with custom user scripts. Here is the place to find them.
+- [rlofc](https://github.com/rlofc/understate) — ★ 15 — make stunning terminal presentations using markdown and some ncurses magic
+- [gadenbuie](https://github.com/gadenbuie/revealjs-text-resizer) — ★ 15 — Resize text on quarto slides
+- [olostan](https://github.com/olostan/dacsslide) — ★ 15 — Dart CSS3 based presentation engine
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-tegaki) — ★ 15 — Animated handwriting effects for Quarto HTML and RevealJS documents using the tegaki library.
+- [Honghurumeng](https://github.com/Honghurumeng/oc_sdk_ppt) — ★ 14 — ?? PPT ?? Agent:??????????,??? @opencode-ai/sdk ?? LLM ????????,??? HTML slides,?????? deck.pptx?
+- [DandyLyons](https://github.com/DandyLyons/LinkPreviews) — ★ 14 — A SwiftUI wrapper around LPLinkView from the Link Presentation framework by Apple.
+- [milon](https://github.com/milon/uposthapon) — ★ 14 — Simple markdown to html presentation converver
+- [melix](https://github.com/melix/gradle-presentation-template) — ★ 14 — A presentation template using Asciidoctor+Reveal.js and Gradle
+- [keimlink](https://github.com/keimlink/cookiecutter-reveal.js) — ★ 14 — :bar_chart: A cookiecutter template for reveal.js presentations.
+- [stevegrunwell](https://github.com/stevegrunwell/reveal-ga) — ★ 14 — Add Google Universal Analytics tracking to your reveal.js presentation.
+- [asciidoctor](https://github.com/asciidoctor/asciidoctorj-reveal.js) — ★ 14 — AsciidoctorJ Reveal.js bundles the Asciidoctor Reveal.js RubyGem (asciidoctor-revealjs) so it can be loaded into the JVM using JRuby
+- [patarapolw](https://github.com/patarapolw/reveal-md) — ★ 14 — View markdown files as a presentation in Reveal.js  with CLI
+- [AnneTee](https://github.com/AnneTee/reveal-js-themes) — ★ 14 — reveal.js template slides and custom themes
+- [csev](https://github.com/csev/dazzleSketch) — ★ 14 — A JavaScript library that allows one to sketch over reveal.js presentations or any web page - OmniDazzle meets JavaScript
+- [ofkoru](https://github.com/ofkoru/quarto-animate-graph) — ★ 14 — Create clear, step-by-step visualizations to enhance your teaching and explanations in Reveal.js without any coding knowledge.
+- [mengxn](https://github.com/mengxn/SlideView) — ★ 14 — 滑动显示隐藏菜单，在任何你需要的地方
+- [Mokkapps](https://github.com/Mokkapps/slidev-theme-mokkapps) — ★ 14 — Slidev theme for my brand
+- [lilstiffy](https://github.com/lilstiffy/SlideView) — ★ 14 — A highly customisable slide to trigger action view for Compose!
+- [scottcheng](https://github.com/scottcheng/revolutionary-css3) — ★ 14 — A non-technical intro to CSS level 3, made with impress.js, Jade and Stylus
+- [seppo0010](https://github.com/seppo0010/deck.remote.js) — ★ 14 — Allow clients for deck.js
+- [bespokejs](https://github.com/bespokejs/bespoke-state) — ★ 14 — Slide-Specific Deck Styles for Bespoke.js
+- [slideshow-templates](https://github.com/slideshow-templates/slideshow-deck.js) — ★ 14 — deck.js - Slide Show (S9) Template Pack
+- [aldeka](https://github.com/aldeka/5-minute-design) — ★ 14 — PyCon lightning talk on design using deck.js
+- [sapegin](https://github.com/sapegin/grunt-shower-markdown) — ★ 14 — Grunt task that generates Shower presentations from Markdown source
+- [pascalduez](https://github.com/pascalduez/react-module-boilerplate) — ★ 14 — Sample React presentational components package.
+- [ilich](https://github.com/ilich/node-2fa) — ★ 14 — Sample code for Two-factor authentication with Node.js presentation.
+- [adityachauhan0](https://github.com/adityachauhan0/deckdown) — ★ 14 — Markdown presentation engine for AI agents with local PDF, PNG, and PPTX output
+- [aarkue](https://github.com/aarkue/slide-template) — ★ 14 — A heavily customizable presentation template with RevealJS, React and Tailwind CSS
+- [ungoldman](https://github.com/ungoldman/jekyll-reveal) — ★ 13 — markdown ? slides (reveal.js) ? gh-pages (jekyll)
+- [jronallo](https://github.com/jronallo/starterdeck-node) — ★ 13 — HTML slide deck with audience synced handouts
+- [nbrownuk](https://github.com/nbrownuk/docker-revealjs) — ★ 13 — Dockerfiles for the reveal.js presentation framework
+- [sekaiamber](https://github.com/sekaiamber/fairy.js) — ★ 13 — It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.
+- [shower](https://github.com/shower/bright) — ★ 13 — Bright theme for Shower HTML presentation engine
+- [johndoe31415](https://github.com/johndoe31415/pyradium) — ★ 13 — Creating HTML presentations with LaTeX-ish features from XML source
+- [seifkamal](https://github.com/seifkamal/slide.css) — ★ 13 — A minimal, pure CSS stylesheet for making HTML presentations.
+- [uofa-cmput404](https://github.com/uofa-cmput404/slides-xt) — ★ 13 — Refreshed reveal.js slides for CMPUT 404
+- [MichaelBitard](https://github.com/MichaelBitard/revealjs_heroku) — ★ 13 — how to make reveal.js work on heroku
+- [danidemi](https://github.com/danidemi/docker-reveal.js) — ★ 13 — A docker container to run your docker-reveal.js based slideshow without headhache.
+- [owid](https://github.com/owid/slides) — ★ 13 — reveal.js template and slides for Our World in Data
+- [jamjolu](https://github.com/jamjolu/tts_basics_for_revealjs) — ★ 13 — Add text-to-speech to your reveal.js slideshow and have your slides read out loud.
+- [Ennoriel](https://github.com/Ennoriel/svelte-reveal.js) — ★ 13 — Reveal.js Svelte wrapper
+- [mbotsch](https://github.com/mbotsch/revealSlides) — ★ 13 — Framework for producing HTML slides with markdown, pandoc, and reveal.js
+- [gabriel-del](https://github.com/gabriel-del/slidev) — ★ 13 — slidev multi-entry template
+- [wingsrao](https://github.com/wingsrao/SlideViewForFilter) — ★ 13 — 二级侧滑菜单，用于复杂条件筛选
+- [JeremyMeissner](https://github.com/JeremyMeissner/slidev-theme-apple-basic) — ★ 13 — An Apple like theme for Slidev
+- [yamazakidaisuke](https://github.com/yamazakidaisuke/impressJs_Build) — ★ 13 — The GUI tool which can design impress.js.
+- [petele](https://github.com/petele/HTML5Slides) — ★ 13 — An HTML5 Slide Template - based on the Google HTML5 Slide Template
+- [puzzle](https://github.com/puzzle/pitc-revealjs-theme) — ★ 13 — Revealjs theme based upon the Puzzle style guide
+- [yinshipeng](https://github.com/yinshipeng/vue-exp) — ★ 12 — Based on the Vue.js 2.0 version presentation framework
+- [athos](https://github.com/athos/prejenter) — ★ 12 — Presentation framework for Clojurians
+- [Cobenian](https://github.com/Cobenian/Presentex) — ★ 12 — Elixir -> HTML/JavaScript based presentation framework intended for showing Elixir code
+- [kamsar](https://github.com/kamsar/Blade) — ★ 12 — Blade is a presentation framework for Sitecore 7. Blade is currently considered deprecated as Sitecore MVC is mature enough to make Blade no longer needed. S...
+- [ibrews](https://github.com/ibrews/spatial-deck) — ★ 12 — A self-contained, single-file HTML presentation framework with annotation/move modes for AI-collaborative editing. No build, no framework — just one file.
+- [joshed-io](https://github.com/joshed-io/programming-quotes) — ★ 12 — A demo presentation for the reveal-hugo Reveal.js Hugo theme
+- [PHLAK](https://github.com/PHLAK/presentation) — ★ 12 — Presentation template using reveal.js + Tailwind CSS
+- [wincent](https://github.com/wincent/presentation-template) — ★ 12 — Simple starting template for slideshow presentations built using reveal.js, highlight.js and HTML
+- [cesar](https://github.com/cesar/reveal-cli) — ★ 12 — Command Line Interface for Reveal.js
+- [siakas](https://github.com/siakas/op-bandersnatch) — ★ 12 — Markdown file convert to Reveal.js by Pandoc
+- [xieby1](https://github.com/xieby1/markdown_revealjs) — ★ 12 — Converting Markdown to Reveal.js Sildes
+- [ZuopanYao](https://github.com/ZuopanYao/SlideVerify) — ★ 12 — iOS平台滑动验证码
+- [makerjackie](https://github.com/makerjackie/ai-cursor-slidev-ppt) — ★ 12 — —
+- [luoling8192](https://github.com/luoling8192/talks) — ★ 12 — 我的技术分享合集,用 Slidev 搭建
+- [lezhangxyz](https://github.com/lezhangxyz/IntroToNode) — ★ 12 — Intro To Node presentation built on Impress.js & Express.js webserver, Heroku ready.
+- [TimHeckel](https://github.com/TimHeckel/impressr) — ★ 12 — Real-time sync for impress.js presentations
+- [imperialists](https://github.com/imperialists/impress.dart) — ★ 12 — impress.js implementation in Dart
+- [Springerle](https://github.com/Springerle/hovercraft-slides) — ★ 12 — :cookie: A template for new Hovercraft presentation projects (impress.js slides in reStructuredText)
+- [haoHu](https://github.com/haoHu/ppt-online) — ★ 12 — 利用impress.js这款基于css3转 换和过渡、工作于现代浏览器(Google Chrome或Safari (或 Firefox 10 或 IE10))、并受prezi.com的理念启发的演示工具，制作在线PPT，为演示带来便捷和不一般的显示效果
+- [jessecravens](https://github.com/jessecravens/robodeck) — ★ 12 — Sencha mobile remote controls a deck.js presentation running on node.js, express.js and socket.io.
+- [duijf](https://github.com/duijf/mnml) — ★ 12 — mnml is a simple theme for deck.js with a tad of class
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-template) — ★ 12 — Personal Quarto Revealjs Template
+- [fradav](https://github.com/fradav/quarto-revealjs-animate) — ★ 12 — —
+- [sfeir-open-source](https://github.com/sfeir-open-source/sfeir-school-theme) — ★ 12 — Theme for Sfeir School for RevealJS
+- [alivx](https://github.com/alivx/revealjs-digital-signage) — ★ 12 — Free Presentation Digital Signage for Everyone. Start using this tool right now. Ego View Digital Signage is an easy tool to create Digital Signage.
+- [lqdev](https://github.com/lqdev/RemarkFS) — ★ 11 — F# Markdown Slide Creation Tool based on Remark
+- [mostage-app](https://github.com/mostage-app/mostage) — ★ 11 — Presentation framework based on markdown and HTML (Core Library + CLI)
+- [KatieK2](https://github.com/KatieK2/html5-slides) — ★ 11 — Slides / presentation framework built with web technologies to run in modern web browsers.
+- [christer-eriksson](https://github.com/christer-eriksson/reveal_countdown) — ★ 11 — A count down clock to embed in reveal.js presentations.
+- [xmelsky](https://github.com/xmelsky/reveal.js-boilerplates) — ★ 11 — Webpack based boilerplates for quick start with Reveal.js framework
+- [pantajoe](https://github.com/pantajoe/reveal.js-tracking) — ★ 11 — An advanced tracking plug-in for reveal.js for purposes like Learning Analytics
+- [nascherman](https://github.com/nascherman/react-revealjs) — ★ 11 — reaveal-js component for React. Pass markdown or markup for creating reveal-js presentations.
+- [y-usuzumi](https://github.com/y-usuzumi/reveal-hs) — ★ 11 — Write your Reveal.js presentations in Haskell!
+- [afonsojramos](https://github.com/afonsojramos/slidev-decks) — ★ 11 — CLI companion for managing multiple Slidev presentations
+- [luocfprime](https://github.com/luocfprime/slidev-theme-ustc) — ★ 11 — A clean academic Slidev theme for USTC presentations.
+- [hyuunnn](https://github.com/hyuunnn/ida-slides) — ★ 11 — Marp / Slidev slide decks docked in IDA Pro
+- [noblepayne](https://github.com/noblepayne/nix-anywhere-else-talk) — ★ 11 — A Slidev presentation about the "dark arts" of ELF surgery and Nix, built entirely with Nix.
+- [henrikingo](https://github.com/henrikingo/presentations) — ★ 11 — Impress.js presentations I've done
+- [4QuantOSS](https://github.com/4QuantOSS/shiny-impress.js) — ★ 11 — A Shiny-based demo showing how to use the igraph library of R to make impress.js/jmpress presentations
+- [enygma](https://github.com/enygma/impress-gen) — ★ 11 — Generator for Markdown to Impress.js Slideshow
+- [SamaneYaghoubi](https://github.com/SamaneYaghoubi/Angular-Presentation) — ★ 11 — :rocket: Made with impress.js
+- [danielbayerlein](https://github.com/danielbayerlein/middleman-impress) — ★ 11 — A @middleman project template built with impress.js, Haml, Sass and CoffeeScript.
+- [medikoo](https://github.com/medikoo/bespoke-notes) — ★ 11 — Display slide notes in Bespoke.js presentations
+- [extrawurst](https://github.com/extrawurst/gitui-presentation) — ★ 11 — retro terminal presentation of gitui at @RustBerlin meetup
+- [rpodcast](https://github.com/rpodcast/quarto-revealjs-terminal) — ★ 11 — Quarto revealjs theme with retro terminal style
+- [MMJansen](https://github.com/MMJansen/workshop_quarto_slides) — ★ 11 — Workshop for the VVSOR on creating slides with Quarto. The workshop is mainly about Revealjs.
+- [fhiegel](https://github.com/fhiegel/slide-template) — ★ 11 — Static site template, using MkDocs with mkdocs-material and providing a RevealJS page template.
+- [fslides](https://github.com/fslides/fslides) — ★ 10 — A no-bullshit HTML presentation framework
+- [theznerd](https://github.com/theznerd/PoSHPF) — ★ 10 — "PowerShell Presentation Framework" for executing WPF
+- [sortega](https://github.com/sortega/markdown-slidy) — ★ 10 — Pandoc-powered slidy template helps you to create html presentations using markdown.
+- [ThomasWeinert](https://github.com/ThomasWeinert/reveal-badges) — ★ 10 — Badges for reveal.js
+- [negativetwelve](https://github.com/negativetwelve/rails-reveal-js) — ★ 10 — Gem for adding Reveal.js to the Rails Asset Pipeline (Rails 4.0)
+- [codecentric](https://github.com/codecentric/codecentric-reveal-template) — ★ 10 — Template for reveal.js codecentric presentations
+- [rossbachp](https://github.com/rossbachp/revealjs-presentation) — ★ 10 — My docker reveal.js presentation base images template
+- [slidevjs](https://github.com/slidevjs/docs-es) — ★ 10 — Spanish translation for Slidev docs
+- [imageslr](https://github.com/imageslr/slidev-bytedance) — ★ 10 — 一款基于 Slidev 的 Bytedance PPT 模板
+- [kxxt](https://github.com/kxxt/slidev-template-repo) — ★ 10 — A template repo for slidev slides with automatic GitHub Pages deployment
+- [tmr232](https://github.com/tmr232/Ink2Impress) — ★ 10 — Create Impress.js presentations with Inkscape!
+- [csainty](https://github.com/csainty/ImpressGame) — ★ 10 — Text adventure engine built on Impress.js
+- [ilagokarn](https://github.com/ilagokarn/Impressify) — ★ 10 — Impressify.js is a visual interactive development environment (IDE) to create stunning Impress.JS presentations on CSS transformations and transitions.
+- [asciidoctor](https://github.com/asciidoctor/asciidoctor-deck.js) — ★ 10 — :no_entry: ARCHIVED: deck.js converter templates for Asciidoctor, implemented in Haml
+- [bespokejs](https://github.com/bespokejs/bespoke-loop) — ★ 10 — Looping Presentations for Bespoke.js
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-revealjs-transitions) — ★ 10 — GPU-accelerated GL Transitions for Quarto RevealJS slides, with 100+ GLSL shader effects.
+
+_Showing top 500 of 5965 repos in this category — the full list with all 5965 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)

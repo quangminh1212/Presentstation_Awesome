@@ -1,0 +1,214 @@
+# slideshot
+
+<!-- mcp-name: io.github.06ketan/slideshot -->
+
+[![npm](https://img.shields.io/npm/v/slideshot)](https://www.npmjs.com/package/slideshot)
+[![npm downloads](https://img.shields.io/npm/dm/slideshot)](https://www.npmjs.com/package/slideshot)
+[![npm mcp](https://img.shields.io/npm/v/slideshot-mcp?label=slideshot-mcp)](https://www.npmjs.com/package/slideshot-mcp)
+[![GitHub stars](https://img.shields.io/github/stars/06ketan/slideshot)](https://github.com/06ketan/slideshot)
+[![license](https://img.shields.io/github/license/06ketan/slideshot)](LICENSE)
+[![MCP compatible](https://img.shields.io/badge/MCP-compatible-8A2BE2)](https://modelcontextprotocol.io)
+[![MCP Registry](https://img.shields.io/badge/MCP_Registry-verified-blue)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.06ketan/slideshot)
+[![Anthropic DXT](https://img.shields.io/badge/Anthropic_DXT-.mcpb-D97706)](https://github.com/06ketan/slideshot/releases/latest)
+[![Glama MCP server](https://glama.ai/mcp/servers/06ketan/slideshot/badges/score.svg)](https://glama.ai/mcp/servers/06ketan/slideshot)
+[![MCP Badge](https://lobehub.com/badge/mcp/06ketan-slideshot)](https://lobehub.com/mcp/06ketan-slideshot)
+
+<a href="https://glama.ai/mcp/servers/06ketan/slideshot">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/06ketan/slideshot/badges/card.svg" alt="slideshot MCP server card on Glama" />
+</a>
+
+Convert AI-generated HTML carousels into high-res PNG, WebP, PDF, and PPTX — via **CLI**, **Web App**, **MCP Server** (Cursor MCP, Claude MCP, OpenCode MCP), or **REST API**.
+
+**[Web App](https://slideshot.vercel.app)** · **[npm CLI](https://www.npmjs.com/package/slideshot)** · **[npm MCP](https://www.npmjs.com/package/slideshot-mcp)** · **[API Spec](https://slideshot.vercel.app/api/openapi.json)**
+
+### Wrong install?
+
+The MCP package name is **`slideshot-mcp`** on npm ([canonical Glama listing](https://glama.ai/mcp/servers/06ketan/slideshot)). Use `npx -y slideshot-mcp` — not unrelated `html-to-slides` or third-party scoped copies from generic searches.
+
+## Works with (MCP)
+
+Discovery-oriented table — **verify each host’s current MCP docs** before upgrading.
+
+### Open source–oriented hosts
+
+| Host | Documentation | Typical wire-up |
+|------|---------------|-----------------|
+| **OpenCode** | [OpenCode MCP servers](https://open-code.ai/en/docs/mcp-servers) | See [OpenCode](#opencode) below |
+| **Continue** | [Continue](https://docs.continue.dev) | Add stdio MCP pointing at `npx` / `slideshot-mcp` per Continue docs |
+| **Zed** | [Zed](https://zed.dev/docs) | Stdio MCP per Zed |
+| **Cline** | [Cline](https://github.com/cline/cline) | Extension MCP docs |
+| **Goose** | [Goose](https://block.github.io/goose/) | MCP extensions per Goose |
+
+### Large commercial stacks
+
+| Host | Documentation | Typical wire-up |
+|------|---------------|-----------------|
+| **Cursor** | [Cursor MCP](https://docs.cursor.com/context/model-context-protocol) | `.cursor/mcp.json` — see [MCP Server](#mcp-server) |
+| **Claude** (Desktop / Code) | [Claude Desktop](https://support.anthropic.com/en/articles/10065433-installing-claude-for-desktop), [Claude Code](https://docs.claude.com/en/docs/claude-code) | Claude Desktop JSON or `claude mcp add` |
+| **GitHub Copilot** | [Copilot](https://docs.github.com/en/copilot) | MCP in VS Code where enabled |
+| **ChatGPT** | [OpenAI](https://platform.openai.com/docs) | Prefer REST (`/api/openapi.json`) where MCP is unavailable |
+| **Google Gemini** | [Gemini](https://ai.google.dev/docs) | Gemini IDE / CLI MCP when supported — else REST |
+
+## Architecture
+
+```
+slideshot/
+  packages/
+    cli/           ← Core Puppeteer rendering engine + CLI
+    mcp-server/    ← MCP stdio server for AI tools
+    webapp/        ← Next.js web app with live preview
+  prompts/
+    generic.md           ← Clean minimal
+    branded.md           ← Ketan Slides design system
+    instagram-carousel.md ← Bold vibrant IG style
+    infographic.md       ← Data-heavy charts
+    pitch-deck.md        ← Professional presentations
+    dark-modern.md       ← Neon glassmorphism
+    editorial.md         ← Magazine serif
+```
+
+## Quick Start
+
+### CLI
+
+```bash
+npx slideshot ./my-carousel.html --formats png,webp,pdf --scale 4
+```
+
+**Options:**
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-s, --selector` | `.slide` | CSS selector for slide elements |
+| `-W, --width` | `540` | Slide width (CSS px) |
+| `-H, --height` | `675` | Slide height (CSS px) |
+| `--scale` | `4` | Device scale (4x = 2160x2700) |
+| `-f, --formats` | `png,webp,pdf` | Output formats (png, webp, pdf, pptx) |
+| `-q, --quality` | `95` | WebP quality (0-100) |
+| `-o, --out` | `./slides` | Output directory |
+
+### Web App
+
+**Live:** [slideshot.vercel.app](https://slideshot.vercel.app)
+
+Or run locally:
+
+```bash
+cd packages/webapp && npm install && npm run dev
+```
+
+Open `http://localhost:3000` — paste HTML, preview, export.
+
+### MCP Server
+
+Add to Cursor, Claude Desktop, Claude Code, or any stdio MCP host. Published as **[slideshot-mcp](https://www.npmjs.com/package/slideshot-mcp)** on npm.
+
+**Cursor / Claude Desktop** (`mcpServers`):
+
+```json
+{
+  "mcpServers": {
+    "slideshot": {
+      "command": "npx",
+      "args": ["-y", "slideshot-mcp"]
+    }
+  }
+}
+```
+
+Optional pin: `"args": ["-y", "slideshot-mcp@4.4.0"]` (replace with current npm version).
+
+#### OpenCode
+
+`~/.config/opencode/opencode.json`:
+
+```json
+{
+  "mcp": {
+    "slideshot": {
+      "type": "local",
+      "command": ["npx", "-y", "slideshot-mcp"],
+      "enabled": true
+    }
+  }
+}
+```
+
+**Tools:**
+
+- `create_slides` — guided creation workflow with 7 themes and output presets
+- `render_html_to_images` — render HTML to PNG/WebP/PDF/PPTX
+- `get_slide_prompt` — get AI prompt template for any theme variant
+- `health_check` — verify Puppeteer/Chromium availability
+
+**Prompts (7 themes):**
+
+- `generic-slides` — clean minimal
+- `branded-slides` — Ketan Slides design system
+- `instagram-carousel-slides` — bold vibrant IG style
+- `infographic-slides` — data-heavy charts and stats
+- `pitch-deck-slides` — professional presentations
+- `dark-modern-slides` — neon glassmorphism
+- `editorial-slides` — magazine serif with gold accents
+
+### REST API (ChatGPT Actions / OpenWebUI)
+
+The web app exposes an OpenAPI-compatible REST API at `https://slideshot.vercel.app`.
+
+**Endpoints:**
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/api/render` | Render HTML slides to PNG/WebP/PDF (returns ZIP) |
+| `GET` | `/api/prompt?variant=generic` | Get AI prompt template |
+| `GET` | `/api/openapi.json` | OpenAPI 3.1.0 spec |
+
+**Platform support:**
+
+| Platform | Method | Setup |
+|----------|--------|-------|
+| Cursor | MCP | `npx slideshot-mcp` in `.cursor/mcp.json` |
+| Claude Desktop | MCP | `npx slideshot-mcp` in config |
+| OpenCode | MCP | `opencode.json` `mcp.slideshot` → `["npx","-y","slideshot-mcp"]` |
+| Continue | MCP | stdio → `npx` / `slideshot-mcp` per Continue docs |
+| ChatGPT | OpenAPI Action | Import `/api/openapi.json` |
+| OpenWebUI | OpenAPI Tool | Import `/api/openapi.json` |
+
+## AI Prompt Templates
+
+7 prompt variants in `prompts/` — copy-paste or use via `get_slide_prompt` tool:
+
+| Variant | File | Style |
+|---------|------|-------|
+| Generic | `prompts/generic.md` | Clean minimal, Inter font |
+| Branded | `prompts/branded.md` | Space Mono, teal/coral accents |
+| Instagram | `prompts/instagram-carousel.md` | Bold gradients, Poppins |
+| Infographic | `prompts/infographic.md` | DM Sans, stat cards |
+| Pitch Deck | `prompts/pitch-deck.md` | Professional, KPI cards |
+| Dark Modern | `prompts/dark-modern.md` | Neon, glassmorphism |
+| Editorial | `prompts/editorial.md` | Playfair Display, gold |
+
+## Build All
+
+```bash
+npm install   # from root — installs all workspaces
+npm run build # builds cli → mcp-server
+cd packages/webapp && npm run build  # builds webapp separately
+```
+
+## Links
+
+| Surface | URL |
+|---------|-----|
+| Web App | [slideshot.vercel.app](https://slideshot.vercel.app) |
+| npm CLI | [npmjs.com/package/slideshot](https://www.npmjs.com/package/slideshot) |
+| npm MCP | [npmjs.com/package/slideshot-mcp](https://www.npmjs.com/package/slideshot-mcp) |
+| GitHub | [github.com/06ketan/slideshot](https://github.com/06ketan/slideshot) |
+| API Spec | [slideshot.vercel.app/api/openapi.json](https://slideshot.vercel.app/api/openapi.json) |
+
+## Related MCPs
+
+- **[medium-ops](https://github.com/06ketan/medium-ops)** — Medium CLI + MCP (PyPI).
+- **[substack-ops](https://github.com/06ketan/substack-ops)** — Substack CLI + MCP (PyPI).
+
+## License

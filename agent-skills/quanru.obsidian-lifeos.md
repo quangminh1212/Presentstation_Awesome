@@ -1,0 +1,91 @@
+<p align="center"><a title="中文版本" href="https://github.com/quanru/obsidian-example-lifeos/tree/main/examples/zh-cn">中文版本</a>  |  English Version</p>
+
+<a href="https://obsidian.md/blog/2024-goty-winners/">🔥 LifeOS for Obsidian won the third place 🥉 in the Best Templates category at the 2024 Obsidian Gems of the Year awards!</a>
+
+<a href="https://www.producthunt.com/posts/lifeos-template-for-obsidian?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-lifeos&#0045;template&#0045;for&#0045;obsidian" target="_blank">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=441390&theme=light" alt="LifeOS&#0032;Template&#0032;for&#0032;Obsidian - Obsidian&#0032;LifeOS&#0032;&#0045;&#0032;Your&#0032;Life&#0032;Management&#0032;Assistant&#0033; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
+</a>
+<a href="https://www.uneed.best/tool/lifeos-for-obsidian" target="_blank">
+    <img src="https://www.uneed.best/POTD2.png" style="width: 250px;" alt="Uneed POTD2 Badge" />
+</a>
+<a href="https://trendshift.io/repositories/7903" target="_blank"><img src="https://trendshift.io/api/badge/repositories/7903" alt="quanru%2Fobsidian-example-LifeOS | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
+- This is a plugin for [LifeOS](https://lifeos.vip), which assist in practicing the PARA method with periodic notes and [usememos](https://www.usememos.com/).
+- It is recommended to download the [LifeOS-example](https://github.com/quanru/obsidian-example-lifeos/archive/refs/heads/main.zip) to experience it.
+- For more tutorials, please go to [LifeOS for Obsidian Official Site](https://lifeos.vip/)
+
+![](https://obsidian-life-os.pages.dev/plugin/periodic-para-plugin-en.png)
+
+The starter workflow now supports ten languages (English, Simplified and Traditional Chinese, German, Spanish, French, Portuguese, Japanese, Korean, Arabic), including workspace setup, quick capture, templates, and folder settings. See [multilingual workspace maintenance](docs/multilingual-workspaces.md).
+
+## Theme notes, with or without PARA
+
+Enable Theme notes independently of PARA. Create tagged theme folders and index notes, associate quick captures, query tasks, records and files, and generate theme snapshots in daily notes. README and folder-name indexes, templates, list search and optional name synchronization are supported. See the [theme guide](docs/theme-notes.en.md). The example repository includes plain-theme example and blank vaults in all ten languages. Existing PARA configuration and notes are preserved.
+
+## Free tools and the independent Pro plugin
+
+Quick capture, basic task entry, topic links remain fully free. Settings → **Usage and upgrade** offers shortcuts, a read-only preview of your folder settings, and a static promotional link to the independently paid LifeOS Pro plugin. This plugin does not contain paid unlocks or automatically install Pro. Its new promotional section does not fetch remote ads, send telemetry, or upload notes; opening the website is optional and includes only a fixed channel parameter. Existing optional usememos integration is configured separately.
+
+Use the **Today’s records** command to open today's daily note at the record section. See the [handover guide](docs/pro-handover.md) before switching plugins. Pro source code, private configuration and activation data are not part of this repository.
+
+## Features
+
+- A first-run setup wizard can create a periodic-notes workspace with or without PARA in any of the ten supported languages. The selected workspace profile is kept for future repairs, and existing files are never overwritten.
+- Built-in starter templates cover daily, weekly, monthly, quarterly, yearly, Projects, Areas, Resources, and Archives notes.
+- An optional example workflow and a five-minute completion guide help you make the first capture; the example can be removed safely while it remains unchanged.
+- **Quick record** and **Quick task** support continuous capture, native live preview, images, checklists, PARA theme associations, history, combined filters, and safe editing. Everything stays in daily-note Markdown. See the [quick capture guide (Chinese)](docs/quick-capture.md).
+- Query views use Dataview. Setup and quick capture work without it.
+- LifeOS Basic: https://lifeos.vip/plugin/lifeos/life-os.html
+- **LifeOS Pro** : https://lifeos.vip/plugin/lifeos/life-os-pro.html
+- **DeepAsk AI for Obsidian** : https://lifeos.vip/plugin/deepask/deepask.html
+- **DeepAsk AI for Chrome** : https://chromewebstore.google.com/detail/deepask-ai/abhoenehflglmgbohaibihggedfcpcep
+- Multi-language UI: follows your current Obsidian language by default, and can be overridden from the plugin settings page.
+
+## Download
+
+- [LifeOS-example](https://github.com/quanru/obsidian-example-lifeos) | [中文版本](https://github.com/quanru/obsidian-example-lifeos/tree/main/examples/zh-cn)
+
+## Development and contributions
+
+See the [contribution guide](CONTRIBUTING.md) and [community tasks](docs/community-tasks.md). Requires Obsidian 1.4.0 or newer.
+
+Setup and quick capture work without Dataview. Query views still require Dataview and show installation, enablement, or indexing guidance.
+
+## Support
+
+- [🎮 Discord](https://discord.gg/HZGanKEkuZ)
+- [💬 Telegram](https://t.me/+OLTasChvEEthMjBl)
+- [🐦 LifeOS for Obsidian](https://twitter.com/lifeos_md)
+- [🐦 Twitter](https://x.com/lifeos_md)
+- [📺 Youtube](https://www.youtube.com/@LeYangLin)
+- [🧑‍🔧 Bento](https://bento.me/leyang)
+- [📧 Email](mailto:quanruzhuoxiu@gmail.com)
+- [📻 Podcast](https://open.spotify.com/show/2uEwTN48SC5wkTx1nPbct1)
+
+## Acknowledgements
+
+Also, I relied on the code from these excellent plugins:
+
+- [PARA](https://fortelabs.com/blog/para/). Thanks to Tiago Forte for inventing such a great organizational method.
+- [PARA Starter Kit](https://forum.obsidian.md/t/para-starter-kit/223). Thanks to cotemaxime for creating such a great starter vault.
+- [obsidian-periodic-notes](https://github.com/liamcain/obsidian-periodic-notes). Gave me the inspiration to develop this plugin.
+- [obsidian-dataview](https://github.com/blacksmithgu/obsidian-dataview). The underlying plugin uses dataview's query interface.
+- [Templater](https://github.com/SilentVoid13/Templater). Provides decoupled template creation, allowing a very large number of plugins to create files with the help of it.
+
+## Donations
+
+If this plugin do help you, please buy me a cup of coffee on [buymeacoffee](https://www.buymeacoffee.com/leyang).
+
+In addition, you can also support me in further developing a better LifeOS by purchasing the [LifeOS Pro](https://lifeos.vip/plugin/life-os-pro.html)!
+
+---
+
+Or Alipay
+
+<img alt="Alipay" src="https://blog.lifeos.vip/img/alipay-qr.jpg" width="200"/>
+
+---
+
+Or WeChat
+
+<img alt="WeChatPay" src="https://blog.lifeos.vip/img/wechat-qr.jpg" width="200"/>

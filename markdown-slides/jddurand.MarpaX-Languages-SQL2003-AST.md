@@ -1,0 +1,108 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+MarpaX::Languages::SQL2003::AST - Translate SQL-2003 source to an AST
+
+=head1 VERSION
+
+version 0.005
+
+=head1 SYNOPSIS
+
+    use strict;
+    use warnings FATAL => 'all';
+    use MarpaX::Languages::SQL2003::AST;
+    #
+    # Parse SQL
+    #
+    my $input = 'select * from myTable;';
+    my $obj = MarpaX::Languages::SQL2003::AST->new(host => 'C');
+    my $ast = $obj->parse($input);
+    my $xml = $obj->parse($input, xml => 1);
+
+=head1 DESCRIPTION
+
+This module translates SQL-2003 to an AST.
+
+=head1 SUBROUTINES/METHODS
+
+=head2 new($class, %opts)
+
+Instantiate a new object. %opts supported keys are:
+
+=over
+
+=item host
+
+Target host language. Supported values are: Ada, C, Cobol, Fortran, Mumps, Pascal, PLI. Default value C.
+
+=back
+
+=head2 parse($self, $input, %opts)
+
+Parse $input and return $self. Accept an optional %opts hash whose keys can be:
+
+=over
+
+=item xml
+
+If $opts{xml} is a true value, produces the AST as an XML::LibXML::Document object. Default is a false value, meaning that the AST is a composite structure of blessed hash references and array references.
+
+=back
+
+Any other key will be passed as-is to the Marpa's parse() method, i.e. it has to have a meaning to Marpa's recognizer. Typical examples are: trace_terminals => 1, trace_values => 1.
+
+=head2 asXML($self, $input, %opts)
+
+Alias to $self->parse($input, xml => 1, %opts).
+
+Please refer to L<MarpaX::Languages::SQL2003::AST::Actions> for the semantic actions.
+
+=head2 asBlessed($self, $input, %opts)
+
+Alias to $self->parse($input, xml => 0, %opts).
+
+Please refer to L<MarpaX::Languages::SQL2003::AST::Actions> for the semantic actions.
+
+=head1 NOTES
+
+This module is using a generated Marpa::R2's BNF grammar, based on a manipulation of L<http://savage.net.au/SQL/sql-2003-2.bnf>, the later being in EBNF format. That is, some rules or lexemes in the output may appear as Genxxx or GenLexyyy, showing unfortunately some of the internals of the EBNF to BNF transformation.
+
+=head1 SEE ALSO
+
+L<MarpaX::Languages::SQL2003::AST::Actions>, L<Marpa::R2>
+
+=for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
+
+=head1 SUPPORT
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests through the issue tracker
+at L<https://rt.cpan.org/Public/Dist/Display.html?Name=MarpaX-Languages-SQL2003-AST>.
+You will be notified automatically of any progress on your issue.
+
+=head2 Source Code
+
+This is open source software.  The code repository is available for
+public review and contribution under the terms of the license.
+
+L<https://github.com/jddurand/marpax-languages-sql2003-ast>
+
+  git clone git://github.com/jddurand/marpax-languages-sql2003-ast.git
+
+=head1 AUTHOR
+
+Jean-Damien Durand <jeandamiendurand@free.fr>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by Jean-Damien Durand.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut

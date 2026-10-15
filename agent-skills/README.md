@@ -1,0 +1,508 @@
+# Agent Skills, Plugins & Editor Extensions
+
+Claude Code / Codex skills, VS Code / Obsidian extensions and plugins that drive slide & deck generation.
+
+- [JuliusBrussee](https://github.com/JuliusBrussee/caveman) — ★ 111,952 — 🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.
+- [kepano](https://github.com/kepano/obsidian-skills) — ★ 49,560 — Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.
+- [zarazhangrui](https://github.com/zarazhangrui/frontend-slides) — ★ 30,675 — Create beautiful slides on the web using a coding agent's frontend skills
+- [op7418](https://github.com/op7418/guizang-ppt-skill) — ★ 27,980 — AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentati...
+- [obsidianmd](https://github.com/obsidianmd/obsidian-releases) — ★ 22,249 — Community plugins list, theme list, and releases of Obsidian.
+- [YishenTu](https://github.com/YishenTu/claudian) — ★ 15,671 — An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault
+- [AgriciDaniel](https://github.com/AgriciDaniel/claude-obsidian) — ★ 15,542 — Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain...
+- [NanmiCoder](https://github.com/NanmiCoder/cc-haha) — ★ 15,015 — 本地优先的跨平台 Claude Code / AI Agent 桌面工作台：多 Agent 协作、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、桌面宠物；支持微信、飞书、钉钉及 H5 等远程访问。 | Local-first Claude Code / AI Agent d...
+- [Vinzent03](https://github.com/Vinzent03/obsidian-git) — ★ 12,119 — Integrate Git version control with automatic commit-and-sync and other advanced features in Obsidian.md
+- [genspark-ai](https://github.com/genspark-ai/genoffice) — ★ 9,704 — Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so C...
+- [chuspeeism](https://github.com/chuspeeism/dashi-ppt-skill) — ★ 9,536 — An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.
+- [kmaasrud](https://github.com/kmaasrud/awesome-obsidian) — ★ 9,451 — 🕶️ Awesome stuff for Obsidian
+- [lewislulu](https://github.com/lewislulu/html-ppt-skill) — ★ 8,696 — HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations
+- [logancyang](https://github.com/logancyang/obsidian-copilot) — ★ 7,830 — Run agents in Obsidian - OpenCode, Codex, Claude Code etc.
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DocumentServer) — ★ 7,020 — ONLYOFFICE Docs is a free collaborative online office suite comprising viewers and editors for texts, spreadsheets and presentations, forms and PDF, fully co...
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DesktopEditors) — ★ 5,558 — Open-source office suite pack that comprises all the tools you need to work with documents, spreadsheets, presentations, PDFs, and PDF forms on Windows, Linu...
+- [brianpetro](https://github.com/brianpetro/obsidian-smart-connections) — ★ 5,502 — Find related notes and excerpts while writing. Your link building copilot displays relevant content in graph + list view. A local embedding model powers sema...
+- [kepano](https://github.com/kepano/obsidian-minimal) — ★ 5,428 — A distraction-free and highly customizable theme for Obsidian.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-clipper) — ★ 5,343 — Highlight and capture the web in your favorite browser. The official Web Clipper extension for Obsidian.
+- [breferrari](https://github.com/breferrari/obsidian-mind) — ★ 5,325 — A self-organizing Obsidian vault that gives AI coding agents persistent memory.
+- [BingyanStudio](https://github.com/BingyanStudio/LapisCV) — ★ 5,099 — 📄 Easily create your resume with Markdown on VSCode / Typora / Obsidian
+- [zarazhangrui](https://github.com/zarazhangrui/beautiful-html-templates) — ★ 4,782 — A library of HTML slide templates designed so any coding agent can pick the right one and produce a beautiful deck on the user's behalf, automatically.
+- [eugeniughelbur](https://github.com/eugeniughelbur/obsidian-second-brain) — ★ 4,767 — Persistent memory for Claude Code and 6 other CLI agents, stored as plain markdown in your Obsidian vault. Stop re-explaining your projects, decisions and pe...
+- [kepano](https://github.com/kepano/kepano-obsidian) — ★ 4,631 — My personal Obsidian vault template. A bottom-up approach to note-taking and organizing things I am interested in.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-sample-plugin) — ★ 4,562 — Template for Obsidian community plugins with build configuration and development best practices.
+- [community-archive](https://github.com/community-archive/obsidian-kanban) — ★ 4,529 — Create markdown-backed Kanban boards in Obsidian.
+- [JimLiu](https://github.com/JimLiu/baoyu-design) — ★ 4,384 — Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML,...
+- [nicejade](https://github.com/nicejade/markdown-online-editor) — ★ 3,982 — 📝 基于 Vue2、Vditor，所构建的在线 Markdown 编辑器，支持绘制流程图、甘特图、时序图、任务列表、echarts 图表、五线谱，以及 PPT 预览、视频音频解析、HTML 自动转换为 Markdown 等功能。https://www.niceshare.site
+- [damianavila](https://github.com/damianavila/RISE) — ★ 3,735 — RISE: "Live" Reveal.js Jupyter/IPython Slideshow Extension
+- [GordenSun](https://github.com/GordenSun/GordenPPTSkill) — ★ 3,630 — AI-friendly PPT builder skill: 17 hand-polished Chinese PPTX templates + non-destructive text-only editing tools (python-pptx based). Pick a template, write ...
+- [Ar9av](https://github.com/Ar9av/obsidian-wiki) — ★ 3,572 — Framework for AI agents to build and maintain a digital brain through Obsidian wiki | Memory System for Agents
+- [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin) — ★ 3,420 — Personal theme for Obsidian
+- [haierkeys](https://github.com/haierkeys/obsidian-fast-note-sync) — ★ 3,079 — Can be privately deployed, focusing on providing Obsidian users with a seamless, distraction-free note synchronization plugin with real-time sync across mult...
+- [ningzimu](https://github.com/ningzimu/image-to-editable-ppt-skill) — ★ 2,932 — Codex skill for converting slide images, PDFs, and image-based PPTX files into editable PowerPoint decks.
+- [LearnPrompt](https://github.com/LearnPrompt/LearnPrompt) — ★ 2,697 — 永久免费开源的 AIGC 课程, 目前已支持Claude Code，Codex，Hermes，OpenClaw，Obsidian，Prompt Engineering, ChatGPT, Midjourney, Runway, Stable Diffusion, AI数字人，AI声音&音乐，开源大模型
+- [artisticat1](https://github.com/artisticat1/obsidian-latex-suite) — ★ 2,534 — Make typesetting LaTeX as fast as handwriting through snippets, text expansion, and editor enhancements
+- [Akifyss](https://github.com/Akifyss/obsidian-border) — ★ 2,517 — A theme for obsidian.md
+- [RyotaUshio](https://github.com/RyotaUshio/obsidian-pdf-plus) — ★ 2,494 — PDF++: the most Obsidian-native PDF annotation & viewing tool ever. Comes with optional Vim keybindings.
+- [oldwinter](https://github.com/oldwinter/knowledge-garden) — ★ 2,460 — 我的第二大脑 second brain，我的数字花园 digital garden，用obsidian双链笔记软件写作而成
+- [llmsresearch](https://github.com/llmsresearch/paperbanana) — ★ 2,401 — Open source implementation and extension of Google Research’s PaperBanana for automated academic figures, diagrams, and research visuals, expanded to new dom...
+- [chhoumann](https://github.com/chhoumann/quickadd) — ★ 2,378 — QuickAdd for Obsidian
+- [zhaohongxuan](https://github.com/zhaohongxuan/obsidian-weread-plugin) — ★ 2,276 — Obsidian Weread Plugin is a plugin to sync Weread(微信读书) hightlights and annotations into your Obsidian Vault.
+- [obsidian-nvim](https://github.com/obsidian-nvim/obsidian.nvim) — ★ 2,204 — Obsidian 🤝 Neovim (actively maintained version)
+- [scambier](https://github.com/scambier/obsidian-omnisearch) — ★ 2,163 — A search engine that "just works" for Obsidian.
+- [marp-team](https://github.com/marp-team/marp-vscode) — ★ 2,099 — Marp for VS Code: Create slide deck written in Marp Markdown on VS Code
+- [secure-77](https://github.com/secure-77/Perlite) — ★ 1,995 — A web-based markdown viewer optimized for Obsidian
+- [nhaouari](https://github.com/nhaouari/obsidian-textgenerator-plugin) — ★ 1,990 — Text Generator is a versatile plugin for Obsidian that allows you to generate text content using various AI providers, including OpenAI, Anthropic, Google an...
+- [ranuts](https://github.com/ranuts/document) — ★ 1,986 — Local-first browser editor for Word, Excel, PowerPoint and PDF, with an experimental AI assistant. No Office installation or account required.
+- [pyrochlore](https://github.com/pyrochlore/obsidian-tracker) — ★ 1,957 — A plugin tracks occurrences and numbers in your notes
+- [groepl](https://github.com/groepl/Obsidian-Templates) — ★ 1,956 — A repository containing templates and scripts for #Obsidian to support the #Zettelkasten method for note-taking.
+- [obsidianmd](https://github.com/obsidianmd/obsidian-help) — ★ 1,934 — Help documentation for Obsidian.
+- [tantaman](https://github.com/tantaman/strut) — ★ 1,892 — Strut - An Impress.js and Bespoke.js Presentation Editor
+- [ballred](https://github.com/ballred/obsidian-claude-pkm) — ★ 1,879 — A complete starter kit for an Obsidian + Claude Code personal knowledge management system.
+- [llZektorll](https://github.com/llZektorll/OB_Template) — ★ 1,781 — OB_Templates is a Obsidian reference for note templates focused on new users of the application using only core plugins.
+- [elias-sundqvist](https://github.com/elias-sundqvist/obsidian-annotator) — ★ 1,774 — A plugin for reading and annotating PDFs and EPUBs in obsidian.
+- [sozi-projects](https://github.com/sozi-projects/Sozi) — ★ 1,715 — A "zooming" presentation editor
+- [obsidianmd](https://github.com/obsidianmd/obsidian-importer) — ★ 1,700 — Convert your data to Markdown files you can use in Obsidian. Works with Apple Notes, OneNote, Evernote, Notion, Google Keep, and many other formats.
+- [deckgo](https://github.com/deckgo/deckdeckgo) — ★ 1,674 — The web open source editor for presentations
+- [Yakitrak](https://github.com/Yakitrak/notesmd-cli) — ★ 1,595 — Obsidian CLI (Community) -  Interact with Obsidian in the terminal!
+- [Vincentwei1021](https://github.com/Vincentwei1021/video-talkcraft) — ★ 1,585 — Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer videos — word-level voiceover sync, 109 motion recipe c...
+- [svnaxis](https://github.com/svnaxis/obsidian-baseline) — ★ 1,559 — A foundational Obsidian theme; the baseline of your thoughts.
+- [Developer-Mike](https://github.com/Developer-Mike/obsidian-advanced-canvas) — ★ 1,556 — ⚡ Supercharge your canvas experience! Graph view integration and unlimited styling options empower flowcharts, dynamic presentations, and interconnected know...
+- [twibiral](https://github.com/twibiral/obsidian-execute-code) — ★ 1,535 — Obsidian Plugin to execute code in a note.
+- [kepano](https://github.com/kepano/clipper-templates) — ★ 1,481 — Obsidian Web Clipper templates for various sites.
+- [freestylefly](https://github.com/freestylefly/WeChatBridge) — ★ 1,459 — 微信聊天记录一键转发到 AI Agent 与 Obsidian 的原生 macOS 工具
+- [FlorianWoelki](https://github.com/FlorianWoelki/obsidian-iconize) — ★ 1,410 — Simply add icons to anything you want in Obsidian.
+- [RafaelGB](https://github.com/RafaelGB/obsidian-db-folder) — ★ 1,399 — Obsidian Plugin to Allow Notion like database based on folders
+- [erikjuhani](https://github.com/erikjuhani/basalt) — ★ 1,377 — TUI Application to manage Obsidian notes directly from the terminal
+- [vslinko](https://github.com/vslinko/obsidian-outliner) — ★ 1,376 — Work with your lists like in Workflowy or RoamResearch
+- [KosmosisDire](https://github.com/KosmosisDire/obsidian-webpage-export) — ★ 1,366 — Export html from single files, canvas pages, or whole vaults. Direct access to the exported HTML files allows you to publish your digital garden anywhere. Fo...
+- [bevibing](https://github.com/bevibing/tutor-skills) — ★ 1,351 — A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults
+- [zoni](https://github.com/zoni/obsidian-export) — ★ 1,337 — Rust library and CLI to export an Obsidian vault to regular Markdown
+- [s2b-dev](https://github.com/s2b-dev/smart-second-brain) — ★ 1,317 — A free, open-source Obsidian plugin that makes your vault smarter: better search, an interactive knowledge graph, and an AI assistant that knows your notes.
+- [hadynz](https://github.com/hadynz/obsidian-kindle-plugin) — ★ 1,285 — Sync your Kindle notes and highlights directly into your Obsidian vault
+- [svnaxis](https://github.com/svnaxis/obsidian-cupertino) — ★ 1,276 — A native look and feel Obsidian theme crafted for the way you think.
+- [MSzturc](https://github.com/MSzturc/obsidian-advanced-slides) — ★ 1,264 — Create markdown-based reveal.js presentations in Obsidian
+- [jsmorabito](https://github.com/jsmorabito/obsidian-commander) — ★ 1,234 — Commander - Obsidian Plugin | Add Commands to every part of Obsidian's user interface
+- [NyxTides](https://github.com/NyxTides/ppt-image-first) — ★ 1,227 — PPT image-first skill for Codex/Claude Code/Opencode CLI
+- [NomaDamas](https://github.com/NomaDamas/slides-grab) — ★ 1,215 — Best harness + editor + linter for generating slides in Claude Code / Codex - Claude Design Open Source Alternative
+- [917Dhj](https://github.com/917Dhj/DeepPaperNote) — ★ 1,203 — DeepPaperNote is an agent skill for deep-reading a single paper and generating high-quality Obsidian-style research notes. Works with Claude Code, Codex, Cur...
+- [jamiebrynes7](https://github.com/jamiebrynes7/obsidian-todoist-plugin) — ★ 1,194 — Materialize Todoist tasks in Obsidian notes
+- [Gabberflast](https://github.com/Gabberflast/academic-pptx-skill) — ★ 1,185 — A Claude Skill for creating academic presentations (conference talks, seminar slides, thesis defenses, grant briefings). Enforces action titles, structured a...
+- [carnot-tech](https://github.com/carnot-tech/jinba-consulting-pptx-skill) — ★ 1,175 — AIにまじなPPTXを作らせる Claude Code / Codex スキル
+- [Gonzalo-D-Sales](https://github.com/Gonzalo-D-Sales/obsidian-velocity) — ★ 1,161 — A radically modern theme for Obsidian.
+- [quanru](https://github.com/quanru/obsidian-example-lifeos) — ★ 1,152 — LifeOS example vault for Obsidian(Combining P.A.R.A with Periodic Notes)
+- [tuan3w](https://github.com/tuan3w/obsidian-template) — ★ 1,128 — Starter templates for Obsidian
+- [tllovesxs](https://github.com/tllovesxs/wandao) — ★ 1,106 — 万能导:多平台知识库 Markdown 全项目一键导入导出工具(导入导出效果最好),用自动化代替手动复制粘贴(有道云,飞书,语雀,阿里云知识库,知识星球,印象笔记,ima,onenote,为知笔记,csdn,知乎,微信公众号导出导入).(可保留目录结构,图片,项目格式) 关键词:微信公众号导出,语雀导出导入,飞书...
+- [Achuan-2](https://github.com/Achuan-2/pandoc_docx_template) — ★ 1,092 — 设置Markdown导出为docx时的样式，可控制导出docx的段落文字、标题编号等样式，适用于obsidian、typora、思源笔记等Markdown笔记软件，支持Codex、Claude Code等调用skill丨Template for exporting Markdown to docx (Word) ...
+- [asheshgoplani](https://github.com/asheshgoplani/agent-deck) — ★ 1,084 — Terminal session manager for AI coding agents. One TUI for Claude, Gemini, OpenCode, Codex, and more.
+- [connertennery](https://github.com/connertennery/Notion-to-Obsidian-Converter) — ★ 1,084 — Converts exported Notion notes to work with Obsidian.
+- [undefined-ui](https://github.com/undefined-ui/second-brain-os) — ★ 1,070 — An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.
+- [stravo1](https://github.com/stravo1/obsidian-gdrive-sync) — ★ 1,052 — sync notes across devices in Obsidian via Google Drive
+- [masonlr](https://github.com/masonlr/obsidian-starter-templates) — ★ 1,041 — :rocket: Starter templates for Obsidian.md
+- [colineckert](https://github.com/colineckert/obsidian-things) — ★ 1,024 — An Obsidian theme inspired by the beautifully-designed app, Things.
+- [lucasrosati](https://github.com/lucasrosati/claude-code-memory-setup) — ★ 1,020 — Up to 71.5x fewer tokens per session on Claude Code with Obsidian + Graphify. Persistent memory, codebase knowledge graphs, and chat import pipeline. 🇧🇷 PT-B...
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-meta-bind-plugin) — ★ 1,015 — A plugin for Obsidian to make your notes interactive with inline input fields, metadata displays, and buttons.
+- [community-archive](https://github.com/community-archive/obsidian-full-calendar) — ★ 986 — Keep events and manage your calendar alongside all your other notes in your Obsidian Vault.
+- [meld-cp](https://github.com/meld-cp/obsidian-encrypt) — ★ 984 — Hide secrets in your Obsidian.md vault
+- [AgriciDaniel](https://github.com/AgriciDaniel/compass) — ★ 968 — Compass: run your whole life out of Obsidian. Daily questions, quarterly retreats, planning, habits, tasks, writing, and an AI assistant in the vault.
+- [polyipseity](https://github.com/polyipseity/obsidian-terminal) — ★ 949 — Integrate consoles, shells, and terminals.
+- [tadashi-aikawa](https://github.com/tadashi-aikawa/obsidian-various-complements-plugin) — ★ 942 — This plugin for Obsidian enables you complete words like the auto-completion of IDE.
+- [Enveloppe](https://github.com/Enveloppe/obsidian-enveloppe) — ★ 911 — Enveloppe helps you to publish your notes on a GitHub repository from your Obsidian Vault, for free!
+- [gfxholo](https://github.com/gfxholo/iconic) — ★ 878 — Customize your icons and colors directly from the Obsidian UI, including tabs, files & folders, bookmarks, tags, properties, and ribbon commands.
+- [omnivore-app](https://github.com/omnivore-app/obsidian-omnivore) — ★ 873 — Obsidian plugin to fetch articles and highlights from Omnivore
+- [Nexus-JPF](https://github.com/Nexus-JPF/note-companion) — ★ 869 — Note Companion: AI assistant for Obsidian that goes beyond just a chat. (prev File Organizer 2000)
+- [subframe7536](https://github.com/subframe7536/obsidian-theme-maple) — ★ 869 — A sleek and modern Obsidian theme for desktop and mobile.
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Colored-Sidebar) — ★ 864 — A Colored Sidebar CSS Snippet for Obsidian.
+- [IdreesInc](https://github.com/IdreesInc/Waypoint) — ★ 863 — Obsidian plugin that gives you the power to generate dynamic MOCs in your folder notes. Enables folders to show up in the graph view and removes the need for...
+- [Railly](https://github.com/Railly/agentfiles) — ★ 850 — Browse, create, and edit AI agent files across Claude Code, Cursor, Codex, and 12 coding tools — from Obsidian.
+- [Ellpeck](https://github.com/Ellpeck/ObsidianCustomFrames) — ★ 847 — An Obsidian plugin that turns web apps into panes using iframes with custom styling. Also comes with presets for Google Keep, Todoist and more.
+- [kytmanov](https://github.com/kytmanov/obsidian-llm-wiki-local) — ★ 837 — Karpathy’s LLM Wiki, 100% local with Ollama. Drop Markdown notes → AI extracts concepts → your Obsidian wiki auto-links and grows. Zero sharing. Your notes s...
+- [HEmile](https://github.com/HEmile/juggl) — ★ 821 — An interactive, stylable and expandable graph view for Obsidian. Juggl is designed as an advanced 'local' graph view, where you can juggle all your thoughts ...
+- [PandoraReads](https://github.com/PandoraReads/apex-dashboard) — ★ 819 — Stop switching between Obsidian notes. One page. Everything you need. Memo your thoughts, crush your todos, track your projects — and make it look incredible...
+- [noatpad](https://github.com/noatpad/obsidian-banners) — ★ 817 — An Obsidian plugin that adds banners to your notes
+- [rajgoel](https://github.com/rajgoel/reveal.js-plugins) — ★ 816 — Plugins for reveal.js
+- [WebBreacher](https://github.com/WebBreacher/obsidian-osint-templates) — ★ 814 — These templates are suggestions of how the Obsidian notetaking tool can be used during an OSINT investigation. The example data in those files should allow y...
+- [phibr0](https://github.com/phibr0/obsidian-charts) — ★ 809 — Charts - Obsidian Plugin | Create editable, interactive and animated Charts in Obsidian via Chart.js
+- [InlitX](https://github.com/InlitX/Obsidian-Dashboard-Gallery) — ★ 791 — Beautiful, ready-to-use dashboard templates for Obsidian PKM✨
+- [chrisgurney](https://github.com/chrisgurney/obsidian-note-toolbar) — ★ 789 — Flexible, context-aware toolbars for your notes in Obsidian.
+- [bennyxguo](https://github.com/bennyxguo/hexo-theme-obsidian) — ★ 788 — 🎨 A dark Hexo theme, it's responsive, simple but elegant.
+- [SlRvb](https://github.com/SlRvb/Obsidian--ITS-Theme) — ★ 777 — Theme designed with readability and customizability in mind. Change it easily to your liking with the Style Settings plugin installed.
+- [ppeetteerrs](https://github.com/ppeetteerrs/obsidian-zola) — ★ 777 — A no-brainer solution to turning your Obsidian PKM into a Zola site.
+- [PKM-er](https://github.com/PKM-er/awesome-obsidian-zh) — ★ 774 — Obsidian 优秀中文插件、主题与资源
+- [jplattel](https://github.com/jplattel/obsidian-clipper) — ★ 749 — A Chrome extension that easily clips selections to Obsidian
+- [dotpm](https://github.com/dotpm/obsidian-pm) — ★ 746 — Project management inside Obsidian. Table, Gantt and Kanban over plain Markdown notes, with a local API for agents and scripts.
+- [LostPaul](https://github.com/LostPaul/obsidian-folder-notes) — ★ 740 — Create notes within folders that can be accessed without collapsing the folder, similar to the functionality offered in Notion.
+- [NicholasSpisak](https://github.com/NicholasSpisak/second-brain) — ★ 740 — LLM-maintained personal knowledge base for Obsidian. Based on Andrej Karpathy's LLM Wiki pattern.
+- [staruhub](https://github.com/staruhub/ClaudeSkills) — ★ 727 — 13 curated Agent Skills for research, product decisions, decks, publishing, audits, and more — portable across skills-compatible agents.
+- [jason-effi-lab](https://github.com/jason-effi-lab/karpathy-llm-wiki-vault) — ★ 725 — 基于 Karpathy LLM Wiki 理念构建的 SKILL 和 Obsidian 知识库，将碎片信息整理为结构化、互联的知识网络。
+- [agarwalvishal](https://github.com/agarwalvishal/claude-chat-exporter) — ★ 722 — One-click, privacy-first exporter for Claude.ai chats — clean Markdown with artifacts and attachments, ready for Obsidian and RAG.
+- [swarmclawai](https://github.com/swarmclawai/swarmvault) — ★ 717 — The local-first LLM Wiki: open-source knowledge graph builder, RAG knowledge base, and agent memory store. Built on Andrej Karpathy's pattern. An Obsidian al...
+- [djsudduth](https://github.com/djsudduth/keep-it-markdown) — ★ 708 — Export and convert Google Keep notes dynamically to markdown for Obsidian, Apple Notes, Logseq, Joplin and Notion using the unofficial Keep API. Also, import...
+- [GD4AI](https://github.com/GD4AI/obsidian-llm-wiki) — ★ 708 — Karpathy's LLM Wiki implementation plugin for Obsidian - turns notes and PDFs into a linked, LLM-powered knowledge base with entity pages, concept pages, gra...
+- [artisticat1](https://github.com/artisticat1/obsidian-tikzjax) — ★ 704 — Render LaTeX and TikZ diagrams in your notes
+- [jaredrhod](https://github.com/jaredrhod/ai-memory-vault) — ★ 700 — Give your AI a real, persistent memory. The open-source system plus templates that turn an Obsidian vault into your AI's working memory. No vector database, ...
+- [soberhacker](https://github.com/soberhacker/obsidian-telegram-sync) — ★ 685 — Transfer messages and files from Telegram to Obsidian
+- [ieshreya](https://github.com/ieshreya/obsidian-cheat-sheet) — ★ 670 — all the basic cheatsheets you need to get started to make notes in obsidian.
+- [Crauzer](https://github.com/Crauzer/Obsidian) — ★ 668 — Wad archive editor for League of Legends
+- [infiolab](https://github.com/infiolab/infio-copilot) — ★ 660 — A Cursor-inspired AI assistant for Obsidian that offers smart autocomplete and interactive chat with your selected notes
+- [jobindjohn](https://github.com/jobindjohn/obsidian-publish-mkdocs) — ★ 652 — A Template to Publish Obsidian/Foam Notes on Github Pages (uses MkDocs)
+- [scambier](https://github.com/scambier/obsidian-text-extractor) — ★ 644 — A (companion) plugin to facilitate the extraction of text from images (OCR) and PDFs.
+- [groepl](https://github.com/groepl/Obsidian-Zettelkasten-Starter-Kit) — ★ 636 — A Starter Kit for Obsidian with all essential elements to build up your own Zettelkasten system.
+- [emotixco](https://github.com/emotixco/claude-skills-founder) — ★ 629 — Claude Code skills for startup founders — product briefs, competitor analysis, pricing strategy, pitch decks, and GTM plans from your terminal
+- [oxdc](https://github.com/oxdc/obsidian-vertical-tabs) — ★ 623 — An Obsidian plugin that displays open tabs vertically, allowing users to group and organize tabs for a better navigation experience.
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Vault-Template) — ★ 614 — A Template for my Obsidian Vault.
+- [zosmaai](https://github.com/zosmaai/pi-llm-wiki) — ★ 611 — Self-maintaining, Obsidian-compatible knowledge base for pi — turn raw sources into an interlinked wiki that compounds. Native Open Knowledge Format (OKF) v0.2.
+- [benmaster82](https://github.com/benmaster82/Kwipu) — ★ 610 — Ask questions across your Markdown notes using a fully local Graph RAG engine. Built for Obsidian vaults, works with any folder of Markdown files. Extracts e...
+- [mayurankv](https://github.com/mayurankv/Obsidian-Code-Styler) — ★ 610 — A plugin for Obsidian.md for styling codeblocks and inline code
+- [xiao24bei](https://github.com/xiao24bei/xiaobei-skill) — ★ 596 — 小北在读研开源 Codex Skills 合集：Image to VBA、Academic Paper to PPT 等 AI + 科研工作流。
+- [atlas-vtt](https://github.com/atlas-vtt/atlas-vtt) — ★ 595 — Open Source virtual tabletop for Obsidian: battle maps, tokens, fog of war, dice, initiative and a separate player view.
+- [quanru](https://github.com/quanru/obsidian-lifeos) — ★ 590 — Obsidian Plugin for combining P.A.R.A with Periodic Notes(LifeOS for Obsidian)
+- [kepano](https://github.com/kepano/obsidian-hider) — ★ 580 — Hide Obsidian UI elements such as tooltips, status, titlebar and more
+- [taskgenius](https://github.com/taskgenius/taskgenius-plugin) — ★ 577 — Comprehensive task management plugin for Obsidian
+- [mgmeyers](https://github.com/mgmeyers/obsidian-california-coast-theme) — ★ 576 — A minimalist obsidian theme inspired by macOS Big Sur
+- [fxyadela](https://github.com/fxyadela/write-then-publish) — ★ 570 — 本地优先的中文内容排版工具：把 Markdown 转成小红书图文卡片、公众号长文和可下载图片，并支持 Obsidian 工作流。
+- [mokeyish](https://github.com/mokeyish/obsidian-enhancing-export) — ★ 551 — This is an enhancing export plugin base on Pandoc for Obsidian (https://obsidian.md/ ). It's allow you to export to formats like Markdown、Markdown (Hugo http...
+- [Karovia](https://github.com/Karovia/fullstack-ai-agent-roadmap) — ★ 539 — 🎯 从零基础到 AI Agent 全栈工程师 · 110 个详细教程 · 58 万字 · 400+ GitHub 项目精选 · Obsidian 友好 · 中文
+- [obsidianmd](https://github.com/obsidianmd/obsidian-maps) — ★ 533 — Map layout for Obsidian Bases. Display your notes as an interactive map view.
+- [fenjalien](https://github.com/fenjalien/obsidian-typst) — ★ 532 — Renders typst code blocks in Obsidian into images using Typst through the power of WASM!
+- [archlizheng](https://github.com/archlizheng/frontend-slides-editable) — ★ 531 — Editable HTML presentation skill for Codex/Claude Code with drag-resize editing, slide reordering, local save/export, and PPTX-to-web conversion. Shout out t...
+- [joethei](https://github.com/joethei/obsidian-plantuml) — ★ 531 — Generate PlantUML Diagrams inside Obsidian.md
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Notebook-Themes) — ★ 530 — A Series of Notebook Theme CSS Snippets for Obsidian.
+- [obsidian-pkm-vault](https://github.com/obsidian-pkm-vault/awesome-obsidian-vault) — ★ 526 — Awesome list of obsidian vaults
+- [hauselin](https://github.com/hauselin/obsidian-alfred) — ★ 512 — Alfred workflow for Obsidian note-taking app. Open vaults and files in Obsidian.
+- [damiankorcz](https://github.com/damiankorcz/Prism-Theme) — ★ 509 — A Comprehensive, Highly-Customisable and Elegant Light/Dark Theme for Obsidian.md
+- [chhoumann](https://github.com/chhoumann/MetaEdit) — ★ 507 — MetaEdit for Obsidian
+- [Stardusten](https://github.com/Stardusten/ob-table-enhancer) — ★ 500 — Manipulate markdown tables without touching the source code in Obsidian.
+- [Pierrad](https://github.com/Pierrad/obsidian-github-copilot) — ★ 498 — A bridge between Obsidian and Github Copilot
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-media-db-plugin) — ★ 492 — A plugin that can query multiple APIs for movies, series, anime, games, music and wiki articles, and import them into your vault.
+- [JimmySadek](https://github.com/JimmySadek/video-fetcher-to-markdown) — ★ 488 — Portable AI-agent skill: turn YouTube, Instagram, TikTok, X and other video links into Obsidian-ready Markdown notes: captions or local Whisper transcripts, ...
+- [ObsidianMC](https://github.com/ObsidianMC/Obsidian) — ★ 480 — A C# implementation of the Minecraft server protocol.
+- [hkcanan](https://github.com/hkcanan/katmer-code) — ★ 474 — Multi-provider AI sidebar for Obsidian — Claude, Gemini, Codex, Antigravity. Per-tab routing, same-tab consult, inline diff, CLAUDE.md auto-mirror, academic ...
+- [evilz](https://github.com/evilz/vscode-reveal) — ★ 472 — Revealjs vsCode extension
+- [nicksp](https://github.com/nicksp/dotfiles) — ★ 470 — My personal dotfiles: Zsh, Git, VSCode, Obsidian, Ghostty, cmux, etc.
+- [joethei](https://github.com/joethei/obsidian-rss) — ★ 470 — Read RSS Feeds from inside Obsidian
+- [Sadsnake1](https://github.com/Sadsnake1/word-smith) — ★ 466 — Dedicated Writing Studio for Obsidian
+- [QuZhan51496](https://github.com/QuZhan51496/paper2anything) — ★ 461 — An agent skills pack that turns an academic paper PDF into slides, a poster, a webpage, a Xiaohongshu post, or a WeChat article (paper2slides/poster/html/xhs...
+- [vran-dev](https://github.com/vran-dev/obsidian-contribution-graph) — ★ 461 — generate interactive gitxxx style contribution graph for obsidian, use it to track your goals, habits, or anything else you want to track.
+- [tldraw](https://github.com/tldraw/obsidian-plugin) — ★ 459 — A plugin to integrate tldraw into Obsidian.
+- [tu2-atmanand](https://github.com/tu2-atmanand/Task-Board) — ★ 458 — An Obsidian plugin to view and manage your tasks from whole vault using much efficient boards using various methodologies.
+- [derek-larson14](https://github.com/derek-larson14/obsidian-claude-sidebar) — ★ 453 — Run Claude Code, Codex, and other agent CLIs in Obsidian
+- [gadenbuie](https://github.com/gadenbuie/xaringanExtra) — ★ 449 — :ferris_wheel: A playground of enhancements and extensions for xaringan slides.
+- [coatless](https://github.com/coatless/quarto-webr) — ★ 448 — Community developed Quarto Extension to Embed webR for HTML Documents, RevealJS, Websites, Blogs, and Books.
+- [denolehov](https://github.com/denolehov/obsidian-url-into-selection) — ★ 444 — Paste URLs into selected text "notion style"
+- [llZektorll](https://github.com/llZektorll/Template_Hub) — ★ 434 — Obsidian Template Hub started on the 13th of June 2022. It was set up to gather as many note templates as possible.
+- [hfactor](https://github.com/hfactor/jekyll-garden) — ★ 429 — A simple Jekyll theme that turns your Obsidian notes into a beautiful website.
+- [devidw](https://github.com/devidw/obsidian-to-hugo) — ★ 428 — Process Obsidian notes to publish them with Hugo. Supports transformation of Obsidian wiki links into Hugo shortcodes for internal linking.
+- [reorx](https://github.com/reorx/obsidian-paste-image-rename) — ★ 423 — Renames pasted images and all the other attachments added to the vault
+- [ryanbbrown](https://github.com/ryanbbrown/revealjs-skill) — ★ 415 — Coding agent skill for making reveal.js presentations
+- [james-tindal](https://github.com/james-tindal/obsidian-mindmap-nextgen) — ★ 408 — Create mind maps from your obsidian markdown files
+- [minorun365](https://github.com/minorun365/minorun-marp-skill) — ★ 406 — Marp?????????????????????????????????????????????
+- [tadashi-aikawa](https://github.com/tadashi-aikawa/obsidian-another-quick-switcher) — ★ 404 — This is an Obsidian plugin which is another choice of Quick switcher.
+- [smixs](https://github.com/smixs/agent-second-brain) — ★ 400 — An always-on second brain you talk to. Voice notes in Telegram → typed, linked knowledge in your Obsidian vault. Runs 24/7 on the Claude subscription you alr...
+- [tth05](https://github.com/tth05/obsidian-completr) — ★ 396 — Auto-completion plugin for the obsidian editor.
+- [AlexW00](https://github.com/AlexW00/obsidian-3d-graph) — ★ 392 — 👓 A 3D graph for Obsidian!
+- [ascott1](https://github.com/ascott1/bigSlide.js) — ★ 391 — ⚠️**DEPRECATED**⚠️ A tiny slide panel navigation jQuery plugin with big dreams
+- [danielo515](https://github.com/danielo515/obsidian-modal-form) — ★ 391 — Define forms for filling data that you will be able to open from anywhere you can run JS
+- [davidvkimball](https://github.com/davidvkimball/vaultcms) — ★ 385 — Use Obsidian as a content management system for your Astro website.
+- [obsidian-html](https://github.com/obsidian-html/obsidian-html) — ★ 384 — Python code to convert Obsidian notes to proper markdown and optionally to create an html site too.
+- [SoRobby](https://github.com/SoRobby/ObsidianStarterVault) — ★ 383 — Organize your Universe: An Obsidian starter vault for everyone, bridging the gap between ideas and actions
+- [nikdanilov](https://github.com/nikdanilov/whisper-obsidian-plugin) — ★ 380 — Speech-to-text in Obsidian using Whisper
+- [clairefro](https://github.com/clairefro/obsidian-plugin-chronos) — ★ 376 — Render interactive timelines in your Obsidian notes from simple Markdown.
+- [lumoe](https://github.com/lumoe/obsidian-rollover-daily-todos) — ★ 370 — An obsidian plugin that rolls over todo items from the previous daily note
+- [cooklang](https://github.com/cooklang/cooklang-obsidian) — ★ 366 — Edit and display Cooklang recipes in Obsidian
+- [CyanVoxel](https://github.com/CyanVoxel/Obsidian-Daily-Themes) — ★ 363 — A Series of Daily Theme CSS Snippets for Obsidian.
+- [mugiwara85](https://github.com/mugiwara85/CodeblockCustomizer) — ★ 358 — Codeblock Customizer plugin for Obsidian
+- [LBF38](https://github.com/LBF38/obsidian-syncthing-integration) — ★ 358 — Obsidian plugin for Syncthing integration
+- [Santofer](https://github.com/Santofer/Remindian) — ★ 354 — Sync Obsidian Tasks or TaskNotes with Apple Reminders or Things 3 — two-way sync, surgical edits, tag mapping, menu-bar app for macOS
+- [j-palindrome](https://github.com/j-palindrome/obsidian-time-ruler) — ★ 352 — A drag-and-drop time ruler combining the best of a task list and a calendar view (integrates with Tasks, Full Calendar, and Dataview).
+- [runesleo](https://github.com/runesleo/ai-health-vault) — ★ 351 — AI + Obsidian private health management system template
+- [thesamim](https://github.com/thesamim/TickTickSync) — ★ 346 — Bidirectional synchronization between Obsidian and TickTick. Mobile compatible.
+- [BlandAlpha](https://github.com/BlandAlpha/obsidian_math) — ★ 345 — 适用于Obsidian的考研数学2笔记。
+- [mgmeyers](https://github.com/mgmeyers/obsidian-smart-typography) — ★ 343 — Converts quotes to curly quotes, dashes to em dashes, and periods to ellipses
+- [joeseesun](https://github.com/joeseesun/qiaomu-clipper) — ★ 342 — 乔木剪藏：剪藏网页到 Obsidian，阅读、编辑，并向 AI 提问 | Clip the web to Obsidian, then read, edit and chat with AI about it.
+- [NicklasVraa](https://github.com/NicklasVraa/Obsidian-academic-export) — ★ 341 — Turn your obsidian notes into academic papers.
+- [philips](https://github.com/philips/supernote-obsidian-plugin) — ★ 333 — Supernote A5, A5X, A6X, A6X2 (Nomad), and A5X2 (Manta) integration for Obsidian. Generate markdown, capture screen mirror, and more.
+- [voidashi](https://github.com/voidashi/obsidian-vault-template) — ★ 333 — Simple and efficient template to build your second brain in Obsidian
+- [soxoj](https://github.com/soxoj/marple) — ★ 332 — ?? Collect links to profiles by username through search engines and analyze with various plugins
+- [hassancs91](https://github.com/hassancs91/claude-youtube-editor) — ★ 332 — Record the talking head, Claude Code does the rest: the cut, the visuals, the voice, the sound effects, the thumbnail, and the YouTube upload. Every screen m...
+- [TarsLab](https://github.com/TarsLab/obsidian-tars) — ★ 331 — Obsidian tars plugin that supports text generation based on tag suggestions, using services like DeepSeek, Claude, OpenAI, OpenRouter, SiliconFlow, Gemini, O...
+- [robonuggets](https://github.com/robonuggets/marp-slides) — ★ 324 — MARP presentation skill for Claude Code  22 curated example decks, SVG charts, dark/light themes, dashboard components
+- [travisvn](https://github.com/travisvn/obsidian-edge-tts) — ★ 322 — Free, high quality text-to-speech for your Obsidian notes, leveraging Microsoft Edge's Read Aloud API.
+- [d2lang](https://github.com/d2lang/d2-obsidian) — ★ 317 — The official D2 plugin for Obsidian. D2 is a modern diagram scripting language thats turns text to diagrams.
+- [geekjourneyx](https://github.com/geekjourneyx/obsidian-md2wechat) — ★ 316 — Obsidian → WeChat | Obsidian 插件一键排版发布到微信公众号，键排版发布到微信公众号：支持 40+ 排版样式和专业主题 、AI 配图 、批量发布 、多账号管理
+- [trganda](https://github.com/trganda/obsidian-attachment-management) — ★ 316 — Attachment Management of Obsidian
+- [Li-Baichuan-James](https://github.com/Li-Baichuan-James/summarize-slides-skill) — ★ 315 — —
+- [KovaMD](https://github.com/KovaMD/Kova) — ★ 314 — Kova - Markdown presentation editor.
+- [obsidian-tools](https://github.com/obsidian-tools/obsidian-tools) — ★ 311 — An unofficial collection of tools that helps you build plugins for obsidian.md
+- [trashhalo](https://github.com/trashhalo/obsidian-extract-url) — ★ 310 — Plugin to extract markdown out of urls
+- [Twigonometry](https://github.com/Twigonometry/OSCP-Notes-Template) — ★ 309 — A template Obsidian Vault for storing your OSCP revision notes
+- [marc0l92](https://github.com/marc0l92/obsidian-jira-issue) — ★ 306 — This plugin allows you to track the progress of Atlassian Jira issues from your Obsidian notes.
+- [likaku](https://github.com/likaku/Mck-ppt-design-skill) — ★ 303 — Consulting firm-style PowerPoint design system for AI agents. 70 layout patterns, flat design, python-pptx. ????PPT?????
+- [MichaelDeBoey](https://github.com/MichaelDeBoey/gatsby-remark-embedder) — ★ 302 — Gatsby Remark plugin to embed well known services by their URL.
+- [M1ck4](https://github.com/M1ck4/pdfmd) — ★ 302 — Smart PDF to Markdown converter with intelligent heading detection, automatic header/footer removal, orphan fragment merging, and image export. Features a us...
+- [caronchen](https://github.com/caronchen/obsidian-chartsview-plugin) — ★ 302 — Data visualization solution in Obsidian, support plots and graphs.
+- [d-eniz](https://github.com/d-eniz/jupymd) — ★ 301 — JupyMD: Use Obsidian as a Jupyter notebook IDE
+- [Obsidian-TTRPG-Community](https://github.com/Obsidian-TTRPG-Community/ObsidianTTRPGShare) — ★ 301 — This is a repository for sharing TTRPG elements that may be useful for Obsidian.md TTRPG Users.
+- [AgriciDaniel](https://github.com/AgriciDaniel/claude-canvas) — ★ 300 — AI-orchestrated visual production for Obsidian Canvas. Create presentations, flowcharts, mood boards, knowledge graphs, and galleries with intelligent layout...
+- [elias-sundqvist](https://github.com/elias-sundqvist/obsidian-react-components) — ★ 293 — Write and use React (Jsx) components in your Obsidian notes.
+- [ashuotaku](https://github.com/ashuotaku/Personal-Wiki) — ★ 292 — A showcase of my obsidian vault to help others to organize their notes in a better way.
+- [helloianneo](https://github.com/helloianneo/obsidian-ai-second-brain) — ★ 289 — Obsidian + Claude AI 个人知识库完整搭建指南 | 基于 Karpathy LLM Wiki 方法论 | 4 阶段 12 步 | 不用写代码
+- [AlexW00](https://github.com/AlexW00/obsidian-note-linker) — ★ 289 — 🔗 Automatically link your Obsidian notes.
+- [Ariestar](https://github.com/Ariestar/obsidian-dragger) — ★ 283 — An Obsidian plugin for dragging and rearranging any block.
+- [ozntel](https://github.com/ozntel/oz-clear-unused-images-obsidian) — ★ 283 — Obsidian plugin to clear the images that are not used in note files anymore
+- [johansatge](https://github.com/johansatge/obsidian-automatic-table-of-contents) — ★ 282 — 💠 An Obsidian plugin to create a table of contents in a note, that updates itself when the note changes
+- [awesome-yasin](https://github.com/awesome-yasin/PDF-Verse) — ★ 281 — PDF Verse is a powerful web based PDF Editor with tools for editing, converting, and manipulating PDFs. Merge, compress, add or remove pages, or extract text...
+- [zimya](https://github.com/zimya/zhihu_obsidian) — ★ 281 — Zhihu on Obsidian | 知乎 Obsidian 插件
+- [ebullient](https://github.com/ebullient/obsidian-slides-extended) — ★ 278 — Create markdown-based reveal.js presentations in Obsidian
+- [ferdinandobons](https://github.com/ferdinandobons/brand-docs) — ★ 276 — BrandDocs is a set of agent skills that learn your existing Word, PowerPoint and Excel templates and generate new on-brand documents from them. Unlike generi...
+- [compiiile](https://github.com/compiiile/compiiile) — ★ 276 — The most convenient way to render and deploy a folder containing markdown files. Previewing and searching markdown files has never been that easy. Your alter...
+- [Benature](https://github.com/Benature/obsidian-text-format) — ★ 271 — Format seleted text in Obsdidian.md
+- [akaalias](https://github.com/akaalias/obsidian-extract-pdf) — ★ 270 — Extract PDFs to Markdown within Obsidian
+- [obsidian-userland](https://github.com/obsidian-userland/publish) — ★ 270 — Open source Obsidian Publish alternative
+- [zouchenzhen](https://github.com/zouchenzhen/thesis-defense-pptx-skill) — ★ 269 — Codex / Claude Skill for editable thesis-defense PPTX from PDF or LaTeX while preserving a PowerPoint template. ??? PDF / LaTeX ??????? PPTX,????? PPT ?????
+- [davisriedel](https://github.com/davisriedel/obsidian-typewriter-mode) — ★ 269 — Typewriter Mode is a plugin that adds typewriter scrolling (current line stays at a fixed position on the screen), a highlight for the current line, dimming ...
+- [UNLINEARITY](https://github.com/UNLINEARITY/Obsidian-CodeSpace) — ★ 268 — Professional code file management with visual dashboard, syntax highlighting editor, Markdown embedding, external folder mounts, and terminal integration.  在...
+- [samuele-cozzi](https://github.com/samuele-cozzi/obsidian-marp-slides) — ★ 267 — Create markdown-based Marp presentations in Obsidian
+- [ycnmhd](https://github.com/ycnmhd/obsidian-lineage) — ★ 267 — Gingko-like interface in obsidian
+- [chhoumann](https://github.com/chhoumann/PodNotes) — ★ 266 — PodNotes is a plugin for Obsidian that helps the user write notes on podcasts.
+- [Seniblue](https://github.com/Seniblue/Underwater) — ★ 264 — An obsidian.md theme
+- [kytmanov](https://github.com/kytmanov/synto) — ★ 262 — More than just Karpathy’s LLM Wiki, 100% local with Ollama. Drop Markdown notes → AI extracts concepts → your Obsidian wiki auto-links and grows. Zero sharin...
+- [hjinco](https://github.com/hjinco/synch) — ★ 262 — End-to-end encrypted sync for Obsidian vaults
+- [Seraphli](https://github.com/Seraphli/obsidian-link-embed) — ★ 260 — This plugin allow you to convert URLs in your notes into embeded previews.
+- [oliveryh](https://github.com/oliveryh/obsidian-emoji-toolbar) — ★ 259 — An Obsidian plugin to quickly add emojis into your notes
+- [hasanyilmaz](https://github.com/hasanyilmaz/operon) — ★ 258 — Task management system for humans and agents in Obsidian.
+- [tanepiper](https://github.com/tanepiper/obsidian-garden) — ★ 258 — A knowledge management garden for https://obsidian.md, in which to grow your ideas
+- [drbap](https://github.com/drbap/dashboard-navigator-for-obsidian) — ★ 258 — Dashboard navigator plugin for Obsidian.
+- [ganesshkumar](https://github.com/ganesshkumar/obsidian-excel-to-markdown-table) — ★ 257 — An Obsidian plugin to paste data from Microsoft Excel, Google Sheets, Apple Numbers and LibreOffice Calc as Markdown tables in Obsidian editor.
+- [Papela](https://github.com/Papela/Obsidian-Portable) — ★ 257 — Obsidian Portable Repository
+- [slidevjs](https://github.com/slidevjs/slidev-vscode) — ★ 256 — VS Code extension for Slidev
+- [jupyterlab-contrib](https://github.com/jupyterlab-contrib/rise) — ★ 254 — RISE: "Live" Reveal.js JupyterLab Slideshow Extension
+- [seburbandev](https://github.com/seburbandev/obsidian-dataview-cheatsheet) — ★ 254 — This cheatsheet provides a handy reference guide for writing powerful queries using the dataview plugin in Obsidian.
+- [abcjs-music](https://github.com/abcjs-music/obsidian-plugin-abcjs) — ★ 254 — Plugin which renders music notations from code blocks
+- [zremboldt](https://github.com/zremboldt/obsidian-media-grid) — ★ 252 — Add more meaning and visual interest to your markdown documents by grouping sets of images, videos, or even audio tracks into grid layouts in Obsidian.
+- [RyotaUshio](https://github.com/RyotaUshio/obsidian-latex-theorem-equation-referencer) — ★ 252 — A powerful indexing & referencing system for theorems & equations in your Obsidian vault.
+- [ganesshkumar](https://github.com/ganesshkumar/obsidian-table-editor) — ★ 250 — An Obsidian plugin to provide an editor for Markdown tables. It can open CSV data and data from Microsoft Excel, Google Sheets, Apple Numbers and LibreOffice...
+- [ZekunC](https://github.com/ZekunC/Obsidian-Typora-Vue-Theme) — ★ 248 — A theme for Obsidian(https://obsidian.md/), inspired by typora-vue.
+- [carlonicora](https://github.com/carlonicora/obsidian-rpg-manager) — ★ 247 — RPG Manager is a tool to simplify the plot, run and track of role playing game campaigns, helping storytellers to run better campaigns in less time.
+- [iammatthias](https://github.com/iammatthias/com) — ★ 246 — Digital garden built using Astro, Obsidian, and other goodies.
+- [bencodezen](https://github.com/bencodezen/bens-obsidian-boilerplate) — ★ 246 — An opinionated kit to provide people some inspiration and ideas for their own workflows.
+- [aoout](https://github.com/aoout/obsidian-epub-importer) — ★ 244 — Import EPUB files as Markdown.
+- [akaalias](https://github.com/akaalias/obsidian-extract-pdf-highlights) — ★ 243 — Extract highlights, underlines and annotations from your PDFs into Obsidian
+- [dsebastien](https://github.com/dsebastien/obsidian-life-tracker-base-view) — ★ 242 — Capture and visualize the data that matters in your life
+- [joeseesun](https://github.com/joeseesun/qiaomu-book-reader-legacy) — ★ 242 — 在 Obsidian 中阅读 EPUB、FB2 与 PDF，划线批注、就地问 AI、笔记回到原文 | Read EPUB/FB2/PDF in Obsidian: highlights, inline AI Q&A, and notes that link back to the source.
+- [ebullient](https://github.com/ebullient/obsidian-task-collector) — ★ 242 — Manage tasks and logs within an Obsidian note.
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-shiki-plugin) — ★ 240 — An Obsidian plugin that offers better code highlighting via shiki and Expressive Code.
+- [HatanoChihiro](https://github.com/HatanoChihiro/obsidian-webnovel-assistant) — ★ 240 — 为小说故事创作设计的 Obsidian 插件 | Obsidian plugin for novel and story writing
+- [Cursivez](https://github.com/Cursivez/journalit) — ★ 237 — Obsidian trading journal with broker sync, trade imports, analytics, prop firm tracking, reviews and rule-based trading workflows.
+- [uwidev](https://github.com/uwidev/life-disciplines-projects) — ★ 237 — Life-Disciplines-Projects (LDP) is a life-management framework built within Obsidian. Feel free to transform it for your own personal needs.
+- [hubeiqiao](https://github.com/hubeiqiao/apple-bento-grid) — ★ 236 — Agent skill that generates Apple-inspired bento grid presentation cards. For Claude Code, Codex, and any AI coding agent.
+- [chenyukang](https://github.com/chenyukang/obweb) — ★ 236 — ObWeb = Obsidian on Mobile + Flomo + Rss Reader
+- [ykhwong](https://github.com/ykhwong/ppt-ndi) — ★ 235 — A PowerPoint plugin for the NewTek NDI integration
+- [davidvkimball](https://github.com/davidvkimball/astro-modular) — ★ 235 — A flexible Astro blog theme designed for Obsidian users.
+- [nguyenvanduocit](https://github.com/nguyenvanduocit/obsidian-open-gate) — ★ 234 — Empower your Obsidian notes with seamless web integration.
+- [phibr0](https://github.com/phibr0/obsidian-emoji-shortcodes) — ★ 231 — Emoji Shortcodes - Obsidian Plugin | Adds Support for Emoji Shortcodes to Obsidian
+- [churnish](https://github.com/churnish/dynamic-views) — ★ 230 — Obsidian plugin that adds elegant grid and masonry card views for Bases.
+- [alopezrivera](https://github.com/alopezrivera/OneNoteExporter) — ★ 230 — Export your OneNote note collection to Obsidian, Logseq, Org Mode or any other plain text note-taking app!
+- [MrXujiang](https://github.com/MrXujiang/pptx) — ★ 229 — A PPT online editor based on the web terminal ｜ 一款基于web端的ppt在线编辑器
+- [basilioss](https://github.com/basilioss/obsidian-scrapers) — ★ 228 — Get information from link for Obsidian
+- [CyanVoxel](https://github.com/CyanVoxel/vauxhall-obsidian) — ★ 227 — 🌌 A Theme Echoing From the Deep [Obsidian]
+- [trashhalo](https://github.com/trashhalo/obsidian-webhooks) — ★ 227 — Connect obsidian to the internet of things via webhooks
+- [visini](https://github.com/visini/obsidian-icons-plugin) — ★ 225 — Add icons to your Obsidian notes – Experimental Obsidian Plugin
+- [ArtemXTech](https://github.com/ArtemXTech/claude-code-obsidian-starter) — ★ 225 — Free starter kit: Claude Code + Obsidian. Pre-configured vault with skills for projects, tasks, clients, and daily routines. Just open and go.
+- [HisMax](https://github.com/HisMax/awesome-openclaw-ob) — ★ 224 — OpenClaw 深度研究 Obsidian 知识库 | 351 篇笔记 · 3250+ 双链 · 100 张配图 · 9 大主题 | AI Agent 最全中文知识图谱
+- [azyarashi](https://github.com/azyarashi/obsidian-typst-mate) — ★ 224 — Render math expressions with Typst instead of MathJax in Obsidian.
+- [EESJGong](https://github.com/EESJGong/scholar-skill) — ★ 223 — An OpenClaw skill for academic reading, knowledge linking, reflection, and knowledge evolution in Obsidian.
+- [EveryInc](https://github.com/EveryInc/hands-on-deck) — ★ 220 — Agent-native PowerPoint manipulation — one CLI lets AI agents inspect, edit, create, and verify .pptx files through atomic JSON patches. Packaged as an Agent...
+- [kbravh](https://github.com/kbravh/obsidian-tweet-to-markdown) — ★ 220 — An Obsidian.md plugin to save tweets as Markdown files.
+- [chiimagnus](https://github.com/chiimagnus/SyncNos) — ★ 217 — A web clipper for saving AI chats, web articles, and video transcripts to Notion, Obsidian, Feishu, and GitHub, with CLI automation.
+- [joshwingreene](https://github.com/joshwingreene/Obsidian-JG-Method) — ★ 216 — A starter kit that follows how I use Obsidian to manage my goals, tasks, notes, and software development knowledge base.
+- [kh4f](https://github.com/kh4f/flexplorer) — ★ 214 — 🗃️ Obsidian File Explorer Enhancer
+- [Rooyca](https://github.com/Rooyca/obsidian-api-request) — ★ 213 — Obsidian plugin that allows you to integrate API data into your notes with request caching, variable support, and precise JSON extraction.
+- [FHachez](https://github.com/FHachez/obsidian-convert-url-to-iframe) — ★ 211 — Plugin for Obsidian.md to convert a selected URL to an iframe.
+- [polyipseity](https://github.com/polyipseity/obsidian-unhide) — ★ 211 — (formerly Show Hidden Files) Unhide hidden files, like dotfiles.
+- [ShZhao27208](https://github.com/ShZhao27208/Aut_Sci_Write) — ★ 209 — Academic research skills suite for AI Agent — literature search/download (WoS+Elsevier+Springer), PDF   extraction, figure cropping, review writing, Zotero s...
+- [connerohnesorge](https://github.com/connerohnesorge/awesome-vaults) — ★ 208 — This is an List of Obsidian Vaults that show off features or collections of Notes.
+- [jparkerweb](https://github.com/jparkerweb/pixel-banner) — ★ 208 — 🚩 Enhance your Obsidian notes with customizable banner images, including AI-generated designs and a curated store of downloadable banners. Transform your wor...
+- [agentii-ai](https://github.com/agentii-ai/agentii-investment-intelligence) — ★ 206 — Claude-type skills for institutional equity research — 25 AI agent skills with SEC   filings, XBRL financials, earnings calendars, DCF/comps/LBO models, and ...
+- [czottmann](https://github.com/czottmann/obsidian-actions-uri) — ★ 205 — A plugin for Obsidian (https://obsidian.md) that adds additional `x-callback-url` endpoints to the app for common actions — it's a clean, super-charged addit...
+- [Michael-OvO](https://github.com/Michael-OvO/obsidian-knowledge-agent) — ★ 204 — Agent-driven pipeline that turns raw material (PDFs, slides, syllabi, papers, URLs) into structured, teaching-quality Obsidian notes: ingest, compile, distri...
+- [henrikingo](https://github.com/henrikingo/impressionist) — ★ 202 — A Visual 3D editor for creating stunning impress.js presentations
+- [mgmeyers](https://github.com/mgmeyers/obsidian-contextual-typography) — ★ 202 — —
+- [Ellpeck](https://github.com/Ellpeck/ObsidianSimpleTimeTracker) — ★ 200 — Multi-purpose time trackers for your notes!
+- [tcmmichaelb139](https://github.com/tcmmichaelb139/obsidian-tokyonight) — ★ 199 — Tokyo Night theme for Obsidian
+- [w1163222589-coder](https://github.com/w1163222589-coder/slide-image-to-editable-pptx) — ★ 196 — A Codex skill for converting slide screenshots into editable PowerPoint decks.
+- [caronchen](https://github.com/caronchen/obsidian-calibre-plugin) — ★ 195 — Allow you to access your calibre libraries and read books directly in Obsidian.
+- [acheng-byte](https://github.com/acheng-byte/discourse-saver) — ★ 195 — Discourse 论坛帖子保存工具 - 一键保存到 Obsidian/飞书/Notion/WebDAV/百度网盘，支持飞书云文档，自动按论坛域名分文件夹
+- [lukasbach](https://github.com/lukasbach/obsidian-code-files) — ★ 195 — Plugin for ObsidianMD to show and edit code files along other notes.
+- [pricklywiggles](https://github.com/pricklywiggles/niamos) — ★ 193 — Obsidian productivity system and second brain.
+- [ljavuras](https://github.com/ljavuras/obsidian-power-tools) — ★ 193 — Obsidian custom scripts, templates and workflows developed for myself. Take whatever you need.
+- [r-wasm](https://github.com/r-wasm/quarto-drop) — ★ 192 — Drop down an interactive R or Python console, code editor, and plotting window from the top of your Quarto slides.
+- [PKM-er](https://github.com/PKM-er/Obsidian-Plug-and-Play) — ★ 192 — 一个简单的Obsidian 即开即用库，希望它能节省你调试的时间，更多关注笔记和知识本身。A simple Obsidian plug and play vault.Hopefully it will save you time debugging and pay more attention to the no...
+- [gapmiss](https://github.com/gapmiss/obsidian-plugin-skill) — ★ 192 — Agent SKILL for Obsidian.md plugin development
+- [mProjectsCode](https://github.com/mProjectsCode/obsidian-js-engine-plugin) — ★ 192 — An Obsidian plugin that offers a multiple ways to run JavaScript from within Obsidian.
+- [Aetherinox](https://github.com/Aetherinox/obsidian-dataview-snippets) — ★ 190 — A collection of Obsidian.md scripts which include Tag & Page Clouds, Table of Contents / ToC, Bad / Missing Link reporting, etc.
+- [arpitbbhayani](https://github.com/arpitbbhayani/obsidian-hackernews) — ★ 190 — Displays top stories from Hacker News inside Obsidian.
+- [ykerus](https://github.com/ykerus/obsidian-templates) — ★ 190 — Obsidian vault with task reminders, milestone and lesson trackers, automated tools for keeping things tidy, several templates to kickstart meetings and proje...
+- [sytone](https://github.com/sytone/obsidian-queryallthethings) — ★ 188 — Query all your data stored in Obsidian, this plugin allows SQL based queries against the data collections available in Obsidian and Dataview. Output can then...
+- [jjmaldonis](https://github.com/jjmaldonis/obsidian-audio-notes) — ★ 186 — Easily take notes on podcasts and other audio files using Obsidian Audio Notes.
+- [Numstr](https://github.com/Numstr/Obsidian-Portable) — ★ 185 — Obsidian Portable For Windows
+- [banisterious](https://github.com/banisterious/obsidian-charted-roots) — ★ 182 — Professional genealogical tools for Obsidian. Interactive family charts, geographic maps, PDF reports, GEDCOM/Gramps import-export, evidence tracking, and fi...
+- [velviagris](https://github.com/velviagris/obsidian-local-backup) — ★ 182 — Automatically creates a local backup of the vault.
+- [franciskafieh](https://github.com/franciskafieh/obsidian-list-modified) — ★ 182 — 🪨 The advanced and adaptive changelog for Obsidian. Links all modified files meeting certain criteria to a timed (daily, weekly, monthly) note.
+- [NicoNekoru](https://github.com/NicoNekoru/obsidan-advanced-table-xt) — ★ 180 — Plugin that adds features to tables in obsidian including merging, vertical headers, and custom css
+- [lachsh](https://github.com/lachsh/obsidian-recipe-view) — ★ 179 — View your Obsidian notes as interactive recipe cards while you cook.
+- [jplattel](https://github.com/jplattel/obsidian-query-language) — ★ 178 — An Obsidian plugin allowing you to query your notes
+- [ebullient](https://github.com/ebullient/obsidian-day-planner-og) — ★ 178 — An Obsidian plugin for day planning and managing pomodoro timers from a markdown task list.
+- [JichouP](https://github.com/JichouP/obsidian-marp-plugin) — ★ 177 — Plugin to use Marp with Obsidian
+- [czottmann](https://github.com/czottmann/obsidian-mononote) — ★ 177 — An Obsidian plugin that ensures each note occupies only one tab. If a note is already open, its existing tab will be focussed instead of opening the same fil...
+- [IssacW228](https://github.com/IssacW228/student-llm-wiki) — ★ 177 — 📚 Student LLM Wiki — AI-compiled knowledge base for university students. Drop course slides, get a persistent interlinked wiki. Feynman review, exam prep, co...
+- [macedotavares](https://github.com/macedotavares/obsidian-utilities) — ★ 176 — An Alfred workflow focusing on quick entry and logging.
+- [olvidalo](https://github.com/olvidalo/obsidian-chord-sheets) — ★ 176 — Work with chord sheets (chords over lyrics or inline in brackets) in Obsidian: Chord diagrams for guitar, ukulele and mandolin, transpose, autoscroll and mor...
+- [noduslabs](https://github.com/noduslabs/infranodus-obsidian-plugin) — ★ 175 — Advanced graph view for Obsidian: text analysis, topic modeling, and AI with InfraNodus AI text analysis tool: https://infranodus.com
+- [holubj](https://github.com/holubj/obsidian-dialogue-plugin) — ★ 174 — Dialogue plugin for Obsidian.md
+- [daniel-style](https://github.com/daniel-style/magic-slide) — ★ 172 — A skill that generates polished self-contained HTML presentations with smooth Magic Move-style slide transitions.
+- [Sadsnake1](https://github.com/Sadsnake1/cursor-smith) — ★ 172 — Cursor Customization Engine for Obsidian
+- [diegoeis](https://github.com/diegoeis/obsidianotion) — ★ 172 — Just a little theme for obsidian with notion inspired design
+- [yan42685](https://github.com/yan42685/obsidian-clever-search) — ★ 171 — Helping you quickly locate the notes in your mind in the easiest way, without the need for complex search syntax to find relevant content.
+- [namiwang](https://github.com/namiwang/fiber-note) — ★ 171 — A networked note-taking app, open and self-hosted, inspired by roam-research, obsidian and others.
+- [dream-num](https://github.com/dream-num/obsidian-univer) — ★ 171 — Create, edit, and view spreadsheets and documents in various formats like Excel and Word directly within your knowledge base.
+- [appautomaton](https://github.com/appautomaton/document-SKILLs) — ★ 170 — Claude Code and Codex SKILLs for PDF, Excel, Word, and PowerPoint manipulation — extraction, forms, formulas, tracked changes, adapted from Anthropic skills.
+- [ToseaAI](https://github.com/ToseaAI/awesome-html-slide-skills) — ★ 169 — A curated list of HTML slide generation skills and template libraries for Claude Code, Codex, Cursor, OpenClaw, and Hermes. ?? HTML ???? Skill ?????
+- [dsebastien](https://github.com/dsebastien/obsidian-dataview-serializer) — ★ 167 — Obsidian plugin that gives you the power of Dataview, but generates Markdown, making it compatible with Obsidian Publish, and making the links appear on the ...
+- [benoror](https://github.com/benoror/obsidianos_work) — ★ 165 — ObsidianOS - Work Vault
+- [eightHundreds](https://github.com/eightHundreds/obsidian-dida-sync) — ★ 164 — 滴答清单同步到obsidian(ticktick sync to obsidian)
+- [jhofker](https://github.com/jhofker/obsidian-hoarder) — ★ 164 — An Obsidian.md community plugin that allows syncing with https://karakeep.app/
+- [wengzige](https://github.com/wengzige/html-deck-editor) — ★ 163 — Anchor Deck: local-first HTML presentation editor for converting AI-generated slides into editable HTML decks
+- [mnaoumov](https://github.com/mnaoumov/obsidian-custom-attachment-location) — ★ 163 — Customize attachment location with variables($filename, $data, etc) like Typora.
+- [tallguyjenks](https://github.com/tallguyjenks/Obsidian-For-Business) — ★ 161 — Using Obsidian.... For Business!
+- [aitorllj93](https://github.com/aitorllj93/obsidian-lovely-bases) — ★ 159 — Beautiful, visual bases views for Obsidian
+- [chaitanyabsprip](https://github.com/chaitanyabsprip/present.nvim) — ★ 158 — Presentation plugin for neovim written in lua
+- [notoriouslab](https://github.com/notoriouslab/vault-curate) — ★ 158 — Find, connect, rediscover your notes — a local-first second brain for Obsidian. Semantic search with strong Chinese/CJK, relation graphs and semantic paths f...
+- [gasparschott](https://github.com/gasparschott/obsidian-continuous-mode) — ★ 158 — Displays all open notes in a tab group as if they were a continuous scrollable document (similar to Scrivener’s "Scrivenings mode"). Open all notes in Contin...
+- [ozntel](https://github.com/ozntel/file-explorer-note-count) — ★ 157 — Obsidian Plugin for viewing the number of elements under each folder within the file explorer
+- [psinetron](https://github.com/psinetron/echoes-vault-opencode) — ★ 157 — Persistent memory plugin for OpenCode. Obsidian-style knowledge base that survives across sessions
+- [Azhi-ss](https://github.com/Azhi-ss/academic-figure-skills) — ★ 156 — 三个 skill 画论文图：fig-analyze 看材料，fig-draw 先看 6 种风格再出图。交付后询问要不要做成可编辑 PPT，同意后 fig-pptx 才做。npx skills add Azhi-ss/academic-figure-skills
+- [proflead](https://github.com/proflead/obsidian-sync) — ★ 156 — Sync Obsidian Notes COMPLETELY Free Across Devices
+- [jrgilbertson](https://github.com/jrgilbertson/networked-thinking) — ★ 156 — An Obsidian companion vault for putting Networked Thinking into practice, with the notes, templates, and folder structure from the book.
+- [HiDeoo](https://github.com/HiDeoo/starlight-obsidian) — ★ 156 — Starlight plugin to publish Obsidian vaults
+- [somesanity](https://github.com/somesanity/draw-io-obsidian) — ★ 155 — A plugin for Obsidian that integrates the draw.io editor into Obsidian.
+- [bandantonio](https://github.com/bandantonio/obsidian-apple-books-highlights-plugin) — ★ 155 — ⚡️Fastest Apple Books highlights importer to Obsidian 🗄️ The only one protecting your own reflections across imports 🎨 Fully customizable
+- [chrisgrieser](https://github.com/chrisgrieser/obsidian-theme-design-utilities) — ★ 155 — Some utilities and Quality-of-Life features for designers of Obsidian themes.
+- [xiwcx](https://github.com/xiwcx/obsidian-bases-kanban) — ★ 154 — A kanban-style drag-and-drop custom view for Obsidian Bases that allows you to organize your notes into columns based on any property.
+- [natelandau](https://github.com/natelandau/obsidian-metadata) — ★ 154 — Batch updates to metadata in an Obsidian vault
+- [marcjulianschwarz](https://github.com/marcjulianschwarz/obsidian-raycast) — ★ 154 — Raycast extension with commands for the note taking app Obsidian.
+- [Trikzon](https://github.com/Trikzon/obsidian-web-browser) — ★ 154 — An Obsidian plugin that lets you browse the web within Obsidian.
+- [dimonier](https://github.com/dimonier/tg2obsidian) — ★ 154 — This bot pulls new messages from a Telegram chat or group and puts them into Obsidian vault on a local machine
+- [markdown-confluence](https://github.com/markdown-confluence/obsidian-integration) — ★ 153 — Sync / Publish Obsidian Notes to Confluence
+- [code-on-sunday](https://github.com/code-on-sunday/slide-deck-generator) — ★ 152 — AI skill for coding agents that creates production-ready, browser-based presentation slide decks using React + Vite + Framer Motion
+- [reveal](https://github.com/reveal/multiplex) — ★ 152 — The reveal.js Multiplex Plugin
+- [Falcion](https://github.com/Falcion/UNITADE.md) — ★ 151 — A plugin for note-taking app Obsidian which allows you to treat any file extension as markdown note-file
+- [arnau](https://github.com/arnau/obsidian-metatable) — ★ 150 — An Obsidian plugin to display the frontmatter section as a fully expanded table.
+- [bgarciamoura](https://github.com/bgarciamoura/obsidian-notion-bases-plugin) — ★ 149 — Turn any folder into a Notion-style database — 7 views, 17 column types, formulas, relations, rollups, and subtasks. All stored in plain Markdown frontmatter.
+- [campfirium](https://github.com/campfirium/obsidian-tile-line-base) — ★ 149 — The Native Plain-Text Database for Obsidian. Build Tables, Kanban, and Slides with Zero Frontmatter.
+- [psimaker](https://github.com/psimaker/vaultsync) — ★ 149 — Self-hosted Obsidian vault sync for iOS — powered by Syncthing.
+- [cuken](https://github.com/cuken/obsidian-weave) — ★ 149 — Obsidian Vault Template for Software Developers/Managers working in the corporate world.
+- [mnaoumov](https://github.com/mnaoumov/obsidian-codescript-toolkit) — ★ 149 — Plugin for Obsidian that allows to do a lot of things with JavaScript/TypeScript scripts from inside the Obsidian itself
+- [sunkeke-ai](https://github.com/sunkeke-ai/Life-Compass-Obsidian-CN) — ★ 148 — Compass 的非官方简体中文本地化；原项目由 Daniel Agrici（@AgriciDaniel）创建。
+- [h-sphere](https://github.com/h-sphere/sql-seal) — ★ 148 — Query your files using SQL directly from your Obsidian Vault
+- [BBazard](https://github.com/BBazard/obsidian-orgmode-cm6) — ★ 147 — Orgmode plugin for Obsidian
+- [Chaoses-Ib](https://github.com/Chaoses-Ib/ObsidianShell) — ★ 147 — Associate Markdown files with Obsidian
+- [TrshPuppy](https://github.com/TrshPuppy/obsidian-notes) — ★ 147 — All of my personal notes on topics including Hacking, Coding, Math, Data-Structures, and more! Open to all for use!
+- [Sanqui](https://github.com/Sanqui/obsidian-persistent-graph) — ★ 147 — An Obsidian plugin for saving and restoring the positions of nodes on the global graph view
+- [MehmetGoekce](https://github.com/MehmetGoekce/llm-wiki) — ★ 147 — Build Karpathy's LLM Wiki with Claude Code. L1/L2 cache architecture. Logseq + Obsidian support.
+- [marcjulianschwarz](https://github.com/marcjulianschwarz/obsidian-file-link) — ★ 146 — A plugin for the note taking app Obsidian to add better external file links to your notes.
+- [Enveloppe](https://github.com/Enveloppe/mkdocs-publisher-template) — ★ 146 — The template for Obsidian Mkdocs Publisher, a free obsidian publish alternative throught Mkdocs.
+- [nicojeske](https://github.com/nicojeske/mousewheel-image-zoom) — ★ 145 — An Obsidian plugin that enables you to increase/decrease the size of an image by holding down a configurable key (defaults to left alt), hovering over an ima...
+- [rpggio](https://github.com/rpggio/obsidian-chat-stream) — ★ 145 — Obsidian canvas plugin for using AI completion with threads of canvas nodes
+- [Developer-Mike](https://github.com/Developer-Mike/obsidian-docxer) — ★ 144 — 🚀 Boost your productivity by previewing and converting Word files easily to markdown.
+- [konodyuk](https://github.com/konodyuk/obsidian-typing) — ★ 143 — Programmatic customizations for groups of notes
+- [DuckTapeKiller](https://github.com/DuckTapeKiller/obsidian-aubade) — ★ 143 — A retro-brutalist theme prioritising strict geometry, high contrast, and tactile interactions.
+- [tomzorz](https://github.com/tomzorz/obsidian-link-archive) — ★ 142 — Link Archive plugin for Obsidian
+- [karfekr](https://github.com/karfekr/obsidian-persian-calendar) — ★ 141 — This plugin adds the Solar-Hijri(Jalali) calendar to Obsidian, offering Iranian users a more pleasant journaling experience.
+- [tbfisher](https://github.com/tbfisher/sublimetext-Pandoc) — ★ 140 — A Sublime Text plugin that uses Pandoc to convert text from one markup format into another. Pandoc can convert documents in markdown, reStructuredText, texti...
+- [kepano](https://github.com/kepano/obsidian-minimal-publish) — ★ 139 — Minimal Theme for Obsidian Publish
+- [noonesimg](https://github.com/noonesimg/obsidian-audio-player) — ★ 139 — audio player plugin with bookmarks for Obsidian.md
+- [hadynz](https://github.com/hadynz/obsidian-sidekick) — ★ 138 — A companion to identify hidden connections that match your tags and pages
+- [cristianvasquez](https://github.com/cristianvasquez/obsidian-prettify) — ★ 137 — A markdown prettifier for obsidian
+- [drshahizan](https://github.com/drshahizan/obsidian) — ★ 137 — Obsidian.md stands out as an exceptional note-taking application tailored specifically for academic writing. This repository is part of the activities for th...
+- [stormyark](https://github.com/stormyark/Obsidian-Vault) — ★ 137 — A Template for my Obsidian Vault.
+- [avirut](https://github.com/avirut/obsidian-metatemplates) — ★ 135 — Take advantage of YAML front-matter in generating notes from templates (for obsidian.md)
+- [rafaelveiga](https://github.com/rafaelveiga/obsidian-widgets) — ★ 134 — Add cool widgets to your notes or your dashboard in Obsidian
+- [dracula](https://github.com/dracula/obsidian) — ★ 133 — 🧛🏻‍♂️ Dark theme for Obsidian
+- [Kuneosu](https://github.com/Kuneosu/make-slide) — ★ 132 — Universal AI skill for generating standalone HTML slide decks
+- [noname-oni](https://github.com/noname-oni/obsidian-keyboard-analyzer) — ★ 132 — Obsidian plugin to display command hotkeys on a visible keyboard layout
+- [ParthSareen](https://github.com/ParthSareen/obsidian-rag) — ★ 131 — Talk to your Obsidian notes!
+- [rien7](https://github.com/rien7/obsidian-colorful-tag) — ★ 130 — Make your tag more beautiful and powerful!
+- [addozhang](https://github.com/addozhang/obsidian-image-upload-toolkit) — ★ 130 — An obsidian plugin for uploading local images embedded in markdown to remote store and export markdown for publishing to static site.
+- [blue-pho3nix](https://github.com/blue-pho3nix/pentesting_templates_obsidian) — ★ 130 — Obsidian Templates for OSCP, CPTS, and Training labs
+- [ebullient](https://github.com/ebullient/obsidian-snippetor) — ★ 129 — An assist for creating CSS snippets for Obsidian
+- [Acylation](https://github.com/Acylation/obsidian-chem) — ★ 129 — Chemistry support for Obsidian. Rendering SMILES strings into chemistry structures.
+- [Amine-LG](https://github.com/Amine-LG/Obsidian-Text-Transformer-LocalAI) — ★ 129 — Transform your .txt and .md notes into visually appealing and well-structured Markdown for Obsidian, powered by local LLMs using Ollama.
+- [Martinomagnifico](https://github.com/Martinomagnifico/reveal.js-appearance) — ★ 127 — An animation plugin for Reveal.js that animates elements sequentially like in Powerpoint. Perfect for online portfolios or other presentations with images.
+- [CreArts-Community](https://github.com/CreArts-Community/CreArts-Obsidian-Vault) — ★ 127 — Obsidian Vault | v1.1.0 | by Corellan
+- [qawatake](https://github.com/qawatake/obsidian-core-search-assistant-plugin) — ★ 126 — An Obsidian plugin to enhance built-in search: keyboard interface, card preview, bigger preview
+- [4Source](https://github.com/4Source/settings-profiles-obsidian-plugin) — ★ 126 — This is a plugin for Obsidian (https://obsidian.md). Allows you to create various global settings profiles. You can sync them between different vaults. To ke...
+- [MariosGkMeng](https://github.com/MariosGkMeng/Straightforward-Obsidian2Latex) — ★ 126 — A complete converter from Obsidian to Latex, which unfolds embedded notes (write your scientific papers in Obsidian --> print to LateX)
+- [ecarrara](https://github.com/ecarrara/obsidian-garden) — ★ 123 — Transform Obsidian Vault's notes into web pages. Converts your markdown notes, created in Obsidian, into fully functional site, ready for deployment.
+- [Vasallo94](https://github.com/Vasallo94/ObsidianRAG) — ★ 123 — Ask questions about your Obsidian notes using local AI. Privacy-first RAG with Ollama, LM Studio, or any OpenAI-compatible server. Obsidian plugin + Docker +...
+- [joethei](https://github.com/joethei/obsidian-tts) — ★ 123 — Text to speech for Obsidian. Hear your notes.
+- [MetaCorp](https://github.com/MetaCorp/obsidian-augmented-canvas) — ★ 123 — Supercharge your Obsidian canvas experience with AI features.
+- [mathe00](https://github.com/mathe00/obsidian-plugin-python-bridge) — ★ 122 — Develop Obsidian plugins in Python! 🐍 Interact with your notes, retrieve frontmatter, send notifications, and much more – all through simple Python scripts. ...
+- [pourmand1376](https://github.com/pourmand1376/obsidian-custom-font) — ★ 122 — A plugin to set custom font for obsidian
+- [HEmile](https://github.com/HEmile/obsidian-search-on-internet) — ★ 122 — Add context menu items in Obsidian to search the internet.
+- [A-F-V](https://github.com/A-F-V/obsidian-arcana) — ★ 122 — Supercharge your Obsidian note-taking through AI-powered insights and suggestions
+- [software-ai-life](https://github.com/software-ai-life/Awesome-PPT-Design-Skills) — ★ 121 — Agent-agnostic PPT design skills for creating high-end, editable presentation styles.
+- [perkinsben](https://github.com/perkinsben/obs_tools) — ★ 121 — Various python tools/scripts to work with Obsidian data
+- [DrLeucine](https://github.com/DrLeucine/obsidian-pandoc-templates) — ★ 121 — A repository for pandoc templates. Geared for Obsidian.
+- [johansan](https://github.com/johansan/obsidian-featured-image) — ★ 121 — Obsidian plugin to automatically set a featured image property in your notes based on the first image, YouTube link, or Auto Card Link image found in your do...
+- [cassidoo](https://github.com/cassidoo/cardstock) — ★ 120 — A clean Obsidian theme
+- [RamXX](https://github.com/RamXX/zettelvault) — ★ 119 — Transform an Obsidian vault into PARA + Zettelkasten structure using DSPy and RLM
+- [rknastenka](https://github.com/rknastenka/obsidian-mini-notes) — ★ 119 — Your quick thoughts, beautifully displayed, with a Google Keep-style colorful card-based view.
+- [radekkozak](https://github.com/radekkozak/discordian) — ★ 119 — Obsidian dark theme inspired by Discord
+- [takeshy](https://github.com/takeshy/obsidian-gemini-helper) — ★ 118 — AI chat, workflow automation, semantic search (RAG), LLM Wiki (OKF)  powered by Google Gemini. Works on both desktop and mobile.
+- [inokawa](https://github.com/inokawa/remark-docx) — ★ 117 — remark plugin to compile markdown to docx (Microsoft Word, Office Open XML).
+- [rcvd](https://github.com/rcvd/obsidian_ia) — ★ 117 — A clean and minimal theme for obsidian, heavily inspired by iA Writer.
+- [Mara-Li](https://github.com/Mara-Li/Obsidian-Snippet-collection) — ★ 117 — A collection of snippet to customize obsidian
+- [GrimmTheShrimp](https://github.com/GrimmTheShrimp/aw-watcher-obsidian) — ★ 116 — Obsidian plugin to track user activity with ActivityWatch
+- [Hipst3rMusic](https://github.com/Hipst3rMusic/obsidian-third-mind-reader) — ★ 115 — An opinionated EPUB & PDF reader for Obsidian. Read, annotate, and chat with your books. Every highlight stays in your vault as plain markdown, linked back t...
+- [Alt-er](https://github.com/Alt-er/obsidian-sync-share) — ★ 114 — Sync and share (publish) your notes in your own private service.
+- [ellimist-afk](https://github.com/ellimist-afk/handwriting) — ★ 114 — Pen ink on ordinary Markdown notes in Obsidian.
+- [renehernandez](https://github.com/renehernandez/obsidian-readwise) — ★ 114 — Sync Readwise highlights into your obsidian vault
+- [SuperChamp234](https://github.com/SuperChamp234/habitica-sync) — ★ 113 — This is a under-development Obsidian Plugin for Habitica
+- [bnjmnt4n](https://github.com/bnjmnt4n/reveal-code-focus) — ★ 112 — A Reveal.js plugin that allows focusing on specific lines of code blocks.
+- [timrogers](https://github.com/timrogers/obsidian-share-as-gist) — ★ 112 — An Obsidian (https://obsidian.md/) plugin for sharing your notes as a GitHub gist - either privately or publicly.
+- [sotte](https://github.com/sotte/presenting.nvim) — ★ 110 — presenting.nvim is a neovim plugin that turns your markup files into slides (in neovim).
+- [k4a-l](https://github.com/k4a-l/obsidian-heading-shifter) — ★ 110 — Easily Shift and Change markdown headings.
+- [obsidianmd](https://github.com/obsidianmd/eslint-plugin) — ★ 110 — Check your Obsidian plugin against the official developer guidelines.
+- [Natumsol](https://github.com/Natumsol/obsidian-pangu) — ★ 109 — 为 Obsidian 笔记加上「盘古之白」，排版强迫症者的福音。 | A small plugin aims to add space between Chinese Characters and English Alphabet, and it is a boon for typographically com...
+- [hunter-ji](https://github.com/hunter-ji/obsidian-easy-tracker) — ★ 109 — An Obsidian plugin for ultra-simple goal and habit tracking in any note.
+- [MichelNivard](https://github.com/MichelNivard/Ridian) — ★ 109 — This is Ridian: R in Obsidian
+- [officecli](https://github.com/officecli/officecli) — ★ 108 — OfficeCLI is AI document generation CLI for PPTX, DOCX, XLSX, Reports, and Images. Generate editable Office files from prompts with npm install, hosted trial...
+- [joybro](https://github.com/joybro/obsidian-similar-notes) — ★ 108 — —
+- [mnaoumov](https://github.com/mnaoumov/obsidian-dev-utils) — ★ 108 — Collection of essential functions and CLI tools designed to streamline your Obsidian plugin development process
+- [Vaccarini-Lorenzo](https://github.com/Vaccarini-Lorenzo/MagicCalendar) — ★ 108 — An obsidian plugin that exploit a natural language processing engine to find potential events and sync them with iCalendar
+- [aitorllj93](https://github.com/aitorllj93/astro-loader-obsidian) — ★ 108 — Easily integrate your markdown notes, assets, and internal links into your Astro site with minimal setup.
+- [drpwchen](https://github.com/drpwchen/lecture-to-notes) — ★ 108 — Lecture recordings → structured grounded notes + a synced HTML viewer: video, timestamped transcript and curated summary on one page. Local GPU pipeline (Whi...
+- [iros](https://github.com/iros/deck.js-codemirror) — ★ 107 — CodeMirror extension for deck.js
+- [jdpolasky](https://github.com/jdpolasky/ai-chief-of-staff) — ★ 107 — The original AI Chief of Staff built on Claude Code and Obsidian. ADHD prosthetic, open to anyone. Superseded by chief-of-staff-2.
+- [tingmelvin](https://github.com/tingmelvin/willemstad-x) — ★ 107 — A fully-fledged Obsidian.md theme, evolved from the original theme variant for Chris Grieser (pseudometa)'s theme Shimmering Focus
+- [GeorgioWan](https://github.com/GeorgioWan/Oi) — ★ 106 — A WYSIWYG Editor to create slides in impress.js.
+- [byteclubfr](https://github.com/byteclubfr/uncloak) — ★ 106 — A live theme editor for reveal.js (colors, font, sizes...)
+- [NomarCub](https://github.com/NomarCub/obsidian-copy-url-in-preview) — ★ 106 — Image Context Menus - Obsidian.md image context menus: copy, open in default app, show in system explorer, reveal in navigation context menu. Also Open PDF e...
+- [armourinfosec](https://github.com/armourinfosec/Enterprise-Windows-Infrastructure-Security) — ★ 106 — An Obsidian-based knowledge base for Windows Server administration and defensive hardening.
+- [iurykrieger](https://github.com/iurykrieger/claude-bedrock) — ★ 106 — Second Brain automation for Obsidian vaults — entity management, ingestion, compression, and sync via Claude Code skills
+- [duanxianpi](https://github.com/duanxianpi/obsidian-zotero-reader-plugin) — ★ 106 — Read and annotate PDFs/EPUB/HTML inside Obsidian with awesome Zotero Reader!
+- [lynchjames](https://github.com/lynchjames/obsidian-writing-goals) — ★ 106 — Set yourself dynamic writing goals for notes and folders to help you hit your long form writing targets with Obsidian.
+- [husjon](https://github.com/husjon/obsidian-file-cleaner-redux) — ★ 105 — A plugin for Obsidian to help clean up files in your vault
+- [thor314](https://github.com/thor314/obsidian-setup) — ★ 105 — The best resource you will ever find for getting started with Obsidian, probably
+- [AndrewRao114](https://github.com/AndrewRao114/vault-activity-heatmap) — ★ 105 — Cross-device Obsidian activity heatmap with mobile tasks, edit timelines, AI summaries, and customizable panel themes
+- [victorb](https://github.com/victorb/obsidian-wielder) — ★ 105 — Clojure inside your Obsidian documents!
+- [KIRVO-REPORTING](https://github.com/KIRVO-REPORTING/video-to-notes) — ★ 104 — Local-first video-to-notes CLI for YouTube/Bilibili transcripts, Whisper fallback, timestamped AI summaries, and Notion/Obsidian export.
+- [agentopology](https://github.com/agentopology/agentopology) — ★ 104 — Harness as code — the Terraform for AI agents. Define your agent team AND its memory once, deploy to Claude Code, OpenClaw, Cursor, Codex, Gemini, Copilot, K...
+- [JuckZ](https://github.com/JuckZ/awesome-brain-manager) — ★ 104 — A plugin that tries to solve all the trivial problems most people usually encountered in obsidian. 旨在解决大多数人在Obsidian中遇到的所有琐碎问题
+- [swati1024](https://github.com/swati1024/torrents) — ★ 103 — Skip to content   Search… All gists Back to GitHub Sign in Sign up Instantly share code, notes, and snippets.  @giansalex giansalex/torrent-courses-download-...
+- [Emrie-Candera](https://github.com/Emrie-Candera/Bubble-Space-Theme) — ★ 103 — A theme for https://obsidian.md/ inspired by Bubbles for Light Mode and Outer Space for Dark Mode!
+- [gapmiss](https://github.com/gapmiss/badges) — ★ 103 — A light-weight plugin for displaying inline "badges" in Obsidian.md
+- [WHG555](https://github.com/WHG555/obsidian-docker) — ★ 103 — 在docker中安装了obsidian可以部署在服务器上通过网页进行访问
+- [awaken233](https://github.com/awaken233/wiz2obsidian) — ★ 103 — 使用python将为知笔记中的所有笔记都导出到本地, 转化为纯markdown文本文件.
+- [AndrewKochulab](https://github.com/AndrewKochulab/jarvis-dashboard) — ★ 103 — A modular, fully configurable DataviewJS dashboard for Obsidian — monitor Claude Code sessions in   real-time, manage AI agent fleets, track 30-day analytics...
+
+_Showing top 500 of 2927 repos in this category — the full list with all 2927 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)

@@ -1,0 +1,30 @@
+Welcome to RoboDeck!
+====================
+
+A remote control for deck.js
+=======
+robodeck
+====================
+
+Overview
+---------------------
+
+Demonstration of using Sencha mobile remote to control a deck.js presentation running on node.js, express.js and socket.io, and useragent module for device detection. 
+
+All connected clients use websockets to 'listen' for events published by the remote app. 
+
+Uses useragent module for device detection (currently only checks for iPhone/iPad user agent)n and delivers a Sencha 2.0 app to all ipad/iphone user agents. 
+
+### Node and Express
+
+### Useragent Module
+
+### WebSockets w/ Socket.io
+
+### Sencha 2.0
+
+
+
+
+
+

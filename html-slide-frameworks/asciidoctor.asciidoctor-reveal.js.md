@@ -1,0 +1,55 @@
+= Reveal.js converter for Asciidoctor
+Olivier Bilodeau <https://github.com/obilodeau[@obilodeau]>; Guillaume Grossetie <https://github.com/ggrossetie[@ggrossetie]>; Dan Allen <https://github.com/mojavelinux[@mojavelinux]>; Rahman Usta <https://github.com/rahmanusta[@rahmanusta]>; Charles Moulliard <https://github.com/cmoulliard[@cmoulliard]>
+ifdef::env-github,env-browser[]
+:toc: preamble
+:toclevels: 2
+endif::[]
+ifdef::env-github[]
+:branch: main
+:status:
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+:url-project-repo: https://github.com/asciidoctor/asciidoctor-reveal.js
+:url-asciidoctor: https://github.com/asciidoctor/asciidoctor
+:url-asciidoctorjs: https://github.com/asciidoctor/asciidoctor.js
+:url-revealjs-home: https://revealjs.com
+:url-documentation-site: https://docs.asciidoctor.org/reveal.js-converter/latest/
+:url-examples-site: https://asciidoctor-revealjs-examples.netlify.app/
+
+ifdef::env-github[]
+image:https://github.com/asciidoctor/asciidoctor-reveal.js/actions/workflows/ci.yml/badge.svg[Build Status,link=https://github.com/asciidoctor/asciidoctor-reveal.js/actions/workflows/ci.yml]
+image:http://img.shields.io/gem/v/asciidoctor-revealjs.svg[gem, link=https://rubygems.org/gems/asciidoctor-revealjs]
+image:http://img.shields.io/npm/v/@asciidoctor/reveal.js.svg[npm, link=https://www.npmjs.org/package/@asciidoctor/reveal.js]
+image:https://api.netlify.com/api/v1/badges/facd68e7-9337-4b83-bcac-7262720a6915/deploy-status[Netlify Status, link=https://app.netlify.com/sites/asciidoctor-revealjs-examples/deploys]
+endif::[]
+
+// IMPORTANT: Changes made to this description should be sync'ed with the readme field in package.json.
+{url-project-repo}[Asciidoctor reveal.js] is a converter for {url-asciidoctor}[Asciidoctor] and {url-asciidoctorjs}[Asciidoctor.js] that transforms an AsciiDoc document into an HTML5 presentation powered by the {url-revealjs-home}[reveal.js] presentation framework.
+
+== Documentation
+
+If you want to learn more about Asciidoctor reveal.js, please read the {url-documentation-site}[documentation].
+
+== What's new
+
+Take a tour of the features introduced in each major and minor release on the {url-examples-site}[demos site].
+Every demo is a reveal.js slide deck written in AsciiDoc.
+
+== Contributing
+
+Interested in contributing?
+We'd love your help.
+Head over to the {url-documentation-site}/project/hacking[developer documentation] to get started.
+
+== Copyright and Licensing
+
+Copyright (C) 2012-present {authors} and the Asciidoctor Project.
+Free use of this software is granted under the terms of the MIT License.
+
+See the xref:LICENSE.adoc[LICENSE] file for details.

@@ -1,0 +1,345 @@
+# <img src="./public/favicon.svg" alt="logo" height="0.8em" style="height: 0.8em; margin: 0;" /> Slidesdown
+
+Presentations at the speed of Markdown
+
+[Slidesdown](https://slidesdown.github.io) is powered by the incredible
+[reveal.js presentation framework](https://revealjs.com/).
+
+[![frontpage](./figures/frontpage.png)](https://slidesdown.github.io)
+
+## Learn
+
+Visit [slidesdown.github.io/learn.html](https://slidesdown.github.io/learn.html)
+to get started.
+
+## Usage: View Slides
+
+### Online Viewer
+
+Visit
+[slidesdown.github.io/loader.html](https://slidesdown.github.io/loader.html) and
+enter the URL to your Markdown presentation, e.g.
+`github.com/slidesdown/slidesdown/SLIDES.md`.
+
+### CLI
+
+Slidesdown provides a CLI to quickly open files on your computer in the Online
+Viewer or a viewer hosted in a local Docker container that can be used fully
+offline (i.e. perfect for presentations you want to keep private).
+
+#### Installation
+
+```bash
+sudo curl -L https://raw.githubusercontent.com/slidesdown/slidesdown/main/slidesdown -o /usr/local/bin/slidesdown; sudo chmod a+x /usr/local/bin/slidesdown
+```
+
+`slidesdown` CLI has the following dependencies:
+
+- [`nu`](https://nushell.sh) required interpreter for the slidesdown programm.
+- [`docker`](https://www.docker.com/) required for offline presentations and
+  hot-reloading slides while editing.
+
+Optional dependencies if `docker` isn't used:
+
+- [`python3`](https://www.python.org/) required for online presentations via
+  [slidesdown.github.io](https://slidesdown.github.io) if the slideshow file
+  shall be served from the local computer, i.e. useful for creating slides or
+  when the presentation is private and shall not be made accessible publicly via
+  GitHub.
+- [`decktape`](https://github.com/astefanutti/decktape) or `docker` for
+  exporting slideshows as PDF.
+
+### Installation with Nix Flake
+
+1. Add the `slidesdown` section to your
+   [Flake](https://wiki.nixos.org/wiki/Flakes)'s `inputs`:
+
+```nix
+inputs = {
+  # (...)
+  slidesdown = {
+    url = "github:slidesdown/slidesdown/main";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
+};
+```
+
+2. Add the following to your
+   [`nixpkgs.overlays`](https://wiki.nixos.org/wiki/Overlays#Using_overlays):
+
+```nix
+(final: prev: {
+  # (...)
+  slidesdown = import inputs.slidesdown {
+    inherit system;
+    inherit (prev) pkgs;
+  };
+})
+```
+
+3. Rebuild your configuration
+   (`nixos-rebuild switch --flake your-system-config`) and check if it works
+   with `slidesdown --help`.
+
+4. Display your presentation
+
+```sh
+slidesdown # opens the browser and displays the presentation
+```
+
+### One-time Usage with `nix run`
+
+```bash
+nix run github:slidesdown/slidesdown
+```
+
+#### Update
+
+```bash
+sudo slidesdown -u
+```
+
+#### Open local file in slidesdown Offline Viewer (docker required)
+
+Navigate to any folder with a `SLIDES.md` file, then run this command:
+
+```bash
+slidesdown -d
+```
+
+#### Open local file in slidesdown Online Viewer (python3 required)
+
+Attention: The file with _not_ transmitted to any online service! It will only
+be served from a local web server to your local browser!
+
+Navigate to any folder with a `SLIDES.md` file, then run this command:
+
+```bash
+slidesdown
+```
+
+#### Export Slides as PDF
+
+The exporter can also be used via Docker:
+
+```bash
+slidesdown -d -e
+```
+
+If a local [`decktape`](https://github.com/astefanutti/decktape) installation
+exists, it can also be used like this:
+
+```bash
+slidesdown -e
+```
+
+## Usage: Create Slides
+
+### Simple
+
+Create a file called `SLIDES.md` and add your content. Once done, publish it
+online and open the presentation in the [online viewer](#online-viewer) or use
+the [CLI](#cli) to do so.
+
+### Use Template
+
+There are multiple options for starting with a template that includes meta data
+and useful configuration options:
+
+1. Download from GitHub:
+
+```bash
+curl -sflO https://raw.githubusercontent.com/slidesdown/slidesdown/main/examples/SLIDES.md
+```
+
+2. Use [CLI](#cli):
+
+```bash
+slidesdown -t
+```
+
+3. Copy template from here:
+
+```markdown
+---
+# This is a Slidesdown presentation. Learn about Slidesdown at https://slidesdown.github.io
+
+# Metadata about the presentation:
+title: Presentation Title
+subject: My super presentation
+author: Your Name
+date: 2023-01-20
+keywords: some useful keywords
+
+# Presentation settings:
+# URL to favicon
+favicon: /favicon.svg
+# Theme, list of supported themes: https://github.com/slidesdown/slidesdown.github.io/tree/main/vendor/reveal.js/dist/theme
+theme: white
+# Code highlighting theme, list of supported themes: https://github.com/slidesdown/slidesdown.github.io/tree/main/vendor/highlight.js
+highlight-theme: tokyo-night-dark
+
+# Show progress bar
+progress: true
+# Show controls
+controls: true
+# Center presentation
+center: true
+# Create separate pages for fragments
+pdfSeparateFragments: false
+# Loop the presentation
+loop: false
+# Controls automatic progression to the next slide
+# - 0:      Auto-sliding only happens if the data-autoslide HTML attribute
+#           is present on the current slide or fragment
+# - 1+:     All slides will progress automatically at the given interval in milliseconds
+# - false:  No auto-sliding, even if data-autoslide is present
+autoSlide: 0
+# Activate the scroll view (disables 3d navigation), see https://revealjs.com/scroll-view/
+# view: scroll
+# Full list of supported settings:
+# - https://revealjs.com/config/
+# - https://github.com/hakimel/reveal.js/blob/master/js/config.js
+# - https://github.com/slidesdown/slidesdown/blob/main/public/plugin/slidesdown.js#L758
+# UnoCSS styling: https://unocss.dev/interactive/ and https://tailwindcss.com/docs
+# Icons: https://icones.js.org and https://unocss.dev/presets/icons
+---
+
+# My first markdown slideshow
+
+Author: Your Name
+
+<!-- generated with
+!deno run --allow-read --allow-write https://deno.land/x/remark_format_cli@0.4.0/remark-format.js --maxdepth 2 %
+-->
+
+## Agenda
+
+1. [A horizontal Slide](#a-horizontal-slide)
+2. [More Examples](#more-examples)
+
+## A horizontal Slide
+
+- More icons at
+  [Icônes <div class="i-fa6-solid-face-smile inline-block m-auto"></div>](https://icones.js.org)
+
+notes:
+
+- Some
+- speaker
+- notes
+
+### A veritical Slide
+
+- More class styles at [tailwindcss](https://tailwindcss.com/docs) via
+  [UnoCSS](https://unocss.dev/interactive/)
+
+## More Examples
+
+https://github.com/slidesdown/slidesdown/blob/main/SLIDES.md
+
+---
+
+<h2>The End</h2>
+
+Thank you for your time.
+```
+
+### Publish Slides
+
+#### GitHub Repository
+
+Use the [GitHub CLI - `gh`](https://cli.github.com/)
+
+```bash
+gh repo create myslides --public --clone
+slidesdown -t
+# edit slides ...
+git add SLIDES.md
+git commit -m "first slideshow"
+git push
+```
+
+Now, open the presentation in the [online viewer](#online-viewer):
+
+```bash
+xdg-open "https://slidesdown.github.io/?slides=$(gh browse -n)"
+```
+
+#### GitHub Gist
+
+Use the [GitHub CLI - `gh`](https://cli.github.com/)
+
+```bash
+slidesdown -t
+# edit slides ...
+gh gist create SLIDES.md --public
+```
+
+Now, copy the printed URL into the `URL` variable and open the
+[online viewer](#online-viewer):
+
+```bash
+URL="https://gist.github.com/..."
+xdg-open "https://slidesdown.github.io/?slides=${URL}"
+```
+
+## Development
+
+### Required Tools
+
+- [`nu`](https://nushell.sh) interpreter for the slidesdown programm.
+- [`curl`](https://curl.se/) HTTP client
+- [`gh`](https://github.com/cli/cli) GitHub CLI for creating releases
+- [`git-cliff`](https://github.com/orhun/git-cliff) changelog generator
+- [`just`](https://just.systems/) task runner
+- [`node`](https://nodejs.org/) >=24
+
+### Folder Structure and Important Files
+
+- [`published/`](https://github.com/slidesdown/slidesdown.github.io) build
+  target folder served at
+  [https://slidesdown.github.io](https://slidesdown.github.io) and used in the
+  docker image
+- [`examples/`](./examples) contains example presentations
+- [`index.html`](./index.html) is the presentation template that gets loaded
+- [`Justfile`](./Justfile) tasks collection, run `just` to get the list of tasks
+- [`public/`](./public) contains external dependencies (not part of git) and
+  - [`public/loader.html`](./public/loader.html) presentation loader served at
+    [https://slidesdown.github.io/loader.html](https://slidesdown.github.io/loader.html)
+  - [`public/learn.html`](./public/learn.html) tutorial served at
+    [https://slidesdown.github.io/learn.html](https://slidesdown.github.io/learn.html)
+  - [`public/plugin/slidesdown.js`](./public/plugin/slidesdown.js) Markdown
+    converter plugin - this is the core of this project
+- [`slidesdown`](./slidesdown) CLI
+- [`src/`](./src) contains various scripts for docker and the HTML page
+
+### Setup
+
+- Run `yarn` to install all JavaScript depedencies
+
+### Modify Source Code
+
+- Run `just update-all` to (re)download external dependencies to the `public/`
+  folder
+- Run `just dev` to start the `vite` development server plugin when it gets
+  modified
+
+### Build
+
+- Run `just build` to recreate the `docs/` folder
+- Run `just build-docker` to build a new docker image
+
+### Release
+
+- Commit all changes
+- Run `just release` to create a new GitHub release, update
+  [`CHANGELOG.md`](./CHANGELOG.md), and update tag in
+  [`slidesdown`](./slidesdown) script
+
+## References
+
+- [mdshow](https://github.com/jceb/mdshow) is an older attempt of mine to create
+  simple and fast presentations from Markdown files.
+- [reveal.js](https://revealjs.com/) provides the presentation framework that's
+  the basis for slidesdown.

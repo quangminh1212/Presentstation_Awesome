@@ -1,0 +1,508 @@
+# Markdown → Slides (Marp / Quarto / Typst / Pandoc / Org / Reveal-md)
+
+Author slides in Markdown / Typst / Org / R and render to reveal.js, Marp, Beamer or HTML.
+
+- [jgm](https://github.com/jgm/pandoc) — ★ 46,590 — Universal markup converter
+- [marp-team](https://github.com/marp-team/marp) — ★ 12,640 — The entrance repository of Markdown presentation ecosystem
+- [yhatt](https://github.com/yhatt/marp) — ★ 7,847 — The site of classic Markdown presentation writer app
+- [gitpitch](https://github.com/gitpitch/gitpitch) — ★ 5,475 — Markdown Presentations for Tech Conferences, Training, Developer Advocates, and Educators.
+- [visit1985](https://github.com/visit1985/mdp) — ★ 5,281 — A command-line based markdown presentation tool.
+- [marp-team](https://github.com/marp-team/marp-cli) — ★ 3,870 — A CLI interface for Marp and Marpit based converters
+- [jaspervdj](https://github.com/jaspervdj/patat) — ★ 2,744 — Terminal-based presentations using Pandoc
+- [touying-typ](https://github.com/touying-typ/touying) — ★ 2,386 — Touying is a powerful package for creating presentation slides in Typst.
+- [polylux-typ](https://github.com/polylux-typ/polylux) — ★ 1,609 — A package for creating slides in Typst
+- [yihui](https://github.com/yihui/xaringan) — ★ 1,523 — Presentation Ninja 幻灯忍者 · 写轮眼
+- [marp-team](https://github.com/marp-team/marpit) — ★ 1,387 — The skinny framework for creating slide deck from Markdown
+- [marp-team](https://github.com/marp-team/marp-core) — ★ 1,157 — The core of Marp converter
+- [favourhong](https://github.com/favourhong/Awesome-Marp) — ★ 1,051 — An open-source presentation theme ecosystem for Marp/Markdown users.
+- [marp-team](https://github.com/marp-team/awesome-marp) — ★ 523 — A curated list of awesome things related to Marp
+- [MartinPacker](https://github.com/MartinPacker/md2pptx) — ★ 514 — Markdown To PowerPoint converter
+- [gadenbuie](https://github.com/gadenbuie/xaringanthemer) — ★ 445 — 😎 Give your xaringan slides some style
+- [vercel-labs](https://github.com/vercel-labs/mdxg) — ★ 364 — Spec for markdown presentation and interaction
+- [kaisugi](https://github.com/kaisugi/marp-theme-academic) — ★ 283 — Academic Presentation Slides with Marp
+- [jaantollander](https://github.com/jaantollander/Markdown-Templates) — ★ 230 — Templates for creating scientific, academic and technical documents using Markdown and Pandoc that support equations, code blocks, citations, Unicode symbols...
+- [yhatt](https://github.com/yhatt/marp-cli-example) — ★ 213 — The good starter for using Marp via Marp CLI, by the author of Marp
+- [cunhapaulo](https://github.com/cunhapaulo/marpstyle) — ★ 207 — Repository for Marp Themes created with beauty and simplicity in mind.
+- [jhk0530](https://github.com/jhk0530/showmaker) — ★ 188 — Markdown to Slide
+- [arpitbbhayani](https://github.com/arpitbbhayani/deckrun) — ★ 178 — A local-first presentation tool for writing, editing, presenting, and exporting Markdown slides or self-contained HTML docs.
+- [jhelvy](https://github.com/jhelvy/renderthis) — ★ 178 — An R package for building xaringan slides into multiple outputs, including html, pdf, png, gif, pptx, and mp4.
+- [ad-si](https://github.com/ad-si/invoice-maker) — ★ 175 — Generate beautiful invoices from simple Typst or YAML data records
+- [skriptum](https://github.com/skriptum/diatypst) — ★ 169 — easy slides in typst
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--R2) — ★ 164 — Parse any language you can describe in BNF
+- [rhiokim](https://github.com/rhiokim/haroopress) — ★ 164 — A static site generator built with Node.js, "Haroo" means "a day" Support Markdown presentation, Syntax Highlight, Themes
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quarto-clean-typst) — ★ 160 — A minimalistic presentation theme for Quarto + Typst by Touying
+- [gadenbuie](https://github.com/gadenbuie/countdown) — ★ 159 — ⏲ countdown timer for slides and HTML docs in Quarto, R Markdown, and Shiny
+- [dadoomer](https://github.com/dadoomer/markdown-slides) — ★ 157 — Using markdown, write simple but beautiful presentations with math, animations and media.
+- [Splines](https://github.com/Splines/pptypst) — ★ 144 — Bring the power of Typst to PowerPoint
+- [touying-typ](https://github.com/touying-typ/touying-exporter) — ★ 142 — Export presentation slides in various formats for Touying.
+- [developer0hye](https://github.com/developer0hye/office2pdf) — ★ 140 — Pure-Rust library and CLI for converting DOCX, XLSX, and PPTX files to PDF.  No LibreOffice, no Chromium, no Docker — just a single binary powered by Typst.
+- [minorun365](https://github.com/minorun365/marp-agent) — ★ 124 — ???????
+- [matsubara0507](https://github.com/matsubara0507/marp-themes) — ★ 119 — Theme for Marp Next
+- [rnd195](https://github.com/rnd195/my-marp-themes) — ★ 118 — Collection of my CSS themes for Marp Markdown presentations
+- [manjavacas](https://github.com/manjavacas/typslides) — ★ 116 — Minimalistic Typst slides.
+- [tajpure](https://github.com/tajpure/vortex) — ★ 113 — A markdown presentation tool.
+- [rainbowflesh](https://github.com/rainbowflesh/Rose-Pine-For-Marp) — ★ 106 — Ros Pine For Marp
+- [mikael-ros](https://github.com/mikael-ros/neobeam) — ★ 106 — A modern take on the LaTeX beamer theme, for Marp
+- [BeWaterMyFriend7](https://github.com/BeWaterMyFriend7/Marp-Theme-UCAS) — ★ 100 — markdown Slide made by marp
+- [cunhapaulo](https://github.com/cunhapaulo/MarpX) — ★ 87 — Try MarpX! It is still 'Marp themes', created with beauty and simplicity in mind. (like a Marpstyle 2.0)
+- [zhaoluting](https://github.com/zhaoluting/marp-themes) — ★ 87 — marp??,?????????????????
+- [kantord](https://github.com/kantord/zoetic) — ★ 86 — 🌱 🎥 Markdown presentations using your webcam
+- [robalexdev](https://github.com/robalexdev/marp-to-pages) — ★ 85 — Example marp action
+- [chenyang1999](https://github.com/chenyang1999/Marp_theme_for_THUslides) — ★ 83 — ?? Marp ???????? Slides??
+- [TomBener](https://github.com/TomBener/quarto-chinese) — ★ 82 — Quarto template for Chinese academic writing
+- [pat-s](https://github.com/pat-s/xaringan-metropolis) — ★ 79 — Metropolis theme of R package xaringan
+- [classmethod](https://github.com/classmethod/classmethod-marp-theme) — ★ 77 — ???????????Marp???????
+- [marp-team](https://github.com/marp-team/marp-web) — ★ 75 — [INACTIVE] Markdown presentation writer for web interface
+- [flaxsearch](https://github.com/flaxsearch/marple) — ★ 74 — Browser-driven explorer for lucene indexes
+- [dracula](https://github.com/dracula/marp) — ★ 70 — 🧛🏻‍♂️ Dark theme for Marp
+- [Kumaiu](https://github.com/Kumaiu/cursor-to-marp) — ★ 68 — —
+- [hzy24](https://github.com/hzy24/ucas_marpit_slide) — ★ 66 — 果壳/国科大slide模板_Written by Marpit
+- [justincampbell](https://github.com/justincampbell/tp) — ★ 62 — Terminal Presenter: Presents Markdown slides in your terminal
+- [hahnec](https://github.com/hahnec/marp-recipes) — ★ 62 — Marp presentation slides and templates
+- [neurodata](https://github.com/neurodata/marp-poster-template) — ★ 53 — Template for an academic poster using Marp
+- [KoharaKazuya](https://github.com/KoharaKazuya/marp-cli-action) — ★ 49 — A GitHub Action to convert markdown files into static HTML / CSS, PDF, PowerPoint document, and image(s) by @marp-team/marp-cli.
+- [szaghi](https://github.com/szaghi/MaTiSSe) — ★ 49 — Markdown To Impressive Scientific Slides
+- [spcanelon](https://github.com/spcanelon/xaringan-basics-and-beyond) — ★ 48 — Sharing Your Work with xaringan: Workshop created for the NHS-R Community 2020 Virtual Conference.
+- [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel/hello-quarto) — ★ 48 — Source code for the "Hello Quarto" keynote for rstudio::conf(2022) with Julia Stewart Lowndes - July 2022
+- [leonardosalasd](https://github.com/leonardosalasd/doc-engine-cli) — ★ 47 — A high-performance CLI to transform Markdown into premium, academic-grade PDFs via Typst. Zero configuration required.
+- [rnd195](https://github.com/rnd195/marp-community-themes) — ★ 46 — Theme gallery for Marp maintained by the community
+- [FlixCoder](https://github.com/FlixCoder/typst-slides) — ★ 42 — Typst beamer/slides template for presentations
+- [leostudiooo](https://github.com/leostudiooo/typst-touying-theme-endfield) — ★ 42 — Typst Touying theme inspired by Arknights: Endfield.
+- [tomo-makes](https://github.com/tomo-makes/marp-styles) — ★ 41 — —
+- [schochastics](https://github.com/schochastics/quarto-blackboard-theme) — ★ 40 — A quarto reveal js theme
+- [codebytes](https://github.com/codebytes/marp-slides-template) — ★ 39 — —
+- [HypoxanthineOvO](https://github.com/HypoxanthineOvO/SHTU-PPT-Template) — ★ 37 — PPT Template of ShanghaiTech University. Include Powerpoint, Markdown Marp, LaTeX Beamer
+- [hofbi](https://github.com/hofbi/tum-marp-template) — ★ 35 — TUM Marp Template for Markdown Slides
+- [muryoimpl](https://github.com/muryoimpl/slippr) — ★ 34 — markdown presentation app by Electron
+- [zhiiiyang](https://github.com/zhiiiyang/XaringanTutorial) — ★ 34 — A quick tutorial on making slides using xaringan
+- [yingle1991](https://github.com/yingle1991/H-rise) — ★ 33 — 📝 基于 Electron、Vue、Vditor，所构建的在线 Markdown 编辑器，支持绘制流程图、甘特图、时序图、任务列表、echarts 图表、五线谱，以及 PPT 预览、视频音频解析、HTML 自动转换为 Markdown 等功能。
+- [yoanbernabeu](https://github.com/yoanbernabeu/MARP-Template-Library) — ★ 32 — Theme CSS Repositories for MARP
+- [trungleduc](https://github.com/trungleduc/marpyter) — ★ 31 — marpyter - Marp for JupyterLab
+- [linhaosheng](https://github.com/linhaosheng/TouYingProjector) — ★ 31 — android投屏具有扫描设备，连接，发送图片，视频，音乐和镜像的功能。
+- [n-ari](https://github.com/n-ari/marp-theme-nordic-beamer) — ★ 30 — Marp theme, with Beamer-like blocks, and Nord-like color scheme.
+- [cita-777](https://github.com/cita-777/hfut-awesome-marp-theme) — ★ 30 — 以人类与 AI 都擅长的 Markdown 为中间媒介语言，与 AI 协助写出高颜值答辩 & 汇报 PPT。适用于合肥工业大学HFUT本科生各类答辩、课程汇报等场景的 PPT 模板。
+- [dhruvasagar](https://github.com/dhruvasagar/vim-marp) — ★ 30 — Presentations from within VIM
+- [yKicchan](https://github.com/yKicchan/awesome-marp-template) — ★ 29 — An ultimate Marp template for your awesome presentation!
+- [LevinTamir](https://github.com/LevinTamir/MARPY) — ★ 29 — A low-cost, open-source 3D-printed robot platform for learning ROS 2 with real hardware and simulation.
+- [Xuzhenhua55](https://github.com/Xuzhenhua55/AdaMARP) — ★ 29 — [ACL2026 Finding]We propose an adaptive multi-agent interaction framework, dubbed AdaMARP, featuring an immersive message format that interleaves [Thought], ...
+- [nicolas-goudry](https://github.com/nicolas-goudry/marp-deck-directory) — ★ 29 — Zero-config, fully reproducible presentation environment using Marp and Nix
+- [emilyriederer](https://github.com/emilyriederer/xaringan_columns) — ★ 29 — JavaScript macro for adding multiple columns to xaringan (.Rmd) slides
+- [malcolmbarrett](https://github.com/malcolmbarrett/kakashi) — ★ 29 — kakashi theme for xaringan slides
+- [jmablog](https://github.com/jmablog/simple-presentations-generator) — ★ 28 — A series of templates for Quarto to convert a single Markdown input into beautiful and simple Powerpoint, HTML, and PDF presentations.
+- [emitanaka](https://github.com/emitanaka/xaringan-book) — ★ 28 — —
+- [sjtug](https://github.com/sjtug/touying-sjtu) — ★ 27 — ?? Touying ??????? Typst ????? (Typst Slide Theme for SJTU Based on Touying)
+- [mastern2k3](https://github.com/mastern2k3/marpit-nord-theme) — ★ 27 — This is a Marp / Marpit slides theme based on the Nord color palette.
+- [abap34](https://github.com/abap34/slide-template) — ★ 27 — Slide Template with Marp.
+- [yJader](https://github.com/yJader/Awesome-Marp-XMU) — ★ 27 — 厦门大学Marp模板
+- [Coekjan](https://github.com/Coekjan/touying-buaa) — ★ 27 — Touying Slide Theme for Beihang University
+- [marp-team](https://github.com/marp-team/marp-react) — ★ 26 — [INACTIVE] Marp renderer component for React
+- [leminhnguyen](https://github.com/leminhnguyen/slide-ai-agent) — ★ 26 — 🐙 AI-powered presentation builder with a conversational agent, live Marp preview, and lightweight presentation on your browser.
+- [marp-team](https://github.com/marp-team/marp-vue) — ★ 25 — [INACTIVE] Marp renderer component for Vue
+- [gitpitch](https://github.com/gitpitch/templates) — ★ 25 — [DEPRECATED] GitPitch Markdown Presentation Templates
+- [taishi-n](https://github.com/taishi-n/marp-theme-tmu-cs) — ★ 24 — TMU-CS Marp theme with citeproc, code annotations, math annotations, and step expansion.
+- [Dregen-Yor](https://github.com/Dregen-Yor/sdu-touying-simpl) — ★ 24 — 基于touying库，参考SDU-Beamer，diatypst，touying-pres-ustc等模板制作而成的演示模板
+- [speee](https://github.com/speee/marp-speee-theme) — ★ 23 — Speee用のmarpテーマ
+- [pretenderlu](https://github.com/pretenderlu/doodlio) — ★ 22 — Doodlio is a hand-drawn online whiteboard for mind maps, multi-source screen recording, Markdown presentations, and visual storytelling.
+- [tcgriffith](https://github.com/tcgriffith/xaringan_gh) — ★ 22 — Example repo to host xaringan on ghpage
+- [QuadnucYard](https://github.com/QuadnucYard/touying-theme-seu) — ★ 22 — Touying theme for Southeast University 东南大学幻灯片模板（typst）
+- [HoGentTIN](https://github.com/HoGentTIN/hogent-markdown-slides) — ★ 21 — —
+- [gophergala2016](https://github.com/gophergala2016/fireup) — ★ 21 — Push and broadcast markdown slides on the fly
+- [hanlife02](https://github.com/hanlife02/pkusli) — ★ 21 — Based on the typst slides template, handle your team meeting in five minutes from scratch!
+- [zoomla](https://github.com/zoomla/marpit-ppt) — ★ 21 — 基于marpit的PPT制作展示
+- [Lincest](https://github.com/Lincest/BUAA-Marp-Theme) — ★ 21 — A marp-based academic slide theme
+- [brshallo](https://github.com/brshallo/tidyverse-gifs) — ★ 21 — Code for using `flair`, `xaringan`, `pagedown`, and `magick` to build gif of steps in a series of piped operations.  Example pulled from "Many Models" chapte...
+- [YHan228](https://github.com/YHan228/calmly-touying) — ★ 21 — A typst touying based presentation template
+- [spidersouris](https://github.com/spidersouris/touying-unistra-pristine) — ★ 21 — An academic Touying theme for creating presentation slides in Typst for members of the University of Strasbourg, France
+- [touying-typ](https://github.com/touying-typ/touying-poster) — ★ 21 — Aqua Metropolis University Stargazer
+- [freundTech](https://github.com/freundTech/kit-slides-typst) — ★ 21 — A Karlsruhe Institute of Technology Slides Theme for Typst. This is only a mirror.
+- [simonreif](https://github.com/simonreif/zewwwwEcon) — ★ 21 — Quarto Templates for Applied Economic Research Projects
+- [saniales](https://github.com/saniales/ai-lesson-planner) — ★ 20 — Chat-first toolkit for teachers to plan complete courses and lessons with multi-agent workflows, template-based artifacts, and MARP slide generation.
+- [tjohnson250](https://github.com/tjohnson250/overview_causal_inference) — ★ 20 — A Brief Overview of Causal Inference (xaringan presentation)
+- [mkearney](https://github.com/mkearney/xaringan_slides) — ★ 20 — 📺 Links to HTML5 presentations made using the R package {xaringan}.
+- [nwiizo](https://github.com/nwiizo/3shake-marp-templates) — ★ 18 — Collection of Marp-based presentation templates for 3-SHAKE. Features standardized designs, citation styles, and custom layouts for cloud-native technology a...
+- [robalexdev](https://github.com/robalexdev/marp-action) — ★ 18 — Publish your Marp Presentation to GitHub Pages automatically using a GitHub Action
+- [xkevio](https://github.com/xkevio/parcio-typst) — ★ 18 — ParCIO-inspired thesis, report & slides template made with Typst.
+- [marcothms](https://github.com/marcothms/clean-polylux-typst) — ★ 18 — A clean and dynamic polylux presentation template for typst 0.10
+- [posit-conf-2025](https://github.com/posit-conf-2025/quarto-brand) — ★ 18 — Branded Websites, Presentations, Dashboards, and PDFs with Quarto
+- [syw-robotics](https://github.com/syw-robotics/sustech-academic-marp-theme) — ★ 17 — SUSTech Customized Academic Presentation Slides with Marp / 南方科技大学Marp学术汇报主题
+- [gadenbuie](https://github.com/gadenbuie/xaringan-logo) — ★ 17 — xaringan template with logo on all slides
+- [gadenbuie](https://github.com/gadenbuie/xaringan2powerpoint) — ★ 17 — a snarky powerpoint from xaringan demo
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/xaringancolor) — ★ 17 — Uniform Colors in Xaringan Presentations
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/xaringan-gallery) — ★ 17 — xaringan gallery, a growing collection of examples and custom themes
+- [FDUCSLG](https://github.com/FDUCSLG/typst-slides-fudan) — ★ 16 — ???????? Typst ???An unofficial Fudan slide theme for Typst.
+- [drvinceknight](https://github.com/drvinceknight/md2reveal) — ★ 16 — A script to easily convert (simple) markdown to reveal html.
+- [duhaode520](https://github.com/duhaode520/marp-theme-PKU) — ★ 16 — marp themes for Peking University
+- [marp-team](https://github.com/marp-team/marpit-svg-polyfill) — ★ 16 — Polyfill for inline SVG slides rendered by Marpit
+- [Robinlovelace](https://github.com/Robinlovelace/reproducible-project-template) — ★ 16 — Flexible repo template for reproducible slides with Quarto and continuous deployment via GitHub actions
+- [ivoputzer](https://github.com/ivoputzer/md-slides-template) — ★ 15 — Markdown Slides Template
+- [ClementPeter](https://github.com/ClementPeter/marpp_web) — ★ 15 — UI Landing Page for a Marketing Application built with Flutter
+- [pn11](https://github.com/pn11/marp-A4-theme) — ★ 15 — A4-sized theme for Marp.
+- [noraj](https://github.com/noraj/cybertopia-marp) — ★ 15 — 🎨 A dark theme for Marp / Marpit slides ecosystem with a custom highlight.js theme.
+- [hyuunnn](https://github.com/hyuunnn/marp-black-white) — ★ 15 — Marp Theme using black and white
+- [schochastics](https://github.com/schochastics/xaringan-themes) — ★ 15 — Xaringan themes for presentations in R
+- [PauloUbirajara](https://github.com/PauloUbirajara/motion-canvas-rs) — ★ 15 — A high-performance vector animation engine inspired by Motion Canvas, built on Vello and Typst.
+- [rstacruz](https://github.com/rstacruz/marp-basetype) — ★ 14 — Basic slide deck theme for Marp
+- [pstuifzand](https://github.com/pstuifzand/go-marpa) — ★ 14 — Higher level Marpa parser for Go
+- [chenyang1999](https://github.com/chenyang1999/Marp_OUCtheme) — ★ 14 — 中国海洋大学 marp 模板
+- [Han-0107](https://github.com/Han-0107/Marp_CSU) — ★ 14 — 基于Marp开发的中南大学主题PPT模板
+- [markslide](https://github.com/markslide/markslide) — ★ 14 — Markdown to slides. Easy and smooth.
+- [rstudio-conf-2020](https://github.com/rstudio-conf-2020/slide-templates) — ★ 14 — A repository to share rstudio::conf sample slide templates for Keynote, PowerPoint, R Markdown (xaringan)
+- [UtrechtUniversity](https://github.com/UtrechtUniversity/uu-quarto-presentation-template) — ★ 13 — Template repository for creating a UU styled Quarto presentation
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-C-AST) — ★ 13 — Translate C source code to AST using Marpa
+- [SaturDJang](https://github.com/SaturDJang/warp) — ★ 13 — Warp is a web based markdown presentation service
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quarto-slides-example) — ★ 13 — My Quarto Slides Examples
+- [spcanelon](https://github.com/spcanelon/RLadies-xaringan-template) — ★ 13 — Xaringan presentation template with an R-Ladies theme
+- [ecomaikgolf](https://github.com/ecomaikgolf/typst-isec-slides-template) — ★ 13 — Typst ISEC TUGraz Slides Template
+- [johannesber](https://github.com/johannesber/typst-ppt-addin) — ★ 13 — PoC: Typst PowerPoint Add-In
+- [coatless-tutorials](https://github.com/coatless-tutorials/next-gen-data-science-education-wasm) — ★ 13 — This repository contains code powering "The Next-Generation Data Science Education with WebAssembly" Quarto website demonstration.
+- [performance-queries](https://github.com/performance-queries/marple) — ★ 12 — Parse SQL queries for network performance monitoring
+- [yhatt](https://github.com/yhatt/marp-vue-slide) — ★ 12 — A practical browser-based Marp slide deck made by Marp Vue
+- [ddps-lab](https://github.com/ddps-lab/ddps-lab-marp-theme) — ★ 12 — ddps-lab-marp-theme
+- [christopherkenny](https://github.com/christopherkenny/projector) — ★ 12 — A Quarto template using Typst's Polylux to make slides
+- [mxpiotrowski](https://github.com/mxpiotrowski/pandoc-lecturenotes) — ★ 12 — Pandoc Lua filters for producing slides and notes from a single Markdown document
+- [phlummox](https://github.com/phlummox/pptx-to-md) — ★ 12 — Convert PowerPoint or LibreOffice Impress files to Beamer-friendly, Pandoc-style markdown
+- [Juanvvc](https://github.com/Juanvvc/markdown-slides) — ★ 11 — A project to teach MARP and store themes
+- [neuroinformatics-unit](https://github.com/neuroinformatics-unit/quarto-presentation-template) — ★ 11 — —
+- [CouesF](https://github.com/CouesF/marp-theme-zju) — ★ 11 — a marp theme with Zhejiang University's color and LOGO
+- [Zambrini](https://github.com/Zambrini/MARP-Templates) — ★ 11 — MARP Presentation Templates
+- [ullenboom](https://github.com/ullenboom/ppt2asciidocslides) — ★ 11 — Converts slides from PPTX to Asciidoc(tor) or Marp
+- [Sallos725](https://github.com/Sallos725/MARP) — ★ 11 — Multi-agent RP analysis pipeline for RisuAI: parallel world, plot, and character analysis
+- [faymek](https://github.com/faymek/marp-sjtu) — ★ 11 — —
+- [spcanelon](https://github.com/spcanelon/xaringan-rladies-xalapa) — ★ 11 — Taller de xaringan creado para R-Ladies Xalapa
+- [tangyc8866](https://github.com/tangyc8866/rmarkdown-xaringan-slides) — ★ 11 — rmarkdown-xaringan-slides
+- [EMOAIRX](https://github.com/EMOAIRX/ppt-agent) — ★ 11 — AI-powered frontend application for creating and editing Typst presentations using natural language commands.
+- [chantakan](https://github.com/chantakan/typst_slide_template) — ★ 11 — Typstのslide用テンプレート
+- [shenxiangzhuang](https://github.com/shenxiangzhuang/presentia) — ★ 11 — Elegant presentation template in LaTex and Typst
+- [JL-ghcoder](https://github.com/JL-ghcoder/Typst-Pre-Template) — ★ 11 — Academic presentation template in Typst for researchers
+- [nithitsuki](https://github.com/nithitsuki/amrita-ppt-template) — ★ 11 — typst ppt template for amrita students
+- [jillymackay](https://github.com/jillymackay/ed_quarto_themes) — ★ 10 — The basic structure of a University of Edinburgh R(D)SVS themed Quarto presentation. Please feel free to copy this for your own purposes.
+- [SkiFire13](https://github.com/SkiFire13/typst-slides-unipd) — ★ 10 — —
+- [ttyskg](https://github.com/ttyskg/marp-themes) — ★ 10 — Custom themes for Marp Next
+- [Huigz](https://github.com/Huigz/marp-theme-skku) — ★ 10 — a marp theme with SKKU style
+- [omarroth](https://github.com/omarroth/marpa) — ★ 10 — A Crystal interface to the Marpa library.
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-book) — ★ 10 — The Marpa book
+- [HsergeyF](https://github.com/HsergeyF/marp-python) — ★ 10 — Python Library for generating Marp presentations.
+- [dabrahams](https://github.com/dabrahams/SwiftMarpa) — ★ 10 — Swift wrapper for the libMarpa parsing library
+- [Tonanguyxiro](https://github.com/Tonanguyxiro/HKUST-GZ_Marpit_Template) — ★ 10 — HKUST(GZ) Marpit Template for Presentation
+- [Jzurde](https://github.com/Jzurde/canyon) — ★ 10 — 世界一使いやすいスライドテンプレート(with Marp)
+- [Shuvam-Banerji-Seal](https://github.com/Shuvam-Banerji-Seal/introduction-to-molecular-simulation) — ★ 10 — Introduction to Molecular Simulation — talk companion: what it is, why it works, and how to make one. Slides (Marp), concept notes, and hands-on examples.
+- [pduran5](https://github.com/pduran5/CCNA) — ★ 10 — CCNAv7 Presentations and GNS3 Labs tags: #FpInfor #ASIXMP07 #ASIXM07 #ASIRMP07 #ASIRM07 #CCNA  CCNAv7 presentations made with Marp and GNS3 CCNA Labs portabl...
+- [gitpitch](https://github.com/gitpitch/feature-demo) — ★ 10 — Demonstrations of markdown presentation features to the GitPitch community.
+- [libjohn](https://github.com/libjohn/workshop_slides_markdown_xaringan) — ★ 10 — Use R Markdown and the xaringan package to render presentation slides as reproducible reports.
+- [hithesis](https://github.com/hithesis/hiTouyingBeamer) — ★ 10 — 嗨！投影 Beamer！更现代的哈尔滨工业大学 Beamer 主题
+- [t0mrg](https://github.com/t0mrg/md2pptx) — ★ 10 — Markdown to powerpoint
+- [eric861129](https://github.com/eric861129/MD2PPT-Evolution) — ★ 10 — 🚀 Instantly convert Markdown to professional PowerPoint (PPTX) slides in your browser. Features real-time          preview, dark mode, and custom themes. No ...
+- [sjackman](https://github.com/sjackman/open-science) — ★ 10 — :microscope: Open, reproducible science using Make, RMarkdown and Pandoc
+- [jthomasmock](https://github.com/jthomasmock/quarto-presentation) — ★ 9 — —
+- [KoharaKazuya](https://github.com/KoharaKazuya/marp-cli-action-gh-pages-template) — ★ 9 — Marp CLI Action with GitHub Pages Template
+- [tweag](https://github.com/tweag/nix-marp) — ★ 9 — Run Marp tools via Nix
+- [pstuifzand](https://github.com/pstuifzand/Marpa-parser-generator) — ★ 9 — Parser generator for Marpa::XS. This contains some things I tried. For a better module take a look at MarpaX::Parser::Marpa.
+- [ruz](https://github.com/ruz/Marpa-Simple-Lexer) — ★ 9 — simplify lexing for Marpa parser
+- [ensoft](https://github.com/ensoft/marple) — ★ 9 — MARPLE is an open-source system profiling tool for Linux-based systems
+- [kozovka22](https://github.com/kozovka22/temata_maturita) — ★ 9 — Marp prezentace na maturitní otázky ze SPŠ Prosek
+- [sebastiandres](https://github.com/sebastiandres/quarto_slides_template) — ★ 9 — A template for creating nice presentations in quarto. Personal notes and links.
+- [jhelvy](https://github.com/jhelvy/lexis) — ★ 9 — A theme for xaringan slides
+- [touying-typ](https://github.com/touying-typ/touying-template) — ★ 9 — Touying template for online presentation.
+- [markdown-tool](https://github.com/markdown-tool/markdown-tool.github.io) — ★ 9 — online markdown to ppt
+- [mcanouil](https://github.com/mcanouil/quarto-prism) — ★ 9 — Attach format-specific values to a single Div, Span, or CodeBlock and let each output pick its own.
+- [sahasatvik](https://github.com/sahasatvik/minislides) — ★ 9 — A script for generating HTML/CSS presentation slides from markdown.
+- [Dale2003](https://github.com/Dale2003/pku-typst-slides) — ★ 8 — —
+- [non](https://github.com/non/literati) — ★ 8 — Literate programming for Scala from within Markdown slides
+- [imjasonh](https://github.com/imjasonh/marptalk) — ★ 8 — Generate narrated Marp presentations using AI
+- [toku345](https://github.com/toku345/marp-slides) — ★ 8 — Marp を使用したスライド作成・管理プロジェクト
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--XS) — ★ 8 — OBSOLETE version of Marpa [ARCHIVED]
+- [stanfrbd](https://github.com/stanfrbd/A4-marp) — ★ 8 — A4-marp is a good way to do A4-sized presentations with Marp. This is actually a custom CSS.
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-arxiv-paper) — ★ 8 — The repository of the arxiv.org version of the Marpa paper.
+- [hnsol](https://github.com/hnsol/marp-custom-theme) — ★ 8 — css files
+- [koki-yamada-lab](https://github.com/koki-yamada-lab/lab-coding-guideline) — ★ 8 — 研究室のコーディングガイドラインです．スライド資料はMarpで作成しています．
+- [miguelcfernandes](https://github.com/miguelcfernandes/mdslides) — ★ 8 — Simple markdown presentation tool
+- [marcelofabri](https://github.com/marcelofabri/DecksetExport) — ★ 8 — A CLI for for generating PDFs from Markdown presentations created with Deckset.
+- [xmdjy](https://github.com/xmdjy/sdu-touying-template) — ★ 8 — —
+- [mzsuetam](https://github.com/mzsuetam/beamer-theme-aghmd) — ★ 8 — AGHMD is a LaTeX Beamer theme designed to be used with the Pandoc document converter.
+- [deckflow](https://github.com/deckflow/deckrender) — ★ 8 — Render any document format into visual artifacts — PPTX, PDF, DOCX, Keynote, Pages, Numbers, HTML and Markdown to images, PDF or video.
+- [brennop](https://github.com/brennop/scrolls) — ★ 7 — Markdown slides
+- [marpa-guide](https://github.com/marpa-guide/marpa-guide) — ★ 7 — Guide to Marpa
+- [zerosum](https://github.com/zerosum/azusa3-marp-theme) — ★ 7 — Azusa 3 theme for Marp
+- [eyssette](https://github.com/eyssette/marp-slides) — ★ 7 — Des diaporamas créés avec Marp et le thème Teaching
+- [kamijin-fanta](https://github.com/kamijin-fanta/sakura-marp-theme) — ★ 7 — —
+- [kazuki853](https://github.com/kazuki853/ulab-marp-theme) — ★ 7 — —
+- [JMcrafter26](https://github.com/JMcrafter26/Marp-AI) — ★ 7 — Marp AI - Generate presentations using Ollama AI and Marp
+- [Gityosan](https://github.com/Gityosan/marp-slide-template) — ★ 7 — marp-slide-template repository
+- [upura](https://github.com/upura/marp-examples) — ★ 7 — Presentation slides created by Marp
+- [firedev](https://github.com/firedev/marp-boilerplate) — ★ 7 — Fork this repo and start building your next presentation in markdown.
+- [ryuichiueda](https://github.com/ryuichiueda/slides_marp) — ★ 7 — my slides
+- [syumai](https://github.com/syumai/marp-pages-example) — ★ 7 — A Cloudflare Pages application which renders Marp slides without static site generation.
+- [humanophilic](https://github.com/humanophilic/humanophilic-marp-theme) — ★ 7 — 学会発表用のスライドテーマです。Marpを使ってスライドを作成する際に利用できます。
+- [luhuiwang](https://github.com/luhuiwang/Marp-Theme-For-XJTU) — ★ 7 — —
+- [smondet](https://github.com/smondet/makmash) — ★ 7 — Make Markdown Slides Hackishly …
+- [satRdays](https://github.com/satRdays/sponsoring) — ★ 7 — xaringan template for sponsoring
+- [alejandraandrea](https://github.com/alejandraandrea/slides-xaringan-mixed-models) — ★ 7 — —
+- [libjohn](https://github.com/libjohn/dukeslides) — ★ 7 — Template for R Markdown based slides using Duke University color palette:  dukeslides is built on top of xaringan
+- [sophieehill](https://github.com/sophieehill/xaringan-template) — ★ 7 — A template for making customisable slides in RMarkdown with Xaringan
+- [matt-dray](https://github.com/matt-dray/gdstheme) — ★ 7 — :page_with_curl::package: R package: {xaringan} theme and template, (unofficial) Government Digital Service style
+- [cyliu-phy](https://github.com/cyliu-phy/sjtu-touying) — ★ 7 — SJTUBeamer in typst & touying
+- [JSB-Unscarred](https://github.com/JSB-Unscarred/shuimu-touying) — ★ 7 — —
+- [exAClior](https://github.com/exAClior/touying-simpl-hkustgz) — ★ 7 — —
+- [juraph-dev](https://github.com/juraph-dev/usyd-slides-typst) — ★ 7 — Polylux slide template for University of Sydney themed presentations
+- [ghxm](https://github.com/ghxm/gesis-pandoc-beamer) — ★ 7 — GESIS presentation template adapted to pandoc (incl. Quarto and Rmarkdown) for use with beamer
+- [JoshuaLampert](https://github.com/JoshuaLampert/clean-math-presentation) — ★ 7 — Typst presentation template specialized on needs of mathematics.
+- [mcanouil](https://github.com/mcanouil/publishing-templates) — ★ 7 — Publishing templates (e.g., slides, reports, etc.) using Quarto/RMarkdown
+- [ViCo-Lab](https://github.com/ViCo-Lab/candy) — ★ 7 — Code-oriented Animation eNgine Designed for tYpst 为Typst设计的面向代码的动画引擎
+- [xingjian-zhang](https://github.com/xingjian-zhang/typst2img) — ★ 7 — A fast script to render your Typst formulas to svg and png. Integrate formulas to your slides in seconds!
+- [ccbaumler](https://github.com/ccbaumler/analyzing-lit) — ★ 6 — A quarto presentation on distilling scientific literature with Bibliometric analysis and R tools
+- [benzipperer](https://github.com/benzipperer/metropolyst) — ★ 6 — configurable metropolis theme clone for typst slides
+- [numbats](https://github.com/numbats/monash-quarto-presentation) — ★ 6 — —
+- [jddurand](https://github.com/jddurand/c-marpaESLIF) — ★ 6 — Extended perl's Marpa::R2 SLIF grammar writen in C
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-theory) — ★ 6 — Papers and notes on the math behind Marpa [ARCHIVED]
+- [stevemarple](https://github.com/stevemarple/SteveMarple-Eagle-Library) — ★ 6 — Library for Cadsoft Eagle
+- [cherryamme](https://github.com/cherryamme/Marp-theme_SYSU) — ★ 6 — Marp-theme_SYSU
+- [emilyzjin](https://github.com/emilyzjin/marple) — ★ 6 — Code for the paper "MARPLE: A Benchmark for Long-Horizon Inference", NeurIPS 2025 Datasets & Benchmarks
+- [pczarn](https://github.com/pczarn/rust-marpa) — ★ 6 — Bindings to libmarpa
+- [marpledata](https://github.com/marpledata/marple-sdk) — ★ 6 — Official Marple SDKs for Marple DB and Insight.
+- [RitaDee](https://github.com/RitaDee/marplex-video-rtm) — ★ 6 — A real time messaging & video calling web app. Built with HTML, CSS and JavaScript.
+- [cp-20](https://github.com/cp-20/marp-trap-theme) — ★ 6 — —
+- [siuying](https://github.com/siuying/markdown-slides) — ★ 6 — Create HTML based presentation using markdown!
+- [alohays](https://github.com/alohays/paper2pr) — ★ 6 — AI/ML Paper → Presentation-ready Beamer + Quarto slides via Claude Code multi-agent workflow
+- [schochastics](https://github.com/schochastics/UoM-xaringan) — ★ 6 — University of Manchester PowerPoint theme for xaringan in R
+- [libjohn](https://github.com/libjohn/slide-template-dukeu) — ★ 6 — A Xaringan slide template using the Duke University Color Palette
+- [uestc-typst](https://github.com/uestc-typst/uestc_slide_touying) — ★ 6 — 电子科技大学 Touying（基于Typst） 模版
+- [dssgabriel](https://github.com/dssgabriel/cea-slides) — ★ 6 — Touying theme for crafting Typst presentations conforming with the corporate identity of the French Atomic Energy Commission (CEA)
+- [habemus-python](https://github.com/habemus-python/quarto-agh-slides) — ★ 6 — AGH slides template for Quarto
+- [hddevteam](https://github.com/hddevteam/cuemode) — ★ 6 — 🎯 Professional teleprompter with Line Height Adjustment, Markdown Toggle, Mirror Flip, Focus Mode, 7 themes & 6-language support. L-key line spacing, D-key m...
+- [supxinfy](https://github.com/supxinfy/BerryPhaseSlides) — ★ 5 — Typst slides for Master's defence and a seminar talk
+- [kazuyanagimoto](https://github.com/kazuyanagimoto/quarto-slides-typst) — ★ 5 — Some Examples for Quarto + Typst Slides
+- [ccbaumler](https://github.com/ccbaumler/managing-lit) — ★ 5 — A quarto presentation on managing scientific literature with Zotero
+- [AlbertRapp](https://github.com/AlbertRapp/my_quarto_presentation_default) — ★ 5 — —
+- [danilofreire](https://github.com/danilofreire/quarto-presentation) — ★ 5 — A fork of the beautiful Quarto Clean presentation theme
+- [jrobsonchase](https://github.com/jrobsonchase/marpa) — ★ 5 — —
+- [s10akir](https://github.com/s10akir/marp-theme) — ★ 5 — —
+- [xueleecs](https://github.com/xueleecs/MARPPI) — ★ 5 — MARPPI: Boosting prediction of protein−protein interactions  with multi-scale architecture residual network
+- [impatrq](https://github.com/impatrq/marp) — ★ 5 — —
+- [ictsc](https://github.com/ictsc/marp-ictsc-theme) — ★ 5 — ICTSC の marp テーマ
+- [SakaITa](https://github.com/SakaITa/MarpToCloudflarePagesSample) — ★ 5 — Marp で作ったプレゼンテーションを Cloudflare Pages にデプロイするサンプルです。
+- [hirokidaichi](https://github.com/hirokidaichi/marp-lens) — ★ 5 — marpをいいかんじにする
+- [JanaVPetrova](https://github.com/JanaVPetrova/miss-marple) — ★ 5 — —
+- [RyuyaIshibashi](https://github.com/RyuyaIshibashi/marp-docs) — ★ 5 — —
+- [VeroMarpe](https://github.com/VeroMarpe/VeroMarpe) — ★ 5 — —
+- [abbott567](https://github.com/abbott567/accessible-marp-decks) — ★ 5 — Create accessible slide decks using Markdown, powered by Marp.
+- [halftermeyer](https://github.com/halftermeyer/neo4j-marp-template) — ★ 5 — —
+- [nibzard](https://github.com/nibzard/slidegauge) — ★ 5 — Static analyzer for Marp Markdown decks - validates slide quality for AI agents
+- [matildeopbravo](https://github.com/matildeopbravo/shell-basics) — ★ 5 — Markdown slides for a talk about Shell Basics
+- [KorbinianKuhn](https://github.com/KorbinianKuhn/markdown-slides) — ★ 5 — Generate HTML-Slides with from Markdown-Files with Stuttgart Media University (HDM) branding
+- [nmfs-opensci](https://github.com/nmfs-opensci/xaringan-nmfs) — ★ 5 — xaringan theme with NMFS branding
+- [Kuan-Liu](https://github.com/Kuan-Liu/xaringan_utoronto) — ★ 5 — Creating a University of Toronto xaringan theme template - fun project =D
+- [StefanJuenger](https://github.com/StefanJuenger/woRkshoptools) — ★ 5 — R-Package to create, build, and maintain xaringan slides for our workshops
+- [ZhengliangDuanfang](https://github.com/ZhengliangDuanfang/QSBlue) — ★ 5 — A Typst Touying template for Zhejiang University (ZJU) users.
+- [Ri-Nai](https://github.com/Ri-Nai/touying-euphonium) — ★ 5 — —
+- [Quaternijkon](https://github.com/Quaternijkon/touying-flow) — ★ 5 — —
+- [KlnSdr](https://github.com/KlnSdr/touying-htwk-stripes) — ★ 5 — —
+- [typst-tud](https://github.com/typst-tud/tud-slides) — ★ 5 — Typst template for slides and presentations for TU Dresden
+- [mcanouil](https://github.com/mcanouil/quarto-better-word) — ★ 5 — Playground for a custom OpenXML Pandoc template in Quarto docx output (advanced title/author block customisation).
+- [orumin](https://github.com/orumin/slide_pandoc) — ★ 5 — slide template with pandoc
+- [Marmare314](https://github.com/Marmare314/typst-presentation) — ★ 5 — An easy to use presentation template.
+- [NMarkgraf](https://github.com/NMarkgraf/NPBT) — ★ 5 — Norman's Pandoc Beamer Themes
+- [tidoust](https://github.com/tidoust/slidyremote) — ★ 5 — HTML Slidy remote - Proof of concept demo for the Presentation API
+- [davidedellagiustina](https://github.com/davidedellagiustina/uniud-slides) — ★ 5 — Unofficial Typst template for presentation slides at the University of Udine.
+- [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel/hello-quarto-cvt) — ★ 5 — Source code for the "Hello Quarto" talk for the Coronavirus Visualization Team - August 2022
+- [tilburgsciencehub](https://github.com/tilburgsciencehub/quarto_presentation_template) — ★ 4 — Templates to make presentations and report in Quarto
+- [Jzzzi](https://github.com/Jzzzi/slide-thu) — ★ 4 — A Typst slide template for Tsinghua University
+- [nicolasfara](https://github.com/nicolasfara/Template-for-Typst-Slides) — ★ 4 — —
+- [chengluyu](https://github.com/chengluyu/typst-slides-template) — ★ 4 — —
+- [tugraz-isds](https://github.com/tugraz-isds/rslidy) — ★ 4 — Rslidy: Lightweight, Accessible, and Responsive HTML5 Slide Decks
+- [lianxhcn](https://github.com/lianxhcn/marp-book) — ★ 4 — Guides and tips for making Marp slides.
+- [probinso](https://github.com/probinso/introduction-git) — ★ 4 — marp slides and material for git talk
+- [ronsavage](https://github.com/ronsavage/marpa.papers) — ★ 4 — Various documents pertaining to Mapra (Introduction, FAQ, etc)
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-web-site) — ★ 4 — Marpa web site
+- [HaseloffLab](https://github.com/HaseloffLab/MarpoDB) — ★ 4 — An open registry of Marchantia polymorpha genetic parts
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--R3) — ★ 4 — R3 version of Marpa parser -- ALPHA (under development)
+- [ronsavage](https://github.com/ronsavage/MarpaX-Languages-Lua-Parser) — ★ 4 — A Lua source code parser
+- [marp-team](https://github.com/marp-team/actions) — ★ 4 — Common GitHub Actions and scripts for Marp team projects
+- [OscarPellicer](https://github.com/OscarPellicer/marp_template) — ★ 4 — My MARP template for all kinds of slides
+- [roidelapluie](https://github.com/roidelapluie/marpit-inuits) — ★ 4 — —
+- [matsubara0507](https://github.com/matsubara0507/pub-slides) — ★ 4 — My Published Slides by marp-cli + Netlify
+- [d8niz](https://github.com/d8niz/marp-cli-demo) — ★ 4 — Marp Demo
+- [ebibibi](https://github.com/ebibibi/marp2pptx) — ★ 4 — Convert Marp Markdown slides to editable PowerPoint with auto-sizing fonts
+- [ineprimo](https://github.com/ineprimo/MARP) — ★ 4 — susto
+- [5h1nnN](https://github.com/5h1nnN/marp-theme-tongji) — ★ 4 — Marp Theme for Tongji University 同济大学Marp主题
+- [yanorei32](https://github.com/yanorei32/marp-video) — ★ 4 — Marp-based Video Generator
+- [Kazuma](https://github.com/Kazuma/Marpet) — ★ 4 — Marpet is convert HTML into Markdown using the redcarpet.
+- [abnerhexu](https://github.com/abnerhexu/milky-marp-theme) — ★ 4 — marp theme for highland cs college
+- [HKUST-KnowComp](https://github.com/HKUST-KnowComp/MarPT) — ★ 4 — Code for Prospect Theory Fails for LLMs: Instability of Decision-Making under Epistemic Uncertainty
+- [astro-plugins](https://github.com/astro-plugins/astro-marp) — ★ 4 — —
+- [karaage0703](https://github.com/karaage0703/llm-marp-slides) — ★ 4 — —
+- [d9k](https://github.com/d9k/presentation-marp-demo) — ★ 4 — —
+- [Th30utcast](https://github.com/Th30utcast/MARP-Guide-AI) — ★ 4 — MARP-Guide-AI was the project for Studio Design 2 built using Pythong and JavaScript, where the main focus was to discover and implement modern day LLM's int...
+- [Sunwood-ai-labs](https://github.com/Sunwood-ai-labs/marp-editable-ui) — ★ 4 — —
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa-theory-paper) — ★ 4 — The Marpa theory paper [ARCHIVED]
+- [renandamasceno](https://github.com/renandamasceno/TemplateMarpUFC) — ★ 4 — Template for Federal University of Ceará (UFC) presentations in Marp.
+- [NTNU-MCS](https://github.com/NTNU-MCS/MarPowSim) — ★ 4 — Marine Power System Simulator
+- [noeliampgar](https://github.com/noeliampgar/MARP-Juez-2C) — ★ 4 — Problemas del segundo cuatrimestre de la asignatura MARP
+- [johannesdewit](https://github.com/johannesdewit/marp-theme-universiteit-leiden) — ★ 4 — Unofficial Leiden University theme for producing easy slides with Marp || Officieus Universiteit Leiden thema om gemakkelijk presentaties te maken met Marp
+- [grokify](https://github.com/grokify/videoascode) — ★ 4 — Convert Marp presentations with voiceovers to video files. This tool takes a Marp markdown presentation with voiceover text in HTML comments, generates speec...
+- [EnEmerson](https://github.com/EnEmerson/aitp-github-workshop) — ★ 4 — Github/Markdown presentation
+- [gentle-giraffe-apps](https://github.com/gentle-giraffe-apps/Gentle-Presentations) — ★ 4 — Markdown Presentations on Various Topics
+- [matsubara0507](https://github.com/matsubara0507/elmdeck) — ★ 4 — Markdown presentation writer with Elm.
+- [arpitbbhayani](https://github.com/arpitbbhayani/present-md-export) — ★ 4 — Export present-md markdown presentations to PDF.
+- [gadenbuie](https://github.com/gadenbuie/extra-awesome-xaringan) — ★ 4 — —
+- [matt-dray](https://github.com/matt-dray/ninja-scaffold) — ★ 4 — :ninja::bamboo: Adapting Emi Tanaka's {xaringan} Ninjutsu classes for slide layouts
+- [Quaternijkon](https://github.com/Quaternijkon/touying-pres-ustc) — ★ 4 — —
+- [touying-typ](https://github.com/touying-typ/touying-typ.github.io) — ★ 4 — Documentation for Touying
+- [rustam2027](https://github.com/rustam2027/touying-mmf-nsu) — ★ 4 — NSU presentation template for Touying Typst package.
+- [Ri-Nai](https://github.com/Ri-Nai/touying-campus-talk) — ★ 4 — Campus talk Touying theme (THU / BIT / custom)
+- [Kisechan](https://github.com/Kisechan/snl-compiler) — ★ 4 — 吉林大学 2023 级《编译原理》项目，C++ SNL 编译器，包含展示的 WebUI 和介绍的 Touying Slides
+- [inuEbisu](https://github.com/inuEbisu/SlideTemplate) — ★ 4 — inuEbisu's template for MkSlides / 犬戎的 MkSlides 模板
+- [LordBlacky](https://github.com/LordBlacky/leonux) — ★ 4 — Typst-Minimalist-Slides-Template
+- [thomasjpfan](https://github.com/thomasjpfan/slides-template-quarto) — ★ 4 — —
+- [Ender-events](https://github.com/Ender-events/pandoc) — ★ 4 — github action with pandoc + Metropolis Latex beamer theme
+- [mielpeeters](https://github.com/mielpeeters/pitcher) — ★ 4 — Minimal and modern configurable slide tool for Typst.
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/quarto-shapes) — ★ 4 — CSS shape classes for Quarto — style divs as shapes that can contain text and other elements
+- [connachermurphy](https://github.com/connachermurphy/typst-slides) — ★ 3 — Slides template for Typst
+- [wiesehahn](https://github.com/wiesehahn/quarto_presentation_template) — ★ 3 — Template repository to provide a starting point for my presentations
+- [eLearningHub](https://github.com/eLearningHub/quarto-beamer-starter) — ★ 3 — A Quarto presentation starter with a focus on Beamer
+- [yelpevade](https://github.com/yelpevade/touying-nudt) — ★ 3 — ?? Touying ??????? Typst ????? (Typst Slide Theme for NUDT Based on Touying)
+- [JesonChou](https://github.com/JesonChou/buaa-marp-template) — ★ 3 — 用于AI Agent自动排版的BUAA Marp PPT模板
+- [cjohnson74](https://github.com/cjohnson74/Python-NewsFeed) — ★ 3 — In this course, you’ll use Python to refactor an existing application that was originally built using Node.js. The app, called Just Tech News, is a website w...
+- [Einundzwanzig-Podcast](https://github.com/Einundzwanzig-Podcast/slides) — ★ 3 — Präsentationsvorlage für Einundzwanzig-Vorträge, basierend auf Marp
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Parser-Marpa) — ★ 3 — More advanced parser for marpa files.
+- [BIwashi](https://github.com/BIwashi/marp-slides) — ★ 3 — —
+- [drforr](https://github.com/drforr/perl6-Marpa) — ★ 3 — Perl6 binding for Marpa
+- [junyi0111](https://github.com/junyi0111/MarpPPT) — ★ 3 — MarpPPT: turn Markdown into editable PowerPoint presentations
+- [Zeng-WH](https://github.com/Zeng-WH/MARP) — ★ 3 — Marp模板
+- [Paulalemany](https://github.com/Paulalemany/MARP) — ★ 3 — —
+- [jongalloway](https://github.com/jongalloway/MarpToPptx) — ★ 3 — A .NET 10 CLI and library for compiling Marp-flavored Markdown into editable PowerPoint presentations.
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Simple-Rules) — ★ 3 — Very simple Marpa::XS rule parser.
+- [jvverde](https://github.com/jvverde/MarpaX-xPathLike) — ★ 3 — MarpaX::xPathLike - a xpath like processor for perl data-structures (hashes and arrays)!
+- [latk](https://github.com/latk/p5-MarpaX-Grammar-Preprocessor) — ★ 3 — MarpaX::Grammar::Preprocessor - Shortcuts for Marpa::R2 SLIF grammars
+- [sotetsuk](https://github.com/sotetsuk/marp-ai-friendly) — ★ 3 — Academic Presentation Slides with Marp
+- [vainiusd](https://github.com/vainiusd/marp-cheatslides) — ★ 3 — Collection of MARP slide examples
+- [LinuxLab-ESGI](https://github.com/LinuxLab-ESGI/LinuxLab-MARP-template) — ★ 3 — LinuxLab ESGI MARP template for presentations.
+- [yutaro-t](https://github.com/yutaro-t/atom-marp) — ★ 3 — Live rendering from markdown to presentation slides, using Marp
+- [Jonathansumner](https://github.com/Jonathansumner/Marple-Tilt) — ★ 3 — Digital recreation of the "Labyrinth" marble tilt maze game.
+- [marpledata](https://github.com/marpledata/marple-installation) — ★ 3 — Deployment configurations for Marple DB and Insight.
+- [szw0407](https://github.com/szw0407/Marp-Theme-For-SDU) — ★ 3 — Marp Theme For Shandong University。山东大学（山大/沙袋）Marp主题
+- [latk](https://github.com/latk/Marpa-Inline) — ★ 3 — An alternative DSL for the Marpa::R2 parser generator
+- [moskensoap](https://github.com/moskensoap/marp-server) — ★ 3 — Use Docker Compose to run VS Code Server and Marp Server together for writing and previewing Markdown-based slides in one web UI.
+- [kdmsnr](https://github.com/kdmsnr/marp-preview) — ★ 3 — —
+- [fosslover69](https://github.com/fosslover69/marp-shot) — ★ 3 — —
+- [mkwisniewski](https://github.com/mkwisniewski/POLIMI_Marp_Template) — ★ 3 — POLIMI Marp Template for Markdown Slides.
+- [OrangeX4](https://github.com/OrangeX4/marp-pdr) — ★ 3 — —
+- [eyemono-moe](https://github.com/eyemono-moe/marp-eyemono-theme) — ★ 3 — —
+- [marekpsenka](https://github.com/marekpsenka/edhouse-marp-template) — ★ 3 — Edhouse template for Marp - the markdown presentation ecosystem
+- [Mitachi-H](https://github.com/Mitachi-H/paper-to-marp) — ★ 3 — —
+- [hashbangcode](https://github.com/hashbangcode/marp-talk-template) — ★ 3 — —
+- [pstuifzand](https://github.com/pstuifzand/marpa-cpp-rules) — ★ 3 — C++ experiment with Marpa
+- [ArviSlayer](https://github.com/ArviSlayer/Marpel-Destek-Sistemi) — ★ 3 — Ly3ssia#1000'den Alındı
+- [pstuifzand](https://github.com/pstuifzand/go-marpa-gen) — ★ 3 — Parser/generator for Marpa grammars in Go
+- [kentar0kozai](https://github.com/kentar0kozai/Marp_for_OMRON) — ★ 3 — —
+- [ultsaza](https://github.com/ultsaza/my-marp-template) — ★ 3 — —
+- [ENIB-Community](https://github.com/ENIB-Community/enib-marp-theme) — ★ 3 — Marp theme designed in accordance with the ENIB colors
+- [mikael-ros](https://github.com/mikael-ros/minecraft-on-marp) — ★ 3 — A Minecraft theme for Marp - now with extra jank
+- [noeliampgar](https://github.com/noeliampgar/MARP-Juez-1C) — ★ 3 — Problemas del primer cuatrimestre de la asignatura MARP
+- [steelpipe75](https://github.com/steelpipe75/marp-lt-slides-template) — ★ 3 — Marpによるライトニングトークのスライド作成 テンプレート
+- [alterationx10](https://github.com/alterationx10/scala-slides) — ★ 3 — Generate Scala Slides with mdoc, marp, and scala-cli
+- [chaoyian](https://github.com/chaoyian/Markdown-Resume-Builder---Create-A4-CV-with-AI) — ★ 3 — Privacy-conscious bilingual A4 resume toolkit built with Marp and refactored with AI assistance.
+- [howardroatti](https://github.com/howardroatti/banco-de-dados-faesa) — ★ 3 — Material didatico de Banco de Dados (FAESA) - slides em Marp. Prof. M.Sc. Howard Cruz Roatti. CC BY 4.0.
+- [nugehoodg](https://github.com/nugehoodg/MoSlides) — ★ 3 — MoSlides is an ultrafast & lightweight Markdown slides maker for Android.
+- [kadamwhite](https://github.com/kadamwhite/grunt-codeblock-jshint) — ★ 3 — Run JSHint against code snippets within Markdown slides.
+- [ccaprani](https://github.com/ccaprani/scholium) — ★ 3 — Automated generation of video lessons from markdown slides
+- [gwillz](https://github.com/gwillz/slides) — ★ 3 — Markdown Presentations
+- [zhouzhuojie](https://github.com/zhouzhuojie/hast-electron) — ★ 3 — Hast markdown presentation in Electron
+- [guileen](https://github.com/guileen/mkd2slide) — ★ 3 — markdown to slide pdf
+- [SnehalRaj](https://github.com/SnehalRaj/markdown-to-slides) — ★ 3 — Pandoc + Beamer pipeline for creating polished PDF slide decks from Markdown with automated layout analysis
+- [lnnrtwttkhn](https://github.com/lnnrtwttkhn/dra-fair-teaching) — ★ 3 — Source code for Quarto slides on reproducible and FAIR teaching materials
+- [PythonCoderUnicorn](https://github.com/PythonCoderUnicorn/Quarto-RLadies) — ★ 3 — a dark theme for Quarto slide presentation
+- [Pat-Laub](https://github.com/Pat-Laub/UNSW-Quarto-Slides-Template) — ★ 3 — A template for using Quarto to produce slides with the UNSW theme.
+- [beatrizmilz](https://github.com/beatrizmilz/aMostra-IME-2019-Xaringan) — ★ 3 — —
+- [nanhung](https://github.com/nanhung/xaringan-tamu) — ★ 3 — Xaringan X TAMU template
+- [vrbiki](https://github.com/vrbiki/learning-xaringan) — ★ 3 — Working through the NHSR workshop on "Sharing Your Work with xaringan"
+- [QuinnAsena](https://github.com/QuinnAsena/growth_lecture) — ★ 3 — Population growth lecture in xaringan and shiny app
+- [angela-li](https://github.com/angela-li/dc-r-2018) — ★ 3 — Materials for xaringan slides for DC R 2018
+- [denis-cohen](https://github.com/denis-cohen/mzes-xaringan-metropolis) — ★ 3 — A Xaringan Metropolis template inspired by the MZES corporate design
+- [issactoast](https://github.com/issactoast/uiowa-rworkshop) — ★ 3 — xaringan template with xaringan themer
+- [gadenbuie](https://github.com/gadenbuie/xaringan-club) — ★ 3 — A place to talk about xaringan
+- [kannyjyk](https://github.com/kannyjyk/ggplot2-xaringan) — ★ 3 — The introduction of ggplot2 made by xaringan
+- [beatrizmilz](https://github.com/beatrizmilz/apresentacao_RLadies_xaringan) — ★ 3 — Apresentação meetup RLadies sobre como criar apresentações no R utilizando o pacote Xaringan.
+- [matt-dray](https://github.com/matt-dray/ninja-knitting) — ★ 3 — :ninja::yarn: Demo: iterative rendering of {xaringan} slides with params using {purrr}
+- [royfrancis](https://github.com/royfrancis/workshop-template-rmd-ga) — ★ 3 — RMarkdown based website for workshops built and rendered through Github Actions. Contains html reports and xaringan slides.
+- [ccyoung3](https://github.com/ccyoung3/touying-simpl-ecnu) — ★ 3 — Typst Touying Slide Theme for East China Normal University
+- [HPDell](https://github.com/HPDell/touying-brandred-uobristol) — ★ 3 — —
+- [vuw-scps](https://github.com/vuw-scps/tuhi-presentation-vuw) — ★ 3 — Typst template for presentation slides with touying
+- [onsdagens](https://github.com/onsdagens/scholarly-ltupresentation) — ★ 3 — Touying-based Typst LTU beamer template
+- [maxchang3](https://github.com/maxchang3/touying-simpl-cau) — ★ 3 — Touying Slide Theme for China Agricultural University
+- [Lyrics2196](https://github.com/Lyrics2196/BUAA-Slide) — ★ 3 — A BUAA slide template based on touying/typst.
+- [augustozanellato](https://github.com/augustozanellato/touying-unipd) — ★ 3 — —
+- [rlridenour](https://github.com/rlridenour/touying-slides-handout) — ★ 3 — Generate slides and a handout from a single content file using the Touying presentation package for Typist.
+- [maxx27](https://github.com/maxx27/md2pptx) — ★ 3 — Converter of Markdown files into PowerPoint presentations
+- [upstairs-at-erics](https://github.com/upstairs-at-erics/pptx-template-filler) — ★ 3 — PPTX Template Filler API. A lightweight, containerised Flask REST API for uploading, inspecting, and filling PowerPoint templates using placeholder tags. Bui...
+- [elinscott](https://github.com/elinscott/psi-slides-template) — ★ 3 — typst template for PSI slides
+- [Pepengu](https://github.com/Pepengu/pepentation) — ★ 3 — Typst presentation template
+- [vinvolve](https://github.com/vinvolve/UET-presentation-template-typst) — ★ 3 — —
+- [mcanouil](https://github.com/mcanouil/2026-ggplot2-extenders-gribouille) — ★ 3 — Talk for the ggplot2 extenders club: "The Grammar of Graphics Assembles", on Gribouille, a native Typst grammar-of-graphics package.
+- [nhsengland](https://github.com/nhsengland/nhse-quarto-presentations) — ★ 2 — —
+- [statik](https://github.com/statik/cc-quarto-video) — ★ 2 — using live camera feed in quarto presentation similar to Keynote Live Video feature
+- [syqwq-OMG](https://github.com/syqwq-OMG/ecnu-typst-slide) — ★ 2 — typst slide template for ECNU using touying
+- [wiuri](https://github.com/wiuri/xjtu_bristol) — ★ 2 — _typst_slides_template
+- [pauladam94](https://github.com/pauladam94/ENS-Rennes-Typst-Slides-Template) — ★ 2 — Typst Slide Template for ENS Rennes
+- [ComPDFKit](https://github.com/ComPDFKit/compdfkit-conversion-sdk-java) — ★ 2 — Enterprise-grade PDF conversion SDK for Java, built for Spring Boot and JVM-based server applications. Convert PDF files to Word, Excel, PPT, HTML, CSV, imag...
+- [JavOrraca](https://github.com/JavOrraca/posit-conf-2023-presentation) — ★ 2 — posit::conf(2023) highlights wrapped into Quarto web slides
+- [icheft](https://github.com/icheft/marp-template) — ★ 2 — —
+- [alphagov](https://github.com/alphagov/marples) — ★ 2 — Message destination arbiter
+- [mcf1110](https://github.com/mcf1110/marp-themes) — ★ 2 — The themes I use in my Marp presentations
+- [vibe-code-tours](https://github.com/vibe-code-tours/marp-templates) — ★ 2 — Six self-contained Marp slide templates for Vibe Code Tours projects (copy one file, render).
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Parser-MarpaBase) — ★ 2 — Simple base for Marpa parsers
+- [pedrobejarano](https://github.com/pedrobejarano/marped1) — ★ 2 — —
+- [LL-Xu](https://github.com/LL-Xu/MARP-main) — ★ 2 — MARP From Xu
+- [Fernadoo](https://github.com/Fernadoo/MARP) — ★ 2 — A testbed for multi-agent route planning.
+- [cyntrist-UCM-GDV](https://github.com/cyntrist-UCM-GDV/MARP) — ★ 2 — —
+- [TonioGela](https://github.com/TonioGela/marp) — ★ 2 — Custom theme for Markdown presentations with Marp
+- [jddurand](https://github.com/jddurand/c-marpaWrapper) — ★ 2 — Marpa parsing library convenience wrappers
+- [pstuifzand](https://github.com/pstuifzand/MarpaX-Parser-Loader) — ★ 2 — Load and generate a MarpaX::Parser from a file at runtime.
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-ECMAScript-AST) — ★ 2 — ECMAScript AST using Marpa
+- [leegemstone](https://github.com/leegemstone/marp-themes) — ★ 2 — Some custom Marp themes
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-SQL-AST) — ★ 2 — SQL AST written with Marpa
+- [dywsy21](https://github.com/dywsy21/Marp-Slides) — ★ 2 — Marp & Awesome-Marp & AI: Empower you to make elegant slides more than easily.
+- [jddurand](https://github.com/jddurand/MarpaX-Languages-SQL2003-AST) — ★ 2 — —
+- [rns](https://github.com/rns/MarpaX-Languages-CommonMark-AST) — ★ 2 — BNF-based implementation of spec.commonmark.org using Marpa::R2
+- [Glasgow-College-UESTC](https://github.com/Glasgow-College-UESTC/ip-lectures) — ★ 2 — IP slides based on MARP
+- [traP-jp](https://github.com/traP-jp/marp-template) — ★ 2 — The template repository of Marp
+- [dunossauro](https://github.com/dunossauro/marpy) — ★ 2 — My python lib to create marp presentations
+- [Hronrad](https://github.com/Hronrad/marper) — ★ 2 — a simple and fast  tool designed to flawlessly convert any Markdown document into formatted, highly precise PPTX and PDF presentations
+- [msetzu](https://github.com/msetzu/marpee) — ★ 2 — —
+- [SaundersLab](https://github.com/SaundersLab/marple) — ★ 2 — Pipeline for analysis of stem rust (Pgt) and yellow rust (Pst) reads for MARPLE
+- [raku-community-modules](https://github.com/raku-community-modules/Marpa) — ★ 2 — Raku binding for Marpa
+- [voidash](https://github.com/voidash/slides) — ★ 2 — slides for the presentation files. Mainly in markdown format using Marp, or pptx format using google slides
+- [jmmartinez](https://github.com/jmmartinez/parm) — ★ 2 — Scripts for making slides with Marp
+- [alexdewar](https://github.com/alexdewar/presentation_template) — ★ 2 — A Cookiecutter recipe for Marp presentations
+- [asm0dey](https://github.com/asm0dey/marp-presentation-template) — ★ 2 — Template for creating presentation with Marp
+- [htlin222](https://github.com/htlin222/lizard_marp) — ★ 2 — Marp presentation template with custom CSS themes for markdown slide decks, supporting HTML/PDF export and a live development server.
+- [nickytonline](https://github.com/nickytonline/marp-kit) — ★ 2 — Starter kit for Marp decks: local preview, HTML/PDF/PPTX builds, and Netlify deploy
+- [jeffreykegler](https://github.com/jeffreykegler/Marpa--HTML) — ★ 2 — OBSOLETE Marpa-powered HTML parser [ARCHIVED]
+- [yang3kc](https://github.com/yang3kc/marp_template) — ★ 2 — A template for creating slides using Marp
+- [samisaliveagain](https://github.com/samisaliveagain/Marposs-hackathon) — ★ 2 — ICNAP Fraunhofer hackathon project
+- [hnrobert](https://github.com/hnrobert/Marp-Tutorial) — ★ 2 — —
+- [yuta0306](https://github.com/yuta0306/academic-marp) — ★ 2 — —
+- [xuwithbean](https://github.com/xuwithbean/xu_marp) — ★ 2 — —
+- [lutelute](https://github.com/lutelute/marp-pptx) — ★ 2 — Academic conference slide templates for Marp
+- [drspoulsen](https://github.com/drspoulsen/Onion_Marp) — ★ 2 — —
+- [nibzard](https://github.com/nibzard/marp-validator) — ★ 2 — A comprehensive validation tool for Marp presentations that analyzes slide readability and formatting
+- [paulamrtnez](https://github.com/paulamrtnez/MARP_2021) — ★ 2 — Ejercicios resueltos y aprobados por el juez automático de la asignatura de Métodos Algorítmicos en Resolución de Problemas
+- [techbuzzz](https://github.com/techbuzzz/marp-play) — ★ 2 — Free online Markdown-to-Slides presentation player powered by Marp Core. Paste Marp markdown, preview slides in real-time, export to PDF, use fullscreen mode...
+- [klieret](https://github.com/klieret/marp-cookiecutter) — ★ 2 — Cookiecutter template for my presentations with marp 📝🍪✂️
+- [Justtofind](https://github.com/Justtofind/Marp_Markdown) — ★ 2 — 将markdown直接转为ppt提升论文汇报效率
+- [posaune0423](https://github.com/posaune0423/marp-template) — ★ 2 — —
+- [feamster](https://github.com/feamster/paper-marp) — ★ 2 — —
+- [HK-SHAO](https://github.com/HK-SHAO/Marp-theme-for-SCNUslides) — ★ 2 — SCNU主题的marp模板
+- [adriansousapoza](https://github.com/adriansousapoza/ucph-marp-template) — ★ 2 — This Repo contains a MARP template based on the design guide of the university of copenhagen
+- [aimerneige](https://github.com/aimerneige/marp_git-github) — ★ 2 — Git & GitHub Teach PPT build with Marp
+- [NYPL](https://github.com/NYPL/nypl-marp-template) — ★ 2 — Marp template themed with NYPL design guidelines.
+- [kamijin-fanta](https://github.com/kamijin-fanta/itc-marp-theme) — ★ 2 — —
+- [Yvonne0413](https://github.com/Yvonne0413/marple_mini_behavior) — ★ 2 — MiniGrid Implementation of BEHAVIOR Tasks on Marple projects
+- [boborbt](https://github.com/boborbt/marp-dev-preview) — ★ 2 — A CLI tool to preview Marp markdown files
+- [porscheofficial](https://github.com/porscheofficial/marp-cli-wrapper) — ★ 2 — A Node.js wrapper for Marp CLI that simplifies creating professional presentations from Markdown
+- [marpelt](https://github.com/marpelt/marpelt.github.io) — ★ 2 — Explore my portfolio showcasing a collection of projects that reflect my journey as a developer.
+- [franzhuang](https://github.com/franzhuang/sync-marp.nvim) — ★ 2 — Sync your marp preview window with neovim's cursor.
+- [LucasFernandez11](https://github.com/LucasFernandez11/MarPel-Peliculas) — ★ 2 — —
+
+_Showing top 500 of 2792 repos in this category — the full list with all 2792 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)

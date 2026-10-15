@@ -1,0 +1,8 @@
+[ THIS REPOSITORY HAS BEEN ARCHIVED ]
+
+This was the repository for the revision of the Marpa "Theory paper":
+the paper formally describing the parsing theory behind Marpa.
+
+The theory paper "revision" grew to the point where the "paper" is now
+a "book", and at that point a new repository was started.  All updates
+are going to the Marpa book repository.

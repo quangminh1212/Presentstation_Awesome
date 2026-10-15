@@ -1,0 +1,88 @@
+# presentation-toolkit
+This software repository aims to provide CLI-based tools to facilitate preparation of presentations.
+
+**It differs from other alternatives since this software tries to follow the [UNIX philosophy](http://www.linfo.org/unix_philosophy.html) as close as possible while still allowing the end result to look nice and pleasant to the eye.**
+
+These tools work on Linux, but can be made to work on other platforms too with some or a lot of effort (depending on the tool).
+
+All pull requests and issues welcome.
+
+2026 update: chart3 is the python3 version of chart.
+
+
+![Output example (hexcolordump)](hexcolordump_sample.png "Example usage of 'hexcolordump'")
+
+![Output example (image-invert on hexcolordump)](image-invert_sample.png "Example usage of 'image-invert' with transparency")
+
+![Output example (chart)](chart_sample.png "Example output of 'chart'")
+
+#### Here's a quick guide to get you started in life (try some of these out!)
+```
+echo 42 | chart pie
+( echo 42 the answer; echo 113 ; echo 69) | chart barcount noheader
+wc -l /etc/* | sort -nr |chart barcount noheader
+cat /proc/vmstat | sort -k2 -nr | head -10 | chart bar noheader
+(echo -n param; cat /proc/interrupts)  |chart bar ignoreextra
+netstat -tu|grep :|awk '{print $5"/"$1}' |sort | uniq -c | sort -nr | tr : \  |chart summarybar noheader
+
+dd if=/dev/urandom count=1000 | tr -dc 0-9 | sed -E 's/(..).(...).(...)./\1 \2 \3\n/g' | head -15 | chart plotscatter grid noheader cubefit dark
+dd if=/dev/urandom count=1000 | tr -dc 0-9 | sed -E 's/(..).(...).(...)./\1 \2 \3\n/g' | head -15 | chart sidebar noheader squarefit overlay dark
+dd if=/dev/urandom count=1000 | tr -dc 0-9 | sed -E 's/(..).(...).(...)./\1 \2 \3\n/g' | head -15 | chart pie /tmp/test.png noheader dark show
+dominantcolor /tmp/test.png 3
+image-invert /tmp/test.png 
+termshot /tmp/test2.png hexcolordump -as /tmp/test.png 
+
+wget https://upload.wikimedia.org/wikipedia/commons/f/f0/Aurora_Australis.ogv && video2gif Aurora_Australis.ogv
+```
+
+Take a look at [nice output images](./tests/out/) and [respective input samples](./tests/in/) to continue your quick-start tour. Those are used for regression testing, but are super useful to learn to use the tools (not that they need any learning).
+
+![Output example (chart)](tests/out/chart.11.png "Scatter plot on a grid with 3rd order trendlines")
+
+![Output example (chart)](tests/out/chart.14.png "Scatter plot with translucent points on logarithmic scale")
+
+
+### Is there anything else?
+Yes!
+
+https://github.com/FireyFly/pixd
+
+https://github.com/0ki/binGraph
+
+https://github.com/cortesi/scurve/blob/master/binvis
+
+
+### Tips and tricks:
+* General speaking tips and tricks
+
+https://twitter.com/jesslynnrose/status/1041242744998572032
+
+* Having the same terminal on your extended screen for the beamer
+1. terminal 1: `screen -S presenting`
+1. terminal 2: `screen -x presenting`
+1. move one of the terminals to the other screen
+
+Thanks to @leyrer & @MacLemon
+
+* If you have a portable monitor you can just mirror the beamer on it
+1. xrandr # identify srceens, look for +x+y to determine the order
+1. set the same resolution on the screens that you will be mirroring
+1. xrandr --output eDP --output HDMI-A-0 --same-as DisplayPort-0
+
+* Show a copy of your presentation nootes (or anything else) on an extra monitor
+1. ffplay -f x11grab -framerate 10 -video_size 1110x1000 -i :0.0+760,30
+
+* Drawing graphs
+
+```
+$ cat in.txt 
+digraph {
+	rankdir="LR";
+        a -> b;
+        b -> c;
+}
+
+$ cat in.txt |dot -T svg > out-dot.svg
+```
+![Output example (dot)](out-dot.svg "Graph connecting a to b to c")
+

@@ -49,7 +49,7 @@ def clean(repo, section):
 
 # strong presentation signal used to decide which repos belong in "Featured"
 STRONG_PRESENT = ["presentation","slides","slide "," ppt","pptx","powerpoint","keynote","beamer",
-    "reveal","marp","slidev","impress","quarto","xaringan","pandoc","typst","touying","obsidian",
+    "reveal","marp","slidev","impress","quarto","xaringan","pandoc","typst","touying",
     "google-slides","lecture","演示","幻灯","汇报","演讲","プレゼン","프레젠","슬라이드","deck","decks",
     "pitchdeck","pitch-deck","html-slide","html-slides"]
 PRESENT_CATS = {"AI / LLM Generators (end-to-end)","MCP Servers","Slides Frameworks (HTML/Web)",
@@ -63,7 +63,16 @@ def is_present_topic(repo):
 
 # famous repos that match a weak keyword but are NOT presentation-related
 FEATURED_EXCLUDE = {"dujltqzv/some-many-books","owainlewis/awesome-artificial-intelligence",
-    "dair-ai/ml-course-notes"}
+    "dair-ai/ml-course-notes",
+    # off-topic toolkits (office suites, design, NLP, file/markdown parsers, prompt lists)
+    "fighting41love/funnlp","iofficeai/officecli","dream-num/univer","onlyoffice/documentserver",
+    "onlyoffice/desktopeditors","netease-youdao/lobsterai","genspark-ai/genoffice",
+    "opencoworkai/open-codesign","the-vibe-company/megaparse","nexu-io/html-anything",
+    "jonschlinkert/gray-matter","joanrod/star-vector","serenakeyitan/awesome-notebooklm-prompts",
+    # academic personal-website / portfolio theme (generic web/design, not presentation)
+    "hugoblox/hugo-theme-academic-cv",
+    # generic online Markdown editor (only incidental PPT preview) + iOS modal-sheet UI lib (Apple "presentation" jargon)
+    "nicejade/markdown-online-editor","slackhq/panmodal"}
 
 def repo_key(r):
     return r["url"].replace("https://github.com/","").rstrip("/").lower()

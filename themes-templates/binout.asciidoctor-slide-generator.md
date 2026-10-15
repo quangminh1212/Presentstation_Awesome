@@ -1,0 +1,69 @@
+= asciidoctor-slide-generator
+:compat-mode:
+
+A template projet to generate slide with asciidoctor
+
+== Prerequesites
+
+* JDK
+* Maven 3
+
+== Usage
+
+. Clone this repository
+[source]
+----
+git clone https://github.com/binout/asciidoctor-slide-generator.git
+----
+
+[start=2]
+. Init git submodules (deck.js, reveal.js, ...)
+[source]
+----
+git submodule init
+git submodule update
+----
+
+[start=3]
+. Write your asciidoc slides in +src/main/slide/_backend_+ (by default +_backend_+ is +deckjs+)
+
+[start=4]
+. To generate your slides, just launch :
+[source]
+----
+mvn
+----
+
+[start=5]
+. Your slides are available in +target/generated-slides+ !
+
+== Backend
+
+Each backend has a Maven profile.
+
+=== deck.js (default)
+
+[source]
+----
+mvn -Pdeckjs
+----
+
+For more information, you can read this http://asciidoctor.org/docs/install-and-use-deckjs-backend/[article].
+
+=== reveal.js
+
+[source]
+----
+mvn -Prevealjs
+----
+
+For more information, you can refer to this https://github.com/asciidoctor/asciidoctor-reveal.js/[repository].
+
+=== dzslides
+
+[source]
+----
+mvn -Pdzslides
+----
+
+For more information, you can refer to this https://github.com/mojavelinux/dzslides/[repository].

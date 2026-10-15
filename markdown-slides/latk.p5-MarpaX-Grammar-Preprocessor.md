@@ -1,0 +1,457 @@
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+MarpaX::Grammar::Preprocessor - Shortcuts for Marpa::R2 SLIF grammars
+
+=head1 VERSION
+
+v0.0_1
+
+=head1 SYNOPSIS
+
+    use MarpaX::Grammar::Preprocessor;
+    use Marpa::R2;
+
+    my $preprocessed = MarpaX::Grammar::Preprocessor->new->preprocess(\*DATA)
+    my $grammar = Marpa::R2::Scanless::G->new({ source => \$preprocessed->slif_source });
+
+    __DATA__
+    # Everything that's legal in the SLIF DSL is also legal here
+
+    # We automatically get this prelude:
+    #   inaccessible is fatal by default
+    #   :default ::= action => ::first
+    #   lexeme default = latm => 1
+
+    # A namespace allows us to gensym names for %helper rules
+    \namespace Foo {
+        % ::= %BAR | %Baz
+        %BAR ~ 'bar'        # really Foo__BAR
+        %Baz ::= %BAR %BAR  # really Foo__Baz
+    }
+
+    # a different namespace
+    \namespace Qux {
+        % ::= %BAR
+        %BAR ~ 'quxbar'     # really Qux__BAR
+    }
+
+    # Associate a docstring with the next symbol.
+    \namespace List {
+        # Docstrings can span multiple lines, all beginning with a triple quote.
+        """ a list of values. Examples:
+        """     []          (empty list)
+        """     [1, 2, 3]   (list with three integers)
+        % ::= (LEFT_BRACKET) %Items (RIGHT_BRACKET)
+
+        %Items ::= Value* \sep COMMA  # \sep expands to "separator => "
+    }
+
+    # Use { curly braces } to specify an inline rule.
+    # Inline rules still need a name.
+    # \array expands to "action => ::array"
+    \namespace Dict {
+        """ a key-value dictionary
+        % ::= (LEFT_BRACE) { %Items ::= %KVItem* \sep COMMA \array } (RIGHT_BRACE)
+        %KVItem ::= Key (COLON) Value \array
+    }
+
+    # Suppress documentation for any symbol.
+    # Great for internal helper rules!
+    \doc hide
+    Shhh ~ 'no one can see me'
+
+    # Easily link action rules with \do
+    Action ::= Stations \do Action # expands to "action => do_Action"
+
+=head1 DESCRIPTION
+
+This module is a preprocessor for SLIF grammars.
+Any valid SLIF grammar should be passed through with no modifications,
+except for the prelude that is added.
+
+This preprocessor is fairly restricted and mostly only does local,
+token-based substitutions, similar to the C preprocessor.
+The inline rule feature is more advanced,
+but still operates on a source level.
+Please keep this low-level approach in mind when using the module
+– it does not build an AST for the SLIF, and does not use Marpa itself.
+
+=head2 Commands
+
+The most prominent feature are the commands.
+These are introduced by a backslash,
+and call back to Perl code which may do custom parsing
+or use a simple token-based system to process the SLIF grammar.
+Example: C<\lax \sep COMMA> is transformed to C<< proper => 0 separator => COMMA >>.
+
+See L<the COMMANDS section in MarpaX::Grammar::Preprocessor::Parser|MarpaX::Grammar::Preprocessor::Parser/"COMMANDS"> for reference documentation on available commands.
+
+=head2 Namespaces
+
+Frequently, we need simple helper rules
+that are of no concern for the rest of the grammar.
+This preprocessor can mark any identifier as the current C<\namespace>.
+Any plain C<%> (percent symbol) is then used as a reference to the current namespace,
+and any C<%name> (name prefixed with percent symbol) is prefixed with the current namespace.
+This makes it easy to have quasi-private names without too much typing.
+
+Example:
+
+    \namespace Term {
+        ::= % (%PLUS) Factor
+
+        %PLUS ~ '+'
+    }
+
+Is transformed to:
+
+    Term ::= Term (Term__PLUS) Factor
+    Term__PLUS ~ '+'
+
+The namespace separator is currently set to double underscores,
+so you shouldn't use them in your identifiers
+(see also the stability policy section).
+
+Namespaces can be nested.
+To refer to an outside namespace's name, you can use a sequence of leading docs in a namespaced name:
+
+    Rule ::= ...;
+    \namespace Outer {
+        %Rule ::= ...;
+        \namespace %Inner {
+            %Rule ::= ...;
+
+            # %.Rule is Outer__Inner__Rule
+            # %..Rule is Outer__Rule
+            # %...Rule is Rule
+        }
+    }
+
+This usage is analogous to Python's relative modules.
+
+=head2 Inline Rules
+
+Many rules in a SLIF grammar are only used in one place,
+and are due to SLIF restrictions.
+E.g. a sequence rule must be a rule of its own.
+This preprocessor allows you to specify rules inline at their point of usage.
+Unfortunately, they still need a name.
+The preprocessor will then replace the inline rule with its symbol,
+and defer the definition of the rule until a safe state is reached.
+
+Example:
+
+    \namespace List {
+        ::= ('[') { %Items ::= Value* \sep COMMA \array } (']')
+    }
+
+Is transformed to:
+
+    List ::= ('[') List__Items (']')
+    List__Items ::= Value* separator => COMMA action => ::array
+
+=head2 Docstrings
+
+The C<\doc> commands lets you annotate a symbol with a docstring.
+After processing, these docstrings are available as a name to docstring hash ref.
+They can be used to build fairly sophisticated help systems that display relevant information on parse errors.
+
+Example:
+
+    """ A list contains a sequence of zero or more values.
+    """ It must start and end with square brackets,
+    """ and contains comma-separated values. Example:
+    """
+    """    []      # an empty list
+    """    [1]     # list with single element
+    """    [1,]    # trailing comma is allowd
+    """    [1,2,3] # list with three values
+    """    [ 1 , 2 , 3 ]   # space within the array is ignored
+    List ::= ...
+
+This documentation could then be used to display a help message like this to the user:
+
+    test.foo:42:4: error: no token found
+        (1, 2, 3)
+        ^
+    at character '(' U+0028 LEFT PARENTHESIS
+
+    expected:
+      - List: A list contains a sequence of zero or more values.
+        It must start and end with square brackets,
+        and contains comma-separated values. Example:
+
+            []      # an empty list
+            [1]     # list with single element
+            [1,]    # trailing comma is allowd
+            [1,2,3] # list with three values
+            [ 1 , 2 , 3 ]   # space within the array is ignored
+      - Dict: A dict contains any number of key-value pairs
+        ...
+    ...
+
+This module does not include such a help system!
+However, you can see the test case C<t/json.t>
+for a sample implementation of such “intelligent” error messages.
+Run it as a script and pass it faulty input to see it in action.
+
+See the L<\doc command|MarpaX::Grammar::Preprocessor::Parser/"command \doc"> for more information in docstrings.
+
+=head2 Custom Commands
+
+You can add custom commands by subclassing the parser
+and adding a C<command_FooBar()> method for a C<\FooBar> command.
+When you instantiate the preprocessor,
+you can pass a code ref that creates an instance of your parser
+(see the L<CONSTRUCTOR section|/"CONSTRUCTOR"> for details).
+Since this module uses the Moo object system, I recommend you use it as well.
+
+When your command is encountered in the input, the processor will invoke that method.
+The SLIF source will be available in the C<$_> variable,
+and C<pos()> will be set to the current position.
+You can therefore use an C<m/\G ... /gc> style match to do your own parsing.
+Alternatively, you can L<C<expect()>|MarpaX::Grammar::Preprocessor::Parser/"expect"> a certain token type,
+or poll for the L<C<next_token()>|MarpaX::Grammar::Preprocessor::Parser/"next_token"> regardless of type.
+Please see their reference documentation for more details.
+
+The command must return a list of two values: the token type and the token value.
+See L<C<TOKEN_TYPES in the TokenType docs>|MarpaX::Grammar::Preprocessor::TokenType/"TOKEN TYPES">
+for a list of valid token types.
+Pick an appropriate token type depending on how that value might be used.
+E.g. if the return value is to be used on the right hand side of a rule,
+it must be an C<IDENT> or C<LITERAL>.
+
+You may also use the
+L<C<write()>|MarpaX::Grammar::Preprocessor::Parser/"write"> and
+L<C<write_deferred()>|MarpaX::Grammar::Preprocessor::Parser/"write_deferred"> methods
+to write SLIF rules to an output buffer.
+Only C<write()> to the main buffer if it is safe to do so
+(e.g. if your command is supposed to be only used at the start of a rule).
+Otherwise, use C<write_deferred()> for SLIF fragments that don't need to stand right here
+but should become part of the output at some point.
+
+=head1 CONSTRUCTOR
+
+    $api = MarpaX::Grammar::Preprocessor->new;
+    $api = MarpaX::Grammar::Preprocessor->new(parser_factory => sub { ... });
+
+instantiate a Preprocessor API object.
+
+B<parser_factory>: C<< ($api, $source_ref, %args) -> Parser >>
+
+This optional named argument is a code ref that is used to instantiate the parser.
+When invoked, it is given the C<$api> object which is an instance of this class,
+the C<$source_ref> which points to the input to parse,
+and a hash of other C<%args>.
+It must return a parser object that supports the C<pump()> and C<result()> methods,
+and should be a subclass of L<MarpaX::Grammar::Preprocessor::Parser|MarpaX::Grammar::Preprocessor::Parser>.
+By default, it constructs a fresh L<MarpaX::Grammar::Preprocessor::Parser|MarpaX::Grammar::Preprocessor::Parser> instance.
+
+B<returns>
+a new API object.
+
+=head1 METHODS
+
+This section lists general methods,
+
+For methods on the result object, see L<MarpaX::Grammar::Preprocessor::Result|MarpaX::Grammar::Preprocessor::Result>.
+
+=head2 preprocess
+
+    my $preprocessed = $api->preprocess($source);
+    my $preprocessed = $api->preprocess($source { %args });
+
+Processes the SLIF source.
+
+See the L<DESCRIPTION section|/"DESCRIPTION"> for an overview of the accepted language.
+
+B<$source>
+is the input to be processed.
+It can either be a string, or an open file handle.
+
+B<%args>
+are passed on to the C<parser_factory> to instantiate a parser.
+See the L<Parser documentation|MarpaX::Grammar::Preprocessor::Parser/"CONSTRUCTOR"> for available options. Interesting arguments are:
+
+=over 4
+
+=item *
+
+C<namespace>, which sets the default namespace.
+
+=item *
+
+C<file_loader>, which specifies a file loader callback for the C<\include> command.
+
+=back
+
+B<Returns>
+a L<MarpaX::Grammar::Preprocessor::Result|MarpaX::Grammar::Preprocessor::Result> instance.
+You will probably want to call C<slif_source()> on it.
+
+B<Throws>
+unspecified errors on illegal input strings.
+
+B<Stability:>
+May add arguments in a backwards-compatible manner.
+
+B<Example:>
+
+    my $preprocessed = MarpaX::Grammar::Preprocessor->new->preprocess(\*DATA);
+
+    my $grammar = Marpa::R2::Scanless::G->new({ source => \$preprocessed->slif_source });
+
+    ... # parse something with the grammar
+
+    __DATA__
+    ...  # an extened SLIF grammar
+
+=head2 TOKEN_TYPE
+
+    my $ident_type = $self->TOKEN_TYPE->coerce('IDENT');
+
+    $self->IDENT;
+    $self->LITERAL;
+    $self->OP;
+    $self->CLOSE;
+    $self->EOF;
+
+C<TOKEN_TYPE> names the L<TokenType|MarpaX::Grammar::Preprocessor::TokenType> class
+that models the various token types in an extended SLIF grammar.
+
+The pre-defined token types are accessible via named constants,
+but you can also look token types at during runtime via the C<< TOKEN_TYPE->coerce($name) >> method.
+
+Further details on the class usage and a description of each token type
+are under L<MarpaX::Grammar::Preprocessor::TokenType|MarpaX::Grammar::Preprocessor::TokenType>.
+
+=head2 SLIF_PRELUDE
+
+    my $prelude = $self->SLIF_PRELUDE;
+
+The definitions that are prepended to each preprocessed grammar.
+
+This constant can be overridden in a child class to specify a different prelude.
+
+The defaults will make inaccessible symbols illegal – they are an indication you forgot to complete your grammar.
+It will also set a default rule action that always returns the first right-hand side value of a rule.
+This is what you want if a rule only contains a single symbol on the right hand side,
+but can lead to hard-to find bugs if you have more than one right-hand side symbol.
+The default will also activate longest acceptable token matching, which is what you'd almost always want.
+
+B<Returns>
+the default prelude as a syntactically complete string.
+
+B<Throws>
+never.
+
+B<Stability:>
+May be overriden in child classes,
+
+B<Example:>
+
+    package MyPreprocessor;
+    use 'Moo';
+    extends 'MarpaX::Grammar::Preprocessor';
+
+    use constant SLIF_PRELUDE => ''; # no implicit prelude;
+
+=head1 STATUS OF THIS MODULE/STABILITY POLICY
+
+This module is reasonably complete
+and is not expected to change much once it sees its v1.0 release.
+Until then some changes may occur, but I don't expect dependent code to break.
+After v1.0, any release that breaks documentented behaviour will increment the major version number.
+
+If a method might change more frequently,
+it's individual stability policy is explained
+in that method's reference documentation.
+
+Since this module serves as a preprocessor for SLIF grammars,
+all valid SLIF grammars should be passed through without modifications
+(if not, that's a bug).
+
+The CPAN namespace C<MarpaX::Grammar::Preprocessor::*> is reserved by this module for future use.
+If you want to upload a module in this namespace (which might be reasonable for extensions),
+then please discuss this with the L<author|/"AUTHOR"> first.
+Maybe your changes could be patched into this module instead.
+If not, I could at least place a link to your extension in this documentation.
+
+=head2 Extending this module
+
+This module is written with the expectation that it might be subclassed to provide new commands.
+It uses Moo, and so should you.
+
+You may add your own commands as explained in the Custom Commands section.
+However, all custom commands must begin with an uppercase letter
+(conversely, all builtin commands are guaranteed to always start with a lowercase letter).
+
+To reserve room for expansion, subclasses may not add new methods, unless they
+(a) are new commands using the C<command_NameStartsWithUppercase> naming scheme, or
+(b) start with at least one underscore.
+If a method starts with underscores,
+it may not use the C<_MarpaX_Grammar_Preprocessor> prefix.
+
+=head1 BUGS
+
+Please report any bugs to L<https://github.com/latk/p5-MarpaX-Grammar-Preprocessor/issues>.
+If you file a bug, please try to include the following information if you are able to do so:
+
+=over
+
+=item *
+your version of Perl:
+C<perl --version>
+
+=item *
+your version of Marpa:
+C<< perl -MMarpa::R2 -E'say Marpa::R2->VERSION' >>
+
+=item *
+your version of this module:
+C<< perl -MMarpaX::Grammar::Preprocessor -E'say MarpaX::Grammar::Preprocessor->VERSION' >>
+
+=item *
+explain what you did to trigger the bug (ideally show a runnable snippet of code)
+
+=item *
+explain what you expected to happen (ideally show expected output)
+
+=item *
+should you have experience with Perl testing:
+Write a test case that can be used to reproduce and investigate the bug.
+It should fail in the current state and pass when the bug was fixed,
+so that it can be used as a regression test.
+
+=back
+
+Pull requests are also welcome.
+
+=head1 AUTHOR
+
+Lukas Atkinson (cpan: AMON) <amon@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+    This software is copyright (c) 2015 by Lukas Atkinson.
+
+    This module is free software; you can redistribute it and/or
+    modify it under the same terms as Perl5 v14.0 or (at your option)
+    any later version. Perl lets you choose between either:
+
+    a) the GNU General Public License as published by the Free Software
+       Foundation; either version 1, or (at your option) any later
+       version, or
+
+    b) the "Artistic License" which comes with Perl.
+
+    For more details, see the full text of the licenses at
+    <http://www.perlfoundation.org/artistic_license_1_0>,
+    <http://www.gnu.org/licenses/gpl-1.0.html>, and
+    <http://www.gnu.org/licenses/gpl-3.0.html>.
+
+=cut

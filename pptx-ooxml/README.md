@@ -1,0 +1,508 @@
+# PPTX / OOXML Libraries & CLI Tools
+
+Libraries and command-line tools to build, edit, convert and translate native .pptx files.
+
+- [hugohe3](https://github.com/hugohe3/ppt-master) — ★ 62,142 — AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audi...
+- [pipipi-pikachu](https://github.com/pipipi-pikachu/PPTist) — ★ 9,387 — PowerPoint-ist（/'pauəpɔintist/）, An online presentation application that replicates most of the commonly used features of MS PowerPoint, allowing for the edi...
+- [The-Vibe-Company](https://github.com/The-Vibe-Company/megaparse) — ★ 7,414 — File Parser optimised for LLM Ingestion with no loss 🧠 Parse PDFs, Docx, PPTx in a format that is ideal for LLMs.
+- [gitbrent](https://github.com/gitbrent/PptxGenJS) — ★ 6,273 — Build PowerPoint presentations with JavaScript. Works with Node, React, web browsers, and more.
+- [unidoc](https://github.com/unidoc/unioffice) — ★ 4,934 — Pure go library for creating and processing Office Word (.docx), Excel (.xlsx) and Powerpoint (.pptx) documents
+- [open-xml-templating](https://github.com/open-xml-templating/docxtemplater) — ★ 3,638 — Generate docx, pptx, and xlsx from templates (Word, Powerpoint and Excel documents), from Node.js or the browser. Demo: https://www.docxtemplater.com/demo. #...
+- [scanny](https://github.com/scanny/python-pptx) — ★ 3,556 — Create Open XML PowerPoint documents in Python
+- [CatchTheTornado](https://github.com/CatchTheTornado/text-extract-api) — ★ 3,182 — Document (PDF, Word, PPTX ...) extraction and parse API using state of the art modern OCRs + Ollama supported models. Anonymize documents. Remove PII. Conver...
+- [MaxHu-xuan](https://github.com/MaxHu-xuan/artifactproof) — ★ 823 — Verify that the PowerPoint you are about to deliver is exactly the PPTX that passed QA—locally, offline, and with tamper-evident evidence.
+- [g21589](https://github.com/g21589/PPTX2HTML) — ★ 637 — Convert pptx file to HTML by using pure javascript
+- [addsumtech](https://github.com/addsumtech/slides_maker) — ★ 561 — Turn papers, code, and docs into presentation-ready, natively editable PPTX in Codex / Claude Code. Native charts and equations, speaker notes, click-build a...
+- [harshankur](https://github.com/harshankur/officeParser) — ★ 558 — A robust, strictly-typed Node.js and Browser library for parsing office files into a rich Abstract Syntax Tree (AST) and generating high-fidelity output in m...
+- [pipipi-pikachu](https://github.com/pipipi-pikachu/pptxtojson) — ★ 455 — Office PowerPoint(.pptx) file to JSON | 将 PPTX 文件转为可读的 JSON 数据
+- [ShapeCrawler](https://github.com/ShapeCrawler/ShapeCrawler) — ★ 442 — PowerPoint .NET library for reading, modifying, and generating PPTX presentations without Microsoft Office
+- [atharva9167j](https://github.com/atharva9167j/dom-to-pptx) — ★ 379 — A client-side library that converts any HTML element into a fully editable PowerPoint slide. **dom-to-pptx** transforms DOM structures into pixel-accurate `....
+- [laihenyi](https://github.com/laihenyi/NBLM2PPTX) — ★ 345 — Convert NotebookLM PDFs to PPTX with separated background images and editable text layers using Gemini AI
+- [openooxml](https://github.com/openooxml/betteroffice) — ★ 293 — Native OOXML engines in Rust - DOCX, XLSX & PPTX editing, rendering and real-time collaboration, compiled to WASM for the web.
+- [singerla](https://github.com/singerla/pptx-automizer) — ★ 249 — A template based pptx generator for Node.js
+- [corazzon](https://github.com/corazzon/pptx-design-styles) — ★ 248 — pptx-design-styles
+- [evgo2017](https://github.com/evgo2017/Office2PDF) — ★ 224 — Batch convert Word, Excel, PPT to PDF - 批量转 Word、Excel、PPT 为 PDF
+- [ibisjp](https://github.com/ibisjp/ibis-office) — ★ 216 — The next-gen Office suite built with Rust & GPUI. Blazing-fast, memory-safe, and highly accurate editing for DOCX, XLSX, and PPTX with pixel-perfect renderin...
+- [jeongwhanchoi](https://github.com/jeongwhanchoi/convert-ppt-to-pdf) — ★ 192 — Batch convert ppt files to pdf files by Automator on MacOS
+- [mujingquan835](https://github.com/mujingquan835/Dawang-ppt) — ★ 192 — Dawang-PPT：内容驱动的中文演示技能，融合场景规划、风格构图、浏览器编辑与本地可编辑 PPTX 导出（实验版）
+- [heavysixer](https://github.com/heavysixer/node-pptx) — ★ 190 — Generate PPTX files on the server-side with JavaScript.
+- [yfedoseev](https://github.com/yfedoseev/office_oxide) — ★ 153 — The fastest Office document library for Python, Rust, Go, JS/TS, C# and WASM. DOCX, XLSX, PPTX, DOC, XLS, PPT. Up to 100 faster than python-docx/openpyxl/pyt...
+- [Mira-13](https://github.com/Mira-13/figure-gen) — ★ 151 — A Python package to effortlessly assemble images in comparison figures. Supports LaTeX, PPTX, and HTML.
+- [AmNotAGoose](https://github.com/AmNotAGoose/PPTX-Presentation-Generator) — ★ 151 — —
+- [ONLYOFFICE](https://github.com/ONLYOFFICE/DocumentBuilder) — ★ 141 — ONLYOFFICE Document Builder is powerful text, spreadsheet, presentation and PDF generating tool
+- [tokgolich](https://github.com/tokgolich/doctotext) — ★ 133 — Converts DOC, XLS, XLSB, PPT, RTF, ODF (ODT, ODS, ODP),  OOXML (DOCX, XLSX, PPTX), iWork (PAGES, NUMBERS, KEYNOTE),   ODFXML (FODP, FODS, FODT), PDF, EML and...
+- [erdos](https://github.com/erdos/stencil) — ★ 133 — templating engine for DOCX and PPTX files
+- [zyl-ui](https://github.com/zyl-ui/vue-file-viewer) — ★ 131 — 一个基于iframe提供跨框架、多格式、纯前端渲染的文件浏览解决方案（支持格式：pptx,docx,xlsx,pdf,mp4,纯文本和图片）
+- [aiden0z](https://github.com/aiden0z/pptx-renderer) — ★ 128 — High-fidelity, browser-native PPTX renderer in TypeScript. Parses OOXML into HTML/SVG DOM with rich text, shapes, images, tables, 2D charts, SmartArt, equati...
+- [ShZhao27208](https://github.com/ShZhao27208/Aut_Sci_ppt) — ★ 121 — Aut_Sci_PPt is an automated agent designed to convert academic papers (PDF) or structured text into professional, presentation-ready PowerPoint files (.pptx)...
+- [m3dev](https://github.com/m3dev/pptx-template) — ★ 119 — Build PowerPoint presentation from template(pptx) and model(json) data like other template engines
+- [ChristopherVR](https://github.com/ChristopherVR/pptx-viewer) — ★ 119 — Moved to ChristopherVR/ooxml (viewers/pptx). The PowerPoint viewer, its history and npm packages now live there.
+- [DemchaAV](https://github.com/DemchaAV/GraphCompose) — ★ 114 — Declarative Java engine for structured documents. Automatic layout, pagination, reusable templates and themes. Render print-ready PDF, export editable PowerP...
+- [matthewrenze](https://github.com/matthewrenze/powerpoint-to-pdf) — ★ 109 — A set of Python scripts to convert PowerPoint (PPT/PPTX) files to Adobe PDF
+- [deckflow](https://github.com/deckflow/deckuse) — ★ 109 — 💻 A local-first structural editing engine for PPTX files.
+- [hl123-123](https://github.com/hl123-123/yiyan-ppt) — ★ 108 — ??????+Python-pptx ,????????PPT
+- [ASML-Labs](https://github.com/ASML-Labs/PPTX.jl) — ★ 99 — Generate PowerPoint PPTX files from Julia
+- [jackbrookes](https://github.com/jackbrookes/batch-ppt-to-pdf) — ★ 97 — Python script to convert a bunch of Microsoft Powerpoint files (.ppt or .pptx) to PDF
+- [shobhitsharma](https://github.com/shobhitsharma/pptx-compose) — ★ 94 — Parser to convert PPTX to JSON format
+- [EvolutionJobs](https://github.com/EvolutionJobs/b2xtranslator) — ★ 87 — .NET Core library to convert Microsoft Office binary files (doc, xls and ppt) to Open XML (docx, xlsx and pptx).
+- [Skrol29](https://github.com/Skrol29/opentbs) — ★ 83 — With OpenTBS you can merge OpenOffice - LibreOffice and Ms Office documents with PHP using the TinyButStrong template engine. Simple use OpenOffice - LibreOf...
+- [Albonire](https://github.com/Albonire/notebooklm-watermark-remover) — ★ 80 — a simply water mark remover for pdf, png, pptx files generated from notebooklm
+- [ianustec](https://github.com/ianustec/neura-office) — ★ 79 — NEURA Office: native Word, PowerPoint and Excel for Open WebUI. LibreOffice-compatible OOXML. MS365 assistant planned.
+- [ianustec](https://github.com/ianustec/openwebui-generate-slides) — ★ 64 — Native PowerPoint (.pptx) generator tool for Open WebUI  JSON spec in, native charts/icons/layouts out. MIT.
+- [TejasS1233](https://github.com/TejasS1233/opencode-parser) — ★ 64 — Parse any file in opencode. Supports PDF, DOCX, XLSX, PPTX, images, EPUB, HTML, Markdown, Jupyter, archives, and plain text.
+- [rodydavis](https://github.com/rodydavis/open_xml) — ★ 58 — Create PowerPoint (pptx) presentations in Flutter and Dart
+- [DraviaVemal](https://github.com/DraviaVemal/openxml-office) — ★ 56 — Create or Modify Power Point/Presentation (pptx), Excel/Spreadsheet (xlsx) & Word/Document (docx) file with ease in Rust, C#, Python????, Java????,Go???? or ...
+- [developer0hye](https://github.com/developer0hye/anytomd-rs) — ★ 56 — Pure Rust document-to-Markdown converter for LLM workflows (DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, images).
+- [tkrotoff](https://github.com/tkrotoff/PptxTemplater) — ★ 55 — C# library to generate PowerPoint files from templates
+- [ahmadullahpk](https://github.com/ahmadullahpk/all-documents-reader) — ★ 52 — This library reads any type of documents like (doc, docx, xls, xlsx, ppt, pptx,pdf, rtf, csv, json, html, xml,txt,and kotlin)F files.
+- [python-openxml](https://github.com/python-openxml/python-opc) — ★ 49 — Python library for manipulating Open Packaging Convention (OPC) files like .docx, .pptx, and .xslx
+- [CoreOffice](https://github.com/CoreOffice/CryptoOffice) — ★ 49 — Office Open XML (OOXML) formats (.xlsx, .docx, .pptx) decryption for Swift
+- [shakirth-anisha](https://github.com/shakirth-anisha/pesu-slide-download-automator) — ★ 48 — Automates the process of downloading all PESU Academy Slides + helps merge them + helps convert them from PPTX to PDF
+- [ThibaudLamothe](https://github.com/ThibaudLamothe/translate-pptx) — ★ 47 — Using Selenium and DeepL to translate powerpoint files with python-pptx
+- [samirsaci](https://github.com/samirsaci/automate-powerpoint) — ★ 47 — Automate PowerPoint Slides Creation with Python
+- [ddvader44](https://github.com/ddvader44/Office-Buddy) — ★ 47 — A document viewer for Android supporting PDF, DOCX, XLSX and PPTX.
+- [natter1](https://github.com/natter1/python_pptx_interface) — ★ 45 — Interface for python-pptx to easily create simple pptx files
+- [kwlo](https://github.com/kwlo/python-pptx-templater) — ★ 45 — Create customizable PowerPoint Presentation (.pptx) using a predefined layout template
+- [CodingFeng101](https://github.com/CodingFeng101/slide-alchemy) — ★ 45 — Convert slide screenshots, image-based PPTX, and scanned decks into truly editable PowerPoint files with real text boxes and native shapes.
+- [stefslon](https://github.com/stefslon/exportToPPTX) — ★ 41 — MATLAB tool for exporting data to PowerPoint 2007+ files without the need COM-object automation.
+- [JadeLiu-tech](https://github.com/JadeLiu-tech/px-image2pptx) — ★ 39 — Convert static images to editable PowerPoint slides — OCR, inpaint, reconstruct
+- [mashu3](https://github.com/mashu3/drawio2pptx) — ★ 38 — drawio2pptx is a Python package that converts draw.io (diagrams.net) files to PowerPoint (.pptx) presentations.
+- [DemoMacro](https://github.com/DemoMacro/office-open) — ★ 37 — Create Word, Excel, and PowerPoint files (.docx, .xlsx, .pptx) from plain JSON or fully typed APIs — generate, parse, and patch. Built for AI agents, LLM too...
+- [iyulab](https://github.com/iyulab/undoc) — ★ 36 — High-performance Rust library for extracting content from DOCX, XLSX, and PPTX into Markdown, plain text, or JSON with CJK support and .NET/Python bindings.
+- [LeoFC97](https://github.com/LeoFC97/pptx-maker) — ★ 36 — Automao do processo de criao de apresentaes em powerPoint
+- [ai-forever](https://github.com/ai-forever/slides_generator) — ★ 36 — Single-prompt pptx generation framework
+- [Hansanshi](https://github.com/Hansanshi/pptutil) — ★ 36 — Convert slideshow(ppt or pptx format) to images(jpg, png, bmp or wbmp format)
+- [slhck](https://github.com/slhck/compress-pptx) — ★ 35 — Compress a PPTX file, converting all PNG/TIFF images to lossy JPEGs
+- [artifact-kit](https://github.com/artifact-kit/pptxgenjs-jsx) — ★ 34 — LLM-friendly JSX declaration layer for PptxGenJS
+- [it-beyondit](https://github.com/it-beyondit/html2pptxgenjs) — ★ 34 — Converts HTML into Pptx2genjs text.
+- [aws-samples](https://github.com/aws-samples/pptx-translator) — ★ 34 — Python script that translates pptx files using Amazon Translate service.
+- [FluidForm-ai](https://github.com/FluidForm-ai/fluiddocs-deck-builder) — ★ 33 — Type-correct, brand-aware HTML deck builder for Claude Code. Pitch, sales, launch, keynote, all-hands. PDF and PPTX import.
+- [maximecaruchet](https://github.com/maximecaruchet/html2pptx) — ★ 30 — Translate HTML to PPTX
+- [HututuWorks](https://github.com/HututuWorks/sci-diagram-pptx) — ★ 29 — Reconstruct scientific frameworks, mechanisms, and flow diagrams as native editable PowerPoint—with provenance-bound, fail-closed QA for Codex.
+- [kocurvik](https://github.com/kocurvik/beampptx) — ★ 28 — Convert LaTeX Beamer slides to PowerPoint with flawless vector graphics and embedded video support.
+- [jiadizhunine](https://github.com/jiadizhunine/deepPPT) — ★ 28 — Lightweight agent framework for research PowerPoint generation, editable PPTX delivery, and rendered QA
+- [CristalTeam](https://github.com/CristalTeam/pptx) — ★ 27 — 🎞️ Copy, move, merge and template Powerpoint files (.pptx) using PHP
+- [Wiseair-srl](https://github.com/Wiseair-srl/json-to-office) — ★ 27 — Generate professional .docx and .pptx files from JSON definitions
+- [dam4rus](https://github.com/dam4rus/msoffice-pptx-rs) — ★ 27 — A library to deserialize pptx files in Rust
+- [GemBoxLtd](https://github.com/GemBoxLtd/GemBox.Presentation.Examples) — ★ 26 — GemBox.Presentation is a .NET library that enables you to read, write, convert, and print presentation files (PPTX, PPT, and PPSX) from .NET applications in ...
+- [scholer](https://github.com/scholer/pptx-downsizer) — ★ 24 — Python tool for downsizing Microsoft PowerPoint presentations (pptx) files.
+- [abdelkrimkr](https://github.com/abdelkrimkr/html2pptx) — ★ 24 — Automatically convert HTML files to PowerPoint presentations - Command-line tool and Node.js library
+- [openize-com](https://github.com/openize-com/openize-open-xml-sdk-net) — ★ 23 — A .NET library that simplifies working with OpenXML documents. Create, read, and manipulate Wordprocessing documents (Docx), Excel spreadsheets (Xlsx), and P...
+- [jstrosch](https://github.com/jstrosch/graph-maldoc-similar-images) — ★ 23 — A script that extracts embedded images from Office Open XML (OOXML) documents and generates image hash similarity graphs that cluster visually similar images...
+- [F2-AI-Inc](https://github.com/F2-AI-Inc/docray) — ★ 23 — X-ray for documents: lossless PDF & PPTX extraction to JSON with bounding boxes, fonts, and colors — CLI, HTTP API, and an in-browser playground. Rust + PDFium.
+- [Milor123](https://github.com/Milor123/notebooklm-unified) — ★ 23 — Unifies, cleans and converts NotebookLM presentations in a single step. Join multiple PPTXs, remove watermark, output clean PPTX.
+- [mehuljariwala](https://github.com/mehuljariwala/react-doc-viewer) — ★ 23 — React document viewer and PDF viewer component — render PDF, Word (DOCX inline), Excel, PowerPoint, Markdown, images, video, CSV and 20+ file types with anno...
+- [SlideSpeak](https://github.com/SlideSpeak/image-extractor-cli) — ★ 22 — A Python ?? CLI tool to extract images from PowerPoint, Word or PDF files. Supports PPTX, DOCX, PDF.
+- [chirag-ji](https://github.com/chirag-ji/DocuConverter) — ★ 22 — An api and library that converts documents from one format to another, say DOCX to PDF or PPT to PDF
+- [djwxfdt](https://github.com/djwxfdt/ppt-parse) — ★ 22 — pptx to json server.no need for ms-office component
+- [haesleinhuepf](https://github.com/haesleinhuepf/translate-pptx) — ★ 21 — translate-pptx is a command line tool that translates PowerPoint PPTX files from one language to another.
+- [timetric](https://github.com/timetric/python-openxml) — ★ 20 — OpenXML library for Python: create .docx & .pptx files
+- [wiltonesten-web](https://github.com/wiltonesten-web/codeximage-to-editable-ppt-v2-2) — ★ 20 — Parallel multi-page V2.1 upgrade for 3, 6, or 9 image-based slides, with hardware-aware scaling, full fidelity gates, and ordered PPTX merging.
+- [lofcz](https://github.com/lofcz/pptxgenjs-plus) — ★ 19 — Build PowerPoint presentations with JavaScript. Works with Node, Browser, and more.
+- [sadmann7](https://github.com/sadmann7/pptx) — ★ 19 — Composable primitives for viewing and editing PowerPoint presentations in the browser. Unstyled, accessible, and entirely yours to build on.
+- [connectaman](https://github.com/connectaman/RAGAlchamy) — ★ 19 — Summarize and perform RAG on PPTx/PPT file formats
+- [zythum](https://github.com/zythum/pptxgen-ts-starter) — ★ 18 — A starter template for creating PowerPoint presentations using JSX + TypeScript with pptxgenjs. Build slides declaratively, preview instantly in the browser,...
+- [ChristopherVR](https://github.com/ChristopherVR/ooxml) — ★ 18 — All the logic behind the Office viewers (DOCX, PPTX, OPC, XML, DrawingML shapes): one package, ooxml-core
+- [huangzhenhao90](https://github.com/huangzhenhao90/pptx-deck-builder) — ★ 17 — Build professional presentation decks with PptxGenJS, structured content workflows, and swappable visual themes
+- [arsentievalex](https://github.com/arsentievalex/streamlit-pptx-generator) — ★ 17 — —
+- [fongandrew](https://github.com/fongandrew/pptx-note-remover) — ★ 17 — Python script to remove notes from PPTX Powerpoint files
+- [bryanperdana](https://github.com/bryanperdana/captivela-office) — ★ 16 — Open-source AI-native desktop office suite for DOCX, XLSX/XLS/CSV, PPTX, and PDF.
+- [fschaeck](https://github.com/fschaeck/python-pptx-text-replacer) — ★ 15 — A Python script to replace text in a PowerPoint presentation (pptx)
+- [caichuanwang](https://github.com/caichuanwang/OpenDocs) — ★ 15 — Convert local documents (PDF, DOCX, PPTX, images, TXT, Markdown) to clean Markdown with optional LLM vision — Python SDK
+- [kevinresol](https://github.com/kevinresol/openxml) — ★ 15 — Write OpenXML (xlsx, docx, pptx) files with Haxe
+- [maxrousseau](https://github.com/maxrousseau/pynoter) — ★ 15 — Convert powerpoint (pptx) files into raw text org or LaTeX files
+- [shakiyam](https://github.com/shakiyam/pptx2txt) — ★ 15 — pptx2txt is a tool that converts PowerPoint .pptx format to text.
+- [ncukondo](https://github.com/ncukondo/presentation-generator) — ★ 14 — PptxGenJS + Gemini TTS + ffmpeg ????????????????????
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-Python) — ★ 14 — Open-source Python library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, charts, animations, transitions...
+- [GoneTone](https://github.com/GoneTone/markitdown-website) — ★ 14 — 免費線上文件轉換工具，將 PDF、DOCX、XLSX、PPTX、HTML、CSV、EPUB 轉換為 Markdown。檔案處理在瀏覽器本機端完成，網址轉換經由伺服器代理，完全保護隱私。 由 Microsoft MarkItDown 提供轉換核心，透過 Pyodide（Python WebAssembly）在瀏覽器...
+- [scholer](https://github.com/scholer/ooxml-git-hooks) — ★ 14 — Pre-commit and post-checkout hooks making git better suited for version control of zipped Office Open XML files, e.g. Word/.docx, Excel/.xlsx, and PowerPoint...
+- [wangan0214](https://github.com/wangan0214/fange-ai-toolbox) — ★ 14 — 帆哥AI工具箱 · 本地优先(local-first)的 AI 效率工具集合。首款工具：本地修改 HTML 格式的 PPT，HTML 一键导出 PPTX（浏览器改字落盘/拖拽排序/历史回滚）。
+- [flyfish-dev](https://github.com/flyfish-dev/office-preview-js) — ★ 14 — Restricted static Office preview demo for DOC/DOCX/PPT/PPTX/XLS/XLSX
+- [emptygamer](https://github.com/emptygamer/power-player) — ★ 14 — A PowerPoint runtime player executes code and assets contained within a pptx file.
+- [wangmarkqi](https://github.com/wangmarkqi/changeOffice) — ★ 13 — Most of the python MsOffice processing libraries are dealing with new 07 file formate (ie: xlsx,pptx,docx). This package can change doc2docx,xls2xlsx,ppt2pptx.
+- [SAP-archive](https://github.com/SAP-archive/utils-pptx-templater) — ★ 13 — The pptx templater modifies powerpoint template with provided data before docxtemplater generates the final version of the document.
+- [kartikxisk](https://github.com/kartikxisk/docx-xlsx-pptx-pdf-viewer-nextjs-and-reactjs) — ★ 13 — Render DOCX, XLSX, PPTX, and PDF Files in Next.js and React.js
+- [thaoshibe](https://github.com/thaoshibe/cs-conference-posters) — ★ 13 — A collection of my posters with pptx files...
+- [clipboard-org](https://github.com/clipboard-org/clipboard) — ★ 12 — A c# library that provides the ability to extract text from various document file formats, e.g. pdf, docx, ppt, etc...
+- [and-zhao](https://github.com/and-zhao/noedit_core) — ★ 12 — A minimal PPT creation core in Python — build multi-page decks and export to pptx / pdf / html / png / svg
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-Cpp) — ★ 12 — Open-source C++ library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, fills, effects, notes and comments...
+- [ch040602](https://github.com/ch040602/MdPr) — ★ 12 — Deterministic Markdown-to-editable-PPTX runtime with layout planning, theme support, and visual validation.
+- [zythum](https://github.com/zythum/pptxgenjsx) — ★ 11 — A JSX runtime for building PowerPoint presentations with [pptxgenjs](https://github.com/gitbrent/pptxgenjs). Write your slides as JSX components and render t...
+- [NewLifeX](https://github.com/NewLifeX/NewLife.Office) — ★ 11 — 一个功能全面的 .NET 办公自动化库，覆盖 Excel（xlsx/xls）、Word（docx/doc）、PPT（pptx/ppt）、PDF、Markdown、RTF、ODS、Email（eml/msg）、iCalendar、vCard、EPUB、XPS 以及基于 OLE2/BIFF8 的老式二进制格式，致力于...
+- [tvanyo](https://github.com/tvanyo/obsPPTXwithPython) — ★ 11 — —
+- [lukefire5156](https://github.com/lukefire5156/PPTs_TO_PDFs_AND_Merger) — ★ 11 — A script to convert MS Office PPT/PPTX files to PDF files and then merge all the PDF files to a single PDF file.
+- [Ryuodan](https://github.com/Ryuodan/PPT-to-PDF-Converter) — ★ 11 — Python 3 script using COM to convert powerpoint to pdf file
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-Java) — ★ 11 — Open-source Java library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, fills, effects, notes and comment...
+- [unStone](https://github.com/unStone/web-ppt) — ★ 11 — Pure-browser PPT rendering engine — .pptx / .ppt → unified JSON Schema → SVG. Zero server, zero framework, files never leave the browser.
+- [hirokisakabe](https://github.com/hirokisakabe/pptx-glimpse) — ★ 11 — Render and edit PowerPoint (.pptx) files in Node.js or the browser. Output slides as SVG or PNG.
+- [STARDUSTLC666](https://github.com/STARDUSTLC666/dsh-ppt) — ★ 11 — 把材料制作成 HTML 放映、可编辑 PPTX 和可继续修改的工程文件。 欢迎提交 issues 和 PR。
+- [jesamkim](https://github.com/jesamkim/aws-pptx-script-generator) — ★ 11 — AWS Presentation script generator specialized for AWS Service Introduction Deck (pptx)
+- [syncfusion-content](https://github.com/syncfusion-content/fileformat-docs) — ★ 11 — This repository contains the documentation of Syncfusion file format .NET libraries which is used to create, read, edit and convert PDF, Excel, Word and PPTX...
+- [SeitaroShinagawa](https://github.com/SeitaroShinagawa/summary-to-pptx) — ★ 10 — paper slide summary maker using python-pptx on Windows
+- [brkcvlk](https://github.com/brkcvlk/pptxtoimages) — ★ 10 — pptxtoimages is a lightweight Python package to convert .pptx PowerPoint presentations into image files (PNG by default).
+- [ernestyao](https://github.com/ernestyao/PPT2PDF) — ★ 10 — convert PPT/PPTX to PDF as images and watermark
+- [liamwang](https://github.com/liamwang/openxml-ppt) — ★ 10 — This is a .NET library that reads and writes PPT files using OpenXml.
+- [aspose-slides-foss](https://github.com/aspose-slides-foss/Aspose.Slides-FOSS-for-.NET) — ★ 10 — Open-source C#/.NET library for creating, reading and editing PowerPoint (.pptx) presentations — slides, shapes, text, tables, fills, effects, notes and comm...
+- [sakurahello1](https://github.com/sakurahello1/ppt-studio) — ★ 10 — 跟 AI 说一句话，整套 PPT 逐页画出来；图片型 PPT 还能反向重建成可编辑的 pptx。自部署，Windows 双击即用 / Linux · macOS · Docker。One sentence → a whole deck; image-only decks → editable pptx.
+- [airpptx](https://github.com/airpptx/airppt) — ★ 10 — Global CLI to convert Powerpoint (PPTX) to clean HTML/CSS using the airppt libraries
+- [CacinieP](https://github.com/CacinieP/slide-recipes) — ★ 9 — Editable PPTX + Markdown, AI outlines. China: https://slides.linguistwantstech.online/ | Global: https://slide-recipes-web.vercel.app/
+- [cm-uehara](https://github.com/cm-uehara/classmethod-pptxgenjs-template) — ★ 9 — ???????????PptxGenJS????????????
+- [ShreshtaSutar](https://github.com/ShreshtaSutar/Prastuti__PPT-Generator-from-Text) — ★ 9 — Prastuti is a powerful, minimal, and fast AI-powered PPTX generator. Paste any text or markdown → choose your LLM (OpenAI / Claude / Gemini / AI Pipe) → opti...
+- [pterror](https://github.com/pterror/ooxml) — ★ 9 — Rust library for parsing and writing Office Open XML files (DOCX, XLSX, PPTX)
+- [alex-krassavin](https://github.com/alex-krassavin/reamkit) — ★ 9 — Read .docx .xlsx .pptx .pdf .doc .xls .ppt → convert to PDF, SVG, HTML, Markdown, DOCX or XLSX — pure TypeScript, no LibreOffice, no headless Office, no comm...
+- [JoeSangAI](https://github.com/JoeSangAI/PPT-GOD) — ★ 9 — Agent 驱动的 PPT 工作流：内容可控、风格一致、品牌准确，交付可继续修改的 PPTX。
+- [iory](https://github.com/iory/pptx-tools) — ★ 9 — Powerpoint video tools
+- [ProgrammerSteve](https://github.com/ProgrammerSteve/powerpointWithChatGpt) — ★ 8 — A simple script that uses openai's "text-davinci-003" model and pptxgenjs to make a quick powerpoint on a specified topic
+- [Tailen](https://github.com/Tailen/python-pptx-merger) — ★ 8 — Merge PowerPoint (.pptx) files
+- [ktsstudio](https://github.com/ktsstudio/gentle-python-pptx) — ★ 8 — Processes pptx presentations, optimized for repetitive processing large ones
+- [fillano](https://github.com/fillano/node-pptx-parser) — ★ 8 — simple pptx parser
+- [dxsun97](https://github.com/dxsun97/html2pptx-pro) — ★ 8 — Convert HTML to PowerPoint presentations with JavaScript.
+- [BramAlkema](https://github.com/BramAlkema/svg2ooxml) — ★ 8 — Convert SVG to editable PowerPoint (.pptx) with native DrawingML, animation support, and validation-backed output.
+- [adithya-s-k](https://github.com/adithya-s-k/research-presentation-template) — ★ 8 — A template for research talks: fixed-canvas React deck, dark/light themes, PPTX + PDF export, and AI authoring instructions.
+- [glangzel](https://github.com/glangzel/llm-pptx-generator) — ★ 7 — Generate pptx file from your prompt or pdf using Langchain.
+- [mbachtell](https://github.com/mbachtell/python-pptx-table-styles) — ★ 7 — —
+- [knanne](https://github.com/knanne/mspandas) — ★ 7 — Convenience wrapper for reusable reporting from pandas DataFrames to python-pptx and python-docx
+- [elliottcarlson](https://github.com/elliottcarlson/pptx-canvas) — ★ 7 — Canvas-like interface for drawing in PPTX files using Python
+- [nickdirienzo](https://github.com/nickdirienzo/python-office-tools) — ★ 7 — Python parser and writer for DOCX, PPTX, and XLSX.
+- [eluckydog](https://github.com/eluckydog/ppt-scene-graph) — ★ 7 — Visual Scene Graph for PowerPoint. Extracts structured layout data from PPTX files, enabling AI agents to parse element positions, understand spatial relatio...
+- [Nanford](https://github.com/Nanford/html2pptx) — ★ 7 — html转化为pptx
+- [scusi](https://github.com/scusi/unzipOpenXML) — ★ 7 — unpack Office OpenXML files (docx, xlsx, pptx)
+- [Suchun-sv](https://github.com/Suchun-sv/video2ppt) — ★ 7 — capture the image of the video and generate pptx file.
+- [jparkerweb](https://github.com/jparkerweb/pptx-in-html-out) — ★ 7 — ⚙️ npm package to convert PowerPoint presentations to HTML with high fidelity
+- [rse](https://github.com/rse/psd2pptx) — ★ 7 — Convert Photoshop (PSD) layers to PowerPoint (PPTX) slides
+- [ArvinH](https://github.com/ArvinH/reapptx) — ★ 7 — A small prototype of custom react renderer, let you render React component to pptx files.
+- [thiagoperes](https://github.com/thiagoperes/pptx-translate) — ★ 7 — Translate PowerPoint files (pptx) using OpenAI
+- [anotb](https://github.com/anotb/pptx-masters) — ★ 6 — Extract PptxGenJS slide masters from corporate PowerPoint templates
+- [beautifulai](https://github.com/beautifulai/PptxGenJS) — ★ 6 — Create PowerPoint presentations with a powerful, concise JavaScript API.
+- [Xakki](https://github.com/Xakki/convertor) — ★ 6 — Convert PDF, PPT, PPTX, DOC, DOCX, XLS, XLSX, HTML, EPUB, image to text
+- [kobit-develop](https://github.com/kobit-develop/jsx-presentation) — ★ 6 — Convert JSX to presentation file(.pptx)
+- [ifpeopensource](https://github.com/ifpeopensource/certificate-generator) — ★ 6 — Python program to automate the generation of PDF certificates from a PPTX model (PowerPoint file).
+- [chbrown](https://github.com/chbrown/openxml) — ★ 6 — openxml is a Python library to create and manipulate .docx and .pptx files
+- [brnyxx](https://github.com/brnyxx/pptx2html-turbo) — ★ 6 — High-fidelity PowerPoint (PPTX) to self-contained HTML converter in pure Rust/WASM for browsers, CLI, and Python
+- [cloudismos](https://github.com/cloudismos/notestoslide) — ★ 6 — Python script to insert speaker notes into PowerPoint (.pptx) slides from a text file organized by slide number.
+- [stephotee](https://github.com/stephotee/auto-slides-with-charts) — ★ 6 — A script for automatically generating PPT slides with charts from a source file, based on @Scanny's python-pptx
+- [rsamwilson2323-cloud](https://github.com/rsamwilson2323-cloud/PPT-Slide-Extractor) — ★ 6 — 📊 PPT Slide Extractor A Python-based tool that automatically converts PowerPoint presentations into high-quality PNG images. Upload a PPT/PPTX file, and each...
+- [WXY-123123](https://github.com/WXY-123123/High-Performance-Image-Filter-Digital-Circuit-Design-and-FPGA-Prototype-Verification) — ★ 6 — 雕刻和马赛克用的是uart通信，用python收发数据；二值化用的是PS和PL互联，使用zynq7020实现。所有vivado工程在vivado_data文件夹中。本项目注重高性能计算单元的应用。具体介绍见高性能滤镜.pptx。
+- [ahmedessam090](https://github.com/ahmedessam090/pptx-to-pdf) — ★ 6 — Pure TypeScript PPTX-to-PDF converter. No LibreOffice. No native dependencies. Just buffer in, PDF out.
+- [nilskruthoff](https://github.com/nilskruthoff/pptx-parser) — ★ 6 — Parses PowerPoint presentations into Markdown syntax
+- [Muprprpr](https://github.com/Muprprpr/Go-pptx) — ★ 6 — Create Open XML PowerPoint documents in Go
+- [hidemi-ito](https://github.com/hidemi-ito/rust-pptx) — ★ 6 — —
+- [openxml](https://github.com/openxml/openxml-pptx) — ★ 6 — Create .pptx files with Ruby
+- [palburtus](https://github.com/palburtus/powerpointparser) — ★ 6 — C# Library for parsing PowerPoint speaker notes using OpenXML to HTML
+- [EmilHvitfeldt](https://github.com/EmilHvitfeldt/pptxtemplates) — ★ 6 — Provide themed powerpoint presentation templates to rmarkdown
+- [Love-Ash](https://github.com/Love-Ash/archforge) — ★ 6 — The preflight linter for AI-generated PowerPoint: silent font fallback (deep CJK coverage), collisions, off-canvas text, and AI tells in built .pptx files
+- [rsasaki0109](https://github.com/rsasaki0109/rust-office) — ★ 6 — Native Rust office suite: Writer, Calc, Impress — LibreOffice/MS Office–class alternative (ODT/DOCX/XLSX/PPTX/PDF)
+- [yrjwcharm](https://github.com/yrjwcharm/react-native-ohos-docviewer) — ★ 6 — 这是一款基于React Native HarmonyOS端文件文档查看器(pdf、png、jpg、xml、xls、doc、ppt、xlsx、docx、pptx 等）开源插件
+- [MJrFusion](https://github.com/MJrFusion/Docxion) — ★ 6 — Open-source Android Jetpack Compose library for viewing Microsoft Office documents, including DOC, DOCX, XLS, XLSX, PPT, and PPTX.
+- [wp-a](https://github.com/wp-a/paper2ppt) — ★ 6 — 将学术论文转为可编辑、可溯源的中文 PPTX，兼容 Codex 与 Claude Code。
+- [marp-team](https://github.com/marp-team/pptx) — ★ 5 — A wrapper module for creating PPTX using PptxGenJS, with the least module size
+- [anmism](https://github.com/anmism/pptxgenjs-animation) — ★ 5 — Pptxgenjs + Animation - Create Animated Slides
+- [DhiaHan](https://github.com/DhiaHan/Images-to-document-converter) — ★ 5 — If you have pictures/screenshots that are for a book/news paper/article or anything and want to copy texts on it to a PDF/DOC/DOCX/PPT/PPTX file, this progra...
+- [kelcey2023](https://github.com/kelcey2023/ZeeLin-image2-PPT) — ★ 5 — 一行命令把 Markdown 变成带 AI 配图的专业 PPT｜GPT-image-2 自动配图 · 输出 .pptx 可编辑 · 100 页只需几元 · 13种版式 · 学术+产业通用风
+- [fengdeqiao](https://github.com/fengdeqiao/python-pptx2video) — ★ 5 — python pptx to video
+- [bowespublishing](https://github.com/bowespublishing/bulk-import-images-to-powerpoint-with-python) — ★ 5 — Using Python-PPTX To Bulk Import Images Into A Presentation One Per Slide
+- [0xp47](https://github.com/0xp47/notebooklm-watermark-remover) — ★ 5 — Fast, lightweight pure Python CLI tool to remove NotebookLM watermarks from PDF, PPTX, and image files.
+- [ShinChven](https://github.com/ShinChven/doc-gpt) — ★ 5 — doc-gpt is a Python CLI tool that processes document files (pdf, docx, pptx, txt, md) using Large Language Models.
+- [harshankur](https://github.com/harshankur/officeparserpy) — ★ 5 — A Python library to parse text from any office file. Currently supports docx, pptx, xlsx, odt, odp, ods and pdf files.
+- [Water-Run](https://github.com/Water-Run/pptx2png) — ★ 5 — 一个将.pptx转换为.png图片的工具集: 包括一个Windows桌面端程序和一个Python库. | A toolkit for converting .pptx files into .png images, including a Windows desktop application and a Pyt...
+- [domonic18](https://github.com/domonic18/ppt_manager) — ★ 5 — 这是一个基于python-pptx二次开发的PPT组件库，以便进行PPT的读取和操作
+- [Hehua-Fan](https://github.com/Hehua-Fan/html2pptx-backend) — ★ 5 — —
+- [xarsh](https://github.com/xarsh/ooxml-validator) — ★ 5 — Fast, zero-dependency OOXML validator for Node.js (.docx/.pptx/.xlsx etc.).
+- [t-ujiie-g](https://github.com/t-ujiie-g/moon-pptx) — ★ 5 — Pure-MoonBit library for reading, building, and writing PPTX (OOXML) presentations with a type-safe builder API.
+- [young2j](https://github.com/young2j/oxmltotext) — ★ 5 — A lightweight and efficient text content extractor mainly for OOXML files (typically referring to docx/xlsx/pptx).
+- [PsycOwl](https://github.com/PsycOwl/Certificate_Generator_PPTX_PDF_Converter) — ★ 5 — Generates certificate from a powerpoint template. Puts information to the certificate from excel file and generate new certificates in bulk from a single fil...
+- [minorun365](https://github.com/minorun365/bedrock-pptx-agent) — ★ 5 — Bedrock AgentsにPowerPoint資料を作らせるハンズオン用サンプル
+- [gakowalski](https://github.com/gakowalski/docx-repack) — ★ 5 — Batch script to re-compress DOCX, XLSX, PPTX, ODT and ODS files so their size is smaller and they can be still opened by Microsoft Office without any additio...
+- [LangModule](https://github.com/LangModule/ingestlib) — ★ 5 — Self-hosted document intelligence for RAG — parse, classify, split, and extract from PDF/DOCX/PPTX and images: searchable, cited, retrieval-ready chunks and ...
+- [harshpreet931](https://github.com/harshpreet931/anyview) — ★ 5 — View any document in React: PDF, DOCX, XLSX, PPTX, CSV, Markdown, code, HTML & images, rendered natively in the browser. No iframes, no uploads, files never ...
+- [SoftUni](https://github.com/SoftUni/SoftUni-Course-Converter) — ★ 5 — Converts PPTX and DOCX documents from the old SoftUni template to the new templates
+- [ysrock](https://github.com/ysrock/pdf2pptx-ai-tool) — ★ 4 — Privacy first, ready to use out of the box! An AI-powered PDF-to-PPTX tool: OCR extracts text + AI restores backgrounds, converting files into fully editable...
+- [devansharora18](https://github.com/devansharora18/auto-ppt-to-pdf) — ★ 4 — Automatically converts newly downloaded PowerPoint files (.ppt/.pptx) to PDF format. It continuously monitors the Downloads folder and triggers the conversio...
+- [jinbaozi](https://github.com/jinbaozi/pptx-creator) — ★ 4 — —
+- [Andrefsbernardo](https://github.com/Andrefsbernardo/ExcelSlide-pptx-slide-generator) — ★ 4 — Python automation script to batch-generate PowerPoint slides from Excel data
+- [canvas-fr](https://github.com/canvas-fr/chaoxing-course-downloader) — ★ 4 — 自动发现并提取学习通页面中的 PDF/PPT/PPTX 课件下载链接，提供控制面板进行单个或批量下载。修复 Safari 下 PPTX 文件类型识别错误及中文文件名乱码问题。
+- [mhawksey](https://github.com/mhawksey/gemini-managed-agents-for-google-workspace) — ★ 4 — Autonomous Google Workspace agent built with Google Apps Script, Gemini Managed Agents (Antigravity), and the Google Workspace CLI (gws) to turn Drive docs i...
+- [liamcryan](https://github.com/liamcryan/pptx-tables) — ★ 4 — Use pptx-tables to create tables more easily through Python-pptx.
+- [cmzhuzhu](https://github.com/cmzhuzhu/FilesToPics) — ★ 4 — This Python package can ppt/pptx into pictures
+- [bowespublishing](https://github.com/bowespublishing/draw-daily-planner-template-using-python-pptx) — ★ 4 — Utilising Python-PPTX to demonstrate how you can draw a template that scales + imports date
+- [sunchaokun](https://github.com/sunchaokun/pptx-designer) — ★ 4 — Code-first Python library for generating editable PowerPoint presentations with native PPTX objects, SVG support, and LLM-friendly build APIs.
+- [darkhunter141](https://github.com/darkhunter141/Python-PPTX) — ★ 4 — Basic Python
+- [JaHIY](https://github.com/JaHIY/ppt2video) — ★ 4 — A tool written in Python that utilizes Edge TTS to convert PPT/PPTX files into video files
+- [PaleNeutron](https://github.com/PaleNeutron/pptx-replace) — ★ 4 — A python package for replacing words, images and other elements in pptx
+- [bowespublishing](https://github.com/bowespublishing/convert-123-sudoku-to-abc) — ★ 4 — Using python-pptx to convert traditional '123' Sudoku puzzles into ABC Sudoku puzzles
+- [Ameyanagi](https://github.com/Ameyanagi/easypptx) — ★ 4 — Python library for creating and manipulating PowerPoint presentations programmatically.
+- [brudvik](https://github.com/brudvik/MarkItDownAPI) — ★ 4 — A Clean Architecture ASP.NET Core Web API that wraps Microsoft's MarkItDown Python library. Convert PDF, DOCX, PPTX, images, audio, and URLs to Markdown. Fea...
+- [Ruqyai](https://github.com/Ruqyai/Convert-YouTube-to-PPTX) — ★ 4 — This Colab notebook provides a simple way to convert YouTube videos into a PowerPoint presentation (PPTX) format. It utilizes the power of Python, Google Col...
+- [rsamwilson2323-cloud](https://github.com/rsamwilson2323-cloud/PPT_TOOLBOX) — ★ 4 — PPT Toolbox is a lightweight, browser-based PowerPoint utility designed for fast and private presentation management. Create PPTX files, convert images to pr...
+- [pranjalprateek6](https://github.com/pranjalprateek6/Keyword-Extraction-Web-App) — ★ 4 — The "Keyword Extraction Web App" is a web application created using Streamlit, a Python library for building web-based data applications. This particular app...
+- [GurYN](https://github.com/GurYN/vibe-slides) — ★ 4 — Vibe Slides is a "Vibe Coding" application for presentation creation. It enables users to create professional PowerPoint presentations by describing what the...
+- [shbernal](https://github.com/shbernal/pptx-ts) — ★ 4 — Create PowerPoint presentations from TypeScript
+- [gongzyes](https://github.com/gongzyes/pptx2pdf-web) — ★ 4 — PPT转PDF在线转换工具 - PPTX to PDF online converter powered by LibreOffice
+- [fefeding](https://github.com/fefeding/pptx-parser) — ★ 4 — pptx2html 解析pptx文件
+- [Mirza-Glitch](https://github.com/Mirza-Glitch/node-pptx-parser) — ★ 4 — —
+- [evgenyorlov1](https://github.com/evgenyorlov1/powerPoint_template_creator) — ★ 4 — Script that takes pptx template to fullfill it with values and produces ppts presentation.
+- [kinshukdua](https://github.com/kinshukdua/AutoCert) — ★ 4 — AutoCert is a command line program that automates the process of generating certificates in bulk given a pptx template.
+- [AndreKraemer](https://github.com/AndreKraemer/OpenXMLSample) — ★ 4 — Repository with the sample code of my Open XML Talk
+- [rse](https://github.com/rse/pptx-surgeon) — ★ 4 — PowerPoint OpenXML File Surgeon
+- [thecodebuzz](https://github.com/thecodebuzz/excel-import-export-dotnetcore2.0) — ★ 4 — Work with excel or word or powerpoint in dotnet core using OpenXML SDK.Please see more details @ https://thecodebuzz.com/
+- [teamsimplepay](https://github.com/teamsimplepay/ooxml_crypt) — ★ 4 — A Ruby library for encrypting/decrypting password-protected Microsoft Office XML (OOXML) files (e.g. .docx, .xlsx, .pptx)
+- [ice-curtain](https://github.com/ice-curtain/pptx) — ★ 4 — Rust-based ooxml parsing library for pptx files
+- [NathanCastle](https://github.com/NathanCastle/ppmd) — ★ 4 — Converts PowerPoint OOXML (PPTX) files to Markdown-based presentations
+- [meatRoll](https://github.com/meatRoll/slideforge) — ★ 4 — SlideForge — PPTD (YAML presentation DSL) parser/validator → editable OOXML PPTX compiler
+- [jonaskobler](https://github.com/jonaskobler/docx-ast) — ★ 4 — A reduced representation of the OOXML structure for simple interactions (work in progress)
+- [fieldcure](https://github.com/fieldcure/fieldcure-document-parsers) — ★ 4 — Document text extraction library for DOCX, HWPX, XLSX, PPTX, and PDF. Supports OOXML math-to-LaTeX conversion, Hancom equation parsing, and IMediaDocumentPar...
+- [causemx](https://github.com/causemx/gpt2ppt) — ★ 4 — Auto generating pptx from gpt3+
+- [Ali-Awad](https://github.com/Ali-Awad/Paper-to-Presentation) — ★ 4 — A clean LaTeX Beamer presentation template (16:9) inspired by the MTU style, with custom footer, page count, date, logo support, and optional PPTX export.
+- [aarontzeng](https://github.com/aarontzeng/Appt-OCR) — ★ 4 — Batch OCR tool for PPTX/PDF files — extracts text from images, reconstructs editable text boxes, and optionally erases original text using AI inpainting (LaMa)
+- [sammyview80](https://github.com/sammyview80/converter) — ★ 4 — Convert ppt or doc or docx to pdf using aspose.
+- [dulajkavinda](https://github.com/dulajkavinda/pptxto.txt) — ★ 4 — 📄 A text extraction node module, thtat can convert pptx and ppt file formats into pure text.
+- [pynickle](https://github.com/pynickle/ppt-notes) — ★ 4 — for making pptx notes with animation
+- [michioxd](https://github.com/michioxd/tcvn2uni) — ★ 4 — Công cụ trực tuyến miễn phí và mã nguồn mở giúp chuyển đổi ký tự từ bảng mã TCVN3 (tiêu chuẩn cũ) trong file Microsoft Word (.docx), Microsoft PowerPoint (.p...
+- [yejiming](https://github.com/yejiming/dsh-ppt) — ★ 4 — PPT design preset and editable PPTX production tools for DeepSeek Harness
+- [denelwu-GH](https://github.com/denelwu-GH/scene-native-pptx) — ★ 4 — Stop redrawing slides. Turn slide designs and screenshots into stable, native, editable PowerPoint with no repair prompts.
+- [roanpy](https://github.com/roanpy/doc-media-toolkit) — ★ 4 — PPTX-first desktop toolkit for target-size media compression, quality auditing, watermark export, and reusable video/image asset libraries. 支持 DOCX/PDF/XLSX。
+- [sugatoray](https://github.com/sugatoray/pptxdiff) — ★ 4 — A diff tool for visualizing and reviewing powerpoint files
+- [hetao29](https://github.com/hetao29/libreoffice) — ★ 4 — office 文件（ppt,pptx,word,excel）转换成 png/jpeg 的 grpc 服务
+- [XinyuanWang283](https://github.com/XinyuanWang283/sketch-to-scientific-figure) — ★ 4 — Researcher-controlled workflow that turns hand-drawn method sketches into validated, editable scientific figures (SVG, PPTX, draw.io, PDF).
+- [timothywarner-org](https://github.com/timothywarner-org/pptx-shredder) — ★ 4 — Transform PowerPoint presentations into LLM-optimized markdown while preserving instructional design narrative. Built for technical trainers.
+- [kyungseo](https://github.com/kyungseo/ai-deck-compiler) — ★ 3 — Generate consistent, editable PPTX from AI-authored blueprints with a rules-based TypeScript renderer.
+- [centipede13](https://github.com/centipede13/PPT_Generation_with_Python-pptx) — ★ 3 — A python program to generate a ppt with text and image using python-pptx package.
+- [vriddhi23100](https://github.com/vriddhi23100/Queryfy) — ★ 3 — Queryfy is a lightweight web app that converts study material(PDFs, Word files, PPTs, or text) into structured assessments like MCQs, true/false, numerical, ...
+- [Chanakan5591](https://github.com/Chanakan5591/AutoGeneratePPTX-Rewrite) — ★ 3 — **READ** This is made before I even realize I could just use markdown. This is very old now and I probably won't be coming back to make it better, use LaTeX ...
+- [commi235](https://github.com/commi235/PPTX_CREATOR) — ★ 3 — Create PowerPoint Slide-Decks based on a template slide.
+- [SuTn](https://github.com/SuTn/PPT-Agent) — ★ 3 — 通过自然语言对话，自动完成主题研究 → 大纲设计 → 幻灯片制作，一键导出 PPTX，支持上传文件（word,excel,md,ppt等），可导出pptx和图片两种格式。
+- [zhuo-zz](https://github.com/zhuo-zz/ImageToPPT) — ★ 3 — ImageToPPT 是一个基于 Qt Widgets 和 C++17 开发的图片转 PPT 半自动重建工具。它不是简单地把整张图片塞进幻灯片，而是让用户手动框选图片区域和文字区域，再导出为可继续编辑的 PPTX 文件。
+- [WenTao-Love](https://github.com/WenTao-Love/pptx-rs) — ★ 3 — Rust 实现的 PowerPoint `.pptx` / `.ppt` 读写库，对标 [python-pptx](https://github.com/scanny/python-pptx)。
+- [wanglihui](https://github.com/wanglihui/pptx-go) — ★ 3 — go operate pptx like python-pptx, like addslide, replace placeholder, get placeholder ,save and so on
+- [ajshovon](https://github.com/ajshovon/ppt2pdf) — ★ 3 — Convert ppt/pptx to pdf with the power of python in just two clicks!
+- [Apcan](https://github.com/Apcan/OfficeToPdf.py) — ★ 3 — office (.doc,.docx,.ppt,.pptx,.xls,.xxls) convert to pdf base on office 2010 and python
+- [harperreed](https://github.com/harperreed/big-pptx) — ★ 3 — A simple python script that takes a dir of images and turns it into a pptx file
+- [HuiTurn](https://github.com/HuiTurn/ppt2pptx) — ★ 3 — A pure-Python converter from legacy PowerPoint 97–2003 (.ppt) files to editable .pptx—no PowerPoint, LibreOffice, COM, or external services required.
+- [gantrack31-pixel](https://github.com/gantrack31-pixel/HackMoscVKbro) — ★ 3 — Deckly.Ai — AI-помощник для создания презентаций с экспортом в PPTX, PDF и HTML. Python · FastAPI · React. Хакатонный проект, созданный с помощью нейросетей.
+- [potados99](https://github.com/potados99/mass-slide) — ★ 3 — An automatic, text file based pptx slide maker.
+- [Jobenland](https://github.com/Jobenland/Power-Point-Search) — ★ 3 — Takes an entire directory of .pptx files and searches a keyword in all of them
+- [luongnv89](https://github.com/luongnv89/slide-speech) — ★ 3 — SlideSpeech is a Python script that automates the presentation of a PDF or PPTX file, playing an audio file for each slide. The time spent on each slide depe...
+- [yaroslavkrutiak](https://github.com/yaroslavkrutiak/MarkItDownMac) — ★ 3 — A native macOS app that converts documents to Markdown using the markitdown Python CLI. Drag-and-drop or right-click files in Finder to convert PDFs, DOCX, P...
+- [YoSoyRev](https://github.com/YoSoyRev/Convertidor-en-python) — ★ 3 — Herramienta Python para la conversión masiva y fiel de documentos de Office (DOCX, XLSX, PPTX) e imágenes a PDF. Permite la selección gráfica de archivos y l...
+- [wisetwo](https://github.com/wisetwo/pptx-code-helper) — ★ 3 — An helper tool that helps getting object dimensions (size and position) and font attribute (font name and size etc.) in powerpoint files, by which improves t...
+- [yuese12333](https://github.com/yuese12333/pptx2js) — ★ 3 — 一个强大的 Node.js 逆向工具，可将现有的 PPTX 文件解析并转化为可执行的 PptxGenJS 脚本代码，支持媒体资源提取与优雅的样式降级。
+- [SyncfusionExamples](https://github.com/SyncfusionExamples/PowerPoint-Examples) — ★ 3 — This repo contains examples for using Syncfusion's .NET PowerPoint library, which allows programmatically to create, read, edit and convert PowerPoint files.
+- [hckrnews](https://github.com/hckrnews/ppt2pdf) — ★ 3 — Convert ppt to pdf
+- [shadmanshaikh](https://github.com/shadmanshaikh/pdfcoverter) — ★ 3 — Desktop Application to convert PPT to PDF
+- [sooriya-ms](https://github.com/sooriya-ms/Office-Tools) — ★ 3 — This application is a GUI based, made from PyQt5 library in Python. It is used to convert PDF to WORD, WORD to PDF, PDF to JPG (image), JPG to PDF, PPT to PD...
+- [tracy-meilin](https://github.com/tracy-meilin/parsecore) — ★ 3 — ppt/pptx parse
+- [longway-code](https://github.com/longway-code/rustypptx) — ★ 3 — A PPTX parser written in Rust. Extracts text, metadata, and images from PowerPoint files using parallel slide processing.
+- [tycoworks](https://github.com/tycoworks/tycoslide) — ★ 3 — Create editable PowerPoint slides from markdown, using your existing .pptx templates.
+- [dbdoan](https://github.com/dbdoan/ThinkcellAuto) — ★ 3 — A FastAPI-based backend for automating PowerPoint generation using Think-Cell. Users upload .pptx templates and .ppttc chart data files, which are modified w...
+- [byungjunjang](https://github.com/byungjunjang/slide-html) — ★ 3 — HTML × html2pptx 기반의 16:9 editable PPTX 디자인 시스템
+- [Xupai2022](https://github.com/Xupai2022/html2pptx) — ★ 3 — —
+- [niklaskarl](https://github.com/niklaskarl/BinaryMesh.OpenXml) — ★ 3 — .NET Standard Library to create and manipulate Open XML Documents (Word, Excel, Powerpoint)
+- [nbwiss](https://github.com/nbwiss/openpptx-addin) — ★ 3 — Open-source, bring-your-own-key AI task pane add-in for PowerPoint. Builds and edits decks against your own template. No backend, no telemetry.
+- [freudolacaniana](https://github.com/freudolacaniana/officemath2latex.js) — ★ 3 — This program defines a function named processMathNode that converts mathematical expressions in OfficeMath format (DocumentFormat.OpenXml.Math) to LaTeX code...
+- [Ank-KhoaHo](https://github.com/Ank-KhoaHo/DocToolkit) — ★ 3 — Convert HTML to DOCX/PDF and edit DOCX/XLSX/PPTX from .NET. Pure managed - no native binaries, no browser, no LibreOffice. Runs on Linux, works offline.
+- [ezeh2](https://github.com/ezeh2/Simple-OOXML-Package-Explorer) — ★ 3 — Simple OOXML Package Explorer allows to parse content of xlsx, docx and pptx-files, which are created by Microsoft Office since version 2007.
+- [idling-mind](https://github.com/idling-mind/pptx_renderer) — ★ 3 — Write python snippets inside your ppt and run it like a jupyter-notebook
+- [marcog83](https://github.com/marcog83/pptx-renderer) — ★ 3 — React Renderer for creating Powerpoint File with React. It is a PPTXJS binding for react
+- [Amadeus0k](https://github.com/Amadeus0k/pptx-builder) — ★ 3 — Describe a talk in YAML, get a real editable .pptx with embedded video, native tables, rendered equations, and a clickable index.
+- [sukujgrg](https://github.com/sukujgrg/pptx-builder-from-yaml) — ★ 3 — CLI to generate powerpoint slides from simple yaml file[s]
+- [cg123](https://github.com/cg123/pptx-api) — ★ 3 — Generate PPTX files from a simple JSON schema. For LLMs.
+- [ozyurterdem](https://github.com/ozyurterdem/glpi-isms-toolkit) — ★ 3 — Configuration-as-code toolkit for GLPI with ISO 27001 ISMS integration. YAML-driven ITIL v4 SLA, gap analysis, executive reports (PDF/PPTX).
+- [yyyanbj](https://github.com/yyyanbj/tools-for-pptx) — ★ 3 — 🔨 PPTX 处理的工具
+- [vnsavitri](https://github.com/vnsavitri/vivid-clean) — ★ 3 — Local-first AI watermark cleaner for text, DOCX and PPTX. Removes deterministic marks and document metadata, preserves formatting, and reports what remains.
+- [ch1209498273](https://github.com/ch1209498273/ai-lesson-prep) — ★ 3 — 大学教师备课全流程 AI 技能包：课表截图 → 授课 Excel → 教学方案 → 教案 → 课件（讲稿备注），一条链路交付 xlsx/docx/pptx。为 Claude Code / ZCode 等 AI 编程助手设计，中文教学场景深适配，MIT 开源。
+- [kimtth](https://github.com/kimtth/mini-notebooklm-agent-pptx) — ★ 3 — A mini NotebookLM for PPTX — convert CSV, DOCX, MD, PDF, or TXT into slides (150 slides in <2 min, 5× fewer tokens). 🦋
+- [Ric01](https://github.com/Ric01/wireframe-ppt-pptx) — ★ 3 — Wireframe UI Kit for landing pages
+- [tdawe1](https://github.com/tdawe1/translation-tools) — ★ 3 — Zero-touch JP→EN translation pipeline for PDF/PPTX/DOCX/XLSX: Drive-in/out, cache-first batch LLM , layout-preserving autofit, style & QA, iterative improvem...
+- [CoderLambert](https://github.com/CoderLambert/filevista) — ★ 3 — React file viewer for PDF, DOCX, PPTX, XLSX, EPUB, Markdown, code and media—20+ formats, rendered entirely in the browser.
+- [BlaCkinkGJ](https://github.com/BlaCkinkGJ/pptx-note-mirror-program) — ★ 3 — Programs that can control PowerPoint over the network and mirror to client the presentation note.
+- [hashi-demo-lab](https://github.com/hashi-demo-lab/html2pptx-cli) — ★ 2 — —
+- [veerakarthick235](https://github.com/veerakarthick235/AI-Presentation-Maker) — ★ 2 — This project generates a PowerPoint presentation (pptx), images for slides, and per-slide narration from a single input topic using Google AI for text and im...
+- [0Armaan025](https://github.com/0Armaan025/conspiracy-ppt-generator-api) — ★ 2 — this api will return conspiracy theory , and a pptx on it.
+- [Sami-samira](https://github.com/Sami-samira/insightslm_studio_pptx_generator) — ★ 2 — —
+- [MarcoPerdomo](https://github.com/MarcoPerdomo/PDF-PPTX-Text-to-CSV) — ★ 2 — Transform all the text from a bundle of PDF or PPTX to a csv format. This is useful to later convert into a dataframe and apply Machine Learning or Deep Lear...
+- [SautinSoft](https://github.com/SautinSoft/SautinSoft.UseOffice.Examples) — ★ 2 — UseOffice .Net is a robust component to convert between DOC, DOCX, RTF, XLS, XLSX, HTML, PPT, CSV, Text and PDF, documents with tables, images, fonts, colors...
+- [arnelienemann](https://github.com/arnelienemann/Wordcloud-Webapp) — ★ 2 — Small webapp using streamlit to create a wordcloud from text input. Export to ppt using python-pptx library.
+- [Jlu45](https://github.com/Jlu45/group-meeting-ppt-agent) — ★ 2 — 🎓 组会PPT智能体 - From any document to a polished, template-compliant PPTX
+- [whxisdsg1998-dotcom](https://github.com/whxisdsg1998-dotcom/PPT-COPYER) — ★ 2 — CSCECppt — PPTX 模板复刻工作流：把现成PPT当模板，AI自动套新内容(保留版式/字体/装饰,只换文字图片)
+- [myon-bioinformatics](https://github.com/myon-bioinformatics/Ironmate) — ★ 2 — Python toolkit for Markdown-to-PPTX conversion, existing PPTX text/color editing, and pixel-grid art prototypes.
+- [machanic16](https://github.com/machanic16/PowerPoint-automation) — ★ 2 — The Purpose of this repository is practice and master the Python-pptx library
+- [pgrit](https://github.com/pgrit/texsnip) — ★ 2 — Compile & crop LaTeX to .pdf / .png / .pptx from Python
+- [AvishrantsSh](https://github.com/AvishrantsSh/python-pptx-stubs) — ★ 2 — Type stubs for python-pptx package
+- [stellatechnologies](https://github.com/stellatechnologies/python-pptx-template) — ★ 2 — Automatically generate PowerPoint documents using Jinja2 tags. Homage to python-docx-template.
+- [bharath5673](https://github.com/bharath5673/python-pptx-tables) — ★ 2 — Use pptx-tables to create tables more easily through Python-pptx.
+- [nt-hai](https://github.com/nt-hai/python-copy-slide-pptx) — ★ 2 — —
+- [bowespublishing](https://github.com/bowespublishing/PPTX-TO-PNG-PYTHON) — ★ 2 — Using Python & Libre Office To Convert PPTX files (PowerPoint) into PNGs
+- [farukaknc](https://github.com/farukaknc/pptx-python-to-latex-beamer-converter) — ★ 2 — The script converts the .pptx file into Latex Beamer code format slide by slide. Covertible slide shapes are the images (being saved into a file), texts (bul...
+- [miromx](https://github.com/miromx/pptx-translator) — ★ 2 — Simple script for translate *.pptx files using request & python-pptx packages
+- [xicheng412](https://github.com/xicheng412/html2pptx) — ★ 2 — convert html to pptx with python
+- [cultivate5253](https://github.com/cultivate5253/text_extract_from_pptx) — ★ 2 — Extract text from ppt using python-pptx
+- [xianlimei](https://github.com/xianlimei/honeytoken) — ★ 2 — A simple honeytoken injection script written in Python. It can be inject into docx, pptx, xslx, odt, odp, ods documents.
+- [shruti2212-ctrl](https://github.com/shruti2212-ctrl/automated-presentation-builder) — ★ 2 — Python tool that generates branded, consulting-style .pptx decks programmatically (python-pptx + Claude), with an automated visual QA pass.
+- [rino0601](https://github.com/rino0601/pptx-blank-maker) — ★ 2 — A CLI program made by python. It makes blanked pptx file from normal pptx file.
+- [bbiyongel](https://github.com/bbiyongel/ppt_translator) — ★ 2 — A python script for translating the content in a .ppt or .pptx file
+- [dronperminov](https://github.com/dronperminov/pptx-shapes) — ★ 2 — Python library for adding basic geometric shapes directly to PowerPoint (.pptx) slides by editing the XML structure.
+- [FakeEyes2Wo](https://github.com/FakeEyes2Wo/pptx_readonly_decrypt) — ★ 2 — pptx_readonly_decrypt 是一个 Python 脚本，用于解除 PowerPoint (.pptx) 文件的只读保护。这通过删除 .pptx 文件中的 <p:modifyVerifier> 标签来实现，从而允许用户编辑文件。
+- [ZhunHao](https://github.com/ZhunHao/msoffice-unprotector) — ★ 2 — A clean, zero-dependency Python tool to inspect, strip, or reset document protection in modern Office files (.docx, .xlsx, .pptx).
+- [A-H-911](https://github.com/A-H-911/tarseem) — ★ 2 — Schema-driven Python diagram engine: JSON specs -> architecture-grade SVG/PNG/PDF + editable draw.io & PPTX, with ELK layout, swimlanes, and Arabic/RTL-first...
+- [tdawe1](https://github.com/tdawe1/multi-llm-translator) — ★ 2 — An automated Python translation assistant that monitors for jobs, processes documents (.docx, .pptx, .xlsx), and uses multiple models for high-quality, compa...
+- [Zitu8](https://github.com/Zitu8/Automated-Presentation-Generation) — ★ 2 — Automated PowerPoint presentation system using Python. Scrapes, filters, and stores data from the web into MongoDB, dynamically generating slides with charts...
+- [GiuseppeLeviBo](https://github.com/GiuseppeLeviBo/pyxtxt) — ★ 2 — is a simple and powerful Python library to extract text from various file formats.   It supports PDF, DOCX, XLSX, PPTX, ODT, HTML, XML, TXT, legacy XLS files...
+- [MuhammadNoman76](https://github.com/MuhammadNoman76/MagicConvert) — ★ 2 — MagicConvert is a Python library that converts various document formats (PDF, DOCX, XLSX, PPTX, HTML, Images) to markdown text. Features include OCR support,...
+- [Mohammadshadab1](https://github.com/Mohammadshadab1/employee-performance-analysis) — ★ 2 — 📊 HR & People Analytics on 100K employee records (2014–2024). Job title drives pay (72% gap), attrition is a flat 10%, satisfaction doesn't predict exits. Py...
+- [AbduazizBobomalikovNode](https://github.com/AbduazizBobomalikovNode/ml_convertor_free) — ★ 2 — Office fayl konvertori Ushbu Python skripti ofis hujjatlarini (Excel, Word, PowerPoint) turli formatlarga aylantirish uchun kuchli yechimni taqdim etadi. U P...
+- [darknight2163](https://github.com/darknight2163/ppt-to-video) — ★ 2 — A Python library that converts PowerPoint (.pptx) files into narrated MP4 videos — extracting slide text, generating text-to-speech narration, rendering slid...
+- [bowespublishing](https://github.com/bowespublishing/qqwing-gui-svg-png-jpg-output) — ★ 2 — A small python script that controls qqwing.exe and enables users to create sudoku puzzles with a user friendly GUI and export to SVG, JPG, JPG or PPTX using ...
+- [Ebinezer-cloud](https://github.com/Ebinezer-cloud/ppt-slide-extractor) — ★ 2 — 📊 PPT Slide Extractor — A Python & Streamlit tool that automatically converts PowerPoint presentations (.ppt/.pptx) into high-quality PNG slide images. Featu...
+- [abhijiths19](https://github.com/abhijiths19/PowerPoint-Generator-Using-Gemini-AI) — ★ 2 — This project leverages Google's Gemini 2.5 Pro API to automatically generate engaging, well-structured PowerPoint presentations on any topic. It combines gen...
+- [lIHJIl](https://github.com/lIHJIl/MDrip) — ★ 2 — Stop paying the LLM format tax. MDrip converts PDF, DOCX, PPTX, XLSX and CSV into clean Markdown, cutting tokens by up to 88%. Lower API costs, faster replie...
+- [fozankhana](https://github.com/fozankhana/DocBild-Conversions-Images-and-Documents) — ★ 2 — **DocBild-Conversions-Images-and-Documents** is a Python-based GUI application for converting various image and document formats. It supports popular formats...
+- [Nikhil-264](https://github.com/Nikhil-264/pptx-inconsistency-analyzer) — ★ 2 — This project is an AI-enabled Python tool that analyzes multi-slide PowerPoint presentations (PPTX) and associated slide images to automatically detect factu...
+- [tellang](https://github.com/tellang/ppt-maker) — ★ 2 — 정부 업무보고 스타일 PPTX 생성기 (PptxGenJS + Noto Sans KR)
+- [MayTheSForceBeWithYou](https://github.com/MayTheSForceBeWithYou/PptxGenJsForce) — ★ 2 — Take a slide-show generating JavaScript library. Put "Force" on the end. Voilà!
+- [ChibaYuki347](https://github.com/ChibaYuki347/pptgenerator-cli) — ★ 2 — Manus-style outline → HTML preview → PPTX. Markdown / JSON in, Tailwind + Iconify HTML and a real .pptx out, via headless chromium + PptxGenJS.
+- [zhouzhouwangwang](https://github.com/zhouzhouwangwang/Markdown-webTheme-PPTX) — ★ 2 — 把结构化 Markdown 一键变成完全可编辑的 PPTX——原生文本框而非截图；零 LLM、纯本地确定性转换，15 套主题、按内容高度自动分页、丰富图片版式，FastAPI + Docker 自包含部署。
+- [ringpackages](https://github.com/ringpackages/pptxlib) — ★ 2 — PPTX library for the Ring programming language
+- [UyLeQuoc](https://github.com/UyLeQuoc/Slight) — ★ 2 — PPTX Generator Webapp with AI
+- [dkmar](https://github.com/dkmar/pptx-to-pdf) — ★ 2 — Finder "Quick Action" to convert powerpoint files to pdf using Microsoft Powerpoint
+- [schatteleyn](https://github.com/schatteleyn/PPT-To-PDF) — ★ 2 — Automator script to transform a bunch of PPT's to PDFs
+- [hard02](https://github.com/hard02/ppt-to-pdf) — ★ 2 — Convert PowerPoint files to PDF using LibreOffice on Linux or Windows systems with Python script and tkinter GUI.
+- [Shahi77](https://github.com/Shahi77/CLI_Slide2PDF) — ★ 2 — CLI tool for ppt to pdf conversion and merging pdfs.
+- [ting5875](https://github.com/ting5875/pptx-to-jpeg) — ★ 2 — Convert pptx to pdf/jpeg with animation state
+- [laekov](https://github.com/laekov/sealpdf) — ★ 2 — A service that converts pptx to pdf and adds watermark
+- [nextJS9127](https://github.com/nextJS9127/DocMasterAI) — ★ 2 — PDF/PPTX parsing + LLM-powered executive reports. OpenAI, Claude, Gemini.
+- [Ccccc-spec](https://github.com/Ccccc-spec/PPTX-parser) — ★ 2 — —
+- [sherazenergetic](https://github.com/sherazenergetic/PPTX_Parser) — ★ 2 — This is a partial code to parse the PPTX and emit it to an XML with limited features.
+- [Danamagentapink178](https://github.com/Danamagentapink178/Chiselo) — ★ 2 — Refine existing HTML files for visual polish and export them to clean HTML, high-fidelity PDF, or editable PPTX formats on macOS.
+- [Yuichi-Ikeda](https://github.com/Yuichi-Ikeda/translate-pptx) — ★ 2 — —
+- [manuviswam](https://github.com/manuviswam/go-pptx) — ★ 2 — Golang library for manipulating openxml pptx presentations
+- [mgilbir](https://github.com/mgilbir/spine) — ★ 2 — Zero-dependency Go library for reading and writing Microsoft Office documents (.docx, .xlsx, .pptx) with byte-identical round-trip fidelity
+- [artpar](https://github.com/artpar/puppt) — ★ 2 — Go CLI for inspecting, editing, creating, validating, reviewing, and rendering editable PowerPoint .pptx files.
+- [rcosta02](https://github.com/rcosta02/pptxrs) — ★ 2 — Performant Rust/WASM library for creating, reading, and modifying PowerPoint (.pptx) files in Node.js - with text measurement and JSON interchange.
+- [Fab2bprog](https://github.com/Fab2bprog/office-toolkit) — ★ 2 — A Rust library to create, read, and modify Microsoft Office documents (Word/Excel/PowerPoint) in the modern Open XML (OOXML) format.
+- [FFFyyls](https://github.com/FFFyyls/ppt-chart-link-repair) — ★ 2 — Repair broken PowerPoint chart data links from OOXML cache and rebuild editable Excel-linked charts on Windows.
+- [Vector-Legal](https://github.com/Vector-Legal/blackline) — ★ 2 — Unopinionated Office Open XML toolkit for DOCX, XLSX, and PPTX
+- [OpenPresentation](https://github.com/OpenPresentation/opf-pptx) — ★ 2 — Pure local OPF to PPTX export and PPTX to OPF import tooling
+- [timothyandrew](https://github.com/timothyandrew/pptx-service) — ★ 2 — Web Service that Generates PPTX files
+- [spencernero2021-hash](https://github.com/spencernero2021-hash/pptx-agent-toolkit) — ★ 2 — Agent-Native PPTX Engineering Library — Built for AI agent pipelines, not template filling.  22 unified layouts | 4 brand palettes | WCAG-AA color safety | N...
+- [arg3ntuum](https://github.com/arg3ntuum/JavaCourse) — ★ 2 — Java-курс для початківців з нуля до програміста. Презентації(.pptx) + дз(.docx)
+- [qq371944997-design](https://github.com/qq371944997-design/xgj-chatgpt-ppt) — ★ 2 — A Page Blueprint workflow for generating editable PPTX files with ChatGPT.
+- [pollhammer](https://github.com/pollhammer/office-morph) — ★ 2 — High-performance automation utility to batch-convert legacy Office binaries (.doc, .xls, .ppt) into modern XML standards (.docx, .xlsx, .pptx) using the nati...
+- [huanyu-a](https://github.com/huanyu-a/MarkFlow) — ★ 2 — 纯前端、零后端 的 Markdown / HTML 多场景排版与导出工作台。  通过使用本工作台既定的渲染方式，与外部 AI 协作，快捷将内容渲染为 A4 正式文档 · 公众号长图文 · 小红书图文卡片 · 风格化 HTML 画布， 并导出为富文本 / 高清 PNG / 矢量 PDF / Word (.docx)...
+- [seowan2](https://github.com/seowan2/korean-research-ppt-master) — ★ 2 — 한국어 연구·R&D 발표자료를 기획부터 PPTX 제작·렌더링 QA까지 완주하는 Codex 마스터 스킬
+- [sort-tech](https://github.com/sort-tech/image-to-ppt) — ★ 2 — A lightweight tool to convert images into editable PowerPoint (.pptx) presentations automatically.
+- [kdnsna](https://github.com/kdnsna/pptlint) — ★ 2 — Local PPTX delivery preflight, explicit cleanup copies, repair plans, and post-edit verification.
+- [chillboy67](https://github.com/chillboy67/ahmu-pptx-download) — ★ 2 — 安徽医科大学网络教学平台 PPT/PPTX 课件直链提取与下载（借用平台接口 activities→uploads→url）
+- [przntperfect](https://github.com/przntperfect/prznt-deck) — ★ 2 — Build fully editable PowerPoint decks in the Prznt Perfect design system. Turns content or a topic into a structured .pptx using defined grids, typography, s...
+- [amir13872](https://github.com/amir13872/virus-pptx-) — ★ 2 — این پروژه یک ارائه کامل درباره ویروس‌های کامپیوتری است که شامل معرفی، انواع، اهداف، ویژگی‌ها و روش‌های انتشار آن‌ها می‌باشد. همچنین، نمونه‌هایی از ویروس‌های ...
+- [PeterAkande](https://github.com/PeterAkande/flutter_document_viewer) — ★ 2 — Docx, PPTx, Pdf Reader for Flutter
+- [Veyss43](https://github.com/Veyss43/dom-to-pptx) — ★ 2 — 🎨 Convert modern HTML to fully editable PowerPoint presentations with high-fidelity styles and accurate rendering, ensuring your design looks exactly as inte...
+- [VoDaiLocz](https://github.com/VoDaiLocz/PDF-PPTX-JSON-Converter) — ★ 2 — A lightweight tool for converting between PDF, PPTX, and JSON formats.
+- [Akshay090](https://github.com/Akshay090/ppt_decrypt) — ★ 2 — NPM package to decrypt password protected pptx file
+- [KOUISAmine](https://github.com/KOUISAmine/ppt-to-pptx) — ★ 2 — PPT to PPTX is an online tool that converts PPT (PowerPoint Presentation) files into PPTX (PowerPoint Presentation XML) files.
+- [huang-kc](https://github.com/huang-kc/png2pptx) — ★ 2 — Replicate an AI-generated slide image as a real, editable .pptx — native text boxes and shapes, reconstructed 1:1, not a picture on a blank slide.
+- [nimbase](https://github.com/nimbase/opendocs) — ★ 2 — A collection of document readers and writers: DOCX, PDF, RTF, ODT, TXT, XLSX, PPTX
+- [sinteric](https://github.com/sinteric/hanji) — ★ 2 — Rust libraries and CLI for round-trip editing and previewing DOCX, PPTX, XLSX and HWPX, with Markdown-like text and WebAssembly support.
+- [dakken205](https://github.com/dakken205/pptx-maker) — ★ 2 — 定例会資料作成支援ツール
+- [dzylikecode](https://github.com/dzylikecode/notebook-easy) — ★ 2 — display pptx word doc docx pdf on github 在GitHub 上显示 pdf word ppt
+- [serpo-dev](https://github.com/serpo-dev/GoStringFinder) — ★ 2 — 🔍 Go File Content Search Tool - A fast, multi-format CLI tool for searching strings in PDF, TXT, DOCX, XLSX, PPTX, JSON, XML, CSV, LOG, HTML files with suppo...
+- [pmdci](https://github.com/pmdci/pptx-toolkit) — ★ 2 — Lightweight, cross-platform Microsoft® PowerPoint manipulation toolkit
+- [oscarsun72](https://github.com/oscarsun72/insertGuaXingtoPowerPnt) — ★ 2 — insert Yi Jing Gua Xing to PowerPnt 在Powerpoint簡報中插入《易經》卦形-已擴充為一切字圖乃至圖片插入Word docx 與Power Point pptx 之應用
+- [Lyt060814](https://github.com/Lyt060814/CUA-Gym.pptx) — ★ 2 — Scale validated computer-use RL tasks from real PowerPoint decks
+- [marjaanah-stack](https://github.com/marjaanah-stack/zapier-finance-agent-rev-vs-budget) — ★ 2 — Zapier AI Agent that produces a monthly Revenue vs Budget pack from Google Sheets data, writes a Notion log, creates a Google Slides deck, exports to PowerPo...
+- [simrahashmi5-debug](https://github.com/simrahashmi5-debug/Powerpoint-generator-APIs-) — ★ 1 — Flask APIs that generate PPT from JSON using python-pptx- by Simra
+- [DNA-Dave](https://github.com/DNA-Dave/RAS_Image_Powerpoint_Generator) — ★ 1 — I had around 100 images in six treatment groups that I wanted to be able to create a powerpoint presentation with one image from each treatment group in orde...
+- [IanDarwin](https://github.com/IanDarwin/TextToPpt) — ★ 1 — Convert tab-indented slide outline into modern PPTX
+- [TrinhVinh2003](https://github.com/TrinhVinh2003/TextToPPTX) — ★ 1 — —
+- [niyo-oyin](https://github.com/niyo-oyin/llm-pptx-gen-test) — ★ 1 — —
+- [samcsf](https://github.com/samcsf/img2pptx-cli) — ★ 1 — A tool to generate pptx from a image folder.
+- [ThomasRohde](https://github.com/ThomasRohde/pptx-cli) — ★ 1 — —
+- [Siddharth-6](https://github.com/Siddharth-6/Autonomous-AI-Presentation-Creator) — ★ 1 — An autonomous multi-agent workflow built with **MachinaOS** that researches a topic, generates structured presentation content, and automatically creates a p...
+- [YonatanRA](https://github.com/YonatanRA/AI_PPTX_Creator) — ★ 1 — Creating pptx from pdf with ai.
+- [Ngoc-An-Nguyen](https://github.com/Ngoc-An-Nguyen/AI_PPTX_Translator) — ★ 1 — Automate the translation of Powerpoint decks into a variety of languages.
+- [yurake](https://github.com/yurake/pptx_generator) — ★ 1 — —
+- [glnnhoffman](https://github.com/glnnhoffman/ppt-generator) — ★ 1 — Code used in a custom GPT to generate pptx files based on a template, with summarization  and execution by ChatGPT
+- [TahaSnoussi](https://github.com/TahaSnoussi/pptx-generator) — ★ 1 — Generate professional PowerPoint presentations from Markdown with Mermaid diagram support
+- [bajarang-agarwal](https://github.com/bajarang-agarwal/pptx-generator) — ★ 1 — PPTX Generator
+- [izayoi-ami](https://github.com/izayoi-ami/pptx-generator) — ★ 1 — —
+- [Fahmialfayadh](https://github.com/Fahmialfayadh/bukang-pptx-generator) — ★ 1 — —
+- [MajsMan2](https://github.com/MajsMan2/bubble-pptx-generator) — ★ 1 — —
+- [Ruben95Amaro](https://github.com/Ruben95Amaro/AutoPPTX-Generator) — ★ 1 — Automated reporting tool that retrieves data from REST APIs, processes information and generates professional PowerPoint presentations.
+- [liaochengjiaao-oliver](https://github.com/liaochengjiaao-oliver/vt-pptx-generator) — ★ 1 — Generate branded Virginia Tech PowerPoint presentations from Markdown
+- [kesh-model-ml](https://github.com/kesh-model-ml/grid_output_pptx_generator) — ★ 1 — Generates PPTx based on Model ML grid output
+- [sameer9860](https://github.com/sameer9860/PowerPoint-PPTX--Generator) — ★ 1 — —
+- [fountainnnnn](https://github.com/fountainnnnn/quiz-slides-generator) — ★ 1 — Turns lecture slides into a ready-to-present quiz deck (PPTX) with answers and explanations: vision-model slide reading, LLM question writing.
+- [rocha985](https://github.com/rocha985/pptx-to-text-api) — ★ 1 — FastAPI service to extract text from PowerPoint (PPTX) files.
+- [Teahana](https://github.com/Teahana/Pdf-Ppt-to-Text) — ★ 1 — To convert ppt/pptx and pdf files that have way too many colors and designs and only extract their text for the purpose of submitting to AI such as GPT
+- [YAOdat](https://github.com/YAOdat/pptx-with-images-to-text) — ★ 1 — Convert a pptx with its images to a text file.
+- [ohadsam](https://github.com/ohadsam/extract_pptx_to_text_images) — ★ 1 — NodeJS tool to extract text and images from PPTX (use for AI projects)
+- [FurqanHun](https://github.com/FurqanHun/textnomnom-py) — ★ 1 — Extract text from PDFs, PPTs, & URLs (with OCR support). Converts PPT to PDF & handles files or folders. 🦍
+- [alexbenfica](https://github.com/alexbenfica/presentation_replacer) — ★ 1 — Replaces text inside ppt, pptx and compatible formats. Very useful to automate presentations and keep them always updated!
+- [groupdocs-free-consulting](https://github.com/groupdocs-free-consulting/Extract-Text-from-Microsoft-PowerPoint-Presentation-using-JAVA-SDK-of-GroupDocs.Parser-REST-API) — ★ 1 — This is GroupDocs free consulting project that helps you to extract Text from Microsoft PowerPoint Presentation PPTX/PPT using GroupDocs.Parser Cloud SDK for...
+- [FreeCodeCampXYG](https://github.com/FreeCodeCampXYG/starline-study-web) — ★ 1 — Analyze one or more learning sources supplied as TXT files, PPT/PPTX decks, or public video links, synthesize a source-grounded study note, and create a resp...
+- [Khalil-Rehman9](https://github.com/Khalil-Rehman9/PPtx-AI-Sumerizer) — ★ 1 — —
+- [felpssdev](https://github.com/felpssdev/pptx-ai-generator) — ★ 1 — —
+- [Aswin-Raksha](https://github.com/Aswin-Raksha/SmartPptx) — ★ 1 — SmartPptx is an n8n workflow that dynamically generates professional PowerPoint presentations (.pptx) based on user input. This automation leverages AI-drive...
+- [pritisarkar9](https://github.com/pritisarkar9/smart-ppt-search) — ★ 1 — This project enables semantic search over PowerPoint (.pptx) files using Large Language Models (LLMs). It extracts slide text, converts content into vector e...
+- [TwoSea1997](https://github.com/TwoSea1997/Zhihuishu_Smartcourse_PPTX_Download) — ★ 1 — 智慧树智慧课程PPTX下载助手
+- [Chetan496](https://github.com/Chetan496/AutomatedPPTReporting) — ★ 1 — Using DOcX4J and OpenXML to create charts,tables,reports in PPT
+- [iyui1223](https://github.com/iyui1223/AutoPPTX) — ★ 1 — Automatically insert multiple images to Microsoft pptx while maximizing the figure sizes. Users can constrain the order of images by adding headers to image-...
+- [IsaacWritesCodeGithub](https://github.com/IsaacWritesCodeGithub/Auto-pptx) — ★ 1 — —
+- [prasertcbs](https://github.com/prasertcbs/automate_pptx_nameplate) — ★ 1 — —
+- [danyellambert](https://github.com/danyellambert/PPT-creator) — ★ 1 — A professional JSON-to-PPTX engine for executive-grade presentations.
+- [RISE-UNIBAS](https://github.com/RISE-UNIBAS/didi_hackathon_pptx_creator) — ★ 1 — Simple script to create a Powerpoint slideshow with images.
+- [yujisatojr](https://github.com/yujisatojr/slide-generator) — ★ 1 — Automating PowerPoint slide generation with Python and python-pptx
+- [Moodswing9](https://github.com/Moodswing9/claude-deck-generator) — ★ 1 — Generate polished presentations from any topic using Claude AI — remix existing decks, choose themes, control slide count, and export to .pptx or .html.
+- [Halcyonsong](https://github.com/Halcyonsong/vector-repository) — ★ 1 — 基于 Spring Boot 3、Spring AI、Redis 和向量检索能力构建的智能知识库问答后端项目，主要实现了流式对话、会话管理、聊天记忆、历史归档、知识库文档上传与向量化、RAG 检索增强以及历史摘要压缩等功能。项目支持 txt、pdf、ppt、pptx 等文档接入，能够结合知识库内容进行上下文检索问...
+- [cannoncoug](https://github.com/cannoncoug/CbqYfuSj) — ★ 1 — 2025年网络工程毕设一套基于机器学习的Web漏洞检测系统的设计(论文+程序源码文件+演示视频+附件外文翻译开题调研报告源程序代码清单文档)定稿(源设计太大客服发).docx
+- [panhongwei](https://github.com/panhongwei/html-to-one-pptx) — ★ 1 — 让 AI 自动完成从 HTML  PPT到pptx 文件的一比一还原，通过html-report-generator，再还原为可编辑的PPTX
+- [Xingzaozhan43-ultimate](https://github.com/Xingzaozhan43-ultimate/pptx-bilingual-translate) — ★ 1 — Claude 技能：中文 PPT 课件整章翻译成英文版 + 中英对照版，自动重排版面、处理 WPS 隐藏内容、防止溢出
+- [HJH-0102](https://github.com/HJH-0102/ppt-to-study-guide) — ★ 1 — 将任意 PPT/PPTX 转化为期末复习资料 PDF。自动识别文字/图片/混合格式，并行提取并展开知识点，LaTeX 或 Word 双路排版输出。兼容 QoderWork、Codex、Claude Code、Cursor 等 AI 编码助手。
+- [mateusflorez](https://github.com/mateusflorez/lumen-studio) — ★ 1 — Ferramenta desktop de autoria para professores — escreva em Markdown, gere slides (.pptx) e atividades (.pdf) com um único clique.
+- [pseudosavant](https://github.com/pseudosavant/markdown-pptx) — ★ 1 — Agent-friendly CLI to convert constrained Markdown slide decks into editable PowerPoint .pptx files.
+- [mocaluna0117](https://github.com/mocaluna0117/md_to_pptx) — ★ 1 — Markdownをpptxに変換するwebサイト
+- [intelkevinputnam](https://github.com/intelkevinputnam/md-to-pptx) — ★ 1 — test repo for creating golden slide set from markdown
+- [arvrschool](https://github.com/arvrschool/markdown-to-pptx) — ★ 1 — —
+- [JulioXC4](https://github.com/JulioXC4/markdown-to-pptx-automator) — ★ 1 — Herramienta CLI para resumir documentacion de GitHub mediante Gemini API y generar presentaciones PowerPoint.
+- [llulai](https://github.com/llulai/pypyt) — ★ 1 — high level pptx python renderer
+- [GayashanSameera](https://github.com/GayashanSameera/PythonPPTXGen) — ★ 1 — —
+- [yutsang](https://github.com/yutsang/python-pptx) — ★ 1 — This project is mainly import a md-formatting text (from AI output or any source) into pptx template, and also a demonstration on how python control/edit the...
+- [0minKoh](https://github.com/0minKoh/python-pptx) — ★ 1 — —
+- [jkm2000korea](https://github.com/jkm2000korea/python_pptx) — ★ 1 — python-pptx를 활용한 리포트 생성 자동화
+- [handwriter](https://github.com/handwriter/python-pptx) — ★ 1 — —
+- [EgaSepyana](https://github.com/EgaSepyana/try-python-pptx-gen-pptx-v2) — ★ 1 — —
+- [bbui1997](https://github.com/bbui1997/python-pptx-tags) — ★ 1 — Parse PowerPoint metadata w/ CTO team
+- [danjan1234](https://github.com/danjan1234/Python-pptx-demo) — ★ 1 — Statistical data visualization and automatic generation of PowerPoint slides
+- [Cazeho](https://github.com/Cazeho/Pptx-Python-guide) — ★ 1 — Python & Powerpoint & XML
+- [sandeep6174](https://github.com/sandeep6174/python_pptx_functions) — ★ 1 — This project contains custom functions created with help of python-pptx library to make power point presentations easily.
+- [gmferratti](https://github.com/gmferratti/exploring_python_pptx) — ★ 1 — Trying to make a MLFlow presentation with Python_PPTX
+- [yikenman](https://github.com/yikenman/python-pptx-wasm) — ★ 1 — A WASM JavaScript library for manipulating PowerPoint presentations via Python-pptx and pyodide.
+- [pikum99](https://github.com/pikum99/python-pptx-demo) — ★ 1 — —
+- [almirmav](https://github.com/almirmav/easy-python-pptx) — ★ 1 — Python utility for using python-pptx libraries to insert titles, texts of pandas DataFrame table to pptx slides.
+- [grasshopperTrainer](https://github.com/grasshopperTrainer/my-python-pptx) — ★ 1 — —
+- [Tawesh](https://github.com/Tawesh/pptx-studio-python-api) — ★ 1 — A highly-customizable PowerPoint generation API built with Flask & python-pptx. Create stunning PPTX files from a single JSON payload — 32+ UI components, 12...
+- [thedjdoorn](https://github.com/thedjdoorn/python-pptx-image-extract) — ★ 1 — —
+- [haint-dev](https://github.com/haint-dev/python-copy-slide-pptx) — ★ 1 — —
+- [ramselvaraj](https://github.com/ramselvaraj/python-pptx-pdf-bot) — ★ 1 — python script that converts pptx files to pdf files
+- [peti651155](https://github.com/peti651155/python-JSON-to-PPTX) — ★ 1 — Egy JSON file-ból beolvasom az információkat ami alapján létrehozom a pptx prezentációt.
+- [yqjdcyy](https://github.com/yqjdcyy/Product_Python_Anything2PPTX) — ★ 1 — fill pdf.images| images into a template.pptx
+- [jmm](https://github.com/jmm/python-pptx-repro-chart-style) — ★ 1 — —
+- [vhngroup](https://github.com/vhngroup/Edit_Pptx_Presentation_With_Python) — ★ 1 — This exercise is a example to edit or modify a Pptx - PowerPoint file with python. I use python-pptx to edit and save the slides
+- [SurgeonTalus](https://github.com/SurgeonTalus/appendixTableGeneratorForPowerPoint-PythonPPTX) — ★ 1 — Generate Powerpoint tables based on content
+- [jmm](https://github.com/jmm/python-pptx-repro-doughnut-data-labels) — ★ 1 — —
+- [jmm](https://github.com/jmm/python-pptx-repro-doughnut-chart-title) — ★ 1 — —
+- [SakibAhmedShuva](https://github.com/SakibAhmedShuva/PPTX-to-TXT-Converter-Python-HTML) — ★ 1 — PPTX to TXT ConverterPPTX to TXT Converter Python HTML
+- [sufyn](https://github.com/sufyn/Ppt_python) — ★ 1 — Creating presentation file using python pptx
+- [vinigonz1993](https://github.com/vinigonz1993/ppt-report) — ★ 1 — Create a presentation using python pptx
+- [leppardwang](https://github.com/leppardwang/pptx-lint) — ★ 1 — Lint / quality checker for python-pptx presentations
+- [CandyButcher27](https://github.com/CandyButcher27/Granuler) — ★ 1 — Technology Maturity Assessment API — Bubble form to branded 54-slide PPTX via LiteLLM + python-pptx
+- [Jackdame](https://github.com/Jackdame/PPT_Builder) — ★ 1 — A project that used python-pptx and deepseek api
+- [ysau](https://github.com/ysau/image-assembler) — ★ 1 — Assembling data images into PowerPoint slides using python-pptx
+- [lybhb8](https://github.com/lybhb8/video-to-pptx) — ★ 1 — Convert video courseware/lectures into .pptx slides via ffmpeg frame extraction, perceptual-hash dedup, OCR, and python-pptx.
+- [paxprot](https://github.com/paxprot/pptx-scripts) — ★ 1 — Some PPTX scripts written in Python, compatible with Azure TTS
+- [geminizb](https://github.com/geminizb/ppt-util) — ★ 1 — An utility to copy, move, delete slides by python-pptx
+- [GitToby](https://github.com/GitToby/pptx2txt2) — ★ 1 — Parse .pptx and .odp files to strings in pure python.
+- [jhlimm8](https://github.com/jhlimm8/AutoTranslatePPT) — ★ 1 — Auto Translate PowerPoint Slides using python-pptx and LLM APIs
+
+_Showing top 500 of 2123 repos in this category — the full list with all 2123 entries is in [`data/repos.json`](data/repos.json)._
+
+[<-- Back to main list](../README.md)
